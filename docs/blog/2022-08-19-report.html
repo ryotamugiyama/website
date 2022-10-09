@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2022-08-19">
+
+<title>Ryota Mugiyama - 学生向け：レポートでやるべき（でない）こと</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta name="twitter:title" content="Ryota Mugiyama - 学生向け：レポートでやるべき（でない）こと">
+<meta name="twitter:description" content="教員になって授業を担当するようになってから毎学期150〜200本くらいのレポートを読んでいるが、そこでいろいろとレポートを見ていると、レポートの基礎が押さえられていないと思うレポートにしばしば出会う。レポートの型というのは多かれ少なかれ決まっており、型にしたがって書くことで（多少のほころびがあったとしても）きちんとしたレポートを作ることができる。">
+<meta name="twitter:creator" content="@RyotaMugiyama">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Ryota Mugiyama</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html">Research</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../lecture.html">Lecture</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../stata.html">Stata</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../r.html">R</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html">Blog</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#レポート執筆以前の心得" id="toc-レポート執筆以前の心得" class="nav-link active" data-scroll-target="#レポート執筆以前の心得">レポート執筆以前の心得</a>
+  <ul class="collapse">
+  <li><a href="#求められている内容を把握する" id="toc-求められている内容を把握する" class="nav-link" data-scroll-target="#求められている内容を把握する">求められている内容を把握する</a></li>
+  <li><a href="#提出期限までに出す" id="toc-提出期限までに出す" class="nav-link" data-scroll-target="#提出期限までに出す">提出期限までに出す</a></li>
+  <li><a href="#別の授業で書いたレポートを流用しない" id="toc-別の授業で書いたレポートを流用しない" class="nav-link" data-scroll-target="#別の授業で書いたレポートを流用しない">別の授業で書いたレポートを流用しない</a></li>
+  </ul></li>
+  <li><a href="#レポートの構造" id="toc-レポートの構造" class="nav-link" data-scroll-target="#レポートの構造">レポートの構造</a>
+  <ul class="collapse">
+  <li><a href="#タイトルをつける" id="toc-タイトルをつける" class="nav-link" data-scroll-target="#タイトルをつける">タイトルをつける</a></li>
+  <li><a href="#レポートを構造化する" id="toc-レポートを構造化する" class="nav-link" data-scroll-target="#レポートを構造化する">レポートを構造化する</a></li>
+  </ul></li>
+  <li><a href="#図表" id="toc-図表" class="nav-link" data-scroll-target="#図表">図表</a>
+  <ul class="collapse">
+  <li><a href="#図表には通し番号をつける" id="toc-図表には通し番号をつける" class="nav-link" data-scroll-target="#図表には通し番号をつける">図表には通し番号をつける</a></li>
+  <li><a href="#図表にはタイトルをつける" id="toc-図表にはタイトルをつける" class="nav-link" data-scroll-target="#図表にはタイトルをつける">図表にはタイトルをつける</a></li>
+  <li><a href="#本文で図表を指すときには下図などではなく図1などと番号で書く" id="toc-本文で図表を指すときには下図などではなく図1などと番号で書く" class="nav-link" data-scroll-target="#本文で図表を指すときには下図などではなく図1などと番号で書く">本文で図表を指すときには「下図」などではなく「図1」などと番号で書く</a></li>
+  </ul></li>
+  <li><a href="#引用参照関連" id="toc-引用参照関連" class="nav-link" data-scroll-target="#引用参照関連">引用・参照関連</a>
+  <ul class="collapse">
+  <li><a href="#誰かの論文や研究を参照する際には著者の所属は不要" id="toc-誰かの論文や研究を参照する際には著者の所属は不要" class="nav-link" data-scroll-target="#誰かの論文や研究を参照する際には著者の所属は不要">誰かの論文や研究を参照する際には著者の所属は不要</a></li>
+  <li><a href="#どこからどこまでが文献等を参照した箇所なのかわかるよう記載する" id="toc-どこからどこまでが文献等を参照した箇所なのかわかるよう記載する" class="nav-link" data-scroll-target="#どこからどこまでが文献等を参照した箇所なのかわかるよう記載する">どこからどこまでが文献等を参照した箇所なのかわかるよう記載する</a></li>
+  <li><a href="#参考文献リストをきちんと書く" id="toc-参考文献リストをきちんと書く" class="nav-link" data-scroll-target="#参考文献リストをきちんと書く">参考文献リストをきちんと書く</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">学生向け：レポートでやるべき（でない）こと</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">授業関連</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 19, 2022</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<p>教員になって授業を担当するようになってから毎学期150〜200本くらいのレポートを読んでいるが、そこでいろいろとレポートを見ていると、レポートの基礎が押さえられていないと思うレポートにしばしば出会う。レポートの型というのは多かれ少なかれ決まっており、型にしたがって書くことで（多少のほころびがあったとしても）きちんとしたレポートを作ることができる。</p>
+<p>レポートの型というのは、多くの大学では一年生のときに勉強するはずである。しかし、必ずしも明示的に教えられていなかったり、あるいは勉強しても学年が上がっていくうちに忘れてしまうことも多い。そこで、改めてこういうことを注意するとよいということをメモ代わりに示しておく。</p>
+<p>なお、ここで想定しているレポートというのは、「○○について論じなさい」とか、「○○についての問いを立ててレポートを執筆しなさい」というような、論述型のレポートである。</p>
+<section id="レポート執筆以前の心得" class="level2">
+<h2 class="anchored" data-anchor-id="レポート執筆以前の心得">レポート執筆以前の心得</h2>
+<section id="求められている内容を把握する" class="level3">
+<h3 class="anchored" data-anchor-id="求められている内容を把握する">求められている内容を把握する</h3>
+<p>たとえば、「日本で少子化が起こったのはなぜだと考えられるか、論じてください」というふうなレポート課題が出たとする。このようなときには、「<strong>日本で少子化が起こったのはなぜだと考えられるか</strong>」についてのレポートを書く。当たり前だと思うかもしれないが、次のような誤りはそれなりに見かける。</p>
+<ul>
+<li><p>「少子化を解決するためには何が必要か」を論じる。</p></li>
+<li><p>「少子化が起こるとどのような問題が生じるのか」を論じる。</p></li>
+<li><p>「韓国で少子化が起こったのはなぜか」を論じる。</p></li>
+<li><p>「なぜ日本とは違いフランスでは少子化が進んでいないのか」を論じる。</p></li>
+<li><p>「少子高齢化はなぜ起こったのか」を論じる（少子化と高齢化は同じ現象ではない）。</p></li>
+</ul>
+<p>これらはいずれも「日本で少子化が起こったのはなぜだと考えられるか」に答えるもの<strong>ではない</strong>ので、評価が低くなるか、そもそも採点対象にもならないかもしれない。</p>
+<p>レポートのすべてがこのようにずれていないとしても、レポートの一部で「日本で少子化が起こったのはなぜだと考えられるか」と直接関係しない内容（たとえば、少子化の解決策）について論じたりするといったことはよく見かける。教員によって異なるかもしれないが、基本的にレポートで問われていないことをいくら書いたとしても評価が上がることはない（か、むしろ下がるかもしれない）。<strong>レポートを書くときには常に何が求められているのかを理解し、自分のレポートがそれに答えるものになっているのか確認する</strong>必要がある。</p>
+</section>
+<section id="提出期限までに出す" class="level3">
+<h3 class="anchored" data-anchor-id="提出期限までに出す">提出期限までに出す</h3>
+<p>ほとんどの場合、<strong>期限までに提出されたそこそこの出来のレポートは、期限を過ぎたすばらしい出来のレポートよりも評価が高い</strong>。一夜漬けせず、頑張って提出期限までに出すようにする。</p>
+</section>
+<section id="別の授業で書いたレポートを流用しない" class="level3">
+<h3 class="anchored" data-anchor-id="別の授業で書いたレポートを流用しない">別の授業で書いたレポートを流用しない</h3>
+<p><strong>別の授業で書いたレポートをそのまま（特段の記載なしに）提出することは剽窃という不正行為に当たる</strong>。0点となるのは当然のこと、最悪の場合は全科目の単位取り消し、停学、退学などの重い処分になることがある。</p>
+</section>
+</section>
+<section id="レポートの構造" class="level2">
+<h2 class="anchored" data-anchor-id="レポートの構造">レポートの構造</h2>
+<section id="タイトルをつける" class="level3">
+<h3 class="anchored" data-anchor-id="タイトルをつける">タイトルをつける</h3>
+<p>レポートにはその<strong>内容を一言で表すようなタイトル</strong>をつける。このタイトルはたとえば「期末レポート」というようなものではなくて、他の人が見たときに、このレポートが何を論じるレポートであるのかひと目で分かるような具体的なものをつける。</p>
+<ul>
+<li><p>結婚に対する価値観の変化が未婚化に与えた影響</p></li>
+<li><p>なぜBTSは世界的に流行したのか：他の人気K-POPグループとの比較</p></li>
+<li><p>コロナ禍における女性の自殺率増加の原因に関する考察</p></li>
+</ul>
+<p>逆に、漠然としたタイトルや広すぎるタイトルは良くない。たとえば次のようなタイトルからはレポートで論じる内容がいったい何なのか浮かんでこない。</p>
+<ul>
+<li><p>若者の投票率について</p></li>
+<li><p>男女の格差問題</p></li>
+<li><p>表現の自由について</p></li>
+</ul>
+<p>仮にタイトルを付けることが求められていなかったとしても、タイトルを考える（そしてそれを明記する）ことはレポートの論点を明確化するうえでとても役に立つので、積極的につけるとよい。</p>
+</section>
+<section id="レポートを構造化する" class="level3">
+<h3 class="anchored" data-anchor-id="レポートを構造化する">レポートを構造化する</h3>
+<p>レポートを構造化するためには、まず<strong>レポートを書き始める前にレポート全体の構成を考える</strong>ことが重要である。レポートには字数や分量の指定があることがほとんどなので、それを満たすことが目的化して、思いつくことをそのまま書き連ね、どこに向かって書かれているのかが不明瞭なレポートに出会うことがよくある。レポートを書き始める前に構成を考えることで、多少なりこのようなことを避けることができる。また、レポートの構想を考えることは、自分の議論には何が不足しているのか、どのような材料が不足しているのか、具体的に何を調べるべきなのかを明確にすることにつながる。</p>
+<p>レポートを構造化するときには、以下の3点を意識するとよい。</p>
+<section id="序論-本論-結論の形式をとる" class="level4">
+<h4 class="anchored" data-anchor-id="序論-本論-結論の形式をとる">序論-本論-結論の形式をとる</h4>
+<p>数千字以上のレポートであれば、ほとんどの場合は<strong>序論-本論-結論</strong>という構成を取ることが期待される。</p>
+<ul>
+<li><p><strong>序論</strong>：レポートで扱う内容についての導入をするとともに、このレポートでは何を論じるのかについて書く。</p></li>
+<li><p><strong>本論</strong>：序論で述べた内容について具体的に論じる。ただたんに調べたことを羅列するのではなく、きちんと内容を構造化することが必要になる。これについては次の項目を参照のこと。</p></li>
+<li><p><strong>結論</strong>：このレポートで論じたことを改めて要約し、再度主張を提示する。</p></li>
+</ul>
+<p>序論は「はじめに」などの名前でもいいし、結論は「結び」や「おわりに」といった名前でもよい。重要なのは、内容によらず、序論-本論-結論という構成となっているかどうかである。</p>
+</section>
+<section id="章あるいは節項をわける" class="level4">
+<h4 class="anchored" data-anchor-id="章あるいは節項をわける">章（あるいは節、項）をわける</h4>
+<p>レポートははじめからおわりまでひとつらなりの文章とするよりは、その内容をいくつかのかたまりに分割するのがよい。こうしたかたまりのことを大きい方から順に「章」「節」「項」と呼ぶ。数千字のレポートの場合は、最も大きい単位を「節」と呼ぶこともある。</p>
+<p>1.（章）</p>
+<p>1.1.（節）</p>
+<p>1.1.1.（項）</p>
+<p>2.（章）</p>
+<p>2.1.（節）</p>
+<p>……</p>
+<p>各章や節には、その内容を表すタイトルをつける（タイトルにあった内容を書く）と効果的である。</p>
+</section>
+<section id="段落をわける" class="level4">
+<h4 class="anchored" data-anchor-id="段落をわける">段落をわける</h4>
+<p>先に述べた章、節あるいは項といった各かたまりの下はさらにいくつかの段落によって構成される。<strong>一つの段落は、一つのトピックからなる</strong>ようにする。たまに、3000字のレポートで1つか2つくらいしか段落がないレポートを見ることがあるが、仮にどんなに優れた内容であったとしても、読む側としてはきちんと構造化されていないな、という印象を受ける。繰り返しになるが、レポートを書く前にレポート全体の構想を立てて、どのように議論を進めるかを整理してから書くと、このようなことは多少なりとも避けられるだろう。</p>
+<p>一般に、一つの段落（パラグラフ）を一つのトピックで構成するための技法は「パラグラフ・ライティング」として知られている。ここではこの技法について詳しく説明することはしないが、調べるといくらでもその方法が書かれているページや書籍が見つかるので、勉強してみるとよい。</p>
+</section>
+</section>
+</section>
+<section id="図表" class="level2">
+<h2 class="anchored" data-anchor-id="図表">図表</h2>
+<section id="図表には通し番号をつける" class="level3">
+<h3 class="anchored" data-anchor-id="図表には通し番号をつける">図表には通し番号をつける</h3>
+<p>図には「図1、図2…」、表には「表1、表2…」というふうに、図と表とでそれぞれ通し番号をつける。まれに図と表をまとめて「図表1」「図表2」というふうに通し番号をつける作法もあるが、あまり一般的ではない。</p>
+</section>
+<section id="図表にはタイトルをつける" class="level3">
+<h3 class="anchored" data-anchor-id="図表にはタイトルをつける">図表にはタイトルをつける</h3>
+<p>「図1」とだけするのではなく、たとえば「図1　1960年から2020年における完全失業率の推移」というふうに、図または表がどのような内容を指しているのかがわかるようにタイトルをつける。Excelで図表を作成するとグラフのタイトルを入力する箇所がでてくるが、そこに図のタイトルを入力するのではなく、Wordの本文中に図のタイトルを書くのがふつうである。</p>
+</section>
+<section id="本文で図表を指すときには下図などではなく図1などと番号で書く" class="level3">
+<h3 class="anchored" data-anchor-id="本文で図表を指すときには下図などではなく図1などと番号で書く">本文で図表を指すときには「下図」などではなく「図1」などと番号で書く</h3>
+<p>たとえばある図を指して「下図は1960年から2020年にかけて日本の完全失業率がどのように推移したのかを示したものである。」というような文を書くことがあるが、図や表を指すときには「下図」「上図」「右図」「左図」のように特定の場所を前提とした示し方はせず、「図1」「表3」のように番号で表記するのがふつうである。「上図」「下図」のような書き方では、図の位置が変わってしまうとどこを指しているのかわからなくなってしまうからである（Word上では下にあるように見えても、印刷すると次のページ（右、もしくは両面印刷したなら裏）にあるかもしれない。「図1」という書き方であれば、図がどの場所にあろうとも、どこを指しているのかわからなくなることはない。</p>
+</section>
+</section>
+<section id="引用参照関連" class="level2">
+<h2 class="anchored" data-anchor-id="引用参照関連">引用・参照関連</h2>
+<section id="誰かの論文や研究を参照する際には著者の所属は不要" class="level3">
+<h3 class="anchored" data-anchor-id="誰かの論文や研究を参照する際には著者の所属は不要">誰かの論文や研究を参照する際には著者の所属は不要</h3>
+<p>たとえば、「学習院大学の麦山亮太氏の研究によれば、非正規雇用者は結婚しにくいことが明らかになっている」という書き方はしない。ニュースやブログ記事や新聞記事などでよく使われるが、ちゃんとした論文やレポートではしない書き方である。もっと悪いのは、「学習院大学の研究によれば……」というように、所属機関だけを載せるやり方だ。なぜかハーバード大学やスタンフォード大学といった超有名大学のときに使われやすいが、論文の書誌情報等の場合、重要なのは所属ではなく、誰がいつどこに書いたのか、である（ハーバード大学に所属しているからといって研究の信頼性が高くなるわけではない。日本では「ハーバード式」とか書名につけると売上が上がるのかもしれないが）。ただし、「厚生労働省」など機関名で出版されているものについては、著者名ではなく機関名が著者名に相当するものになる。なお、著者名には「○○教授」などの肩書きもいらない。</p>
+<p>上記のような場合には、本文では「麦山（2017）によれば、非正規雇用者は結婚しにくいことが明らかになっている」もしくは「非正規雇用者は結婚しにくいことが明らかになっている（麦山 2017）」などと記載し、レポート末尾または脚注に当該の文献の書誌情報を記載する。書誌情報の記載の仕方については後で述べる。</p>
+</section>
+<section id="どこからどこまでが文献等を参照した箇所なのかわかるよう記載する" class="level3">
+<h3 class="anchored" data-anchor-id="どこからどこまでが文献等を参照した箇所なのかわかるよう記載する">どこからどこまでが文献等を参照した箇所なのかわかるよう記載する</h3>
+<p>仮に参考文献が記載してあったとしても、レポート本文のどの箇所が引用や参照箇所であるのかが明確でなければ、（悪意がなくとも）剽窃となってしまう可能性がある。たとえば、次のような文章はどうだろうか。</p>
+<blockquote class="blockquote">
+<p>日本の男性が家事や育児にかける時間はほとんど増えていない。1996年から2016年にかけて女性が一日あたり家事・育児・介護にかける平均時間は約210分とほぼ横ばいで推移している。一方で男性が一日あたり家事・育児・介護にかける平均時間は24分から44分へと微増しているものの、未だ女性と比べてその時間はきわめて短い。こうした背景には、男性が外での仕事に費やす時間が非常に長いために、家事や育児に割く時間が少なくなるという事情がある。家事育児負担の平等化を進めるためには、仕事の場での長時間労働を是正する必要がある。 参考文献）内閣府男女共同参画局，2021，「男女共同参画白書 令和2年版」https://www.gender.go.jp/about_danjo/whitepaper/r02/zentai/index.html，2022年8月17日閲覧．</p>
+</blockquote>
+<p>この文章は内閣府男女共同参画局の「男女共同参画白書 令和2年版」を参照したと記載しているが、どこからどこまでがこの文献を参照した内容であり、どこからどこまでが自分の意見であるのかが不明確な書き方となってしまっている。これは不適切な参照のしかたの一例といえる。この文章はたとえば次のように直すことができる。</p>
+<blockquote class="blockquote">
+<p>日本の男性の家事や育児にかける時間はほとんど増えていない。1996年から2016年にかけて女性が一日あたり家事・育児・介護にかける平均時間は約210分とほぼ横ばいで推移している（内閣府男女共同参画局 2021）。一方で男性が一日あたり家事・育児・介護にかける平均時間は24分から44分へと微増しているものの、未だ女性と比べてその時間は極めて短い（内閣府男女共同参画局 2021）。こうした背景には、男性が外で仕事に費やす時間が非常に長いために、家事や育児に割く時間が少なくなるという事情がある。家事育児負担の平等化を進めるためには、仕事の場での長時間労働を解決する必要がある。 参考文献）内閣府男女共同参画局，2021，「男女共同参画白書 令和2年版」https://www.gender.go.jp/about_danjo/whitepaper/r02/zentai/index.html，2022年8月17日閲覧．</p>
+</blockquote>
+<p>あるいは：</p>
+<blockquote class="blockquote">
+<p>日本の男性の家事や育児にかける時間はほとんど増えていない。内閣府男女共同参画局（2021）によれば、1996年から2016年にかけて女性が一日あたり家事・育児・介護にかける平均時間は約210分とほぼ横ばいで推移している一方、男性が一日あたり家事・育児・介護にかける平均時間は24分から44分へと微増しているものの、未だ女性と比べてその時間は極めて短い。こうした背景には、男性が外で仕事に費やす時間が非常に長いために、家事や育児に割く時間が少なくなるという事情がある。家事育児負担の平等化を進めるためには、仕事の場での長時間労働を解決する必要がある。 参考文献）内閣府男女共同参画局，2021，「男女共同参画白書 令和2年版」https://www.gender.go.jp/about_danjo/whitepaper/r02/zentai/index.html，2022年8月17日閲覧．</p>
+</blockquote>
+<p>これらをみると、いずれの例についても「日本の男性の家事や育児にかける時間はほとんど増えていない」というところは自分のまとめであり、それ以降の記述は参考文献を参照して書かれたこと、そして「こうした背景には〜長時間労働を解決する必要がある」という箇所は自分の考察であることがはっきりする。いずれも先ほどと比べるとどこからが自分の意見やまとめなのかわかりやすくなっているといえる。</p>
+<p>このようにみてくると、「こうした背景には、男性が外で仕事に費やす時間が非常に長いために、家事や育児に割く時間が少なくなるという事情がある」という主張は必ずしも根拠にもとづいた文ではないということがわかる。このように引用箇所とそうでない箇所を区別することによって、自分の主張のうち根拠が弱い部分はどこであるのかが明確になるという効用もある。</p>
+</section>
+<section id="参考文献リストをきちんと書く" class="level3">
+<h3 class="anchored" data-anchor-id="参考文献リストをきちんと書く">参考文献リストをきちんと書く</h3>
+<p>これは種類ごとに凡例を置いておく。細かい点はいろいろな作法があるが、最低限必要な条件だけ記す。</p>
+<p><strong>書籍</strong>：著者名、出版年、書籍名、出版社（新書の場合は○○新書）を書く。</p>
+<ul>
+<li><p>松岡亮二，2019，『教育格差：階層・地域・学歴』ちくま新書．</p></li>
+<li><p>岩間暁子・大和礼子・田間泰子，2022，『問いからはじめる家族社会学（改訂版）』有斐閣．</p></li>
+</ul>
+<p><strong>論文</strong>：著者名、出版年、論文名、（論文が掲載されている）雑誌名、巻（号）数、ページ数を書く。</p>
+<ul>
+<li>麦山亮太，2017，「職業経歴と結婚への移行：雇用形態・職種・企業規模と地位変化の効果における男女差」『家族社会学研究』29(2): 129–141．</li>
+</ul>
+<p><strong>ウェブサイト</strong>：著者、出版年（あるいは更新年）、タイトル、ウェブサイトのURL、閲覧日を書く。</p>
+<ul>
+<li>内閣府男女共同参画局，2021，「男女共同参画白書 令和2年版」https://www.gender.go.jp/about_danjo/whitepaper/r02/zentai/index.html ，2022年8月1日閲覧．</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

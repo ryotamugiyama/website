@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Ryota Mugiyama">
+<meta name="dcterms.date" content="2020-08-03">
+
+<title>Ryota Mugiyama - RとRStudioをインストールするときのつまづきポイントとその対処法へのリンク</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta name="twitter:title" content="Ryota Mugiyama - RとRStudioをインストールするときのつまづきポイントとその対処法へのリンク">
+<meta name="twitter:description" content="RおよびRStudioのインストールで困ったときの対処法についてのリンクをまとめました。">
+<meta name="twitter:creator" content="@RyotaMugiyama">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Ryota Mugiyama</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html">Research</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../lecture.html">Lecture</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../stata.html">Stata</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../r.html">R</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html">Blog</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#はじめに" id="toc-はじめに" class="nav-link active" data-scroll-target="#はじめに">はじめに</a></li>
+  <li><a href="#もっとも包括的なインストール解説記事2021416追加" id="toc-もっとも包括的なインストール解説記事2021416追加" class="nav-link" data-scroll-target="#もっとも包括的なインストール解説記事2021416追加">もっとも包括的なインストール解説記事（2021/4/16追加）</a></li>
+  <li><a href="#rおよびrstudioのインストール方法" id="toc-rおよびrstudioのインストール方法" class="nav-link" data-scroll-target="#rおよびrstudioのインストール方法">RおよびRStudioのインストール方法</a>
+  <ul class="collapse">
+  <li><a href="#windowsユーザ向け" id="toc-windowsユーザ向け" class="nav-link" data-scroll-target="#windowsユーザ向け">Windowsユーザ向け</a></li>
+  <li><a href="#macユーザ向け" id="toc-macユーザ向け" class="nav-link" data-scroll-target="#macユーザ向け">Macユーザ向け</a></li>
+  </ul></li>
+  <li><a href="#日本語ユーザー名で起こるトラブル" id="toc-日本語ユーザー名で起こるトラブル" class="nav-link" data-scroll-target="#日本語ユーザー名で起こるトラブル">日本語ユーザー名で起こるトラブル</a></li>
+  <li><a href="#onedrive上にインストールすることで起こるトラブル" id="toc-onedrive上にインストールすることで起こるトラブル" class="nav-link" data-scroll-target="#onedrive上にインストールすることで起こるトラブル">Onedrive上にインストールすることで起こるトラブル</a>
+  <ul class="collapse">
+  <li><a href="#デフォルトでonedrive上にインストールされる" id="toc-デフォルトでonedrive上にインストールされる" class="nav-link" data-scroll-target="#デフォルトでonedrive上にインストールされる">デフォルトでOnedrive上にインストールされる</a></li>
+  <li><a href="#libpathsがonedriveを参照している" id="toc-libpathsがonedriveを参照している" class="nav-link" data-scroll-target="#libpathsがonedriveを参照している">.libPaths()がOnedriveを参照している</a></li>
+  </ul></li>
+  <li><a href="#管理者権限の問題" id="toc-管理者権限の問題" class="nav-link" data-scroll-target="#管理者権限の問題">管理者権限の問題</a></li>
+  <li><a href="#rtoolsがインストールされていない" id="toc-rtoolsがインストールされていない" class="nav-link" data-scroll-target="#rtoolsがインストールされていない">Rtoolsがインストールされていない</a></li>
+  <li><a href="#コマンドが実行できない系" id="toc-コマンドが実行できない系" class="nav-link" data-scroll-target="#コマンドが実行できない系">「コマンドが実行できない」系</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">RとRStudioをインストールするときのつまづきポイントとその対処法へのリンク</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">R</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ryota Mugiyama </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 3, 2020</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<p>RおよびRStudioのインストールで困ったときの対処法についてのリンクをまとめました。</p>
+<section id="はじめに" class="level2">
+<h2 class="anchored" data-anchor-id="はじめに">はじめに</h2>
+<p>今年度前期は量的データ解析法という統計的推測についての授業を担当しました。自分の授業では講義に加えて、RおよびRStudioを使った演習を交えた形式で行いました。</p>
+<p>新型コロナウイルス感染症の影響で授業はリモートで行われることになったため、受講生には自身でRおよびRStudioのインストールを行うように指示しました。もちろん、スムーズにインストールできた学生だけではなく、インストールに際してひっかかってしまったという学生も少なくなかったです。幸い、そうしたインストールのエラーについてはメールでスクリーンショットを送ってもらったりしていたため、だいたいどういうエラーでひっかかるのかをリストアップすることができました。</p>
+<p>Rのインストールに関してはたくさんの先達がエラーへの対処法を示してくれているので、この記事では主としてそうしたページへのリンクを列挙していきます。しかし、それをリストしたものは見当たらなかったので、そうしたリストがあると役に立つこともあるのかなと思ってリストを作成しました。授業などでRおよびRStudioの使用を予定している方や、RやRStudioのインストールで引っかかってしまった方のお役に立てば幸いです。</p>
+</section>
+<section id="もっとも包括的なインストール解説記事2021416追加" class="level2">
+<h2 class="anchored" data-anchor-id="もっとも包括的なインストール解説記事2021416追加">もっとも包括的なインストール解説記事（2021/4/16追加）</h2>
+<p><a href="https://yukiyanai.github.io/jp/resources/">RとRStudioのインストール方法の解説</a></p>
+<p>非常に丁寧な資料で、基本的にこの記事に書かれているとおりにやれば以下のようなひっかかりポイントはクリアできると思います。</p>
+</section>
+<section id="rおよびrstudioのインストール方法" class="level2">
+<h2 class="anchored" data-anchor-id="rおよびrstudioのインストール方法">RおよびRStudioのインストール方法</h2>
+<section id="windowsユーザ向け" class="level3">
+<h3 class="anchored" data-anchor-id="windowsユーザ向け">Windowsユーザ向け</h3>
+<ul>
+<li><p><a href="https://qiita.com/FukuharaYohei/items/8e0ddd0af11132031355">R言語インストール(2020年 Windows)</a> *ただインストールするだけであれば、「3. 起動とパッケージインストール」以降の作業はしなくてよい</p></li>
+<li><p><a href="https://qiita.com/FukuharaYohei/items/3468bd2a6b2f07b8963e">RStudioインストール(2020年 Windows)</a></p></li>
+</ul>
+</section>
+<section id="macユーザ向け" class="level3">
+<h3 class="anchored" data-anchor-id="macユーザ向け">Macユーザ向け</h3>
+<ul>
+<li><a href="https://qiita.com/hujuu/items/ddd66ae8e6f3f989f2c0">R と R Studioのインストール</a></li>
+</ul>
+</section>
+</section>
+<section id="日本語ユーザー名で起こるトラブル" class="level2">
+<h2 class="anchored" data-anchor-id="日本語ユーザー名で起こるトラブル">日本語ユーザー名で起こるトラブル</h2>
+<p>このトラブルは、まったくパッケージをインストールせずにRStudioを使っていると気づかないが、ではグラフを書いてみましょう、といって<code>install.packages("ggplot2")</code>や<code>install.packages("tidyverse")</code>を実行しようとするとエラーが出てしまう。この場合よくある原因は、パスに日本語が含まれていることである。いったんRとRStudioをアンインストールして、以下の手順で半角英数のみからなるユーザーを作成する。</p>
+<ul>
+<li><a href="https://clean-copy-of-onenote.hatenablog.com/entry/R_japanese_username">【R】日本語のユーザー名でRを使う方法</a></li>
+</ul>
+<p>* 日本語ユーザー名に非常に強いこだわりがある、もしくはユーザーを新たに作成することが困難だ、という事情がなければ、「解決方法1」のほうがよさそう。こちらを参照し、あらたにRとRStudioをインストールする。</p>
+</section>
+<section id="onedrive上にインストールすることで起こるトラブル" class="level2">
+<h2 class="anchored" data-anchor-id="onedrive上にインストールすることで起こるトラブル">Onedrive上にインストールすることで起こるトラブル</h2>
+<section id="デフォルトでonedrive上にインストールされる" class="level3">
+<h3 class="anchored" data-anchor-id="デフォルトでonedrive上にインストールされる">デフォルトでOnedrive上にインストールされる</h3>
+<p>ユーザー名が日本語でなくても油断できない。Windows 10ではアプリケーションのデフォルトでのインストール先がonedriveに設定されていることがあり、何も考えずにここにインストールしてしまうと、パッケージがインストールできないことがある。</p>
+<ul>
+<li><a href="https://qiita.com/mokab/items/375b81e891c55a3b7784">Windows R ドツボりメモ</a></li>
+</ul>
+<p>対処としては、いったんRとRStudioをアンインストールし、以下のページをみて、Onedriveでない場所（ローカル）にRとRStudioをインストールする。</p>
+<ul>
+<li><a href="https://das-kino.hatenablog.com/entry/2019/11/07/125044">R初心者の館（RとRStudioのインストール、初期設定、基本的な記法など）</a></li>
+</ul>
+</section>
+<section id="libpathsがonedriveを参照している" class="level3">
+<h3 class="anchored" data-anchor-id="libpathsがonedriveを参照している">.libPaths()がOnedriveを参照している</h3>
+<p>パッケージはインストールできるが、<code>library()</code>しても読み込めない！ということがある。これは、ライブラリを置くフォルダがOnedrive上にあったりあるいは以前インストールしたときのものが残っていたりして悪さをしている可能性がある。このような場合には、<code>.libPaths()</code>でライブラリのインストール先を変更するという方法もある。</p>
+<ul>
+<li><a href="https://teratail.com/questions/268239">Rでinstall.packagesするとonedriveにインストールされてしまう</a></li>
+</ul>
+<p>それと、Onedriveの同期を切るとうまく動いたりするようだ。ただ、RStudioを使うたびにいちいちOnedriveの同期を切ったりつけたりするのはとても面倒だと思うので、それならば最初からOnedrive上ではない場所にRおよびRStudioをインストールするほうがよい。</p>
+</section>
+</section>
+<section id="管理者権限の問題" class="level2">
+<h2 class="anchored" data-anchor-id="管理者権限の問題">管理者権限の問題</h2>
+<p><code>install.packages()</code>しようとすると<code>lib = "C:/Program Files/R/R-x.y.z/library" is not writable</code>というような警告が現れ、インストールできないことがある。おそらく症状はこれ <a href="https://teratail.com/questions/65283" class="uri">https://teratail.com/questions/65283</a> だと思われる。以下のページにしたがって、RStudioを常に管理者権限で実行できるように設定を変更する。</p>
+<ul>
+<li><a href="http://www.ken-system.co.jp/support/%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E5%B8%B8%E3%81%AB%E7%AE%A1%E7%90%86%E8%80%85%E3%81%A8%E3%81%97%E3%81%A6%E5%AE%9F%E8%A1%8C%E3%81%95%E3%81%9B%E3%82%8B-2/">アプリケーションを常に管理者として実行させる方法(Windows10編)</a></li>
+</ul>
+</section>
+<section id="rtoolsがインストールされていない" class="level2">
+<h2 class="anchored" data-anchor-id="rtoolsがインストールされていない">Rtoolsがインストールされていない</h2>
+<p><code>install.packages()</code>しようとすると</p>
+<pre><code>WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:</code></pre>
+<p>という警告が出てパッケージをインストールできないことがある。とにかく言われたとおりにRtoolsをインストールする。</p>
+<ul>
+<li><a href="https://cran.r-project.org/bin/windows/Rtools/">Using Rtools40 on Windows</a></li>
+</ul>
+</section>
+<section id="コマンドが実行できない系" class="level2">
+<h2 class="anchored" data-anchor-id="コマンドが実行できない系">「コマンドが実行できない」系</h2>
+<p>これはインストールに関係ないが、備忘録として今回出会ったもの、昨年度出会ったものを列挙する（いずれも「よくある」ミス）。</p>
+<ul>
+<li><p>オブジェクトが存在しない<br>
+<code>hist(x)</code>としてもヒストグラムがでない→そもそも<code>x</code>がないのでは？</p></li>
+<li><p>コマンドのつづり間違い</p></li>
+<li><p>オブジェクトのつづり間違い</p></li>
+<li><p>コマンドにカーソル合わせてEnterしても実行できない→コマンドの実行はEnterではなくCtrl + Enter (Windows) または Command + Enter (Mac)。</p></li>
+<li><p><code>df &lt;- readr::read_csv("data.csv")</code>でデータが読み込めない<br>
+→そもそもプロジェクトのフォルダに<code>"data.csv"</code>が入っていない。</p></li>
+<li><p><code>%&gt;%</code>処理ができない、<code>ggplot()</code>が出ない<br>
+→<code>library(tidyverse)</code>または<code>library(dplyr)</code>または<code>library(ggplot2)</code>の実行し忘れ。</p></li>
+<li><p>全角スペース</p></li>
+<li><p>括弧をすべて閉じていない</p></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
