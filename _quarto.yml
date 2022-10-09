@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "Ryota Mugiyama"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - research.qmd
+      - lecture.qmd
+      - stata.qmd
+      - r.qmd
+      - blog.qmd
+  twitter-card:
+    creator: "@RyotaMugiyama"
+    site: "@RyotaMugiyama"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
