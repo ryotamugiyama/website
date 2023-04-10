@@ -6,8 +6,19 @@ Rで知っておいたら便利かもしれないコードや資料を不定期�
 
 ## [Rによる社会調査データ分析の手引き](https://mugiyama.github.io/seminar_sociology_r/)
 
-![](images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2022-02-28-9.43.22-1024x348.png)
+![](blog/images/tebiki.png)
 
 私の作成した授業用ウェブページです。社会調査データの加工・分析に特化して、tidyverse文法で書いています。
 
 （2022-02-28→2022-09-19移行）
+
+## [Data Analysis for Social Science in Tidyverse](r/dss_tidyverse.html)
+
+Llaudet, Elene and Kosuke Imai. 2022. *Data Analysis for Social Science: A Friendly and Practical Introduction.* Princeton University Press.のコードをtidyverseを使って書いてみました。授業などで使用します。
+
+（2023-04-10）
+
+
+
+
+

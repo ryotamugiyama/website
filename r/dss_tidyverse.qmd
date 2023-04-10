@@ -1,0 +1,616 @@
+---
+title: "Data analysis for social science in tidyverse"
+author: "Ryota Mugiyama (Department of Political Studies, Gakushuin University)"
+date: "`r Sys.Date()`"
+---
+
+```{r, include = FALSE}
+dir <- "/Users/mugi/Documents/Active/Teaching/GU-socSem/2023-SocSem/DSS"
+
+```
+
+このページでは、Llaudet, Elena and Kosuke Imai. 2022. *Data Analysis for Social Science: A Friendly and Practical Introduction.* Princeton University Press.のコードを現代のRの世界でよく使われている`tidyverse`パッケージを使ったコードに直すとどのように書くことができるのかを紹介する。これを通じて、`tidyverse`パッケージに含まれる関数群の初歩的な使い方を学ぶことができるだろう。
+
+コードを実行するためには、`tidyverse`パッケージをインストールして、読み込む必要がある。パッケージをインストールする際には、次のコマンドを実行する。一度実行してパッケージをインストールしたあとは、再度R/RStudioを開いたとしても、改めて実行する必要はない。
+
+```{r, eval = FALSE}
+install.packages("tidyverse")
+```
+
+パッケージを使用するためには、R/RStudioを開くたびに、`library()`コマンドを実行して、パッケージを読み込む必要がある。
+
+```{r}
+library(tidyverse)
+```
+
+以下、各Chapterのコードはすべて`library(tidyverse)`を実行してあるという前提のもとで進める。
+
+# Chapter 1 Introduction
+
+## 1.7 Loading and making sense of data
+
+### 1.7.2 Loading the dataset
+
+`tidyverse`では、`read.csv()`と同じ機能を果たすコードとして`read_csv()`がある。どちらもほぼ同じだが、`read_csv()`のほうが気持ち読み込みが早いときがある。
+
+```{r, eval=FALSE}
+star <- read_csv("STAR.csv")
+```
+
+```{r, include = FALSE}
+star <- read_csv(paste0(dir, "/", "STAR.csv"))
+```
+
+### 1.7.3 Understanding the data
+
+`tidyverse`ではパイプ演算子（`%>%`）を使って命令を書くことができる。たとえばデータの中身を確認する`View()`コマンドであれば、次のように書くことができる。
+
+```{r, eval=FALSE}
+star %>% View()
+```
+
+データの上からいくつかの行を見る`head()`コマンドであれば、次のように書くことができる：
+
+```{r}
+star %>% head()
+star %>% head(n = 3)
+```
+
+ちなみに、Macであれば`Control + Shift + m`で、Windowsであれば`Ctrl + Shift + m`でパイプ演算子を出力することができる。
+
+ちなみに、最近RStudioを新しくインストールした場合だと、上記のショートカットキーを入力すると`|>`というコマンドが出力されるかもしれない。ふつうに使う分だとどちらを使ってもとくに支障は生じない。
+
+ちなみに、メニュー（またはEdit）→Preferences...→Codeを選択して、以下の「Use native pipe operator, \|\> (requires R 4.1+)」のチェックを外すと、上記ショートカットキーを入力したときに`%>%`が表示されるようになる。
+
+![](../images/pipe.png)
+
+`dim(star)`についても`%>%`演算子を使って書くことができる。
+
+```{r}
+star %>% dim()
+```
+
+ここで挙げた例は単純なので、`%>%`演算子を使うことのありがたみは感じにくいかもしれない。しかし、コードが長くなってきたり、命令が複雑になってくるほど、`%>%`演算子を使うメリットは大きくなる。Chapter 3あたりから、徐々にそのメリットが明らかになってくる。
+
+## 1.8 Computing and interpreting means
+
+### 1.8.2 Means
+
+平均値のように、データフレームに含まれる何らかの変数（列）に対して計算や集計を行う場合には、`with()`を使う。たとえば`star`データフレームに含まれる変数列の平均値を計算する方法は次のとおり。
+
+```{r}
+star %>% 
+  with(mean(reading))
+
+star %>% 
+  with(mean(graduated))
+```
+
+もう一つ別の方法として、`summarize()`を使う方法がある。たとえば`reading`の平均値を求めたいときは次のように書く。
+
+```{r}
+star %>% 
+  summarize(mean(reading))
+```
+
+`summarize()`の便利なところは、一度に複数の変数を集計した値を出すことができる点だ。たとえば上記のように`reading`と`graduated`の平均値を計算したい場合には、次のように書けばよい。
+
+```{r}
+star %>% 
+  summarize(mean(reading),
+            mean(graduated))
+```
+
+# Chapter 2 Randomized experiments
+
+## 2.5 Do small classes improve student performance?
+
+`read_csv()`を使ってデータの読み込み。
+
+```{r, eval = FALSE}
+star <- read_csv("STAR.csv")
+```
+
+```{r, include = FALSE}
+star <- read_csv(paste0(dir, "/", "STAR.csv"))
+```
+
+### 2.5.2 Creating new variables
+
+tidyverseの場合、`ifelse()`と同じような関数として`if_else()`がある。たとえば、`star`データフレームに含まれている`classtype`列が`"small"`の場合に1、そうでない場合に0をとる新しい列`small`を作って、`star`データフレームに追加したい場合には、次のように書く。
+
+```{r}
+star <- star %>% 
+  mutate(small = if_else(classtype == "small", 1, 0))
+```
+
+`ifelse()`を使った場合と結果が同じになっているかを確認しよう。
+
+```{r}
+star %>% head()
+```
+
+### 2.5.3 Subsetting variables
+
+グループごとに集計をしたい場合には、`summarize()`などの前に`group_by()`をつけることで、グループ別に集計することができる。
+
+```{r}
+star %>% 
+  group_by(small) %>% 
+  summarize(mean(reading))
+```
+
+複数の変数を集計するときにも同様だ。
+
+```{r}
+star %>% 
+  group_by(small) %>%
+  summarize(mean(reading),
+            mean(math),
+            mean(graduated))
+```
+
+# Chapter 3 Inferring population characteristics via survey research
+
+## 3.3 Measuring support for Brexit
+
+`read_csv()`を使ってデータの読み込み。
+
+```{r, eval = FALSE}
+bes <- read_csv("BES.csv")
+```
+
+```{r, include = FALSE}
+bes <- read_csv(paste0(dir, "/", "BES.csv"))
+```
+
+```{r}
+bes %>% head()
+```
+
+```{r}
+bes %>% dim()
+```
+
+### 3.3.2 Frequency tables
+
+度数分布表（Frequency table）を作るときには、`with(table())`を使う。
+
+```{r}
+bes %>% 
+  with(table(vote))
+```
+
+## 3.3.3 Tables of proportions
+
+一度tableに`freq_table`と名前をつけて、`prop.table()`を使って割合を求めることができる。
+
+```{r}
+freq_table <- bes %>% 
+  with(table(vote))
+
+freq_table %>% 
+  prop.table()
+```
+
+もしくは、そのまま`%>%`演算子を重ねることでも割合を求めることができる。
+
+```{r}
+bes %>% 
+  with(table(vote)) %>% 
+  prop.table()
+```
+
+## 3.4 Who supported brexit?
+
+### 3.4.1 Handling missing data
+
+NAを含めた度数分布を出す場合には、`exclude = NULL`のオプションのほか、`useNA = "always"`のオプションを使うこともできる。
+
+```{r}
+bes %>% 
+  with(table(education, exclude = NULL))
+
+bes %>% 
+  with(table(education, useNA = "always"))
+```
+
+平均値を求める。
+
+```{r}
+bes %>% 
+  with(mean(leave))
+```
+
+```{r}
+bes %>% 
+  with(mean(leave, na.rm = TRUE))
+```
+
+一つでも欠損値があるデータを除外する場合には、`na.omit()`を使う。
+
+```{r}
+bes1 <- bes %>% 
+  na.omit()
+```
+
+ただし、61ページの「ADVANCED TIP」にあるように、実際の調査データの分析では分析に使う変数はごく一部のため、一部の変数のみ抜き出したデータを準備したうえで、`na.omit()`で欠損値のあるデータを除外することが多い。一部の変数のみを取り出す場合には、`select()`というコマンドが使える。
+
+```{r}
+bes1 <- bes %>% 
+  select(vote, leave, education, age) %>% 
+  na.omit()
+```
+
+### 3.4.2 Two-way frequency tables
+
+`with(table())`は2変量の度数分布表（クロス集計表）の作成にも使える。
+
+```{r}
+bes1 %>% 
+  with(table(leave, education))
+```
+
+### 3.4.3 Two-way tables of proportions
+
+総%を求める場合
+
+```{r}
+bes1 %>% 
+  with(table(leave, education)) %>% 
+  prop.table()
+```
+
+行%を求める場合
+
+```{r}
+bes1 %>% 
+  with(table(leave, education)) %>% 
+  prop.table(margin = 1)
+```
+
+列%を求める場合
+
+```{r}
+bes1 %>% 
+  with(table(leave, education)) %>% 
+  prop.table(margin = 2)
+```
+
+### 3.4.4 Histograms
+
+```{r}
+bes1 %>% 
+  ggplot(aes(x = age)) + 
+  geom_histogram()
+```
+
+```{r}
+bes1 %>% 
+  ggplot(aes(x = age)) + 
+  geom_histogram() + 
+  facet_wrap(~leave)
+```
+
+### 3.4.5 Density histograms
+
+```{r}
+bes1 %>% 
+  filter(education == 1 | education == 4) %>% 
+  ggplot(aes(x = age)) + 
+  geom_histogram() +
+  facet_wrap(~education)
+```
+
+```{r}
+bes1 %>% 
+  filter(education == 1 | education == 4) %>% 
+  ggplot(aes(x = age)) + 
+  geom_histogram(aes(y = after_stat(density))) +
+  facet_wrap(~education)
+```
+
+```{r}
+bes1 %>% 
+  ggplot(aes(x = age)) + 
+  geom_histogram(aes(y = after_stat(density))) + 
+  facet_wrap(~leave)
+```
+
+### 3.4.6 Descriptive statistics
+
+```{r}
+bes1 %>% 
+  group_by(leave) %>% 
+  summarize(mean = mean(age))
+```
+
+```{r}
+bes1 %>% 
+  group_by(leave) %>% 
+  summarize(median = median(age))
+```
+
+```{r}
+bes1 %>% 
+  group_by(leave) %>% 
+  summarize(sd = sd(age))
+```
+
+```{r}
+bes1 %>% 
+  filter(leave == 1) %>% 
+  summarize(var = var(age),
+            sd_sq = sd(age)^2,
+            var_sqrt = sqrt(var(age)))
+```
+
+## 3.5 Relationship between education and the leave vote in the entire UK
+
+```{r, eval = FALSE}
+dis <- read_csv("UK_districts.csv")
+```
+
+```{r, include = FALSE}
+dis <- read_csv(paste0(dir, "/", "UK_districts.csv"))
+```
+
+```{r}
+dis %>% head()
+```
+
+```{r}
+dis %>% dim()
+```
+
+```{r}
+dis1 <- dis %>% 
+  na.omit()
+```
+
+```{r}
+dis1 %>% dim()
+```
+
+### 3.5.1 Scatter plots
+
+```{r}
+dis1 %>% 
+  ggplot(aes(x = high_education, y = leave)) + 
+  geom_point()
+```
+
+```{r}
+xvalue <- dis1 %>% 
+  with(mean(high_education))
+yvalue <- dis1 %>% 
+  with(mean(leave))
+
+dis1 %>% 
+  ggplot(aes(x = high_education, y = leave)) + 
+  geom_point() + 
+  geom_hline(yintercept = yvalue, lty = "dashed") + 
+  geom_vline(xintercept = xvalue, lty = "dashed")
+```
+
+### 3.5.2 Scatter plots
+
+```{r}
+dis1 %>% 
+  with(cor(high_education, leave))
+
+dis1 %>% 
+  with(cor(leave, high_education))
+```
+
+# Chapter 4 Predicting outcomes using linear regression
+
+## 4.4 Predicting GDP using prior GDP
+
+```{r, eval = FALSE}
+co <- read_csv("countries.csv")
+```
+
+```{r, include = FALSE}
+co <- read_csv(paste0(dir, "/", "countries.csv"))
+```
+
+```{r}
+co %>% head()
+```
+
+```{r}
+co %>% dim()
+```
+
+### 4.4.1 Relationship between GDP and prior GDP
+
+```{r}
+co %>% 
+  ggplot(aes(x = prior_gdp, y = gdp)) + 
+  geom_point()
+```
+
+```{r}
+co %>% 
+  with(cor(gdp, prior_gdp))
+```
+
+```{r}
+co %>% 
+  ggplot(aes(x = prior_gdp, y = gdp)) + 
+  geom_point() + 
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+### 4.4.2 With natural logarithm transformations
+
+```{r}
+co <- co %>% 
+  mutate(log_gdp = log(gdp)) %>%  
+  mutate(log_prior_gdp = log(prior_gdp))
+```
+
+```{r}
+co %>% 
+  ggplot(aes(x = gdp)) + 
+  geom_histogram()
+```
+
+```{r}
+co %>% 
+  ggplot(aes(x = log_gdp)) + 
+  geom_histogram()
+```
+
+```{r}
+co %>% 
+  ggplot(aes(x = prior_gdp)) + 
+  geom_histogram()
+```
+
+```{r}
+co %>% 
+  ggplot(aes(x = log_prior_gdp)) + 
+  geom_histogram()
+```
+
+```{r}
+co %>% 
+  ggplot(aes(x = log_prior_gdp, y = log_gdp)) + 
+  geom_point()
+```
+
+```{r}
+co %>% 
+  with(cor(log_gdp, log_prior_gdp))
+```
+
+## 4.5 Predicting GDP growth using night-time light emissions
+
+```{r}
+co <- co %>% 
+  mutate(gdp_change = (gdp - prior_gdp)/prior_gdp * 100) %>% 
+  mutate(light_change = (light - prior_light)/prior_light * 100)
+```
+
+```{r}
+co %>% 
+  ggplot(aes(x = gdp_change)) + 
+  geom_histogram()
+```
+
+```{r}
+co %>% 
+  ggplot(aes(x = light_change)) + 
+  geom_histogram()
+```
+
+```{r}
+co %>% 
+  ggplot(aes(x = light_change, y = gdp_change)) + 
+  geom_point()
+```
+
+```{r}
+co %>% 
+  with(cor(gdp_change, light_change))
+```
+
+## 4.6 Measuring how well the model fits the data with coefficient of determination, R\^2
+
+```{r}
+co %>% 
+  with(cor(gdp, prior_gdp)^2)
+
+co %>% 
+  with(cor(log_gdp, log_prior_gdp)^2)
+
+co %>% 
+  with(cor(gdp_change, light_change)^2)
+```
+
+# Chapter 5 Estimating causal effects with observational data
+
+## 5.3 The effect of Russian TV on Ukrainians' voting behavior
+
+
+```{r, eval = FALSE}
+uas <- read_csv("UA_survey.csv")
+```
+
+```{r, include = FALSE}
+uas <- read_csv(paste0(dir, "/", "UA_survey.csv"))
+```
+
+```{r}
+uas %>% head()
+uas %>% dim()
+```
+
+### 5.3.1 Using the simple linear model to compute the difference-in-means estimator
+
+```{r}
+mean0 <- uas %>% 
+  filter(russian_tv == 0) %>% 
+  with(mean(pro_russian_vote))
+mean1 <- uas %>% 
+  filter(russian_tv == 1) %>% 
+  with(mean(pro_russian_vote))
+
+mean1 - mean0
+```
+
+別解：
+
+```{r}
+uas %>% 
+  group_by(russian_tv) %>% 
+  summarize(mean = mean(pro_russian_vote)) %>% 
+  mutate(diff = mean - lag(mean))
+```
+
+### 5.3.2 Controlling for confounders using a multiple linear regression model
+
+```{r}
+uas %>% 
+  with(cor(within_25km, russian_tv))
+```
+
+```{r}
+uas %>% 
+  with(table(within_25km, russian_tv))
+```
+
+## 5.4 The effect of russian TV on Ukrainian electoral outcomes
+
+```{r, eval = FALSE}
+uap <- read_csv("UA_precincts.csv")
+```
+
+```{r, include = FALSE}
+uap <- read_csv(paste0(dir, "/","UA_precincts.csv"))
+```
+
+```{r}
+uap %>% head()
+uap %>% dim()
+```
+
+### 5.4.1 Using the simple linear model to compute the difference-in-means estimator
+
+```{r}
+uap <- uap %>% 
+  mutate(pro_russian_change = pro_russian - prior_pro_russian)
+```
+
+```{r}
+uap %>% 
+  ggplot(aes(x = pro_russian_change)) + 
+  geom_histogram()
+```
+
+```{r}
+uap %>% 
+  with(cor(within_25km, russian_tv))
+```
