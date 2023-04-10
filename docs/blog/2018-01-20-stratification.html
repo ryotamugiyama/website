@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Ryota Mugiyama">
+<meta name="dcterms.date" content="2018-02-06">
+
+<title>Ryota Mugiyama - 感想メモ：（階層）研究に必要なことは何か</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/website.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta name="twitter:title" content="Ryota Mugiyama - 感想メモ：（階層）研究に必要なことは何か">
+<meta name="twitter:description" content="私の好きな文章の1つに、盛山先生の以下の特集論文があります。">
+<meta name="twitter:creator" content="@RyotaMugiyama">
+<meta name="twitter:site" content="@RyotaMugiyama">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Ryota Mugiyama</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../lecture.html">
+ <span class="menu-text">Lecture</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../stata.html">
+ <span class="menu-text">Stata</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../r.html">
+ <span class="menu-text">R</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#はじめに" id="toc-はじめに" class="nav-link active" data-scroll-target="#はじめに">はじめに</a></li>
+  <li><a href="#理論的関心の欠如" id="toc-理論的関心の欠如" class="nav-link" data-scroll-target="#理論的関心の欠如">理論的関心の欠如</a></li>
+  <li><a href="#分析手法への耽溺" id="toc-分析手法への耽溺" class="nav-link" data-scroll-target="#分析手法への耽溺">分析手法への耽溺</a></li>
+  <li><a href="#データ分析を理論的に展開する弱さ" id="toc-データ分析を理論的に展開する弱さ" class="nav-link" data-scroll-target="#データ分析を理論的に展開する弱さ">データ分析を理論的に展開する弱さ</a></li>
+  <li><a href="#データ分析を通して何をするのか" id="toc-データ分析を通して何をするのか" class="nav-link" data-scroll-target="#データ分析を通して何をするのか">データ分析を通して何をするのか</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">感想メモ：（階層）研究に必要なことは何か</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">社会階層</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ryota Mugiyama </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 6, 2018</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="はじめに" class="level2">
+<h2 class="anchored" data-anchor-id="はじめに">はじめに</h2>
+<p>私の好きな文章の1つに、盛山先生の以下の特集論文があります。</p>
+<p>盛山和夫，1997，「<a href="https://doi.org/10.2333/jbhmk.24.1">階層研究と計量社会学</a>」『行動計量学』1–10．</p>
+<p>この論文自体は1995年SSM調査の成果報告の一環として組まれた特集に掲載されており、階層研究と計量分析との関係およびその展望を論じたものになっています。しかし、階層研究のみならず、ひろく社会学一般、あるいはその他の研究領域にも通じる内容となっていると思います。</p>
+<p>ここで提出されているのは、1997年頃という時代的な背景を踏まえて、「なぜ人びとが階級・階層に関心を失ったのか」という問いです（とはいえこれを検証することが本論文の目的ではありません）。本論文（以下、盛山（1997）と表記）では少なくとも研究者が階層研究に対する関心を低下させた理由として、階層研究の研究上の魅力を維持し増大させることに失敗してきたということにその一因を求めています。</p>
+<blockquote class="blockquote">
+<p>研究上の魅力というものは，学問的に探求すべき課題が提示されるしかたに関わっている．すなわち，<strong>課題がどの程度明確に定義されているか</strong>，<strong>その課題はどの程度意義深いものであるか</strong>，それは<strong>どんな広がりを持ちうるか</strong>，それは<strong>知的好奇心にどの程度訴えかけているか</strong>，そして，<strong>その探求はどの程度promisingであるか</strong>，などである．（盛山 1997: 5，太字は筆者による強調、以下の引用でも同じ）</p>
+</blockquote>
+<p>ここで、階層研究には、(1) 理論的関心の欠如、(2) 分析手法への耽溺、(3) データ分析を理論的に展開することの弱さ、という3つの過失があったと指摘しています。以下順番にみていきます。</p>
+</section>
+<section id="理論的関心の欠如" class="level2">
+<h2 class="anchored" data-anchor-id="理論的関心の欠如">理論的関心の欠如</h2>
+<p>第1の過失が、理論的な関心の欠如です。ここで盛山（1997）は、従来の研究では「階級」あるいは「階層」といった概念がいかなるものであるのかについての議論が不足していたことを指摘しています。</p>
+<blockquote class="blockquote">
+<p>たとえば，階層移動の時代的な変化の仕方や社会間での異同を「説明」しようとするなら，移動のメカニズムとそれを規定する要因に関してなんらかのモデルを構築しなければならない．そのモデルでは，階層とはどういうものであるかの理解がキーになるはずである．なぜなら，階層移動の時代的な変化の仕方は，たとえば血液型間移動（=父子間血液型遺伝）の時代的な変化の仕方とは当然異なるはずだからである．むろん，もしも問題にしている階層移動が実は職業移動であるならば，あらためて階層を定義する必要はないのだが，その場合でも<strong>職業階層の区分の仕方についてはある一定の理論的根拠を与えなければならない</strong>．なぜなら移動があるかないかはカテゴリーをどう区分するかによって大きく異なってくるものだからである．（盛山 1997: 5–6）</p>
+</blockquote>
+<p>ここでのポイントは、たんに概念をたんにこれまで伝統的に使われてきたという理由で天下り的に使うだけでは不十分であって、<strong>概念の設定それ自体、理論的な根拠・関心のもとで行われなければならない</strong>ということを意味していると思います。</p>
+</section>
+<section id="分析手法への耽溺" class="level2">
+<h2 class="anchored" data-anchor-id="分析手法への耽溺">分析手法への耽溺</h2>
+<p>第2の過失が、分析手法への耽溺です。階層研究に次々と新しい分析手法が導入されたことによって、それだけである程度十分に論文を書き研究を進めるインセンティブになり続けたということを指摘しています。</p>
+<p>とくに強調されているのが、パス解析（共分散構造分析）の功罪です。以下のように述べられています。</p>
+<blockquote class="blockquote">
+<p>周知のように，パス解析はそのもととなる重回帰分析と同じく「独立変数による従属変数の説明」という表現を用いる．（中略）多くの社会学者は，<strong>諸変数の間にパス・モデルを設定し，それにデータを当てはめて係数やその他の統計指標を算出すれば，それで「現象が説明された」と思い込んでしまった</strong>のである．（盛山 1997: 6）</p>
+<p>しかし，すべての計量モデルと同様，パス・モデルはそれ自体として理論的モデルでは毛頭ない．それは単に変数間のデータ上の統計的関係を一定の手続きにしたがって表示するだけである．パス解析における「説明」とは，たとえば「本人の職業的地位変数の分散の3%は，その学歴変数の分散によって説明される」というようなものであり，これは要するに決定係数ないしそれに類似した統計的指標が0.03であることを意味するだけである．それに対して，<strong>本当の理論的説明が求められているのは，「それはなぜ3%であって，0とか10%ではないのか」「それは時代が異なってもなぜ異ならないのか」という問題に答えることである</strong>．（盛山 1997: 6）</p>
+</blockquote>
+<p>この批判は、Hedström and Swedberg（1998）<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>などで展開された”variable sociology”““に対する批判と同型のものといえます。</p>
+</section>
+<section id="データ分析を理論的に展開する弱さ" class="level2">
+<h2 class="anchored" data-anchor-id="データ分析を理論的に展開する弱さ">データ分析を理論的に展開する弱さ</h2>
+<p>以上と関連する論点となっていますが、第3の過失として、実証分析と理論研究の乖離が指摘されます。社会学の場合はとくに理論モデルが発達していないため、データ分析がそれだけで終わってしまう傾向が強いといいます。</p>
+<p>盛山（1997）では明確に書かれていないですが、ここで「データ分析を理論的に展開する」とはおそらく、理論的な根拠のもとでデータの分析を行うこと、そして、データの分析の結果に対して理論的に整合的な解釈を与える（あるいは、それを説明できる理論を構築する／理論を修正する）こと、を意味していると思います。</p>
+<blockquote class="blockquote">
+<p>データ分析それ自体が研究として認められるという側面は，その要因として決して小さくはないだろう．しかし，恐らくこれだけではない．より重要だと思われるのは，<strong>「データ分析の結果が明らかにするデータの構造は，つねに，それを説明する理論を求めているのだ」というデータと理論との関係</strong>（盛山・近藤・岩永，1992）についての認識の欠如である．より正確に言えば，そのとき求められている理論の性能についての誤解である．</p>
+<p>理論に求められている性能とは，革新的で，データ分析の結果に対して新しい視点を提供し，他の諸事実との整合性も十分に高いことを予想させるだけのもっともらしさをもち，しかも，新しい探求を思いつかせ促進していくような刺激性と深みにみちたものである．創造的な発見の再生産こそが，研究が豊かに進展していくための条件である．（盛山 1997: 7–8）</p>
+</blockquote>
+</section>
+<section id="データ分析を通して何をするのか" class="level2">
+<h2 class="anchored" data-anchor-id="データ分析を通して何をするのか">データ分析を通して何をするのか</h2>
+<p>ここからは自分の感想になりますが、「データ分析を理論的に展開する」といったとき、これと対照的な態度が、ただたんにデータがあるから分析する、新しい分析手法が導入されたから分析する、日本ではこの分析はまだやられていないから分析する（少なくともそう見える）、というようなものに当たると思います。もちろん分析の発端としてそういう始まりかたもあるかもしれませんが、最終的なアウトプットがそこから抜け出せないというのではいけないということです。</p>
+<p>理論的な関心と結びつけたデータ分析を展開しようと考えたときに重要だと思うのは、常に<strong>今やっているデータ分析は（より抽象的で、より理論的な）何を明らかにするために行っているのか、そしてその課題はいかなる意味で解くに値する重要な課題であるのか</strong>、ということを意識することなのかなあと考えています。言い換えれば、データの分析が目的ではなく、手段であるということを意識することが重要ではないかと思います。</p>
+<p>結局これをどれだけ深く考えたかが、論文の重要性やインパクトを高め（具体的には序論部や結論部のインパクトを高め）ていくような気がします。</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://www.cambridge.org/core/books/social-mechanisms/F54BB7A4A77F7308D5FEA7D9C0EAD086">Hedström, P., &amp; Swedberg, R. (Eds.). (1998). Social Mechanisms: An Analytical Approach to Social Theory. Cambridge: Cambridge University Press.</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

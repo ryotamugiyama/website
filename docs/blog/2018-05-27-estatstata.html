@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Ryota Mugiyama">
+<meta name="dcterms.date" content="2018-05-27">
+
+<title>Ryota Mugiyama - Stataで完全失業率の推移を作図する手順</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/website.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta name="twitter:title" content="Ryota Mugiyama - Stataで完全失業率の推移を作図する手順">
+<meta name="twitter:description" content="公表されている官庁統計から何らかの作図をするという機会はよくあると思います。">
+<meta name="twitter:creator" content="@RyotaMugiyama">
+<meta name="twitter:site" content="@RyotaMugiyama">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Ryota Mugiyama</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../lecture.html">
+ <span class="menu-text">Lecture</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../stata.html">
+ <span class="menu-text">Stata</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../r.html">
+ <span class="menu-text">R</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#はじめに" id="toc-はじめに" class="nav-link active" data-scroll-target="#はじめに">はじめに</a></li>
+  <li><a href="#目的を決める" id="toc-目的を決める" class="nav-link" data-scroll-target="#目的を決める">目的を決める</a></li>
+  <li><a href="#公表集計を探す" id="toc-公表集計を探す" class="nav-link" data-scroll-target="#公表集計を探す">公表集計を探す</a></li>
+  <li><a href="#stata上でデータを加工する" id="toc-stata上でデータを加工する" class="nav-link" data-scroll-target="#stata上でデータを加工する">Stata上でデータを加工する</a>
+  <ul class="collapse">
+  <li><a href="#データの前処理" id="toc-データの前処理" class="nav-link" data-scroll-target="#データの前処理">データの前処理</a></li>
+  <li><a href="#グラフを作る" id="toc-グラフを作る" class="nav-link" data-scroll-target="#グラフを作る">グラフを作る</a></li>
+  </ul></li>
+  <li><a href="#おわりに" id="toc-おわりに" class="nav-link" data-scroll-target="#おわりに">おわりに</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Stataで完全失業率の推移を作図する手順</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">計量分析</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ryota Mugiyama </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 27, 2018</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="はじめに" class="level2">
+<h2 class="anchored" data-anchor-id="はじめに">はじめに</h2>
+<p>公表されている官庁統計から何らかの作図をするという機会はよくあると思います。</p>
+<p>このとき最もポピュラーなのはエクセル上で作図するという方法です。しかし、エクセルでの手作業でなく、統計ソフトを介して作図するほうが良い点がいくつかあります。</p>
+<ol type="1">
+<li><p>作図に際してコードを書くため、似たような図を作る際に使いまわしができる。</p></li>
+<li><p>年次データが更新されても、若干の修正ですぐに対応できる。</p></li>
+<li><p>データが複雑であるほど、手作業で加工するとミスが生じる危険性が高くなる。しかし、コードを書いてデータを加工することで、どのような作業を介したのかの記録を残すことができる。</p></li>
+</ol>
+<p>そこでここでは、完全失業率の年次推移を例に統計ソフトStataを使用して作図する手順についてメモしておきます。これはもともとのデータが比較的きれいでやることも単純なのでコードも単純ですが、データの構造によってはもっと工夫が必要になってきます。とはいえ基本的な部分は共通しています。もちろんここで上げたのはあくまで一例で、やり方としてもっと効率のいい方法があるかもしれないです。</p>
+</section>
+<section id="目的を決める" class="level2">
+<h2 class="anchored" data-anchor-id="目的を決める">目的を決める</h2>
+<p>日本における完全失業率の長期的な推移を知りたい。</p>
+</section>
+<section id="公表集計を探す" class="level2">
+<h2 class="anchored" data-anchor-id="公表集計を探す">公表集計を探す</h2>
+<p>お目当ての表をE-statなどを使って探す。完全失業率については、<a href="http://www.stat.go.jp/data/roudou/longtime/03roudou.html">労働力調査の長期時系列データ</a>が利用できそう。今回は年齢階級の別にはこだわらないことと、月レベルの変化はさほど重要ではないと考えて、「<strong>表2 就業状態別15歳以上人口（労働力人口，就業者数，完全失業者数，非労働力人口，労働力人口比率，就業率，完全失業率など）（1953年〜）</strong>」を使う。</p>
+</section>
+<section id="stata上でデータを加工する" class="level2">
+<h2 class="anchored" data-anchor-id="stata上でデータを加工する">Stata上でデータを加工する</h2>
+<section id="データの前処理" class="level3">
+<h3 class="anchored" data-anchor-id="データの前処理">データの前処理</h3>
+<p>ダウンロードした表を適当なフォルダに置いておき、データを読み込む。import excel ""の""の部分に使うデータのパス名を入れる。sheet()の部分は読み込みたいデータが入っているシートの名前を指定する<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>import excel <span class="st">"/Users/RyotaMugiyama/Desktop/lt02.xls"</span>, sheet(<span class="st">"長期02"</span>) <span class="kw">clear</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>GUIで操作する場合は、<strong>File &gt; Import &gt; Excel Spreadsheet (*.xls; *.xlsx)</strong>と選んでファイルを指定する。</p>
+<p>つぎに、読み込んだデータを見て、必要な列を除き他の列を削除する（やらなくてもいいけど、そのほうが見やすい）。</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>***読み込んだデータを見る。</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>browse</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>***使用する列（今回は西暦を示すB列、全体の失業率を示すM列、男性失業率を示すX列、女性失業率を示すAI列）のみを残し、他を削除する。</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">keep</span> B M X AI</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>*** それぞれ適当な名前をつける。</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="kw">rename</span> B Year</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="kw">rename</span> M UnemploymentRateTotal</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="kw">rename</span> X UnemploymentRateMale</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="kw">rename</span> AI UnemploymentRateFemale</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>次に不要な行を削除する。</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>*** 行を削除する際の目印として使う変数を作る。</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">gen</span> <span class="ot">row</span> = <span class="dt">_n</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>*** 文字列や空白が入っている部分を削除。</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">drop</span> <span class="kw">if</span> <span class="ot">row</span> &lt;= 10</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>*** 1973年は沖縄を含む値と含まない値の両方が入っているため、含まない値のほうを削除。</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="kw">drop</span> <span class="kw">if</span> <span class="ot">row</span> == 31 </span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>*** 処理の途中で残った空白部分を削除。</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="kw">drop</span> <span class="kw">if</span> <span class="ot">row</span> &gt;= 77</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>もともとのデータで文字列が入っていた列については読み込みの際にstring変数として認識されており、このままでは数値として図を作ったりすることができない。そこで、destringという関数を使って変数を数値として認識させる。特定の変数だけを数値に変換したい場合にはdestringの後ろに変数名を記述する。書かない場合は、すべての変数を数値に変換してくれる。</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">destring</span>, <span class="kw">replace</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>なお列のなかに数字でない文字が残っている場合はうまくいかないので、文字を数字に置き換えておくか、カンマの後ろにforceと書くとその部分は欠損値（.）にしたうえで数字に書き換えてくれる。</p>
+</section>
+<section id="グラフを作る" class="level3">
+<h3 class="anchored" data-anchor-id="グラフを作る">グラフを作る</h3>
+<p>これで準備はととのったので、後は図を出力するだけ。たとえばこんなふうな感じ。</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> <span class="co">///</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>(<span class="kw">line</span> UnemploymentRateMale Year, lc(<span class="bn">navy</span>) lp(solid) ) <span class="co">///</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>(<span class="kw">line</span> UnemploymentRateFemale Year, lc(<span class="bn">cranberry</span>) lp(<span class="kw">dash</span>) ) <span class="co">///</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>,<span class="bn">xtitle</span>(<span class="st">"年次"</span>) <span class="bn">ytitle</span>(<span class="st">"完全失業率（%）"</span>) <span class="dv">scheme</span>(s1mono) <span class="co">///</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="kw">ylabel</span>(0(1)6, <span class="bn">grid</span>) <span class="kw">xlabel</span>(1950(10)2010, <span class="bn">grid</span>) <span class="co">///</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bn">legend</span>(<span class="fu">r</span>(1) <span class="kw">label</span>(1 <span class="st">"男性"</span>) <span class="kw">label</span>(2 <span class="st">"女性"</span>)) <span class="kw">scale</span>(1.2)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>*** 結果を出力。拡張子は.pdfや.pngが使える。</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"/Users/RyotaMugiyama/Desktop/unemploymentratemalefemale.pdf"</span>, <span class="kw">replace</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="images/unemploymentrate-1024x745.png" class="img-fluid"></p>
+<p>ここではグラフの書き方について詳しく解説はしないが、Stataでのグラフの作り方はこの本が参考になる。</p>
+<p>Mitchell, Michael N. 2012. <a href="http://www.amazon.co.jp/exec/obidos/ASIN/1597181064/ryotamugiyama/ref=nosim/">A Visual Guide to Stata Graphics, Third Edition</a>. Stata Press.</p>
+<p>もう一つ具体例。</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">pwcorr</span> UnemploymentRateFemale UnemploymentRateMale</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>***相関係数をみると0.986らしい。これを書き込んだ散布図を作ってみる。</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> <span class="co">///</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>(<span class="kw">scatter</span> UnemploymentRateFemale UnemploymentRateMale ) <span class="co">///</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>,<span class="dv">scheme</span>(s1mono) <span class="bn">xtitle</span>(<span class="st">"男性完全失業率"</span>) <span class="bn">ytitle</span>(<span class="st">"女性完全失業率"</span>) <span class="co">///</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="kw">ylabel</span>(0(1)6, <span class="bn">grid</span>) <span class="kw">xlabel</span>(0(1)6, <span class="bn">grid</span>) <span class="co">///</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="bn">text</span>(5.5 1 <span class="st">"Corr = .986"</span>) <span class="kw">scale</span>(1.2) </span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"/Users/RyotaMugiyama/Desktop/unemploymentratecorr.pdf"</span>,<span class="kw">replace</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="images/unemploymentratecorr-1024x745.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="おわりに" class="level2">
+<h2 class="anchored" data-anchor-id="おわりに">おわりに</h2>
+<p>今回は官庁統計の加工のなかでもかなりシンプルな例を扱ったのですが、より複雑な表だと、比率や合計の計算（egen）や横から縦への組み換え（reshape long）などのコマンドを使う機会も出てきます。そうした場合については、今後また時間があったら書こうと思います。</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>今は例なのでユーザー名は架空です。またデスクトップにエクセルファイルを置いていますが、これも説明のためなので、くれぐれも真似しないでください……<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

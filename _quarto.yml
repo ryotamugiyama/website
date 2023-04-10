@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "Ryota Mugiyama"
@@ -12,6 +13,7 @@ website:
       - stata.qmd
       - r.qmd
       - blog.qmd
+  favicon: images/website.jpg
   twitter-card:
     creator: "@RyotaMugiyama"
     site: "@RyotaMugiyama"

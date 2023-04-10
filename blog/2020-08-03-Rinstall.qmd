@@ -1,0 +1,101 @@
+---
+title: "RとRStudioをインストールするときのつまづきポイントとその対処法へのリンク"
+author: "Ryota Mugiyama"
+date: "2020-08-03"
+categories: "R"
+---
+
+RおよびRStudioのインストールで困ったときの対処法についてのリンクをまとめました。
+
+## はじめに
+
+今年度前期は量的データ解析法という統計的推測についての授業を担当しました。自分の授業では講義に加えて、RおよびRStudioを使った演習を交えた形式で行いました。
+
+新型コロナウイルス感染症の影響で授業はリモートで行われることになったため、受講生には自身でRおよびRStudioのインストールを行うように指示しました。もちろん、スムーズにインストールできた学生だけではなく、インストールに際してひっかかってしまったという学生も少なくなかったです。幸い、そうしたインストールのエラーについてはメールでスクリーンショットを送ってもらったりしていたため、だいたいどういうエラーでひっかかるのかをリストアップすることができました。
+
+Rのインストールに関してはたくさんの先達がエラーへの対処法を示してくれているので、この記事では主としてそうしたページへのリンクを列挙していきます。しかし、それをリストしたものは見当たらなかったので、そうしたリストがあると役に立つこともあるのかなと思ってリストを作成しました。授業などでRおよびRStudioの使用を予定している方や、RやRStudioのインストールで引っかかってしまった方のお役に立てば幸いです。
+
+## もっとも包括的なインストール解説記事（2021/4/16追加）
+
+[RとRStudioのインストール方法の解説](https://yukiyanai.github.io/jp/resources/)
+
+非常に丁寧な資料で、基本的にこの記事に書かれているとおりにやれば以下のようなひっかかりポイントはクリアできると思います。
+
+## RおよびRStudioのインストール方法
+
+### Windowsユーザ向け
+
+-   [R言語インストール(2020年 Windows)](https://qiita.com/FukuharaYohei/items/8e0ddd0af11132031355) \*ただインストールするだけであれば、「3. 起動とパッケージインストール」以降の作業はしなくてよい
+
+-   [RStudioインストール(2020年 Windows)](https://qiita.com/FukuharaYohei/items/3468bd2a6b2f07b8963e)
+
+### Macユーザ向け
+
+-   [R と R Studioのインストール](https://qiita.com/hujuu/items/ddd66ae8e6f3f989f2c0)
+
+## 日本語ユーザー名で起こるトラブル
+
+このトラブルは、まったくパッケージをインストールせずにRStudioを使っていると気づかないが、ではグラフを書いてみましょう、といって`install.packages("ggplot2")`や`install.packages("tidyverse")`を実行しようとするとエラーが出てしまう。この場合よくある原因は、パスに日本語が含まれていることである。いったんRとRStudioをアンインストールして、以下の手順で半角英数のみからなるユーザーを作成する。
+
+-   [【R】日本語のユーザー名でRを使う方法](https://clean-copy-of-onenote.hatenablog.com/entry/R_japanese_username)
+
+\* 日本語ユーザー名に非常に強いこだわりがある、もしくはユーザーを新たに作成することが困難だ、という事情がなければ、「解決方法1」のほうがよさそう。こちらを参照し、あらたにRとRStudioをインストールする。
+
+## Onedrive上にインストールすることで起こるトラブル
+
+### デフォルトでOnedrive上にインストールされる
+
+ユーザー名が日本語でなくても油断できない。Windows 10ではアプリケーションのデフォルトでのインストール先がonedriveに設定されていることがあり、何も考えずにここにインストールしてしまうと、パッケージがインストールできないことがある。
+
+-   [Windows R ドツボりメモ](https://qiita.com/mokab/items/375b81e891c55a3b7784)
+
+対処としては、いったんRとRStudioをアンインストールし、以下のページをみて、Onedriveでない場所（ローカル）にRとRStudioをインストールする。
+
+-   [R初心者の館（RとRStudioのインストール、初期設定、基本的な記法など）](https://das-kino.hatenablog.com/entry/2019/11/07/125044)
+
+### .libPaths()がOnedriveを参照している
+
+パッケージはインストールできるが、`library()`しても読み込めない！ということがある。これは、ライブラリを置くフォルダがOnedrive上にあったりあるいは以前インストールしたときのものが残っていたりして悪さをしている可能性がある。このような場合には、`.libPaths()`でライブラリのインストール先を変更するという方法もある。
+
+-   [Rでinstall.packagesするとonedriveにインストールされてしまう](https://teratail.com/questions/268239)
+
+それと、Onedriveの同期を切るとうまく動いたりするようだ。ただ、RStudioを使うたびにいちいちOnedriveの同期を切ったりつけたりするのはとても面倒だと思うので、それならば最初からOnedrive上ではない場所にRおよびRStudioをインストールするほうがよい。
+
+## 管理者権限の問題
+
+`install.packages()`しようとすると`lib = "C:/Program Files/R/R-x.y.z/library" is not writable`というような警告が現れ、インストールできないことがある。おそらく症状はこれ <https://teratail.com/questions/65283> だと思われる。以下のページにしたがって、RStudioを常に管理者権限で実行できるように設定を変更する。
+
+-   [アプリケーションを常に管理者として実行させる方法(Windows10編)](http://www.ken-system.co.jp/support/%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E5%B8%B8%E3%81%AB%E7%AE%A1%E7%90%86%E8%80%85%E3%81%A8%E3%81%97%E3%81%A6%E5%AE%9F%E8%A1%8C%E3%81%95%E3%81%9B%E3%82%8B-2/)
+
+## Rtoolsがインストールされていない
+
+`install.packages()`しようとすると
+
+    WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+
+という警告が出てパッケージをインストールできないことがある。とにかく言われたとおりにRtoolsをインストールする。
+
+-   [Using Rtools40 on Windows](https://cran.r-project.org/bin/windows/Rtools/)
+
+## 「コマンドが実行できない」系
+
+これはインストールに関係ないが、備忘録として今回出会ったもの、昨年度出会ったものを列挙する（いずれも「よくある」ミス）。
+
+-   オブジェクトが存在しない\
+    `hist(x)`としてもヒストグラムがでない→そもそも`x`がないのでは？
+
+-   コマンドのつづり間違い
+
+-   オブジェクトのつづり間違い
+
+-   コマンドにカーソル合わせてEnterしても実行できない→コマンドの実行はEnterではなくCtrl + Enter (Windows) または Command + Enter (Mac)。
+
+-   `df <- readr::read_csv("data.csv")`でデータが読み込めない\
+    →そもそもプロジェクトのフォルダに`"data.csv"`が入っていない。
+
+-   `%>%`処理ができない、`ggplot()`が出ない\
+    →`library(tidyverse)`または`library(dplyr)`または`library(ggplot2)`の実行し忘れ。
+
+-   全角スペース
+
+-   括弧をすべて閉じていない

@@ -1,0 +1,93 @@
+---
+title: "Notes"
+---
+
+主に計量分析の手法やプログラムに関するメモをアップロードしていく予定です。
+
+## [決定係数の要因分解](notes/DecomposingRsquared.html)
+
+決定係数は(1) 独立変数の限界効果、 (2) 独立変数の分散および共分散、(3) 従属変数の分散、の3つの要因に左右されます。2つの異なるサンプル間の決定係数の違いが何によって生じているかを考えたいときには、要因分解の方法が有用です。そこで要因分解の式を考えました。
+
+資料中の方法を再現するStataコード：
+
+``` stata
+sysuse auto, clear
+
+gen y = mpg
+
+*** Estimate linear regression for non-foreign cars.
+reg y price weight if foreign == 0
+predict yhat0
+
+*** Estimate linear regression for foreign cars.
+reg y price weight if foreign == 1
+predict yhat1
+
+collapse (sd) y yhat1 yhat0, by(foreign)
+
+*** Generate variance of y.
+replace y = y^2
+
+forvalues i = 0/1{
+    replace yhat`i' = yhat`i'^2
+    gen rsq`i' = yhat`i' / y
+    rename yhat`i' yhat_`i'x_
+    rename rsq`i' rsq`i'x_
+}
+
+gen id = 1
+reshape wide y* rsq*, i(id) j(foreign)
+
+*** Observed R-squared for sample 0 and sample 1.
+gen obsrsq0 = rsq0x_0
+gen obsrsq1 = rsq1x_1
+
+*** comp1: structural change.
+gen comp1 = ln(yhat_1x_1) - ln(yhat_0x_1)
+
+*** comp2: change in independent variables.
+gen comp2 = ln(yhat_0x_1) - ln(yhat_0x_0)
+
+*** comp3: change in dependent variable.
+gen comp3 = ln(y0) - ln(y1)
+
+*** Check: sum of comps is the same with log of observed R-sq?
+gen logrsq = ln(rsq1x_1 / rsq0x_0)
+gen sumcomp = comp1 + comp2 + comp3
+
+tabstat logrsq sumcomp comp1 comp2 comp3
+```
+
+（2019/9/6→2022/09/19移行）
+
+## [相関係数と散布図](notes/corr_scatter.html)
+
+Rの練習の一環で、よく教科書に載っている「相関係数が◯◯のときの散布図」をRで作る際のスクリプトを書きました。リンクはこちら。
+
+（2018/3/4 upload, 2018/3/9 revised→2022/09/19移行）
+
+## [階層ベイズモデルを実装する](notes/hierarchicalbeyes.html)
+
+「岩波データサイエンスをざっくり読む会」第2回で使用する発表資料です。マルチレベルモデルの基礎と、これをベイズで推定するための方法を解説しています。RおよびRstanを使用しています。まだ途中ですが、ひとまずアップロードしています。
+
+（2017/9/25 upload→2022/09/16移行）
+
+## [固定効果モデルに2乗項を投入する](notes/squareterm_fe.html)
+
+固定効果モデルに2乗項を投入することをどのように考えればいいのか、ということについてのメモです。
+
+（2017/11/20 upload→2022/09/16移行）
+
+## [イベントヒストリー分析のためのデータ加工とモデル選択](notes/eventhistory.pdf)
+
+イベントヒストリー分析のために必要なデータの形式とその加工の方法、分析の際に考慮すべきことについて、具体的な手順（パーソン・ピリオドデータの作成とモデルの選択）を紹介しています。2016年1月9日の計量研究会にて発表いたしました。数式やシンタックスについて、間違いや非効率的な部分などがあるかもしれませんが、ご了承ください。
+
+（2016/01/09 upload, 2016/02/09 コードに若干ミスがあったのを修正→2022/09/19移行）
+
+## [社会学のための統計分析基礎：SPSSを用いて](notes/2016-05-17TA_SPSS2.pdf)
+
+所属研究室にて、社会調査実習という学部生・院生向けの授業のTAを担当しています。5/17の授業にて、統計分析の基礎についての授業を担当した際に用いた資料です。SPSSを使って、データハンドリングの仕方、1変量分布・2変量関連の検討の仕方について解説しています。推測統計の話はあえて行っていません。 （2016/05/19 upload） （2016/05/27 p.27についてご指摘頂いたので修正。ありがとうございました。）
+
+[第2弾](notes/2016-11-08TA_SPSS2.pdf)をアップロードしました。推測統計、2変量関連、多変量解析の考え方と回帰分析の基礎について解説しています。（2016/11/08）
+
+（→2022/09/19移行）

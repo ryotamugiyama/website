@@ -1,0 +1,62 @@
+---
+title: "Job (in)stability or job (in)security?：「安定性」の使い分けに関するメモ）"
+author: "Ryota Mugiyama"
+date: "2018-02-06"
+categories: "社会階層"
+---
+
+## Job stabilityとJob securityは違う？
+
+先日この本を読んでいたところ、興味深い記述をみつけた。
+
+Neumark, David eds. 2001. [On the Job: Is Long-Term Employment a Thing of the Past?](http://www.amazon.co.jp/exec/obidos/ASIN/0871546183/ryotamugiyama/ref=nosim/) Russell Sage Foundation.
+
+> ... "J(j)ob stability," meaning the duration of jobs or the probability of retaining or leaving a job; and "job security," referring to the likelihood of experiencing involuntary job loss. (p.1)
+>
+> 筆者訳：「**仕事の安定性**」、これは**仕事に就いている期間の長さやそれを維持する確率、あるいは仕事を離れる確率**を意味する。そして「**仕事の安心性**」、**これは非自発的に仕事を失うことを経験する見込み**を意味する。
+
+英和辞書でその意味を調べると、"stability"は「安全性」とか「確実性」、"security"は「安全」とか「安心」といった意味が出てくる。なので、"job stability"あるいは"job security"といったときには、「仕事があるていど定まっていること」、言い換えれば「仕事が転々と変わるわけではないこと」を指すものとして、どちらも同じニュアンスで用いられているのかと思っていた。
+
+しかし上記の書き分けを見る限り、両者はかなり違う意味で用いられているようだ[^1]。そしてそれは、**単純に異なる経験的な現象に対して異なる名前がつけられたということを越えて、規範的な意味の違いをも含意している**ように思えた。
+
+[^1]: この本は2001年に複数名の労働経済学者によって書かれた本であることから、少なくとも当時のアメリカの労働経済学者にとってはある程度共有された認識なのではないかと判断できる。しかし社会学や他のヨーロッパ諸国ではどの程度共有されているのかは分からない。
+
+そこで今回は、この両者の違いについての自分なりの理解をメモとして残しておく。ここでは"**job stability**"を「**仕事の安定性**」、"**job security**"を「**仕事の安心性**」ととりあえず訳しておいた[^2]。
+
+[^2]: 「安心性」というのはあまりこなれた日本語ではないと思うが、あとで確認する通り、stabilityとsecurityの大きな違いは、そこになんらかの価値判断が含まれているかどうかという点にあると思われる。基本的には安心は不安よりも望ましいと考えてよいだろうから、ここではこの語を採用している。
+
+## Job stabilityの意味
+
+"job stability"は単純にjobが頻繁に変わらないということを意味しており、**それ自体にはあまり価値判断が含まれていない**と読むことができると思われる。たとえば、そこそこ安定した事務の仕事にずっと就いているというのは「job stabilityが高い = job instabilityが低い」こととなるが、賃金の低い単純労務にずっと従事し続けるというのも「job stabilityが高い = job instabilityが低い」となる。
+
+他方で、事業が何度も失敗して、その都度仕事を変えざるを得ないというのは「job instabilityが高い = job stabilityが低い」こととなるが、たびたび別の会社からヘッドハンティングされ、どんどん給与の高い仕事に移動していくというのも「job instabilityが高い = job stabilityが低い」となる。
+
+ある人にとって"job stability"が好ましいかどうかは、その人によって異なる。しかし**集団レベルでみてこれが好ましくないかどうかというのは別の分析を行ったり、あるいはそうした分析を行った研究を参照することで、ある程度判定することができるだろう**。たとえば、雇い主が頻繁に仕事を変えている者をあまり採用したがらず、その結果頻繁に仕事を変えている人びとが（あまり変えていない人とくらべても職務能力にあまり違いがないにもかかわらず）よい仕事に就きにくい、という関係がある場合には、"job instability"は好ましくない事態といえるだろう。
+
+## Job securityの意味
+
+一方で"job security"は、jobが頻繁に変わらず、**かつ変わらないのが好ましいことである、という価値判断を含んでいる**と読むことができそうだ。先の引用にあるとおり、"experiencing involuntary job loss"（「非自発的に仕事を失うことを経験する」）というのは基本的にあまり好ましくないことだろう。非自発的に、というのは、たとえば本人の責によらない解雇とか契約打ち切り・雇い止め、あるいは会社の倒産などがこれに含まれる。
+
+たとえば、非正規雇用者の仕事が"insecure"だ、といったときには、"instable"というときよりも、その仕事を続けにくいというだけでなく、非自発的にその仕事が打ち切られることがありそしてそれが望ましくないという価値判断が含まれることとなる。
+
+一方で、価値判断を含むことなく、**単純に同じ仕事を続ける期間が短くなったとか、仕事を離れる率が高くなったとか、そういう主張をしたい場合には"stable"という単語を使うと良さそう**だ。
+
+このような例として、今回の文脈からは若干ずれるが、"marital instability"という単語が論文ではよく使われる。これは離婚など婚姻関係の解消を指すときに使われる単語だが、"marital insecurity"としてしまうと、離婚が望ましくないとか、何らかの不慮の理由によって離婚してしまう、というような事態を指すことになってしまう。このような場合は、"marital instability"を使うのがいいだろう[^3]。
+
+[^3]: 実際Googleで検索してみると、"marital instability"は約65800件のヒットがあるが、"marital insecurity"は約660件とほとんどヒットしない。
+
+## 両者の使い分け
+
+Mendeleyで手持ちの論文を"job instability"とか"job insecurity"で検索してみると、"job instability"（あるいは"employment instability"）という単語は、変数の定義であるとか分析結果であるとか、より客観的な記述が求められる部分で使われる傾向が強く、"job insecurity"（あるいは"employment insecurity"）は序論部や結論部のようなより大きな議論のところで使われる場面が多かった。
+
+もし自分でこれらの単語を使う機会があれば、注意したい。
+
+## Job (in)stability / (in)security に関する最近のレビュー論文
+
+一応このあたりのトピックを扱っているレビュー論文をいくつか挙げておいた。今度読み直します。
+
+Hollister, Matissa. 2011. "Employment Stability in the U.S. Labor Market: Rhetoric versus Reality." *Annual Review of Sociology* 37(1):305--24.
+
+Western, Bruce, Deirdre Bloome, Benjamin Sosnaud, and Laura Tach. 2012. "Economic Insecurity and Social Stratification." *Annual Review of Sociology* 38(1):341--59.
+
+Brand, Jennie E. 2015. "The Far-Reaching Impact of Job Loss and Unemployment." *Annual Review of Sociology* 41(1):359--75.

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Ryota Mugiyama - Blog</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="styles.css">
+<meta name="twitter:title" content="Ryota Mugiyama - Blog">
+<meta name="twitter:creator" content="@RyotaMugiyama">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Ryota Mugiyama</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html">Research</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./lecture.html">Lecture</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./stata.html">Stata</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./r.html">R</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./blog.html" aria-current="page">Blog</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Blog</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1665283504441" data-listing-reading-time-sort="0.005">
+<div class="thumbnail">
+<a href="./blog/2019-04-26-gakushinPD.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./blog/2019-04-26-gakushinPD.html"></a></p>
+</div>
+<div class="body">
+<a href="./blog/2019-04-26-gakushinPD.html">
+<h3 class="no-anchor listing-title">
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/2019-04-26-gakushinPD.html"> </a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="授業関連" data-listing-date-sort="1660834800000" data-listing-file-modified-sort="1663634291471" data-listing-reading-time-sort="0.435">
+<div class="thumbnail">
+<a href="./blog/2022-08-19-report.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./blog/2022-08-19-report.html"></a></p>
+</div>
+<div class="body">
+<a href="./blog/2022-08-19-report.html">
+<h3 class="no-anchor listing-title">
+学生向け：レポートでやるべき（でない）こと
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+教員になって授業を担当するようになってから毎学期150〜200本くらいのレポートを読んでいるが、そこでいろいろとレポートを見ていると、レポートの基礎が押さえられていないと思うレポートにしばしば出会う。レポートの型というのは多かれ少なかれ決まっており、型にしたがって書くことで（多少のほころびがあったとしても）きちんとしたレポートを作ることができる。
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/2022-08-19-report.html">
+<div class="listing-date">
+Aug 19, 2022
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="R" data-listing-date-sort="1645974000000" data-listing-file-modified-sort="1663635638695" data-listing-reading-time-sort="0.09">
+<div class="thumbnail">
+<p><a href="./blog/2022-02-28-R.html"> <img src="./blog/images/スクリーンショット-2022-02-28-9.43.22-1024x348-01.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./blog/2022-02-28-R.html">
+<h3 class="no-anchor listing-title">
+Rによる社会調査データ分析の手引き
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+今年度一年間のゼミ、およびそれ以前の授業などを経て、社会学の実証研究論文を書くうえでどのようなことを教えたらよいのか、どのようなところで学生がつまづきやすいのかといった経験が蓄積されてきました。これを踏まえて、来年度以降のゼミなどで使用するための資料を作成しました。せっかくですので、こちらを公開したいと思います。
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/2022-02-28-R.html">
+<div class="listing-date">
+Feb 28, 2022
+</div>
+<div class="listing-author">
+Ryota Mugiyama
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="授業関連" data-listing-date-sort="1640617200000" data-listing-file-modified-sort="1663635738906" data-listing-reading-time-sort="0.145">
+<div class="thumbnail">
+<a href="./blog/2021-12-28-introductory.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./blog/2021-12-28-introductory.html"></a></p>
+</div>
+<div class="body">
+<a href="./blog/2021-12-28-introductory.html">
+<h3 class="no-anchor listing-title">
+初年次ゼミで何をする（した）のか：その2
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+今学期も先学期に引き続き、基礎演習という、おおむね初年次教育に該当する内容を扱う必修科目を担当した。しかし、自分はあまりまともな初年次教育なるものを受けた記憶がなく（きっとまじめに授業を受けていなかったのだろう）、いざやってくださいと言われてなかなか困ってしまった。そこで、どのようなことをやったのか、およびそれらがどの程度うまくいった（いかなかった）のかについて記しておくことで、今後の自分、および似たような状況にあるかもしれない人のために、タイトルのとおり、初年次ゼミでやったことについてのメモを残しておくことにする。
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/2021-12-28-introductory.html">
+<div class="listing-date">
+Dec 28, 2021
+</div>
+<div class="listing-author">
+Ryota Mugiyama
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="授業関連" data-listing-date-sort="1626534000000" data-listing-file-modified-sort="1663636956477" data-listing-reading-time-sort="0.495">
+<div class="thumbnail">
+<a href="./blog/2021-07-18-introductory.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./blog/2021-07-18-introductory.html"></a></p>
+</div>
+<div class="body">
+<a href="./blog/2021-07-18-introductory.html">
+<h3 class="no-anchor listing-title">
+初年次ゼミで何をする（した）のか
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+所属が変わって早くも3ヶ月半が経ち、もうすぐ1学期が終わりそうな気配だ。今学期の前半は慣れないことや授業準備、プライベートで忙しくてんてこまいだったけど、7月ころからようやく落ち着いてきた。
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/2021-07-18-introductory.html">
+<div class="listing-date">
+Jul 18, 2021
+</div>
+<div class="listing-author">
+Ryota Mugiyama
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="R" data-listing-date-sort="1596380400000" data-listing-file-modified-sort="1663637346885" data-listing-reading-time-sort="0.67">
+<div class="thumbnail">
+<a href="./blog/2020-08-03-Rinstall.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./blog/2020-08-03-Rinstall.html"></a></p>
+</div>
+<div class="body">
+<a href="./blog/2020-08-03-Rinstall.html">
+<h3 class="no-anchor listing-title">
+RとRStudioをインストールするときのつまづきポイントとその対処法へのリンク
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+RおよびRStudioのインストールで困ったときの対処法についてのリンクをまとめました。
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/2020-08-03-Rinstall.html">
+<div class="listing-date">
+Aug 3, 2020
+</div>
+<div class="listing-author">
+Ryota Mugiyama
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="社会階層" data-listing-date-sort="1585062000000" data-listing-file-modified-sort="1663739739551" data-listing-reading-time-sort="0.01">
+<div class="thumbnail">
+<a href="./blog/2020-03-25-segregation.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./blog/2020-03-25-segregation.html"></a></p>
+</div>
+<div class="body">
+<a href="./blog/2020-03-25-segregation.html">
+<h3 class="no-anchor listing-title">
+職域分離の指標におけるセレクションと解釈をめぐる問題
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+昨今の社会情勢のなか、気分も憂鬱になり、なかなか研究にも集中できない日が続いています。なので少し論文を読みながら考えごとをして息抜きでもしようと思って、表題の内容について最近考えたことをメモに残しておきました。すこし長めなの（とwordpressで書くのがとても面倒なの）で、別ファイルにしました。
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/2020-03-25-segregation.html">
+<div class="listing-date">
+Mar 25, 2020
+</div>
+<div class="listing-author">
+Ryota Mugiyama
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="計量分析" data-listing-date-sort="1518879600000" data-listing-file-modified-sort="1663741370078" data-listing-reading-time-sort="0.705">
+<div class="thumbnail">
+<a href="./blog/2018-02-18quantitativemethods.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./blog/2018-02-18quantitativemethods.html"></a></p>
+</div>
+<div class="body">
+<a href="./blog/2018-02-18quantitativemethods.html">
+<h3 class="no-anchor listing-title">
+おすすめの計量分析の教科書（社会学向け）
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+自分の所属している大学院では基本的に研究方法については独学で身につけることが期待されています。なので、これまでに自分でいろいろと教科書を調べて読みました。もしかしたら同じようにどのような教科書を読むべきか悩んでいる人がいるかもしれないので、何かの役に立つことを期待して、自分が読んでみて良いと思ったテキストを挙げておきます。
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/2018-02-18quantitativemethods.html">
+<div class="listing-date">
+Feb 18, 2018
+</div>
+<div class="listing-author">
+Ryota Mugiyama
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

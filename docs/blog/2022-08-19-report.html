@@ -2,20 +2,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.36">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Ryota Mugiyama">
 <meta name="dcterms.date" content="2022-08-19">
 
 <title>Ryota Mugiyama - 学生向け：レポートでやるべき（でない）こと</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -26,6 +32,7 @@ ul.task-list{list-style: none;}
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../images/website.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,6 +67,7 @@ ul.task-list{list-style: none;}
 <meta name="twitter:title" content="Ryota Mugiyama - 学生向け：レポートでやるべき（でない）こと">
 <meta name="twitter:description" content="教員になって授業を担当するようになってから毎学期150〜200本くらいのレポートを読んでいるが、そこでいろいろとレポートを見ていると、レポートの基礎が押さえられていないと思うレポートにしばしば出会う。レポートの型というのは多かれ少なかれ決まっており、型にしたがって書くことで（多少のほころびがあったとしても）きちんとしたレポートを作ることができる。">
 <meta name="twitter:creator" content="@RyotaMugiyama">
+<meta name="twitter:site" content="@RyotaMugiyama">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -69,31 +77,39 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="../index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Ryota Mugiyama</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">Home</a>
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../research.html">Research</a>
+    <a class="nav-link" href="../research.html">
+ <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../lecture.html">Lecture</a>
+    <a class="nav-link" href="../lecture.html">
+ <span class="menu-text">Lecture</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../stata.html">Stata</a>
+    <a class="nav-link" href="../stata.html">
+ <span class="menu-text">Stata</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../r.html">R</a>
+    <a class="nav-link" href="../r.html">
+ <span class="menu-text">R</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog.html">Blog</a>
+    <a class="nav-link" href="../blog.html">
+ <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -106,13 +122,13 @@ ul.task-list{list-style: none;}
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
   <li><a href="#レポート執筆以前の心得" id="toc-レポート執筆以前の心得" class="nav-link active" data-scroll-target="#レポート執筆以前の心得">レポート執筆以前の心得</a>
   <ul class="collapse">
-  <li><a href="#求められている内容を把握する" id="toc-求められている内容を把握する" class="nav-link" data-scroll-target="#求められている内容を把握する">求められている内容を把握する</a></li>
+  <li><a href="#求められている内容を把握して求められていないことは書かない" id="toc-求められている内容を把握して求められていないことは書かない" class="nav-link" data-scroll-target="#求められている内容を把握して求められていないことは書かない">求められている内容を把握して、求められていないことは書かない</a></li>
   <li><a href="#提出期限までに出す" id="toc-提出期限までに出す" class="nav-link" data-scroll-target="#提出期限までに出す">提出期限までに出す</a></li>
   <li><a href="#別の授業で書いたレポートを流用しない" id="toc-別の授業で書いたレポートを流用しない" class="nav-link" data-scroll-target="#別の授業で書いたレポートを流用しない">別の授業で書いたレポートを流用しない</a></li>
   </ul></li>
@@ -129,9 +145,14 @@ ul.task-list{list-style: none;}
   </ul></li>
   <li><a href="#引用参照関連" id="toc-引用参照関連" class="nav-link" data-scroll-target="#引用参照関連">引用・参照関連</a>
   <ul class="collapse">
+  <li><a href="#引用は正確にする" id="toc-引用は正確にする" class="nav-link" data-scroll-target="#引用は正確にする">引用は正確にする</a></li>
   <li><a href="#誰かの論文や研究を参照する際には著者の所属は不要" id="toc-誰かの論文や研究を参照する際には著者の所属は不要" class="nav-link" data-scroll-target="#誰かの論文や研究を参照する際には著者の所属は不要">誰かの論文や研究を参照する際には著者の所属は不要</a></li>
   <li><a href="#どこからどこまでが文献等を参照した箇所なのかわかるよう記載する" id="toc-どこからどこまでが文献等を参照した箇所なのかわかるよう記載する" class="nav-link" data-scroll-target="#どこからどこまでが文献等を参照した箇所なのかわかるよう記載する">どこからどこまでが文献等を参照した箇所なのかわかるよう記載する</a></li>
   <li><a href="#参考文献リストをきちんと書く" id="toc-参考文献リストをきちんと書く" class="nav-link" data-scroll-target="#参考文献リストをきちんと書く">参考文献リストをきちんと書く</a></li>
+  </ul></li>
+  <li><a href="#その他" id="toc-その他" class="nav-link" data-scroll-target="#その他">その他</a>
+  <ul class="collapse">
+  <li><a href="#いつでも言える教訓や反省文お願いを書かない" id="toc-いつでも言える教訓や反省文お願いを書かない" class="nav-link" data-scroll-target="#いつでも言える教訓や反省文お願いを書かない">いつでも言える教訓や反省文・お願いを書かない</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -151,6 +172,12 @@ ul.task-list{list-style: none;}
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ryota Mugiyama </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
@@ -158,6 +185,7 @@ ul.task-list{list-style: none;}
       <p class="date">August 19, 2022</p>
     </div>
   </div>
+  
     
   </div>
   
@@ -169,8 +197,8 @@ ul.task-list{list-style: none;}
 <p>なお、ここで想定しているレポートというのは、「○○について論じなさい」とか、「○○についての問いを立ててレポートを執筆しなさい」というような、論述型のレポートである。</p>
 <section id="レポート執筆以前の心得" class="level2">
 <h2 class="anchored" data-anchor-id="レポート執筆以前の心得">レポート執筆以前の心得</h2>
-<section id="求められている内容を把握する" class="level3">
-<h3 class="anchored" data-anchor-id="求められている内容を把握する">求められている内容を把握する</h3>
+<section id="求められている内容を把握して求められていないことは書かない" class="level3">
+<h3 class="anchored" data-anchor-id="求められている内容を把握して求められていないことは書かない">求められている内容を把握して、求められていないことは書かない</h3>
 <p>たとえば、「日本で少子化が起こったのはなぜだと考えられるか、論じてください」というふうなレポート課題が出たとする。このようなときには、「<strong>日本で少子化が起こったのはなぜだと考えられるか</strong>」についてのレポートを書く。当たり前だと思うかもしれないが、次のような誤りはそれなりに見かける。</p>
 <ul>
 <li><p>「少子化を解決するためには何が必要か」を論じる。</p></li>
@@ -180,7 +208,7 @@ ul.task-list{list-style: none;}
 <li><p>「少子高齢化はなぜ起こったのか」を論じる（少子化と高齢化は同じ現象ではない）。</p></li>
 </ul>
 <p>これらはいずれも「日本で少子化が起こったのはなぜだと考えられるか」に答えるもの<strong>ではない</strong>ので、評価が低くなるか、そもそも採点対象にもならないかもしれない。</p>
-<p>レポートのすべてがこのようにずれていないとしても、レポートの一部で「日本で少子化が起こったのはなぜだと考えられるか」と直接関係しない内容（たとえば、少子化の解決策）について論じたりするといったことはよく見かける。教員によって異なるかもしれないが、基本的にレポートで問われていないことをいくら書いたとしても評価が上がることはない（か、むしろ下がるかもしれない）。<strong>レポートを書くときには常に何が求められているのかを理解し、自分のレポートがそれに答えるものになっているのか確認する</strong>必要がある。</p>
+<p>レポートのすべてがこのようにずれていないとしても、レポートの一部で「日本で少子化が起こったのはなぜだと考えられるか」と直接関係しない内容（たとえば、少子化の解決策）について論じたりするといったことはよく見かける。教員によって異なるかもしれないが、基本的に<strong>レポートで問われていないことをいくら書いたとしても評価が上がることはない（か、むしろ下がるかもしれない）</strong>。<strong>レポートを書くときには常に何が求められているのかを理解し、自分のレポートがそれに答えるものになっているのか確認する</strong>必要がある。</p>
 </section>
 <section id="提出期限までに出す" class="level3">
 <h3 class="anchored" data-anchor-id="提出期限までに出す">提出期限までに出す</h3>
@@ -258,6 +286,10 @@ ul.task-list{list-style: none;}
 </section>
 <section id="引用参照関連" class="level2">
 <h2 class="anchored" data-anchor-id="引用参照関連">引用・参照関連</h2>
+<section id="引用は正確にする" class="level3">
+<h3 class="anchored" data-anchor-id="引用は正確にする">引用は正確にする</h3>
+<p>どんなものであっても、何らかの記事や発言であればそれを引用する必要がある。書く自分にとっては当たり前だということだったとしても、読む側がそれを当たり前に理解しているとは限らない。たとえば「某芸能人」とか、「某新聞」などというふうに書いてはいけないということだ。日常会話ではこのような言い方は許されるかもしれないが、レポートでは出典が明示されていないということで減点対象となる。</p>
+</section>
 <section id="誰かの論文や研究を参照する際には著者の所属は不要" class="level3">
 <h3 class="anchored" data-anchor-id="誰かの論文や研究を参照する際には著者の所属は不要">誰かの論文や研究を参照する際には著者の所属は不要</h3>
 <p>たとえば、「学習院大学の麦山亮太氏の研究によれば、非正規雇用者は結婚しにくいことが明らかになっている」という書き方はしない。ニュースやブログ記事や新聞記事などでよく使われるが、ちゃんとした論文やレポートではしない書き方である。もっと悪いのは、「学習院大学の研究によれば……」というように、所属機関だけを載せるやり方だ。なぜかハーバード大学やスタンフォード大学といった超有名大学のときに使われやすいが、論文の書誌情報等の場合、重要なのは所属ではなく、誰がいつどこに書いたのか、である（ハーバード大学に所属しているからといって研究の信頼性が高くなるわけではない。日本では「ハーバード式」とか書名につけると売上が上がるのかもしれないが）。ただし、「厚生労働省」など機関名で出版されているものについては、著者名ではなく機関名が著者名に相当するものになる。なお、著者名には「○○教授」などの肩書きもいらない。</p>
@@ -267,15 +299,18 @@ ul.task-list{list-style: none;}
 <h3 class="anchored" data-anchor-id="どこからどこまでが文献等を参照した箇所なのかわかるよう記載する">どこからどこまでが文献等を参照した箇所なのかわかるよう記載する</h3>
 <p>仮に参考文献が記載してあったとしても、レポート本文のどの箇所が引用や参照箇所であるのかが明確でなければ、（悪意がなくとも）剽窃となってしまう可能性がある。たとえば、次のような文章はどうだろうか。</p>
 <blockquote class="blockquote">
-<p>日本の男性が家事や育児にかける時間はほとんど増えていない。1996年から2016年にかけて女性が一日あたり家事・育児・介護にかける平均時間は約210分とほぼ横ばいで推移している。一方で男性が一日あたり家事・育児・介護にかける平均時間は24分から44分へと微増しているものの、未だ女性と比べてその時間はきわめて短い。こうした背景には、男性が外での仕事に費やす時間が非常に長いために、家事や育児に割く時間が少なくなるという事情がある。家事育児負担の平等化を進めるためには、仕事の場での長時間労働を是正する必要がある。 参考文献）内閣府男女共同参画局，2021，「男女共同参画白書 令和2年版」https://www.gender.go.jp/about_danjo/whitepaper/r02/zentai/index.html，2022年8月17日閲覧．</p>
+<p>日本の男性が家事や育児にかける時間はほとんど増えていない。1996年から2016年にかけて女性が一日あたり家事・育児・介護にかける平均時間は約210分とほぼ横ばいで推移している。一方で男性が一日あたり家事・育児・介護にかける平均時間は24分から44分へと微増しているものの、未だ女性と比べてその時間はきわめて短い。こうした背景には、男性が外での仕事に費やす時間が非常に長いために、家事や育児に割く時間が少なくなるという事情がある。家事育児負担の平等化を進めるためには、仕事の場での長時間労働を是正する必要がある。</p>
+<p>参考文献）内閣府男女共同参画局，2021，「男女共同参画白書 令和2年版」https://www.gender.go.jp/about_danjo/whitepaper/r02/zentai/index.html，2022年8月17日閲覧．</p>
 </blockquote>
 <p>この文章は内閣府男女共同参画局の「男女共同参画白書 令和2年版」を参照したと記載しているが、どこからどこまでがこの文献を参照した内容であり、どこからどこまでが自分の意見であるのかが不明確な書き方となってしまっている。これは不適切な参照のしかたの一例といえる。この文章はたとえば次のように直すことができる。</p>
 <blockquote class="blockquote">
-<p>日本の男性の家事や育児にかける時間はほとんど増えていない。1996年から2016年にかけて女性が一日あたり家事・育児・介護にかける平均時間は約210分とほぼ横ばいで推移している（内閣府男女共同参画局 2021）。一方で男性が一日あたり家事・育児・介護にかける平均時間は24分から44分へと微増しているものの、未だ女性と比べてその時間は極めて短い（内閣府男女共同参画局 2021）。こうした背景には、男性が外で仕事に費やす時間が非常に長いために、家事や育児に割く時間が少なくなるという事情がある。家事育児負担の平等化を進めるためには、仕事の場での長時間労働を解決する必要がある。 参考文献）内閣府男女共同参画局，2021，「男女共同参画白書 令和2年版」https://www.gender.go.jp/about_danjo/whitepaper/r02/zentai/index.html，2022年8月17日閲覧．</p>
+<p>日本の男性の家事や育児にかける時間はほとんど増えていない。1996年から2016年にかけて女性が一日あたり家事・育児・介護にかける平均時間は約210分とほぼ横ばいで推移している（内閣府男女共同参画局 2021）。一方で男性が一日あたり家事・育児・介護にかける平均時間は24分から44分へと微増しているものの、未だ女性と比べてその時間は極めて短い（内閣府男女共同参画局 2021）。こうした背景には、男性が外で仕事に費やす時間が非常に長いために、家事や育児に割く時間が少なくなるという事情がある。家事育児負担の平等化を進めるためには、仕事の場での長時間労働を解決する必要がある。</p>
+<p>参考文献）内閣府男女共同参画局，2021，「男女共同参画白書 令和2年版」https://www.gender.go.jp/about_danjo/whitepaper/r02/zentai/index.html，2022年8月17日閲覧．</p>
 </blockquote>
 <p>あるいは：</p>
 <blockquote class="blockquote">
-<p>日本の男性の家事や育児にかける時間はほとんど増えていない。内閣府男女共同参画局（2021）によれば、1996年から2016年にかけて女性が一日あたり家事・育児・介護にかける平均時間は約210分とほぼ横ばいで推移している一方、男性が一日あたり家事・育児・介護にかける平均時間は24分から44分へと微増しているものの、未だ女性と比べてその時間は極めて短い。こうした背景には、男性が外で仕事に費やす時間が非常に長いために、家事や育児に割く時間が少なくなるという事情がある。家事育児負担の平等化を進めるためには、仕事の場での長時間労働を解決する必要がある。 参考文献）内閣府男女共同参画局，2021，「男女共同参画白書 令和2年版」https://www.gender.go.jp/about_danjo/whitepaper/r02/zentai/index.html，2022年8月17日閲覧．</p>
+<p>日本の男性の家事や育児にかける時間はほとんど増えていない。内閣府男女共同参画局（2021）によれば、1996年から2016年にかけて女性が一日あたり家事・育児・介護にかける平均時間は約210分とほぼ横ばいで推移している一方、男性が一日あたり家事・育児・介護にかける平均時間は24分から44分へと微増しているものの、未だ女性と比べてその時間は極めて短い。こうした背景には、男性が外で仕事に費やす時間が非常に長いために、家事や育児に割く時間が少なくなるという事情がある。家事育児負担の平等化を進めるためには、仕事の場での長時間労働を解決する必要がある。</p>
+<p>参考文献）内閣府男女共同参画局，2021，「男女共同参画白書 令和2年版」https://www.gender.go.jp/about_danjo/whitepaper/r02/zentai/index.html，2022年8月17日閲覧．</p>
 </blockquote>
 <p>これらをみると、いずれの例についても「日本の男性の家事や育児にかける時間はほとんど増えていない」というところは自分のまとめであり、それ以降の記述は参考文献を参照して書かれたこと、そして「こうした背景には〜長時間労働を解決する必要がある」という箇所は自分の考察であることがはっきりする。いずれも先ほどと比べるとどこからが自分の意見やまとめなのかわかりやすくなっているといえる。</p>
 <p>このようにみてくると、「こうした背景には、男性が外で仕事に費やす時間が非常に長いために、家事や育児に割く時間が少なくなるという事情がある」という主張は必ずしも根拠にもとづいた文ではないということがわかる。このように引用箇所とそうでない箇所を区別することによって、自分の主張のうち根拠が弱い部分はどこであるのかが明確になるという効用もある。</p>
@@ -295,6 +330,22 @@ ul.task-list{list-style: none;}
 <p><strong>ウェブサイト</strong>：著者、出版年（あるいは更新年）、タイトル、ウェブサイトのURL、閲覧日を書く。</p>
 <ul>
 <li>内閣府男女共同参画局，2021，「男女共同参画白書 令和2年版」https://www.gender.go.jp/about_danjo/whitepaper/r02/zentai/index.html ，2022年8月1日閲覧．</li>
+</ul>
+</section>
+</section>
+<section id="その他" class="level2">
+<h2 class="anchored" data-anchor-id="その他">その他</h2>
+<section id="いつでも言える教訓や反省文お願いを書かない" class="level3">
+<h3 class="anchored" data-anchor-id="いつでも言える教訓や反省文お願いを書かない">いつでも言える教訓や反省文・お願いを書かない</h3>
+<p>レポートに教訓や呼びかけのような言葉は不要である。たとえば次のような締めくくりの文言は、いついかなるときにも言えるものであって、レポートの内容を深めるものではないので、不要である。</p>
+<ul>
+<li>このような問題を私たち一人ひとりが考えていかなければいけない。</li>
+<li>私たちみながこの問題を認識して、意識を変えていく必要がある。</li>
+</ul>
+<p>もっと悪いのは、レポートに次のような謝罪文や「お願い」を書くことである。このような謝罪文やお願いを書かれたからと言って点数に手心を加えることはないし、むしろレポートの内容に関係ないものを書いているということで減点対象となってしまい、単位を取るという本来の目的も果たすことができなくなってしまうかもしれない。謝罪文や「お願い」を書く時間を、レポートの内容を洗練させるために使ったほうずっとよい結果につながるだろう。</p>
+<ul>
+<li>レポートの提出が遅くなりまして申し訳ありません。</li>
+<li>私は今年この授業の単位を落としてしまうと留年してしまいます。すでに内定を頂いておりまして…（以下略）</li>
 </ul>
 
 
@@ -343,7 +394,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -371,31 +439,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

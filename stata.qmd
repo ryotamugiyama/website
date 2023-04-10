@@ -1,0 +1,264 @@
+---
+title: "Stata"
+---
+
+Stataで知っておいたら便利かもしれないコードを不定期に更新します。
+
+## margins, contrast: 限界効果どうしの差の検定
+
+大卒であると結婚確率が高いことはよく知られている。いま、大卒であることが結婚確率に与える効果が人種（Race）によって異なるのか知りたいとする。このとき、次のようなロジットモデルを推定する。
+
+``` stata
+sysuse nlsw88.dta, clear //Stataのサンプルデータを利用する
+logit never_married i.race i.collgrad i.race#i.collgrad c.age##c.age
+```
+
+![](images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2022-02-08-13.43.27.png)
+
+黒人（black）と大卒（collgrad）の交互作用項は負であり、白人（white）と比べて黒人の場合は大卒であることが結婚に与える効果は弱いというような結果である。しかし、ロジットモデルにおける係数はあくまで対数オッズであり、具体的に両者の**確率**がどの程度異なるのかはここからはわからない。そこで、人種ごとの大卒の限界効果を計算する：
+
+``` stata
+margins , dydx(collgrad) at(race = (1(1)3))
+```
+
+![](images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2022-02-08-13.49.36.png)
+
+前半にはそれぞれblackとwhite、otherとwhiteを対比させたときの検定の結果、後半には差と標準誤差、信頼区間が表示されている。結果は、blackとwhiteとの大卒の限界効果の差は統計的に有意であるということを示している。
+
+前者のmarginsの結果は、[Mize, T. D. (2019). Best practices for estimating, interpreting, and presenting nonlinear interaction effects. *Sociological Science*, *6*, 81--117](http://dx.doi.org/10.15195/V6.A4 "Mize, T. D. (2019). Best practices for estimating, interpreting, and presenting nonlinear interaction effects. Sociological Science, 6, 81–117").のTable 3（p.104）の「First Differences」、後者のmargins, contrastの結果は「Second Differences」に、それぞれ対応する。「Second Differences」のほうをStataで計算するときの方法がよくわかっていなかったのだけど、どうやら上記で計算できそうだ。
+
+（2022/02/08→2022/09/19移行）
+
+## import spss: savファイルを読み込む（Stata 16以降）
+
+Stata 16からsavファイルをラベルを落とさずにStataで読み込むことができるようになっていた。詳しくは[こちら](https://www.stata.com/new-in-stata/import-from-SPSS/)のページを参照。
+
+（作成日不明→2022/10/09移行）
+
+## rename \*, lower：すべての変数名を小文字にする
+
+すべての変数名に含まれる大文字を小文字に変換したいときには、以下のコマンドを使うとできる。
+
+``` stata
+rename *, lower
+```
+
+逆に、すべての小文字を大文字に変換したいときには、以下のコマンド。
+
+``` stata
+rename *, upper
+```
+
+あんまりこういう場面はないと思うが、すべての小文字を大文字に、すべての大文字を小文字に、同時に変換したい（たとえば、ExAmPlEという変数をeXaMpLeというふうに変えたい）ときには、varcaseというアドインを使う。
+
+``` stata
+ssc install varcase /* install commands. */
+varcase _all
+```
+
+今まではすべて小文字に直すときにcsvにデータをexportして保存してからそのcsvファイルを読み込んでdtaファイルに再度exportする（そのせいでもともとついていたラベルがすべて消えてしまう）という相当無駄な作業をしていたが、それをしなくてよくなった。やっぱり少しでも楽をしようという気持ちが大事だ。。
+
+（2020/4/3→2022/10/09移行）
+
+## destringのtips：カンマの入った文字列を数値列に変換
+
+文字列（string）の変数を数値列に直す、destringというコマンドがある。destring, replaceたいていの場合はうまくいくが、たとえば以下のように、3桁区切りのカンマが入っている場合にはこのコマンドを走らせてもうまく数値列に変換できない。\
+![](images/destring_before-1-768x689.png)
+
+この場合は、ignoreというオプションを使うと数値列に変換できる。
+
+``` stata
+destring, replace ignore(",")
+```
+
+![](images/destring_after-1-768x685.png)
+
+``` stata
+,ignore("char")
+```
+
+というオプションは、ダブルクォーテーションの間の文字列を無視するという命令のよう。なので、これ以外にもカンマ以外にも謎の文字列が入っている場合にはこれを除いて数値列に変換することができるようだ。
+
+（作成日不明→2022/10/09移行）\
+
+## substr：文字列から特定の数文字を抽出
+
+| 年     | year |
+|--------|------|
+| 1996年 | 1996 |
+| 1997年 | 1997 |
+| 1998年 | 1998 |
+| 1999年 | 1999 |
+| 2000年 | 2000 |
+
+\
+左のように\"年\"という文字を含んだ変数から前4つの数字だけを取り出して、右のように数字だけからなる変数yearを作るときには、substrというコマンドを使う。
+
+``` stata
+gen year = substr(年, 1, 4)
+*** 以下でも同じ結果を得られる. 
+gen year = substr(年, -2, 4)
+```
+
+substr()のなかの1つめの項は変数名を、2つめの項は**前から**何番目の文字から抽出するかを、3つめの項は先に指定した文字からいくつの個数の文字を抽出するかを、それぞれ指定する。たとえば前者のコマンドの場合は、「年という変数の1番目の文字から4文字分抽出する」ということになる。後者のコマンドのように2つめの項に-を指定することもでき、この場合は**後ろから**何番目の文字を抽出するかを表す。先の例だと、「年という変数の後ろから2番目の文字から4文字分抽出する」という意味になる。参考：<http://statamemo.jugem.jp/?month=201103>
+
+（作成日不明→2022/10/09移行）
+
+## generate double：8桁を超える値をとる変数を作成する
+
+Stataでは数字はデフォルトだとfloatという型で保存される。詳しいことはわからないけれど、floatというのは10進数のもとでは有効桁数が7桁となる4byteのサイズを持つ形式のことを指すようである（参考：<http://www.cc.kyoto-su.ac.jp/~yamada/programming/float.html>）。ほとんどの場合数値はfloat型で問題なく扱えるのですが、たまに8桁を超える値をもつ変数を作ろうとした場合、値が指数表記されてしまい、正確な値を保存することができないという事態が起こる。
+
+そのような場合は、変数を作成するときに型名としてdoubleを指定すれば良いようです（参考：<https://www.stata.com/manuals13/u12.pdf#u12Data> 12.2.2節\"Numeric storage types\"）。doubleは10進数のもとでは有効桁数が15桁となる8byteのサイズを持つ形式。これを使うことで、8桁を超える値をとるような変数を扱うことができるようになる。実際の使い方としてはこんな感じ：
+
+``` stata
+gen double x = y
+```
+
+これで、新しく作られる変数xが8桁を超える値をとるものであったとしても、値が指数表記されずにすむ。
+
+（作成日不明→2022/10/09移行）
+
+## labsumm：記述統計量の変数名にラベルをつけて出力
+
+summarizeだと変数にラベルがつかないので、エクセルなどに貼り付けた後に自分で書かないといけないけど、labsummコマンドだとラベルをつけた状態で出力できる。
+
+``` stata
+ssc install labsumm /*コマンドのインストール*/
+lab var female "女性"
+lab var income "所得"
+labsumm female income
+```
+
+（作成日不明→2022/10/09移行）
+
+## fsum：より一般的な記述統計量を出力するコマンド
+
+labsummよりも新しいコマンドで、通常のsummarizeコマンドをさらに拡張したような使い方ができる。変数にラベルをつけて表示することはもちろん、カテゴリカル変数の内訳を（ダミー変数を作ることなく）算出できたりする。詳しくは[helpファイル](http://fmwww.bc.edu/repec/bocode/f/fsum.html)を参照のこと。
+
+``` stata
+ssc install fsum /*コマンドのインストール*/
+
+lab var sex "性別"
+lab def sexlab 1"男性" 2"女性"
+lab val sex sexlab
+
+recode sex (1=0)(2=1), gen(female)
+lab var female "女性"
+
+lab var income "所得"
+
+fsum female income, stats(mean sd p50) /*平均、標準偏差、中央値を表示*/
+fsum female income, uselabel /*変数名はラベルで表示*/
+fsum sex income, catvar(sex) /*カテゴリカル変数について内訳の%を算出*/
+fsum female income, format(%9.4f) /*小数点第4位まで出力（デフォルトは第2位）*/
+```
+
+（作成日不明→2022/10/09移行）
+
+## vioplot：ヴァイオリン・プロットを描く
+
+箱ひげ図とヒストグラムの特徴を併せ持つヴァイオリン・プロットをStataでも描くことができる。[\"VIOPLOT\"](https://ideas.repec.org/c/boc/bocode/s456902.html)というコマンドを使用する。
+
+参考）[「箱ひげ図とバイオリンプロットの印象の違い」](http://yyhhyy.hatenablog.com/entry/2016/08/20/220000)
+
+``` stata
+
+ssc install vioplot /*コマンドのインストール*/
+
+/***試しに箱ひげ図と見た目を比べてみる***/
+use "http://www.stata-press.com/data/r13/auto", clear
+graph box mpg, title("Box plot") over(foreign) ylabel(10(10)50) /*こっちが箱ひげ図*/
+graph save "box.gph", replace
+vioplot mpg, title("Violin plot") over(foreign) ylabel(10(10)50) /*こっちがヴァイオリンプロット*/
+graph save "vioplot.gph", replace
+graph combine "box.gph" "vioplot.gph" /*並べてみる*/
+```
+
+実際の見た目はこんな感じ。violin plotのほうがぱっとみた時の情報量が多い。デフォルトだと、カーネル密度のなかに箱ひげ図がはいったかたちになる。
+
+![](images/Graph.png)
+
+（作成日不明→2022/10/09移行）
+
+## coefplot：回帰係数と信頼区間をプロットする
+
+種々の回帰分析から得られた係数とその信頼区間をプロットするコマンド。以下の通り開発者が詳しく解説してくれているので、ここでは最低限のコマンドだけ載せておく。
+
+参考）Jahn, Ben. 2017. \"[Plotting regression coefficients and other estimates in Stata](http://repec.sowi.unibe.ch/files/wp1/jann-2013-coefplot.pdf).\" University of Bern Social Sciences Working Paper No.1.
+
+Jahn, Ben. \"[A new command for plotting regression coefficients and other estimates](http://www.stata.com/meeting/germany14/abstracts/materials/de14_jann.pdf).\" 12th German Stata Users Group meeting Hamburg, June 13, 2014.
+
+``` stata
+ssc install coefplot
+
+use "http://www.stata-press.com/data/r13/auto", clear
+
+qui reg mpg rep78 foreign /*回帰分析をしたあとに…*/
+
+coefplot /*切片も含めすべての係数および95%信頼区間をプロット*/
+coefplot, keep(rep78 foreign) /*指定した独立変数のみプロット*/
+coefplot, scheme(s1mono) keep(rep78 foreign) ciopts(recast(rcap)) vert scale(1.2) ylabel(,grid) ytitle("coef.") /*自分が使うときはこんな感じで設定*/
+```
+
+（作成日不明→2022/10/09移行）
+
+## tabulate, gen()：ダミー変数を一度に作成する
+
+tabulateコマンドのオプションに、結果を出力したあとにダミー変数を作ってくれるものがあります。generateやrecodeコマンドを使わずにダミー変数を一度に作成することができます。記述統計量を出すときなどに便利です。
+
+``` stata
+tab educ, gen(educd)
+/*
+もしeducが1, 2, 3, 4, 5の5値の変数であれば，educd1-educd5という5つの変数が作られる．
+小さいカテゴリから順に1, 2,…と自動的に名前が付いていくので，間違えないように注意．
+*/
+tab educ educd1 /*ちゃんと変数ができたかどうか確認してみる*/
+```
+
+（作成日不明→2022/10/09移行）
+
+## set more off：--more-- を表示しないようにする
+
+Stataは縦に長い結果を出力したり、時間のかかる計算をしているときに、途中で
+
+--more--
+
+という表示を出します。これが出ると、何らかのキーを押したりクリックしたりしないと計算が進まなかったり、続く結果が出力されなかったりして面倒です。
+
+そこで、Stataを開いたときに
+
+``` stata
+set more off
+```
+
+というコマンドを走らせると、Stataを閉じるまでは
+
+--more--
+
+が出ないようになります。do fileの一番最初とかに書いておくとよいと思います。
+
+また、
+
+``` stata
+set more off, permanently
+```
+
+というコマンドを走らせるとStataの設定自体が書き換わるので、再度開いたときにもその効果が続きます。
+
+（作成日不明→2022/10/09移行）
+
+## grc1leg：グラフを結合したときに凡例を1つだけに
+
+[graph combine](https://www.stata.com/manuals13/g-2graphcombine.pdf)という、Stataで作ったグラフを結合するコマンドがあります。ただ、もとのグラフごとに凡例がついている場合、単純に結合するとくっつけた数だけ凡例ができてしまい、大変冗長になってしまいます。
+
+そこで、どれか一つのグラフから凡例をとってくるコマンドがgrc1legです。使い方は以下のとおり。
+
+``` stata
+twoway line y1 x, by(sex) saving(graph1, replace)
+twoway line y2 x, by(sex) saving(graph2, replace)
+grc1leg graph1.gph graph2.gph, legendfrom(graph1)
+```
+
+このばあい、グラフ1から凡例をとってきて表示するというかたちになります。
+
+（作成日不明→2022/10/09移行）

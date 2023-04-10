@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.36">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -25,6 +30,7 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./images/website.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -59,6 +65,7 @@ ul.task-list{list-style: none;}
 <meta name="twitter:title" content="Ryota Mugiyama - Lecture">
 <meta name="twitter:description" content="講義の情報などをまとめています。">
 <meta name="twitter:creator" content="@RyotaMugiyama">
+<meta name="twitter:site" content="@RyotaMugiyama">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -68,31 +75,39 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="./index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Ryota Mugiyama</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">Home</a>
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html">Research</a>
+    <a class="nav-link" href="./research.html">
+ <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./lecture.html" aria-current="page">Lecture</a>
+    <a class="nav-link active" href="./lecture.html" aria-current="page">
+ <span class="menu-text">Lecture</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./stata.html">Stata</a>
+    <a class="nav-link" href="./stata.html">
+ <span class="menu-text">Stata</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./r.html">R</a>
+    <a class="nav-link" href="./r.html">
+ <span class="menu-text">R</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html">Blog</a>
+    <a class="nav-link" href="./blog.html">
+ <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -105,11 +120,12 @@ ul.task-list{list-style: none;}
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#stataを用いた計量分析入門" id="toc-stataを用いた計量分析入門" class="nav-link active" data-scroll-target="#stataを用いた計量分析入門">2021-09–　Stataを用いた計量分析入門</a></li>
+  <li><a href="#stataによるパネル調査データ分析の実践" id="toc-stataによるパネル調査データ分析の実践" class="nav-link active" data-scroll-target="#stataによるパネル調査データ分析の実践">2022-03　Stataによるパネル調査データ分析の実践</a></li>
+  <li><a href="#stataを用いた計量分析入門" id="toc-stataを用いた計量分析入門" class="nav-link" data-scroll-target="#stataを用いた計量分析入門">2021-09–2022-03　Stataを用いた計量分析入門</a></li>
   <li><a href="#学習院大学法学部社会学iv" id="toc-学習院大学法学部社会学iv" class="nav-link" data-scroll-target="#学習院大学法学部社会学iv">2021-09–　学習院大学法学部「社会学IV」</a>
   <ul class="collapse">
   <li><a href="#テーマ" id="toc-テーマ" class="nav-link" data-scroll-target="#テーマ">テーマ</a></li>
@@ -147,6 +163,7 @@ ul.task-list{list-style: none;}
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -154,8 +171,13 @@ ul.task-list{list-style: none;}
 </header>
 
 <p>講義の情報などをまとめています。</p>
+<section id="stataによるパネル調査データ分析の実践" class="level2">
+<h2 class="anchored" data-anchor-id="stataによるパネル調査データ分析の実践">2022-03　Stataによるパネル調査データ分析の実践</h2>
+<p>東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センターが開講している「計量分析セミナー」で、Stataを使ったパネル調査データの分析に関する講義を行いました。パネルデータの準備（データハンドリング）に係る作業工程の考え方から、固定効果モデル、イベントの効果推定（Difference-in-differences, event study design）、さらに、よく問題になるトピックとしてランダム効果モデル、カテゴリ変数を従属変数とするモデル、脱落の問題と対処について扱っています。</p>
+<p><a href="./lecture/CSRDA/2023-03-09CSRDA.html">2022年度春・Stataによるパネル調査データ分析の実践</a></p>
+</section>
 <section id="stataを用いた計量分析入門" class="level2">
-<h2 class="anchored" data-anchor-id="stataを用いた計量分析入門">2021-09–　Stataを用いた計量分析入門</h2>
+<h2 class="anchored" data-anchor-id="stataを用いた計量分析入門">2021-09–2022-03　Stataを用いた計量分析入門</h2>
 <p>2021年度夏から、東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センターが開講している「計量分析セミナー」にて、Stataの入門的な講義を行っています。ちょっとStataを使い始めたけど、もっと効率のいい使い方について知りたい、回帰分析やロジスティック回帰分析をうまく使いこなすためにはどうすればいいか知りたい、という方を念頭において講義をしています。途中で名称が変わっていますが、内容は同じです。</p>
 <p><a href="./lecture/CSRDA/2022-09-07CSRDA.html">2022年度夏・Stataを用いた計量分析入門</a></p>
 <p><a href="./lecture/CSRDA/2022-03-02CSRDA.html">2021年度春・Stataを用いた計量分析入門</a></p>
@@ -370,7 +392,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -398,31 +437,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

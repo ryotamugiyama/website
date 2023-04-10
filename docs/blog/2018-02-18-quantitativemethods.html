@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Ryota Mugiyama">
+<meta name="dcterms.date" content="2018-02-18">
+
+<title>Ryota Mugiyama - おすすめの計量分析の教科書（社会学向け）</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/website.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta name="twitter:title" content="Ryota Mugiyama - おすすめの計量分析の教科書（社会学向け）">
+<meta name="twitter:description" content="自分の所属している大学院では基本的に研究方法については独学で身につけることが期待されています。なので、これまでに自分でいろいろと教科書を調べて読みました。もしかしたら同じようにどのような教科書を読むべきか悩んでいる人がいるかもしれないので、何かの役に立つことを期待して、自分が読んでみて良いと思ったテキストを挙げておきます。">
+<meta name="twitter:creator" content="@RyotaMugiyama">
+<meta name="twitter:site" content="@RyotaMugiyama">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Ryota Mugiyama</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../lecture.html">
+ <span class="menu-text">Lecture</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../stata.html">
+ <span class="menu-text">Stata</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../r.html">
+ <span class="menu-text">R</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#はじめに" id="toc-はじめに" class="nav-link active" data-scroll-target="#はじめに"><strong>はじめに</strong></a></li>
+  <li><a href="#計量分析の基礎" id="toc-計量分析の基礎" class="nav-link" data-scroll-target="#計量分析の基礎"><strong>計量分析の基礎</strong></a>
+  <ul class="collapse">
+  <li><a href="#introductory-econometrics-a-modern-approach" id="toc-introductory-econometrics-a-modern-approach" class="nav-link" data-scroll-target="#introductory-econometrics-a-modern-approach">Introductory Econometrics: A Modern Approach</a></li>
+  <li><a href="#regression-analysis-for-the-social-sciences" id="toc-regression-analysis-for-the-social-sciences" class="nav-link" data-scroll-target="#regression-analysis-for-the-social-sciences">Regression Analysis for the Social Sciences</a></li>
+  </ul></li>
+  <li><a href="#カテゴリカルデータの分析" id="toc-カテゴリカルデータの分析" class="nav-link" data-scroll-target="#カテゴリカルデータの分析">カテゴリカル・データの分析</a>
+  <ul class="collapse">
+  <li><a href="#regression-models-for-categorical-and-limited-dependent-variables" id="toc-regression-models-for-categorical-and-limited-dependent-variables" class="nav-link" data-scroll-target="#regression-models-for-categorical-and-limited-dependent-variables">Regression Models for Categorical and Limited Dependent Variables</a></li>
+  <li><a href="#regression-models-for-categorical-dependent-variables-using-stata" id="toc-regression-models-for-categorical-dependent-variables-using-stata" class="nav-link" data-scroll-target="#regression-models-for-categorical-dependent-variables-using-stata">Regression Models for Categorical Dependent Variables Using Stata</a></li>
+  </ul></li>
+  <li><a href="#生存分析イベントヒストリー分析" id="toc-生存分析イベントヒストリー分析" class="nav-link" data-scroll-target="#生存分析イベントヒストリー分析">生存分析／イベントヒストリー分析</a></li>
+  <li><a href="#階層線形モデルマルチレベルモデル" id="toc-階層線形モデルマルチレベルモデル" class="nav-link" data-scroll-target="#階層線形モデルマルチレベルモデル">階層線形モデル／マルチレベルモデル</a>
+  <ul class="collapse">
+  <li><a href="#applied-longitudinal-data-analysis-modeling-change-and-event-occurrence" id="toc-applied-longitudinal-data-analysis-modeling-change-and-event-occurrence" class="nav-link" data-scroll-target="#applied-longitudinal-data-analysis-modeling-change-and-event-occurrence">Applied Longitudinal Data Analysis: Modeling Change and Event Occurrence</a></li>
+  <li><a href="#multilevel-and-longitudinal-modeling-using-stata-fourth-edition" id="toc-multilevel-and-longitudinal-modeling-using-stata-fourth-edition" class="nav-link" data-scroll-target="#multilevel-and-longitudinal-modeling-using-stata-fourth-edition">Multilevel and Longitudinal Modeling Using Stata, Fourth Edition</a></li>
+  <li><a href="#hierarchical-linear-models-applications-and-data-analysis-methods" id="toc-hierarchical-linear-models-applications-and-data-analysis-methods" class="nav-link" data-scroll-target="#hierarchical-linear-models-applications-and-data-analysis-methods">Hierarchical Linear Models: Applications and Data Analysis Methods</a></li>
+  <li><a href="#applied-panel-data-analysis-for-economic-and-social-surveys" id="toc-applied-panel-data-analysis-for-economic-and-social-surveys" class="nav-link" data-scroll-target="#applied-panel-data-analysis-for-economic-and-social-surveys">Applied Panel Data Analysis for Economic and Social Surveys</a></li>
+  </ul></li>
+  <li><a href="#その他" id="toc-その他" class="nav-link" data-scroll-target="#その他">その他</a>
+  <ul class="collapse">
+  <li><a href="#counterfactuals-and-causal-inference-methods-and-principles-for-social-research" id="toc-counterfactuals-and-causal-inference-methods-and-principles-for-social-research" class="nav-link" data-scroll-target="#counterfactuals-and-causal-inference-methods-and-principles-for-social-research">Counterfactuals and Causal Inference: Methods and Principles for Social Research</a></li>
+  <li><a href="#mostly-harmless-econometrics-an-empiricists-companion" id="toc-mostly-harmless-econometrics-an-empiricists-companion" class="nav-link" data-scroll-target="#mostly-harmless-econometrics-an-empiricists-companion">Mostly Harmless Econometrics: An Empiricist’s Companion</a></li>
+  <li><a href="#flexible-imputation-of-missing-data" id="toc-flexible-imputation-of-missing-data" class="nav-link" data-scroll-target="#flexible-imputation-of-missing-data">Flexible Imputation of Missing Data</a></li>
+  <li><a href="#要因分解" id="toc-要因分解" class="nav-link" data-scroll-target="#要因分解">要因分解</a></li>
+  <li><a href="#quantile-regression" id="toc-quantile-regression" class="nav-link" data-scroll-target="#quantile-regression">Quantile Regression</a></li>
+  </ul></li>
+  <li><a href="#そのほか" id="toc-そのほか" class="nav-link" data-scroll-target="#そのほか">そのほか</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">おすすめの計量分析の教科書（社会学向け）</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">計量分析</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ryota Mugiyama </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 18, 2018</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="はじめに" class="level2">
+<h2 class="anchored" data-anchor-id="はじめに"><strong>はじめに</strong></h2>
+<p>自分の所属している大学院では基本的に研究方法については独学で身につけることが期待されています。なので、これまでに自分でいろいろと教科書を調べて読みました。もしかしたら同じようにどのような教科書を読むべきか悩んでいる人がいるかもしれないので、何かの役に立つことを期待して、自分が読んでみて良いと思ったテキストを挙げておきます。</p>
+<p>挙げているテキストはすべて英語です。もちろん日本語で書かれたテキストにもいいものはたくさんあるのですが、英語のテキストは基本的に日本語のテキストよりも長い分量で丁寧に書かれているので、独学には適していると思うからです。</p>
+<p>社会調査法などをとおして基本的な方法（度数分布、平均・分散などの要約統計量、クロス集計、平均値の比較、相関係数などの2変量の分析、統計的推測、仮説検定など）をすでに学習した、社会学系の大学院生を想定しています。もしこれらをまだ勉強していないという場合には、先にこちらを勉強しておくほうがいいと思います。</p>
+</section>
+<section id="計量分析の基礎" class="level2">
+<h2 class="anchored" data-anchor-id="計量分析の基礎"><strong>計量分析の基礎</strong></h2>
+<p>計量分析の基本はOLS回帰分析なので、まずは計量経済学の基礎的なテキストから入るのが一番良いと思います。</p>
+<section id="introductory-econometrics-a-modern-approach" class="level3">
+<h3 class="anchored" data-anchor-id="introductory-econometrics-a-modern-approach"><a href="https://www.amazon.co.jp/dp/1337558869">Introductory Econometrics: A Modern Approach</a></h3>
+<p>分厚いので時間がかかると思いますが、これ一冊きちんと読めていれば回帰分析に関しては他にテキストはいらないのではないかと思います。</p>
+<p>ふつうのクロスセクションのOLS回帰分析のほか、時系列分析、パネルデータ分析、操作変数法、同時方程式、制限従属変数、カテゴリカルデータ分析、サンプル・セレクションモデルなどが扱われていますが、割かれている紙幅はさほど多くないので、このあたりは他のテキストを使うほうがいいと思います。</p>
+<p>ただし、数式慣れしていない場合は、これでも少し難しいと感じるかもしれません。そういう場合は、以下の教科書を読んでから本書にチャレンジするといいかもしれません。</p>
+</section>
+<section id="regression-analysis-for-the-social-sciences" class="level3">
+<h3 class="anchored" data-anchor-id="regression-analysis-for-the-social-sciences"><a href="https://www.amazon.co.jp/dp/0415991544">Regression Analysis for the Social Sciences</a></h3>
+<p>米国留学中の友人から教えてもらった本で、実際の論文例や統計ソフトの出力結果などが豊富に載っており、実際にどのようなことをするのか、イメージがわきやすいつくりになっています。計量分析の経験が少ないとか、数式が苦手だという人はこれを読んでからWooldridgeに進むとよいと思います。</p>
+<p>社会学の場合は、連続変数よりもカテゴリカル変数を扱うことのほうが多いです。もちろんOLSによる回帰分析が多変量解析の基本なので、これはきちんと押さえたうえで、別途カテゴリカル変数を用いるモデルについても勉強する必要があります。</p>
+</section>
+</section>
+<section id="カテゴリカルデータの分析" class="level2">
+<h2 class="anchored" data-anchor-id="カテゴリカルデータの分析">カテゴリカル・データの分析</h2>
+<section id="regression-models-for-categorical-and-limited-dependent-variables" class="level3">
+<h3 class="anchored" data-anchor-id="regression-models-for-categorical-and-limited-dependent-variables"><a href="https://www.amazon.co.jp/dp/0803973748">Regression Models for Categorical and Limited Dependent Variables</a></h3>
+<p>自分が読んだので一番良かったのはこれです。ロジットモデル、プロビットモデル、順序ロジットモデル、多項ロジットモデル、条件つきロジットモデル、Type-1, Type-2トービット・モデル、ポアソン回帰・負の二項回帰モデルが扱われています。</p>
+</section>
+<section id="regression-models-for-categorical-dependent-variables-using-stata" class="level3">
+<h3 class="anchored" data-anchor-id="regression-models-for-categorical-dependent-variables-using-stata"><a href="https://www.amazon.co.jp/dp/1597181110">Regression Models for Categorical Dependent Variables Using Stata</a></h3>
+<p>Stataを使う人であれば、この本も評判がいいです。前述の本は出版が1997年と若干古いので、こちらのほうがより新しいです。とくに結果の解釈のしかたについて、Marginal effectの算出なども含めてかなり紙幅を割いているので、読んでおくとより説得的な議論ができるかもしれません。</p>
+</section>
+</section>
+<section id="生存分析イベントヒストリー分析" class="level2">
+<h2 class="anchored" data-anchor-id="生存分析イベントヒストリー分析">生存分析／イベントヒストリー分析</h2>
+<p><a href="https://ryotamugiyama.com/2016/01/08/text_eventhistory/">こちらの記事</a>をご覧ください。</p>
+</section>
+<section id="階層線形モデルマルチレベルモデル" class="level2">
+<h2 class="anchored" data-anchor-id="階層線形モデルマルチレベルモデル">階層線形モデル／マルチレベルモデル</h2>
+<p>マルチレベル・モデルはざっくり言ってしまえば、</p>
+<ol type="1">
+<li>個人のなかに複数の観察時点が入れ子になっている、いわゆる縦断データの分析＝同一個人のなかの複数時点における観察値どうしが相関する。</li>
+<li>学校、職業、地域、国などのより大きな単位のなかに個人が入れ子になっている＝大きな単位を共有する個人の観察値どうしが相関する。</li>
+</ol>
+<p>の2つの場面で用いられます。いずれも基本的なモデリングに関しては特徴を共有していますが、細かいところでは違いがあるので、自分がどのような分析をやりたいのかによって読むテキストを変えたほうがいいと思います。</p>
+<section id="applied-longitudinal-data-analysis-modeling-change-and-event-occurrence" class="level3">
+<h3 class="anchored" data-anchor-id="applied-longitudinal-data-analysis-modeling-change-and-event-occurrence"><a href="https://www.amazon.co.jp/dp/0195152964">Applied Longitudinal Data Analysis: Modeling Change and Event Occurrence</a></h3>
+<p>時間による値の変化を捉えるための2つのモデル（成長曲線モデリングと、イベントヒストリー分析）を扱っています。前半が成長曲線モデリング、後半がイベントヒストリー分析です。以下の日本語訳もでています。</p>
+<p>日本語訳書籍（<a href="http://www.asakura.co.jp/books/isbn/978-4-254-12191-9/">前半の成長曲線モデリングのみ訳出したもの</a>、<a href="https://www.asakura.co.jp/books/isbn/978-4-254-12192-6/">後半のイベントヒストリー分析のみ訳出したもの</a>）もあります。</p>
+</section>
+<section id="multilevel-and-longitudinal-modeling-using-stata-fourth-edition" class="level3">
+<h3 class="anchored" data-anchor-id="multilevel-and-longitudinal-modeling-using-stata-fourth-edition"><a href="https://www.amazon.co.jp/dp/1597181366">Multilevel and Longitudinal Modeling Using Stata, Fourth Edition</a></h3>
+<p>Stataを使うのであればこの教科書がほとんどすべての方法を網羅しています。</p>
+</section>
+<section id="hierarchical-linear-models-applications-and-data-analysis-methods" class="level3">
+<h3 class="anchored" data-anchor-id="hierarchical-linear-models-applications-and-data-analysis-methods"><a href="https://www.amazon.co.jp/dp/076191904X">Hierarchical Linear Models: Applications and Data Analysis Methods</a></h3>
+<p>先に挙げた2.の場面を想定したマルチレベル・モデルであれば、このRaudenbush and Brykの本はとても評判がよいと思います。第2版が2002年なので少し古いというところもありますが、なぜ中心化をするのかとか、どういうときに切片にランダム項を入れるのか、あるいは傾きにランダム項を入れるのか、どのように解釈をするべきかといった細かいところまで扱っていておすすめです。</p>
+</section>
+<section id="applied-panel-data-analysis-for-economic-and-social-surveys" class="level3">
+<h3 class="anchored" data-anchor-id="applied-panel-data-analysis-for-economic-and-social-surveys"><a href="https://www.amazon.co.jp/dp/B01HCAV7LQ">Applied Panel Data Analysis for Economic and Social Surveys</a></h3>
+<p>パネルデータの分析を念頭に置いた本です。データの作り方から記述的な分析、固定効果モデル、ランダム効果モデル、一階差分モデル、イベントヒストリー分析までカバーしており、オーソドックスではありますが非常に分かりやすく説明されています。Stataのコードもあります。</p>
+</section>
+</section>
+<section id="その他" class="level2">
+<h2 class="anchored" data-anchor-id="その他">その他</h2>
+<p>その他、バラバラと思いつくものを挙げておきます。興味関心に応じて参考にしていただければと思います。</p>
+<section id="counterfactuals-and-causal-inference-methods-and-principles-for-social-research" class="level3">
+<h3 class="anchored" data-anchor-id="counterfactuals-and-causal-inference-methods-and-principles-for-social-research"><a href="https://www.amazon.co.jp/dp/1107694167">Counterfactuals and Causal Inference: Methods and Principles for Social Research</a></h3>
+<p>自分自身は操作変数法、傾向スコア法などの因果推論的な分析を行ったことはないので、あくまでも論文を読むうえで押さえておいたほうがいいだろうという程度の距離感で因果推論と付き合って（？）います。</p>
+<p>この本はデータ分析のhow to的な教科書ではありませんが、社会学者の書いた因果推論本であるということで、社会学を専攻している人にとっては読みやすいと思います。この本を読んで因果推論をするというよりはむしろ、モデルを組み立てるにあたってどのようなことを気をつければよいか、ということを学ぶという感じになるのではないかと思います。</p>
+</section>
+<section id="mostly-harmless-econometrics-an-empiricists-companion" class="level3">
+<h3 class="anchored" data-anchor-id="mostly-harmless-econometrics-an-empiricists-companion"><a href="https://www.amazon.co.jp/dp/0691120358">Mostly Harmless Econometrics: An Empiricist’s Companion</a></h3>
+<p>同じく因果推論ものとしてもう一冊。今は計量分析の方法についても、理想的な因果効果を測定できる実験からの差分で考えることが多くなっていて、本書はその火付け役に位置する教科書と認識しています。日本語訳も出ていますが、どちらでも好きな方を選べばよいと思います。</p>
+</section>
+<section id="flexible-imputation-of-missing-data" class="level3">
+<h3 class="anchored" data-anchor-id="flexible-imputation-of-missing-data"><a href="https://www.amazon.co.jp/dp/1032178639">Flexible Imputation of Missing Data</a></h3>
+<p>欠損値を補正する方法として現在主流な方法である多重代入法についてのテキストです。自分でも一応論文（報告書）で使用したこともあるのですが、まだなんとなく手探りの状態です。アメリカなんかでは、社会学でもImputationはやって当たり前というふうになっているようです。</p>
+<p>Rのコードがたくさん乗っているので、手を動かしながら勉強することができます。Stataでのやり方については[Stata multiple imputation]とかで検索するといい感じのウェブサイトにたどり着けると思います。</p>
+</section>
+<section id="要因分解" class="level3">
+<h3 class="anchored" data-anchor-id="要因分解">要因分解</h3>
+<p>2つの集団で回帰分析を推定して、2つの集団における変数の分布の違いがどの程度両者の間の従属変数の差を説明するのかを検討する、というのが要因分解法です。社会学でもときどき使われます。これは教科書は見当たらないのですが、いわゆるBlinder-Oaxaca decompositionにかんしては以下の論文がわかりやすくまとめていると思います。</p>
+<p>Jann, Ben. 2008. “The Blinder-Oaxaca Decomposition for Linear Regression Models.” <em>Stata Journal</em> 8(4):453–79. もう少し発展的な方法まで扱っている論文は以下になります。</p>
+<p>Fortin, Nicole, Thomas Lemieux, and Sergio Firpo. 2011. “Decomposition Methods in Economics.” Pp. 1–102 in <em>Handbook of Labor Economics</em>, vol.&nbsp;4. Elsevier Inc.</p>
+<p>この論文はChapter 1–Chapter 7まであるのですが、正直数式がたくさんあって難しいので、Blinder-Oaxaca decompositionだけ知りたいのならChapter 1と3だけ読むといいと思います。より発展的な方法についてはChapter 4以降に書かれています。</p>
+</section>
+<section id="quantile-regression" class="level3">
+<h3 class="anchored" data-anchor-id="quantile-regression"><a href="https://www.amazon.co.jp/dp/B00KTPM1CQ">Quantile Regression</a></h3>
+<p>経済学ではよく使われる分位点回帰分析ですが、最近は社会学でも使われることが増えてきたように思います。とりわけ社会的・経済的な格差を問題にするときには通常の（平均への）回帰分析だけでなく、分位点回帰分析についても押さえておくと選択肢が広がります。この本はSageの緑本ですが、分かりやすくまとまっており、おすすめです。</p>
+</section>
+</section>
+<section id="そのほか" class="level2">
+<h2 class="anchored" data-anchor-id="そのほか">そのほか</h2>
+<p>ここまで取り上げてこなかった手法としては、因子分析系、対応分析、クラスター分析、共分散構造分析、ネットワーク分析まわり、潜在クラス分析、潜在成長曲線モデル、シークエンス分析、対数乗法連関モデルなどの発展的なログリニア・モデル、質的比較分析（QCA）、時系列分析などがあります。このあたりは自分では使ったことがなかったり、詳しくなかったりするので、紹介することはしません。</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
