@@ -2,7 +2,7 @@
 title: "RとRStudioをインストールするときのつまづきポイントとその対処法へのリンク"
 author: "Ryota Mugiyama"
 date: "2020-08-03"
-categories: "R"
+image: ../images/website.jpg
 ---
 
 RおよびRStudioのインストールで困ったときの対処法についてのリンクをまとめました。

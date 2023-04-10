@@ -4,7 +4,7 @@
     "href": "lecture/CSRDA/2022-09-07CSRDA.html",
     "title": "2022年度夏・Stataを用いた計量分析入門",
     "section": "",
-    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 2021年度計量分析セミナー・夏"
+    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 2022年度計量分析セミナー・夏"
   },
   {
     "objectID": "lecture/CSRDA/2022-09-07CSRDA.html#内容",
@@ -37,14 +37,14 @@
   {
     "objectID": "lecture/CSRDA/2023-03-09CSRDA.html",
     "href": "lecture/CSRDA/2023-03-09CSRDA.html",
-    "title": "2022年度夏・Stataを用いた計量分析入門",
+    "title": "2022年度春・Stataによるパネル調査データ分析の実践",
     "section": "",
-    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 2021年度計量分析セミナー・夏"
+    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 2022年度計量分析セミナー・春"
   },
   {
     "objectID": "lecture/CSRDA/2023-03-09CSRDA.html#内容",
     "href": "lecture/CSRDA/2023-03-09CSRDA.html#内容",
-    "title": "2022年度夏・Stataを用いた計量分析入門",
+    "title": "2022年度春・Stataによるパネル調査データ分析の実践",
     "section": "内容",
     "text": "内容\n日本においても多くの大規模パネル調査データが蓄積されるようになり、パネル調査データの分析可能性は飛躍的に広がっています。本コースでは、統計ソフトStataを用いて、パネル調査データを使った分析の基礎的な手順と、代表的なパネル調査データ分析の方法を学習します。具体的には、どのように分析のためのデータセットを作ればよいのか、どのような問いに対してどのような方法を使うべきかに焦点を当てて学習します。たんにStataで結果を出すというだけでなく、どのようにして見やすい図表を作るのか、結果を出力・保存するため効率的なワークフローといった実践的な側面にも重点をおいて解説します。\n次のような方におすすめです\n\n一時点の社会調査データの分析経験はあるが、パネル調査データを分析した経験はなく、分析してみたい\nパネルデータを分析するための手順を知りたい\nパネルデータの分析方法をどのように選べばよいか知りたい\nパネル調査データを分析した経験があるが、よりよいデータ構築の手順や方法の選び方について知りたい\n\nセミナーで使用したスライドはこちらにアップロードしています。"
   },
@@ -60,14 +60,14 @@
     "href": "research.html#work-in-progress",
     "title": "Research",
     "section": "Work in progress",
-    "text": "Work in progress\n\n三世代学歴移動のトレンド\nMultigenerational Perspective on Trends in Intergenerational Educational Mobility: The Case of Japan (with Aguru Ishibashi)\n\n2023-03-08 第74回数理社会学会大会で報告しました。slide\n\n\n\n出身階層の直接効果に対する高学歴化の影響\nDoes Educational Expansion Weaken the Equalizing Power of College? Trends in Social Origin Differentials in Occupational Destination in Japan (with Kohei Toyonaga)\n\n2022-08-13 ISA RC28 Summer Meetingで報告しました。slide\n\n\n\n不安定雇用と家族形成の遅れの関係\nEmployment Uncertainty and Delayed Marriage in Society Where Cohabitations Are Not Prevalent: Incorporating Premarital Partnership\nRising Employment Uncertainty and Delayed Marriage and Parenthood: Cohort Analysis of Japanese Men\n\n2022-09-04 第32回日本家族社会学会大会で報告しました。slide\n\n\n\n出産育児期の女性就業における階層差\nIncreasing Educational Gradient: Cohort Changes in Women’s Employment Around Childbirth in Japan\n\n\n感染症流行前後のテレワーク利用可能性の格差\nTrends and Mechanisms of Inequality in Telework Availability by Income: Evidence from before and after the COVID-19 Outbreak (with Kyoko Komatsu)\n\n第95回日本社会学会大会で報告しました。slide\n企業規模・雇用形態間の格差に着目した研究が『日本労働研究雑誌』（近刊）に掲載されます。\n\n\n\n日本におけるタスクの二極化の検証\nTrends in Task Distribution in Japan, 1990–2015: Evidence from the Occupational Information Network of Japan and the Population Census Data (with Kyoko Komatsu)\n\nJapan Labor Issuesで現時点での発見が大まかにまとめられています。paper\n\n\n\n大学定員の地理的分布の変化と教育機会の不平等\nChanges in Geographic Accessibility to College and Inequality of Educational Opportunity (with Kohei Toyonaga)\n\n2022-08-28 第73回数理社会学会大会で報告しました。slide"
+    "text": "Work in progress\nMultigenerational Perspective on Trends in Intergenerational Educational Mobility: The Case of Japan (with Aguru Ishibashi)\n\n2023-03-08 第74回数理社会学会大会で報告しました。slide\n\nDoes Educational Expansion Weaken the Equalizing Power of College? Trends in Social Origin Differentials in Occupational Destination in Japan (with Kohei Toyonaga)\n\n2022-08-13 ISA RC28 Summer Meetingで報告しました。slide\n\nEmployment Uncertainty and Delayed Marriage in Society Where Cohabitations Are Not Prevalent: Incorporating Premarital Partnership\n\n2023-03-23 ディスカッション・ペーパーが公開されました。paper\n\nRising Employment Uncertainty and Delayed Marriage and Parenthood: Cohort Analysis of Japanese Men\n\n2022-09-04 第32回日本家族社会学会大会で報告しました。slide\n\nIncreasing Educational Gradient: Cohort Changes in Women’s Employment Around Childbirth in Japan\nTrends and Mechanisms of Inequality in Telework Availability by Income: Evidence from before and after the COVID-19 Outbreak (with Kyoko Komatsu)\n\n第95回日本社会学会大会で報告しました。slide\n企業規模・雇用形態間の格差に着目した研究が『日本労働研究雑誌』（近刊）に掲載されます。\n\nTrends in Task Distribution in Japan, 1990–2015: Evidence from the Occupational Information Network of Japan and the Population Census Data (with Kyoko Komatsu)\n\nJapan Labor Issuesで現時点での発見が大まかにまとめられています。paper\n\nChanges in Geographic Accessibility to College and Inequality of Educational Opportunity (with Kohei Toyonaga)\n\n2022-08-28 第73回数理社会学会大会で報告しました。slide"
   },
   {
     "objectID": "research.html#reviewed-paper",
     "href": "research.html#reviewed-paper",
     "title": "Research",
     "section": "Reviewed paper",
-    "text": "Reviewed paper\nÇineli, Beyda and Ryota Mugiyama. 2023. “Money management over the course of marriage: parenthood, employment and household financial organization in Japan.” Advances in Life Course Research. Online first.\n麦山亮太・小松恭子，近刊，「テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析」『日本労働研究雑誌』．\nIgarashi, Akira and Ryota Mugiyama. 2023. “Whose tastes matter? Discrimination against immigrants in the Japanese labour market.” Journal of Ethnic and Migration Studies. Online first.\n麦山亮太，2022，「出産・育児期における女性就業とその学歴差の長期趨勢：雇用労働力化に着目して」『社会学評論』73(2): 86–102．\nMugiyama, Ryota and Kohei Toyonaga. 2022. “Role of Cohort Size in Trends in Class and Occupational Returns to Education at First Job: The Case of Japan.” European Sociological Review. 38(2): 269–285.\n打越文弥・麦山亮太・小松恭子，2021，「職域分離とスキルからみる労働市場のジェンダー格差：日本版O-NET・国勢調査マッチングデータから得られる示唆」『理論と方法』36(1): 65–82．（特集論文）\n打越文弥・麦山亮太，2020，「日本における性別職域分離の趨勢：1980–2005年国勢調査集計データを用いた要因分解」『人口学研究』56: 9–23．\n麦山亮太・西澤和也，2017，「大企業と中小企業が新卒者に求める能力は異なるか：求人情報サイトへのトピックモデルの適用」『理論と方法』32(2): 214–227．\n麦山亮太，2017，「職業経歴と結婚への移行：雇用形態・職種・企業規模と地位変化の効果における男女差」『家族社会学研究』29(2): 129–141．\n麦山亮太，2017，「キャリアの中断が生み出す格差：正規雇用獲得への持続的影響に着目して」『社会学評論』68(2): 248–264．\n麦山亮太，2016，「結婚は職業キャリアにいかなる影響を与えるのか？：無業・管理職への移動に関する男女比較分析」『家族社会学研究』28(2): 122–135．"
+    "text": "Reviewed paper\n麦山亮太・小松恭子，近刊，「テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析」『日本労働研究雑誌』．\nÇineli, Beyda and Ryota Mugiyama. 2023. “Money management over the course of marriage: parenthood, employment and household financial organization in Japan.” Advances in Life Course Research. Online first.\nIgarashi, Akira and Ryota Mugiyama. 2023. “Whose tastes matter? Discrimination against immigrants in the Japanese labour market.” Journal of Ethnic and Migration Studies. Online first.\n麦山亮太，2022，「出産・育児期における女性就業とその学歴差の長期趨勢：雇用労働力化に着目して」『社会学評論』73(2): 86–102．\nMugiyama, Ryota and Kohei Toyonaga. 2022. “Role of Cohort Size in Trends in Class and Occupational Returns to Education at First Job: The Case of Japan.” European Sociological Review. 38(2): 269–285.\n打越文弥・麦山亮太・小松恭子，2021，「職域分離とスキルからみる労働市場のジェンダー格差：日本版O-NET・国勢調査マッチングデータから得られる示唆」『理論と方法』36(1): 65–82．（特集論文）\n打越文弥・麦山亮太，2020，「日本における性別職域分離の趨勢：1980–2005年国勢調査集計データを用いた要因分解」『人口学研究』56: 9–23．\n麦山亮太・西澤和也，2017，「大企業と中小企業が新卒者に求める能力は異なるか：求人情報サイトへのトピックモデルの適用」『理論と方法』32(2): 214–227．\n麦山亮太，2017，「職業経歴と結婚への移行：雇用形態・職種・企業規模と地位変化の効果における男女差」『家族社会学研究』29(2): 129–141．\n麦山亮太，2017，「キャリアの中断が生み出す格差：正規雇用獲得への持続的影響に着目して」『社会学評論』68(2): 248–264．\n麦山亮太，2016，「結婚は職業キャリアにいかなる影響を与えるのか？：無業・管理職への移動に関する男女比較分析」『家族社会学研究』28(2): 122–135．"
   },
   {
     "objectID": "research.html#book-chapters",
@@ -81,7 +81,7 @@
     "href": "research.html#discussion-paper",
     "title": "Research",
     "section": "Discussion paper",
-    "text": "Discussion paper\n査読付き論文などに掲載されたものについては順次削除します。\n麦山亮太・小松恭子，2022，「テレワーク実施可能性における格差：新型コロナウイルス感染症流行前後の時系列比較」JILPT Discussion Paper Series. 22-SJ(01).（同ペーパーは労働政策研究・研修機構『職業特性に着目したコロナウイルス流行の雇用・所得格差等への影響に関する研究：日本版O-NETの活用による研究（ディスカッションペーパー集）』にも記載）\n小松恭子・麦山亮太，2022，「日本の労働市場におけるタスクの分布のトレンド：日本版O-NETと国勢調査のマッチングデータから得られた知見」労働政策研究・研修機構『職業特性に着目したコロナウイルス流行の雇用・所得格差等への影響に関する研究：日本版O-NETの活用による研究（ディスカッションペーパー集）』．\nMugiyama, Ryota and Kohei Toyonaga. 2022. “Does Educational Expansion Weaken the Equalizing Power of College? Trends in Social Origin Differentials in Occupational Destination in Japan.”竹ノ下弘久編『科学研究費補助金基盤研究（B）（18H00931）「家族と労働市場における階級，ジェンダー，エスニシティの相互作用と不平等の比較研究」 研究成果報告書』42–72．\n小松恭子・麦山亮太，2021，「日本版O-NETの数値情報を用いた応用研究の可能性：日本版O-NETと国勢調査の職業マッチングデータを活用したタスクのトレンド分析」JILPT Discussion Paper. 21(11).\nUchikoshi, Fumiya, Ryota Mugiyama and Megumi Oguro. 2020. “Still Separate in STEM? Trends in Sex Segregation by Field of Study in Japan, 1975–2019.” Institute of Economic Research, Hitotsubashi University Discussion Paper Series A, 710.\n麦山亮太，2017，「地位へのマッチングからみる賃金格差の生成過程：企業規模と雇用形態に着目して」東京大学社会科学研究所附属社会調査・データアーカイブ研究センター編『2016年度参加者公募型二次分析研究会 現代日本の格差と不平等に関するデータの二次分析 研究成果報告書』，49–67．\n麦山亮太，2016，「企業間移動がその後の賃金に与える持続的影響：無業経由の有無と男女の違いに着目して」東京大学社会科学研究所附属社会調査・データアーカイブセンター編『2015年度課題公募型二次分析研究会 パネルデータを活用した就労・家族・意識の関連性についての研究 研究成果報告書』，41-57．"
+    "text": "Discussion paper\n査読付き論文などに掲載されたものについては順次削除します。\nMugiyama, Ryota. 2023. 「Employment Uncertainty and Delayed Marriage in a Society Where Cohabitations Are Not Prevalent: Incorporating Premarital Partnership」CSRDA Discussion Paper Series, 42.\n小松恭子・麦山亮太，2022，「日本の労働市場におけるタスクの分布のトレンド：日本版O-NETと国勢調査のマッチングデータから得られた知見」労働政策研究・研修機構『職業特性に着目したコロナウイルス流行の雇用・所得格差等への影響に関する研究：日本版O-NETの活用による研究（ディスカッションペーパー集）』．\nMugiyama, Ryota and Kohei Toyonaga. 2022. “Does Educational Expansion Weaken the Equalizing Power of College? Trends in Social Origin Differentials in Occupational Destination in Japan.”竹ノ下弘久編『科学研究費補助金基盤研究（B）（18H00931）「家族と労働市場における階級，ジェンダー，エスニシティの相互作用と不平等の比較研究」 研究成果報告書』42–72．\n小松恭子・麦山亮太，2021，「日本版O-NETの数値情報を用いた応用研究の可能性：日本版O-NETと国勢調査の職業マッチングデータを活用したタスクのトレンド分析」JILPT Discussion Paper. 21(11).\nUchikoshi, Fumiya, Ryota Mugiyama and Megumi Oguro. 2020. “Still Separate in STEM? Trends in Sex Segregation by Field of Study in Japan, 1975–2019.” Institute of Economic Research, Hitotsubashi University Discussion Paper Series A, 710.\n麦山亮太，2017，「地位へのマッチングからみる賃金格差の生成過程：企業規模と雇用形態に着目して」東京大学社会科学研究所附属社会調査・データアーカイブ研究センター編『2016年度参加者公募型二次分析研究会 現代日本の格差と不平等に関するデータの二次分析 研究成果報告書』，49–67．\n麦山亮太，2016，「企業間移動がその後の賃金に与える持続的影響：無業経由の有無と男女の違いに着目して」東京大学社会科学研究所附属社会調査・データアーカイブセンター編『2015年度課題公募型二次分析研究会 パネルデータを活用した就労・家族・意識の関連性についての研究 研究成果報告書』，41-57．"
   },
   {
     "objectID": "research.html#miscs",
@@ -109,7 +109,7 @@
     "href": "notes.html#相関係数と散布図",
     "title": "Notes",
     "section": "相関係数と散布図",
-    "text": "相関係数と散布図\nRの練習の一環で、よく教科書に載っている「相関係数が◯◯のときの散布図」をRで作る際のスクリプトを書きました。リンクはこちら。\n（2018/3/4 upload, 2018/3/9 revised→2022/09/19移行）"
+    "text": "相関係数と散布図\nRの練習の一環で、よく教科書に載っている「相関係数が◯◯のときの散布図」をRで作る際のスクリプトを書きました。\n（2018/3/4 upload, 2018/3/9 revised→2022/09/19移行）"
   },
   {
     "objectID": "notes.html#階層ベイズモデルを実装する",
@@ -138,6 +138,13 @@
     "title": "Notes",
     "section": "社会学のための統計分析基礎：SPSSを用いて",
     "text": "社会学のための統計分析基礎：SPSSを用いて\n所属研究室にて、社会調査実習という学部生・院生向けの授業のTAを担当しています。5/17の授業にて、統計分析の基礎についての授業を担当した際に用いた資料です。SPSSを使って、データハンドリングの仕方、1変量分布・2変量関連の検討の仕方について解説しています。推測統計の話はあえて行っていません。 （2016/05/19 upload） （2016/05/27 p.27についてご指摘頂いたので修正。ありがとうございました。）\n第2弾をアップロードしました。推測統計、2変量関連、多変量解析の考え方と回帰分析の基礎について解説しています。（2016/11/08）\n（→2022/09/19移行）"
+  },
+  {
+    "objectID": "notes.html#逆ミルズ比を図で理解する",
+    "href": "notes.html#逆ミルズ比を図で理解する",
+    "title": "Notes",
+    "section": "逆ミルズ比を図で理解する",
+    "text": "逆ミルズ比を図で理解する\nサンプルセレクションモデルで頻出する逆ミルズ比について、図で理解できるようにいろいろと工夫してみた、という記事です。R markdownで作成しました。（2016/11/28 upload）\n（→2023/04/10移行）"
   },
   {
     "objectID": "lecture.html",
@@ -186,7 +193,7 @@
     "href": "index.html",
     "title": "Ryota Mugiyama",
     "section": "",
-    "text": "Welcome to Ryota Mugiyama’s Homepage!\n麦山 亮太（むぎやま りょうた）のホームページへようこそ。学習院大学法学部政治学科で社会学の研究・教育をしています。専門は社会階層論、なかでも労働市場における不平等、世代間移動、家族形成などをテーマに、社会調査データの計量分析をもちいて研究しています。\nくわしい経歴などはResearchmapをご参照ください。\n大学院進学・研究生を希望されている方はこちらをご確認ください。\n\nRyota Mugiyama\nPh.D in Sociology\nDepartment of Political Studies, Faculty of Law, Gakushuin University\nE-mail: ryota.mugiyama[at]gakushuin.ac.jp\nTwitter: @RyotaMugiyama\nAddress: 1-5-1 Mejiro, Toshima-ku, Tokyo, 171-8588, JAPAN.\n\n本ページはこちらからの移行作業中のページで、内容は中途半端な状態です。"
+    "text": "Welcome to Ryota Mugiyama’s Homepage!\n麦山 亮太（むぎやま りょうた）のホームページへようこそ。学習院大学法学部政治学科で社会学の研究・教育をしています。専門は社会階層論、なかでも労働市場における不平等、世代間移動、家族形成などをテーマに、社会調査データの計量分析をもちいて研究しています。\nくわしい経歴などはResearchmapをご参照ください。\n大学院進学・研究生を希望されている方はこちらをご確認ください。\n\nRyota Mugiyama\nPh.D in Sociology\nDepartment of Political Studies, Faculty of Law, Gakushuin University\nE-mail: ryota.mugiyama[at]gakushuin.ac.jp\nTwitter: @RyotaMugiyama\nAddress: 1-5-1 Mejiro, Toshima-ku, Tokyo, 171-8588, JAPAN.\n\n本ページは旧個人ページから内容を適宜選定してリニューアルしたページです。旧ページはそのうち削除予定です。"
   },
   {
     "objectID": "blog/2021-12-28-introductory.html",
@@ -483,6 +490,20 @@
     "text": "「コマンドが実行できない」系\nこれはインストールに関係ないが、備忘録として今回出会ったもの、昨年度出会ったものを列挙する（いずれも「よくある」ミス）。\n\nオブジェクトが存在しない\nhist(x)としてもヒストグラムがでない→そもそもxがないのでは？\nコマンドのつづり間違い\nオブジェクトのつづり間違い\nコマンドにカーソル合わせてEnterしても実行できない→コマンドの実行はEnterではなくCtrl + Enter (Windows) または Command + Enter (Mac)。\ndf <- readr::read_csv(\"data.csv\")でデータが読み込めない\n→そもそもプロジェクトのフォルダに\"data.csv\"が入っていない。\n%>%処理ができない、ggplot()が出ない\n→library(tidyverse)またはlibrary(dplyr)またはlibrary(ggplot2)の実行し忘れ。\n全角スペース\n括弧をすべて閉じていない"
   },
   {
+    "objectID": "blog/2016-04-07-ssmocc8.html",
+    "href": "blog/2016-04-07-ssmocc8.html",
+    "title": "SSM職業小分類（追加コード含む）をSSM職業8分類に変換するStataシンタックス",
+    "section": "",
+    "text": "（2017/5/11 701番以降の追加コードを修正） （2017/5/13 熟練、半熟練、非熟練の説明を追加、15の職業大分類を追加）\n標題の通りです。ご使用は自己責任でお願いします。作成に際しては、1995年SSM調査研究会，1995，『SSM産業分類・職業分類 (95年版)』を参照しました。\nミスや不適切な箇所を見つけた方は、ご指摘くださいますようお願いします。\nSPSSを使う場合は村瀬洋一先生のHPが、Rを使う場合は寺沢拓敬先生のHPが、それぞれ参考になります。\n*** recode occupation into SSM 8 classification (including no-job) for stata **\n*** 20170511 made by Ryota Mugiyama *******************************************\n\n/******************************************************************\nSSM職業小分類をSSM職業8分類に変換するシンタックス（Stata用）になります。\nただし、701番以降の追加コードは以下に示す通り麦山が独自に分類を割り当てています。\n使用は自己責任でお願いします。\nシンタックスは、recode関数を用いてSSM職業小分類（occupation）から\nSSM職業8分類（ssmocc）を作成するというかたちになっています。\n行は見やすさのため、1行ごとに1への割り当て、2への割り当て…というふうに分けています。\n9行目は追加コードの分類、10行目は分類不能や非該当への分類を示しています。\n ********************************************************************/\n\n/***SSM1995年版職業分類に含まれないコードの8分類への割り当て****************\n701\"スーパーなどのレジスター係員\" → 4\"販売\"\n702\"大工\" → 5\"熟練\"\n703\"教員\" → 1\"専門\"\n704\"製品製造作業者\" → 6\"半熟練\"\n706\"宅配便の配達\" → 7\"非熟練\"\n801\"介護員・ヘルパー\" → 6\"半熟練\"\n802\"その他の医療・福祉サービス職従事者\" → 6\"半熟練\"\n803\"雇われている販売店長\" → 4\"販売\"\n804\"雇われている飲食店長\" → 4\"販売\"\n********************************************************************/\nrecode occupation ///\n(501/544 = 1)(609/610 = 1)(615 = 1) ///\n(545/553 = 2)(608 = 2) ///\n(554/565 = 3)(586 = 3)(590 = 3)(593/598 = 3)(616/619 = 3) ///\n(566/577 = 4)(582/585 = 4)(587/589 = 4) ///\n(579 = 5)(581 = 5)(623/624 = 5)(626 = 5)(628 = 5)(631 = 5)(633 = 5)(635/644 = 5)(647 = 5)(651 = 5)(654/656 = 5)(658 = 5)(660/666= 5)(668 = 5)(670/675 = 5)(677/681 = 5)(684 = 5) ///\n(580 = 6)(606/607 = 6)(611/614 = 6)(625 = 6)(627 = 6)(629/630 = 6)(632 = 6)(634 = 6)(645/646 = 6)(648/650 = 6)(652/653 = 6)(657 = 6)(659 = 6)(667 = 6)(669 = 6)(672 = 6)(676 = 6) ///\n(578 = 7)(591/592 = 7)(620/622 = 7)(682/683 = 7)(685/688 = 7) ///\n(599/605 = 8) ///\n(701 = 4)(702 = 5)(703 = 1)(704 = 6)(706 = 7)(801/802 = 6)(803/804 = 4) ///\n(689 =.)(705 =.)(707 =.)(987 =.)(998 = .)(999 =.) ///\n, gen(ssmocc)\n\n/*値ラベルを振りたい場合は以下を追加してください。*/\nlab def occ 1\"専門\" 2\"管理\" 3\"事務\" 4\"販売\" 5\"熟練\" 6\"半熟練\" 7\"非熟練\" 8\"農林\"\nlab val ssmocc occ\n\n/*「無職」を職業カテゴリに含めたい場合は以下を追加してください。*/\nreplace ssmocc = 9 if occupation == 998"
+  },
+  {
+    "objectID": "blog/2016-01-31-excel_star.html",
+    "href": "blog/2016-01-31-excel_star.html",
+    "title": "有意水準を示す*印をつけるExcel関数",
+    "section": "",
+    "text": "2016/11/7 (Mon) 関数に間違いがあったので修正しました。\nSPSSやStata、Rなどの統計分析ソフトの出力をExcelに貼り付けて表を整形、加工することはしばしばあると思います。こうした作業はできるだけ早く、かつミスが生じないように行いたいところです。そこで今回は、P値から有意水準を示す星印（アスタリスク）を出力するExcel関数を紹介します。\n具体的な使用場面としては、統計ソフトで出力された回帰分析の表をExcelに貼り付けた際に、P値から有意水準を示す星印を自分で書く作業を行う際に用います。以下、よく見る2つのパターンについて、関数を示しておきます。\n\n「*** p < 0.001, ** p < 0.01, * p < 0.05」の場合\n\n=IF(D3=\"\",\"\",IF(D3<0.001,\"***\",IF(D3<0.01,\"**\",IF(D3<0.05,\"*\",\"\"))))\n\n「** p < 0.01, * p < 0.05, † p < 0.1」の場合\n\n=IF(D3=\"\",\"\",IF(D3<0.01,\"**\",IF(D3<0.05,\"*\",IF(D3<0.1,\"†\",\"\"))))\n\n「** p < 0.01, * p < 0.05」の場合\n\n=IF(D3=\"\",\"\",IF(D3<0.01,\"**\",IF(D3<0.05,\"*\",\"\")))\n\n「*** p < 0.001, ** p < 0.01, * p < 0.05, † p < 0.1」の場合\n\n=IF(D3=\"\",\"\",IF(D3<0.001,\"***\",IF(D3<0.01,\"**\",IF(D3<0.05,\"*\",IF(D3<0.1,\"†\",\"\")))))\n「D3」という部分には適宜参照するセルを代入してください。\n関数の中身はIF関数を重ねただけの単純なもので、参照するセルに値が入っている場合には、P値がそれぞれの値を下回っていればそれに該当する印を出力し、どの値も下回らない、または空白である場合は何も出力しない、という論理式となっています。"
+  },
+  {
     "objectID": "blog/2018-02-18-quantitativemethods.html",
     "href": "blog/2018-02-18-quantitativemethods.html",
     "title": "おすすめの計量分析の教科書（社会学向け）",
@@ -543,7 +564,7 @@
     "href": "blog/2018-02-06-jobstability.html",
     "title": "Job (in)stability or job (in)security?：「安定性」の使い分けに関するメモ）",
     "section": "",
-    "text": "先日この本を読んでいたところ、興味深い記述をみつけた。\nNeumark, David eds. 2001. On the Job: Is Long-Term Employment a Thing of the Past? Russell Sage Foundation.\n\n… “J(j)ob stability,” meaning the duration of jobs or the probability of retaining or leaving a job; and “job security,” referring to the likelihood of experiencing involuntary job loss. (p.1)\n筆者訳：「仕事の安定性」、これは仕事に就いている期間の長さやそれを維持する確率、あるいは仕事を離れる確率を意味する。そして「仕事の安心性」、これは非自発的に仕事を失うことを経験する見込みを意味する。\n\n英和辞書でその意味を調べると、“stability”は「安全性」とか「確実性」、“security”は「安全」とか「安心」といった意味が出てくる。なので、“job stability”あるいは”job security”といったときには、「仕事があるていど定まっていること」、言い換えれば「仕事が転々と変わるわけではないこと」を指すものとして、どちらも同じニュアンスで用いられているのかと思っていた。\nしかし上記の書き分けを見る限り、両者はかなり違う意味で用いられているようだ1。そしてそれは、単純に異なる経験的な現象に対して異なる名前がつけられたということを越えて、規範的な意味の違いをも含意しているように思えた。\nそこで今回は、この両者の違いについての自分なりの理解をメモとして残しておく。ここでは”job stability”を「仕事の安定性」、“job security”を「仕事の安心性」ととりあえず訳しておいた2。"
+    "text": "先日この本を読んでいたところ、興味深い記述をみつけた。\nNeumark, David eds. 2001. On the Job: Is Long-Term Employment a Thing of the Past? Russell Sage Foundation.\n\n\n… “J(j)ob stability,” meaning the duration of jobs or the probability of retaining or leaving a job; and “job security,” referring to the likelihood of experiencing involuntary job loss. (p.1)\n筆者訳：「仕事の安定性」、これは仕事に就いている期間の長さやそれを維持する確率、あるいは仕事を離れる確率を意味する。そして「仕事の安心性」、これは非自発的に仕事を失うことを経験する見込みを意味する。\n\n英和辞書でその意味を調べると、“stability”は「安全性」とか「確実性」、“security”は「安全」とか「安心」といった意味が出てくる。なので、“job stability”あるいは”job security”といったときには、「仕事があるていど定まっていること」、言い換えれば「仕事が転々と変わるわけではないこと」を指すものとして、どちらも同じニュアンスで用いられているのかと思っていた。\nしかし上記の書き分けを見る限り、両者はかなり違う意味で用いられているようだ1。そしてそれは、単純に異なる経験的な現象に対して異なる名前がつけられたということを越えて、規範的な意味の違いをも含意しているように思えた。\nそこで今回は、この両者の違いについての自分なりの理解をメモとして残しておく。ここでは”job stability”を「仕事の安定性」、“job security”を「仕事の安心性」ととりあえず訳しておいた2。"
   },
   {
     "objectID": "blog/2018-02-06-jobstability.html#job-stabilityの意味",
@@ -614,6 +635,27 @@
     "title": "学生向け：レポートでやるべき（でない）こと",
     "section": "その他",
     "text": "その他\n\nいつでも言える教訓や反省文・お願いを書かない\nレポートに教訓や呼びかけのような言葉は不要である。たとえば次のような締めくくりの文言は、いついかなるときにも言えるものであって、レポートの内容を深めるものではないので、不要である。\n\nこのような問題を私たち一人ひとりが考えていかなければいけない。\n私たちみながこの問題を認識して、意識を変えていく必要がある。\n\nもっと悪いのは、レポートに次のような謝罪文や「お願い」を書くことである。このような謝罪文やお願いを書かれたからと言って点数に手心を加えることはないし、むしろレポートの内容に関係ないものを書いているということで減点対象となってしまい、単位を取るという本来の目的も果たすことができなくなってしまうかもしれない。謝罪文や「お願い」を書く時間を、レポートの内容を洗練させるために使ったほうずっとよい結果につながるだろう。\n\nレポートの提出が遅くなりまして申し訳ありません。\n私は今年この授業の単位を落としてしまうと留年してしまいます。すでに内定を頂いておりまして…（以下略）"
+  },
+  {
+    "objectID": "blog/2017-02-20-gakushinDC.html",
+    "href": "blog/2017-02-20-gakushinDC.html",
+    "title": "学振DC（社会科学）の申請書を公開します",
+    "section": "",
+    "text": "少し前になりますが、平成29年度の学術振興会特別研究員DC2への採用内定をいただきました（面接免除）。そこで、採用にあたり提出した申請書を公開いたします。以下にリンクを貼っておきます。研究課題名は「無業経験の長期的影響にみる格差生成プロセスの男女比較研究」です。\n学振DC2申請書（麦山）\n分科・細目は「社会学」になります。\nWeb上に他の方の学振の申請書がアップロードされていたりするのですが、社会科学のものは案外少ないので、とくに社会科学で申請される方の参考になれば幸いです。\n一般的なコツとか注意点は［学振　申請書　書き方］とかで検索すれば出てくると思うので、自分が申請書を書くにあたり気をつけたこととして、以下の3点を挙げておきます。\n\n\nあまり詳しく書く必要はないかと思いますが……自分がどのような方法によって、何を明らかにしたいのかを一文でまとめることが重要と思います。審査員の先生方は一枚一枚の申請書を読むのにそこまで時間を割かないと考えると、なるべく短く研究の重要性をまとめることが大事になるだろうし、また一文で分かりやすくまとめることで、自分の研究構想が整理できます。\n\n自分の場合：「本研究の目的は、無業経験がキャリアに与える長期的影響とそれにともなう格差がいかなるメカニズムで生成するのかを、年齢と非正規雇用に着目した男女比較によって明らかにすることにある。」（申請書p.5）\n\n\n\n\n申請書を読む人として、社会学者だけでなく、経済学者、政治学者、法学者…といった他の社会科学者がいることを想定して問題を立てることが大事だと考えました。\n\n自分の場合：「1990年代以降の経済停滞を背景として、日本においても完全失業率は高い水準で推移している。一度働き始めたとしても、キャリアを中断し無業を経験する人びとは増加しつつあり、これまで安定したキャリアを歩むとされてきた男性にもその影響は及んでいる。」（申請書p.3）\n\nまた、この課題を明らかにすることでいかなる政策的な含意が導かれるのか、社会問題の解決に寄与しうるのかということを書くことも必要になると思います。\nとはいえ実際には、自分の専門分野である社会学あるいはそのなかでもさらに小さな分野にもとづいて研究を進めることになるので、そこへの理論的・経験的貢献が第一義となることを念頭に置くのが大事かなと思います。\n\n\n\n自分のように社会学で計量分析を用いた研究の場合、自分で調査や実験を行うということは少なく、むしろ既存の社会調査データの二次分析が主なアプローチになってきます。日本でも社会調査データのデータアーカイブはかなり整理されてきて、院生でも比較的容易に大規模社会調査データの分析を行うことが可能になっています。\n一方で、こうした研究はまだまだ一般的とは言えないですから、「自分で調査していないデータの分析はお手軽で、実態に沿った内容にならない」といった誤解を持たれる可能性もあります。そこで、調査データの作成に少しでも関わった経験がある（データの構造に習熟している）ということを示したほうがよいと考えて、「研究目的・内容」や「自己評価」の欄ではこのことを書いておきました。\n自分の場合：「数多くの社会調査プロジェクトに参加している。とくに、本研究で中心的に使用する3つの社会調査プロジェクトにはいずれも深く関わってきた…」（p.9）"
+  },
+  {
+    "objectID": "blog/2017-02-20-gakushinDC.html#不採用だったときの書類dc1",
+    "href": "blog/2017-02-20-gakushinDC.html#不採用だったときの書類dc1",
+    "title": "学振DC（社会科学）の申請書を公開します",
+    "section": "不採用だったときの書類（DC1）",
+    "text": "不採用だったときの書類（DC1）\nDC2を出す1年前（平成28年度募集）には、DC1に申請書を出していました。研究課題名は「職業経歴にみる格差生成メカニズムのジェンダー差に関する実証研究」です。こちらは、面接まで行き、補欠→不採用でした。不採用だった申請書も何かしらの参考になるかもしれないので、載せておきます。\n学振DC1申請書（麦山）\nDC2とくらべて、とくに以下の点で問題があったと考えています。\n\nテーマが明確でない\nこれが一番大事だったかなと自分では思っています。今になって申請書をよむと、何やら職業経歴の男女差を見たいようだ、ということが分かるものの、具体的にどのような作業をするのかが見えにくいように思います。DC1提出時点（5月頭くらい）にはなんとなくキャリアと不平等、ジェンダーに関することをやりたいというところまでは決まっていたものの、テーマが明確に決まっておらず、その迷いが書類に現れているような気がします。\n目的も一読しても何をやるのかが分かりにくい感じになっています。\n\n「本研究の目的は、日本の労働市場において、格差生成メカニズムのジェンダー差が時代によってどのように変化してきたかを男女の職業経歴から明らかにし、そうしたジェンダー差の変化がジェンダー格差の縮小にたいしてどのような影響を及ぼしたかを解明することである。」（申請書p.5）\n\n\n\n寄って立つ先行研究群がみえにくい\nBeckerやDoeringer and Piore, Phelpsなど経済学の古典を引用している一方で、本研究が社会学のなかでどのような位置にあるのかが見えにくいように思います。これは、社会学で申請するから社会学の先行研究を引用すべきということではなく、どのような先行研究群を基盤としているのかがイメージできるということが大事なのだと思います。ここが明確でないと、先行研究に対する貢献が何であるのかがわからない、伝わらないということになりますから、あまりいい印象ではないだろうと思います。\nなお、DC2でも研究計画や研究業績、自己評価といった部分はあまり変わっていないので、やはりそれ以前の研究目的・研究内容をきちんと書くことが重要なのではないかというのが個人的な感想です。"
+  },
+  {
+    "objectID": "blog/2019-04-26-gakushinPD.html",
+    "href": "blog/2019-04-26-gakushinPD.html",
+    "title": "職域分離の指標におけるセレクションと解釈をめぐる問題",
+    "section": "",
+    "text": "新年度、引越しをしたり所属が変わったりということで、ばたばたしています。3月25日に無事博士（社会学）の学位を授与され、平成31年度（令和元年度？）より学術振興会特別研究員PDとして研究を続けます。これまでとはいろいろな意味で大きく環境が変わるので期待半分不安半分というところですが、頑張っていきたいと思います。\nさて、採用にあたり提出した申請書を公開します（面接免除）。以下のリンクよりアクセスしてください。研究課題名は「職業経歴からみる階層構造と階層生成メカニズムの再検討」です。\n学振PD申請書\n一部自分以外の方に関する情報が入っている8~9ページに関しては削除しています。\n平成30年度科研費から分野の区分が「系・分野・分科・細目」から「小区分、書面審査区分、書面合議・面接審査区分」による分け方になりました。それぞれ小区分、中区分、大区分という対応関係でしょうか。自分の場合は\n書面合議・面接審査区分：社会科学\n書面審査区分：社会学\n小区分：社会学\nということになります。専門分野は「社会階層論」としました。\nWeb上に他の方の学振の申請書がアップロードされていたりするのですが、社会科学のものは案外少ないので、とくに社会科学で申請される方の参考になれば幸いです。学振DCのときのものはこちらにアップロードしています。"
   },
   {
     "objectID": "students.html",
@@ -767,6 +809,6 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "学生向け：レポートでやるべき（でない）こと\n\n\n\n\n\n\n\n\n\n\n\n\nAug 19, 2022\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nRによる社会調査データ分析の手引き\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 28, 2022\n\n\nRyota Mugiyama\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n初年次ゼミで何をする（した）のか：その2\n\n\n\n\n\n\n\n\n\n\n\n\nDec 28, 2021\n\n\nRyota Mugiyama\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n初年次ゼミで何をする（した）のか\n\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2021\n\n\nRyota Mugiyama\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRとRStudioをインストールするときのつまづきポイントとその対処法へのリンク\n\n\n\n\n\n\n\n\n\n\n\n\nAug 3, 2020\n\n\nRyota Mugiyama\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n職域分離の指標におけるセレクションと解釈をめぐる問題\n\n\n\n\n\n\n\n\n\n\n\n\nMar 25, 2020\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nStataで完全失業率の推移を作図する手順\n\n\n\n\n\n\n\n\n\n\n\n\nMay 27, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nおすすめの計量分析の教科書（社会学向け）\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 18, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n感想メモ：（階層）研究に必要なことは何か\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 6, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJob (in)stability or job (in)security?：「安定性」の使い分けに関するメモ）\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 6, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n感想メモ：Sociology as a Population Science by John H. Goldthorpe (2015)\n\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2017\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n感想メモ：Young (2009) 「社会学研究におけるモデルの不確実性」\n\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2017\n\n\nRyota Mugiyama\n\n\n\n\n\n\nNo matching items"
+    "text": "学生向け：レポートでやるべき（でない）こと\n\n\n\n\n\n\n\n\n\n\n\n\nAug 19, 2022\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nRによる社会調査データ分析の手引き\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 28, 2022\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n初年次ゼミで何をする（した）のか：その2\n\n\n\n\n\n\n\n\n\n\n\n\nDec 28, 2021\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n初年次ゼミで何をする（した）のか\n\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2021\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nRとRStudioをインストールするときのつまづきポイントとその対処法へのリンク\n\n\n\n\n\n\n\n\n\n\n\n\nAug 3, 2020\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n職域分離の指標におけるセレクションと解釈をめぐる問題\n\n\n\n\n\n\n\n\n\n\n\n\nMar 25, 2020\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n職域分離の指標におけるセレクションと解釈をめぐる問題\n\n\n\n\n\n\n\n\n\n\n\n\nApr 26, 2019\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nStataで完全失業率の推移を作図する手順\n\n\n\n\n\n\n\n\n\n\n\n\nMay 27, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nおすすめの計量分析の教科書（社会学向け）\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 18, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n感想メモ：（階層）研究に必要なことは何か\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 6, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nJob (in)stability or job (in)security?：「安定性」の使い分けに関するメモ）\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 6, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n感想メモ：Sociology as a Population Science by John H. Goldthorpe (2015)\n\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2017\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n感想メモ：Young (2009) 「社会学研究におけるモデルの不確実性」\n\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2017\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n学振DC（社会科学）の申請書を公開します\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2017\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nSSM職業小分類（追加コード含む）をSSM職業8分類に変換するStataシンタックス\n\n\n\n\n\n\n\n\n\n\n\n\nApr 7, 2016\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n有意水準を示す*印をつけるExcel関数\n\n\n\n\n\n\n\n\n\n\n\n\nJan 31, 2016\n\n\nRyota Mugiyama\n\n\n\n\n\n\nNo matching items"
   }
 ]

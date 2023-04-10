@@ -2,7 +2,6 @@
 title: "Stataで完全失業率の推移を作図する手順"
 author: "Ryota Mugiyama"
 date: "2018-05-27"
-categories: "計量分析"
 ---
 
 ## はじめに

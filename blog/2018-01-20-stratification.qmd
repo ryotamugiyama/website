@@ -2,7 +2,8 @@
 title: "感想メモ：（階層）研究に必要なことは何か"
 author: "Ryota Mugiyama"
 date: "2018-02-06"
-categories: "社会階層"
+image: ../images/website.jpg
+
 ---
 
 ## はじめに

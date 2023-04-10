@@ -4,15 +4,20 @@ project:
 
 website:
   title: "Ryota Mugiyama"
+  image: images/website.jpg
   navbar:
     left:
       - href: index.qmd
         text: Home
       - research.qmd
       - lecture.qmd
+      - notes.qmd
       - stata.qmd
       - r.qmd
       - blog.qmd
+    right: 
+      - icon: twitter
+        href: https://twitter.com/ryotamugiyama
   favicon: images/website.jpg
   twitter-card:
     creator: "@RyotaMugiyama"
