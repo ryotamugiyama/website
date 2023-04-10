@@ -18,10 +18,9 @@ website:
     right: 
       - icon: twitter
         href: https://twitter.com/ryotamugiyama
-  favicon: images/website.jpg
-  twitter-card:
-    creator: "@RyotaMugiyama"
-    site: "@RyotaMugiyama"
+  favicon: website.jpg
+  twitter-card: 
+    image: website.jpg
 
 format:
   html:
