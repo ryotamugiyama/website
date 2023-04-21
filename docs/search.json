@@ -1,52 +1,157 @@
 [
   {
-    "objectID": "lecture/CSRDA/2022-09-07CSRDA.html",
-    "href": "lecture/CSRDA/2022-09-07CSRDA.html",
+    "objectID": "lecture/GU-sociologyIII.html",
+    "href": "lecture/GU-sociologyIII.html",
+    "title": "2021-04–　学習院大学法学部「社会学III」",
+    "section": "",
+    "text": "現代社会学の理論的・経験的蓄積"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIII.html#開講",
+    "href": "lecture/GU-sociologyIII.html#開講",
+    "title": "2021-04–　学習院大学法学部「社会学III」",
+    "section": "開講",
+    "text": "開講\n学習院大学法学部 前期"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIII.html#授業の概要",
+    "href": "lecture/GU-sociologyIII.html#授業の概要",
+    "title": "2021-04–　学習院大学法学部「社会学III」",
+    "section": "授業の概要",
+    "text": "授業の概要\n社会学は、人びとの集まりである社会において繰り返し観察される社会現象を正確に記述するとともに、それがなぜ生じているのかを、現象の社会的側面に着目して説明することを目的とする、社会科学の一分野である。\n豊かな人と貧しい人がいるのはなぜか？太っている人とそうでない人がいるのはなぜか？似た者どうしが友人になるのはなぜか？ある小説や音楽、映画が流行するのはなぜか？社会学ではさまざまなトピック（問い）が扱われるが、社会学ではそれらを説明するにあたって、個人やモノそれ自体よりもむしろ、それらを取り巻くコンテクストの影響力に着目する。このような視点から、社会学ではこれまで多くの概念や方法が開発され、さまざまな事実が明らかにされてきた。\n本授業ではこうした概念や方法、現代の社会学における理論的・経験的な蓄積を紹介し、これにふれることを通じて、社会学に通底する視点を身につけることを目指す。ひいては、身の回りのさまざまな社会現象について、社会学の視点からその実態や原因を考えられるようになることが目標である。\n\nガイダンス\n問い\n理論\n方法\n意見\n規範\nネットワーク\n集団\n階層と移動\n資源\n移民と統合\n近代化\n宗教\nまとめ"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIII.html#到達目標",
+    "href": "lecture/GU-sociologyIII.html#到達目標",
+    "title": "2021-04–　学習院大学法学部「社会学III」",
+    "section": "到達目標",
+    "text": "到達目標\n\n社会学的な問いの立て方を身につける。\n社会学的な視点、理論を用いて社会現象を読み解くことができる。\n社会学の諸概念および経験的な知見のもつ意味について理解する。"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIII.html#テキスト",
+    "href": "lecture/GU-sociologyIII.html#テキスト",
+    "title": "2021-04–　学習院大学法学部「社会学III」",
+    "section": "テキスト",
+    "text": "テキスト\nTubergen, Frank van. 2020. Introduction to Sociology. Routledge."
+  },
+  {
+    "objectID": "lecture/2022-09-07CSRDA.html",
+    "href": "lecture/2022-09-07CSRDA.html",
     "title": "2022年度夏・Stataを用いた計量分析入門",
     "section": "",
     "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 2022年度計量分析セミナー・夏"
   },
   {
-    "objectID": "lecture/CSRDA/2022-09-07CSRDA.html#内容",
-    "href": "lecture/CSRDA/2022-09-07CSRDA.html#内容",
+    "objectID": "lecture/2022-09-07CSRDA.html#内容",
+    "href": "lecture/2022-09-07CSRDA.html#内容",
     "title": "2022年度夏・Stataを用いた計量分析入門",
     "section": "内容",
     "text": "内容\n統計ソフトStataを用いて、実際のデータを用いながら、基礎的な計量分析（記述統計量、2変量の関係、線形回帰分析、ロジスティック回帰分析）の結果のまとめ方について学習します。たんにStataで結果を出すというだけでなく、結果をどのように解釈するのか、どのようにして見やすい図表を作るのか、結果をExcelファイルやpdfファイル、画像ファイルなどに出力・保存するため効率的なワークフローといった、統計ソフトや計量分析の教科書などには書かれていないことも多い実践的な側面に重点をおいて解説します。\n次のような方におすすめです\n\nSPSS, SAS, Rなどの統計ソフトを使っているが、新たにStataを使い始めたい\nクロス集計表や回帰分析などの基礎的な知識はあるが、Stataではどのようにするのか知りたい\n計量分析を行うときにはどのような手順で作業を行うのかを知りたい\nStataで見やすい図や表を作るためにはどのようにすればよいかを知りたい\n回帰分析などの結果をより適切に解釈し、より実質的な意味のある分析結果を得るためにはどうすればよいか知りたい\n\nセミナーで使用したスライドはこちらにアップロードしています。"
   },
   {
-    "objectID": "lecture/CSRDA/2021-08-31CSRDA.html",
-    "href": "lecture/CSRDA/2021-08-31CSRDA.html",
+    "objectID": "lecture/GU-socSem.html",
+    "href": "lecture/GU-socSem.html",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "section": "",
+    "text": "社会的不平等に関する実証研究"
+  },
+  {
+    "objectID": "lecture/GU-socSem.html#開講",
+    "href": "lecture/GU-socSem.html#開講",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "section": "開講",
+    "text": "開講\n学習院大学法学部 前後期"
+  },
+  {
+    "objectID": "lecture/GU-socSem.html#授業概要",
+    "href": "lecture/GU-socSem.html#授業概要",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "section": "授業概要",
+    "text": "授業概要\n本演習の目的は、社会学の視点から、問いを設定し、仮説を立て、それに答えるために社会調査データを分析することを通じて、社会科学一般の基礎となる研究過程を体感し、かつそれを実行するためのスキルを習得することにある。社会学では、個人の行為を説明するにあたって、社会的な文脈の影響に着目する。なぜある人はお金持ちで、ある人は貧しいのか？なぜ大学に行く人と行かない人がいるのか？なぜ家事や育児にかける時間が男女で違うのか？こうした一見個人的な行為、あるいはその結果に対する説明を考え、その説明を検証するための具体的な方法を身につけることを目指す。 　 社会の実態を記述するために最も基本的な方法の一つが、社会調査データの分析である。本演習では、実際にこうした調査データを用い、統計ソフトを用いて分析する方法について学習する。先行研究をもとに問いを立て、論理的に仮説を導き、データを用いて仮説を検証するという一連の作業を通じて、実証的な研究を行うためのスキルを身につける。こうしたスキルは、直接研究には携わらないとしても、今後の仕事や生活で必ず役に立つだろう。\n前期は実証研究に関する論文の書き方および関連領域に関するテキスト（教科書）購読、論文購読、RおよびRStudioという統計ソフトを用いたデータ分析方法の学習を並行して行う。\n\nテキスト購読：テキストを読んだ上で事前に（1）当該章に関連して考えられる問い、（2）疑問点・質問を共有する。授業では共有された内容をもとに議論する。\n論文購読：論文を読んだ上で事前に（1）論文の問い、方法、結果は何か、（2）疑問点・質問を共有する。授業では共有された内容をもとに議論する。\n統計分析：事前に該当箇所を読んだうえで、書かれたコードを実際に自分で一通り実行する。事前に疑問点・質問を共有する。\n\n前期末には後期に向けて利用可能な社会調査データを紹介し、研究計画を作成する。参加者の関心をもとに、3年生は3人程度のグループ、4年生は個人で、前期末に研究計画を作成・提出する。社会学、とくに不平等にかかわるテーマを期待するが、自由に決めて良い。ただし、既存社会調査の個票データを用いた統計分析を行うことは必須とする。\n後期は論文執筆のための作業および経過報告からなる。作業は授業時間外にも実施し、授業時間中には作業の過程で生じた疑問点や悩みなどについて教員から助言するという形式で進める。毎週、進捗状況を報告することとする。中間報告の回では、報告者の事前の十分な準備はもちろん、参加者からも積極的なコメントが期待される。学期末には12,000–20,000字程度の長さの研究論文を執筆し提出する。"
+  },
+  {
+    "objectID": "lecture/GU-socSem.html#到達目標",
+    "href": "lecture/GU-socSem.html#到達目標",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "section": "到達目標",
+    "text": "到達目標\n\n社会学の視点から問いを設定し、仮説を立てられるようになる。\n社会調査データの分析方法を身につける。\n実証研究による報告論文（レポート）を書くことができる。"
+  },
+  {
+    "objectID": "lecture/GU-socSem.html#過去の購読文献など",
+    "href": "lecture/GU-socSem.html#過去の購読文献など",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "section": "過去の購読文献など",
+    "text": "過去の購読文献など\n\n2023年度\n数理社会学会監修，筒井淳也・神林博史・長松奈美江・渡邉大輔・藤原翔編，2015，『計量社会学入門：社会をデータで読む』世界思想社．\n豊永耕平，2023，『学歴獲得の不平等：親子の進路選択と社会階層』勁草書房．\n吉田航，2022，「女性管理職は「変化の担い手」か「機械の歯車」か？：新卒女性の採用・定着に与える影響に着目して」『理論と方法』37(1): 18–33．\n郭雲蔚，2019，「低水準の均衡：職場における非正規雇用の存在と労働者全体の処遇水準」『フォーラム現代社会学』18: 45–59．\n吉武理大，2019，「離婚の世代間連鎖とそのメカニズム：格差の再生産の視点から」『社会学評論』70(1): 27–42．\n柳下実，2022，「育児のための睡眠中断とジェンダー」『ソシオロジ』66(3): 3–19．\n\n\n2022年度\n明石芳彦，2018，『社会科学系論文の書き方』ミネルヴァ書房．\n平沢和司，2021，『格差の社会学入門：学歴と階層から考える［第2版］』北海道大学出版会．\n岩間暁子，2008，『女性の就業と家族のゆくえ：格差社会のなかの変容』東京大学出版会．\n寺村絵理子編，2021，『日本・台湾の高学歴女性：極少子化と仕事・家族の比較』晃洋書房．\n浅野正彦・矢内勇生，2018，『Rによる計量政治学入門：統計学で政治現象を分析する』オーム社．\n\n\n2021年度\nWatts, Duncan J. 2011. Everything is Obvious, Once You Know the Answer: Why Common Sense is Nonsense. Atlantic Books.（青木創訳，2014，『偶然の科学』早川書房．）\n数理社会学会監修，筒井淳也・神林博史・長松奈美江・渡邉大輔・藤原翔編，2015，『計量社会学入門：社会をデータで読む』世界思想社．\n余田翔平，2012，「子ども期の家族構造と教育達成格差：二人親世帯/母子世帯/父子世帯の比較」『家族社会学研究』, 24(1), 60–71.\n永吉希久子，2012，「日本人の排外意識に対する分断労働市場の影響」『社会学評論』63(1): 19–35.\n川口章，2012，「昇進意欲の男女比較」『日本労働研究雑誌』54(2): 42–57.\n裵智恵，2018，「同性愛に対する態度を規定する要因」小林大祐編『2015年SSM調査報告書9 意識II』 2015年SSM調査研究会，85–102．\n浅野正彦・矢内勇生，2018，『Rによる計量政治学入門：統計学で政治現象を分析する』オーム社．"
+  },
+  {
+    "objectID": "lecture/2021-08-31CSRDA.html",
+    "href": "lecture/2021-08-31CSRDA.html",
     "title": "2021年度夏・Stataによる計量分析の実践",
     "section": "",
     "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 2021年度計量分析セミナー・夏"
   },
   {
-    "objectID": "lecture/CSRDA/2021-08-31CSRDA.html#内容",
-    "href": "lecture/CSRDA/2021-08-31CSRDA.html#内容",
+    "objectID": "lecture/2021-08-31CSRDA.html#内容",
+    "href": "lecture/2021-08-31CSRDA.html#内容",
     "title": "2021年度夏・Stataによる計量分析の実践",
     "section": "内容",
     "text": "内容\n統計ソフトStataを用いて、実際のデータを用いながら、基礎的な計量分析の結果のまとめ方について学習します。たんにStataで結果を出すだけでなく、結果をどのように解釈するのかという実質的な側面、結果をExcelファイルや画像ファイルなどに保存するためのより効率的なワークフローに重点をおいて解説します。\n次のような方を対象としています：\n\nクロス集計や回帰分析の基礎的な知識はあるが、Stataでどのようにやるのかわからない\n分析の結果をより適切に解釈するにはどうすればよいか知りたい\n普段からStataを使っているが、より効率的に分析結果を保存したり図表を作ったりするにはどうすればよいか知りたい\n\n注：コマンドを使った基礎的なデータの加工方法（generate, replace, recode, drop ifなどの関数）についてはすでに知っているものとして進めます。\nセミナーで使用したスライドはこちらにアップロードしています。"
   },
   {
-    "objectID": "lecture/CSRDA/2022-03-02CSRDA.html",
-    "href": "lecture/CSRDA/2022-03-02CSRDA.html",
+    "objectID": "lecture/2022-03-02CSRDA.html",
+    "href": "lecture/2022-03-02CSRDA.html",
     "title": "2021年度春・Stataを用いた計量分析入門",
     "section": "",
-    "text": "開講\n東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 2021年度計量分析セミナー・春\n\n\n内容\n統計ソフトStataを用いて、実際のデータを用いながら、基礎的な計量分析（記述統計量、2変量の関係、線形回帰分析、ロジスティック回帰分析）の結果のまとめ方について学習します。たんにStataで結果を出すというだけでなく、結果をどのように解釈するのか、どのようにして見やすい図表を作るのか、結果をExcelファイルやpdfファイル、画像ファイルなどに出力・保存するため効率的なワークフローといった、統計ソフトや計量分析の教科書などには書かれていないことも多い実践的な側面に重点をおいて解説します。\n\nSPSS,SAS,Rなどの統計ソフトを使っているが、新たにStataを使い始めたい\nクロス集計表や回帰分析などの基礎的な知識はあるが、Stataではどのようにするのか知りたい\n計量分析を行うときにはどのような手順で作業を行うのかを知りたい\nStataで見やすい図や表を作るためにはどのようにすればよいかを知りたい\n回帰分析などの結果をより適切に解釈し、より実質的な意味のある分析結果を得るためにはどうすればよいか知りたい\n\nセミナーで使用したスライドはこちらにアップロードしています。"
+    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 2021年度計量分析セミナー・春"
   },
   {
-    "objectID": "lecture/CSRDA/2023-03-09CSRDA.html",
-    "href": "lecture/CSRDA/2023-03-09CSRDA.html",
+    "objectID": "lecture/2022-03-02CSRDA.html#内容",
+    "href": "lecture/2022-03-02CSRDA.html#内容",
+    "title": "2021年度春・Stataを用いた計量分析入門",
+    "section": "内容",
+    "text": "内容\n統計ソフトStataを用いて、実際のデータを用いながら、基礎的な計量分析（記述統計量、2変量の関係、線形回帰分析、ロジスティック回帰分析）の結果のまとめ方について学習します。たんにStataで結果を出すというだけでなく、結果をどのように解釈するのか、どのようにして見やすい図表を作るのか、結果をExcelファイルやpdfファイル、画像ファイルなどに出力・保存するため効率的なワークフローといった、統計ソフトや計量分析の教科書などには書かれていないことも多い実践的な側面に重点をおいて解説します。\n\nSPSS,SAS,Rなどの統計ソフトを使っているが、新たにStataを使い始めたい\nクロス集計表や回帰分析などの基礎的な知識はあるが、Stataではどのようにするのか知りたい\n計量分析を行うときにはどのような手順で作業を行うのかを知りたい\nStataで見やすい図や表を作るためにはどのようにすればよいかを知りたい\n回帰分析などの結果をより適切に解釈し、より実質的な意味のある分析結果を得るためにはどうすればよいか知りたい\n\nセミナーで使用したスライドはこちらにアップロードしています。"
+  },
+  {
+    "objectID": "lecture/2023-03-09CSRDA.html",
+    "href": "lecture/2023-03-09CSRDA.html",
     "title": "2022年度春・Stataによるパネル調査データ分析の実践",
     "section": "",
     "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 2022年度計量分析セミナー・春"
   },
   {
-    "objectID": "lecture/CSRDA/2023-03-09CSRDA.html#内容",
-    "href": "lecture/CSRDA/2023-03-09CSRDA.html#内容",
+    "objectID": "lecture/2023-03-09CSRDA.html#内容",
+    "href": "lecture/2023-03-09CSRDA.html#内容",
     "title": "2022年度春・Stataによるパネル調査データ分析の実践",
     "section": "内容",
     "text": "内容\n日本においても多くの大規模パネル調査データが蓄積されるようになり、パネル調査データの分析可能性は飛躍的に広がっています。本コースでは、統計ソフトStataを用いて、パネル調査データを使った分析の基礎的な手順と、代表的なパネル調査データ分析の方法を学習します。具体的には、どのように分析のためのデータセットを作ればよいのか、どのような問いに対してどのような方法を使うべきかに焦点を当てて学習します。たんにStataで結果を出すというだけでなく、どのようにして見やすい図表を作るのか、結果を出力・保存するため効率的なワークフローといった実践的な側面にも重点をおいて解説します。\n次のような方におすすめです\n\n一時点の社会調査データの分析経験はあるが、パネル調査データを分析した経験はなく、分析してみたい\nパネルデータを分析するための手順を知りたい\nパネルデータの分析方法をどのように選べばよいか知りたい\nパネル調査データを分析した経験があるが、よりよいデータ構築の手順や方法の選び方について知りたい\n\nセミナーで使用したスライドはこちらにアップロードしています。"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIV.html",
+    "href": "lecture/GU-sociologyIV.html",
+    "title": "2021-09–　学習院大学法学部「社会学IV」",
+    "section": "",
+    "text": "同内容は2022年度に日本女子大学人間社会学部、津田塾大学総合政策学部でも行いました。"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIV.html#テーマ",
+    "href": "lecture/GU-sociologyIV.html#テーマ",
+    "title": "2021-09–　学習院大学法学部「社会学IV」",
+    "section": "テーマ",
+    "text": "テーマ\n社会階層論の現在"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIV.html#開講",
+    "href": "lecture/GU-sociologyIV.html#開講",
+    "title": "2021-09–　学習院大学法学部「社会学IV」",
+    "section": "開講",
+    "text": "開講\n学習院大学法学部 後期"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIV.html#授業の概要",
+    "href": "lecture/GU-sociologyIV.html#授業の概要",
+    "title": "2021-09–　学習院大学法学部「社会学IV」",
+    "section": "授業の概要",
+    "text": "授業の概要\n高い収入や貯蓄、住宅、健康、名誉、幸福、等々、社会において希少とされる財は人びとに等しく配分されているわけではない。さらに、こうした希少財を得るためのチャンスもまた、人びとや集団の間で異なっている。希少な財の配分はどの程度偏っているのか？希少財を得る機会が個人あるいは集団間でいかに異なるのか？希少財の配分やそれを得る機会が異なるのはなぜなのか？社会階層研究はこうした不平等を研究する社会学の一分野である。\n社会階層研究の扱う分野は多岐にわたるが、なかでも主要な問題とされてきたのは以下の3点である。第1に、希少財の配分がどの程度偏っているのかという結果の不平等である。所得や富の不平等の程度は国や時代によってどの程度異なるのか？不平等が拡大しているとしたらそれはなぜか？階層によって健康や家族形成のパターンはどの程度異なるのか？人びとのもつつながりは階層によってどの程度隔たっているのか？こうした問いが検討される。\n第2に、希少財を得る機会がどの程度偏っているのかという機会の不平等である。親の階層とは異なる階層に移動するという世代間移動は増えているのか、減っているのか？変化しているとしたらそれはなぜか？親の階層によって教育機会の不平等が生じるのはなぜか？高い学歴を有する人がより高い階層に就くのはなぜか？これらは機会の不平等に関わる問いである。\n第3に、生まれ持った属性がいかに配分や機会の不平等につながるのかという属性による不平等である。本授業ではとくにジェンダー（性別）による不平等を扱う。ジェンダー不平等は国によってどの程度違うのか？不平等の程度はどのように変化しているのか？男子は理系、女子は文系に進学しやすいのはなぜか？男性と女性が労働市場で異なる仕事に就き、異なる評価を受けるのはなぜか？家族形成がキャリアに与える影響が男女で異なるのはなぜか？こうした問いがジェンダーによる不平等という観点から検討される。\n本授業では、上記3つの問題それぞれについて、実証研究の蓄積を概観することを通じて、社会学、および社会階層研究の視点から社会の不平等を捉えるための視点を身につけることを目指す。また、上記3つの問題に関して、欧米を中心に確認されてきた動向が日本においてはどの程度確認されるのかといった点についても、その成果を紹介する。これを通じて、日本の不平等の位置づけを国際的な視点から理解するとともに、不平等がいかにして生じるのか、そのメカニズムを理解することを目指す。\n\nガイダンス\n結果の不平等（1）：不平等の拡大\n\n結果の不平等の測定\n所得と富の不平等：国際比較とトレンド\n富裕層と貧困層\n\n結果の不平等（2）：不平等の拡大のメカニズム\n\nなぜ不平等が拡大したのか：アメリカの場合\n日本の不平等の実態とメカニズム\n\n結果の不平等（3）：階層間格差と不平等の帰結\n\n階層の測定\n階層間格差：健康と家族形成\n結果の不平等の帰結\n\n結果の不平等（4）：階層分離と認識のずれ\n\n不平等と階層分離\n客観的位置と主観的認識のずれ\n不平等に関する価値観\n\n機会の不平等（1）：世代間移動\n\n社会移動の測定\n職業からみる世代間移動\n所得からみる世代間移動\n\n機会の不平等（2）：近代化仮説と地位達成過程\n\n近代化仮説\n地位達成過程\n日本の社会移動のトレンド\n\n機会の不平等（3）：教育機会の不平等\n\nトレンドをめぐる議論\n教育機会の不平等のメカニズム\n遺伝か環境か\n\n機会の不平等（4）：労働市場と機会の不平等\n\n教育と到達階層の関係：メカニズム\n日本の雇用慣行と世代内移動\n出身階層の影響力の再検討\n\n属性による不平等（1）：ジェンダー不平等\n\nジェンダーの視点と不平等\nジェンダー不平等：国際比較とトレンド\n日本のジェンダー不平等のトレンド\n\n属性による不平等（2）：教育とジェンダー\n\n教育達成の男女差\n性別専攻分離のメカニズム\n\n属性による不平等（3）：労働市場とジェンダー\n\n賃金格差の原因を探る：要因分解\n仕事の違いを測定する：性別職域分離\n格差の生成過程：採用とキャリア\n\n属性による不平等（4）：家族形成とジェンダー\n\n出産・育児と男女のキャリア\n性別役割分業と結婚\n\nまとめ"
   },
   {
     "objectID": "research.html",
@@ -60,7 +165,7 @@
     "href": "research.html#work-in-progress",
     "title": "Research",
     "section": "Work in progress",
-    "text": "Work in progress\nMultigenerational Perspective on Trends in Intergenerational Educational Mobility: The Case of Japan (with Aguru Ishibashi)\n\n2023-03-08 第74回数理社会学会大会で報告しました。slide\n\nDoes Educational Expansion Weaken the Equalizing Power of College? Trends in Social Origin Differentials in Occupational Destination in Japan (with Kohei Toyonaga)\n\n2022-08-13 ISA RC28 Summer Meetingで報告しました。slide\n\nEmployment Uncertainty and Delayed Marriage in Society Where Cohabitations Are Not Prevalent: Incorporating Premarital Partnership\n\n2023-03-23 ディスカッション・ペーパーが公開されました。paper\n\nRising Employment Uncertainty and Delayed Marriage and Parenthood: Cohort Analysis of Japanese Men\n\n2022-09-04 第32回日本家族社会学会大会で報告しました。slide\n\nIncreasing Educational Gradient: Cohort Changes in Women’s Employment Around Childbirth in Japan\nTrends and Mechanisms of Inequality in Telework Availability by Income: Evidence from before and after the COVID-19 Outbreak (with Kyoko Komatsu)\n\n第95回日本社会学会大会で報告しました。slide\n企業規模・雇用形態間の格差に着目した研究が『日本労働研究雑誌』（近刊）に掲載されます。\n\nTrends in Task Distribution in Japan, 1990–2015: Evidence from the Occupational Information Network of Japan and the Population Census Data (with Kyoko Komatsu)\n\nJapan Labor Issuesで現時点での発見が大まかにまとめられています。paper\n\nChanges in Geographic Accessibility to College and Inequality of Educational Opportunity (with Kohei Toyonaga)\n\n2022-08-28 第73回数理社会学会大会で報告しました。slide"
+    "text": "Work in progress\nMultigenerational Perspective on Trends in Intergenerational Educational Mobility: The Case of Japan (with Aguru Ishibashi)\n\n2023-03-08 第74回数理社会学会大会で報告しました。slide\n\nDoes Educational Expansion Weaken the Equalizing Power of College? Trends in Social Origin Differentials in Occupational Destination in Japan (with Kohei Toyonaga)\n\n2022-08-13 ISA RC28 Summer Meetingで報告しました。slide\n\nEmployment Uncertainty and Delayed Marriage in Society Where Cohabitations Are Not Prevalent: Incorporating Premarital Partnership\n\n2023-03-23 ディスカッション・ペーパーが公開されました。paper\n\nRising Employment Uncertainty and Delayed Marriage and Parenthood: Cohort Analysis of Japanese Men\n\n2022-09-04 第32回日本家族社会学会大会で報告しました。slide\n\nIncreasing Educational Gradient: Cohort Changes in Women’s Employment Around Childbirth in Japan\nIncreasing Socioeconomic Inequality in Telework Eligibility: Evidence from before and after the COVID-19 Outbreak in Japan (with Kyoko Komatsu)\n\n第95回日本社会学会大会で報告しました。slide\n企業規模・雇用形態間の格差に着目した研究が『日本労働研究雑誌』（近刊）に掲載されます。\n\nTrends in Task Distribution in Japan, 1990–2015: Evidence from the Occupational Information Network of Japan and the Population Census Data (with Kyoko Komatsu)\n\nJapan Labor Issuesで現時点での発見が大まかにまとめられています。paper\n\nChanges in Geographic Accessibility to College and Inequality of Educational Opportunity (with Kohei Toyonaga)\n\n2022-08-28 第73回数理社会学会大会で報告しました。slide"
   },
   {
     "objectID": "research.html#reviewed-paper",
@@ -242,49 +347,14 @@
     "href": "lecture.html",
     "title": "Lecture",
     "section": "",
-    "text": "講義の情報などをまとめています。"
-  },
-  {
-    "objectID": "lecture.html#stataによるパネル調査データ分析の実践",
-    "href": "lecture.html#stataによるパネル調査データ分析の実践",
-    "title": "Lecture",
-    "section": "2022-03　Stataによるパネル調査データ分析の実践",
-    "text": "2022-03　Stataによるパネル調査データ分析の実践\n東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センターが開講している「計量分析セミナー」で、Stataを使ったパネル調査データの分析に関する講義を行いました。パネルデータの準備（データハンドリング）に係る作業工程の考え方から、固定効果モデル、イベントの効果推定（Difference-in-differences, event study design）、さらに、よく問題になるトピックとしてランダム効果モデル、カテゴリ変数を従属変数とするモデル、脱落の問題と対処について扱っています。\n2022年度春・Stataによるパネル調査データ分析の実践"
-  },
-  {
-    "objectID": "lecture.html#stataを用いた計量分析入門",
-    "href": "lecture.html#stataを用いた計量分析入門",
-    "title": "Lecture",
-    "section": "2021-09–2022-03　Stataを用いた計量分析入門",
-    "text": "2021-09–2022-03　Stataを用いた計量分析入門\n2021年度夏から、東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センターが開講している「計量分析セミナー」にて、Stataの入門的な講義を行っています。ちょっとStataを使い始めたけど、もっと効率のいい使い方について知りたい、回帰分析やロジスティック回帰分析をうまく使いこなすためにはどうすればいいか知りたい、という方を念頭において講義をしています。途中で名称が変わっていますが、内容は同じです。\n2022年度夏・Stataを用いた計量分析入門\n2021年度春・Stataを用いた計量分析入門\n2021年度夏・Stataを用いた計量分析の実践"
-  },
-  {
-    "objectID": "lecture.html#学習院大学法学部社会学iv",
-    "href": "lecture.html#学習院大学法学部社会学iv",
-    "title": "Lecture",
-    "section": "2021-09–　学習院大学法学部「社会学IV」",
-    "text": "2021-09–　学習院大学法学部「社会学IV」\n同内容は2022年度に日本女子大学人間社会学部、津田塾大学総合政策学部でも行いました。\n\nテーマ\n社会階層論の現在\n\n\n開講\n学習院大学法学部 後期\n\n\n授業の概要\n高い収入や貯蓄、住宅、健康、名誉、幸福、等々、社会において希少とされる財は人びとに等しく配分されているわけではない。さらに、こうした希少財を得るためのチャンスもまた、人びとや集団の間で異なっている。希少な財の配分はどの程度偏っているのか？希少財を得る機会が個人あるいは集団間でいかに異なるのか？希少財の配分やそれを得る機会が異なるのはなぜなのか？社会階層研究はこうした不平等を研究する社会学の一分野である。\n社会階層研究の扱う分野は多岐にわたるが、なかでも主要な問題とされてきたのは以下の3点である。第1に、希少財の配分がどの程度偏っているのかという結果の不平等である。所得や富の不平等の程度は国や時代によってどの程度異なるのか？不平等が拡大しているとしたらそれはなぜか？階層によって健康や家族形成のパターンはどの程度異なるのか？人びとのもつつながりは階層によってどの程度隔たっているのか？こうした問いが検討される。\n第2に、希少財を得る機会がどの程度偏っているのかという機会の不平等である。親の階層とは異なる階層に移動するという世代間移動は増えているのか、減っているのか？変化しているとしたらそれはなぜか？親の階層によって教育機会の不平等が生じるのはなぜか？高い学歴を有する人がより高い階層に就くのはなぜか？これらは機会の不平等に関わる問いである。\n第3に、生まれ持った属性がいかに配分や機会の不平等につながるのかという属性による不平等である。本授業ではとくにジェンダー（性別）による不平等を扱う。ジェンダー不平等は国によってどの程度違うのか？不平等の程度はどのように変化しているのか？男子は理系、女子は文系に進学しやすいのはなぜか？男性と女性が労働市場で異なる仕事に就き、異なる評価を受けるのはなぜか？家族形成がキャリアに与える影響が男女で異なるのはなぜか？こうした問いがジェンダーによる不平等という観点から検討される。\n本授業では、上記3つの問題それぞれについて、実証研究の蓄積を概観することを通じて、社会学、および社会階層研究の視点から社会の不平等を捉えるための視点を身につけることを目指す。また、上記3つの問題に関して、欧米を中心に確認されてきた動向が日本においてはどの程度確認されるのかといった点についても、その成果を紹介する。これを通じて、日本の不平等の位置づけを国際的な視点から理解するとともに、不平等がいかにして生じるのか、そのメカニズムを理解することを目指す。\n\nガイダンス\n結果の不平等（1）：不平等の拡大\n\n結果の不平等の測定\n所得と富の不平等：国際比較とトレンド\n富裕層と貧困層\n\n結果の不平等（2）：不平等の拡大のメカニズム\n\nなぜ不平等が拡大したのか：アメリカの場合\n日本の不平等の実態とメカニズム\n\n結果の不平等（3）：階層間格差と不平等の帰結\n\n階層の測定\n階層間格差：健康と家族形成\n結果の不平等の帰結\n\n結果の不平等（4）：階層分離と認識のずれ\n\n不平等と階層分離\n客観的位置と主観的認識のずれ\n不平等に関する価値観\n\n機会の不平等（1）：世代間移動\n\n社会移動の測定\n職業からみる世代間移動\n所得からみる世代間移動\n\n機会の不平等（2）：近代化仮説と地位達成過程\n\n近代化仮説\n地位達成過程\n日本の社会移動のトレンド\n\n機会の不平等（3）：教育機会の不平等\n\nトレンドをめぐる議論\n教育機会の不平等のメカニズム\n遺伝か環境か\n\n機会の不平等（4）：労働市場と機会の不平等\n\n教育と到達階層の関係：メカニズム\n日本の雇用慣行と世代内移動\n出身階層の影響力の再検討\n\n属性による不平等（1）：ジェンダー不平等\n\nジェンダーの視点と不平等\nジェンダー不平等：国際比較とトレンド\n日本のジェンダー不平等のトレンド\n\n属性による不平等（2）：教育とジェンダー\n\n教育達成の男女差\n性別専攻分離のメカニズム\n\n属性による不平等（3）：労働市場とジェンダー\n\n賃金格差の原因を探る：要因分解\n仕事の違いを測定する：性別職域分離\n格差の生成過程：採用とキャリア\n\n属性による不平等（4）：家族形成とジェンダー\n\n出産・育児と男女のキャリア\n性別役割分業と結婚\n\nまとめ"
-  },
-  {
-    "objectID": "lecture.html#学習院大学法学部社会学iii",
-    "href": "lecture.html#学習院大学法学部社会学iii",
-    "title": "Lecture",
-    "section": "2021-04–　学習院大学法学部「社会学III」",
-    "text": "2021-04–　学習院大学法学部「社会学III」\n\nテーマ\n現代社会学の理論的・経験的蓄積\n\n\n開講\n学習院大学法学部 前期\n\n\n授業の概要\n社会学は、人びとの集まりである社会において繰り返し観察される社会現象を正確に記述するとともに、それがなぜ生じているのかを、現象の社会的側面に着目して説明することを目的とする、社会科学の一分野である。\n豊かな人と貧しい人がいるのはなぜか？太っている人とそうでない人がいるのはなぜか？似た者どうしが友人になるのはなぜか？ある小説や音楽、映画が流行するのはなぜか？社会学ではさまざまなトピック（問い）が扱われるが、社会学ではそれらを説明するにあたって、個人やモノそれ自体よりもむしろ、それらを取り巻くコンテクストの影響力に着目する。このような視点から、社会学ではこれまで多くの概念や方法が開発され、さまざまな事実が明らかにされてきた。\n本授業ではこうした概念や方法、現代の社会学における理論的・経験的な蓄積を紹介し、これにふれることを通じて、社会学に通底する視点を身につけることを目指す。ひいては、身の回りのさまざまな社会現象について、社会学の視点からその実態や原因を考えられるようになることが目標である。\n\nガイダンス\n問い\n理論\n方法\n意見\n規範\nネットワーク\n集団\n階層と移動\n資源\n移民と統合\n近代化\n宗教\nまとめ\n\n\n\n到達目標\n\n社会学的な問いの立て方を身につける。\n社会学的な視点、理論を用いて社会現象を読み解くことができる。\n社会学の諸概念および経験的な知見のもつ意味について理解する。\n\n\n\nテキスト\nTubergen, Frank van. 2020. Introduction to Sociology. Routledge."
-  },
-  {
-    "objectID": "lecture.html#学習院大学法学部社会学演習",
-    "href": "lecture.html#学習院大学法学部社会学演習",
-    "title": "Lecture",
-    "section": "2021-04–　学習院大学法学部「社会学演習」",
-    "text": "2021-04–　学習院大学法学部「社会学演習」\n\nテーマ\n社会的不平等に関する実証研究\n\n\n開講\n学習院大学法学部 前後期\n\n\n授業概要\n本演習の目的は、社会学の視点から、問いを設定し、仮説を立て、それに答えるために社会調査データを分析することを通じて、社会科学一般の基礎となる研究過程を体感し、かつそれを実行するためのスキルを習得することにある。社会学では、個人の行為を説明するにあたって、社会的な文脈の影響に着目する。なぜある人はお金持ちで、ある人は貧しいのか？なぜ大学に行く人と行かない人がいるのか？なぜ家事や育児にかける時間が人によって違うのか？こうした一見個人的な行為、あるいはその結果に対する説明を考え、その説明を検証するための具体的な方法を身につけることを目指す。\n社会の実態を記述するために最も基本的な方法の一つが、社会調査データの分析である。本演習では、実際にこうした調査データを用い、統計ソフトを用いて分析する方法について学習する。先行研究をもとに問いを立て、論理的に仮説を導き、データを用いて仮説を検証するという一連の作業を通じて、実証的な研究を行うためのスキルを身につける。こうしたスキルは、直接研究には携わらないとしても、今後の仕事や生活で必ず役に立つだろう。\n前期は社会学に関連する基礎的な文献および実証研究論文の購読と、統計分析の方法およびそれを具体的に実行するための統計ソフト（RおよびRStudio）の使い方の学習を並行して進める。文献の購読に関しては、はじめに少人数のグループに分かれて内容や疑問点について話し合った後、議論の共有を行う。有意義な議論を行うため、参加者は全員がテキストを事前に読んでくる必要がある。統計分析の方法に関する文献については、各自事前に該当箇所を読んだうえで、一通り書かれたコードを実行してくる。こちらも各自が文献を読んでいることを前提に、授業では疑問点を解消することを中心とする。前期末には後期の個人研究に向けた研究計画の書き方やデータの紹介を行う。これを参考にしながら、夏期休暇中には各自で研究計画を作成・提出する。\n後期は各自の研究報告およびレポート執筆のための作業を中心とする。報告者は事前の十分な準備が必要となる。研究課題は社会学、なかでも社会階層、不平等、労働、家族、教育、等々にかかわるテーマでのレポート執筆を期待するが、とくにこのテーマでなければならないといった制限はない。統計分析に使用する社会調査データとしては、日本版総合的社会調査（Japan General Social Survey, JGSS. https://jgss.daishodai.ac.jp/surveys/sur_top.html）を予定している。別の調査データ等の使用については妨げるものではないが、別途使用に際して手続きが必要な場合があるので、教員に相談すること。文献2の付録にはJGSSのほか社会調査データの説明がいくつか載っている。なお受講人数によっては、1人ではなく2–3人のグループを作ることも検討する。複数回の研究報告を通じて研究内容をブラッシュアップし、研究論文としても良質のレポートを執筆することを目指す。\n\n\n到達目標\n\n社会学の視点から問いを設定し、仮説を立てられるようになる。\n社会調査データの分析方法を身につける。\n実証研究による報告論文（レポート）を書くことができる。"
+    "text": "過去の講義の情報などをまとめています。\n\n\n\n\n\n\n\n\n  \n\n\n\n\n2022年度春・Stataによるパネル調査データ分析の実践\n\n\n\n\n\n\n\n\n\n\n\n\nMar 9, 2023\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n2022年度夏・Stataを用いた計量分析入門\n\n\n\n\n\n\n\n\n\n\n\n\nSep 7, 2022\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n2021年度春・Stataを用いた計量分析入門\n\n\n\n\n\n\n\n\n\n\n\n\nMar 12, 2022\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n2021-09–　学習院大学法学部「社会学IV」\n\n\n\n\n\n\n\n\n\n\n\n\nSep 1, 2021\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n2021年度夏・Stataによる計量分析の実践\n\n\n\n\n\n\n\n\n\n\n\n\nAug 31, 2021\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n2021-04–　学習院大学法学部「社会学演習」\n\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2021\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n2021-04–　学習院大学法学部「社会学III」\n\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2021\n\n\nRyota Mugiyama\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Ryota Mugiyama",
     "section": "",
-    "text": "Welcome to Ryota Mugiyama’s Homepage!\n麦山 亮太（むぎやま りょうた）のホームページへようこそ。学習院大学法学部政治学科で社会学の研究・教育をしています。専門は社会階層論、なかでも労働市場における不平等、世代間移動、家族形成などをテーマに、社会調査データの計量分析をもちいて研究しています。\nくわしい経歴などはResearchmapをご参照ください。\n大学院進学・研究生を希望されている方はこちらをご確認ください。\n\nRyota Mugiyama\nPh.D in Sociology\nDepartment of Political Studies, Faculty of Law, Gakushuin University\nE-mail: ryota.mugiyama[at]gakushuin.ac.jp\nTwitter: @RyotaMugiyama\nAddress: 1-5-1 Mejiro, Toshima-ku, Tokyo, 171-8588, JAPAN.\n\n本ページは旧個人ページから内容を適宜選定してリニューアルしたページです。旧ページはそのうち削除予定です。"
+    "text": "Welcome to Ryota Mugiyama’s Homepage!\n麦山 亮太（むぎやま りょうた）のホームページへようこそ。学習院大学法学部政治学科で社会学の研究・教育をしています。専門は社会階層論、なかでも労働市場における不平等、世代間移動、家族形成などをテーマに、社会調査データの計量分析をもちいて研究しています。\nくわしい経歴などはResearchmapをご参照ください。\n大学院進学・研究生を希望されている方はこちらをご確認ください。\n\nRyota Mugiyama\nPh.D in Sociology\nDepartment of Political Studies, Faculty of Law, Gakushuin University\nE-mail: ryota.mugiyama[at]gakushuin.ac.jp\nTwitter: @RyotaMugiyama\nAddress: 1-5-1 Mejiro, Toshima-ku, Tokyo, 171-8588, Japan.\n\n本ページは旧個人ページから内容を適宜選定してリニューアルしたページです。旧ページはそのうち削除予定です。"
   },
   {
     "objectID": "blog/2021-12-28-introductory.html",
@@ -777,13 +847,6 @@
     "text": "研究生希望の学生へ\n\n研究生制度について\n日本国外の大学を卒業した方で、日本の大学院への進学を考える場合には、すぐに大学院の入学試験を受けるのではなく研究生制度を利用して（最低でも）1年間は学部で基礎的な勉強をして入学試験の準備をすることをおすすめします。学習院大学政治学研究科においても同様の方針を勧めている教員が多いだろうと認識しています。\n研究生の出願期間は毎年1月と3月に設けられています。在留資格などの関係から、余裕を持って書類等の準備をされることをおすすめします。詳しくはこちらを参照してください。\n研究生になったとしても大学院に自動的に進学できるわけではなく、大学院入試を受験しなければなりません。また、本学の研究生を経験したことによって有利に扱われるということもありません。くれぐれも注意してください。大学院受験に際しての注意点は上記「大学院（修士課程）入学希望の学生へ」を参照してください。\n\n\n研究生受け入れの条件\n政治学科では日本語能力試験（JLPT）でN2以上の成績を取得している必要があります。N1以上の成績を有していればなおよいです。日本ではほとんどの場所で日本語のコミュニケーションを取ることが求められるので、日本語はできるに越したことはないです。とはいえ、もちろん重要なのは語学力よりも研究能力です。\nコミュニケーションを取る際には日本語のほかに英語でもよいですが、私自身はあまり英語がうまいわけではないのでご承知おきください。\n私を指導教員としたい場合には、本学政治学研究科の利点と欠点をあらかじめ把握したうえで、あらかじめ履歴書と研究計画書を送っていただき、面談希望を申し出てください。研究計画書などを拝見して、問題関心やこれまでの勉強内容などをお伺いして、最終的に私が研究指導できる範囲であると判断すれば、受け入れを内諾します。ただし、内諾したとしても、教授会を経て受入れが認められない可能性がないとは言い切れません。選考結果が出るのを待ってください。\n\n\n研究生受け入れ後の指導方針\n基本的にはご自身の関心に即した授業を取っていただき、ご自身で勉強を進めていただくというふうになります。ただし、私が担当する「社会学」（I, II, III, IVのどれか2つを担当します）と「社会学演習」は必ず履修してください。また、政治学科で開講される「社会統計学I」「社会統計学II」はぜひ履修してください。\n私の担当する授業のうち「政治学科基礎演習I」「政治学科基礎演習II」は1年生用の授業なので、履修はできません。\nそのほかには、たとえば以下のような科目の履修を検討してもよいかもしれません（他の学部学科の授業を履修できるのかはわかりませんので、事務の方に確認してください）。\n\n法学部政治学科（私が担当していない方の）「社会学」\n法学部政治学科「社会心理学I」「社会心理学II」\n法学部政治学科「社会政策論I」「社会政策論II」\n法学部政治学科「社会心理学I」「社会心理学II」国際社会科学科「社会学（国際社会科学科）」\n法学部政治学科「特別演習（FT）：社会調査手法I」「特別演習（FT）：社会調査手法II」\n国際社会科学部「社会学」「計量社会学」\n\nただし、ご自身の勉強もあると思いますので、多くとも週4–5コマくらいに抑えるのがよいと思います。\n学期中は毎週オフィスアワーを設けています。オフィスアワーの曜日・時間についてはG-Portにて確認してください。オフィスアワーを利用する際には事前のアポイントは不要です。勉強の進め方、困りごとなど積極的にお話しに来てください。"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "r.html",
     "href": "r.html",
     "title": "R",
@@ -816,7 +879,7 @@
     "href": "stata.html#margins-contrast-限界効果どうしの差の検定",
     "title": "Stata",
     "section": "margins, contrast: 限界効果どうしの差の検定",
-    "text": "margins, contrast: 限界効果どうしの差の検定\n大卒であると結婚確率が高いことはよく知られている。いま、大卒であることが結婚確率に与える効果が人種（Race）によって異なるのか知りたいとする。このとき、次のようなロジットモデルを推定する。\nsysuse nlsw88.dta, clear //Stataのサンプルデータを利用する\nlogit never_married i.race i.collgrad i.race#i.collgrad c.age##c.age\n\n黒人（black）と大卒（collgrad）の交互作用項は負であり、白人（white）と比べて黒人の場合は大卒であることが結婚に与える効果は弱いというような結果である。しかし、ロジットモデルにおける係数はあくまで対数オッズであり、具体的に両者の確率がどの程度異なるのかはここからはわからない。そこで、人種ごとの大卒の限界効果を計算する：\nmargins , dydx(collgrad) at(race = (1(1)3))\n\n前半にはそれぞれblackとwhite、otherとwhiteを対比させたときの検定の結果、後半には差と標準誤差、信頼区間が表示されている。結果は、blackとwhiteとの大卒の限界効果の差は統計的に有意であるということを示している。\n前者のmarginsの結果は、Mize, T. D. (2019). Best practices for estimating, interpreting, and presenting nonlinear interaction effects. Sociological Science, 6, 81–117.のTable 3（p.104）の「First Differences」、後者のmargins, contrastの結果は「Second Differences」に、それぞれ対応する。「Second Differences」のほうをStataで計算するときの方法がよくわかっていなかったのだけど、どうやら上記で計算できそうだ。\n（2022/02/08→2022/09/19移行）"
+    "text": "margins, contrast: 限界効果どうしの差の検定\n大卒であると結婚確率が高いことはよく知られている。いま、大卒であることが結婚確率に与える効果が人種（Race）によって異なるのか知りたいとする。このとき、次のようなロジットモデルを推定する。\nsysuse nlsw88.dta, clear //Stataのサンプルデータを利用する\nlogit never_married i.race i.collgrad i.race#i.collgrad c.age##c.age\n\n黒人（black）と大卒（collgrad）の交互作用項は負であり、白人（white）と比べて黒人の場合は大卒であることが結婚に与える効果は弱いというような結果である。しかし、ロジットモデルにおける係数はあくまで対数オッズであり、具体的に両者の確率がどの程度異なるのかはここからはわからない。そこで、人種ごとの大卒の限界効果を計算する：\nmargins , dydx(collgrad) at(race = (1(1)3))\n\nそれぞれ、white, black, otherにおいて大卒であることが非大卒と比べてどの程度結婚確率を上昇させるかを表している。whiteの場合は大卒であれば非大卒と比べて結婚確率が0.092高い。一方、blackの場合は大卒であれば非大卒と比べて結婚確率が0.011低いという結果となっている。\nでは、whiteにおける大卒の限界効果と、blackにおける大卒の限界効果との間には、たしかに差があるといえるのだろうか。これを確かめるときには、margins, contrastを使うことができる。\nmargins r.race, dydx(collgrad)\n\n前半にはそれぞれblackとwhite、otherとwhiteを対比させたときの検定の結果、後半には差と標準誤差、信頼区間が表示されている。結果は、blackとwhiteとの大卒の限界効果の差は統計的に有意であるということを示している。\n前者のmarginsの結果は、Mize, T. D. (2019). Best practices for estimating, interpreting, and presenting nonlinear interaction effects. Sociological Science, 6, 81–117.のTable 3（p.104）の「First Differences」、後者のmargins, contrastの結果は「Second Differences」に、それぞれ対応する。「Second Differences」のほうをStataで計算するときの方法がよくわかっていなかったのだけど、どうやら上記で計算できそうだ。\n（2022/02/08→2022/09/19移行）"
   },
   {
     "objectID": "stata.html#import-spss-savファイルを読み込むstata-16以降",
@@ -907,6 +970,6 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "学生向け：レポートでやるべき（でない）こと\n\n\n\n\n\n\n\n\n\n\n\n\nAug 19, 2022\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nRによる社会調査データ分析の手引き\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 28, 2022\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n初年次ゼミで何をする（した）のか：その2\n\n\n\n\n\n\n\n\n\n\n\n\nDec 28, 2021\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n初年次ゼミで何をする（した）のか\n\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2021\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nRとRStudioをインストールするときのつまづきポイントとその対処法へのリンク\n\n\n\n\n\n\n\n\n\n\n\n\nAug 3, 2020\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n職域分離の指標におけるセレクションと解釈をめぐる問題\n\n\n\n\n\n\n\n\n\n\n\n\nMar 25, 2020\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n職域分離の指標におけるセレクションと解釈をめぐる問題\n\n\n\n\n\n\n\n\n\n\n\n\nApr 26, 2019\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nStataで完全失業率の推移を作図する手順\n\n\n\n\n\n\n\n\n\n\n\n\nMay 27, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nおすすめの計量分析の教科書（社会学向け）\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 18, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n感想メモ：（階層）研究に必要なことは何か\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 6, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nJob (in)stability or job (in)security?：「安定性」の使い分けに関するメモ）\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 6, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n感想メモ：Sociology as a Population Science by John H. Goldthorpe (2015)\n\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2017\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n感想メモ：Young (2009) 「社会学研究におけるモデルの不確実性」\n\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2017\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n学振DC（社会科学）の申請書を公開します\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2017\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nSSM職業小分類（追加コード含む）をSSM職業8分類に変換するStataシンタックス\n\n\n\n\n\n\n\n\n\n\n\n\nApr 7, 2016\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n有意水準を示す*印をつけるExcel関数\n\n\n\n\n\n\n\n\n\n\n\n\nJan 31, 2016\n\n\nRyota Mugiyama\n\n\n\n\n\n\nNo matching items"
+    "text": "日々の思いつきを不定期に残しています。2022年9月以前の記事は旧ウェブページから移行させたものです。\n\n\n\n\n\n\n\n\n  \n\n\n\n\n学生向け：レポートでやるべき（でない）こと\n\n\n\n\n\n\n\n\n\n\n\n\nAug 19, 2022\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nRによる社会調査データ分析の手引き\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 28, 2022\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n初年次ゼミで何をする（した）のか：その2\n\n\n\n\n\n\n\n\n\n\n\n\nDec 28, 2021\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n初年次ゼミで何をする（した）のか\n\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2021\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nRとRStudioをインストールするときのつまづきポイントとその対処法へのリンク\n\n\n\n\n\n\n\n\n\n\n\n\nAug 3, 2020\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n職域分離の指標におけるセレクションと解釈をめぐる問題\n\n\n\n\n\n\n\n\n\n\n\n\nMar 25, 2020\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n職域分離の指標におけるセレクションと解釈をめぐる問題\n\n\n\n\n\n\n\n\n\n\n\n\nApr 26, 2019\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nStataで完全失業率の推移を作図する手順\n\n\n\n\n\n\n\n\n\n\n\n\nMay 27, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nおすすめの計量分析の教科書（社会学向け）\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 18, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n感想メモ：（階層）研究に必要なことは何か\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 6, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nJob (in)stability or job (in)security?：「安定性」の使い分けに関するメモ）\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 6, 2018\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n感想メモ：Sociology as a Population Science by John H. Goldthorpe (2015)\n\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2017\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n感想メモ：Young (2009) 「社会学研究におけるモデルの不確実性」\n\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2017\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n学振DC（社会科学）の申請書を公開します\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2017\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\nSSM職業小分類（追加コード含む）をSSM職業8分類に変換するStataシンタックス\n\n\n\n\n\n\n\n\n\n\n\n\nApr 7, 2016\n\n\nRyota Mugiyama\n\n\n\n\n\n\n  \n\n\n\n\n有意水準を示す*印をつけるExcel関数\n\n\n\n\n\n\n\n\n\n\n\n\nJan 31, 2016\n\n\nRyota Mugiyama\n\n\n\n\n\n\nNo matching items"
   }
 ]

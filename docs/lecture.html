@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./website.jpg" rel="icon" type="image/jpeg">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -59,12 +61,42 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 <meta name="twitter:title" content="Ryota Mugiyama - Lecture">
-<meta name="twitter:description" content="講義の情報などをまとめています。">
-<meta name="twitter:image" content="website.jpg">
+<meta name="twitter:description" content="過去の講義の情報などをまとめています。">
+<meta name="twitter:image" content="https://mugiyama.github.io/website/website.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -130,35 +162,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#stataによるパネル調査データ分析の実践" id="toc-stataによるパネル調査データ分析の実践" class="nav-link active" data-scroll-target="#stataによるパネル調査データ分析の実践">2022-03　Stataによるパネル調査データ分析の実践</a></li>
-  <li><a href="#stataを用いた計量分析入門" id="toc-stataを用いた計量分析入門" class="nav-link" data-scroll-target="#stataを用いた計量分析入門">2021-09–2022-03　Stataを用いた計量分析入門</a></li>
-  <li><a href="#学習院大学法学部社会学iv" id="toc-学習院大学法学部社会学iv" class="nav-link" data-scroll-target="#学習院大学法学部社会学iv">2021-09–　学習院大学法学部「社会学IV」</a>
-  <ul class="collapse">
-  <li><a href="#テーマ" id="toc-テーマ" class="nav-link" data-scroll-target="#テーマ">テーマ</a></li>
-  <li><a href="#開講" id="toc-開講" class="nav-link" data-scroll-target="#開講">開講</a></li>
-  <li><a href="#授業の概要" id="toc-授業の概要" class="nav-link" data-scroll-target="#授業の概要">授業の概要</a></li>
-  </ul></li>
-  <li><a href="#学習院大学法学部社会学iii" id="toc-学習院大学法学部社会学iii" class="nav-link" data-scroll-target="#学習院大学法学部社会学iii">2021-04–　学習院大学法学部「社会学III」</a>
-  <ul class="collapse">
-  <li><a href="#テーマ-1" id="toc-テーマ-1" class="nav-link" data-scroll-target="#テーマ-1">テーマ</a></li>
-  <li><a href="#開講-1" id="toc-開講-1" class="nav-link" data-scroll-target="#開講-1">開講</a></li>
-  <li><a href="#授業の概要-1" id="toc-授業の概要-1" class="nav-link" data-scroll-target="#授業の概要-1">授業の概要</a></li>
-  <li><a href="#到達目標" id="toc-到達目標" class="nav-link" data-scroll-target="#到達目標">到達目標</a></li>
-  <li><a href="#テキスト" id="toc-テキスト" class="nav-link" data-scroll-target="#テキスト">テキスト</a></li>
-  </ul></li>
-  <li><a href="#学習院大学法学部社会学演習" id="toc-学習院大学法学部社会学演習" class="nav-link" data-scroll-target="#学習院大学法学部社会学演習">2021-04–　学習院大学法学部「社会学演習」</a>
-  <ul class="collapse">
-  <li><a href="#テーマ-2" id="toc-テーマ-2" class="nav-link" data-scroll-target="#テーマ-2">テーマ</a></li>
-  <li><a href="#開講-2" id="toc-開講-2" class="nav-link" data-scroll-target="#開講-2">開講</a></li>
-  <li><a href="#授業概要" id="toc-授業概要" class="nav-link" data-scroll-target="#授業概要">授業概要</a></li>
-  <li><a href="#到達目標-1" id="toc-到達目標-1" class="nav-link" data-scroll-target="#到達目標-1">到達目標</a></li>
-  </ul></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -180,187 +184,214 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>講義の情報などをまとめています。</p>
-<section id="stataによるパネル調査データ分析の実践" class="level2">
-<h2 class="anchored" data-anchor-id="stataによるパネル調査データ分析の実践">2022-03　Stataによるパネル調査データ分析の実践</h2>
-<p>東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センターが開講している「計量分析セミナー」で、Stataを使ったパネル調査データの分析に関する講義を行いました。パネルデータの準備（データハンドリング）に係る作業工程の考え方から、固定効果モデル、イベントの効果推定（Difference-in-differences, event study design）、さらに、よく問題になるトピックとしてランダム効果モデル、カテゴリ変数を従属変数とするモデル、脱落の問題と対処について扱っています。</p>
-<p><a href="./lecture/CSRDA/2023-03-09CSRDA.html">2022年度春・Stataによるパネル調査データ分析の実践</a></p>
-</section>
-<section id="stataを用いた計量分析入門" class="level2">
-<h2 class="anchored" data-anchor-id="stataを用いた計量分析入門">2021-09–2022-03　Stataを用いた計量分析入門</h2>
-<p>2021年度夏から、東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センターが開講している「計量分析セミナー」にて、Stataの入門的な講義を行っています。ちょっとStataを使い始めたけど、もっと効率のいい使い方について知りたい、回帰分析やロジスティック回帰分析をうまく使いこなすためにはどうすればいいか知りたい、という方を念頭において講義をしています。途中で名称が変わっていますが、内容は同じです。</p>
-<p><a href="./lecture/CSRDA/2022-09-07CSRDA.html">2022年度夏・Stataを用いた計量分析入門</a></p>
-<p><a href="./lecture/CSRDA/2022-03-02CSRDA.html">2021年度春・Stataを用いた計量分析入門</a></p>
-<p><a href="./lecture/CSRDA/2021-08-31CSRDA.html">2021年度夏・Stataを用いた計量分析の実践</a></p>
-</section>
-<section id="学習院大学法学部社会学iv" class="level2">
-<h2 class="anchored" data-anchor-id="学習院大学法学部社会学iv">2021-09–　学習院大学法学部「社会学IV」</h2>
-<p>同内容は2022年度に日本女子大学人間社会学部、津田塾大学総合政策学部でも行いました。</p>
-<section id="テーマ" class="level3">
-<h3 class="anchored" data-anchor-id="テーマ">テーマ</h3>
-<p>社会階層論の現在</p>
-</section>
-<section id="開講" class="level3">
-<h3 class="anchored" data-anchor-id="開講">開講</h3>
-<p>学習院大学法学部 後期</p>
-</section>
-<section id="授業の概要" class="level3">
-<h3 class="anchored" data-anchor-id="授業の概要">授業の概要</h3>
-<p>高い収入や貯蓄、住宅、健康、名誉、幸福、等々、社会において希少とされる財は人びとに等しく配分されているわけではない。さらに、こうした希少財を得るためのチャンスもまた、人びとや集団の間で異なっている。希少な財の配分はどの程度偏っているのか？希少財を得る機会が個人あるいは集団間でいかに異なるのか？希少財の配分やそれを得る機会が異なるのはなぜなのか？社会階層研究はこうした不平等を研究する社会学の一分野である。</p>
-<p>社会階層研究の扱う分野は多岐にわたるが、なかでも主要な問題とされてきたのは以下の3点である。第1に、希少財の配分がどの程度偏っているのかという結果の不平等である。所得や富の不平等の程度は国や時代によってどの程度異なるのか？不平等が拡大しているとしたらそれはなぜか？階層によって健康や家族形成のパターンはどの程度異なるのか？人びとのもつつながりは階層によってどの程度隔たっているのか？こうした問いが検討される。</p>
-<p>第2に、希少財を得る機会がどの程度偏っているのかという機会の不平等である。親の階層とは異なる階層に移動するという世代間移動は増えているのか、減っているのか？変化しているとしたらそれはなぜか？親の階層によって教育機会の不平等が生じるのはなぜか？高い学歴を有する人がより高い階層に就くのはなぜか？これらは機会の不平等に関わる問いである。</p>
-<p>第3に、生まれ持った属性がいかに配分や機会の不平等につながるのかという属性による不平等である。本授業ではとくにジェンダー（性別）による不平等を扱う。ジェンダー不平等は国によってどの程度違うのか？不平等の程度はどのように変化しているのか？男子は理系、女子は文系に進学しやすいのはなぜか？男性と女性が労働市場で異なる仕事に就き、異なる評価を受けるのはなぜか？家族形成がキャリアに与える影響が男女で異なるのはなぜか？こうした問いがジェンダーによる不平等という観点から検討される。</p>
-<p>本授業では、上記3つの問題それぞれについて、実証研究の蓄積を概観することを通じて、社会学、および社会階層研究の視点から社会の不平等を捉えるための視点を身につけることを目指す。また、上記3つの問題に関して、欧米を中心に確認されてきた動向が日本においてはどの程度確認されるのかといった点についても、その成果を紹介する。これを通じて、日本の不平等の位置づけを国際的な視点から理解するとともに、不平等がいかにして生じるのか、そのメカニズムを理解することを目指す。</p>
-<ol type="1">
-<li><p>ガイダンス</p></li>
-<li><p>結果の不平等（1）：不平等の拡大</p>
-<ol type="1">
-<li><p>結果の不平等の測定</p></li>
-<li><p>所得と富の不平等：国際比較とトレンド</p></li>
-<li><p>富裕層と貧困層</p></li>
-</ol></li>
-<li><p>結果の不平等（2）：不平等の拡大のメカニズム</p>
-<ol type="1">
-<li><p>なぜ不平等が拡大したのか：アメリカの場合</p></li>
-<li><p>日本の不平等の実態とメカニズム</p></li>
-</ol></li>
-<li><p>結果の不平等（3）：階層間格差と不平等の帰結</p>
-<ol type="1">
-<li><p>階層の測定</p></li>
-<li><p>階層間格差：健康と家族形成</p></li>
-<li><p>結果の不平等の帰結</p></li>
-</ol></li>
-<li><p>結果の不平等（4）：階層分離と認識のずれ</p>
-<ol type="1">
-<li><p>不平等と階層分離</p></li>
-<li><p>客観的位置と主観的認識のずれ</p></li>
-<li><p>不平等に関する価値観</p></li>
-</ol></li>
-<li><p>機会の不平等（1）：世代間移動</p>
-<ol type="1">
-<li><p>社会移動の測定</p></li>
-<li><p>職業からみる世代間移動</p></li>
-<li><p>所得からみる世代間移動</p></li>
-</ol></li>
-<li><p>機会の不平等（2）：近代化仮説と地位達成過程</p>
-<ol type="1">
-<li><p>近代化仮説</p></li>
-<li><p>地位達成過程</p></li>
-<li><p>日本の社会移動のトレンド</p></li>
-</ol></li>
-<li><p>機会の不平等（3）：教育機会の不平等</p>
-<ol type="1">
-<li><p>トレンドをめぐる議論</p></li>
-<li><p>教育機会の不平等のメカニズム</p></li>
-<li><p>遺伝か環境か</p></li>
-</ol></li>
-<li><p>機会の不平等（4）：労働市場と機会の不平等</p>
-<ol type="1">
-<li><p>教育と到達階層の関係：メカニズム</p></li>
-<li><p>日本の雇用慣行と世代内移動</p></li>
-<li><p>出身階層の影響力の再検討</p></li>
-</ol></li>
-<li><p>属性による不平等（1）：ジェンダー不平等</p>
-<ol type="1">
-<li><p>ジェンダーの視点と不平等</p></li>
-<li><p>ジェンダー不平等：国際比較とトレンド</p></li>
-<li><p>日本のジェンダー不平等のトレンド</p></li>
-</ol></li>
-<li><p>属性による不平等（2）：教育とジェンダー</p>
-<ol type="1">
-<li><p>教育達成の男女差</p></li>
-<li><p>性別専攻分離のメカニズム</p></li>
-</ol></li>
-<li><p>属性による不平等（3）：労働市場とジェンダー</p>
-<ol type="1">
-<li><p>賃金格差の原因を探る：要因分解</p></li>
-<li><p>仕事の違いを測定する：性別職域分離</p></li>
-<li><p>格差の生成過程：採用とキャリア</p></li>
-</ol></li>
-<li><p>属性による不平等（4）：家族形成とジェンダー</p>
-<ol type="1">
-<li><p>出産・育児と男女のキャリア</p></li>
-<li><p>性別役割分業と結婚</p></li>
-</ol></li>
-<li><p>まとめ</p></li>
-</ol>
-</section>
-</section>
-<section id="学習院大学法学部社会学iii" class="level2">
-<h2 class="anchored" data-anchor-id="学習院大学法学部社会学iii">2021-04–　学習院大学法学部「社会学III」</h2>
-<section id="テーマ-1" class="level3">
-<h3 class="anchored" data-anchor-id="テーマ-1">テーマ</h3>
-<p>現代社会学の理論的・経験的蓄積</p>
-</section>
-<section id="開講-1" class="level3">
-<h3 class="anchored" data-anchor-id="開講-1">開講</h3>
-<p>学習院大学法学部 前期</p>
-</section>
-<section id="授業の概要-1" class="level3">
-<h3 class="anchored" data-anchor-id="授業の概要-1">授業の概要</h3>
-<p>社会学は、人びとの集まりである社会において繰り返し観察される社会現象を正確に記述するとともに、それがなぜ生じているのかを、現象の社会的側面に着目して説明することを目的とする、社会科学の一分野である。</p>
-<p>豊かな人と貧しい人がいるのはなぜか？太っている人とそうでない人がいるのはなぜか？似た者どうしが友人になるのはなぜか？ある小説や音楽、映画が流行するのはなぜか？社会学ではさまざまなトピック（問い）が扱われるが、社会学ではそれらを説明するにあたって、個人やモノそれ自体よりもむしろ、それらを取り巻くコンテクストの影響力に着目する。このような視点から、社会学ではこれまで多くの概念や方法が開発され、さまざまな事実が明らかにされてきた。</p>
-<p>本授業ではこうした概念や方法、現代の社会学における理論的・経験的な蓄積を紹介し、これにふれることを通じて、社会学に通底する視点を身につけることを目指す。ひいては、身の回りのさまざまな社会現象について、社会学の視点からその実態や原因を考えられるようになることが目標である。</p>
-<ol type="1">
-<li>ガイダンス</li>
-<li>問い</li>
-<li>理論</li>
-<li>方法</li>
-<li>意見</li>
-<li>規範</li>
-<li>ネットワーク</li>
-<li>集団</li>
-<li>階層と移動</li>
-<li>資源</li>
-<li>移民と統合</li>
-<li>近代化</li>
-<li>宗教</li>
-<li>まとめ</li>
-</ol>
-</section>
-<section id="到達目標" class="level3">
-<h3 class="anchored" data-anchor-id="到達目標">到達目標</h3>
-<ul>
-<li>社会学的な問いの立て方を身につける。</li>
-<li>社会学的な視点、理論を用いて社会現象を読み解くことができる。</li>
-<li>社会学の諸概念および経験的な知見のもつ意味について理解する。</li>
-</ul>
-</section>
-<section id="テキスト" class="level3">
-<h3 class="anchored" data-anchor-id="テキスト">テキスト</h3>
-<p>Tubergen, Frank van. 2020. <em>Introduction to Sociology.</em> Routledge.</p>
-</section>
-</section>
-<section id="学習院大学法学部社会学演習" class="level2">
-<h2 class="anchored" data-anchor-id="学習院大学法学部社会学演習">2021-04–　学習院大学法学部「社会学演習」</h2>
-<section id="テーマ-2" class="level3">
-<h3 class="anchored" data-anchor-id="テーマ-2">テーマ</h3>
-<p>社会的不平等に関する実証研究</p>
-</section>
-<section id="開講-2" class="level3">
-<h3 class="anchored" data-anchor-id="開講-2">開講</h3>
-<p>学習院大学法学部 前後期</p>
-</section>
-<section id="授業概要" class="level3">
-<h3 class="anchored" data-anchor-id="授業概要">授業概要</h3>
-<p>本演習の目的は、社会学の視点から、問いを設定し、仮説を立て、それに答えるために社会調査データを分析することを通じて、社会科学一般の基礎となる研究過程を体感し、かつそれを実行するためのスキルを習得することにある。社会学では、個人の行為を説明するにあたって、社会的な文脈の影響に着目する。なぜある人はお金持ちで、ある人は貧しいのか？なぜ大学に行く人と行かない人がいるのか？なぜ家事や育児にかける時間が人によって違うのか？こうした一見個人的な行為、あるいはその結果に対する説明を考え、その説明を検証するための具体的な方法を身につけることを目指す。</p>
-<p>社会の実態を記述するために最も基本的な方法の一つが、社会調査データの分析である。本演習では、実際にこうした調査データを用い、統計ソフトを用いて分析する方法について学習する。先行研究をもとに問いを立て、論理的に仮説を導き、データを用いて仮説を検証するという一連の作業を通じて、実証的な研究を行うためのスキルを身につける。こうしたスキルは、直接研究には携わらないとしても、今後の仕事や生活で必ず役に立つだろう。</p>
-<p>前期は社会学に関連する基礎的な文献および実証研究論文の購読と、統計分析の方法およびそれを具体的に実行するための統計ソフト（RおよびRStudio）の使い方の学習を並行して進める。文献の購読に関しては、はじめに少人数のグループに分かれて内容や疑問点について話し合った後、議論の共有を行う。有意義な議論を行うため、参加者は全員がテキストを事前に読んでくる必要がある。統計分析の方法に関する文献については、各自事前に該当箇所を読んだうえで、一通り書かれたコードを実行してくる。こちらも各自が文献を読んでいることを前提に、授業では疑問点を解消することを中心とする。前期末には後期の個人研究に向けた研究計画の書き方やデータの紹介を行う。これを参考にしながら、夏期休暇中には各自で研究計画を作成・提出する。</p>
-<p>後期は各自の研究報告およびレポート執筆のための作業を中心とする。報告者は事前の十分な準備が必要となる。研究課題は社会学、なかでも社会階層、不平等、労働、家族、教育、等々にかかわるテーマでのレポート執筆を期待するが、とくにこのテーマでなければならないといった制限はない。統計分析に使用する社会調査データとしては、日本版総合的社会調査（Japan General Social Survey, JGSS. <a href="https://jgss.daishodai.ac.jp/surveys/sur_top.html" class="uri">https://jgss.daishodai.ac.jp/surveys/sur_top.html</a>）を予定している。別の調査データ等の使用については妨げるものではないが、別途使用に際して手続きが必要な場合があるので、教員に相談すること。文献2の付録にはJGSSのほか社会調査データの説明がいくつか載っている。なお受講人数によっては、1人ではなく2–3人のグループを作ることも検討する。複数回の研究報告を通じて研究内容をブラッシュアップし、研究論文としても良質のレポートを執筆することを目指す。</p>
-</section>
-<section id="到達目標-1" class="level3">
-<h3 class="anchored" data-anchor-id="到達目標-1">到達目標</h3>
-<ol type="1">
-<li><p>社会学の視点から問いを設定し、仮説を立てられるようになる。</p></li>
-<li><p>社会調査データの分析方法を身につける。</p></li>
-<li><p>実証研究による報告論文（レポート）を書くことができる。</p></li>
-</ol>
+<p>過去の講義の情報などをまとめています。</p>
 
 
-</section>
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1678287600000" data-listing-file-modified-sort="1682067865875" data-listing-reading-time-sort="0.035">
+<div class="thumbnail">
+<p><a href="./lecture/2023-03-09CSRDA.html"> <img src="./lecture/images/5_3_eventstudy.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./lecture/2023-03-09CSRDA.html">
+<h3 class="no-anchor listing-title">
+2022年度春・Stataによるパネル調査データ分析の実践
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 2022年度計量分析セミナー・春
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./lecture/2023-03-09CSRDA.html">
+<div class="listing-date">
+Mar 9, 2023
+</div>
+<div class="listing-author">
+Ryota Mugiyama
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1662476400000" data-listing-file-modified-sort="1682067778495" data-listing-reading-time-sort="0.1">
+<div class="thumbnail">
+<p><a href="./lecture/2022-09-07CSRDA.html"> <img src="./lecture/images/figure1_histogram.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./lecture/2022-09-07CSRDA.html">
+<h3 class="no-anchor listing-title">
+2022年度夏・Stataを用いた計量分析入門
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 2022年度計量分析セミナー・夏
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./lecture/2022-09-07CSRDA.html">
+<div class="listing-date">
+Sep 7, 2022
+</div>
+<div class="listing-author">
+Ryota Mugiyama
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1647010800000" data-listing-file-modified-sort="1682067777113" data-listing-reading-time-sort="0.09">
+<div class="thumbnail">
+<p><a href="./lecture/2022-03-02CSRDA.html"> <img src="./lecture/images/figure1_histogram.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./lecture/2022-03-02CSRDA.html">
+<h3 class="no-anchor listing-title">
+2021年度春・Stataを用いた計量分析入門
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 2021年度計量分析セミナー・春
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./lecture/2022-03-02CSRDA.html">
+<div class="listing-date">
+Mar 12, 2022
+</div>
+<div class="listing-author">
+Ryota Mugiyama
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1630422000000" data-listing-file-modified-sort="1682067307183" data-listing-reading-time-sort="1.125">
+<div class="thumbnail">
+<p><a href="./lecture/GU-sociologyIV.html"> <img src="./images/website.jpg" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./lecture/GU-sociologyIV.html">
+<h3 class="no-anchor listing-title">
+2021-09–　学習院大学法学部「社会学IV」
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+同内容は2022年度に日本女子大学人間社会学部、津田塾大学総合政策学部でも行いました。
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./lecture/GU-sociologyIV.html">
+<div class="listing-date">
+Sep 1, 2021
+</div>
+<div class="listing-author">
+Ryota Mugiyama
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1630335600000" data-listing-file-modified-sort="1682067778474" data-listing-reading-time-sort="0.08">
+<div class="thumbnail">
+<p><a href="./lecture/2021-08-31CSRDA.html"> <img src="./lecture/images/figure1_histogram.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./lecture/2021-08-31CSRDA.html">
+<h3 class="no-anchor listing-title">
+2021年度夏・Stataによる計量分析の実践
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 2021年度計量分析セミナー・夏
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./lecture/2021-08-31CSRDA.html">
+<div class="listing-date">
+Aug 31, 2021
+</div>
+<div class="listing-author">
+Ryota Mugiyama
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1617202800000" data-listing-file-modified-sort="1682068048389" data-listing-reading-time-sort="0.22">
+<div class="thumbnail">
+<p><a href="./lecture/GU-socSem.html"> <img src="./images/website.jpg" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./lecture/GU-socSem.html">
+<h3 class="no-anchor listing-title">
+2021-04–　学習院大学法学部「社会学演習」
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+社会的不平等に関する実証研究
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./lecture/GU-socSem.html">
+<div class="listing-date">
+Apr 1, 2021
+</div>
+<div class="listing-author">
+Ryota Mugiyama
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1617202800000" data-listing-file-modified-sort="1682067132468" data-listing-reading-time-sort="0.225">
+<div class="thumbnail">
+<p><a href="./lecture/GU-sociologyIII.html"> <img src="./images/website.jpg" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./lecture/GU-sociologyIII.html">
+<h3 class="no-anchor listing-title">
+2021-04–　学習院大学法学部「社会学III」
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+現代社会学の理論的・経験的蓄積
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./lecture/GU-sociologyIII.html">
+<div class="listing-date">
+Apr 1, 2021
+</div>
+<div class="listing-author">
+Ryota Mugiyama
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -20,7 +20,7 @@ website:
         href: https://twitter.com/ryotamugiyama
   favicon: website.jpg
   twitter-card: 
-    image: website.jpg
+    image: https://mugiyama.github.io/website/website.jpg
 
 format:
   html:

@@ -1,5 +1,17 @@
 [
   {
+    "listing": "/lecture.html",
+    "items": [
+      "/lecture/2023-03-09CSRDA.html",
+      "/lecture/2022-09-07CSRDA.html",
+      "/lecture/2022-03-02CSRDA.html",
+      "/lecture/GU-sociologyIV.html",
+      "/lecture/2021-08-31CSRDA.html",
+      "/lecture/GU-socSem.html",
+      "/lecture/GU-sociologyIII.html"
+    ]
+  },
+  {
     "listing": "/blog.html",
     "items": [
       "/blog/2022-08-19-report.html",
