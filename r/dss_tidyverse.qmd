@@ -49,16 +49,35 @@ star <- read_csv(paste0(dir, "/", "STAR.csv"))
 star %>% View()
 ```
 
+`%>%`演算子を改行して書いてもよい。
+
+```{r, eval=FALSE}
+star %>% # starデータフレームに対して、
+  View() # viewを実行
+```
+
 データの上からいくつかの行を見る`head()`コマンドであれば、次のように書くことができる：
 
 ```{r}
-star %>% head()
-star %>% head(n = 3)
+star %>% # starデータフレームに対して、
+  head() # headを実行
+
+star %>% 
+  head(n = 3)
 ```
 
 ちなみに、Macであれば`Control + Shift + m`で、Windowsであれば`Ctrl + Shift + m`でパイプ演算子を出力することができる。
 
-ちなみに、最近RStudioを新しくインストールした場合だと、上記のショートカットキーを入力すると`|>`というコマンドが出力されるかもしれない。ふつうに使う分だとどちらを使ってもとくに支障は生じない。
+ちなみに、最近RStudioを新しくインストールした場合だと、上記のショートカットキーを入力すると`|>`というコマンドが出力されるかもしれない。ふつうに使う分だとどちらを使ってもとくに支障は生じない。試しに以下の2種類を実行して、どちらも同じものが出力されることを確かめてみよう。
+
+```{r}
+star |> 
+  head(n = 3)
+
+star %>% 
+  head(n = 3)
+```
+
 
 ちなみに、メニュー（またはEdit）→Preferences...→Codeを選択して、以下の「Use native pipe operator, \|\> (requires R 4.1+)」のチェックを外すと、上記ショートカットキーを入力したときに`%>%`が表示されるようになる。
 
@@ -67,7 +86,8 @@ star %>% head(n = 3)
 `dim(star)`についても`%>%`演算子を使って書くことができる。
 
 ```{r}
-star %>% dim()
+star %>% # starデータフレームに対して、
+  dim() # dimを実行
 ```
 
 ここで挙げた例は単純なので、`%>%`演算子を使うことのありがたみは感じにくいかもしれない。しかし、コードが長くなってきたり、命令が複雑になってくるほど、`%>%`演算子を使うメリットは大きくなる。Chapter 3あたりから、徐々にそのメリットが明らかになってくる。
@@ -117,7 +137,16 @@ star <- read_csv(paste0(dir, "/", "STAR.csv"))
 
 ### 2.5.2 Creating new variables
 
-tidyverseの場合、`ifelse()`と同じような関数として`if_else()`がある。たとえば、`star`データフレームに含まれている`classtype`列が`"small"`の場合に1、そうでない場合に0をとる新しい列`small`を作って、`star`データフレームに追加したい場合には、次のように書く。
+tidyverseを使ってなにか新しい変数を作るときのコマンドが、`mutate()`である。`mutate(新しい変数の名前 = その内容)`、というコードを書く。
+
+教科書と同じように、`star`データフレームに含まれている`classtype`列が`"small"`の場合に1、そうでない場合に0をとる新しい列`small`を作って、`star`データフレームに追加したい場合には、次のように書く。
+
+```{r}
+star <- star %>% 
+  mutate(small = ifelse(classtype == "small", 1, 0))
+```
+
+また、tidyverseを使う場合には、`ifelse()`と同じような関数として`if_else()`がある。文法はほぼ同じで、次のように書くことができる。
 
 ```{r}
 star <- star %>% 
@@ -127,7 +156,8 @@ star <- star %>%
 `ifelse()`を使った場合と結果が同じになっているかを確認しよう。
 
 ```{r}
-star %>% head()
+star %>% 
+  head()
 ```
 
 ### 2.5.3 Subsetting variables
@@ -135,9 +165,9 @@ star %>% head()
 グループごとに集計をしたい場合には、`summarize()`などの前に`group_by()`をつけることで、グループ別に集計することができる。
 
 ```{r}
-star %>% 
-  group_by(small) %>% 
-  summarize(mean(reading))
+star %>% # starデータフレームを、
+  group_by(small) %>% # smallの値別に分けて、
+  summarize(mean(reading)) # 平均値を求める
 ```
 
 複数の変数を集計するときにも同様だ。
@@ -149,6 +179,9 @@ star %>%
             mean(math),
             mean(graduated))
 ```
+
+---
+**これ以降は作業途中です（2023/04/28現在）**
 
 # Chapter 3 Inferring population characteristics via survey research
 

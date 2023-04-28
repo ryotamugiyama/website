@@ -46,6 +46,8 @@ image: ../images/website.jpg
 
 豊永耕平，2023，『学歴獲得の不平等：親子の進路選択と社会階層』勁草書房．
 
+Llaudet, Elene and Kosuke Imai. 2022. *Data Analysis for Social Science: A Friendly and Practical Introduction.* Princeton University Press.
+
 吉田航，2022，「女性管理職は「変化の担い手」か「機械の歯車」か？：新卒女性の採用・定着に与える影響に着目して」『理論と方法』37(1): 18--33．
 
 郭雲蔚，2019，「低水準の均衡：職場における非正規雇用の存在と労働者全体の処遇水準」『フォーラム現代社会学』18: 45--59．
@@ -68,7 +70,7 @@ image: ../images/website.jpg
 
 ### 2021年度
 
-Watts, Duncan J. 2011. **Everything is Obvious, Once You Know the Answer: Why Common Sense is Nonsense.** Atlantic Books.（青木創訳，2014，『偶然の科学』早川書房．）
+Watts, Duncan J. 2011. *Everything is Obvious, Once You Know the Answer: Why Common Sense is Nonsense.* Atlantic Books.（青木創訳，2014，『偶然の科学』早川書房．）
 
 数理社会学会監修，筒井淳也・神林博史・長松奈美江・渡邉大輔・藤原翔編，2015，『計量社会学入門：社会をデータで読む』世界思想社．
 
