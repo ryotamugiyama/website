@@ -180,14 +180,11 @@ star %>%
             mean(graduated))
 ```
 
----
-**これ以降は作業途中です（2023/04/28現在）**
-
 # Chapter 3 Inferring population characteristics via survey research
 
 ## 3.3 Measuring support for Brexit
 
-`read_csv()`を使ってデータの読み込み。
+上記と同様、`read_csv()`を使ってデータを読み込む。
 
 ```{r, eval = FALSE}
 bes <- read_csv("BES.csv")
@@ -198,16 +195,18 @@ bes <- read_csv(paste0(dir, "/", "BES.csv"))
 ```
 
 ```{r}
-bes %>% head()
+bes %>% 
+  head()
 ```
 
 ```{r}
-bes %>% dim()
+bes %>% 
+  dim()
 ```
 
 ### 3.3.2 Frequency tables
 
-度数分布表（Frequency table）を作るときには、`with(table())`を使う。
+度数分布表（Frequency table）を作るときには、`with(table())`コマンドを使う。
 
 ```{r}
 bes %>% 
@@ -216,7 +215,7 @@ bes %>%
 
 ## 3.3.3 Tables of proportions
 
-一度tableに`freq_table`と名前をつけて、`prop.table()`を使って割合を求めることができる。
+一度作成したtableに`freq_table`と名前をつけて保存する。保存したデータフレームに対して`prop.table()`を実行することで、割合を求めることができる。
 
 ```{r}
 freq_table <- bes %>% 
@@ -226,7 +225,7 @@ freq_table %>%
   prop.table()
 ```
 
-もしくは、そのまま`%>%`演算子を重ねることでも割合を求めることができる。
+もしくは、`with(table())`にそのまま`%>%`演算子を重ねて`prop.table()`を実行することでも割合を求めることができる。
 
 ```{r}
 bes %>% 
@@ -238,7 +237,7 @@ bes %>%
 
 ### 3.4.1 Handling missing data
 
-NAを含めた度数分布を出す場合には、`exclude = NULL`のオプションのほか、`useNA = "always"`のオプションを使うこともできる。
+NAを含めた度数分布を出す場合には、教科書に書かれている`exclude = NULL`のオプションのほか、`useNA = "always"`のオプションを使うこともできる。
 
 ```{r}
 bes %>% 
@@ -248,19 +247,26 @@ bes %>%
   with(table(education, useNA = "always"))
 ```
 
-平均値を求める。
+平均値を求めるときには、`with(mean())`を使うか、`summarize(mean())`を使う。ただし、いずれのコマンドについても値にNAが含まれている場合には計算結果もNAとなってしまう。
 
 ```{r}
 bes %>% 
   with(mean(leave))
 ```
 
+このような場合には、NAを除いて平均値を求めるように以下のオプションをつける。
+
 ```{r}
 bes %>% 
   with(mean(leave, na.rm = TRUE))
 ```
 
-一つでも欠損値があるデータを除外する場合には、`na.omit()`を使う。
+```{r}
+bes %>% 
+  summarize(mean(leave, na.rm = TRUE))
+```
+
+データフレームのなかで一つでも欠損値がある行を除外する場合には、`na.omit()`を使う。
 
 ```{r}
 bes1 <- bes %>% 
@@ -277,7 +283,7 @@ bes1 <- bes %>%
 
 ### 3.4.2 Two-way frequency tables
 
-`with(table())`は2変量の度数分布表（クロス集計表）の作成にも使える。
+`with(table())`は2変量の度数分布表（クロス集計表）の作成にも使える。,の前が行になる変数、後ろが列になる変数を表す。
 
 ```{r}
 bes1 %>% 
@@ -286,7 +292,7 @@ bes1 %>%
 
 ### 3.4.3 Two-way tables of proportions
 
-総%を求める場合
+総割合を求める場合には、度数分布表のときと同じく`prop.table()`を指定すればよい。もしくは、`prop.table(margin = 0)`と書いても同じ。
 
 ```{r}
 bes1 %>% 
@@ -294,7 +300,7 @@ bes1 %>%
   prop.table()
 ```
 
-行%を求める場合
+行割合を求める場合には、`prop.table(margin = 1)`。
 
 ```{r}
 bes1 %>% 
@@ -302,7 +308,7 @@ bes1 %>%
   prop.table(margin = 1)
 ```
 
-列%を求める場合
+列割合を求める場合には、`prop.table(margin = 2)`。
 
 ```{r}
 bes1 %>% 
@@ -312,11 +318,36 @@ bes1 %>%
 
 ### 3.4.4 Histograms
 
+人生一度はイケてるグラフを作ってみたいと思ったことがあるだろう（そうでもない？）。そんなときに活躍するのが、`ggplot()`および関連の関数である。`ggplot()`はデフォルトのRのグラフよりは少し文法が複雑だが、さまざまな要素を追加したり、よりきれいなグラフを作る際には非常に役立つコマンドである。
+
+ggplotについての導入的な知識については[このページ](https://mugiyama.github.io/seminar_sociology_r/descriptives.html#%E3%83%92%E3%82%B9%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%A8ggplot%E3%81%AE%E5%B0%8E%E5%85%A5)でも解説しているので、こちらにもとづいて説明する。
+
+まず、教科書と同様に年齢についてのヒストグラムを作ってみたいと思ったとする。以下のコードを実行する。
+
 ```{r}
 bes1 %>% 
   ggplot(aes(x = age)) + 
   geom_histogram()
 ```
+
+ggplotの基本的な発想は、キャンバスに絵の具を重ね塗りしていくかのように、一つひとつ層を重ねていってグラフを作るというものである。具体的にみてみよう。先ほどのコードから3行目を削除した次の結果を確認してみよう。
+
+```{r}
+bes1 %>% 
+  ggplot(aes(x = age))
+```
+
+`ggplot()`という部分が、グラフを書くための準備をしている箇所である。`aes()`のなかでは、x軸やy軸にそれぞれ何の変数を取るのかであったり、どのような色で分けるのか（今回は扱わない）などを指定する。今の場合であれば、x軸に`age`をとる、ということを指している。上記の命令だけだと、このようにx軸のみが表示された空白の座標が準備される。
+
+`geom_histogram()`というのが、ヒストグラムを書くためのコードである。先ほどのコードに、`+`でつないで`geom_histogram()`というコードを追加すると、空白の座標にヒストグラムが描かれる。縦軸（count）は、その区間に何人の人が属しているかを示している。
+
+```{r}
+bes1 %>% 
+  ggplot(aes(x = age)) + 
+  geom_histogram()
+```
+
+ついで、brexitを支持しなかったグループ（`leave == 0`）と、brexitを指示したグループ（`leave == 1`）とに分けたヒストグラムを作る。これは、これまでのコマンドに新たに`facet_wrap(~leave)`または、`facet_grid(~leave)`というコマンドを追加する。
 
 ```{r}
 bes1 %>% 
@@ -327,6 +358,24 @@ bes1 %>%
 
 ### 3.4.5 Density histograms
 
+次は、学歴`education`が1のグループと4のグループのみを取り出して、先ほどと同じように2つに分割したヒストグラムを作ってみる。特定の条件にあったデータのみを抽出したいときには、`filter()`関数を使う。たとえば、`education`が1のグループだけを取り出したい場合には、次のようにする。
+
+```{r}
+bes1 %>% 
+  filter(education == 1) %>% # educationが1の人だけを抽出
+  with(table(education)) # 結果を確認
+```
+
+`education`が1**または**4のグループだけを取り出したい場合には、次のようにする。
+
+```{r}
+bes1 %>% 
+  filter(education == 1 | education == 4) %>% # educationが1または4の人だけを抽出
+  with(table(education)) # 結果を確認
+```
+
+上記の操作を応用して、再びヒストグラムを作ってみよう。
+
 ```{r}
 bes1 %>% 
   filter(education == 1 | education == 4) %>% 
@@ -335,6 +384,8 @@ bes1 %>%
   facet_wrap(~education)
 ```
 
+上記のグラフの縦軸を密度にして揃えたいときには、`geom_histogram()`の括弧内に`aes(y = after_stat(density))`というオプションを追加する。
+
 ```{r}
 bes1 %>% 
   filter(education == 1 | education == 4) %>% 
@@ -342,6 +393,8 @@ bes1 %>%
   geom_histogram(aes(y = after_stat(density))) +
   facet_wrap(~education)
 ```
+
+同じことを`brexit`を支持するかどうかで分けたヒストグラムでもできることを確認しよう。
 
 ```{r}
 bes1 %>% 
@@ -352,33 +405,39 @@ bes1 %>%
 
 ### 3.4.6 Descriptive statistics
 
+2.5.3 Subsetting variablesで扱ったように、`group_by()`と`summarize()`を組み合わせることで、層別に平均値（`mean`）や中央値（`median`）、標準偏差（`sd`）を求めることができる。
+
 ```{r}
 bes1 %>% 
   group_by(leave) %>% 
-  summarize(mean = mean(age))
+  summarize(mean(age))
 ```
 
 ```{r}
 bes1 %>% 
   group_by(leave) %>% 
-  summarize(median = median(age))
+  summarize(median(age))
 ```
 
 ```{r}
 bes1 %>% 
   group_by(leave) %>% 
-  summarize(sd = sd(age))
+  summarize(sd(age))
 ```
+
+分散と標準偏差の関係を確認しておこう。
 
 ```{r}
 bes1 %>% 
   filter(leave == 1) %>% 
-  summarize(var = var(age),
-            sd_sq = sd(age)^2,
-            var_sqrt = sqrt(var(age)))
+  summarize(分散 = var(age),
+            標準偏差の2乗 = sd(age)^2,
+            分散の平方根 = sqrt(var(age)))
 ```
 
 ## 3.5 Relationship between education and the leave vote in the entire UK
+
+これまでと同じようにデータを読み込み。
 
 ```{r, eval = FALSE}
 dis <- read_csv("UK_districts.csv")
@@ -389,12 +448,16 @@ dis <- read_csv(paste0(dir, "/", "UK_districts.csv"))
 ```
 
 ```{r}
-dis %>% head()
+dis %>% 
+  head()
 ```
 
 ```{r}
-dis %>% dim()
+dis %>% 
+  dim()
 ```
+
+NAを含む行を削除したデータを作成。
 
 ```{r}
 dis1 <- dis %>% 
@@ -402,16 +465,21 @@ dis1 <- dis %>%
 ```
 
 ```{r}
-dis1 %>% dim()
+dis1 %>% 
+  dim()
 ```
 
 ### 3.5.1 Scatter plots
+
+散布図を描くときに使うのが`geom_point()`というコマンドである。`ggplot(aes())`内でx軸とy軸をそれぞれ指定しておいて、`geom_point()`で散布図を描くことができる。
 
 ```{r}
 dis1 %>% 
   ggplot(aes(x = high_education, y = leave)) + 
   geom_point()
 ```
+
+上記の図に、xの平均値を表す線とyの平均値を表す線を書き加えてみよう。横方向の線を加えるコマンドは`geom_hline()`、縦方向の線を加えるコマンドは`geom_vline()`である。
 
 ```{r}
 xvalue <- dis1 %>% 
@@ -426,7 +494,9 @@ dis1 %>%
   geom_vline(xintercept = xvalue, lty = "dashed")
 ```
 
-### 3.5.2 Scatter plots
+### 3.5.2 Correlation
+
+相関係数を求めるときには、`with(cor())`コマンドを用いる。
 
 ```{r}
 dis1 %>% 
@@ -435,6 +505,9 @@ dis1 %>%
 dis1 %>% 
   with(cor(leave, high_education))
 ```
+
+---
+**これ以降は作業途中です（2023/05/08現在）**
 
 # Chapter 4 Predicting outcomes using linear regression
 

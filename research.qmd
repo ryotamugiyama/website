@@ -42,7 +42,11 @@ Changes in Geographic Accessibility to College and Inequality of Educational Opp
 
 ## Reviewed paper
 
-麦山亮太・小松恭子，近刊，「テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析」『日本労働研究雑誌』．
+麦山亮太・田上皓大，2024（近刊），「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』39(1)．
+
+五十嵐彰・麦山亮太，2023（近刊），「サーベイ実験を用いた日本における外国人雇用差別の検証：企業属性による異質性」『理論と方法』38(2)．
+
+麦山亮太・小松恭子，2023，「テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析」『日本労働研究雑誌』754: 87–102．
 
 Çineli, Beyda and Ryota Mugiyama. 2023. "[Money management over the course of marriage: Parenthood, employment and household financial organization in Japan](https://doi.org/10.1016/j.alcr.2023.100544)." *Advances in Life Course Research.* Online first.
 
