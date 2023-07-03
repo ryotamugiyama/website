@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Ryota Mugiyama">
+<meta name="dcterms.date" content="2016-11-12">
+
+<title>Ryota Mugiyama - 時間による効果の変化をモデリングする</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../website.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+<meta name="twitter:title" content="Ryota Mugiyama - 時間による効果の変化をモデリングする">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://mugiyama.github.io/website/website.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Ryota Mugiyama</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../lecture.html" rel="" target="">
+ <span class="menu-text">Lecture</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../notes.html" rel="" target="">
+ <span class="menu-text">Notes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../stata.html" rel="" target="">
+ <span class="menu-text">Stata</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../r.html" rel="" target="">
+ <span class="menu-text">R</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/ryotamugiyama" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#時系列データにおいてxの効果をどのように捉えるか" id="toc-時系列データにおいてxの効果をどのように捉えるか" class="nav-link active" data-scroll-target="#時系列データにおいてxの効果をどのように捉えるか">時系列データにおいてXの効果をどのように捉えるか</a></li>
+  <li><a href="#例1-xの効果はすぐに現れかつ持続する" id="toc-例1-xの効果はすぐに現れかつ持続する" class="nav-link" data-scroll-target="#例1-xの効果はすぐに現れかつ持続する">例1 Xの効果はすぐに現れ、かつ持続する</a></li>
+  <li><a href="#例2-xの効果は徐々に現れる" id="toc-例2-xの効果は徐々に現れる" class="nav-link" data-scroll-target="#例2-xの効果は徐々に現れる">例2 Xの効果は徐々に現れる</a></li>
+  <li><a href="#例3-xの効果はすぐに現れかつ徐々に変化する" id="toc-例3-xの効果はすぐに現れかつ徐々に変化する" class="nav-link" data-scroll-target="#例3-xの効果はすぐに現れかつ徐々に変化する">例3 Xの効果はすぐに現れ、かつ徐々に変化する</a></li>
+  <li><a href="#例4-xの効果は非線形に変化する2乗" id="toc-例4-xの効果は非線形に変化する2乗" class="nav-link" data-scroll-target="#例4-xの効果は非線形に変化する2乗">例4 Xの効果は非線形に変化する（2乗）</a></li>
+  <li><a href="#例5-xの効果は非線形に変化するlog" id="toc-例5-xの効果は非線形に変化するlog" class="nav-link" data-scroll-target="#例5-xの効果は非線形に変化するlog">例5 Xの効果は非線形に変化する（log）</a></li>
+  <li><a href="#例6-xの前後で時間の効果が変化するspline" id="toc-例6-xの前後で時間の効果が変化するspline" class="nav-link" data-scroll-target="#例6-xの前後で時間の効果が変化するspline">例6 Xの前後で時間の効果が変化する（spline）</a></li>
+  <li><a href="#例7-xからの経過時間ごとにダミー変数を作る" id="toc-例7-xからの経過時間ごとにダミー変数を作る" class="nav-link" data-scroll-target="#例7-xからの経過時間ごとにダミー変数を作る">例7 Xからの経過時間ごとにダミー変数を作る</a></li>
+  <li><a href="#xの変化以前を考慮するときの問題" id="toc-xの変化以前を考慮するときの問題" class="nav-link" data-scroll-target="#xの変化以前を考慮するときの問題">Xの変化以前を考慮するときの問題</a>
+  <ul class="collapse">
+  <li><a href="#時点前1xの変化を観察できていない場合については0を代入する" id="toc-時点前1xの変化を観察できていない場合については0を代入する" class="nav-link" data-scroll-target="#時点前1xの変化を観察できていない場合については0を代入する">1時点前(1)：Xの変化を観察できていない場合については0を代入する。</a></li>
+  <li><a href="#時点前2xの変化を観察できていない場合はすべて欠損とする" id="toc-時点前2xの変化を観察できていない場合はすべて欠損とする" class="nav-link" data-scroll-target="#時点前2xの変化を観察できていない場合はすべて欠損とする">1時点前(2)：Xの変化を観察できていない場合はすべて欠損とする。</a></li>
+  <li><a href="#時点前31時点後にx-1となっていないことが確認できる行についてのみ1時点前ダミーの値を作成する" id="toc-時点前31時点後にx-1となっていないことが確認できる行についてのみ1時点前ダミーの値を作成する" class="nav-link" data-scroll-target="#時点前31時点後にx-1となっていないことが確認できる行についてのみ1時点前ダミーの値を作成する">1時点前(3)：1時点後にX = 1となっていないことが確認できる行についてのみ、1時点前ダミーの値を作成する。</a></li>
+  </ul></li>
+  <li><a href="#まとめxとyの関連に関する理論を立てる" id="toc-まとめxとyの関連に関する理論を立てる" class="nav-link" data-scroll-target="#まとめxとyの関連に関する理論を立てる">まとめ：XとYの関連に関する理論を立てる</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">時間による効果の変化をモデリングする</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ryota Mugiyama </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 12, 2016</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="時系列データにおいてxの効果をどのように捉えるか" class="level2">
+<h2 class="anchored" data-anchor-id="時系列データにおいてxの効果をどのように捉えるか">時系列データにおいてXの効果をどのように捉えるか</h2>
+<p>時系列データやパネルデータを分析するときの主要な関心の1つは、変化する独立変数が従属変数に対していかなる効果を与えるのかを明らかにすることにあります。たとえば社会学だと、「結婚することによって幸福度がどのように変化するか」であるとか、「転職することによって賃金は上がるのか」といった問いが例として挙げられます。</p>
+<p>ある個体（id）について、複数時点のデータを収集した結果、この個体は、時点4において状態Xの変化を経験したとします。このときのデータは以下のように表すことができます。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.2     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.2     ✔ tibble    3.2.1
+✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+✔ purrr     1.0.1     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>id <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>time <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(id, time, x)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 7 × 3
+     id  time     x
+  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1     1     1     0
+2     1     2     0
+3     1     3     0
+4     1     4     1
+5     1     5     1
+6     1     6     1
+7     1     7     1</code></pre>
+</div>
+</div>
+<p>なお今回は簡単のため、Xは基本的に0から1にしか変化しない（不可逆的な変化をする）離散的な変数とします。たとえば、未婚→既婚（既婚から未婚にはなれない）、転職経験なし→転職経験あり（経験ありからなしにはなれない）、30歳未満→30歳以上（年齢は常に上がるので）、などといった状態の変化を考えると良いと思います。</p>
+<p>今回は、Xが従属変数Yに対して与える効果をより柔軟に考えるための例を、いくつか考えてみます。これ以降の説明のために、上記のデータから以下のようなデータを作ります。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(id) <span class="sc">%&gt;%</span> <span class="co"># idごとにコードを実行するためにgroup_by()</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">change =</span> <span class="fu">if_else</span>(x <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> <span class="fu">lag</span>(x, <span class="at">n =</span> <span class="dv">1</span>) <span class="sc">==</span> <span class="dv">0</span>, time, <span class="dv">0</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">change =</span> <span class="fu">max</span>(change)) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">tchange =</span> time <span class="sc">-</span> change) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">a =</span> <span class="fu">if_else</span>(tchange <span class="sc">&lt;</span> <span class="dv">0</span>, <span class="dv">0</span>, tchange)) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">a_sq =</span> a<span class="sc">^</span><span class="dv">2</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">b =</span> <span class="fu">log</span>(a<span class="sc">+</span><span class="dv">1</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">c =</span> <span class="fu">if_else</span>(tchange <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="dv">0</span>, tchange))</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 7 × 9
+# Groups:   id [1]
+     id  time     x change tchange     a  a_sq     b     c
+  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1     1     1     0      4      -3     0     0 0        -3
+2     1     2     0      4      -2     0     0 0        -2
+3     1     3     0      4      -1     0     0 0        -1
+4     1     4     1      4       0     0     0 0         0
+5     1     5     1      4       1     1     1 0.693     0
+6     1     6     1      4       2     2     4 1.10      0
+7     1     7     1      4       3     3     9 1.39      0</code></pre>
+</div>
+</div>
+</section>
+<section id="例1-xの効果はすぐに現れかつ持続する" class="level2">
+<h2 class="anchored" data-anchor-id="例1-xの効果はすぐに現れかつ持続する">例1 Xの効果はすぐに現れ、かつ持続する</h2>
+<p>もっとも基本的なのは、Xをそのまま独立変数として投入することです。式で表すと以下のようになります。</p>
+<p><span class="math display">\[
+Y = \beta_0 + \beta_1X
+\]</span></p>
+<p>この場合、X = 0からX = 1へと変化したとき、Yの変化もそれに対応して即座に現れ、かつそれが持続するということを想定しています。図で表すと以下の実線や点線のようになります。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>value <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>) </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>ydf <span class="ot">&lt;-</span> <span class="fu">tibble</span>(value)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span> </span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(ydf) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(time), <span class="at">y =</span> value, <span class="at">group =</span> <span class="st">"time"</span>)) <span class="sc">+</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span> </span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span> </span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.y =</span> <span class="fu">element_blank</span>()) <span class="sc">+</span> </span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"time"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="2016-11-12-timevariant_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>もしXの効果が時間の経過にともなって変化していた場合、Xの効果は、X = 0のときのYの平均値と、x = 1のときのYの平均値の差として表されることになります。このモデルは、Xの効果を表すにあたり、もっとも単純なものといえます。</p>
+</section>
+<section id="例2-xの効果は徐々に現れる" class="level2">
+<h2 class="anchored" data-anchor-id="例2-xの効果は徐々に現れる">例2 Xの効果は徐々に現れる</h2>
+<p>一方で、Xの効果はX = 0からX = 1となった直後から現れるのではなく、時間の経過とともに徐々に現れるということも考えられます。これは、変数Aおよび図を用いて、以下のように表されます。</p>
+<p><span class="math display">\[
+Y = \beta_0 + \beta_1A
+\]</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>value <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>) </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>ydf <span class="ot">&lt;-</span> <span class="fu">tibble</span>(value)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span> </span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(ydf) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(time), <span class="at">y =</span> value, <span class="at">group =</span> <span class="st">"time"</span>)) <span class="sc">+</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span> </span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span> </span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.y =</span> <span class="fu">element_blank</span>()) <span class="sc">+</span> </span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"time"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="2016-11-12-timevariant_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>このモデリングは、Xへの暴露（Exposure, duration）期間がYへの効果をもたらす主要な要因となっている、という想定を置いています。たとえば、「失業がメンタルヘルスに負の影響を与える」という因果関係について考えます。このとき、有業から失業状態に変化した直後はメンタルヘルスに影響はないものの、失業期間が長期化するほどメンタルヘルスは悪化していく、という可能性があります。もし失業がメンタルヘルスに与える影響がこのようなものであるとしたら、例1のように有業（X = 0）と失業（X = 1）とを単純に比較することは、失業の負の効果は捉えられるものの、メンタルヘルスを悪化させるメカニズムを的確に表すことにならないといえます。</p>
+</section>
+<section id="例3-xの効果はすぐに現れかつ徐々に変化する" class="level2">
+<h2 class="anchored" data-anchor-id="例3-xの効果はすぐに現れかつ徐々に変化する">例3 Xの効果はすぐに現れ、かつ徐々に変化する</h2>
+<p>以上紹介した例1と例2のような効果が共存するという場合も考えられます。つまり、X = 0からX = 1に変化した直後に大きな変化があり、かつその後、時間の経過に伴ってさらにその効果が変化していくというものです。こうした関係は、以下のような式と図で表すことができます。</p>
+<p><span class="math display">\[
+Y = \beta_0 + \beta_1X + \beta_2A
+\]</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>value <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">2</span>) </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>ydf <span class="ot">&lt;-</span> <span class="fu">tibble</span>(value)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span> </span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(ydf) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(time), <span class="at">y =</span> value, <span class="at">group =</span> <span class="st">"time"</span>)) <span class="sc">+</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span> </span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span> </span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.y =</span> <span class="fu">element_blank</span>()) <span class="sc">+</span> </span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"time"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="2016-11-12-timevariant_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><span class="math inline">\(\beta_1\)</span>はx = 0からX = 1となるタイミングでのYの変化（インパクト）を、<span class="math inline">\(\beta_2\)</span>はX = 1となってから、時間が経過するにともなって変化する傾向をそれぞれ捉えています。<span class="math inline">\(\beta_1\)</span>が0に近づくほど例2に近い関連があり、<span class="math inline">\(\beta_2\)</span>が0に近づくほど例1に近い関連があるといえます。</p>
+<p>実線のような例は、先ほどの失業とメンタルヘルスの関連が考えられます。有業（X = 0）から失業（X = 1）となるタイミングで大きくメンタルヘルスが悪化し、それが失業期間の長期化にともなってさらに悪化していく、という関連が考えられる場合は、このモデルがより適切といえます。</p>
+<p>点線のような例として、結婚と幸福度の関係が考えられます。未婚（X = 0）から既婚（X = 1）となるタイミングでは幸福度が大きく高まるものの、時間の経過にしたがって幸福度は徐々に低下していく（Honeymoon effect）といった場合がこれに当てはまります。</p>
+</section>
+<section id="例4-xの効果は非線形に変化する2乗" class="level2">
+<h2 class="anchored" data-anchor-id="例4-xの効果は非線形に変化する2乗">例4 Xの効果は非線形に変化する（2乗）</h2>
+<p>Xの効果が時間の経過にともなって変化していくとして、その変化のパターンは線形である必要はなく、さまざまな関数型を想定することができます。例2のような関連を非線形（2次曲線）に拡張した場合は、以下のようなモデルになります。</p>
+<p><span class="math display">\[
+Y = \beta_0 + \beta_1A + \beta_2A^2
+\]</span></p>
+<p>同様に、例3のような関連を非線形に拡張した場合は以下のようなモデルになります。</p>
+<p><span class="math display">\[
+Y = \beta_0 + \beta_1X + \beta_2A + \beta_3A^2
+\]</span></p>
+<p>たとえば前者は実線のように、後者は点線のように図示できます。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>value <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">5</span>,<span class="dv">10</span>) </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>ydf <span class="ot">&lt;-</span> <span class="fu">tibble</span>(value)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>df1 <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">bind_cols</span>(ydf) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">sample =</span> <span class="st">"Sample 1"</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>value <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">8</span>,<span class="dv">13</span>) </span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>ydf <span class="ot">&lt;-</span> <span class="fu">tibble</span>(value)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>df2 <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">bind_cols</span>(ydf) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">sample =</span> <span class="st">"Sample 2"</span>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>df1 <span class="sc">%&gt;%</span> </span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(df2) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(time), <span class="at">y =</span> value, <span class="at">group =</span> sample, <span class="at">linetype =</span> sample, <span class="at">shape =</span> sample)) <span class="sc">+</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span> </span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_shape_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="dv">16</span>, <span class="dv">1</span>)) <span class="sc">+</span> </span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span> </span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position =</span> <span class="st">"none"</span>) <span class="sc">+</span> </span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"time"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="2016-11-12-timevariant_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>2次曲線を用いているので、Xの変化のあとしばらくはYが上昇傾向を示したのち、しばらくするとYは減少傾向に転じるといった関係をとることもあり得ます。</p>
+</section>
+<section id="例5-xの効果は非線形に変化するlog" class="level2">
+<h2 class="anchored" data-anchor-id="例5-xの効果は非線形に変化するlog">例5 Xの効果は非線形に変化する（log）</h2>
+<p>もちろん、2次曲線以外の非線形な変化も想定することができます。他の例として、経過時間の自然対数を取った以下のモデルを考えることができます。</p>
+<p><span class="math display">\[
+Y = \beta_0 + \beta_1B
+\]</span></p>
+<p><span class="math display">\[
+Y = \beta_0 + \beta_1X + \beta_2B
+\]</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>value <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span> <span class="sc">+</span> <span class="fu">log</span>(<span class="dv">1</span>),<span class="dv">1</span> <span class="sc">+</span> <span class="fu">log</span>(<span class="dv">2</span>),<span class="dv">1</span> <span class="sc">+</span> <span class="fu">log</span>(<span class="dv">3</span>),<span class="dv">1</span> <span class="sc">+</span> <span class="fu">log</span>(<span class="dv">4</span>)) </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>ydf <span class="ot">&lt;-</span> <span class="fu">tibble</span>(value)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>df1 <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">bind_cols</span>(ydf) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">sample =</span> <span class="st">"Sample 1"</span>)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>value <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">3</span> <span class="sc">+</span> <span class="fu">log</span>(<span class="dv">1</span>),<span class="dv">3</span> <span class="sc">+</span> <span class="fu">log</span>(<span class="dv">2</span>),<span class="dv">3</span> <span class="sc">+</span> <span class="fu">log</span>(<span class="dv">3</span>),<span class="dv">3</span> <span class="sc">+</span> <span class="fu">log</span>(<span class="dv">4</span>)) </span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>ydf <span class="ot">&lt;-</span> <span class="fu">tibble</span>(value)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>df2 <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">bind_cols</span>(ydf) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">sample =</span> <span class="st">"Sample 2"</span>)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>df1 <span class="sc">%&gt;%</span> </span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(df2) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(time), <span class="at">y =</span> value, <span class="at">group =</span> sample, <span class="at">linetype =</span> sample, <span class="at">shape =</span> sample)) <span class="sc">+</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span> </span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_shape_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="dv">16</span>, <span class="dv">1</span>)) <span class="sc">+</span> </span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span> </span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position =</span> <span class="st">"none"</span>) <span class="sc">+</span> </span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"time"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="2016-11-12-timevariant_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>対数変換することで、最初の方は大きく変化するが、時間の経過にともなって変化が徐々に緩やかになる（ただし2次曲線のときと違って正負が反転することはない）、といった関連を捉えることができます。</p>
+</section>
+<section id="例6-xの前後で時間の効果が変化するspline" class="level2">
+<h2 class="anchored" data-anchor-id="例6-xの前後で時間の効果が変化するspline">例6 Xの前後で時間の効果が変化する（spline）</h2>
+<p>ここまでは、Xの効果は常にX = 1となってから現れ始めることが想定されていました。しかし、Xの効果はX = 0のときからすでに現れており、X = 1となってからその効果のパターンが変化するという場合も考えられます。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>value <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">7</span>,<span class="dv">9</span>,<span class="dv">11</span>) </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>ydf <span class="ot">&lt;-</span> <span class="fu">tibble</span>(value)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>df1 <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">bind_cols</span>(ydf) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">sample =</span> <span class="st">"Sample 1"</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>value <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">7</span>,<span class="dv">10</span>,<span class="dv">12</span>,<span class="dv">14</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>ydf <span class="ot">&lt;-</span> <span class="fu">tibble</span>(value)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>df2 <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">bind_cols</span>(ydf) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">sample =</span> <span class="st">"Sample 2"</span>)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>df1 <span class="sc">%&gt;%</span> </span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(df2) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(time), <span class="at">y =</span> value, <span class="at">group =</span> sample, <span class="at">linetype =</span> sample, <span class="at">shape =</span> sample)) <span class="sc">+</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span> </span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_shape_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="dv">16</span>, <span class="dv">1</span>)) <span class="sc">+</span> </span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span> </span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position =</span> <span class="st">"none"</span>) <span class="sc">+</span> </span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"time"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="2016-11-12-timevariant_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>図の実線のような場合がこれに当たります。Xが変化する以前と以後では、時間の経過に伴うYの値の変化が異なっていることがわかります。</p>
+<p><span class="math display">\[
+Y = \beta_0 + \beta_1Time + \beta_2Time \times X
+\]</span></p>
+<p>Xが変化した時点でYが一定程度変化するものと想定する場合、すなわち図の点線のような場合には、以下のようなモデルになります。</p>
+<p><span class="math display">\[
+Y = \beta_0 +\beta_1Time + \beta_2X + \beta_3Time \times X
+\]</span></p>
+<p>このモデリングの場合、係数<span class="math inline">\(\beta_3\)</span>は、「傾き<span class="math inline">\(\beta_1\)</span>と比較してどの程度異なっているのか」を表すことになり、交互作用効果のように解釈することになります。ですから、実質的な傾きが統計的に有意に0と異なるかどうかを直接検定することはできません。</p>
+<p>もう一つ、以下のようなモデリングを考えることができます。</p>
+<p><span class="math display">\[
+Y = \beta_0 + \beta_1C + \beta_2A
+\]</span></p>
+<p>CはXの変化以前の、AはXの変化からの経過年数を表す以下のような変数でした。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span> </span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id, time, x, c, a)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 7 × 5
+# Groups:   id [1]
+     id  time     x     c     a
+  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1     1     1     0    -3     0
+2     1     2     0    -2     0
+3     1     3     0    -1     0
+4     1     4     1     0     0
+5     1     5     1     0     1
+6     1     6     1     0     2
+7     1     7     1     0     3</code></pre>
+</div>
+</div>
+<p>こちらもやはり、Xが変化した時点でYが一定程度変化すると考えると、以下のようなモデルとなります。</p>
+<p><span class="math display">\[
+Y = \beta_0 + \beta_1X + \beta_2C + \beta_3A
+\]</span></p>
+<p>こちらのモデリングの場合、係数<span class="math inline">\(\beta_2\)</span>および<span class="math inline">\(\beta_3\)</span>は、「傾き0と比較してどの程度異なっているのか」を表すことになります。こちらは、x=0のときとX=1のときの実質的な傾きが統計的に有意に0と異なることを検定できますが、<span class="math inline">\(\beta_2 \neq \beta_3\)</span>の検定はできません。</p>
+</section>
+<section id="例7-xからの経過時間ごとにダミー変数を作る" class="level2">
+<h2 class="anchored" data-anchor-id="例7-xからの経過時間ごとにダミー変数を作る">例7 Xからの経過時間ごとにダミー変数を作る</h2>
+<p>さて、以上のような関連があることを見破るためには、ダミー変数を使った探索的な分析が有効です。例えば以下のように、Xの変化からの経過時間ごとに変数を作成することが考えられます。</p>
+<p><span class="math display">\[
+Y = \beta_0 + \beta_1D_{X=-3} + \beta_2D_{X=-2} + \beta_3D_{X=-1} + \beta_4D_{X=0} + \beta_5D_{X=1} + \beta_6D_{X=2} + \beta_7D_{X=3}
+\]</span></p>
+<p>ダミー変数を使ったモデリングは時間を連続変数としてモデリングするよりもさらに柔軟にパラメータを推定できる点で優れているといえます。適当な関数形がないなど、連続変数を使うよりもダミー変数のほうがより望ましい場合も多いです。</p>
+<p>ただし、カテゴリを細かくすればするほど推定が不安定になるという点には注意が必要です。とくにYが離散変数で、ロジットモデルやプロビットモデルを使って分析している場合には、ダミー変数の各カテゴリにY=0とY=1のケースがいずれも含まれていないといけないので（いわゆるゼロセルの問題）、ある程度粗いカテゴリを設定しつつ分析する必要があります。</p>
+</section>
+<section id="xの変化以前を考慮するときの問題" class="level2">
+<h2 class="anchored" data-anchor-id="xの変化以前を考慮するときの問題">Xの変化以前を考慮するときの問題</h2>
+<p>以上、時間による効果の変化を考えるための方法について考えてきました。ここではとくにXの変化以前を考慮に入れる場合の問題について扱います。</p>
+<p>一般に、Xが時変の変数である場合には、X = 1が観察できない（センサリング）という問題があります。このことは、とくにXの変化以前を考える際に、何と何を比較していることになるのかが分かりにくくなる、という問題を生じさせます。たとえば、Xの変化を経験したサンプルと経験していないサンプルがいずれも含まれている以下のようなデータセットを考えます。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>id <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>time <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>tchange <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="cn">NA_real_</span>, <span class="cn">NA_real_</span>, <span class="cn">NA_real_</span>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>id2df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(time, x, tchange)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span> </span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(id2df) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">before_event1 =</span> <span class="fu">if_else</span>(time <span class="sc">-</span> tchange <span class="sc">==</span> <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">replace_na</span>(<span class="fu">list</span>(<span class="at">before_event1 =</span> <span class="dv">0</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">before_event2 =</span> <span class="fu">if_else</span>(time <span class="sc">-</span> tchange <span class="sc">==</span> <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">before_event3 =</span> <span class="fu">if_else</span>(<span class="fu">lead</span>(x, <span class="at">n =</span> <span class="dv">1</span>) <span class="sc">-</span> x <span class="sc">==</span> <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">before_event3 =</span> <span class="fu">if_else</span>(x <span class="sc">==</span> <span class="dv">1</span>, <span class="dv">0</span>, before_event3)) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id, time, x, tchange, before_event1, before_event2, before_event3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 7
+# Groups:   id [2]
+      id  time     x tchange before_event1 before_event2 before_event3
+   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;         &lt;dbl&gt;         &lt;dbl&gt;         &lt;dbl&gt;
+ 1     1     1     0      -3             0             0             0
+ 2     1     2     0      -2             0             0             0
+ 3     1     3     0      -1             0             0             1
+ 4     1     4     1       0             0             0             0
+ 5     1     5     1       1             0             0             0
+ 6     1     6     1       2             0             0             0
+ 7     1     7     1       3             0             0             0
+ 8    NA     1     0      NA             0            NA             0
+ 9    NA     2     0      NA             0            NA             0
+10    NA     3     0      NA             0            NA            NA</code></pre>
+</div>
+</div>
+<p>いま、Xの変化の1時点前を示すダミー変数を作成したいとします。id2の個人については、Xの変化が観察できていません。そうすると、Xの変化からの経過時間もわからないので、1時点ダミーもid1と同じようには定義することができません。この場合、以下の3つの方法があります。</p>
+<section id="時点前1xの変化を観察できていない場合については0を代入する" class="level3">
+<h3 class="anchored" data-anchor-id="時点前1xの変化を観察できていない場合については0を代入する">1時点前(1)：Xの変化を観察できていない場合については0を代入する。</h3>
+<p>この場合、1時点前ダミーの効果は、1行目、2行目、8行目、9行目、10行目を参照カテゴリとした場合の効果を意味する。</p>
+<p>利点：サンプルサイズを多く確保できる。</p>
+<p>欠点：比較の対象が異質な集団で構成される（X = 1となった個人における1時点以上前の行 + まだX = 1となっていない個人の行すべて）ため、解釈がより難しくなる。id2の個人はtime = 4のときにX = 1となるかもしれず、その場合、time = 3はX=1となる1時点前であるにもかかわらず、誤って1時点前でない、と判断してしまうことになる。</p>
+</section>
+<section id="時点前2xの変化を観察できていない場合はすべて欠損とする" class="level3">
+<h3 class="anchored" data-anchor-id="時点前2xの変化を観察できていない場合はすべて欠損とする">1時点前(2)：Xの変化を観察できていない場合はすべて欠損とする。</h3>
+<p>この場合、1時点前ダミーの効果は、1行目、2行目を参照カテゴリとした場合の効果を意味する。</p>
+<p>利点：誤って1時点前でない、と判断することを防いでいる。またX = 0 と X = 1の両方を経験した個人のみを分析に使用するため、よりXの因果効果に近い推定値を得られることが期待できる。</p>
+<p>欠点：（観察可能な他の変数を統制してもなお）X = 1となるかどうかがランダムに生じていない場合には、Xの因果効果を推定することにはならない。サンプルサイズが小さくなる。</p>
+</section>
+<section id="時点前31時点後にx-1となっていないことが確認できる行についてのみ1時点前ダミーの値を作成する" class="level3">
+<h3 class="anchored" data-anchor-id="時点前31時点後にx-1となっていないことが確認できる行についてのみ1時点前ダミーの値を作成する">1時点前(3)：1時点後にX = 1となっていないことが確認できる行についてのみ、1時点前ダミーの値を作成する。</h3>
+<p>この場合、1時点前ダミーの効果は、1行目、2行目、8行目、9行目を参照カテゴリとした場合の効果を意味する。</p>
+<p>利点：サンプルサイズを確保しつつ、誤って1時点前でないと判断することを防いでいる。</p>
+<p>欠点：解釈の難しさについては(1)とほぼ同じ。また、1時点前だけでなく、2時点、3時点前のダミーなどを作成する場合にはサンプルサイズは結局小さくなってしまう。</p>
+<p>もちろん、独立変数のセンサリングの問題は、たとえ変化以前であることを考慮しないとしても同様に生じますが、考慮する場合にはさらにもう一つ考えることが増える、というイメージです。</p>
+<p>また、個人内の偏差のみを分析に用いる固定効果モデルを用いる場合などだと、同一個人について比較をすることになるので、Xの変化以前の変数を投入したときの解釈の難しさについては多少緩和されると思います。</p>
+</section>
+</section>
+<section id="まとめxとyの関連に関する理論を立てる" class="level2">
+<h2 class="anchored" data-anchor-id="まとめxとyの関連に関する理論を立てる">まとめ：XとYの関連に関する理論を立てる</h2>
+<p>以上のように、Yに対するXの効果が時間によって異なると想定することは、たんにXの値でYを比較するのとは異なるかたちでXとYの関連を考えることになります。こうすることによって、XとYの関連をより精緻に捉えることが可能になり得る一方で、たんにXの値でYを比較した場合のモデルよりも複雑さを持ち込むことになります。</p>
+<p>基本的に、社会（科）学におけるモデルは、単純なほど望ましいでしょう。それでもなおより複雑なモデルを導入する際には、単にモデルの適合度が改善するというだけでなく、より良い理論的なインプリケーションが得られることを説得的に示すことが重要と考えます。Xの効果が時間によって変化するとは一体どのようなことを意味しているのか、XがどのようなメカニズムによってYを変化させるのか…に関する理論を考えることが重要と思います。</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -18,6 +18,7 @@ website:
     right: 
       - icon: twitter
         href: https://twitter.com/ryotamugiyama
+    background: "primary"
   favicon: website.jpg
   twitter-card: 
     image: https://mugiyama.github.io/website/website.jpg
