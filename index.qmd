@@ -10,7 +10,7 @@ Welcome to Ryota Mugiyama's Homepage!
 
 くわしい経歴などは[Researchmap](https://researchmap.jp/mugiyama)をご参照ください。
 
-大学院進学・研究生を希望されている方は[こちら](students.html)をご確認ください。
+大学院進学・研究生を希望されている方は[大学院進学・研究生希望の学生の方へ](students.html)をご確認ください。
 
 ***
 
