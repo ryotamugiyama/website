@@ -1,5 +1,6 @@
 ---
-title: "職域分離の指標におけるセレクションと解釈をめぐる問題"
+title: "学振PD (社会科学) の申請書を公開します
+"
 author: "Ryota Mugiyama"
 date: "2019-04-26"
 image: ../images/website.jpg
