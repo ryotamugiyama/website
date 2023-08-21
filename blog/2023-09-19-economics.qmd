@@ -1,0 +1,90 @@
+---
+title: "文献リスト（作成中）"
+author: "Ryota Mugiyama"
+date: "2023-09-xx"
+image: ../images/website.jpg
+---
+
+## 第1回 格差の実態と原因を知る
+なし
+
+## 第2回 男女間賃金格差とその要因
+OECD. 2023. Gender wage gap. OECD Data. https://data.oecd.org/earnwage/gender-wage-gap.htm.
+
+Hanushek, Eric A., Guido Schwerdt, Simon Wiederhold, and Ludger Woessmann. 2015. "Returns to Skills around the World: Evidence from PIAAC." *European Economic Review* 73:103--30.
+
+麦山亮太，2022，「職業とタスクからみる仕事と賃金のジェンダー格差」財務省財務総合政策研究所『「仕事・働き方・賃金に関する研究会：一人ひとりが能力を発揮できる社会の実現に向けて」報告書』，20--41．https://www.mof.go.jp/pri/research/conference/fy2021/shigoto.html.
+
+厚生労働省，2022，「令和4年賃金構造基本統計調査　結果の概況」厚生労働省．https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2022/index.html
+
+
+## 第3回 性別職域分離
+Penner, Andrew M., Trond Petersen, Are Skeie Hermansen, Anthony Rainey, István Boza, Marta M. Elvira, Olivier Godechot, Martin Hällsten, Lasse Folke Henriksen, Feng Hou, Aleksandra Kanjuo Mrčela, Joe King, Naomi Kodama, Tali Kristal, Alena Křížková, Zoltán Lippényi, Silvia Maja Melzer, Eunmi Mun, Paula Apascaritei, Dustin Avent-Holt, Nina Bandelj, Gergely Hajdu, Jiwook Jung, Andreja Poje, Halil Sabanci, Mirna Safi, Matthew Soener, Donald Tomaskovic-Devey, and Zaibu Tufail. 2022. "Within-Job Gender Pay Inequality in 15 Countries." Nature Human Behaviour. doi: 10.1038/s41562-022-01470-z.
+
+山口一男. 2017. 働き方の男女不平等：理論と実証分析. 日本経済新聞出版社.
+
+Polavieja, Javier G., and Lucinda Platt. 2014. "Nurse or Mechanic? The Role of Parental Socialization and Children's Personality in the Formation of Sex-Typed Occupational Aspirations." *Social Forces* 93(1):31--61.
+
+Correll, Shelley J. 2001. "Gender and the Career Choice Process: The Role of Biased Self‐Assessments." *American Journal of Sociology* 106(6):1691--1730.
+
+Jonsson, Jan O. 1999. "Explaining Sex Differences in Educational Choice An Empirical Assessment of a Rational Choice Model." European Sociological Review 15(4):391--404.
+
+Breda, Thomas, and Clotilde Napp. 2019. "Girls' Comparative Advantage in Reading Can Largely Explain the Gender Gap in Math-Related Fields." *Proceedings of the National Academy of Sciences of the United States of America* 116(31):15435--40.
+
+## 第4回 出産育児の負担の偏りが生む格差
+Budig, Michelle J., and Paula England. 2001. "The Wage Penalty for Motherhood." *American Sociological Review* 66(2):204--25.
+
+Cukrowska-Torzewska, Ewa, and Anna Matysiak. 2020. "The Motherhood Wage Penalty: A Meta-Analysis." *Social Science Research* 88-89:102416.
+
+Kleven, Henrik, Camille Landais, Johanna Posch, Andreas Steinhauer, and Josef Zweimüller. 2019. "Child Penalties across Countries: Evidence and Explanations." *AEA Papers and Proceedings* 109:122--26.
+
+古村典洋，2022，「チャイルドペナルティとジェンダーギャップ」財務省財務総合政策研究所『「仕事・働き方・賃金に関する研究会：一人ひとりが能力を発揮できる社会の実現に向けて」報告書』，42--56．https://www.mof.go.jp/pri/research/conference/fy2021/shigoto.html.
+
+England, Paula, Jonathan Bearak, Michelle J. Budig, and Melissa J. Hodges. 2016. "Do Highly Paid, Highly Skilled Women Experience the Largest Motherhood Penalty?" *American Sociological Review* 81(6):1161--89.
+
+## 第5回 就業中断が生むキャリアの断絶
+
+麦山亮太，2017，「キャリアの中断が生み出す格差：正規雇用獲得への持続的影響に着目して」『社会学評論』68(2):248--64.
+
+麦山亮太，2022，「出産・育児期における女性就業とその学歴差の長期趨勢：雇用労働力化に着目して」『社会学評論』73(2):86--102.
+
+Yu, Wei-Hsin. 2002. "Jobs for Mothers: Married Women's Labor Force Reentry and Part-Time, Temporary Employment in Japan." *Sociological Forum* 17(3):493--523.
+
+## 第6回 評価のジェンダーバイアス
+
+Claudia, Goldin, and Cecilia Rouse. 2000. "Orchestrating Impartiality: The Impact of ‘Blind' Auditions on Female Musicians." *American Economic Review* 90(4):715--41.
+
+Correll, Shelley J., Stephen Benard, and In Paik. 2007. "Getting a Job: Is There a Motherhood Penalty?" *American Journal of Sociology* 112(5):1297--1338.
+
+Auspurg, Katrin, Thomas Hinz, and Carsten Sauer. 2017. "Why Should Women Get Less? Evidence on the Gender Pay Gap from Multifactorial Survey Experiments." *American Sociological Review* 82(1):179--210.
+
+Mun, Eunmi, and Naomi Kodama. 2021. "Meritocracy at Work?: Merit-Based Reward Systems and Gender Wage Inequality." *Social Forces* 100(4):1561--91.
+
+## 第7回 仕事の構造が格差を生む
+
+Goldin, Claudia. 2021. *Career and Family: Women's Century-Long Journey toward Equity.* Princeton, NJ: Princeton University Press.（鹿田昌美訳，2023，『なぜ男女の賃金に格差があるのか：女性の生き方の経済学』慶應義塾大学出版会．）
+
+Cha, Youngjoo, and Kim A. Weeden. 2014. "Overwork and the Slow Convergence in the Gender Gap in Wages." *American Sociological Review* 79(3):457--84.
+
+Ishizuka, Patrick, and Kelly Musick. 2021. "Occupational Inflexibility and Women's Employment During the Transition to Parenthood." *Demography* 58(4):1249--74.
+
+Babcock, Linda, Maria P. Recalde, Lise Vesterlund, and Laurie Weingart. 2017. "Gender Differences in Accepting and Receiving Requests for Tasks with Low Promotability." *American Economic Review* 107(3):714--47.
+
+Nelson, Laura K., Alexandra Brewer, Anna S. Mueller, Daniel M. O'Connor, Arjun Dayal, and Vineet M. Arora. 2023. "Taking the Time: The Implications of Workplace Assessment for Organizational Gender Inequality." *American Sociological Review* 00031224231184264.
+
+## 第8回 ジェンダー格差と少子化
+
+Sweeney, Megan M. 2002. "Two Decades of Family Change: The Shifting Economic Foundations of Marriage." *American Sociological Review* 67(1):132--47.
+
+Ono, Hiromi. 2003. "Women's Economic Standing, Marriage Timing, and Cross-National Contexts of Gender." *Journal of Marriage and Family* 65(2):275--86.
+
+メアリー・C・ブリントン，池村千秋訳，2021，『縛られる日本人：人口減少をもたらす「規範」を打ち破れるか』中公新書．
+
+Brinton, Mary C., and Eunsil Oh. 2019. "Babies, Work, or Both? Highly Educated Women's Employment and Fertility." *American Journal of Sociology* 125(1):105--40.
+
+Esping-Andersen, Gøsta, and Francesco C. Billari. 2015. "Re-Theorizing Family Demographics." *Population and Development Review* 41(1):1--31.
+
+Kolk, Martin. 2019. "Weak Support for a U-Shaped Pattern between Societal Gender Equality and Fertility When Comparing Societies across Time." *Demographic Research* 40:27--48.
+
+## 第9回 原因の根本に踏み込む政策
+なし
