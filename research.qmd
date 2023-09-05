@@ -4,8 +4,8 @@ title: "Research"
 
 Other research publications and past conference presentations are found the following pages.
 
--   [researchmap](https://researchmap.jp/mugiyama)
 -   [googlescholar](https://scholar.google.co.jp/citations?user=oJnisc0AAAAJ)
+-   [researchmap](https://researchmap.jp/mugiyama)
 
 ## Work in progress (as the corresponding author)
 
@@ -38,7 +38,7 @@ Changes in Geographic Accessibility to College and Inequality of Educational Opp
 
 Rising Socioeconomic Inequality in Telework Eligibility: Evidence from before and after the COVID-19 Outbreak in Japan (with Kyoko Komatsu)
 
--   2022-11-12 Presented at Japan Sociological Society 95th Annual Meeting. [slide](https://researchmap.jp/mugiyama/presentations/40475337)
+-   2022-11-12 Presented at Japan Sociological Society 95th Annual Meeting at Otemon Gakuin University. [slide](https://researchmap.jp/mugiyama/presentations/40475337)
 
 Trends in Task Distribution in Japan, 1980--2020: Evidence from the Occupational Information Network of Japan and the Population Census Data (with Kyoko Komatsu)
 
@@ -48,15 +48,15 @@ Downward Mobility and Loneliness: Consequences of Intergenerational Educational 
 
 ## Peer-reviewed paper
 
-麦山亮太・田上皓大，2024（近刊），「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』39(1)．
-
-五十嵐彰・麦山亮太，2023（近刊），「サーベイ実験を用いた日本における外国人雇用差別の検証：企業属性による異質性」『理論と方法』38(2)．
+麦山亮太・田上皓大，近刊，「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』．
 
 麦山亮太・小松恭子，2023，「[テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析](https://www.jil.go.jp/institute/zassi/backnumber/2023/05/index.html)」『日本労働研究雑誌』754: 87–102．
 
 Çineli, Beyda and Ryota Mugiyama. 2023. "[Money management over the course of marriage: Parenthood, employment and household financial organization in Japan](https://doi.org/10.1016/j.alcr.2023.100544)." *Advances in Life Course Research.* Online first.
 
-Igarashi, Akira and Ryota Mugiyama. 2023. "[Whose tastes matter? Discrimination against immigrants in the Japanese labour market](https://doi.org/10.1080/1369183X.2022.2163230)." *Journal of Ethnic and Migration Studies.* Online first.
+五十嵐彰・麦山亮太，2023，「[サーベイ実験を用いた日本における外国人雇用差別の検証：企業属性による異質性](https://doi.org/10.11218/ojjams.38.44)」『理論と方法』38(1): 44--58．
+
+Igarashi, Akira and Ryota Mugiyama. 2023. "[Whose tastes matter? Discrimination against immigrants in the Japanese labour market](https://doi.org/10.1080/1369183X.2022.2163230)." *Journal of Ethnic and Migration Studies.* 49(13): 3365--3388.
 
 麦山亮太，2022，「出産・育児期における女性就業とその学歴差の長期趨勢：雇用労働力化に着目して」『社会学評論』73(2): 86--102．
 
@@ -82,7 +82,7 @@ Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Cla
 
 ## Discussion paper
 
-Mugiyama, Ryota. 2023. 「[Employment Uncertainty and Delayed Marriage in a Society Where Cohabitations Are Not Prevalent: Incorporating Premarital Partnership](https://csrdadps.com/paper/42)」CSRDA Discussion Paper Series, 42. 
+Mugiyama, Ryota. 2023. "[Employment Uncertainty and Delayed Marriage in a Society Where Cohabitations Are Not Prevalent: Incorporating Premarital Partnership](https://csrdadps.com/paper/42)" *CSRDA Discussion Paper Series,* 42. 
 
 小松恭子・麦山亮太，2022，「[日本の労働市場におけるタスクの分布のトレンド：日本版O-NETと国勢調査のマッチングデータから得られた知見](https://www.jil.go.jp/tokusyu/covid-19/dp/202203/docs/DP4.pdf)」労働政策研究・研修機構『職業特性に着目したコロナウイルス流行の雇用・所得格差等への影響に関する研究：日本版O-NETの活用による研究（ディスカッションペーパー集）』．
 
