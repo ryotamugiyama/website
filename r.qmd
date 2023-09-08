@@ -4,7 +4,7 @@ title: "R"
 
 Rで知っておいたら便利かもしれないコードや資料を不定期に更新します。
 
-## [Rによる社会調査データ分析の手引き](https://mugiyama.github.io/seminar_sociology_r/)
+## [Rによる社会調査データ分析の手引き](https://ryotamugiyama.github.io/seminar_sociology_r/)
 
 ![](blog/images/tebiki.png)
 
