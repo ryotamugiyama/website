@@ -1,9 +1,11 @@
 ---
-title: "文献リスト（作成中）"
+title: "「やさしい経済学」連載（仕事とジェンダー格差）で参照した文献リスト"
 author: "Ryota Mugiyama"
-date: "2023-09-xx"
+date: "2023-09-08"
 image: ../images/website.jpg
 ---
+
+『日本経済新聞』朝刊の連載記事「やさしい経済学」において、寄稿した原稿「仕事ジェンダー格差」が2023年9月8日から16日の9日間にわたって掲載されます。紙面の都合上掲載できなかった参考文献のリストを以下に記載しておきます。
 
 ## 第1回 日本が抱える大きな問題
 なし
@@ -21,7 +23,7 @@ Hanushek, Eric A., Guido Schwerdt, Simon Wiederhold, and Ludger Woessmann. 2015.
 ## 第3回 性別職域分離と賃金格差
 Penner, Andrew M., Trond Petersen, Are Skeie Hermansen, Anthony Rainey, István Boza, Marta M. Elvira, Olivier Godechot, Martin Hällsten, Lasse Folke Henriksen, Feng Hou, Aleksandra Kanjuo Mrčela, Joe King, Naomi Kodama, Tali Kristal, Alena Křížková, Zoltán Lippényi, Silvia Maja Melzer, Eunmi Mun, Paula Apascaritei, Dustin Avent-Holt, Nina Bandelj, Gergely Hajdu, Jiwook Jung, Andreja Poje, Halil Sabanci, Mirna Safi, Matthew Soener, Donald Tomaskovic-Devey, and Zaibu Tufail. 2022. "Within-Job Gender Pay Inequality in 15 Countries." Nature Human Behaviour. doi: 10.1038/s41562-022-01470-z.
 
-山口一男. 2017. 働き方の男女不平等：理論と実証分析. 日本経済新聞出版社.
+山口一男，2017，『働き方の男女不平等：理論と実証分析』日本経済新聞出版社.
 
 Polavieja, Javier G., and Lucinda Platt. 2014. "Nurse or Mechanic? The Role of Parental Socialization and Children's Personality in the Formation of Sex-Typed Occupational Aspirations." *Social Forces* 93(1):31--61.
 
