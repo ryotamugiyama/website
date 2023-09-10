@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+  - CNAME.txt
 
 website:
   title: "Ryota Mugiyama"
@@ -22,6 +24,7 @@ website:
   favicon: website.jpg
   twitter-card: 
     image: https://mugiyama.github.io/website/website.jpg
+
 
 format:
   html:
