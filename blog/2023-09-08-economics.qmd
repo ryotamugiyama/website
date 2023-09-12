@@ -5,12 +5,14 @@ date: "2023-09-08"
 image: ../images/website.jpg
 ---
 
-『日本経済新聞』朝刊の連載記事「やさしい経済学」において、寄稿した原稿「仕事ジェンダー格差」が2023年9月8日から16日の9日間にわたって掲載されます。紙面の都合上掲載できなかった参考文献のリストを以下に記載しておきます。
+『日本経済新聞』朝刊の連載記事「やさしい経済学」において、寄稿した原稿「仕事ジェンダー格差」が2023年9月8日から平日の合計9日間にわたって掲載されます。紙面の都合上掲載できなかった参考文献のリストを以下に記載しておきます。
 
-## 第1回 日本が抱える大きな問題
+## 第1回 日本が抱える大きな問題（9月8日）
+
 なし
 
-## 第2回 賃金格差が生まれる理由
+## 第2回 賃金に差が生まれる理由（9月12日）
+
 OECD. 2023. Gender wage gap. OECD Data. https://data.oecd.org/earnwage/gender-wage-gap.htm.
 
 Hanushek, Eric A., Guido Schwerdt, Simon Wiederhold, and Ludger Woessmann. 2015. "Returns to Skills around the World: Evidence from PIAAC." *European Economic Review* 73:103--30.
@@ -20,8 +22,9 @@ Hanushek, Eric A., Guido Schwerdt, Simon Wiederhold, and Ludger Woessmann. 2015.
 厚生労働省，2022，「令和4年賃金構造基本統計調査　結果の概況」厚生労働省．https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2022/index.html
 
 
-## 第3回 性別職域分離と賃金格差
-Penner, Andrew M., Trond Petersen, Are Skeie Hermansen, Anthony Rainey, István Boza, Marta M. Elvira, Olivier Godechot, Martin Hällsten, Lasse Folke Henriksen, Feng Hou, Aleksandra Kanjuo Mrčela, Joe King, Naomi Kodama, Tali Kristal, Alena Křížková, Zoltán Lippényi, Silvia Maja Melzer, Eunmi Mun, Paula Apascaritei, Dustin Avent-Holt, Nina Bandelj, Gergely Hajdu, Jiwook Jung, Andreja Poje, Halil Sabanci, Mirna Safi, Matthew Soener, Donald Tomaskovic-Devey, and Zaibu Tufail. 2022. "Within-Job Gender Pay Inequality in 15 Countries." Nature Human Behaviour. doi: 10.1038/s41562-022-01470-z.
+## 第3回 性別職域分離と賃金格差（9月13日）
+
+Penner, Andrew M., Trond Petersen, Are Skeie Hermansen, Anthony Rainey, István Boza, Marta M. Elvira, Olivier Godechot, Martin Hällsten, Lasse Folke Henriksen, Feng Hou, Aleksandra Kanjuo Mrčela, Joe King, Naomi Kodama, Tali Kristal, Alena Křížková, Zoltán Lippényi, Silvia Maja Melzer, Eunmi Mun, Paula Apascaritei, Dustin Avent-Holt, Nina Bandelj, Gergely Hajdu, Jiwook Jung, Andreja Poje, Halil Sabanci, Mirna Safi, Matthew Soener, Donald Tomaskovic-Devey, and Zaibu Tufail. 2022. "Within-Job Gender Pay Inequality in 15 Countries." *Nature Human Behaviour* doi: 10.1038/s41562-022-01470-z.
 
 山口一男，2017，『働き方の男女不平等：理論と実証分析』日本経済新聞出版社.
 
@@ -29,11 +32,14 @@ Polavieja, Javier G., and Lucinda Platt. 2014. "Nurse or Mechanic? The Role of P
 
 Correll, Shelley J. 2001. "Gender and the Career Choice Process: The Role of Biased Self‐Assessments." *American Journal of Sociology* 106(6):1691--1730.
 
-Jonsson, Jan O. 1999. "Explaining Sex Differences in Educational Choice An Empirical Assessment of a Rational Choice Model." European Sociological Review 15(4):391--404.
+Jonsson, Jan O. 1999. "Explaining Sex Differences in Educational Choice An Empirical Assessment of a Rational Choice Model." *European Sociological Review* 15(4):391--404.
 
 Breda, Thomas, and Clotilde Napp. 2019. "Girls' Comparative Advantage in Reading Can Largely Explain the Gender Gap in Math-Related Fields." *Proceedings of the National Academy of Sciences of the United States of America* 116(31):15435--40.
 
-## 第4回 負担が偏る出産・育児
+Kübler, Dorothea, Julia Schmid, and Robert Stüber. 2018. "Gender Discrimination in Hiring Across Occupations: A Nationally-Representative Vignette Study." *Labour Economics* 55:215–29.
+
+## 第4回 負担が偏る出産・育児（9月14日）
+
 Budig, Michelle J., and Paula England. 2001. "The Wage Penalty for Motherhood." *American Sociological Review* 66(2):204--25.
 
 Cukrowska-Torzewska, Ewa, and Anna Matysiak. 2020. "The Motherhood Wage Penalty: A Meta-Analysis." *Social Science Research* 88-89:102416.
@@ -44,7 +50,7 @@ Kleven, Henrik, Camille Landais, Johanna Posch, Andreas Steinhauer, and Josef Zw
 
 England, Paula, Jonathan Bearak, Michelle J. Budig, and Melissa J. Hodges. 2016. "Do Highly Paid, Highly Skilled Women Experience the Largest Motherhood Penalty?" *American Sociological Review* 81(6):1161--89.
 
-## 第5回 就業中断とキャリアの断絶
+## 第5回 就業中断とキャリアの断絶（9月15日）
 
 麦山亮太，2017，「キャリアの中断が生み出す格差：正規雇用獲得への持続的影響に着目して」『社会学評論』68(2):248--64.
 
@@ -52,7 +58,7 @@ England, Paula, Jonathan Bearak, Michelle J. Budig, and Melissa J. Hodges. 2016.
 
 Yu, Wei-Hsin. 2002. "Jobs for Mothers: Married Women's Labor Force Reentry and Part-Time, Temporary Employment in Japan." *Sociological Forum* 17(3):493--523.
 
-## 第6回 評価の差を生むバイアス
+## 第6回 評価の差を生むバイアス（9月18日）
 
 Claudia, Goldin, and Cecilia Rouse. 2000. "Orchestrating Impartiality: The Impact of ‘Blind' Auditions on Female Musicians." *American Economic Review* 90(4):715--41.
 
@@ -62,7 +68,7 @@ Auspurg, Katrin, Thomas Hinz, and Carsten Sauer. 2017. "Why Should Women Get Les
 
 Mun, Eunmi, and Naomi Kodama. 2021. "Meritocracy at Work?: Merit-Based Reward Systems and Gender Wage Inequality." *Social Forces* 100(4):1561--91.
 
-## 第7回 仕事の構造が抱える問題
+## 第7回 仕事の構造が抱える問題（9月19日）
 
 Goldin, Claudia. 2021. *Career and Family: Women's Century-Long Journey toward Equity.* Princeton, NJ: Princeton University Press.（鹿田昌美訳，2023，『なぜ男女の賃金に格差があるのか：女性の生き方の経済学』慶應義塾大学出版会．）
 
@@ -74,7 +80,7 @@ Babcock, Linda, Maria P. Recalde, Lise Vesterlund, and Laurie Weingart. 2017. "G
 
 Nelson, Laura K., Alexandra Brewer, Anna S. Mueller, Daniel M. O'Connor, Arjun Dayal, and Vineet M. Arora. 2023. "Taking the Time: The Implications of Workplace Assessment for Organizational Gender Inequality." *American Sociological Review* 00031224231184264.
 
-## 第8回 少子化の進展に与える影響
+## 第8回 少子化の進展に与える影響（9月20日）
 
 Sweeney, Megan M. 2002. "Two Decades of Family Change: The Shifting Economic Foundations of Marriage." *American Sociological Review* 67(1):132--47.
 
@@ -88,5 +94,6 @@ Esping-Andersen, Gøsta, and Francesco C. Billari. 2015. "Re-Theorizing Family D
 
 Kolk, Martin. 2019. "Weak Support for a U-Shaped Pattern between Societal Gender Equality and Fertility When Comparing Societies across Time." *Demographic Research* 40:27--48.
 
-## 第9回 根本に踏み込む政策が必要
+## 第9回 根本に踏み込む政策が必要（9月21日）
+
 なし
