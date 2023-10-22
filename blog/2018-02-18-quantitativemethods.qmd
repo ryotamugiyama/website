@@ -2,6 +2,8 @@
 title: "おすすめの計量分析の教科書（社会学向け）"
 author: "Ryota Mugiyama"
 date: "2018-02-18"
+categories: 
+  - "Quantitative methods"
 image: ../images/website.jpg
 ---
 

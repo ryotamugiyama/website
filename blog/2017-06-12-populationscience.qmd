@@ -2,12 +2,11 @@
 title: "感想メモ：Sociology as a Population Science by John H. Goldthorpe (2015)"
 author: "Ryota Mugiyama"
 date: "2017-06-12"
-categories: "研究実践"
+categories: "Research method"
+image: ../images/website.jpg
 ---
 
 [表題の本](https://doi.org/10.1017/CBO9781316412565)を最近読みました。面白かったので簡単な要約（もれなく要約したわけではなく、自分の関心に即して要約しています）を混じえた感想メモを残しておきます。
-
-![](images/populationscience.jpg)
 
 本書は、著者のGoldthorpeが（目指すべき）社会学観を提示するというものです。
 

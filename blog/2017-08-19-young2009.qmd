@@ -2,7 +2,8 @@
 title: "感想メモ：Young (2009) 「社会学研究におけるモデルの不確実性」"
 author: "Ryota Mugiyama"
 date: "2017-06-12"
-categories: "計量分析"
+categories: 
+  - "Quantitative methods"
 ---
 
 授業のReadingsで読んだ論文が面白かったのでメモ。

@@ -2,6 +2,9 @@
 title: "Job (in)stability or job (in)security?：「安定性」の使い分けに関するメモ）"
 author: "Ryota Mugiyama"
 date: "2018-02-06"
+image: ../images/website.jpg
+categories: 
+  - "Labor market inequality"
 ---
 
 ## Job stabilityとJob securityは違う？
@@ -9,8 +12,6 @@ date: "2018-02-06"
 先日この本を読んでいたところ、興味深い記述をみつけた。
 
 Neumark, David eds. 2001. [On the Job: Is Long-Term Employment a Thing of the Past?](http://www.amazon.co.jp/exec/obidos/ASIN/0871546183/ryotamugiyama/ref=nosim/) Russell Sage Foundation.
-
-![](images/onthejob.jpg)
 
 > ... "J(j)ob stability," meaning the duration of jobs or the probability of retaining or leaving a job; and "job security," referring to the likelihood of experiencing involuntary job loss. (p.1)
 >

@@ -1,0 +1,22 @@
+---
+title: "【読んだ本】Kearney, Melissa S. 2023. The Two-Parent Privilege: How Americans Stopped Getting Married and Started Falling Behind. Chicago University Press."
+author: "Ryota Mugiyama"
+date: "2023-10-22"
+image: ../images/website.jpg
+categories: 
+  - "Family inequality"
+  - "Social mobility"
+---
+
+[Twitterに載せたメモ](https://twitter.com/RyotaMugiyama/status/1715945146704138253)の転載です。
+
+【読んだ本】Kearney, Melissa S. 2023. The Two-Parent Privilege: How Americans Stopped Getting Married and Started Falling Behind. Chicago University Press. 不平等の増加のなかで家族構造の階層間格差が拡大し、それが不平等を増幅し、かつ子世代の社会移動を阻害していると論じる。[https://press.uchicago.edu/ucp/books/book/chicago/T/bo205550079.html](https://press.uchicago.edu/ucp/books/book/chicago/T/bo205550079.html)
+
+アメリカの不平等の拡大と並行して、低学歴層においてひとり親（母子世帯）が増加しており（いわゆるDiverging destinies）、また、ひとり親はふたり親に比べて経済的・時間的資源が不足している。それだけでなく、資源に恵まれたふたり親はますます子どもへの投資を増加させている。
+
+ひとり親の増加は主として、規範の変化（結婚と出生のdecoupling）と相まって生じたmiddle classの衰退による男性の経済的地位の低下によるものであり（両者の峻別は難しい）、結婚に際して期待される経済的な期待を満たしにくくなり、結婚自体が生じにくくなったことによって生じている。
+
+
+また、ひとり親であることの不利（教育達成や逸脱行動）は女子よりも男子のほうがより大きく、とくにひとり親世帯の多い黒人男子における不利は顕著となる。以上の経験的な議論について、自身の研究やさまざまな研究を紹介しながらわかりやすく論じている。
+
+結論では、現在ひとり親の家族への支援や一般的に貧困にある家族に対するセーフティネットの充実、そして安定したカップル形成に寄与するうえで、非大卒の男性の経済的地位の改善を提案している。むろんこれはひとり親への非難や女性の経済的従属を意図していないことは筆者も再三強調している。

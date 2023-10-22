@@ -72,9 +72,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -171,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(20)</span></div><div class="category" data-category="Family inequality">Family inequality <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Gender inequality">Gender inequality <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Labor market inequality">Labor market inequality <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Quantitative methods">Quantitative methods <span class="quarto-category-count">(6)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Research method">Research method <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Social mobility">Social mobility <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Social stratification">Social stratification <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Stata">Stata <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Teaching">Teaching <span class="quarto-category-count">(3)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -197,513 +197,205 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1694098800000" data-listing-file-modified-sort="1694534861663" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
-<div class="thumbnail">
-<p><a href="./blog/2023-09-08-economics.html"> <img src="./images/website.jpg" class="thumbnail-image"> </a></p>
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<div class="body">
-<a href="./blog/2023-09-08-economics.html">
-<h3 class="no-anchor listing-title">
-「やさしい経済学」連載（仕事とジェンダー格差）で参照した文献リスト
-</h3>
-<div class="listing-subtitle">
 
-</div>
-<div class="listing-description">
-『日本経済新聞』朝刊の連載記事「やさしい経済学」において、寄稿した原稿「仕事ジェンダー格差」が2023年9月8日から平日の合計9日間にわたって掲載されます。紙面の都合上掲載できなかった参考文献のリストを以下に記載しておきます。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2023-09-08-economics.html">
-<div class="listing-date">
-Sep 8, 2023
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1660834800000" data-listing-file-modified-sort="1694135545490" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./blog/2022-08-19-report.html"> <img src="./images/website.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2022-08-19-report.html">
-<h3 class="no-anchor listing-title">
-学生向け：レポートでやるべき（でない）こと
-</h3>
-<div class="listing-subtitle">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="Social mobility" data-listing-date-sort="1697900400000" data-listing-file-modified-sort="1697977031980" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="【読んだ本】Brand, Jennie E. 2023. Overcoming the Odds: The Benefits of Completing College for Unlikely Graduates. RSF." data-listing-filename-sort="2023-10-22-Brand2023.qmd">
+<td>
+<span class="listing-date">Oct 22, 2023</span>
+</td>
+<td>
+<a href="./blog/2023-10-22-Brand2023.html" class="title listing-title">【読んだ本】Brand, Jennie E. 2023. Overcoming the Odds: The Benefits of Completing College for Unlikely Graduates. RSF.</a>
+</td>
+</tr>
+<tr data-index="1" data-categories="Family inequality" data-listing-date-sort="1697900400000" data-listing-file-modified-sort="1697977020167" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="【読んだ本】Kearney, Melissa S. 2023. The Two-Parent Privilege: How Americans Stopped Getting Married and Started Falling Behind. Chicago University Press." data-listing-filename-sort="2023-10-22-Kearney2023.qmd">
+<td>
+<span class="listing-date">Oct 22, 2023</span>
+</td>
+<td>
+<a href="./blog/2023-10-22-Kearney2023.html" class="title listing-title">【読んだ本】Kearney, Melissa S. 2023. The Two-Parent Privilege: How Americans Stopped Getting Married and Started Falling Behind. Chicago University Press.</a>
+</td>
+</tr>
+<tr data-index="2" data-categories="Gender inequality" data-listing-date-sort="1694098800000" data-listing-file-modified-sort="1697976849413" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-title-sort="「やさしい経済学」連載（仕事とジェンダー格差）で参照した文献リスト" data-listing-filename-sort="2023-09-08-economics.qmd">
+<td>
+<span class="listing-date">Sep 8, 2023</span>
+</td>
+<td>
+<a href="./blog/2023-09-08-economics.html" class="title listing-title">「やさしい経済学」連載（仕事とジェンダー格差）で参照した文献リスト</a>
+</td>
+</tr>
+<tr data-index="3" data-categories="Teaching" data-listing-date-sort="1660834800000" data-listing-file-modified-sort="1697976905885" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="学生向け：レポートでやるべき（でない）こと" data-listing-filename-sort="2022-08-19-report.qmd">
+<td>
+<span class="listing-date">Aug 19, 2022</span>
+</td>
+<td>
+<a href="./blog/2022-08-19-report.html" class="title listing-title">学生向け：レポートでやるべき（でない）こと</a>
+</td>
+</tr>
+<tr data-index="4" data-categories="R" data-listing-date-sort="1645974000000" data-listing-file-modified-sort="1697976905199" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Rによる社会調査データ分析の手引き" data-listing-filename-sort="2022-02-28-R.qmd">
+<td>
+<span class="listing-date">Feb 28, 2022</span>
+</td>
+<td>
+<a href="./blog/2022-02-28-R.html" class="title listing-title">Rによる社会調査データ分析の手引き</a>
+</td>
+</tr>
+<tr data-index="5" data-categories="Teaching" data-listing-date-sort="1640617200000" data-listing-file-modified-sort="1697976904834" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="初年次ゼミで何をする（した）のか：その2" data-listing-filename-sort="2021-12-28-introductory.qmd">
+<td>
+<span class="listing-date">Dec 28, 2021</span>
+</td>
+<td>
+<a href="./blog/2021-12-28-introductory.html" class="title listing-title">初年次ゼミで何をする（した）のか：その2</a>
+</td>
+</tr>
+<tr data-index="6" data-categories="Teaching" data-listing-date-sort="1626534000000" data-listing-file-modified-sort="1697975809985" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="初年次ゼミで何をする（した）のか" data-listing-filename-sort="2021-07-18-introductory.qmd">
+<td>
+<span class="listing-date">Jul 18, 2021</span>
+</td>
+<td>
+<a href="./blog/2021-07-18-introductory.html" class="title listing-title">初年次ゼミで何をする（した）のか</a>
+</td>
+</tr>
+<tr data-index="7" data-categories="R" data-listing-date-sort="1596380400000" data-listing-file-modified-sort="1697975810433" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="RとRStudioをインストールするときのつまづきポイントとその対処法へのリンク" data-listing-filename-sort="2020-08-03-Rinstall.qmd">
+<td>
+<span class="listing-date">Aug 3, 2020</span>
+</td>
+<td>
+<a href="./blog/2020-08-03-Rinstall.html" class="title listing-title">RとRStudioをインストールするときのつまづきポイントとその対処法へのリンク</a>
+</td>
+</tr>
+<tr data-index="8" data-categories="Quantitative methods" data-listing-date-sort="1585062000000" data-listing-file-modified-sort="1697976635722" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="職域分離の指標におけるセレクションと解釈をめぐる問題" data-listing-filename-sort="2020-03-25-segregation.qmd">
+<td>
+<span class="listing-date">Mar 25, 2020</span>
+</td>
+<td>
+<a href="./blog/2020-03-25-segregation.html" class="title listing-title">職域分離の指標におけるセレクションと解釈をめぐる問題</a>
+</td>
+</tr>
+<tr data-index="9" data-categories="Research method" data-listing-date-sort="1556204400000" data-listing-file-modified-sort="1697976701756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="学振PD (社会科学) の申請書を公開します" data-listing-filename-sort="2019-04-26-gakushinPD.qmd">
+<td>
+<span class="listing-date">Apr 26, 2019</span>
+</td>
+<td>
+<a href="./blog/2019-04-26-gakushinPD.html" class="title listing-title">学振PD (社会科学) の申請書を公開します</a>
+</td>
+</tr>
+<tr data-index="10" data-categories="Stata" data-listing-date-sort="1527346800000" data-listing-file-modified-sort="1697975772811" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Stataで完全失業率の推移を作図する手順" data-listing-filename-sort="2018-05-27-estatstata.qmd">
+<td>
+<span class="listing-date">May 27, 2018</span>
+</td>
+<td>
+<a href="./blog/2018-05-27-estatstata.html" class="title listing-title">Stataで完全失業率の推移を作図する手順</a>
+</td>
+</tr>
+<tr data-index="11" data-categories="Quantitative methods" data-listing-date-sort="1518879600000" data-listing-file-modified-sort="1697976635719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="おすすめの計量分析の教科書（社会学向け）" data-listing-filename-sort="2018-02-18-quantitativemethods.qmd">
+<td>
+<span class="listing-date">Feb 18, 2018</span>
+</td>
+<td>
+<a href="./blog/2018-02-18-quantitativemethods.html" class="title listing-title">おすすめの計量分析の教科書（社会学向け）</a>
+</td>
+</tr>
+<tr data-index="12" data-categories="Research method,Social stratification" data-listing-date-sort="1517842800000" data-listing-file-modified-sort="1697976974077" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="感想メモ：（階層）研究に必要なことは何か" data-listing-filename-sort="2018-01-20-stratification.qmd">
+<td>
+<span class="listing-date">Feb 6, 2018</span>
+</td>
+<td>
+<a href="./blog/2018-01-20-stratification.html" class="title listing-title">感想メモ：（階層）研究に必要なことは何か</a>
+</td>
+</tr>
+<tr data-index="13" data-categories="Labor market inequality" data-listing-date-sort="1517842800000" data-listing-file-modified-sort="1697976964864" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Job (in)stability or job (in)security?：「安定性」の使い分けに関するメモ）" data-listing-filename-sort="2018-02-06-jobstability.qmd">
+<td>
+<span class="listing-date">Feb 6, 2018</span>
+</td>
+<td>
+<a href="./blog/2018-02-06-jobstability.html" class="title listing-title">Job (in)stability or job (in)security?：「安定性」の使い分けに関するメモ）</a>
+</td>
+</tr>
+<tr data-index="14" data-categories="Research method" data-listing-date-sort="1497193200000" data-listing-file-modified-sort="1697976701745" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="感想メモ：Sociology as a Population Science by John H. Goldthorpe (2015)" data-listing-filename-sort="2017-06-12-populationscience.qmd">
+<td>
+<span class="listing-date">Jun 12, 2017</span>
+</td>
+<td>
+<a href="./blog/2017-06-12-populationscience.html" class="title listing-title">感想メモ：Sociology as a Population Science by John H. Goldthorpe (2015)</a>
+</td>
+</tr>
+<tr data-index="15" data-categories="Quantitative methods" data-listing-date-sort="1497193200000" data-listing-file-modified-sort="1697976980326" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-title-sort="感想メモ：Young (2009) 「社会学研究におけるモデルの不確実性」" data-listing-filename-sort="2017-08-19-young2009.qmd">
+<td>
+<span class="listing-date">Jun 12, 2017</span>
+</td>
+<td>
+<a href="./blog/2017-08-19-young2009.html" class="title listing-title">感想メモ：Young (2009) 「社会学研究におけるモデルの不確実性」</a>
+</td>
+</tr>
+<tr data-index="16" data-categories="Research method" data-listing-date-sort="1487516400000" data-listing-file-modified-sort="1697976701742" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="学振DC（社会科学）の申請書を公開します" data-listing-filename-sort="2017-02-20-gakushinDC.qmd">
+<td>
+<span class="listing-date">Feb 20, 2017</span>
+</td>
+<td>
+<a href="./blog/2017-02-20-gakushinDC.html" class="title listing-title">学振DC（社会科学）の申請書を公開します</a>
+</td>
+</tr>
+<tr data-index="17" data-categories="Quantitative methods" data-listing-date-sort="1478876400000" data-listing-file-modified-sort="1697976991647" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-title-sort="時間による効果の変化をモデリングする" data-listing-filename-sort="2016-11-12-timevariant.qmd">
+<td>
+<span class="listing-date">Nov 12, 2016</span>
+</td>
+<td>
+<a href="./blog/2016-11-12-timevariant.html" class="title listing-title">時間による効果の変化をモデリングする</a>
+</td>
+</tr>
+<tr data-index="18" data-categories="Quantitative methods,Social stratification" data-listing-date-sort="1459954800000" data-listing-file-modified-sort="1697977006774" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="SSM職業小分類（追加コード含む）をSSM職業8分類に変換するStataシンタックス" data-listing-filename-sort="2016-04-07-ssmocc8.qmd">
+<td>
+<span class="listing-date">Apr 7, 2016</span>
+</td>
+<td>
+<a href="./blog/2016-04-07-ssmocc8.html" class="title listing-title">SSM職業小分類（追加コード含む）をSSM職業8分類に変換するStataシンタックス</a>
+</td>
+</tr>
+<tr data-index="19" data-categories="Quantitative methods" data-listing-date-sort="1454166000000" data-listing-file-modified-sort="1697976635695" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="有意水準を示す*印をつけるExcel関数" data-listing-filename-sort="2016-01-31-excel_star.qmd">
+<td>
+<span class="listing-date">Jan 31, 2016</span>
+</td>
+<td>
+<a href="./blog/2016-01-31-excel_star.html" class="title listing-title">有意水準を示す*印をつけるExcel関数</a>
+</td>
+</tr>
+</tbody>
 
-</div>
-<div class="listing-description">
-教員になって授業を担当するようになってから毎学期150〜200本くらいのレポートを読んでいるが、そこでいろいろとレポートを見ていると、レポートの基礎が押さえられていないと思うレポートにしばしば出会う。レポートの型というのは多かれ少なかれ決まっており、型にしたがって書くことで（多少のほころびがあったとしても）きちんとしたレポートを作ることができる。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2022-08-19-report.html">
-<div class="listing-date">
-Aug 19, 2022
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1645974000000" data-listing-file-modified-sort="1694135545487" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./blog/2022-02-28-R.html"> <p class="card-img-top"><img src="blog/images/tebiki.png"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2022-02-28-R.html">
-<h3 class="no-anchor listing-title">
-Rによる社会調査データ分析の手引き
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-今年度一年間のゼミ、およびそれ以前の授業などを経て、社会学の実証研究論文を書くうえでどのようなことを教えたらよいのか、どのようなところで学生がつまづきやすいのかといった経験が蓄積されてきました。これを踏まえて、来年度以降のゼミなどで使用するための資料を作成しました。せっかくですので、こちらを公開したいと思います。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2022-02-28-R.html">
-<div class="listing-date">
-Feb 28, 2022
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1640617200000" data-listing-file-modified-sort="1694135545487" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./blog/2021-12-28-introductory.html"> <img src="./images/website.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2021-12-28-introductory.html">
-<h3 class="no-anchor listing-title">
-初年次ゼミで何をする（した）のか：その2
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-今学期も先学期に引き続き、基礎演習という、おおむね初年次教育に該当する内容を扱う必修科目を担当した。しかし、自分はあまりまともな初年次教育なるものを受けた記憶がなく（きっ…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2021-12-28-introductory.html">
-<div class="listing-date">
-Dec 28, 2021
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1626534000000" data-listing-file-modified-sort="1694135545487" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./blog/2021-07-18-introductory.html"> <img src="./images/website.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2021-07-18-introductory.html">
-<h3 class="no-anchor listing-title">
-初年次ゼミで何をする（した）のか
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-所属が変わって早くも3ヶ月半が経ち、もうすぐ1学期が終わりそうな気配だ。今学期の前半は慣れないことや授業準備、プライベートで忙しくてんてこまいだったけど、7月ころからようやく落ち着いてきた。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2021-07-18-introductory.html">
-<div class="listing-date">
-Jul 18, 2021
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1596380400000" data-listing-file-modified-sort="1694135545487" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./blog/2020-08-03-Rinstall.html"> <img src="./images/website.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2020-08-03-Rinstall.html">
-<h3 class="no-anchor listing-title">
-RとRStudioをインストールするときのつまづきポイントとその対処法へのリンク
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-RおよびRStudioのインストールで困ったときの対処法についてのリンクをまとめました。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2020-08-03-Rinstall.html">
-<div class="listing-date">
-Aug 3, 2020
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1585062000000" data-listing-file-modified-sort="1694135545486" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./blog/2020-03-25-segregation.html"> <img src="./images/website.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2020-03-25-segregation.html">
-<h3 class="no-anchor listing-title">
-職域分離の指標におけるセレクションと解釈をめぐる問題
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-昨今の社会情勢のなか、気分も憂鬱になり、なかなか研究にも集中できない日が続いています。なので少し論文を読みながら考えごとをして息抜きでもしようと思って、表題の内容について最近考えたことをメモに残しておきました。すこし長めなの（とwordpressで書くのがとても面倒なの）で、別ファイルにしました。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2020-03-25-segregation.html">
-<div class="listing-date">
-Mar 25, 2020
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1556204400000" data-listing-file-modified-sort="1694135545486" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./blog/2019-04-26-gakushinPD.html"> <img src="./images/website.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2019-04-26-gakushinPD.html">
-<h3 class="no-anchor listing-title">
-学振PD (社会科学) の申請書を公開します
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-新年度、引越しをしたり所属が変わったりということで、ばたばたしています。3月25日に無事博士（社会学）の学位を授与され、平成31年度（令和元年度？）より学術振興会特別研究員PDとして研究を続けます。これまでとはいろいろな意味で大きく環境が変わるので期待半分不安半分というところですが、頑張っていきたいと思います。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2019-04-26-gakushinPD.html">
-<div class="listing-date">
-Apr 26, 2019
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1527346800000" data-listing-file-modified-sort="1694135545486" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./blog/2018-05-27-estatstata.html"> <p class="card-img-top"><img src="blog/images/unemploymentrate-1024x745.png"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2018-05-27-estatstata.html">
-<h3 class="no-anchor listing-title">
-Stataで完全失業率の推移を作図する手順
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-公表されている官庁統計から何らかの作図をするという機会はよくあると思います。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2018-05-27-estatstata.html">
-<div class="listing-date">
-May 27, 2018
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1518879600000" data-listing-file-modified-sort="1694135545485" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./blog/2018-02-18-quantitativemethods.html"> <img src="./images/website.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2018-02-18-quantitativemethods.html">
-<h3 class="no-anchor listing-title">
-おすすめの計量分析の教科書（社会学向け）
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-自分の所属している大学院では基本的に研究方法については独学で身につけることが期待されています。なので、これまでに自分でいろいろと教科書を調べて読みました。もしかしたら同じようにどのような教科書を読むべきか悩んでいる人がいるかもしれないので、何かの役に立つことを期待して、自分が読んでみて良いと思ったテキストを挙げておきます。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2018-02-18-quantitativemethods.html">
-<div class="listing-date">
-Feb 18, 2018
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="10" data-listing-date-sort="1517842800000" data-listing-file-modified-sort="1694135545484" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./blog/2018-01-20-stratification.html"> <img src="./images/website.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2018-01-20-stratification.html">
-<h3 class="no-anchor listing-title">
-感想メモ：（階層）研究に必要なことは何か
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-私の好きな文章の1つに、盛山先生の以下の特集論文があります。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2018-01-20-stratification.html">
-<div class="listing-date">
-Feb 6, 2018
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1517842800000" data-listing-file-modified-sort="1694135545485" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./blog/2018-02-06-jobstability.html"> <p class="card-img-top"><img src="blog/images/onthejob.jpg"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2018-02-06-jobstability.html">
-<h3 class="no-anchor listing-title">
-Job (in)stability or job (in)security?：「安定性」の使い分けに関するメモ）
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-先日この本を読んでいたところ、興味深い記述をみつけた。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2018-02-06-jobstability.html">
-<div class="listing-date">
-Feb 6, 2018
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="12" data-categories="研究実践" data-listing-date-sort="1497193200000" data-listing-file-modified-sort="1694135545483" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./blog/2017-06-12-populationscience.html"> <p class="card-img-top"><img src="blog/images/populationscience.jpg"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2017-06-12-populationscience.html">
-<h3 class="no-anchor listing-title">
-感想メモ：Sociology as a Population Science by John H. Goldthorpe (2015)
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-表題の本を最近読みました。面白かったので簡単な要約（もれなく要約したわけではなく、自分の関心に即して要約しています）を混じえた感想メモを残しておきます。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2017-06-12-populationscience.html">
-<div class="listing-date">
-Jun 12, 2017
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="13" data-categories="計量分析" data-listing-date-sort="1497193200000" data-listing-file-modified-sort="1694135545484" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
-<div class="thumbnail">
-<p><a href="./blog/2017-08-19-young2009.html"> <p class="card-img-top"><img src="blog/images/Barro_and_McCleary.png"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2017-08-19-young2009.html">
-<h3 class="no-anchor listing-title">
-感想メモ：Young (2009) 「社会学研究におけるモデルの不確実性」
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-授業のReadingsで読んだ論文が面白かったのでメモ。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2017-08-19-young2009.html">
-<div class="listing-date">
-Jun 12, 2017
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="14" data-listing-date-sort="1487516400000" data-listing-file-modified-sort="1694135545483" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./blog/2017-02-20-gakushinDC.html"> <img src="./images/website.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2017-02-20-gakushinDC.html">
-<h3 class="no-anchor listing-title">
-学振DC（社会科学）の申請書を公開します
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-少し前になりますが、平成29年度の学術振興会特別研究員DC2への採用内定をいただきました（面接免除）。そこで、採用にあたり提出した申請書を公開いたします。以下にリンクを貼っておきます。研究課題名は「無業経験の長期的影響にみる格差生成プロセスの男女比較研究」です。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2017-02-20-gakushinDC.html">
-<div class="listing-date">
-Feb 20, 2017
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="15" data-listing-date-sort="1478876400000" data-listing-file-modified-sort="1694135545482" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
-<div class="thumbnail">
-<p><a href="./blog/2016-11-12-timevariant.html"> <p class="card-img-top"><img src="blog/2016-11-12-timevariant_files/figure-html/unnamed-chunk-3-1.png"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2016-11-12-timevariant.html">
-<h3 class="no-anchor listing-title">
-時間による効果の変化をモデリングする
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-時系列データやパネルデータを分析するときの主要な関心の1つは、変化する独立変数が従属変数に対していかなる効果を与えるのかを明らかにすることにあります。たとえば社会学だと、「結婚することによって幸福度がどのように変化するか」であるとか、「転職することによって賃金は上がるのか」といった問いが例として挙げられます。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2016-11-12-timevariant.html">
-<div class="listing-date">
-Nov 12, 2016
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="16" data-listing-date-sort="1459954800000" data-listing-file-modified-sort="1694135545482" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./blog/2016-04-07-ssmocc8.html"> <img src="./images/website.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2016-04-07-ssmocc8.html">
-<h3 class="no-anchor listing-title">
-SSM職業小分類（追加コード含む）をSSM職業8分類に変換するStataシンタックス
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-（2017/5/11 701番以降の追加コードを修正） （2017/5/13 熟練、半熟練、非熟練の説明を追加、15の職業大分類を追加）
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2016-04-07-ssmocc8.html">
-<div class="listing-date">
-Apr 7, 2016
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="17" data-listing-date-sort="1454166000000" data-listing-file-modified-sort="1694135545481" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./blog/2016-01-31-excel_star.html"> <img src="./images/website.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./blog/2016-01-31-excel_star.html">
-<h3 class="no-anchor listing-title">
-有意水準を示す*印をつけるExcel関数
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-2016/11/7 (Mon) 関数に間違いがあったので修正しました。
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/2016-01-31-excel_star.html">
-<div class="listing-date">
-Jan 31, 2016
-</div>
-<div class="listing-author">
-Ryota Mugiyama
-</div>
-</a>
-</div>
-</div>
-</div>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>

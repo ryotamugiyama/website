@@ -1,0 +1,22 @@
+---
+title: "【読んだ本】Brand, Jennie E. 2023. Overcoming the Odds: The Benefits of Completing College for Unlikely Graduates. RSF."
+author: "Ryota Mugiyama"
+date: "2023-10-22"
+image: ../images/website.jpg
+categories: 
+  - "Social mobility"
+---
+
+[Twitterに載せたメモ](https://twitter.com/RyotaMugiyama/status/1715933986038645040)の転載です。
+
+【読んだ本】Brand, Jennie E. 2023. Overcoming the Odds: The Benefits of Completing College for Unlikely Graduates. RSF. 大学を卒業することがその後の様々なアウトカムに与える効果が、大学に行きにくい層と行きやすい層でどのように異なるかを包括的に検証。[https://russellsage.org/publications/overcoming-odds](https://russellsage.org/publications/overcoming-odds)
+
+使われている方法はBrand & Xie (2010)以来おなじみの、大学卒業確率のPropensity score matchingで得られたPropensity scoreの層ごとにアウトカムを比較する方法（さらにMachine learningなどの新しい方法も使っている）。この方法が何が見られるのか（メリット）についても詳しく議論している。
+
+金銭的アウトカム（賃金と世帯所得）に対しては、大学に行きにくい層と大学に行きやすい層でより大卒の効果が大きいというU-shapeが見られる。しかし、失業回避、雇用の安定性、低スキル職への就業回避、貧困回避、公的福祉受給回避については大学に行きにくい層においてより大卒の恩恵が大きい。
+
+つまり大卒は大学に行きやすい層に対してPrevilegeを付与する側面もあるが、それ以上に大学に行きにくい層のPrecarityを抑制する平等化効果を持つ。さらに、大卒が安定的な家族形成や市民的参加（ボランティアや投票、政府への信頼）を高める効果も、大学に行きにくい層においてより大きい。 
+
+以上を受けて、大学に行きにくい層が大学を卒業できるようにすることで、出身階層による不平等を減らすことができると論じる。この主張は因果推論に支えられたもので、記述分析よりも高い説得力を産んでいる。他の領域でも因果推論の応用によって不平等を減らす方策を明らかにすることが望まれる。
+
+Brand, Jennie E., and Yu Xie. 2010. "Who Benefits Most from College?: Evidence for Negative Selection in Heterogeneous Economic Returns to Higher Education." *American Sociological Review* 75(2):273--302.

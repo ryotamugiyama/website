@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ryota Mugiyama">
-<meta name="dcterms.date" content="2016-04-07">
+<meta name="dcterms.date" content="2023-10-22">
 
-<title>Ryota Mugiyama - SSM職業小分類（追加コード含む）をSSM職業8分類に変換するStataシンタックス</title>
+<title>Ryota Mugiyama - 【読んだ本】Brand, Jennie E. 2023. Overcoming the Odds: The Benefits of Completing College for Unlikely Graduates. RSF.</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -99,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta name="twitter:title" content="Ryota Mugiyama - SSM職業小分類（追加コード含む）をSSM職業8分類に変換するStataシンタックス">
+<meta name="twitter:title" content="Ryota Mugiyama - 【読んだ本】Brand, Jennie E. 2023. Overcoming the Odds: The Benefits of Completing College for Unlikely Graduates. RSF.">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://mugiyama.github.io/website/website.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -180,10 +146,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">SSM職業小分類（追加コード含む）をSSM職業8分類に変換するStataシンタックス</h1>
+<h1 class="title">【読んだ本】Brand, Jennie E. 2023. Overcoming the Odds: The Benefits of Completing College for Unlikely Graduates. RSF.</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Quantitative methods</div>
-    <div class="quarto-category">Social stratification</div>
+    <div class="quarto-category">Social mobility</div>
   </div>
   </div>
 
@@ -201,7 +166,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 7, 2016</p>
+      <p class="date">October 22, 2023</p>
     </div>
   </div>
   
@@ -211,53 +176,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>（2017/5/11 701番以降の追加コードを修正） （2017/5/13 熟練、半熟練、非熟練の説明を追加、15の職業大分類を追加）</p>
-<p>標題の通りです。ご使用は自己責任でお願いします。作成に際しては、1995年SSM調査研究会，1995，『SSM産業分類・職業分類 (95年版)』を参照しました。</p>
-<p>ミスや不適切な箇所を見つけた方は、ご指摘くださいますようお願いします。</p>
-<p>SPSSを使う場合は<a href="https://www2.rikkyo.ac.jp/web/murase/ssm/job.html">村瀬洋一先生のHP</a>が、Rを使う場合は<a href="https://terasawat.hatenablog.jp/entry/20090607/1244363041">寺沢拓敬先生のHP</a>が、それぞれ参考になります。</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>*** <span class="kw">recode</span> occupation into SSM 8 classification (including no-job) <span class="kw">for</span> stata **</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>*** 20170511 made <span class="kw">by</span> Ryota Mugiyama *******************************************</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">/******************************************************************</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">SSM職業小分類をSSM職業8分類に変換するシンタックス（Stata用）になります。</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">ただし、701番以降の追加コードは以下に示す通り麦山が独自に分類を割り当てています。</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">使用は自己責任でお願いします。</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">シンタックスは、recode関数を用いてSSM職業小分類（occupation）から</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">SSM職業8分類（ssmocc）を作成するというかたちになっています。</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">行は見やすさのため、1行ごとに1への割り当て、2への割り当て…というふうに分けています。</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">9行目は追加コードの分類、10行目は分類不能や非該当への分類を示しています。</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"> ********************************************************************/</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">/***SSM1995年版職業分類に含まれないコードの8分類への割り当て****************</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">701"スーパーなどのレジスター係員" → 4"販売"</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">702"大工" → 5"熟練"</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">703"教員" → 1"専門"</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">704"製品製造作業者" → 6"半熟練"</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">706"宅配便の配達" → 7"非熟練"</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">801"介護員・ヘルパー" → 6"半熟練"</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">802"その他の医療・福祉サービス職従事者" → 6"半熟練"</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">803"雇われている販売店長" → 4"販売"</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">804"雇われている飲食店長" → 4"販売"</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co">********************************************************************/</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="kw">recode</span> occupation <span class="co">///</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>(501/544 = 1)(609/610 = 1)(615 = 1) <span class="co">///</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>(545/553 = 2)(608 = 2) <span class="co">///</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>(554/565 = 3)(586 = 3)(590 = 3)(593/598 = 3)(616/619 = 3) <span class="co">///</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>(566/577 = 4)(582/585 = 4)(587/589 = 4) <span class="co">///</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>(579 = 5)(581 = 5)(623/624 = 5)(626 = 5)(628 = 5)(631 = 5)(633 = 5)(635/644 = 5)(647 = 5)(651 = 5)(654/656 = 5)(658 = 5)(660/666= 5)(668 = 5)(670/675 = 5)(677/681 = 5)(684 = 5) <span class="co">///</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>(580 = 6)(606/607 = 6)(611/614 = 6)(625 = 6)(627 = 6)(629/630 = 6)(632 = 6)(634 = 6)(645/646 = 6)(648/650 = 6)(652/653 = 6)(657 = 6)(659 = 6)(667 = 6)(669 = 6)(672 = 6)(676 = 6) <span class="co">///</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>(578 = 7)(591/592 = 7)(620/622 = 7)(682/683 = 7)(685/688 = 7) <span class="co">///</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>(599/605 = 8) <span class="co">///</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>(701 = 4)(702 = 5)(703 = 1)(704 = 6)(706 = 7)(801/802 = 6)(803/804 = 4) <span class="co">///</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>(689 =.)(705 =.)(707 =.)(987 =.)(998 = .)(999 =.) <span class="co">///</span></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>, <span class="kw">gen</span>(ssmocc)</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="co">/*値ラベルを振りたい場合は以下を追加してください。*/</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>lab def occ 1<span class="st">"専門"</span> 2<span class="st">"管理"</span> 3<span class="st">"事務"</span> 4<span class="st">"販売"</span> 5<span class="st">"熟練"</span> 6<span class="st">"半熟練"</span> 7<span class="st">"非熟練"</span> 8<span class="st">"農林"</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>lab val ssmocc occ</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="co">/*「無職」を職業カテゴリに含めたい場合は以下を追加してください。*/</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> ssmocc = 9 <span class="kw">if</span> occupation == 998</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><a href="https://twitter.com/RyotaMugiyama/status/1715933986038645040">Twitterに載せたメモ</a>の転載です。</p>
+<p>【読んだ本】Brand, Jennie E. 2023. Overcoming the Odds: The Benefits of Completing College for Unlikely Graduates. RSF. 大学を卒業することがその後の様々なアウトカムに与える効果が、大学に行きにくい層と行きやすい層でどのように異なるかを包括的に検証。<a href="https://russellsage.org/publications/overcoming-odds">https://russellsage.org/publications/overcoming-odds</a></p>
+<p>使われている方法はBrand &amp; Xie (2010)以来おなじみの、大学卒業確率のPropensity score matchingで得られたPropensity scoreの層ごとにアウトカムを比較する方法（さらにMachine learningなどの新しい方法も使っている）。この方法が何が見られるのか（メリット）についても詳しく議論している。</p>
+<p>金銭的アウトカム（賃金と世帯所得）に対しては、大学に行きにくい層と大学に行きやすい層でより大卒の効果が大きいというU-shapeが見られる。しかし、失業回避、雇用の安定性、低スキル職への就業回避、貧困回避、公的福祉受給回避については大学に行きにくい層においてより大卒の恩恵が大きい。</p>
+<p>つまり大卒は大学に行きやすい層に対してPrevilegeを付与する側面もあるが、それ以上に大学に行きにくい層のPrecarityを抑制する平等化効果を持つ。さらに、大卒が安定的な家族形成や市民的参加（ボランティアや投票、政府への信頼）を高める効果も、大学に行きにくい層においてより大きい。</p>
+<p>以上を受けて、大学に行きにくい層が大学を卒業できるようにすることで、出身階層による不平等を減らすことができると論じる。この主張は因果推論に支えられたもので、記述分析よりも高い説得力を産んでいる。他の領域でも因果推論の応用によって不平等を減らす方策を明らかにすることが望まれる。</p>
+<p>Brand, Jennie E., and Yu Xie. 2010. “Who Benefits Most from College?: Evidence for Negative Selection in Heterogeneous Economic Returns to Higher Education.” <em>American Sociological Review</em> 75(2):273–302.</p>
 
 
 

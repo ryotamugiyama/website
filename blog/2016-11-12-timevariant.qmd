@@ -1,6 +1,8 @@
 ---
 title: "時間による効果の変化をモデリングする"
 author: "Ryota Mugiyama"
+categories: 
+  - "Quantitative methods"
 date: "2016-11-12"
 ---
 

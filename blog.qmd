@@ -4,7 +4,9 @@ listing:
   contents: 
     - "blog/*.qmd"
   sort: "date desc"
-  type: default
+  type: table
+  categories: true
+  fields: [date, title]
 ---
 
 日々の思いつきを不定期に残しています。2022年9月以前の記事は旧ウェブページから移行させたものです。

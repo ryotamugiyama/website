@@ -2,6 +2,7 @@
 title: "有意水準を示す*印をつけるExcel関数"
 author: "Ryota Mugiyama"
 date: "2016-01-31"
+categories: "Quantitative methods"
 image: ../images/website.jpg
 ---
 
