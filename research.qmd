@@ -14,17 +14,14 @@ Employment Uncertainty and Delayed Marriage in Society Where Cohabitations Are N
 
 -   2023-03-23 Working paper is found here: [paper](https://csrdadps.com/paper/42)
 
-Rising Employment Uncertainty and Delayed Marriage and Parenthood: Cohort Analysis of Japanese Men
+Impact of Increasing Employment Uncertainty on Cross-Cohort Marriage and Parenthood Delays in Japan
 
 -   2023-04-04 Presented at PAA 2023 Annual Meeting at Hyatt Regency New Orleans, New Orleans, Luisiana. [poster](https://researchmap.jp/mugiyama/presentations/41665921)
 -   2022-09-04 Presented at Japen Society for Family Sociology 32th Annual Meeting at Japan Women's University. [slide](https://researchmap.jp/mugiyama/presentations/38562835)
 
-Increasing Educational Gradient: Cohort Changes in Women’s Employment Around Childbirth in Japan
-
--   2023-09-02 Presented at Japan Society for Family Sociology 33th Annual Meeting at Kobe University. [slide](https://researchmap.jp/mugiyama/presentations/42833861)
-
 Multigenerational Perspective on Trends in Inequality of Educational Opportunity in Japan (with Aguru Ishibashi)
 
+- 2023-10-25 Working paper is found here: [paper](https://csrdadps.com/paper/63).
 - 2023-08-15 Presented at RC28 Summer Meeting at University of Michigan. [slide](https://researchmap.jp/mugiyama/presentations/41971649)
 - 2023-03-08 Presented at Japanese Association of Mathematical Sociolgoy 74th Meeting at Tsukuba University. [slide](https://researchmap.jp/mugiyama/presentations/41548059)
 
@@ -55,9 +52,17 @@ Evaluating the East Asian Model of Low Fertility Hypothesis: Evidence from Japan
 
 - 2023-09-02 Presented at Japan Society for Family Sociology 33th Annual Meeting at Kobe University.
 
+Upper Class Advantage: Differential Impacts of Social-origin on Earnings in Japan
+
+Educational Differences in Motherhood Penalties: The Impact on Trajectories of Employment, Working Hours, and Wages in Japan
+
 ## Peer-reviewed paper
 
-麦山亮太・田上皓大，近刊，「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』．
+麦山亮太・大里蒼一郎，2024（近刊），「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』．
+
+麦山亮太・田上皓大，2024（近刊），「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』．
+
+Mugiyama, Ryota. 2024. "[Cohort Change in the Educational Gradient in Women's Employment Around Childbirth in Japan](https://doi.org/10.1016/j.rssm.2023.100885)." *Research in Social Stratification and Mobility.* Online first.
 
 麦山亮太・小松恭子，2023，「[テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析](https://www.jil.go.jp/institute/zassi/backnumber/2023/05/index.html)」『日本労働研究雑誌』754: 87–102．
 
@@ -83,13 +88,17 @@ Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Cla
 
 麦山亮太，2016，「[結婚は職業キャリアにいかなる影響を与えるのか？：無業・管理職への移動に関する男女比較分析](https://doi.org/10.4234/jjoffamilysociology.28.122)」『家族社会学研究』28(2): 122--135．
 
-## Book chapters
+## Book chapter
+
+麦山亮太，2023，「男性の職業・家族キャリア」家族社会学会編『[家族社会学事典](https://www.maruzen-publishing.co.jp/item/b305112.html)』丸善出版，xxx-xxx．
 
 打越文弥・麦山亮太，2022，「性別職域分離」数理社会学会監修『[数理社会学事典](https://www.maruzen-publishing.co.jp/item/?book_no=304405)』丸善出版，330–333．
 
 麦山亮太・吉川裕嗣，2015，「東アジアの学生の意識にみるアジア統合の展望：アジア人意識と脅威認識を軸として」[園田茂人編『アジア比較社会研究のフロンティアⅢ 連携と離反の東アジア』勁草書房](http://www.keisoshobo.co.jp/book/b193739.html)，231-255．
 
 ## Discussion paper
+
+Mugiyama, Ryota and Aguru Ishibashi. 2023. "[Multigenerational Perspective on Trends in the Intergenerational Educational Mobility in Japan](https://csrdadps.com/paper/63)" *CSRDA Discussion Paper Series.* Center for Social Research and Data Archives, Institute of Social Science, The University of Tokyo. 63. 
 
 Mugiyama, Ryota and Kyoko Komatsu. 2023. "[Rising socioeconomic inequality in telework eligibility: Evidence from before and after the COVID-19 outbreak in Japan](https://csrdadps.com/paper/57)" *CSRDA Discussion Paper Series.* Center for Social Research and Data Archives, Institute of Social Science, The University of Tokyo. 57. 
 
