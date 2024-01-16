@@ -8,6 +8,46 @@ Other research publications, past conference presentations, or my careers are fo
 -   [googlescholar](https://scholar.google.co.jp/citations?user=oJnisc0AAAAJ)
 -   [ORCID](https://orcid.org/0000-0002-6157-5575)
 
+## Peer-reviewed paper
+
+麦山亮太・大里蒼一郎，2024（近刊），「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』．
+
+麦山亮太・田上皓大，2024（近刊），「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』．
+
+Mugiyama, Ryota. 2024. "[Cohort Change in the Educational Gradient in Women's Employment Around Childbirth in Japan](https://doi.org/10.1016/j.rssm.2023.100885)." *Research in Social Stratification and Mobility.* Online first.
+
+麦山亮太・小松恭子，2023，「[テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析](https://www.jil.go.jp/institute/zassi/backnumber/2023/05/index.html)」『日本労働研究雑誌』754: 87–102．
+
+Çineli, Beyda and Ryota Mugiyama. 2023. "[Money management over the course of marriage: Parenthood, employment and household financial organization in Japan](https://doi.org/10.1016/j.alcr.2023.100544)." *Advances in Life Course Research.* Online first.
+
+五十嵐彰・麦山亮太，2023，「[サーベイ実験を用いた日本における外国人雇用差別の検証：企業属性による異質性](https://doi.org/10.11218/ojjams.38.44)」『理論と方法』38(1): 44--58．
+
+Igarashi, Akira and Ryota Mugiyama. 2023. "[Whose tastes matter? Discrimination against immigrants in the Japanese labour market](https://doi.org/10.1080/1369183X.2022.2163230)." *Journal of Ethnic and Migration Studies.* 49(13): 3365--3388.
+
+麦山亮太，2022，「[出産・育児期における女性就業とその学歴差の長期趨勢：雇用労働力化に着目して]( https://doi.org/10.4057/jsr.73.86)」『社会学評論』73(2): 86--102．
+
+Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Class and Occupational Returns to Education at First Job: The Case of Japan](https://doi.org/10.1093/esr/jcab037)." *European Sociological Review.* 38(2): 269--285.
+
+打越文弥・麦山亮太・小松恭子，2021，「[職域分離とスキルからみる労働市場のジェンダー格差：日本版O-NET・国勢調査マッチングデータから得られる示唆](https://doi.org/10.11218/ojjams.36.65)」『理論と方法』36(1): 65--82．（特集論文）
+
+打越文弥・麦山亮太，2020，「[日本における性別職域分離の趨勢：1980--2005年国勢調査集計データを用いた要因分解](https://doi.org/10.24454/jps.1901001)」『人口学研究』56: 9--23．
+
+麦山亮太・西澤和也，2017，「[大企業と中小企業が新卒者に求める能力は異なるか：求人情報サイトへのトピックモデルの適用](https://doi.org/10.11218/ojjams.32.214)」『理論と方法』32(2): 214--227．
+
+麦山亮太，2017，「[職業経歴と結婚への移行：雇用形態・職種・企業規模と地位変化の効果における男女差](https://doi.org/10.4234/jjoffamilysociology.29.129)」『家族社会学研究』29(2): 129--141．
+
+麦山亮太，2017，「[キャリアの中断が生み出す格差：正規雇用獲得への持続的影響に着目して](https://doi.org/10.4057/jsr.68.248)」『社会学評論』68(2): 248--264．
+
+麦山亮太，2016，「[結婚は職業キャリアにいかなる影響を与えるのか？：無業・管理職への移動に関する男女比較分析](https://doi.org/10.4234/jjoffamilysociology.28.122)」『家族社会学研究』28(2): 122--135．
+
+## Book chapter
+
+麦山亮太，2023，「男性の職業・家族キャリア」家族社会学会編『[家族社会学事典](https://www.maruzen-publishing.co.jp/item/b305112.html)』丸善出版，xxx-xxx．
+
+打越文弥・麦山亮太，2022，「性別職域分離」数理社会学会監修『[数理社会学事典](https://www.maruzen-publishing.co.jp/item/?book_no=304405)』丸善出版，330–333．
+
+麦山亮太・吉川裕嗣，2015，「東アジアの学生の意識にみるアジア統合の展望：アジア人意識と脅威認識を軸として」[園田茂人編『アジア比較社会研究のフロンティアⅢ 連携と離反の東アジア』勁草書房](http://www.keisoshobo.co.jp/book/b193739.html)，231-255．
+
 ## Work in progress (as the corresponding author)
 
 Employment Uncertainty and Delayed Marriage in Society Where Cohabitations Are Not Prevalent: Incorporating Premarital Partnership
@@ -55,46 +95,6 @@ Evaluating the East Asian Model of Low Fertility Hypothesis: Evidence from Japan
 Upper Class Advantage: Differential Impacts of Social-origin on Earnings in Japan
 
 Educational Differences in Motherhood Penalties: The Impact on Trajectories of Employment, Working Hours, and Wages in Japan
-
-## Peer-reviewed paper
-
-麦山亮太・大里蒼一郎，2024（近刊），「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』．
-
-麦山亮太・田上皓大，2024（近刊），「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』．
-
-Mugiyama, Ryota. 2024. "[Cohort Change in the Educational Gradient in Women's Employment Around Childbirth in Japan](https://doi.org/10.1016/j.rssm.2023.100885)." *Research in Social Stratification and Mobility.* Online first.
-
-麦山亮太・小松恭子，2023，「[テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析](https://www.jil.go.jp/institute/zassi/backnumber/2023/05/index.html)」『日本労働研究雑誌』754: 87–102．
-
-Çineli, Beyda and Ryota Mugiyama. 2023. "[Money management over the course of marriage: Parenthood, employment and household financial organization in Japan](https://doi.org/10.1016/j.alcr.2023.100544)." *Advances in Life Course Research.* Online first.
-
-五十嵐彰・麦山亮太，2023，「[サーベイ実験を用いた日本における外国人雇用差別の検証：企業属性による異質性](https://doi.org/10.11218/ojjams.38.44)」『理論と方法』38(1): 44--58．
-
-Igarashi, Akira and Ryota Mugiyama. 2023. "[Whose tastes matter? Discrimination against immigrants in the Japanese labour market](https://doi.org/10.1080/1369183X.2022.2163230)." *Journal of Ethnic and Migration Studies.* 49(13): 3365--3388.
-
-麦山亮太，2022，「[出産・育児期における女性就業とその学歴差の長期趨勢：雇用労働力化に着目して]( https://doi.org/10.4057/jsr.73.86)」『社会学評論』73(2): 86--102．
-
-Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Class and Occupational Returns to Education at First Job: The Case of Japan](https://doi.org/10.1093/esr/jcab037)." *European Sociological Review.* 38(2): 269--285.
-
-打越文弥・麦山亮太・小松恭子，2021，「[職域分離とスキルからみる労働市場のジェンダー格差：日本版O-NET・国勢調査マッチングデータから得られる示唆](https://doi.org/10.11218/ojjams.36.65)」『理論と方法』36(1): 65--82．（特集論文）
-
-打越文弥・麦山亮太，2020，「[日本における性別職域分離の趨勢：1980--2005年国勢調査集計データを用いた要因分解](https://doi.org/10.24454/jps.1901001)」『人口学研究』56: 9--23．
-
-麦山亮太・西澤和也，2017，「[大企業と中小企業が新卒者に求める能力は異なるか：求人情報サイトへのトピックモデルの適用](https://doi.org/10.11218/ojjams.32.214)」『理論と方法』32(2): 214--227．
-
-麦山亮太，2017，「[職業経歴と結婚への移行：雇用形態・職種・企業規模と地位変化の効果における男女差](https://doi.org/10.4234/jjoffamilysociology.29.129)」『家族社会学研究』29(2): 129--141．
-
-麦山亮太，2017，「[キャリアの中断が生み出す格差：正規雇用獲得への持続的影響に着目して](https://doi.org/10.4057/jsr.68.248)」『社会学評論』68(2): 248--264．
-
-麦山亮太，2016，「[結婚は職業キャリアにいかなる影響を与えるのか？：無業・管理職への移動に関する男女比較分析](https://doi.org/10.4234/jjoffamilysociology.28.122)」『家族社会学研究』28(2): 122--135．
-
-## Book chapter
-
-麦山亮太，2023，「男性の職業・家族キャリア」家族社会学会編『[家族社会学事典](https://www.maruzen-publishing.co.jp/item/b305112.html)』丸善出版，xxx-xxx．
-
-打越文弥・麦山亮太，2022，「性別職域分離」数理社会学会監修『[数理社会学事典](https://www.maruzen-publishing.co.jp/item/?book_no=304405)』丸善出版，330–333．
-
-麦山亮太・吉川裕嗣，2015，「東アジアの学生の意識にみるアジア統合の展望：アジア人意識と脅威認識を軸として」[園田茂人編『アジア比較社会研究のフロンティアⅢ 連携と離反の東アジア』勁草書房](http://www.keisoshobo.co.jp/book/b193739.html)，231-255．
 
 ## Discussion paper
 

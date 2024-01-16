@@ -4,17 +4,17 @@ title: "Ryota Mugiyama"
 
 ![](images/IMG_3657-edited-1536x960.png)
 
-Welcome to Ryota Mugiyama's page.
+Welcome to Ryota Mugiyama's page. I work at Gakushuin University, Tokyo, Japan. I study social stratification-related topics such as labor market inequality, intergenerational mobility, or family formation with a focus on Japan. 
 
-麦山 亮太（むぎやま りょうた）のホームページへようこそ。学習院大学法学部政治学科で社会学の研究・教育をしています。専門は社会階層論、なかでも労働市場における不平等、世代間移動、家族形成などをテーマに、社会調査データの計量分析をもちいて研究しています。
+麦山 亮太（むぎやま りょうた）のホームページです。学習院大学法学部政治学科で社会学の研究・教育をしています。専門は社会階層論、なかでも労働市場における不平等、世代間移動、家族形成などをテーマに、社会調査データの計量分析をもちいて研究しています。
 
-くわしい経歴などは[Researchmap](https://researchmap.jp/mugiyama)をご参照ください。
+経歴等については[Profile](profile.html)、研究業績については[research](research.html)をご確認ください。
 
 大学院進学・研究生を希望されている方は[大学院進学・研究生希望の学生の方へ](students.html)をご確認ください。
 
 ***
 
-**Ryota Mugiyama**, Ph.D in Sociology.
+**Ryota Mugiyama**, Ph.D. in Sociology.
 
 Current institution: Department of Political Studies, Faculty of Law, Gakushuin University
 
