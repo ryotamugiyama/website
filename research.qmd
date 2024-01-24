@@ -48,7 +48,7 @@ Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Cla
 
 麦山亮太・吉川裕嗣，2015，「東アジアの学生の意識にみるアジア統合の展望：アジア人意識と脅威認識を軸として」[園田茂人編『アジア比較社会研究のフロンティアⅢ 連携と離反の東アジア』勁草書房](http://www.keisoshobo.co.jp/book/b193739.html)，231--255．
 
-## Work in progress (as the corresponding author)
+## Work in progress
 
 ### Intergenerational mobility
 
@@ -83,7 +83,7 @@ Rising Socioeconomic Inequality in Telework Eligibility: Evidence from before an
 
 Trends in Task Distribution in Japan, 1980--2020: Evidence from the Occupational Information Network of Japan and the Population Census Data (with Kyoko Komatsu)
 
-Educational Differences in Motherhood Penalties: The Impact on Trajectories of Employment, Working Hours, and Wages in Japan
+Educational Differences in Motherhood Penalty on Wage Trajectories in Japan
 
 ### Family Formation 
 
