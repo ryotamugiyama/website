@@ -14,11 +14,11 @@ Other research publications, past conference presentations, or my careers are fo
 
 麦山亮太・田上皓大，2024（近刊），「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』．
 
-Mugiyama, Ryota. 2024. "[Cohort Change in the Educational Gradient in Women's Employment Around Childbirth in Japan](https://doi.org/10.1016/j.rssm.2023.100885)." *Research in Social Stratification and Mobility.* Online first.
+Mugiyama, Ryota. 2024. "[Cohort Change in the Educational Gradient in Women's Employment Around Childbirth in Japan](https://doi.org/10.1016/j.rssm.2023.100885)." *Research in Social Stratification and Mobility.* 89: 100885.
 
 麦山亮太・小松恭子，2023，「[テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析](https://www.jil.go.jp/institute/zassi/backnumber/2023/05/index.html)」『日本労働研究雑誌』754: 87–102．
 
-Çineli, Beyda and Ryota Mugiyama. 2023. "[Money management over the course of marriage: Parenthood, employment and household financial organization in Japan](https://doi.org/10.1016/j.alcr.2023.100544)." *Advances in Life Course Research.* Online first.
+Çineli, Beyda and Ryota Mugiyama. 2023. "[Money management over the course of marriage: Parenthood, employment and household financial organization in Japan](https://doi.org/10.1016/j.alcr.2023.100544)." *Advances in Life Course Research.* 56: 100544.
 
 五十嵐彰・麦山亮太，2023，「[サーベイ実験を用いた日本における外国人雇用差別の検証：企業属性による異質性](https://doi.org/10.11218/ojjams.38.44)」『理論と方法』38(1): 44--58．
 
@@ -98,13 +98,13 @@ Impact of Increasing Employment Uncertainty on Cross-Cohort Marriage and Parenth
 
 Exposure to Non-partnership and Fertility Desires among Childless Population in Japan (with Ryohei Mogi and Alyce Raybould)
 
-Evaluating the East Asian Model of Low Fertility Hypothesis: Evidence from Japan (with Fumiya Uchikoshi and James M. Raymo)
+Evaluating the East Asian Model of Low Fertility Hypothesis: Evidence from Japan (with Fumiya Uchikoshi, Shohei Yoda, and James M. Raymo)
 
 - 2023-09-02 Presented at Japan Society for Family Sociology 33rd Annual Meeting at Kobe University.
 
 Exploring the Impact of Unimplemented Policies on Fertility and Marriage Desires: A Factorial Survey Experiment (with Shigeki Matsuda, Shin Okubo, Toma Kota, and Shohei Yoda)
 
-## Discussion paper
+## Working paper
 
 Mugiyama, Ryota and Aguru Ishibashi. 2023. "[Multigenerational Perspective on Trends in the Intergenerational Educational Mobility in Japan](https://csrdadps.com/paper/63)" *CSRDA Discussion Paper Series.* Center for Social Research and Data Archives, Institute of Social Science, The University of Tokyo. 63. 
 
@@ -125,6 +125,8 @@ Uchikoshi, Fumiya, Ryota Mugiyama and Megumi Oguro. 2020. "[Still Separate in ST
 麦山亮太，2016，「企業間移動がその後の賃金に与える持続的影響：無業経由の有無と男女の違いに着目して」[東京大学社会科学研究所附属社会調査・データアーカイブセンター編『2015年度課題公募型二次分析研究会 パネルデータを活用した就労・家族・意識の関連性についての研究 研究成果報告書』](http://csrda.iss.u-tokyo.ac.jp/rps/RPS056.pdf)，41-57．
 
 ## Miscs
+
+麦山亮太，2024，「社会階層研究の現在：労働関連分野を中心に」『日本労働研究雑誌』近刊．
 
 麦山亮太，2022，「[文献紹介 渡邊勉・吉川徹・佐藤嘉倫編『少子高齢社会の階層構造2 人生中期の階層構造』](https://doi.org/10.4234/jjoffamilysociology.34.152)」『家族社会学研究』34(2): 152．
 

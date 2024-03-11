@@ -18,9 +18,6 @@ website:
       - stata.qmd
       - r.qmd
       - blog.qmd
-    right: 
-      - icon: twitter
-        href: https://twitter.com/ryotamugiyama
     background: "primary"
   favicon: website.jpg
   twitter-card: 
