@@ -40,13 +40,6 @@ Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Cla
 
 麦山亮太，2016，「[結婚は職業キャリアにいかなる影響を与えるのか？：無業・管理職への移動に関する男女比較分析](https://doi.org/10.4234/jjoffamilysociology.28.122)」『家族社会学研究』28(2): 122--135．
 
-## Book chapter
-
-麦山亮太，2023，「男性の職業・家族キャリア」家族社会学会編『[家族社会学事典](https://www.maruzen-publishing.co.jp/item/b305112.html)』丸善出版，460--461．
-
-打越文弥・麦山亮太，2022，「性別職域分離」数理社会学会監修『[数理社会学事典](https://www.maruzen-publishing.co.jp/item/?book_no=304405)』丸善出版，330--333．
-
-麦山亮太・吉川裕嗣，2015，「東アジアの学生の意識にみるアジア統合の展望：アジア人意識と脅威認識を軸として」[園田茂人編『アジア比較社会研究のフロンティアⅢ 連携と離反の東アジア』勁草書房](http://www.keisoshobo.co.jp/book/b193739.html)，231--255．
 
 ## Work in progress
 
@@ -56,7 +49,7 @@ Multigenerational Perspective on Trends in Inequality of Educational Opportunity
 
 - 2023-10-25 Working paper is found here: [paper](https://csrdadps.com/paper/63).
 - 2023-08-15 Presented at RC28 Summer Meeting at University of Michigan. [slide](https://researchmap.jp/mugiyama/presentations/41971649)
-- 2023-03-08 Presented at Japanese Association of Mathematical Sociolgoy 74th Meeting at Tsukuba University. [slide](https://researchmap.jp/mugiyama/presentations/41548059)
+- 2023-03-08 Presented at Japanese Association of Mathematical Sociology 74th Meeting at Tsukuba University. [slide](https://researchmap.jp/mugiyama/presentations/41548059)
 
 Does Educational Expansion Weaken the Equalizing Power of College? Trends in Social Origin Differentials in Occupational Destination in Japan (with Kohei Toyonaga)
 
@@ -72,7 +65,9 @@ Changes in Geographic Accessibility to College and Inequality of Educational Opp
 -   2023-07-15 Presented at READI 1st Annual Conference at University of Tokyo. [slide](https://researchmap.jp/mugiyama/presentations/42557130)
 -   2022-08-28 Presented at Japanese Association of Mathematical Sociology 73rd Meeting.  [slide](https://researchmap.jp/mugiyama/presentations/38562818)
 
-Locating the Upper Class Advantage: Differential Impacts of Social Origin on Earnings in Japan
+Locating the Upper Class Advantage: Differential Impacts of Social Origin on Earnings by Destination in Japan
+
+- 2024-03-16 Presented at Japanese Association of Mathematical Sociology 76th Meeting at Osaka University. [slide](https://researchmap.jp/mugiyama/presentations/45509862)
 
 ### Labor market inequality
 
@@ -102,7 +97,9 @@ Evaluating the East Asian Model of Low Fertility Hypothesis: Evidence from Japan
 
 - 2023-09-02 Presented at Japan Society for Family Sociology 33rd Annual Meeting at Kobe University.
 
-Exploring the Impact of Unimplemented Policies on Fertility and Marriage Desires: A Factorial Survey Experiment (with Shigeki Matsuda, Shin Okubo, Toma Kota, and Shohei Yoda)
+Does Policy Affect Fertility and Marriage Desires Among Never-married Childless People: A Factorial Survey Experiment (with Shin Okubo, Toma Kota, Shohei Yoda, and Shigeki Matsuda)
+
+- 2024-03-17 Presented at Japanese Association of Mathematical Sociology 76th Meeting at Osaka University. [slide](https://researchmap.jp/mugiyama/presentations/45509867)
 
 ## Working paper
 
@@ -124,9 +121,17 @@ Uchikoshi, Fumiya, Ryota Mugiyama and Megumi Oguro. 2020. "[Still Separate in ST
 
 麦山亮太，2016，「企業間移動がその後の賃金に与える持続的影響：無業経由の有無と男女の違いに着目して」[東京大学社会科学研究所附属社会調査・データアーカイブセンター編『2015年度課題公募型二次分析研究会 パネルデータを活用した就労・家族・意識の関連性についての研究 研究成果報告書』](http://csrda.iss.u-tokyo.ac.jp/rps/RPS056.pdf)，41-57．
 
+## Book chapter
+
+麦山亮太，2023，「男性の職業・家族キャリア」家族社会学会編『[家族社会学事典](https://www.maruzen-publishing.co.jp/item/b305112.html)』丸善出版，460--461．
+
+打越文弥・麦山亮太，2022，「性別職域分離」数理社会学会監修『[数理社会学事典](https://www.maruzen-publishing.co.jp/item/?book_no=304405)』丸善出版，330--333．
+
+麦山亮太・吉川裕嗣，2015，「東アジアの学生の意識にみるアジア統合の展望：アジア人意識と脅威認識を軸として」[園田茂人編『アジア比較社会研究のフロンティアⅢ 連携と離反の東アジア』勁草書房](http://www.keisoshobo.co.jp/book/b193739.html)，231--255．
+
 ## Miscs
 
-麦山亮太，2024，「社会階層研究の現在：労働関連分野を中心に」『日本労働研究雑誌』近刊．
+麦山亮太，2024，「社会階層研究の現在：労働関連分野を中心に」『日本労働研究雑誌』765: 78--83．
 
 麦山亮太，2022，「[文献紹介 渡邊勉・吉川徹・佐藤嘉倫編『少子高齢社会の階層構造2 人生中期の階層構造』](https://doi.org/10.4234/jjoffamilysociology.34.152)」『家族社会学研究』34(2): 152．
 
