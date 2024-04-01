@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 ---
 
 ```{r, include = FALSE}
-dir <- "/Users/mugi/Documents/Active/Teaching/GU-socSem/2023-SocSem/DSS"
+dir <- "/Users/mugi/Documents/Teaching/GU-socSem/2023-SocSem/DSS"
 
 ```
 
