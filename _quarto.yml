@@ -17,6 +17,7 @@ website:
       - notes.qmd
       - stata.qmd
       - r.qmd
+      - occupation.qmd
       - blog.qmd
     background: "primary"
   favicon: website.jpg
