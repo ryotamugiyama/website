@@ -1,5 +1,6 @@
 ---
 title: "Research"
+date: "2024-04-03"
 ---
 
 Other research publications, past conference presentations, or my careers are found the following pages.

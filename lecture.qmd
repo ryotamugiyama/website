@@ -5,6 +5,7 @@ listing:
     - "lecture/*.qmd"
   sort: "date desc"
   type: default
+date: "2024-04-03"
 ---
 
 過去の講義の情報などをまとめています。
