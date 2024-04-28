@@ -1,6 +1,6 @@
 ---
 title: "Research"
-date: "2024-04-03"
+date: "today"
 ---
 
 Other research publications, past conference presentations, or my careers are found the following pages.
@@ -9,25 +9,29 @@ Other research publications, past conference presentations, or my careers are fo
 -   [googlescholar](https://scholar.google.co.jp/citations?user=oJnisc0AAAAJ)
 -   [ORCID](https://orcid.org/0000-0002-6157-5575)
 
-## Reviewed paper
+## Peer-reviewed paper
+
+### in English
+
+Mugiyama, Ryota. 2024. "[Cohort Change in the Educational Gradient in Women's Employment Around Childbirth in Japan](https://doi.org/10.1016/j.rssm.2023.100885)." *Research in Social Stratification and Mobility.* 89: 100885.
+
+Çineli, Beyda and Ryota Mugiyama. 2023. "[Money management over the course of marriage: Parenthood, employment and household financial organization in Japan](https://doi.org/10.1016/j.alcr.2023.100544)." *Advances in Life Course Research.* 56: 100544.
+
+Igarashi, Akira and Ryota Mugiyama. 2023. "[Whose tastes matter? Discrimination against immigrants in the Japanese labour market](https://doi.org/10.1080/1369183X.2022.2163230)." *Journal of Ethnic and Migration Studies.* 49(13): 3365--3388.
+
+Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Class and Occupational Returns to Education at First Job: The Case of Japan](https://doi.org/10.1093/esr/jcab037)." *European Sociological Review.* 38(2): 269--285.
+
+### in Japanese
 
 麦山亮太・大里蒼一郎，2024（近刊），「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』．
 
 麦山亮太・田上皓大，2024（近刊），「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』．
 
-Mugiyama, Ryota. 2024. "[Cohort Change in the Educational Gradient in Women's Employment Around Childbirth in Japan](https://doi.org/10.1016/j.rssm.2023.100885)." *Research in Social Stratification and Mobility.* 89: 100885.
-
 麦山亮太・小松恭子，2023，「[テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析](https://www.jil.go.jp/institute/zassi/backnumber/2023/05/index.html)」『日本労働研究雑誌』754: 87–102．
-
-Çineli, Beyda and Ryota Mugiyama. 2023. "[Money management over the course of marriage: Parenthood, employment and household financial organization in Japan](https://doi.org/10.1016/j.alcr.2023.100544)." *Advances in Life Course Research.* 56: 100544.
 
 五十嵐彰・麦山亮太，2023，「[サーベイ実験を用いた日本における外国人雇用差別の検証：企業属性による異質性](https://doi.org/10.11218/ojjams.38.44)」『理論と方法』38(1): 44--58．
 
-Igarashi, Akira and Ryota Mugiyama. 2023. "[Whose tastes matter? Discrimination against immigrants in the Japanese labour market](https://doi.org/10.1080/1369183X.2022.2163230)." *Journal of Ethnic and Migration Studies.* 49(13): 3365--3388.
-
-麦山亮太，2022，「[出産・育児期における女性就業とその学歴差の長期趨勢：雇用労働力化に着目して]( https://doi.org/10.4057/jsr.73.86)」『社会学評論』73(2): 86--102．
-
-Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Class and Occupational Returns to Education at First Job: The Case of Japan](https://doi.org/10.1093/esr/jcab037)." *European Sociological Review.* 38(2): 269--285.
+麦山亮太，2022，「[出産・育児期における女性就業とその学歴差の長期趨勢：雇用労働力化に着目して](https://doi.org/10.4057/jsr.73.86)」『社会学評論』73(2): 86--102．[補足表](research/mugiyama2022jsr_request.pdf)
 
 打越文弥・麦山亮太・小松恭子，2021，「[職域分離とスキルからみる労働市場のジェンダー格差：日本版O-NET・国勢調査マッチングデータから得られる示唆](https://doi.org/10.11218/ojjams.36.65)」『理論と方法』36(1): 65--82．（特集論文）
 
@@ -41,12 +45,11 @@ Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Cla
 
 麦山亮太，2016，「[結婚は職業キャリアにいかなる影響を与えるのか？：無業・管理職への移動に関する男女比較分析](https://doi.org/10.4234/jjoffamilysociology.28.122)」『家族社会学研究』28(2): 122--135．
 
-
 ## Work in progress
 
 ### Intergenerational mobility
 
-Multigenerational Perspective on Trends in Inequality of Educational Opportunity in Japan (with Aguru Ishibashi)
+Multigenerational Perspective on Trends in the Inequality of Educational Opportunity in Japan (with Aguru Ishibashi)
 
 - 2024-04-20 Presented at PAA Annual Meeting  at Hyatt Regency Columbus, Ohio. [poster](https://researchmap.jp/mugiyama/presentations/45595571)
 - 2023-10-25 Working paper is found here. [paper](https://csrdadps.com/paper/63)
@@ -59,6 +62,7 @@ Does Educational Expansion Weaken the Equalizing Power of College? Trends in Soc
 
 Downward Mobility and Loneliness: Consequences of Intergenerational Educational Mobility in Japan (with Aram Kwon and Takahiro Tabuchi)
 
+- 2024-04-11 Working paper is found here. [paper](https://csrdadps.com/paper/83)
 - 2023-08-15 Presented at RC28 Summer Meeting at University of Michigan. [poster](https://researchmap.jp/mugiyama/presentations/41971642)
 
 Changes in Geographic Accessibility to College and Inequality of Educational Opportunity (with Kohei Toyonaga)
@@ -69,6 +73,7 @@ Changes in Geographic Accessibility to College and Inequality of Educational Opp
 
 Locating the Upper Class Advantage: Differential Impacts of Social Origin on Earnings by Destination in Japan
 
+- 2024-05-18 Presented at RC28 Spring Meeting at NYU Shanghai. [slide](https://researchmap.jp/mugiyama/presentations/45741717)
 - 2024-03-16 Presented at JAMS 76th Meeting at Osaka University. [slide](https://researchmap.jp/mugiyama/presentations/45509862)
 
 ### Labor market inequality
@@ -81,6 +86,8 @@ Rising Socioeconomic Inequality in Telework Eligibility: Evidence from before an
 Trends in Task Distribution in Japan, 1980--2020: Evidence from the Occupational Information Network of Japan and the Population Census Data (with Kyoko Komatsu)
 
 Educational Differences in Motherhood Penalty on Wage Trajectories in Japan
+
+- 2024-06-09 Presented at PAoJ 76th Annual Meeting at Chuo University. [slide](https://researchmap.jp/mugiyama/presentations/45741726)
 
 ### Family Formation 
 
@@ -105,28 +112,6 @@ Evaluating the East Asian Model of Low Fertility Hypothesis: Evidence from Japan
 Does Policy Affect Fertility and Marriage Desires Among Never-Married Childless People? A Factorial Survey Experiment (with Shin Okubo, Toma Kota, Shohei Yoda, and Shigeki Matsuda)
 
 - 2024-03-17 Presented at JAMS 76th Meeting at Osaka University. [slide](https://researchmap.jp/mugiyama/presentations/45509867)
-
-## Working paper
-
-Mugiyama, Ryota, Aram Kwon, and Takahiro Tabuchi. 2024. "[Downward Mobility and Loneliness: Consequences of Intergenerational Educational Mobility in Japan](https://csrdadps.com/paper/xx)" *CSRDA Discussion Paper Series.* Center for Social Research and Data Archives, Institute of Social Science, The University of Tokyo. xx. 
-
-Mugiyama, Ryota and Aguru Ishibashi. 2023. "[Multigenerational Perspective on Trends in the Intergenerational Educational Mobility in Japan](https://csrdadps.com/paper/63)" *CSRDA Discussion Paper Series.* Center for Social Research and Data Archives, Institute of Social Science, The University of Tokyo. 63. 
-
-Mugiyama, Ryota and Kyoko Komatsu. 2023. "[Rising socioeconomic inequality in telework eligibility: Evidence from before and after the COVID-19 outbreak in Japan](https://csrdadps.com/paper/57)" *CSRDA Discussion Paper Series.* Center for Social Research and Data Archives, Institute of Social Science, The University of Tokyo. 57. 
-
-Mugiyama, Ryota. 2023. "[Employment Uncertainty and Delayed Marriage in a Society Where Cohabitations Are Not Prevalent: Incorporating Premarital Partnership](https://csrdadps.com/paper/42)" *CSRDA Discussion Paper Series.* Center for Social Research and Data Archives, Institute of Social Science, The University of Tokyo. 42. 
-
-小松恭子・麦山亮太，2022，「[日本の労働市場におけるタスクの分布のトレンド：日本版O-NETと国勢調査のマッチングデータから得られた知見](https://www.jil.go.jp/tokusyu/covid-19/dp/202203/docs/DP4.pdf)」労働政策研究・研修機構『職業特性に着目したコロナウイルス流行の雇用・所得格差等への影響に関する研究：日本版O-NETの活用による研究（ディスカッションペーパー集）』．
-
-Mugiyama, Ryota and Kohei Toyonaga. 2022. "Does Educational Expansion Weaken the Equalizing Power of College? Trends in Social Origin Differentials in Occupational Destination in Japan."竹ノ下弘久編『科学研究費補助金基盤研究（B）（18H00931）「家族と労働市場における階級，ジェンダー，エスニシティの相互作用と不平等の比較研究」 研究成果報告書』42--72．
-
-小松恭子・麦山亮太，2021，「[日本版O-NETの数値情報を用いた応用研究の可能性：日本版O-NETと国勢調査の職業マッチングデータを活用したタスクのトレンド分析](https://www.jil.go.jp/institute/discussion/2021/21-11.html)」JILPT Discussion Paper. 21(11).
-
-Uchikoshi, Fumiya, Ryota Mugiyama and Megumi Oguro. 2020. "[Still Separate in STEM? Trends in Sex Segregation by Field of Study in Japan, 1975--2019](http://www.ier.hit-u.ac.jp/Common/publication/DP/DPS-A710.pdf)." Institute of Economic Research, Hitotsubashi University Discussion Paper Series A, 710.
-
-麦山亮太，2017，「地位へのマッチングからみる賃金格差の生成過程：企業規模と雇用形態に着目して」[東京大学社会科学研究所附属社会調査・データアーカイブ研究センター編『2016年度参加者公募型二次分析研究会 現代日本の格差と不平等に関するデータの二次分析 研究成果報告書』](http://csrda.iss.u-tokyo.ac.jp/rps/RPS059.pdf)，49--67．
-
-麦山亮太，2016，「企業間移動がその後の賃金に与える持続的影響：無業経由の有無と男女の違いに着目して」[東京大学社会科学研究所附属社会調査・データアーカイブセンター編『2015年度課題公募型二次分析研究会 パネルデータを活用した就労・家族・意識の関連性についての研究 研究成果報告書』](http://csrda.iss.u-tokyo.ac.jp/rps/RPS056.pdf)，41-57．
 
 ## Book chapter
 
