@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ryota Mugiyama (Department of Political Studies, Gakushuin University)">
-<meta name="dcterms.date" content="2024-04-28">
+<meta name="dcterms.date" content="2024-05-01">
 
 <title>Ryota Mugiyama - Data analysis for social science in tidyverse</title>
 <style>
@@ -97,6 +97,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
 <meta name="twitter:title" content="Ryota Mugiyama - Data analysis for social science in tidyverse">
@@ -263,7 +265,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 28, 2024</p>
+      <p class="date">May 1, 2024</p>
     </div>
   </div>
   
@@ -367,7 +369,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 3 regular       583   606         1</code></pre>
 </div>
 </div>
-<p>Edit→Preferences…（ない場合は、Tools→Global options…）を選択する。以下の画面が開いたら、Codeを選択して、以下の「Use native pipe operator, |&gt; (requires R 4.1+)」のチェックを外すと、上記ショートカットキーを入力したときに<code>%&gt;%</code>が表示されるようになる。</p>
+<p>Edit→Preferences…（ない場合は、Tools→Global options…）を選択する。以下の画面が開いたら、Codeを選択して、以下の「Use native pipe operator, |&gt; (requires R 4.1+)」のチェックを外すと、上記ショートカットキーを入力したときに<code>%&gt;%</code>が表示されるようになる。どちらでも違いはないが、以下ではたんに麦山がこれに慣れているというだけの理由から、<code>%&gt;%</code>を使うことにする。</p>
 <p><img src="../images/pipe.png" class="img-fluid"></p>
 <p><code>dim(star)</code>についても<code>%&gt;%</code>演算子を使って書くことができる。</p>
 <div class="cell">
@@ -932,8 +934,6 @@ leave         1         2         3         4         5
 <pre><code>[1] -0.7633185</code></pre>
 </div>
 </div>
-<hr>
-<p><strong>これ以降は作業途中です（2023/05/08現在）</strong></p>
 </section>
 </section>
 </section>
@@ -941,9 +941,11 @@ leave         1         2         3         4         5
 <h1>Chapter 4 Predicting outcomes using linear regression</h1>
 <section id="predicting-gdp-using-prior-gdp" class="level2">
 <h2 class="anchored" data-anchor-id="predicting-gdp-using-prior-gdp">4.4 Predicting GDP using prior GDP</h2>
+<p><code>read_csv()</code>でデータを読み込む。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb104"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a>co <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"countries.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p><code>head()</code>で、データの最初の6行を表示できる。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb105"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb105-1"><a href="#cb105-1" aria-hidden="true" tabindex="-1"></a>co <span class="sc">%&gt;%</span> <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -958,6 +960,7 @@ leave         1         2         3         4         5
 6 France    1.58     1.21   8.51       6.91 </code></pre>
 </div>
 </div>
+<p><code>dim()</code>で、データの行数と列数を表示できる。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb107"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb107-1"><a href="#cb107-1" aria-hidden="true" tabindex="-1"></a>co <span class="sc">%&gt;%</span> <span class="fu">dim</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -966,14 +969,16 @@ leave         1         2         3         4         5
 </div>
 <section id="relationship-between-gdp-and-prior-gdp" class="level3">
 <h3 class="anchored" data-anchor-id="relationship-between-gdp-and-prior-gdp">4.4.1 Relationship between GDP and prior GDP</h3>
+<p><code>ggplot()</code>を使って散布図を描いてみる。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb109"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a>co <span class="sc">%&gt;%</span> </span>
-<span id="cb109-2"><a href="#cb109-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> prior_gdp, <span class="at">y =</span> gdp)) <span class="sc">+</span> </span>
-<span id="cb109-3"><a href="#cb109-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb109-2"><a href="#cb109-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> prior_gdp, <span class="at">y =</span> gdp)) <span class="sc">+</span> <span class="co"># x軸にprior_gdp、y軸にgdpを指定</span></span>
+<span id="cb109-3"><a href="#cb109-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="co"># 散布図を描く</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="dss_tidyverse_files/figure-html/unnamed-chunk-64-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p><code>with(cor())</code>を使って相関係数を求める。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb110"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a>co <span class="sc">%&gt;%</span> </span>
 <span id="cb110-2"><a href="#cb110-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">with</span>(<span class="fu">cor</span>(gdp, prior_gdp))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -981,6 +986,7 @@ leave         1         2         3         4         5
 <pre><code>[1] 0.9903451</code></pre>
 </div>
 </div>
+<p>散布図に回帰直線を書くときには、<code>geom_smooth()</code>を使う。<code>method = "lm"</code>で回帰直線を指定し、<code>se = FALSE</code>で信頼区間を描かないように指定する<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a>co <span class="sc">%&gt;%</span> </span>
 <span id="cb112-2"><a href="#cb112-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> prior_gdp, <span class="at">y =</span> gdp)) <span class="sc">+</span> </span>
@@ -996,11 +1002,13 @@ leave         1         2         3         4         5
 </section>
 <section id="with-natural-logarithm-transformations" class="level3">
 <h3 class="anchored" data-anchor-id="with-natural-logarithm-transformations">4.4.2 With natural logarithm transformations</h3>
+<p>自然対数変換を行った変数（列）を、データフレーム（<code>co</code>）に追加する。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb114"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a>co <span class="ot">&lt;-</span> co <span class="sc">%&gt;%</span> </span>
 <span id="cb114-2"><a href="#cb114-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">log_gdp =</span> <span class="fu">log</span>(gdp)) <span class="sc">%&gt;%</span>  </span>
 <span id="cb114-3"><a href="#cb114-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">log_prior_gdp =</span> <span class="fu">log</span>(prior_gdp))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>もともとのgdpの分布は右に歪んでいる（低い方に偏っている）。対数変換を行うことで、分布が左右対称の正規分布に近づくことがわかる。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb115"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb115-1"><a href="#cb115-1" aria-hidden="true" tabindex="-1"></a>co <span class="sc">%&gt;%</span> </span>
 <span id="cb115-2"><a href="#cb115-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> gdp)) <span class="sc">+</span> </span>
@@ -1023,6 +1031,7 @@ leave         1         2         3         4         5
 <p><img src="dss_tidyverse_files/figure-html/unnamed-chunk-69-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>1年前のGDPについても同様である。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb119"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb119-1"><a href="#cb119-1" aria-hidden="true" tabindex="-1"></a>co <span class="sc">%&gt;%</span> </span>
 <span id="cb119-2"><a href="#cb119-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> prior_gdp)) <span class="sc">+</span> </span>
@@ -1045,6 +1054,7 @@ leave         1         2         3         4         5
 <p><img src="dss_tidyverse_files/figure-html/unnamed-chunk-71-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>1年前の対数GDPと現在の対数GDPの散布図を描いてみる。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb123"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb123-1"><a href="#cb123-1" aria-hidden="true" tabindex="-1"></a>co <span class="sc">%&gt;%</span> </span>
 <span id="cb123-2"><a href="#cb123-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> log_prior_gdp, <span class="at">y =</span> log_gdp)) <span class="sc">+</span> </span>
@@ -1053,6 +1063,7 @@ leave         1         2         3         4         5
 <p><img src="dss_tidyverse_files/figure-html/unnamed-chunk-72-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p><code>with(cor())</code>で相関係数を求める。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb124"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb124-1"><a href="#cb124-1" aria-hidden="true" tabindex="-1"></a>co <span class="sc">%&gt;%</span> </span>
 <span id="cb124-2"><a href="#cb124-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">with</span>(<span class="fu">cor</span>(log_gdp, log_prior_gdp))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1064,6 +1075,11 @@ leave         1         2         3         4         5
 </section>
 <section id="predicting-gdp-growth-using-night-time-light-emissions" class="level2">
 <h2 class="anchored" data-anchor-id="predicting-gdp-growth-using-night-time-light-emissions">4.5 Predicting GDP growth using night-time light emissions</h2>
+<p><span class="math inline">\(t\)</span>年のGDP成長率（<span class="math inline">\(\Delta GDP_t\)</span>とする）は、次のように計算される。</p>
+<p><span class="math display">\[
+GDP_t = \frac{GDP_{t} - GDP_{t-1}}{GDP_{t-1}} \times 100
+\]</span></p>
+<p>GDP成長率、および光量の成長率の変数（列）を作成して、データフレーム（<code>co</code>）に追加する。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb126"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb126-1"><a href="#cb126-1" aria-hidden="true" tabindex="-1"></a>co <span class="ot">&lt;-</span> co <span class="sc">%&gt;%</span> </span>
 <span id="cb126-2"><a href="#cb126-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">gdp_change =</span> (gdp <span class="sc">-</span> prior_gdp)<span class="sc">/</span>prior_gdp <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">%&gt;%</span> </span>
@@ -1080,6 +1096,7 @@ leave         1         2         3         4         5
 <p><img src="dss_tidyverse_files/figure-html/unnamed-chunk-75-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>光量の成長率のヒストグラムを描いてみる。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb129"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb129-1"><a href="#cb129-1" aria-hidden="true" tabindex="-1"></a>co <span class="sc">%&gt;%</span> </span>
 <span id="cb129-2"><a href="#cb129-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> light_change)) <span class="sc">+</span> </span>
@@ -1091,6 +1108,7 @@ leave         1         2         3         4         5
 <p><img src="dss_tidyverse_files/figure-html/unnamed-chunk-76-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>ついで、光量の成長率とGDP成長率の散布図を描いてみる。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb131"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb131-1"><a href="#cb131-1" aria-hidden="true" tabindex="-1"></a>co <span class="sc">%&gt;%</span> </span>
 <span id="cb131-2"><a href="#cb131-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> light_change, <span class="at">y =</span> gdp_change)) <span class="sc">+</span> </span>
@@ -1099,6 +1117,7 @@ leave         1         2         3         4         5
 <p><img src="dss_tidyverse_files/figure-html/unnamed-chunk-77-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>両者の相関係数を計算する。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb132"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb132-1"><a href="#cb132-1" aria-hidden="true" tabindex="-1"></a>co <span class="sc">%&gt;%</span> </span>
 <span id="cb132-2"><a href="#cb132-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">with</span>(<span class="fu">cor</span>(gdp_change, light_change))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1109,6 +1128,7 @@ leave         1         2         3         4         5
 </section>
 <section id="measuring-how-well-the-model-fits-the-data-with-coefficient-of-determination-r2" class="level2">
 <h2 class="anchored" data-anchor-id="measuring-how-well-the-model-fits-the-data-with-coefficient-of-determination-r2">4.6 Measuring how well the model fits the data with coefficient of determination, R^2</h2>
+<p>相関係数を2乗した値を決定係数という。決定係数は、従属変数Yの変動のうち、独立変数Xによって説明される割合を示す。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb134"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb134-1"><a href="#cb134-1" aria-hidden="true" tabindex="-1"></a>co <span class="sc">%&gt;%</span> </span>
 <span id="cb134-2"><a href="#cb134-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">with</span>(<span class="fu">cor</span>(gdp, prior_gdp)<span class="sc">^</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1126,12 +1146,14 @@ leave         1         2         3         4         5
 <pre><code>[1] 0.2095508</code></pre>
 </div>
 </div>
+<p>社会科学の場合は、予測に関心があることは少なく、むしろ、変数間の関連がどの程度あるのかを明らかにすることに主眼がある。そのため、決定係数が高いかどうかはあまり気にする必要はない。</p>
 </section>
 </section>
 <section id="chapter-5-estimating-causal-effects-with-observational-data" class="level1">
 <h1>Chapter 5 Estimating causal effects with observational data</h1>
 <section id="the-effect-of-russian-tv-on-ukrainians-voting-behavior" class="level2">
 <h2 class="anchored" data-anchor-id="the-effect-of-russian-tv-on-ukrainians-voting-behavior">5.3 The effect of Russian TV on Ukrainians’ voting behavior</h2>
+<p>データを読み込む。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb140"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb140-1"><a href="#cb140-1" aria-hidden="true" tabindex="-1"></a>uas <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"UA_survey.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -1155,6 +1177,7 @@ leave         1         2         3         4         5
 </div>
 <section id="using-the-simple-linear-model-to-compute-the-difference-in-means-estimator" class="level3">
 <h3 class="anchored" data-anchor-id="using-the-simple-linear-model-to-compute-the-difference-in-means-estimator">5.3.1 Using the simple linear model to compute the difference-in-means estimator</h3>
+<p>教科書にかかれているとおり、ロシアのテレビを見ていない地域における親ロシア派の投票率と、ロシアのテレビを見ている地域における親ロシア派の投票率を求めて、それらの差を計算してみる。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb145"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb145-1"><a href="#cb145-1" aria-hidden="true" tabindex="-1"></a>mean0 <span class="ot">&lt;-</span> uas <span class="sc">%&gt;%</span> </span>
 <span id="cb145-2"><a href="#cb145-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(russian_tv <span class="sc">==</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span> </span>
@@ -1168,12 +1191,12 @@ leave         1         2         3         4         5
 <pre><code>[1] 0.1191139</code></pre>
 </div>
 </div>
-<p>別解：</p>
+<p>別の方法として、<code>group_by()</code>を使ってサンプルを2つのグループに分けたうえで、それぞれのグループ別に平均値を計算し、両者の差を求めるという方法もある。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb147"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb147-1"><a href="#cb147-1" aria-hidden="true" tabindex="-1"></a>uas <span class="sc">%&gt;%</span> </span>
 <span id="cb147-2"><a href="#cb147-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(russian_tv) <span class="sc">%&gt;%</span> </span>
 <span id="cb147-3"><a href="#cb147-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">mean =</span> <span class="fu">mean</span>(pro_russian_vote)) <span class="sc">%&gt;%</span> </span>
-<span id="cb147-4"><a href="#cb147-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">diff =</span> mean <span class="sc">-</span> <span class="fu">lag</span>(mean))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb147-4"><a href="#cb147-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">diff =</span> mean <span class="sc">-</span> <span class="fu">lag</span>(mean, <span class="at">n =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 3
   russian_tv  mean   diff
@@ -1192,6 +1215,7 @@ leave         1         2         3         4         5
 <pre><code>[1] 0.8127747</code></pre>
 </div>
 </div>
+<p>ロシアとウクライナの国境から25km以内に住んでいるかどうか（<code>within_25km</code>）と、ロシアのテレビを見ているかどうかのクロス表を作ってみよう。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb151"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb151-1"><a href="#cb151-1" aria-hidden="true" tabindex="-1"></a>uas <span class="sc">%&gt;%</span> </span>
 <span id="cb151-2"><a href="#cb151-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">with</span>(<span class="fu">table</span>(within_25km, russian_tv))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1229,10 +1253,12 @@ within_25km   0   1
 </div>
 <section id="using-the-simple-linear-model-to-compute-the-difference-in-means-estimator-1" class="level3">
 <h3 class="anchored" data-anchor-id="using-the-simple-linear-model-to-compute-the-difference-in-means-estimator-1">5.4.1 Using the simple linear model to compute the difference-in-means estimator</h3>
+<p>今回選挙で親ロシア派の候補者に投票した人の割合（<code>pro_russian</code>）と、前回選挙で親ロシア派の候補者に投票した人の割合（<code>prior_pro_russian</code>）の差の変数を作成して、データフレーム<code>uap</code>に追加する。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb158"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb158-1"><a href="#cb158-1" aria-hidden="true" tabindex="-1"></a>uap <span class="ot">&lt;-</span> uap <span class="sc">%&gt;%</span> </span>
 <span id="cb158-2"><a href="#cb158-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pro_russian_change =</span> pro_russian <span class="sc">-</span> prior_pro_russian)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>今回選挙と前回選挙の差の変数のヒストグラムを見てみよう。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb159"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb159-1"><a href="#cb159-1" aria-hidden="true" tabindex="-1"></a>uap <span class="sc">%&gt;%</span> </span>
 <span id="cb159-2"><a href="#cb159-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> pro_russian_change)) <span class="sc">+</span> </span>
@@ -1257,7 +1283,13 @@ within_25km   0   1
 </section>
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><code>se = TRUE</code>とすると、95%信頼区間が表示される。信頼区間についての説明は、Chapter 7を参照のこと。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

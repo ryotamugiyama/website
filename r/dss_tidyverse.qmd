@@ -1,7 +1,7 @@
 ---
 title: "Data analysis for social science in tidyverse"
 author: "Ryota Mugiyama (Department of Political Studies, Gakushuin University)"
-date: "`r Sys.Date()`"
+date: "2024-05-01"
 ---
 
 ```{r, include = FALSE}
@@ -78,8 +78,7 @@ star %>%
   head(n = 3)
 ```
 
-
-Edit→Preferences...（ない場合は、Tools→Global options...）を選択する。以下の画面が開いたら、Codeを選択して、以下の「Use native pipe operator, \|\> (requires R 4.1+)」のチェックを外すと、上記ショートカットキーを入力したときに`%>%`が表示されるようになる。
+Edit→Preferences...（ない場合は、Tools→Global options...）を選択する。以下の画面が開いたら、Codeを選択して、以下の「Use native pipe operator, \|\> (requires R 4.1+)」のチェックを外すと、上記ショートカットキーを入力したときに`%>%`が表示されるようになる。どちらでも違いはないが、以下ではたんに麦山がこれに慣れているというだけの理由から、`%>%`を使うことにする。
 
 ![](../images/pipe.png)
 
@@ -506,12 +505,11 @@ dis1 %>%
   with(cor(leave, high_education))
 ```
 
----
-**これ以降は作業途中です（2023/05/08現在）**
-
 # Chapter 4 Predicting outcomes using linear regression
 
 ## 4.4 Predicting GDP using prior GDP
+
+`read_csv()`でデータを読み込む。
 
 ```{r, eval = FALSE}
 co <- read_csv("countries.csv")
@@ -521,9 +519,13 @@ co <- read_csv("countries.csv")
 co <- read_csv(paste0(dir, "/", "countries.csv"))
 ```
 
+`head()`で、データの最初の6行を表示できる。
+
 ```{r}
 co %>% head()
 ```
+
+`dim()`で、データの行数と列数を表示できる。
 
 ```{r}
 co %>% dim()
@@ -531,16 +533,24 @@ co %>% dim()
 
 ### 4.4.1 Relationship between GDP and prior GDP
 
+`ggplot()`を使って散布図を描いてみる。
+
 ```{r}
 co %>% 
-  ggplot(aes(x = prior_gdp, y = gdp)) + 
-  geom_point()
+  ggplot(aes(x = prior_gdp, y = gdp)) + # x軸にprior_gdp、y軸にgdpを指定
+  geom_point() # 散布図を描く
 ```
+
+`with(cor())`を使って相関係数を求める。
 
 ```{r}
 co %>% 
   with(cor(gdp, prior_gdp))
 ```
+
+散布図に回帰直線を書くときには、`geom_smooth()`を使う。`method = "lm"`で回帰直線を指定し、`se = FALSE`で信頼区間を描かないように指定する[^1]。
+
+[^1]: `se = TRUE`とすると、95%信頼区間が表示される。信頼区間についての説明は、Chapter 7を参照のこと。
 
 ```{r}
 co %>% 
@@ -551,11 +561,15 @@ co %>%
 
 ### 4.4.2 With natural logarithm transformations
 
+自然対数変換を行った変数（列）を、データフレーム（`co`）に追加する。
+
 ```{r}
 co <- co %>% 
   mutate(log_gdp = log(gdp)) %>%  
   mutate(log_prior_gdp = log(prior_gdp))
 ```
+
+もともとのgdpの分布は右に歪んでいる（低い方に偏っている）。対数変換を行うことで、分布が左右対称の正規分布に近づくことがわかる。
 
 ```{r}
 co %>% 
@@ -569,6 +583,8 @@ co %>%
   geom_histogram()
 ```
 
+1年前のGDPについても同様である。
+
 ```{r}
 co %>% 
   ggplot(aes(x = prior_gdp)) + 
@@ -581,11 +597,15 @@ co %>%
   geom_histogram()
 ```
 
+1年前の対数GDPと現在の対数GDPの散布図を描いてみる。
+
 ```{r}
 co %>% 
   ggplot(aes(x = log_prior_gdp, y = log_gdp)) + 
   geom_point()
 ```
+
+`with(cor())`で相関係数を求める。
 
 ```{r}
 co %>% 
@@ -593,6 +613,14 @@ co %>%
 ```
 
 ## 4.5 Predicting GDP growth using night-time light emissions
+
+$t$年のGDP成長率（$\Delta GDP_t$とする）は、次のように計算される。
+
+$$
+GDP_t = \frac{GDP_{t} - GDP_{t-1}}{GDP_{t-1}} \times 100
+$$
+
+GDP成長率、および光量の成長率の変数（列）を作成して、データフレーム（`co`）に追加する。
 
 ```{r}
 co <- co %>% 
@@ -606,11 +634,15 @@ co %>%
   geom_histogram()
 ```
 
+光量の成長率のヒストグラムを描いてみる。
+
 ```{r}
 co %>% 
   ggplot(aes(x = light_change)) + 
   geom_histogram()
 ```
+
+ついで、光量の成長率とGDP成長率の散布図を描いてみる。
 
 ```{r}
 co %>% 
@@ -618,12 +650,16 @@ co %>%
   geom_point()
 ```
 
+両者の相関係数を計算する。
+
 ```{r}
 co %>% 
   with(cor(gdp_change, light_change))
 ```
 
 ## 4.6 Measuring how well the model fits the data with coefficient of determination, R\^2
+
+相関係数を2乗した値を決定係数という。決定係数は、従属変数Yの変動のうち、独立変数Xによって説明される割合を示す。
 
 ```{r}
 co %>% 
@@ -636,10 +672,13 @@ co %>%
   with(cor(gdp_change, light_change)^2)
 ```
 
+社会科学の場合は、予測に関心があることは少なく、むしろ、変数間の関連がどの程度あるのかを明らかにすることに主眼がある。そのため、決定係数が高いかどうかはあまり気にする必要はない。
+
 # Chapter 5 Estimating causal effects with observational data
 
 ## 5.3 The effect of Russian TV on Ukrainians' voting behavior
 
+データを読み込む。
 
 ```{r, eval = FALSE}
 uas <- read_csv("UA_survey.csv")
@@ -656,6 +695,8 @@ uas %>% dim()
 
 ### 5.3.1 Using the simple linear model to compute the difference-in-means estimator
 
+教科書にかかれているとおり、ロシアのテレビを見ていない地域における親ロシア派の投票率と、ロシアのテレビを見ている地域における親ロシア派の投票率を求めて、それらの差を計算してみる。
+
 ```{r}
 mean0 <- uas %>% 
   filter(russian_tv == 0) %>% 
@@ -667,13 +708,13 @@ mean1 <- uas %>%
 mean1 - mean0
 ```
 
-別解：
+別の方法として、`group_by()`を使ってサンプルを2つのグループに分けたうえで、それぞれのグループ別に平均値を計算し、両者の差を求めるという方法もある。
 
 ```{r}
 uas %>% 
   group_by(russian_tv) %>% 
   summarize(mean = mean(pro_russian_vote)) %>% 
-  mutate(diff = mean - lag(mean))
+  mutate(diff = mean - lag(mean, n = 1))
 ```
 
 ### 5.3.2 Controlling for confounders using a multiple linear regression model
@@ -682,6 +723,8 @@ uas %>%
 uas %>% 
   with(cor(within_25km, russian_tv))
 ```
+
+ロシアとウクライナの国境から25km以内に住んでいるかどうか（`within_25km`）と、ロシアのテレビを見ているかどうかのクロス表を作ってみよう。
 
 ```{r}
 uas %>% 
@@ -705,10 +748,14 @@ uap %>% dim()
 
 ### 5.4.1 Using the simple linear model to compute the difference-in-means estimator
 
+今回選挙で親ロシア派の候補者に投票した人の割合（`pro_russian`）と、前回選挙で親ロシア派の候補者に投票した人の割合（`prior_pro_russian`）の差の変数を作成して、データフレーム`uap`に追加する。
+
 ```{r}
 uap <- uap %>% 
   mutate(pro_russian_change = pro_russian - prior_pro_russian)
 ```
+
+今回選挙と前回選挙の差の変数のヒストグラムを見てみよう。
 
 ```{r}
 uap %>% 
