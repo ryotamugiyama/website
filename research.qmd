@@ -3,7 +3,7 @@ title: "Research"
 date: "today"
 ---
 
-Other research publications, past conference presentations, or my careers are found the following pages.
+Other research publications, past conference presentations, or past biographies can also be found on the following pages.
 
 -   [researchmap](https://researchmap.jp/mugiyama)
 -   [googlescholar](https://scholar.google.co.jp/citations?user=oJnisc0AAAAJ)
@@ -12,6 +12,8 @@ Other research publications, past conference presentations, or my careers are fo
 ## Peer-reviewed paper
 
 ### in English
+
+Mogi, Ryohei, Ryota Mugiyama and Giammarco Alderotti. 2024. "[Employment Uncertainty and Non-coresidential Partnership in Very Low Fertility Countries: Italy and Japan]()." *Journal of Family Research.* Accepted.
 
 Mugiyama, Ryota. 2024. "[Cohort Change in the Educational Gradient in Women's Employment Around Childbirth in Japan](https://doi.org/10.1016/j.rssm.2023.100885)." *Research in Social Stratification and Mobility.* 89: 100885.
 
