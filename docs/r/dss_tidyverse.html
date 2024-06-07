@@ -274,6 +274,28 @@ window.Quarto = {
   <li><a href="#using-the-simple-linear-model-to-compute-the-difference-in-means-estimator-1" id="toc-using-the-simple-linear-model-to-compute-the-difference-in-means-estimator-1" class="nav-link" data-scroll-target="#using-the-simple-linear-model-to-compute-the-difference-in-means-estimator-1">5.4.1 Using the simple linear model to compute the difference-in-means estimator</a></li>
   </ul></li>
   </ul></li>
+  <li><a href="#chapter-6-probability" id="toc-chapter-6-probability" class="nav-link" data-scroll-target="#chapter-6-probability">Chapter 6 Probability</a>
+  <ul class="collapse">
+  <li><a href="#probability-distributions" id="toc-probability-distributions" class="nav-link" data-scroll-target="#probability-distributions">6.4 Probability distributions</a>
+  <ul class="collapse">
+  <li><a href="#the-normal-distribution" id="toc-the-normal-distribution" class="nav-link" data-scroll-target="#the-normal-distribution">6.4.2 The normal distribution</a></li>
+  <li><a href="#the-central-limit-theorem" id="toc-the-central-limit-theorem" class="nav-link" data-scroll-target="#the-central-limit-theorem">6.5.2 The central limit theorem</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#chapter-7-quantifying-uncertainty" id="toc-chapter-7-quantifying-uncertainty" class="nav-link" data-scroll-target="#chapter-7-quantifying-uncertainty">Chapter 7 Quantifying uncertainty</a>
+  <ul class="collapse">
+  <li><a href="#confidence-intervals" id="toc-confidence-intervals" class="nav-link" data-scroll-target="#confidence-intervals">7.2 Confidence intervals</a>
+  <ul class="collapse">
+  <li><a href="#confidence-interval-for-the-sample-mean" id="toc-confidence-interval-for-the-sample-mean" class="nav-link" data-scroll-target="#confidence-interval-for-the-sample-mean">7.2.1 Confidence interval for the sample mean</a></li>
+  <li><a href="#confidence-interval-for-the-difference-in-means-estimator" id="toc-confidence-interval-for-the-difference-in-means-estimator" class="nav-link" data-scroll-target="#confidence-interval-for-the-difference-in-means-estimator">7.2.2 Confidence interval for the difference-in-means estimator</a></li>
+  <li><a href="#confidence-interval-for-predicted-outcomes" id="toc-confidence-interval-for-predicted-outcomes" class="nav-link" data-scroll-target="#confidence-interval-for-predicted-outcomes">7.2.3 Confidence interval for predicted outcomes</a></li>
+  </ul></li>
+  <li><a href="#hypothesis-testing" id="toc-hypothesis-testing" class="nav-link" data-scroll-target="#hypothesis-testing">7.3 Hypothesis testing</a>
+  <ul class="collapse">
+  <li><a href="#hypothesis-testint-with-the-difference-in-means-estimator" id="toc-hypothesis-testint-with-the-difference-in-means-estimator" class="nav-link" data-scroll-target="#hypothesis-testint-with-the-difference-in-means-estimator">7.3.1 Hypothesis testint with the difference-in-means estimator</a></li>
+  <li><a href="#hypothesis-testing-with-estimated-regression-coefficients" id="toc-hypothesis-testing-with-estimated-regression-coefficients" class="nav-link" data-scroll-target="#hypothesis-testing-with-estimated-regression-coefficients">7.3.2 Hypothesis testing with estimated regression coefficients</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -1391,6 +1413,253 @@ within_25km   0   1
 <span id="cb161-2"><a href="#cb161-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">with</span>(<span class="fu">cor</span>(within_25km, russian_tv))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.5317845</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="chapter-6-probability" class="level1">
+<h1>Chapter 6 Probability</h1>
+<p>確率や統計的推測を理解する際には、ブラウン大学の教材である<a href="https://seeing-theory.brown.edu/">Seeing Theory</a>が非常に参考になる。</p>
+<section id="probability-distributions" class="level2">
+<h2 class="anchored" data-anchor-id="probability-distributions">6.4 Probability distributions</h2>
+<p>Seeing theoryの<a href="https://seeing-theory.brown.edu/basic-probability/index.html#section1">Chance Event</a>では、コインを投げたときに得られる実現値と、観察された割合との関係を見ることができる。コインをたくさん投げるほど、観察された割合の値が真の確率に近づくことがわかる。</p>
+<section id="the-normal-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="the-normal-distribution">6.4.2 The normal distribution</h3>
+<p><code>star</code>データを読み込み、ヒストグラムを作成する。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb163"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb163-1"><a href="#cb163-1" aria-hidden="true" tabindex="-1"></a>star <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"STAR.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb164"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb164-1"><a href="#cb164-1" aria-hidden="true" tabindex="-1"></a>star <span class="sc">%&gt;%</span> </span>
+<span id="cb164-2"><a href="#cb164-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> reading, <span class="at">y =</span> ..density..)) <span class="sc">+</span></span>
+<span id="cb164-3"><a href="#cb164-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: The dot-dot notation (`..density..`) was deprecated in ggplot2 3.4.0.
+ℹ Please use `after_stat(density)` instead.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="dss_tidyverse_files/figure-html/unnamed-chunk-94-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Seeing theoryの<a href="https://seeing-theory.brown.edu/probability-distributions/index.html#section2">Discrete and Continuous</a>の箇所で、「Continuous」を選択して、「Normal」を選択すると、正規分布がどのような形状になるのかを確かめることができる。</p>
+</section>
+<section id="the-central-limit-theorem" class="level3">
+<h3 class="anchored" data-anchor-id="the-central-limit-theorem">6.5.2 The central limit theorem</h3>
+<p>Seeing theoryの<a href="https://seeing-theory.brown.edu/probability-distributions/index.html#section3">Central Limit Theorem</a>では、標本平均の分布がどのようになるのかを確認することができる。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb167"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb167-1"><a href="#cb167-1" aria-hidden="true" tabindex="-1"></a>sd_sample_means <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
+<span id="cb167-2"><a href="#cb167-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb167-3"><a href="#cb167-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10000</span>){</span>
+<span id="cb167-4"><a href="#cb167-4" aria-hidden="true" tabindex="-1"></a>  <span class="do">## p = 0.6の二値確率変数から1000個の観察の無作為標本を抽出</span></span>
+<span id="cb167-5"><a href="#cb167-5" aria-hidden="true" tabindex="-1"></a>  support_sample <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">0</span>),</span>
+<span id="cb167-6"><a href="#cb167-6" aria-hidden="true" tabindex="-1"></a>                           <span class="at">size =</span> <span class="dv">1000</span>,</span>
+<span id="cb167-7"><a href="#cb167-7" aria-hidden="true" tabindex="-1"></a>                           <span class="at">replace =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb167-8"><a href="#cb167-8" aria-hidden="true" tabindex="-1"></a>                           <span class="at">prob =</span> <span class="fu">c</span>(<span class="fl">0.6</span>, <span class="fl">0.4</span>))</span>
+<span id="cb167-9"><a href="#cb167-9" aria-hidden="true" tabindex="-1"></a>  <span class="do">## 標準化した標本平均を計算して保存</span></span>
+<span id="cb167-10"><a href="#cb167-10" aria-hidden="true" tabindex="-1"></a>  sd_sample_means[i] <span class="ot">&lt;-</span> (<span class="fu">mean</span>(support_sample) <span class="sc">-</span> <span class="fl">0.6</span>) <span class="sc">/</span> <span class="fu">sqrt</span>(<span class="fl">0.6</span> <span class="sc">*</span> <span class="fl">0.4</span> <span class="sc">/</span> <span class="dv">1000</span>)</span>
+<span id="cb167-11"><a href="#cb167-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb167-12"><a href="#cb167-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb167-13"><a href="#cb167-13" aria-hidden="true" tabindex="-1"></a><span class="do">## ヒストグラムを作成</span></span>
+<span id="cb167-14"><a href="#cb167-14" aria-hidden="true" tabindex="-1"></a>sd_sample_means <span class="sc">%&gt;%</span> </span>
+<span id="cb167-15"><a href="#cb167-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb167-16"><a href="#cb167-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> sd_sample_means, <span class="at">y =</span> ..density..)) <span class="sc">+</span></span>
+<span id="cb167-17"><a href="#cb167-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="dss_tidyverse_files/figure-html/unnamed-chunk-95-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="chapter-7-quantifying-uncertainty" class="level1">
+<h1>Chapter 7 Quantifying uncertainty</h1>
+<section id="confidence-intervals" class="level2">
+<h2 class="anchored" data-anchor-id="confidence-intervals">7.2 Confidence intervals</h2>
+<section id="confidence-interval-for-the-sample-mean" class="level3">
+<h3 class="anchored" data-anchor-id="confidence-interval-for-the-sample-mean">7.2.1 Confidence interval for the sample mean</h3>
+<p>Seeing theoryの<a href="https://seeing-theory.brown.edu/frequentist-inference/index.html#section2">confidence interval</a>の箇所では、次のことを理解できる。</p>
+<ul>
+<li>x%信頼区間とは、無作為に抽出されたx%の標本が、母集団におけるパラメータ（この場合は平均値）の真値を含んでいる。</li>
+<li>標本サイズを大きくするほど、信頼区間が小さくなる。</li>
+<li>信頼水準を高く設定するほど、信頼区間が大きくなる。</li>
+</ul>
+<p><code>bes</code>データを読み込み、欠損値を削除したデータbes1を準備する。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb169"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb169-1"><a href="#cb169-1" aria-hidden="true" tabindex="-1"></a>bes <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"BES.csv"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb170"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb170-1"><a href="#cb170-1" aria-hidden="true" tabindex="-1"></a>bes1 <span class="ot">&lt;-</span> bes <span class="sc">%&gt;%</span> </span>
+<span id="cb170-2"><a href="#cb170-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">na.omit</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>公式の意味を知りたい場合には教科書のようなコードを実行するほうがよいが、実際に信頼区間を計算する際には<code>t.test()</code>関数を使うのが便利である。<code>t.test()</code>は、t分布を使って信頼区間を求めたりt検定を行ったりする関数である。標本サイズが十分大きい場合、t分布は標準正規分布に近似するため、教科書で使われている標準正規分布の信頼区間を求める場合とほぼ同様に使うことができる。</p>
+<p>標本平均の信頼区間を求める場合、次のように書く。</p>
+<blockquote class="blockquote">
+<p>t.test(平均を計算したい変数 ~ 1, data = データフレーム, conf.level = 信頼水準)</p>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb171"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb171-1"><a href="#cb171-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(leave <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> bes1, <span class="at">conf.level =</span> <span class="fl">0.95</span>) <span class="co"># 標本平均の95%信頼区間を求める</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    One Sample t-test
+
+data:  leave
+t = 149.75, df = 25096, p-value &lt; 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 0.4657125 0.4780657
+sample estimates:
+mean of x 
+0.4718891 </code></pre>
+</div>
+</div>
+<p>末尾に示された「95 percent confidence interval:」の箇所が標本平均の95%信頼区間を表している。</p>
+</section>
+<section id="confidence-interval-for-the-difference-in-means-estimator" class="level3">
+<h3 class="anchored" data-anchor-id="confidence-interval-for-the-difference-in-means-estimator">7.2.2 Confidence interval for the difference-in-means estimator</h3>
+<p><code>star</code>データを読み込む。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb173"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb173-1"><a href="#cb173-1" aria-hidden="true" tabindex="-1"></a>star <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"star.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb174"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb174-1"><a href="#cb174-1" aria-hidden="true" tabindex="-1"></a>star <span class="sc">%&gt;%</span> <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 5
+  classtype reading  math graduated small
+  &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;
+1 small         578   610         1     1
+2 regular       612   612         1     0
+3 regular       583   606         1     0
+4 small         661   648         1     1
+5 small         614   636         1     1
+6 regular       610   603         0     0</code></pre>
+</div>
+</div>
+<p><code>t.test()</code>は2つのグループ間の平均の差推定量の信頼区間を求める場合にも使うことができる。この場合、次のように書く。</p>
+<blockquote class="blockquote">
+<p>t.test(平均を計算したい変数 ~ グループ分けする変数, data = データフレーム, conf.level = 信頼水準)</p>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb176"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb176-1"><a href="#cb176-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(reading <span class="sc">~</span> small, <span class="at">data =</span> star, <span class="at">conf.level =</span> <span class="fl">0.95</span>) <span class="co">#small別に見た数学の平均値の差の95%信頼区間を求める)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  reading by small
+t = -3.4957, df = 1221, p-value = 0.0004899
+alternative hypothesis: true difference in means between group 0 and group 1 is not equal to 0
+95 percent confidence interval:
+ -11.257410  -3.163683
+sample estimates:
+mean in group 0 mean in group 1 
+       625.4920        632.7026 </code></pre>
+</div>
+</div>
+<p>末尾に示された「95 percent confidence interval:」の箇所が平均の差推定量の95%信頼区間を表している。</p>
+<p>教科書と異なり、少人数学級ではないグループの平均値から少人数学級のグループの平均値を引いている（<code>t.test()</code>は<code>small</code>の値が小さい方から大きい方を引く）ことから、値が負になっている。しかし、解釈に変わりはない。</p>
+</section>
+<section id="confidence-interval-for-predicted-outcomes" class="level3">
+<h3 class="anchored" data-anchor-id="confidence-interval-for-predicted-outcomes">7.2.3 Confidence interval for predicted outcomes</h3>
+<p>coデータを読み込み、必要な変数を作成する。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb178"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb178-1"><a href="#cb178-1" aria-hidden="true" tabindex="-1"></a>co <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"countries.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb179"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb179-1"><a href="#cb179-1" aria-hidden="true" tabindex="-1"></a>co <span class="ot">&lt;-</span> co <span class="sc">%&gt;%</span> </span>
+<span id="cb179-2"><a href="#cb179-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">gdp_change =</span> (gdp <span class="sc">-</span> prior_gdp)<span class="sc">/</span>prior_gdp <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb179-3"><a href="#cb179-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">light_change =</span> (light <span class="sc">-</span> prior_light)<span class="sc">/</span>prior_light <span class="sc">*</span> <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>以下の線形モデルを推定して、<code>fit</code>に格納する。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb180"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb180-1"><a href="#cb180-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(gdp_change <span class="sc">~</span> light_change, <span class="at">data =</span> co)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><code>predict()</code>関数を使って、<code>light_change</code>が20の場合の<code>gdp_change</code>の予測値と95%信頼区間を求める。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb181"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb181-1"><a href="#cb181-1" aria-hidden="true" tabindex="-1"></a>fit <span class="sc">%&gt;%</span> </span>
+<span id="cb181-2"><a href="#cb181-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">predict</span>(<span class="at">newdata =</span> <span class="fu">data.frame</span>(<span class="at">light_change =</span> <span class="dv">20</span>),</span>
+<span id="cb181-3"><a href="#cb181-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">interval =</span> <span class="st">"confidence"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       fit      lwr      upr
+1 54.91233 48.77123 61.05343</code></pre>
+</div>
+</div>
+<p>なお、<code>ggplot()</code>を使うことで、すべての<code>light_change</code>の値における95%信頼区間を求めた図を書くこともできる。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb183"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb183-1"><a href="#cb183-1" aria-hidden="true" tabindex="-1"></a>co <span class="sc">%&gt;%</span> </span>
+<span id="cb183-2"><a href="#cb183-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> light_change, <span class="at">y =</span> gdp_change)) <span class="sc">+</span></span>
+<span id="cb183-3"><a href="#cb183-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb183-4"><a href="#cb183-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">TRUE</span>) <span class="co"># 線形モデルを当てはめ、95%信頼区間を表示</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="dss_tidyverse_files/figure-html/unnamed-chunk-106-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>薄い灰色で塗られた箇所が、95%信頼区間を表している。</p>
+</section>
+</section>
+<section id="hypothesis-testing" class="level2">
+<h2 class="anchored" data-anchor-id="hypothesis-testing">7.3 Hypothesis testing</h2>
+<section id="hypothesis-testint-with-the-difference-in-means-estimator" class="level3">
+<h3 class="anchored" data-anchor-id="hypothesis-testint-with-the-difference-in-means-estimator">7.3.1 Hypothesis testint with the difference-in-means estimator</h3>
+<p>先ほどと同じように、<code>t.test()</code>を使って平均の差推定量が統計的に有意に0と異なるかどうかの検定を行うことができる。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb185"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb185-1"><a href="#cb185-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(reading <span class="sc">~</span> small, <span class="at">data =</span> star) <span class="co"># small別に見た数学の平均値の差に関するt検定</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  reading by small
+t = -3.4957, df = 1221, p-value = 0.0004899
+alternative hypothesis: true difference in means between group 0 and group 1 is not equal to 0
+95 percent confidence interval:
+ -11.257410  -3.163683
+sample estimates:
+mean in group 0 mean in group 1 
+       625.4920        632.7026 </code></pre>
+</div>
+</div>
+<p>冒頭に示された「t = 」の箇所が検定統計量であるt統計量（標本サイズが十分大きい場合、z統計量とt統計量の値は近似する）の値、「p-value」の箇所がp値を表している。tの絶対値は1.96より大きく、またp値は0.05よりも小さいため、少人数学級とそれ以外のクラスの平均値には統計的に有意な差がある（少人数学級のほうが読解力の点数が高い）と結論できる。</p>
+</section>
+<section id="hypothesis-testing-with-estimated-regression-coefficients" class="level3">
+<h3 class="anchored" data-anchor-id="hypothesis-testing-with-estimated-regression-coefficients">7.3.2 Hypothesis testing with estimated regression coefficients</h3>
+<p>UA_surveyデータを読み込み、<code>uas</code>に格納する。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb187"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb187-1"><a href="#cb187-1" aria-hidden="true" tabindex="-1"></a>uas <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"UA_survey.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>以下の線形モデルを推定して、<code>fit</code>に格納する。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb188"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb188-1"><a href="#cb188-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(pro_russian_vote <span class="sc">~</span> russian_tv <span class="sc">+</span> within_25km, <span class="at">data =</span> uas)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>モデルの統計量を示す表を表示する。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb189"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb189-1"><a href="#cb189-1" aria-hidden="true" tabindex="-1"></a>fit <span class="sc">%&gt;%</span> </span>
+<span id="cb189-2"><a href="#cb189-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb189-3"><a href="#cb189-3" aria-hidden="true" tabindex="-1"></a>  coef</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>              Estimate Std. Error   t value     Pr(&gt;|t|)
+(Intercept)  0.1959065 0.03457823  5.665602 3.032123e-08
+russian_tv   0.2875934 0.07652437  3.758194 2.000236e-04
+within_25km -0.2080644 0.07681051 -2.708802 7.079846e-03</code></pre>
 </div>
 </div>
 

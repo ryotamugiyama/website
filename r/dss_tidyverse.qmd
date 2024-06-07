@@ -767,3 +767,186 @@ uap %>%
 uap %>% 
   with(cor(within_25km, russian_tv))
 ```
+
+
+# Chapter 6 Probability
+
+確率や統計的推測を理解する際には、ブラウン大学の教材である[Seeing Theory](https://seeing-theory.brown.edu/)が非常に参考になる。
+
+## 6.4 Probability distributions
+
+Seeing theoryの[Chance Event](https://seeing-theory.brown.edu/basic-probability/index.html#section1)では、コインを投げたときに得られる実現値と、観察された割合との関係を見ることができる。コインをたくさん投げるほど、観察された割合の値が真の確率に近づくことがわかる。
+
+### 6.4.2 The normal distribution
+
+`star`データを読み込み、ヒストグラムを作成する。
+
+```{r, eval = FALSE}
+star <- read_csv("STAR.csv")
+```
+
+```{r}
+star %>% 
+  ggplot(aes(x = reading, y = ..density..)) +
+  geom_histogram()
+```
+
+Seeing theoryの[Discrete and Continuous](https://seeing-theory.brown.edu/probability-distributions/index.html#section2)の箇所で、「Continuous」を選択して、「Normal」を選択すると、正規分布がどのような形状になるのかを確かめることができる。
+
+### 6.5.2 The central limit theorem
+
+Seeing theoryの[Central Limit Theorem](https://seeing-theory.brown.edu/probability-distributions/index.html#section3)では、標本平均の分布がどのようになるのかを確認することができる。
+
+```{r}
+sd_sample_means <- c()
+
+for (i in 1:10000){
+  ## p = 0.6の二値確率変数から1000個の観察の無作為標本を抽出
+  support_sample <- sample(c(1,0),
+                           size = 1000,
+                           replace = TRUE,
+                           prob = c(0.6, 0.4))
+  ## 標準化した標本平均を計算して保存
+  sd_sample_means[i] <- (mean(support_sample) - 0.6) / sqrt(0.6 * 0.4 / 1000)
+}
+
+## ヒストグラムを作成
+sd_sample_means %>% 
+  tibble() %>% 
+  ggplot(aes(x = sd_sample_means, y = ..density..)) +
+  geom_histogram()
+```
+
+
+# Chapter 7 Quantifying uncertainty
+
+## 7.2 Confidence intervals
+
+### 7.2.1 Confidence interval for the sample mean
+
+Seeing theoryの[confidence interval](https://seeing-theory.brown.edu/frequentist-inference/index.html#section2)の箇所では、次のことを理解できる。
+
+- x%信頼区間とは、無作為に抽出されたx%の標本が、母集団におけるパラメータ（この場合は平均値）の真値を含んでいる。
+- 標本サイズを大きくするほど、信頼区間が小さくなる。
+- 信頼水準を高く設定するほど、信頼区間が大きくなる。
+
+`bes`データを読み込み、欠損値を削除したデータbes1を準備する。
+
+```{r, eval = FALSE}
+bes <- read_csv("BES.csv") 
+```
+
+```{r}
+bes1 <- bes %>% 
+  na.omit()
+```
+
+公式の意味を知りたい場合には教科書のようなコードを実行するほうがよいが、実際に信頼区間を計算する際には`t.test()`関数を使うのが便利である。`t.test()`は、t分布を使って信頼区間を求めたりt検定を行ったりする関数である。標本サイズが十分大きい場合、t分布は標準正規分布に近似するため、教科書で使われている標準正規分布の信頼区間を求める場合とほぼ同様に使うことができる。
+
+標本平均の信頼区間を求める場合、次のように書く。
+
+> t.test(平均を計算したい変数 ~ 1, data = データフレーム, conf.level = 信頼水準)
+
+```{r}
+t.test(leave ~ 1, data = bes1, conf.level = 0.95) # 標本平均の95%信頼区間を求める
+```
+
+末尾に示された「95 percent confidence interval:」の箇所が標本平均の95%信頼区間を表している。
+
+### 7.2.2 Confidence interval for the difference-in-means estimator
+
+`star`データを読み込む。
+
+```{r, eval = FALSE}
+star <- read_csv("star.csv")
+```
+
+```{r}
+star %>% head()
+```
+
+`t.test()`は2つのグループ間の平均の差推定量の信頼区間を求める場合にも使うことができる。この場合、次のように書く。
+
+> t.test(平均を計算したい変数 ~ グループ分けする変数, data = データフレーム, conf.level = 信頼水準)
+
+```{r}
+t.test(reading ~ small, data = star, conf.level = 0.95) #small別に見た数学の平均値の差の95%信頼区間を求める)
+```
+
+末尾に示された「95 percent confidence interval:」の箇所が平均の差推定量の95%信頼区間を表している。
+
+教科書と異なり、少人数学級ではないグループの平均値から少人数学級のグループの平均値を引いている（`t.test()`は`small`の値が小さい方から大きい方を引く）ことから、値が負になっている。しかし、解釈に変わりはない。
+
+### 7.2.3 Confidence interval for predicted outcomes
+
+coデータを読み込み、必要な変数を作成する。
+
+```{r, eval = FALSE}
+co <- read_csv("countries.csv")
+```
+
+```{r}
+co <- co %>% 
+  mutate(gdp_change = (gdp - prior_gdp)/prior_gdp * 100) %>% 
+  mutate(light_change = (light - prior_light)/prior_light * 100)
+```
+
+以下の線形モデルを推定して、`fit`に格納する。
+
+```{r}
+fit <- lm(gdp_change ~ light_change, data = co)
+```
+
+`predict()`関数を使って、`light_change`が20の場合の`gdp_change`の予測値と95%信頼区間を求める。
+
+```{r}
+fit %>% 
+  predict(newdata = data.frame(light_change = 20),
+          interval = "confidence")
+```
+
+なお、`ggplot()`を使うことで、すべての`light_change`の値における95%信頼区間を求めた図を書くこともできる。
+
+```{r}
+co %>% 
+  ggplot(aes(x = light_change, y = gdp_change)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = TRUE) # 線形モデルを当てはめ、95%信頼区間を表示
+```
+
+薄い灰色で塗られた箇所が、95%信頼区間を表している。
+
+## 7.3 Hypothesis testing
+
+### 7.3.1 Hypothesis testint with the difference-in-means estimator
+
+先ほどと同じように、`t.test()`を使って平均の差推定量が統計的に有意に0と異なるかどうかの検定を行うことができる。
+
+```{r}
+t.test(reading ~ small, data = star) # small別に見た数学の平均値の差に関するt検定
+```
+
+冒頭に示された「t = 」の箇所が検定統計量であるt統計量（標本サイズが十分大きい場合、z統計量とt統計量の値は近似する）の値、「p-value」の箇所がp値を表している。tの絶対値は1.96より大きく、またp値は0.05よりも小さいため、少人数学級とそれ以外のクラスの平均値には統計的に有意な差がある（少人数学級のほうが読解力の点数が高い）と結論できる。
+
+### 7.3.2 Hypothesis testing with estimated regression coefficients
+
+UA_surveyデータを読み込み、`uas`に格納する。
+
+```{r, eval = FALSE}
+uas <- read_csv("UA_survey.csv")
+```
+
+以下の線形モデルを推定して、`fit`に格納する。
+
+```{r}
+fit <- lm(pro_russian_vote ~ russian_tv + within_25km, data = uas)
+```
+
+モデルの統計量を示す表を表示する。
+
+```{r}
+fit %>% 
+  summary() %>% 
+  coef
+```
+

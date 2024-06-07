@@ -5,15 +5,15 @@ date: "today"
 
 Other research publications, past conference presentations, or past biographies can also be found on the following pages.
 
--   [researchmap](https://researchmap.jp/mugiyama)
 -   [googlescholar](https://scholar.google.co.jp/citations?user=oJnisc0AAAAJ)
 -   [ORCID](https://orcid.org/0000-0002-6157-5575)
+-   [researchmap](https://researchmap.jp/mugiyama): Mainly in Japanese
 
 ## Peer-reviewed paper
 
 ### in English
 
-Mogi, Ryohei, Ryota Mugiyama and Giammarco Alderotti. 2024. "[Employment Uncertainty and Non-coresidential Partnership in Very Low Fertility Countries: Italy and Japan]()." *Journal of Family Research.* Accepted.
+Mogi, Ryohei, Ryota Mugiyama and Giammarco Alderotti. 2024. "[Employment Uncertainty and Non-coresidential Partnership in Very Low Fertility Countries: Italy and Japan](https://doi.org/10.20377/jfr-953)." *Journal of Family Research.* 36: 160--177.
 
 Mugiyama, Ryota. 2024. "[Cohort Change in the Educational Gradient in Women's Employment Around Childbirth in Japan](https://doi.org/10.1016/j.rssm.2023.100885)." *Research in Social Stratification and Mobility.* 89: 100885.
 
