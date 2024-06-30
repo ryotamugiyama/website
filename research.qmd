@@ -3,11 +3,11 @@ title: "Research"
 date: "today"
 ---
 
-Other research publications, past conference presentations, or past biographies can also be found on the following pages.
+Other research publications can also be found on the following pages.
 
 -   [googlescholar](https://scholar.google.co.jp/citations?user=oJnisc0AAAAJ)
 -   [ORCID](https://orcid.org/0000-0002-6157-5575)
--   [researchmap](https://researchmap.jp/mugiyama): Mainly in Japanese
+-   [researchmap](https://researchmap.jp/mugiyama)(mainly in Japanese)
 
 ## Peer-reviewed paper
 
@@ -27,7 +27,7 @@ Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Cla
 
 麦山亮太・大里蒼一郎，2024（近刊），「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』．
 
-麦山亮太・田上皓大，2024（近刊），「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』．
+麦山亮太・田上皓大，2024（近刊），「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』．[SSM-ONET対応表へのリンク](https://github.com/kota-tagami/matching_onet_ssm)
 
 麦山亮太・小松恭子，2023，「[テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析](https://www.jil.go.jp/institute/zassi/backnumber/2023/05/index.html)」『日本労働研究雑誌』754: 87–102．
 
@@ -87,26 +87,36 @@ Rising Socioeconomic Inequality in Telework Eligibility: Evidence from before an
 
 Trends in Task Distribution in Japan, 1980--2020: Evidence from the Occupational Information Network of Japan and the Population Census Data (with Kyoko Komatsu)
 
-Educational Differences in Motherhood Penalty on Wage Trajectories in Japan
+Educational Differences in the Motherhood Penalty on Wage Trajectories in Japan: The Role of Loss of Experience
+
+- 2024-08-06 Presented at RC28 2024 Summer Meeting at Brown University. [slide]()
+
+- 2024-06-28 Working paper is found here. [paper](https://csrdadps.com/paper/87)
 
 - 2024-06-09 Presented at PAoJ 76th Annual Meeting at Chuo University. [slide](https://researchmap.jp/mugiyama/presentations/45741726)
+
+The Variation in Workers' Task Variety and its Earnings Returns Across Countries (with Shin Arita)
+
+- 2024-08-30 Presented at JAMS 77th Annual Meeting at Tohoku University. [slide]()
+
+Informal Family Caregiving and Labor Market Outcomes in Japan (with Shingo Nitta)
 
 ### Family Formation 
 
 Employment Uncertainty and Delayed Marriage in Society Where Cohabitations Are Not Prevalent: Incorporating Premarital Partnership
 
--   2023-03-23 Working paper is found here. [paper](https://csrdadps.com/paper/42)
+- 2023-03-23 Working paper is found here. [paper](https://csrdadps.com/paper/42)
 
 Impact of Increasing Employment Uncertainty on Cross-Cohort Marriage and Parenthood Delays in Japan
 
--   2023-04-04 Presented at PAA 2023 Annual Meeting at Hyatt Regency New Orleans, New Orleans, Luisiana. [poster](https://researchmap.jp/mugiyama/presentations/41665921)
--   2022-09-04 Presented at JSFS 32nd Annual Meeting at Japan Women's University. [slide](https://researchmap.jp/mugiyama/presentations/38562835)
+- 2023-04-04 Presented at PAA 2023 Annual Meeting at Hyatt Regency New Orleans, New Orleans, Luisiana. [poster](https://researchmap.jp/mugiyama/presentations/41665921)
+- 2022-09-04 Presented at JSFS 32nd Annual Meeting at Japan Women's University. [slide](https://researchmap.jp/mugiyama/presentations/38562835)
 
 Exposure to Non-partnership and Fertility Desires among Childless Population in Japan (with Ryohei Mogi and Alyce Raybould)
 
 - 2024-04-18 Presented at PAA 2024 Annual Meeting at Hyatt Regency Columbus, Ohio. [slide](https://researchmap.jp/mugiyama/presentations/45595561)
 
-Evaluating the East Asian Model of Low Fertility Hypothesis: Evidence from Japan (with Fumiya Uchikoshi, Shohei Yoda, and James M. Raymo)
+Revisiting the Relationship between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan (with Fumiya Uchikoshi, Shohei Yoda, and James M. Raymo)
 
 - 2024-04-18 Presented at PAA 2024 Annual Meeting at Hyatt Regency Columbus, Ohio. 
 - 2023-09-02 Presented at JSFS 33rd Annual Meeting at Kobe University.
@@ -125,7 +135,7 @@ Does Policy Affect Fertility and Marriage Desires Among Never-Married Childless 
 
 ## Miscs
 
-麦山亮太，2024，「社会階層研究の現在：労働関連分野を中心に」『日本労働研究雑誌』765: 78--83．
+麦山亮太，2024，「[社会階層研究の現在：労働関連分野を中心に](https://www.jil.go.jp/institute/zassi/backnumber/2024/04/index.html)」『日本労働研究雑誌』765: 78--83．
 
 麦山亮太，2022，「[文献紹介 渡邊勉・吉川徹・佐藤嘉倫編『少子高齢社会の階層構造2 人生中期の階層構造』](https://doi.org/10.4234/jjoffamilysociology.34.152)」『家族社会学研究』34(2): 152．
 
