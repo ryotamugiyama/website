@@ -1,0 +1,82 @@
+---
+title: "目を通す社会学系雑誌のリスト（2024年版）"
+author: "Ryota Mugiyama"
+date: "2024-08-11"
+image: ../images/website.jpg
+categories: 
+  - "Research method"
+---
+
+## 一般誌
+
+アメリカ
+
+- American Sociological Review
+- American Journal of Sociology
+- Social Forces
+- Social Science Research: 計量研究のみを扱っている。
+
+ヨーロッパ
+
+- European Sociological Review: 計量研究のみを扱っている。
+- British Journal of Sociology: Class系の論文をみることが多い。
+
+たまに見るもの
+
+- Sociological Science: オープンアクセス誌
+- Socius: オープンアクセス誌
+- European Societies
+- The Sociological Quarterly
+- Acta Sociologica
+
+レビュー雑誌
+
+- Annual Review of Sociology
+
+## 領域誌
+
+### 人口
+
+- Demography
+- Population and Development Review
+- Journal of European Population
+- Journal of Population Economics
+- Demographic Research
+
+### 家族・ライフコース
+
+- Journal of Marriage and Family
+- Journal of Family Issues
+- Advances in Life Course Research
+
+### 労働・経済
+
+- Socio-Economic Review
+- Work and Occupations
+- Work, Employment and Society
+- ILR Review（どちらかといえば学際誌）
+
+### 教育
+
+- Sociology of Education
+
+### 社会階層・社会移動
+
+階層研究（不平等研究）は社会学でも一般的なテーマなので、一般誌にもよく載っている。領域誌としては以下がある。
+
+- Research in Social Stratification and Mobility
+
+### 方法
+
+- Sociological Methods and Research
+- Sociological Methodology
+- Quality and Quantity
+
+## 東アジア・日本研究系
+
+日本や東アジアの特徴について説明していたりする論文を探すときによく使う。Chinese系の雑誌は読者が多いこともあり比較的よく読まれている印象。
+
+- Asian Population Studies
+- Social Science Japan Journal
+- Chinese Sociological Review
+- Journal of Chinese Sociology
