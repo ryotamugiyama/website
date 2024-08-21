@@ -25,9 +25,9 @@ Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Cla
 
 ### in Japanese
 
-麦山亮太・大里蒼一郎，2024（近刊），「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』．
+麦山亮太・大里蒼一郎，2024，「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』39(1): 19--34．
 
-麦山亮太・田上皓大，2024（近刊），「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』．[SSM-ONET対応表へのリンク](https://github.com/kota-tagami/matching_onet_ssm)
+麦山亮太・田上皓大，2024，「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』39(1): 64--76．[SSM-ONET対応表へのリンク](https://github.com/kota-tagami/matching_onet_ssm)
 
 麦山亮太・小松恭子，2023，「[テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析](https://www.jil.go.jp/institute/zassi/backnumber/2023/05/index.html)」『日本労働研究雑誌』754: 87–102．
 
@@ -73,7 +73,7 @@ Changes in Geographic Accessibility to College and Inequality of Educational Opp
 -   2023-07-15 Presented at READI 1st Annual Conference at University of Tokyo. [slide](https://researchmap.jp/mugiyama/presentations/42557130)
 -   2022-08-28 Presented at JAMS 73rd Meeting.  [slide](https://researchmap.jp/mugiyama/presentations/38562818)
 
-Where Are Upper Class Advantage Observed?: Differential Impacts of Social Origin on Earnings by Class Destination in Japan
+Class Origin Earnings Gap in Japan: Differential Effects by Class Destination
 
 - 2024-05-18 Presented at RC28 Spring Meeting at NYU Shanghai. [slide](https://researchmap.jp/mugiyama/presentations/45741717)
 - 2024-03-16 Presented at JAMS 76th Meeting at Osaka University. [slide](https://researchmap.jp/mugiyama/presentations/45509862)
@@ -95,7 +95,7 @@ Educational Differences in the Motherhood Penalty on Wage Trajectories in Japan:
 
 The Variation in Workers' Task Variety and its Earnings Returns Across Countries (with Shin Arita)
 
-- 2024-08-30 Presented at JAMS 77th Annual Meeting at Tohoku University. [slide]()
+- 2024-08-30 Presented at JAMS 77th Annual Meeting at Tohoku University. [slide](https://researchmap.jp/mugiyama/presentations/46844602)
 
 Informal Family Caregiving and Labor Market Outcomes in Japan (with Shingo Nitta)
 
@@ -120,8 +120,9 @@ Revisiting the Relationship between Marriage and Childbearing in Low-Fertility E
 - 2024-04-18 Presented at PAA 2024 Annual Meeting at Hyatt Regency Columbus, Ohio. 
 - 2023-09-02 Presented at JSFS 33rd Annual Meeting at Kobe University.
 
-Does Policy Affect Fertility and Marriage Desires Among Never-Married Childless People? A Factorial Survey Experiment (with Shin Okubo, Toma Kota, Shohei Yoda, and Shigeki Matsuda)
+Does Policy Affect Fertility and Marriage Desires Among Never-Married Childless People? A Factorial Survey Experiment (with Shin Okubo, Kota Toma, Shohei Yoda, and Shigeki Matsuda)
 
+- 2024-11-09 Presented at JSS 97th Annual Meeting at Kyoto Sangyo University. [slide](https://researchmap.jp/mugiyama/presentations/46363891)
 - 2024-07-29 Presented at READI 2nd Meeting at Peking University. [slide](https://researchmap.jp/mugiyama/presentations/46241948)
 - 2024-03-17 Presented at JAMS 76th Meeting at Osaka University. [slide](https://researchmap.jp/mugiyama/presentations/45509867)
 
