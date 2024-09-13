@@ -1,7 +1,7 @@
 ---
 title: "2021-08-- Stataを用いた計量分析入門"
 author: "Ryota Mugiyama"
-date: "2023-09-05"
+date: "2024-09-04"
 image: "images/figure1_histogram.png"
 ---
 
@@ -9,6 +9,7 @@ image: "images/figure1_histogram.png"
 
 東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー
 
+- 2024年度夏（2024-09-04）
 - 2023年度夏（2023-09-05）
 - 2022年度夏（2022-09-07）
 - 2021年度春（2022-03-02）
@@ -28,10 +29,12 @@ image: "images/figure1_histogram.png"
 
 ## 資料
 
-2023年度夏のセミナーで使用したスライドは[こちら](2023-09-05-CSRDA-StatSeminar.pdf)にアップロードしています。
+2024年度夏のセミナーで使用したスライド：[slide](2024-09-04-CSRDA-StatSeminar.pdf)
 
-2022年度夏のセミナーで使用したスライドは[こちら](2022-09-07-CSRDA-StatSeminar.pdf)にアップロードしています。
+2023年度夏のセミナーで使用したスライド：[slide](2023-09-05-CSRDA-StatSeminar.pdf)
 
-2021年度春のセミナーで使用したスライドは[こちら](2022-03-02CSRDA-StatSeminar.pdf)にアップロードしています。
+2022年度夏のセミナーで使用したスライド：[slide](2022-09-07-CSRDA-StatSeminar.pdf)
 
-2021年度夏セミナーで使用したスライドは[こちら](2021-08-31-CSRDA-StatSeminar.pdf)にアップロードしています。
+2021年度春のセミナーで使用したスライド：[slide](2022-03-02CSRDA-StatSeminar.pdf)
+
+2021年度夏セミナーで使用したスライド：[slide](2021-08-31-CSRDA-StatSeminar.pdf)
