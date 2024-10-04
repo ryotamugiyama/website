@@ -20,6 +20,7 @@ categories:
 
 - European Sociological Review: 計量研究のみを扱っている。
 - British Journal of Sociology: Class系の論文をみることが多い。
+- Sociology
 
 たまに見るもの
 
@@ -39,9 +40,9 @@ categories:
 
 - Demography
 - Population and Development Review
-- Journal of European Population
-- Journal of Population Economics
 - Demographic Research
+- Journal of European Population
+- Journal of Population Economics: 経済学の雑誌なので若干他と毛色は違う。
 
 ### 家族・ライフコース
 
@@ -66,17 +67,12 @@ categories:
 
 - Research in Social Stratification and Mobility
 
+### ジェンダー
+
+- Gender & Society
+
 ### 方法
 
 - Sociological Methods and Research
 - Sociological Methodology
 - Quality and Quantity
-
-## 東アジア・日本研究系
-
-日本や東アジアの特徴について説明していたりする論文を探すときによく使う。Chinese系の雑誌は読者が多いこともあり比較的よく読まれている印象。
-
-- Asian Population Studies
-- Social Science Japan Journal
-- Chinese Sociological Review
-- Journal of Chinese Sociology
