@@ -4,7 +4,7 @@ title: "Ryota Mugiyama"
 
 ![](images/IMG_3657-edited-1536x960.png)
 
-Hello! I am Ryota Mugiyama, an Associate Professor at Gakushuin University, Tokyo, Japan. After receiving my Ph.D. in Sociology from the University of Tokyo, I have been working on inequality-related topics mainly focusing on Japan, such as labor market inequality, intergenerational mobility, and family formation. My published and ongoing work can be found at [research](research.html) in this website.
+I am Ryota Mugiyama, an Associate Professor at Gakushuin University, Tokyo, Japan. After received Doctorate degree of Sociology from the University of Tokyo, I have been working on inequality-related topics mainly focusing on Japan, such as labor market inequality, social mobility, and family formation. My published and ongoing work can be found at [research](research.html) in this website.
 
 麦山 亮太（むぎやま りょうた）のホームページです。学習院大学法学部政治学科で社会学の研究・教育をしています。専門は社会階層論、なかでも労働市場における不平等、社会移動、家族形成などのテーマについて、社会調査データの計量分析をもちいて研究しています。
 
@@ -14,7 +14,7 @@ Hello! I am Ryota Mugiyama, an Associate Professor at Gakushuin University, Toky
 
 ***
 
-**Ryota Mugiyama**, Ph.D. in Sociology.
+**Ryota Mugiyama**, Doctor of Sociology.
 
 Associate Professor, Department of Political Studies, Faculty of Law, Gakushuin University
 
