@@ -1,7 +1,7 @@
 ---
 title: "SSM職業小分類（追加コード含む）をSSM職業8分類に変換するStataシンタックス"
 author: "Ryota Mugiyama"
-date: "2024-11-22"
+date: "2016-04-07"
 categories: 
   - "Quantitative methods"
   - "Social stratification"
