@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-03-27">
+<meta name="dcterms.date" content="2024-11-22">
 
 <title>Stata – Ryota Mugiyama</title>
 <style>
@@ -180,7 +180,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pweight-aweight-fweight-iweightの違い" id="toc-pweight-aweight-fweight-iweightの違い" class="nav-link active" data-scroll-target="#pweight-aweight-fweight-iweightの違い">pweight, aweight, fweight, iweightの違い</a></li>
+  <li><a href="#clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする" id="toc-clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする" class="nav-link active" data-scroll-target="#clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする">clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする</a></li>
+  <li><a href="#fre-変数の数値とラベルを一緒に表示する" id="toc-fre-変数の数値とラベルを一緒に表示する" class="nav-link" data-scroll-target="#fre-変数の数値とラベルを一緒に表示する">fre: 変数の数値とラベルを一緒に表示する</a></li>
+  <li><a href="#pweight-aweight-fweight-iweightの違い" id="toc-pweight-aweight-fweight-iweightの違い" class="nav-link" data-scroll-target="#pweight-aweight-fweight-iweightの違い">pweight, aweight, fweight, iweightの違い</a></li>
   <li><a href="#margins-contrast-限界効果どうしの差の検定" id="toc-margins-contrast-限界効果どうしの差の検定" class="nav-link" data-scroll-target="#margins-contrast-限界効果どうしの差の検定">margins, contrast: 限界効果どうしの差の検定</a></li>
   <li><a href="#import-spss-savファイルを読み込むstata-16以降" id="toc-import-spss-savファイルを読み込むstata-16以降" class="nav-link" data-scroll-target="#import-spss-savファイルを読み込むstata-16以降">import spss: savファイルを読み込む（Stata 16以降）</a></li>
   <li><a href="#rename-lowerすべての変数名を小文字にする" id="toc-rename-lowerすべての変数名を小文字にする" class="nav-link" data-scroll-target="#rename-lowerすべての変数名を小文字にする">rename *, lower：すべての変数名を小文字にする</a></li>
@@ -213,7 +215,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 27, 2024</p>
+      <p class="date">November 22, 2024</p>
     </div>
   </div>
   
@@ -226,6 +228,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Stataで知っておいたら便利かもしれないコードを不定期に更新します。</p>
+<section id="clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする" class="level2">
+<h2 class="anchored" data-anchor-id="clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする">clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする</h2>
+<p><code>generate</code>で変数を作成すると、もとの変数についていた変数ラベルや値ラベルの情報がなくなってしまう。もしそうした情報を残しておきたいのであれば、<code>clonevar</code>を使うとよい。</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">sysuse</span> auto, <span class="kw">clear</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> copy1 = foreign</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">tab</span> copy1</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">clonevar</span> copy2 = foreign</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">tab</span> copy2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="images/clonevar_stata.png" class="img-fluid"></p>
+<p>（2024/11/22）</p>
+</section>
+<section id="fre-変数の数値とラベルを一緒に表示する" class="level2">
+<h2 class="anchored" data-anchor-id="fre-変数の数値とラベルを一緒に表示する">fre: 変数の数値とラベルを一緒に表示する</h2>
+<p>度数分布を表示するときによく使うコードが<code>tabulate</code>だが、値ラベルがついている場合にはそれぞれの値が何なのかわからず、変数を加工したりするときに不便である。このような場合には、<code>fre</code>という関数を使うと、値と値ラベルがどちらも表示されて便利である。</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install fre <span class="co">// インストールする</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">sysuse</span> auto, <span class="kw">clear</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">tab</span> foreign <span class="co">// 値ラベルしか出ない</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">tab</span> foreign, <span class="kw">nolabel</span> <span class="co">// 値しか出ない</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>fre foreign <span class="co">// どちらも出る</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="images/fre_stata.png" class="img-fluid"> （2024/11/22）</p>
+</section>
 <section id="pweight-aweight-fweight-iweightの違い" class="level2">
 <h2 class="anchored" data-anchor-id="pweight-aweight-fweight-iweightの違い">pweight, aweight, fweight, iweightの違い</h2>
 <p>Stataには4種類のweightのコマンドがあり、いつどれを使うのかマニュアルをみてもいまいちわかりにくい。<a href="https://people.ku.edu/~chkim/soc910/note/Soc910_Note_04_Weight.pdf">インターネット上で見つけた授業資料</a>が簡潔によくまとまっているのでメモとしてまとめておく。</p>
@@ -238,15 +262,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="margins-contrast-限界効果どうしの差の検定" class="level2">
 <h2 class="anchored" data-anchor-id="margins-contrast-限界効果どうしの差の検定">margins, contrast: 限界効果どうしの差の検定</h2>
 <p>大卒であると結婚確率が高いことはよく知られている。いま、大卒であることが結婚確率に与える効果が人種（Race）によって異なるのか知りたいとする。このとき、次のようなロジットモデルを推定する。</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">sysuse</span> nlsw88.dta, <span class="kw">clear</span> <span class="co">//Stataのサンプルデータを利用する</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">logit</span> never_married i.race i.collgrad i.race#i.collgrad c.age##c.age</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">sysuse</span> nlsw88.dta, <span class="kw">clear</span> <span class="co">//Stataのサンプルデータを利用する</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">logit</span> never_married i.race i.collgrad i.race#i.collgrad c.age##c.age</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><img src="images/margins_contrast0.png" class="img-fluid"></p>
 <p>黒人（black）と大卒（collgrad）の交互作用項は負であり、白人（white）と比べて黒人の場合は大卒であることが結婚に与える効果は弱いというような結果である。しかし、ロジットモデルにおける係数はあくまで対数オッズであり、具体的に両者の<strong>確率</strong>がどの程度異なるのかはここからはわからない。そこで、人種ごとの大卒の限界効果を計算する：</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>margins , <span class="kw">dydx</span>(collgrad) <span class="fu">at</span>(race = (1(1)3))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>margins , <span class="kw">dydx</span>(collgrad) <span class="fu">at</span>(race = (1(1)3))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><img src="images/margins_contrast1.png" class="img-fluid"></p>
 <p>それぞれ、white, black, otherにおいて大卒であることが非大卒と比べてどの程度結婚確率を上昇させるかを表している。whiteの場合は大卒であれば非大卒と比べて結婚確率が0.092高い。一方、blackの場合は大卒であれば非大卒と比べて結婚確率が0.011低いという結果となっている。</p>
 <p>では、whiteにおける大卒の限界効果と、blackにおける大卒の限界効果との間には、たしかに差があるといえるのだろうか。これを確かめるときには、<code>margins, contrast</code>を使うことができる。</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>margins <span class="fu">r</span>.race, <span class="kw">dydx</span>(collgrad)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>margins <span class="fu">r</span>.race, <span class="kw">dydx</span>(collgrad)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><img src="images/margins_contrast2.png" class="img-fluid"></p>
 <p>前半にはそれぞれblackとwhite、otherとwhiteを対比させたときの検定の結果、後半には差と標準誤差、信頼区間が表示されている。結果は、blackとwhiteとの大卒の限界効果の差は統計的に有意であるということを示している。</p>
 <p>前者のmarginsの結果は、<a href="http://dx.doi.org/10.15195/V6.A4" title="Mize, T. D. (2019). Best practices for estimating, interpreting, and presenting nonlinear interaction effects. Sociological Science, 6, 81–117">Mize, T. D. (2019). Best practices for estimating, interpreting, and presenting nonlinear interaction effects. <em>Sociological Science</em>, <em>6</em>, 81–117</a>.のTable 3（p.104）の「First Differences」、後者のmargins, contrastの結果は「Second Differences」に、それぞれ対応する。「Second Differences」のほうをStataで計算するときの方法がよくわかっていなかったのだけど、どうやら上記で計算できそうだ。</p>
@@ -260,12 +284,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="rename-lowerすべての変数名を小文字にする" class="level2">
 <h2 class="anchored" data-anchor-id="rename-lowerすべての変数名を小文字にする">rename *, lower：すべての変数名を小文字にする</h2>
 <p>すべての変数名に含まれる大文字を小文字に変換したいときには、以下のコマンドを使うとできる。</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">rename</span> *, <span class="fu">lower</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">rename</span> *, <span class="fu">lower</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>逆に、すべての小文字を大文字に変換したいときには、以下のコマンド。</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">rename</span> *, <span class="fu">upper</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">rename</span> *, <span class="fu">upper</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>あんまりこういう場面はないと思うが、すべての小文字を大文字に、すべての大文字を小文字に、同時に変換したい（たとえば、ExAmPlEという変数をeXaMpLeというふうに変えたい）ときには、varcaseというアドインを使う。</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install varcase <span class="co">/* install commands. */</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>varcase <span class="dt">_all</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install varcase <span class="co">/* install commands. */</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>varcase <span class="dt">_all</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>今まではすべて小文字に直すときにcsvにデータをexportして保存してからそのcsvファイルを読み込んでdtaファイルに再度exportする（そのせいでもともとついていたラベルがすべて消えてしまう）という相当無駄な作業をしていたが、それをしなくてよくなった。やっぱり少しでも楽をしようという気持ちが大事だ。。</p>
 <p>（2020/4/3→2022/10/09移行）</p>
 </section>
@@ -274,9 +298,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>文字列（string）の変数を数値列に直す、destringというコマンドがある。destring, replaceたいていの場合はうまくいくが、たとえば以下のように、3桁区切りのカンマが入っている場合にはこのコマンドを走らせてもうまく数値列に変換できない。<br>
 <img src="images/destring_before-1-768x689.png" class="img-fluid"></p>
 <p>この場合は、ignoreというオプションを使うと数値列に変換できる。</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">destring</span>, <span class="kw">replace</span> ignore(<span class="st">","</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">destring</span>, <span class="kw">replace</span> ignore(<span class="st">","</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><img src="images/destring_after-1-768x685.png" class="img-fluid"></p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>,ignore(<span class="st">"char"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>,ignore(<span class="st">"char"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>というオプションは、ダブルクォーテーションの間の文字列を無視するという命令のよう。なので、これ以外にもカンマ以外にも謎の文字列が入っている場合にはこれを除いて数値列に変換することができるようだ。</p>
 <p>（作成日不明→2022/10/09移行）<br>
 </p>
@@ -315,9 +339,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 <p><br>
 左のように"年"という文字を含んだ変数から前4つの数字だけを取り出して、右のように数字だけからなる変数yearを作るときには、substrというコマンドを使う。</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">gen</span> <span class="fu">year</span> = <span class="fu">substr</span>(年, 1, 4)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>*** 以下でも同じ結果を得られる. </span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="kw">gen</span> <span class="fu">year</span> = <span class="fu">substr</span>(年, -2, 4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">gen</span> <span class="fu">year</span> = <span class="fu">substr</span>(年, 1, 4)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>*** 以下でも同じ結果を得られる. </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="kw">gen</span> <span class="fu">year</span> = <span class="fu">substr</span>(年, -2, 4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>substr()のなかの1つめの項は変数名を、2つめの項は<strong>前から</strong>何番目の文字から抽出するかを、3つめの項は先に指定した文字からいくつの個数の文字を抽出するかを、それぞれ指定する。たとえば前者のコマンドの場合は、「年という変数の1番目の文字から4文字分抽出する」ということになる。後者のコマンドのように2つめの項に-を指定することもでき、この場合は<strong>後ろから</strong>何番目の文字を抽出するかを表す。先の例だと、「年という変数の後ろから2番目の文字から4文字分抽出する」という意味になる。参考：<a href="http://statamemo.jugem.jp/?month=201103" class="uri">http://statamemo.jugem.jp/?month=201103</a></p>
 <p>（作成日不明→2022/10/09移行）</p>
 </section>
@@ -325,53 +349,55 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="generate-double8桁を超える値をとる変数を作成する">generate double：8桁を超える値をとる変数を作成する</h2>
 <p>Stataでは数字はデフォルトだとfloatという型で保存される。詳しいことはわからないけれど、floatというのは10進数のもとでは有効桁数が7桁となる4byteのサイズを持つ形式のことを指すようである（参考：<a href="http://www.cc.kyoto-su.ac.jp/~yamada/programming/float.html" class="uri">http://www.cc.kyoto-su.ac.jp/~yamada/programming/float.html</a>）。ほとんどの場合数値はfloat型で問題なく扱えるのですが、たまに8桁を超える値をもつ変数を作ろうとした場合、値が指数表記されてしまい、正確な値を保存することができないという事態が起こる。</p>
 <p>そのような場合は、変数を作成するときに型名としてdoubleを指定すれば良いようです（参考：<a href="https://www.stata.com/manuals13/u12.pdf#u12Data" class="uri">https://www.stata.com/manuals13/u12.pdf#u12Data</a> 12.2.2節"Numeric storage types"）。doubleは10進数のもとでは有効桁数が15桁となる8byteのサイズを持つ形式。これを使うことで、8桁を超える値をとるような変数を扱うことができるようになる。実際の使い方としてはこんな感じ：</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">gen</span> <span class="kw">double</span> x = <span class="fu">y</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">gen</span> <span class="kw">double</span> x = <span class="fu">y</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>これで、新しく作られる変数xが8桁を超える値をとるものであったとしても、値が指数表記されずにすむ。</p>
 <p>（作成日不明→2022/10/09移行）</p>
 </section>
 <section id="labsumm記述統計量の変数名にラベルをつけて出力" class="level2">
 <h2 class="anchored" data-anchor-id="labsumm記述統計量の変数名にラベルをつけて出力">labsumm：記述統計量の変数名にラベルをつけて出力</h2>
 <p>summarizeだと変数にラベルがつかないので、エクセルなどに貼り付けた後に自分で書かないといけないけど、labsummコマンドだとラベルをつけた状態で出力できる。</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install labsumm <span class="co">/*コマンドのインストール*/</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>lab <span class="kw">var</span> female <span class="st">"女性"</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>lab <span class="kw">var</span> income <span class="st">"所得"</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>labsumm female income</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install labsumm <span class="co">/*コマンドのインストール*/</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>lab <span class="kw">var</span> female <span class="st">"女性"</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>lab <span class="kw">var</span> income <span class="st">"所得"</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>labsumm female income</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>（作成日不明→2022/10/09移行）</p>
+<p>2024-11-22追記：Stata 18で<a href="https://www.stata.com/manuals/rdtable.pdf">dtable</a>という便利な関数が追加されたので、今後はこれを使うとよいと思う。</p>
 </section>
 <section id="fsumより一般的な記述統計量を出力するコマンド" class="level2">
 <h2 class="anchored" data-anchor-id="fsumより一般的な記述統計量を出力するコマンド">fsum：より一般的な記述統計量を出力するコマンド</h2>
 <p>labsummよりも新しいコマンドで、通常のsummarizeコマンドをさらに拡張したような使い方ができる。変数にラベルをつけて表示することはもちろん、カテゴリカル変数の内訳を（ダミー変数を作ることなく）算出できたりする。詳しくは<a href="http://fmwww.bc.edu/repec/bocode/f/fsum.html">helpファイル</a>を参照のこと。</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install fsum <span class="co">/*コマンドのインストール*/</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>lab <span class="kw">var</span> sex <span class="st">"性別"</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>lab def sexlab 1<span class="st">"男性"</span> 2<span class="st">"女性"</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>lab val sex sexlab</span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="kw">recode</span> sex (1=0)(2=1), <span class="kw">gen</span>(female)</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>lab <span class="kw">var</span> female <span class="st">"女性"</span></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>lab <span class="kw">var</span> income <span class="st">"所得"</span></span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>fsum female income, <span class="kw">stats</span>(<span class="kw">mean</span> <span class="fu">sd</span> p50) <span class="co">/*平均、標準偏差、中央値を表示*/</span></span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>fsum female income, <span class="kw">uselabel</span> <span class="co">/*変数名はラベルで表示*/</span></span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>fsum sex income, catvar(sex) <span class="co">/*カテゴリカル変数について内訳の%を算出*/</span></span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>fsum female income, <span class="kw">format</span>(%9.4f) <span class="co">/*小数点第4位まで出力（デフォルトは第2位）*/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install fsum <span class="co">/*コマンドのインストール*/</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>lab <span class="kw">var</span> sex <span class="st">"性別"</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>lab def sexlab 1<span class="st">"男性"</span> 2<span class="st">"女性"</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>lab val sex sexlab</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="kw">recode</span> sex (1=0)(2=1), <span class="kw">gen</span>(female)</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>lab <span class="kw">var</span> female <span class="st">"女性"</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>lab <span class="kw">var</span> income <span class="st">"所得"</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>fsum female income, <span class="kw">stats</span>(<span class="kw">mean</span> <span class="fu">sd</span> p50) <span class="co">/*平均、標準偏差、中央値を表示*/</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>fsum female income, <span class="kw">uselabel</span> <span class="co">/*変数名はラベルで表示*/</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>fsum sex income, catvar(sex) <span class="co">/*カテゴリカル変数について内訳の%を算出*/</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>fsum female income, <span class="kw">format</span>(%9.4f) <span class="co">/*小数点第4位まで出力（デフォルトは第2位）*/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>（作成日不明→2022/10/09移行）</p>
+<p>2024-11-22追記：Stata 18で<a href="https://www.stata.com/manuals/rdtable.pdf">dtable</a>という便利な関数が追加されたので、今後はこれを使うとよいと思う。</p>
 </section>
 <section id="vioplotヴァイオリンプロットを描く" class="level2">
 <h2 class="anchored" data-anchor-id="vioplotヴァイオリンプロットを描く">vioplot：ヴァイオリン・プロットを描く</h2>
 <p>箱ひげ図とヒストグラムの特徴を併せ持つヴァイオリン・プロットをStataでも描くことができる。<a href="https://ideas.repec.org/c/boc/bocode/s456902.html">"VIOPLOT"</a>というコマンドを使用する。</p>
 <p>参考）<a href="http://yyhhyy.hatenablog.com/entry/2016/08/20/220000">「箱ひげ図とバイオリンプロットの印象の違い」</a></p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install vioplot <span class="co">/*コマンドのインストール*/</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co">/***試しに箱ひげ図と見た目を比べてみる***/</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> <span class="st">"http://www.stata-press.com/data/r13/auto"</span>, <span class="kw">clear</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> box mpg, <span class="bn">title</span>(<span class="st">"Box plot"</span>) <span class="bn">over</span>(foreign) <span class="kw">ylabel</span>(10(10)50) <span class="co">/*こっちが箱ひげ図*/</span></span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">save</span> <span class="st">"box.gph"</span>, <span class="kw">replace</span></span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>vioplot mpg, <span class="bn">title</span>(<span class="st">"Violin plot"</span>) <span class="bn">over</span>(foreign) <span class="kw">ylabel</span>(10(10)50) <span class="co">/*こっちがヴァイオリンプロット*/</span></span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">save</span> <span class="st">"vioplot.gph"</span>, <span class="kw">replace</span></span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="bn">combine</span> <span class="st">"box.gph"</span> <span class="st">"vioplot.gph"</span> <span class="co">/*並べてみる*/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install vioplot <span class="co">/*コマンドのインストール*/</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co">/***試しに箱ひげ図と見た目を比べてみる***/</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> <span class="st">"http://www.stata-press.com/data/r13/auto"</span>, <span class="kw">clear</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> box mpg, <span class="bn">title</span>(<span class="st">"Box plot"</span>) <span class="bn">over</span>(foreign) <span class="kw">ylabel</span>(10(10)50) <span class="co">/*こっちが箱ひげ図*/</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">save</span> <span class="st">"box.gph"</span>, <span class="kw">replace</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>vioplot mpg, <span class="bn">title</span>(<span class="st">"Violin plot"</span>) <span class="bn">over</span>(foreign) <span class="kw">ylabel</span>(10(10)50) <span class="co">/*こっちがヴァイオリンプロット*/</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">save</span> <span class="st">"vioplot.gph"</span>, <span class="kw">replace</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="bn">combine</span> <span class="st">"box.gph"</span> <span class="st">"vioplot.gph"</span> <span class="co">/*並べてみる*/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>実際の見た目はこんな感じ。violin plotのほうがぱっとみた時の情報量が多い。デフォルトだと、カーネル密度のなかに箱ひげ図がはいったかたちになる。</p>
 <p><img src="images/Graph.png" class="img-fluid"></p>
 <p>（作成日不明→2022/10/09移行）</p>
@@ -381,26 +407,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>種々の回帰分析から得られた係数とその信頼区間をプロットするコマンド。以下の通り開発者が詳しく解説してくれているので、ここでは最低限のコマンドだけ載せておく。</p>
 <p>参考）Jahn, Ben. 2017. "<a href="http://repec.sowi.unibe.ch/files/wp1/jann-2013-coefplot.pdf">Plotting regression coefficients and other estimates in Stata</a>." University of Bern Social Sciences Working Paper No.1.</p>
 <p>Jahn, Ben. "<a href="http://www.stata.com/meeting/germany14/abstracts/materials/de14_jann.pdf">A new command for plotting regression coefficients and other estimates</a>." 12th German Stata Users Group meeting Hamburg, June 13, 2014.</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install coefplot</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> <span class="st">"http://www.stata-press.com/data/r13/auto"</span>, <span class="kw">clear</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="kw">qui</span> <span class="kw">reg</span> mpg rep78 foreign <span class="co">/*回帰分析をしたあとに…*/</span></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>coefplot <span class="co">/*切片も含めすべての係数および95%信頼区間をプロット*/</span></span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>coefplot, <span class="kw">keep</span>(rep78 foreign) <span class="co">/*指定した独立変数のみプロット*/</span></span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>coefplot, <span class="dv">scheme</span>(s1mono) <span class="kw">keep</span>(rep78 foreign) ciopts(<span class="kw">recast</span>(rcap)) vert <span class="kw">scale</span>(1.2) <span class="kw">ylabel</span>(,<span class="bn">grid</span>) <span class="bn">ytitle</span>(<span class="st">"coef."</span>) <span class="co">/*自分が使うときはこんな感じで設定*/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install coefplot</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> <span class="st">"http://www.stata-press.com/data/r13/auto"</span>, <span class="kw">clear</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="kw">qui</span> <span class="kw">reg</span> mpg rep78 foreign <span class="co">/*回帰分析をしたあとに…*/</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>coefplot <span class="co">/*切片も含めすべての係数および95%信頼区間をプロット*/</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>coefplot, <span class="kw">keep</span>(rep78 foreign) <span class="co">/*指定した独立変数のみプロット*/</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>coefplot, <span class="dv">scheme</span>(s1mono) <span class="kw">keep</span>(rep78 foreign) ciopts(<span class="kw">recast</span>(rcap)) vert <span class="kw">scale</span>(1.2) <span class="kw">ylabel</span>(,<span class="bn">grid</span>) <span class="bn">ytitle</span>(<span class="st">"coef."</span>) <span class="co">/*自分が使うときはこんな感じで設定*/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>（作成日不明→2022/10/09移行）</p>
 </section>
 <section id="tabulate-genダミー変数を一度に作成する" class="level2">
 <h2 class="anchored" data-anchor-id="tabulate-genダミー変数を一度に作成する">tabulate, gen()：ダミー変数を一度に作成する</h2>
 <p>tabulateコマンドのオプションに、結果を出力したあとにダミー変数を作ってくれるものがあります。generateやrecodeコマンドを使わずにダミー変数を一度に作成することができます。記述統計量を出すときなどに便利です。</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">tab</span> educ, <span class="kw">gen</span>(educd)</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co">もしeducが1, 2, 3, 4, 5の5値の変数であれば，educd1-educd5という5つの変数が作られる．</span></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co">小さいカテゴリから順に1, 2,…と自動的に名前が付いていくので，間違えないように注意．</span></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="co">*/</span></span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="kw">tab</span> educ educd1 <span class="co">/*ちゃんと変数ができたかどうか確認してみる*/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">tab</span> educ, <span class="kw">gen</span>(educd)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co">もしeducが1, 2, 3, 4, 5の5値の変数であれば，educd1-educd5という5つの変数が作られる．</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co">小さいカテゴリから順に1, 2,…と自動的に名前が付いていくので，間違えないように注意．</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="co">*/</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="kw">tab</span> educ educd1 <span class="co">/*ちゃんと変数ができたかどうか確認してみる*/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>（作成日不明→2022/10/09移行）</p>
 </section>
 <section id="set-more-offmore-を表示しないようにする" class="level2">
@@ -409,12 +435,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>–more–</p>
 <p>という表示を出します。これが出ると、何らかのキーを押したりクリックしたりしないと計算が進まなかったり、続く結果が出力されなかったりして面倒です。</p>
 <p>そこで、Stataを開いたときに</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>というコマンドを走らせると、Stataを閉じるまでは</p>
 <p>–more–</p>
 <p>が出ないようになります。do fileの一番最初とかに書いておくとよいと思います。</p>
 <p>また、</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span>, <span class="kw">permanently</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span>, <span class="kw">permanently</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>というコマンドを走らせるとStataの設定自体が書き換わるので、再度開いたときにもその効果が続きます。</p>
 <p>（作成日不明→2022/10/09移行）</p>
 </section>
@@ -422,9 +448,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="grc1legグラフを結合したときに凡例を1つだけに">grc1leg：グラフを結合したときに凡例を1つだけに</h2>
 <p><a href="https://www.stata.com/manuals13/g-2graphcombine.pdf">graph combine</a>という、Stataで作ったグラフを結合するコマンドがあります。ただ、もとのグラフごとに凡例がついている場合、単純に結合するとくっつけた数だけ凡例ができてしまい、大変冗長になってしまいます。</p>
 <p>そこで、どれか一つのグラフから凡例をとってくるコマンドがgrc1legです。使い方は以下のとおり。</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> <span class="kw">line</span> y1 x, <span class="kw">by</span>(sex) <span class="kw">saving</span>(graph1, <span class="kw">replace</span>)</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> <span class="kw">line</span> y2 x, <span class="kw">by</span>(sex) <span class="kw">saving</span>(graph2, <span class="kw">replace</span>)</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>grc1leg graph1.gph graph2.gph, legendfrom(graph1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> <span class="kw">line</span> y1 x, <span class="kw">by</span>(sex) <span class="kw">saving</span>(graph1, <span class="kw">replace</span>)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> <span class="kw">line</span> y2 x, <span class="kw">by</span>(sex) <span class="kw">saving</span>(graph2, <span class="kw">replace</span>)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>grc1leg graph1.gph graph2.gph, legendfrom(graph1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>このばあい、グラフ1から凡例をとってきて表示するというかたちになります。</p>
 <p>（作成日不明→2022/10/09移行）</p>
 

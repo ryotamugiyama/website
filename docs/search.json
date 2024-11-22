@@ -67,14 +67,14 @@
     "href": "stata.html#labsumm記述統計量の変数名にラベルをつけて出力",
     "title": "Stata",
     "section": "labsumm：記述統計量の変数名にラベルをつけて出力",
-    "text": "labsumm：記述統計量の変数名にラベルをつけて出力\nsummarizeだと変数にラベルがつかないので、エクセルなどに貼り付けた後に自分で書かないといけないけど、labsummコマンドだとラベルをつけた状態で出力できる。\nssc install labsumm /*コマンドのインストール*/\nlab var female \"女性\"\nlab var income \"所得\"\nlabsumm female income\n（作成日不明→2022/10/09移行）"
+    "text": "labsumm：記述統計量の変数名にラベルをつけて出力\nsummarizeだと変数にラベルがつかないので、エクセルなどに貼り付けた後に自分で書かないといけないけど、labsummコマンドだとラベルをつけた状態で出力できる。\nssc install labsumm /*コマンドのインストール*/\nlab var female \"女性\"\nlab var income \"所得\"\nlabsumm female income\n（作成日不明→2022/10/09移行）\n2024-11-22追記：Stata 18でdtableという便利な関数が追加されたので、今後はこれを使うとよいと思う。"
   },
   {
     "objectID": "stata.html#fsumより一般的な記述統計量を出力するコマンド",
     "href": "stata.html#fsumより一般的な記述統計量を出力するコマンド",
     "title": "Stata",
     "section": "fsum：より一般的な記述統計量を出力するコマンド",
-    "text": "fsum：より一般的な記述統計量を出力するコマンド\nlabsummよりも新しいコマンドで、通常のsummarizeコマンドをさらに拡張したような使い方ができる。変数にラベルをつけて表示することはもちろん、カテゴリカル変数の内訳を（ダミー変数を作ることなく）算出できたりする。詳しくはhelpファイルを参照のこと。\nssc install fsum /*コマンドのインストール*/\n\nlab var sex \"性別\"\nlab def sexlab 1\"男性\" 2\"女性\"\nlab val sex sexlab\n\nrecode sex (1=0)(2=1), gen(female)\nlab var female \"女性\"\n\nlab var income \"所得\"\n\nfsum female income, stats(mean sd p50) /*平均、標準偏差、中央値を表示*/\nfsum female income, uselabel /*変数名はラベルで表示*/\nfsum sex income, catvar(sex) /*カテゴリカル変数について内訳の%を算出*/\nfsum female income, format(%9.4f) /*小数点第4位まで出力（デフォルトは第2位）*/\n（作成日不明→2022/10/09移行）"
+    "text": "fsum：より一般的な記述統計量を出力するコマンド\nlabsummよりも新しいコマンドで、通常のsummarizeコマンドをさらに拡張したような使い方ができる。変数にラベルをつけて表示することはもちろん、カテゴリカル変数の内訳を（ダミー変数を作ることなく）算出できたりする。詳しくはhelpファイルを参照のこと。\nssc install fsum /*コマンドのインストール*/\n\nlab var sex \"性別\"\nlab def sexlab 1\"男性\" 2\"女性\"\nlab val sex sexlab\n\nrecode sex (1=0)(2=1), gen(female)\nlab var female \"女性\"\n\nlab var income \"所得\"\n\nfsum female income, stats(mean sd p50) /*平均、標準偏差、中央値を表示*/\nfsum female income, uselabel /*変数名はラベルで表示*/\nfsum sex income, catvar(sex) /*カテゴリカル変数について内訳の%を算出*/\nfsum female income, format(%9.4f) /*小数点第4位まで出力（デフォルトは第2位）*/\n（作成日不明→2022/10/09移行）\n2024-11-22追記：Stata 18でdtableという便利な関数が追加されたので、今後はこれを使うとよいと思う。"
   },
   {
     "objectID": "stata.html#vioplotヴァイオリンプロットを描く",
@@ -1391,5 +1391,19 @@
     "title": "Profile",
     "section": "",
     "text": "Followed by Japanese.\n\nPositions\nApril 2021–Current: Associate Professor, Department of Political Studies, Faculty of Law, Gakushuin University.\nApril 2019–March 2021: Post-doctoral Research Fellow (PD), Japan Society for the Promotion of Science, at Institute of Economic Research, Hitotsubashi University.\nApril 2017–March 2019: Pre-doctoral Research Fellow (DC2), Japan Society for the Promotion of Science.\n\n\nEducation\nMarch 2019: Doctor of Sociology, Department of Sociology, the University of Tokyo.\nMarch 2016: M.A. in Sociology, Department of Sociology, the University of Tokyo.\nMarch 2014: B.A. in Letters, Faculty of Letters, the University of Tokyo.\n\n\n職歴\n2021年4月–現在　学習院大学法学部政治学科 准教授\n2019年4月–2021年3月　日本学術振興会特別研究員PD（一橋大学経済研究所）\n2017年4月–2019年3月　日本学術振興会特別研究員DC2\n\n\n学歴\n2019年3月　東京大学大学院人文社会系研究科 社会文化研究専攻 社会学専門分野博士課程修了，博士（社会学）\n2016年3月　東京大学大学院人文社会系研究科 社会文化研究専攻 社会学専門分野修士課程修了，修士（社会学）\n2014年3月　東京大学文学部 行動文化学科 社会学専修課程卒業，学士（文学）"
+  },
+  {
+    "objectID": "stata.html#clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする",
+    "href": "stata.html#clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする",
+    "title": "Stata",
+    "section": "clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする",
+    "text": "clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする\ngenerateで変数を作成すると、もとの変数についていた変数ラベルや値ラベルの情報がなくなってしまう。もしそうした情報を残しておきたいのであれば、clonevarを使うとよい。\nsysuse auto, clear\ngenerate copy1 = foreign\ntab copy1\nclonevar copy2 = foreign\ntab copy2\n\n（2024/11/22）"
+  },
+  {
+    "objectID": "stata.html#fre-変数の数値とラベルを一緒に表示する",
+    "href": "stata.html#fre-変数の数値とラベルを一緒に表示する",
+    "title": "Stata",
+    "section": "fre: 変数の数値とラベルを一緒に表示する",
+    "text": "fre: 変数の数値とラベルを一緒に表示する\n度数分布を表示するときによく使うコードがtabulateだが、値ラベルがついている場合にはそれぞれの値が何なのかわからず、変数を加工したりするときに不便である。このような場合には、freという関数を使うと、値と値ラベルがどちらも表示されて便利である。\nssc install fre // インストールする\n\nsysuse auto, clear\ntab foreign // 値ラベルしか出ない\ntab foreign, nolabel // 値しか出ない\nfre foreign // どちらも出る\n （2024/11/22）"
   }
 ]

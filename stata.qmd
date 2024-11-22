@@ -1,9 +1,39 @@
 ---
 title: "Stata"
-date: "2024-03-27"
+date: "2024-11-22"
 ---
 
 Stataで知っておいたら便利かもしれないコードを不定期に更新します。
+
+## clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする
+
+`generate`で変数を作成すると、もとの変数についていた変数ラベルや値ラベルの情報がなくなってしまう。もしそうした情報を残しておきたいのであれば、`clonevar`を使うとよい。
+
+``` stata
+sysuse auto, clear
+generate copy1 = foreign
+tab copy1
+clonevar copy2 = foreign
+tab copy2
+```
+![](images/clonevar_stata.png)
+
+（2024/11/22）
+
+## fre: 変数の数値とラベルを一緒に表示する
+
+度数分布を表示するときによく使うコードが`tabulate`だが、値ラベルがついている場合にはそれぞれの値が何なのかわからず、変数を加工したりするときに不便である。このような場合には、`fre`という関数を使うと、値と値ラベルがどちらも表示されて便利である。
+
+``` stata
+ssc install fre // インストールする
+
+sysuse auto, clear
+tab foreign // 値ラベルしか出ない
+tab foreign, nolabel // 値しか出ない
+fre foreign // どちらも出る
+```
+![](images/fre_stata.png)
+（2024/11/22）
 
 ## pweight, aweight, fweight, iweightの違い
 
@@ -156,6 +186,8 @@ labsumm female income
 
 （作成日不明→2022/10/09移行）
 
+2024-11-22追記：Stata 18で[dtable](https://www.stata.com/manuals/rdtable.pdf)という便利な関数が追加されたので、今後はこれを使うとよいと思う。
+
 ## fsum：より一般的な記述統計量を出力するコマンド
 
 labsummよりも新しいコマンドで、通常のsummarizeコマンドをさらに拡張したような使い方ができる。変数にラベルをつけて表示することはもちろん、カテゴリカル変数の内訳を（ダミー変数を作ることなく）算出できたりする。詳しくは[helpファイル](http://fmwww.bc.edu/repec/bocode/f/fsum.html)を参照のこと。
@@ -179,6 +211,8 @@ fsum female income, format(%9.4f) /*小数点第4位まで出力（デフォル�
 ```
 
 （作成日不明→2022/10/09移行）
+
+2024-11-22追記：Stata 18で[dtable](https://www.stata.com/manuals/rdtable.pdf)という便利な関数が追加されたので、今後はこれを使うとよいと思う。
 
 ## vioplot：ヴァイオリン・プロットを描く
 
