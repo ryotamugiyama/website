@@ -217,8 +217,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>（2017/5/11 701番以降の追加コードを修正） （2017/5/13 熟練、半熟練、非熟練の説明を追加） （2024/11/22 691, 805, 806を追加）</p>
-<p>標題の通りです。ご使用は自己責任でお願いします。作成に際しては、1995年SSM調査研究会，1995，『SSM産業分類・職業分類 (95年版)』を参照しました。</p>
+<p>（2017/5/11 701番以降の追加コードを修正）</p>
+<p>（2024/11/22 691, 805, 806を追加）</p>
+<p>（2024/11/22 「管理職戻し」の説明を追加）</p>
+<p>標題の通りです。ご使用は自己責任でお願いします。作成に際しては、1995年SSM調査研究会，1995，『SSM産業分類・職業分類(95年版)』を参照しました。</p>
 <p>ミスや不適切な箇所を見つけた方は、ご指摘くださいますようお願いします。</p>
 <p>SPSSを使う場合は<a href="https://www2.rikkyo.ac.jp/web/murase/ssm/job.html">村瀬洋一先生のHP</a>が、Rを使う場合は<a href="https://terasawat.hatenablog.jp/entry/20090607/1244363041">寺沢拓敬先生のHP</a>が、それぞれ参考になります。</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>*** <span class="kw">recode</span> occupation into SSM 8 classification (including no-job) <span class="kw">for</span> stata **</span>
@@ -267,6 +269,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="co">/*「無職」を職業カテゴリに含めたい場合は以下を追加してください。*/</span></span>
 <span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> ssmocc = 9 <span class="kw">if</span> occupation == 998</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>なお、上記コードでは職業の情報のみを用いて8分類を作成していますが、管理職については、もともとの記載内容を残しておくという目的で、管理職とみなせるような場合でも、管理職ではない職業小分類コードが振られている可能性があります。具体的には、2015年社会階層と社会移動調査研究会，2018，『2015年SSM調査コードブック』2015年社会階層と社会移動調査研究会，p.80に次のような記述があります。</p>
+<blockquote class="blockquote">
+<p>(2)「管理職」のコードについて （以下は原則であり、仕事の内容が管理的としか言えないときは、管理的職業にコードする。ただし、ここでいう「管理」とは部下など人の管理であって、在庫管理や物品管理などは含まないことに注意。）</p>
+<p>・従業上の地位が「1 経営者・役員」「7 自営業主・自由業者」の場合</p>
+<p>規模5人未満　必ず、管理的職業以外の仕事の内容でコードする。</p>
+<p>規模30人未満　管理的職業以外の仕事の内容を優先してコードする。</p>
+<p>規模30人以上　原則としていずれか該当する管理的職業でコード（「548 会社役員」「549 その他の法人・団体の役員」など）するが、それ以外の仕事の内容が書いてあれば、それに従ってコードする。</p>
+<p>・従業上の地位が「2 常時雇用されている一般従業者」「3 パート・アルバイト」「4 派遣社員」「5 契約社員」「6 臨時雇用」「8 家族従業者」の場合</p>
+<p>役職が「4課長」以上のとき・・・</p>
+<p>規模5人未満　必ず、管理的職業以外の仕事の内容でコードする。</p>
+<p>規模30人未満　管理的職業以外の仕事の内容を優先してコードする。</p>
+<p>規模30人以上　原則としていずれか該当する管理的職業でコード（「550 会社・団体等の管理職員」など）するが、それ以外の仕事の内容が書いてあれば、それに従ってコードする。</p>
+<p>役職が「3係長」以下のとき・・・</p>
+<p>必ず、管理的職業以外の仕事の内容でコードする。</p>
+<p>・専門的管理職（設計技師長、病院長、学校長など）は、「専門」の方を優先する。</p>
+</blockquote>
+<p>つまり、従業員数30人以上の企業に勤める課長以上であったり、経営者であったとしても、管理職以外のコードが振られているケースがあるということです。もし、これらの人を管理職だとみなすのであれば、上記に加えてさらに次のコードを実行する必要があります。</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>*** 管理職になるべきだが管理職にコードされていない人を管理職に戻す</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>*** 企業規模30人以上で、従業上の地位が経営者・役員もしくは自営業主・自由業者の場合、管理職とする。ただし専門職はそのようにしない</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> ssmocc = 2 <span class="kw">if</span> (status == 1 | status == 7) &amp; (firmsize &gt;= 5 &amp; firmsize &lt;= 10) &amp; ssmocc != 1  </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>*** 企業規模30人以上で、従業上の地位が正規雇用、非正規雇用、家族従業者で、役職が課長以上の場合、管理職とする。ただし専門職はそのようにしない</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> ssmocc = 2 <span class="kw">if</span> (status &gt;= 2 &amp; status &lt;= 6 | status == 8) &amp; (firmsize &gt;= 5 &amp; firmsize &lt;= 10) &amp; (<span class="bn">title</span> &gt;= 4 &amp; <span class="bn">title</span> &lt;= 6) &amp; ssmocc != 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>ただしstatus, firmsize, titleはそれぞれ次のような値が入った変数とします（SSM2015に準拠）。</p>
+<ul>
+<li>status: 従業上の地位（1: 経営者・役員、2: 常時雇用されている一般従業者、3: パート・アルバイト、4: 派遣社員、5: 契約社員・嘱託、6: 臨時雇用、7: 自営業主・自由業者、8: 家族従業者）</li>
+<li>firmsize: 従業員数（1: 1人、2: 2-4人、3: 5-9人、4: 10-29人、5: 30-99人、6: 100-299人、7: 300-499人、8: 500-999人、9: 1000人以上、10: 官公庁）</li>
+<li>title: 役職（1: 役職なし、2: 監督・職長・班長・組長、3: 係長・係長相当職、4: 課長・課長相当職、5: 部長・部長相当職、6: 社長・重役・役員・理事）</li>
+</ul>
 
 
 
