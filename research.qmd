@@ -13,6 +13,8 @@ Other research publications can also be found on the following pages.
 
 ### in English
 
+Mugiyama, Ryota. 2025. "Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment instability among Men in Japan." *Demographic Research.* Forthcoming.
+
 Mugiyama, Ryota. 2024. "[Disaggregating the Relationship between Precarious Employment and Delayed Marriage in Japan: Incorporating Non-cohabiting Partnerships](https://doi.org/10.1016/j.ssresearch.2024.103093)." *Social Science Research.* 124: 103093.
 
 Mogi, Ryohei, Ryota Mugiyama and Giammarco Alderotti. 2024. "[Employment Uncertainty and Non-coresidential Partnership in Very Low Fertility Countries: Italy and Japan](https://doi.org/10.20377/jfr-953)." *Journal of Family Research.* 36: 160--177.
@@ -26,6 +28,11 @@ Igarashi, Akira and Ryota Mugiyama. 2023. "[Whose tastes matter? Discrimination 
 Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Class and Occupational Returns to Education at First Job: The Case of Japan](https://doi.org/10.1093/esr/jcab037)." *European Sociological Review.* 38(2): 269--285.
 
 ### in Japanese
+
+<!--- 
+麦山亮太・林愛子，xxxx，「専攻間賃金格差の男女比較分析：年齢による違いに着目して」『日本労働研究雑誌』
+小松恭子・麦山亮太，xxxx，「日本の労働市場におけるタスク分布の変化と要因：1980〜2020年における産業構造の変化とICT導入の影響」『日本労働研究雑誌』
+--->
 
 麦山亮太・大里蒼一郎，2024，「[地域の図書館普及が子どもの学習時間に与える影響とその階層差](https://doi.org/10.11218/ojjams.39.19)」『理論と方法』39(1): 19--34．
 
@@ -62,12 +69,7 @@ Multigenerational Perspective on Trends in the Inequality of Educational Opportu
 
 Does Educational Expansion Weaken the Equalizing Power of College? Trends in Social Origin Differentials in Occupational Destination in Japan (with Kohei Toyonaga)
 
--   2022-08-13 Presented at RC28 Summer Meeting at University of Notre Dame. [slide](https://researchmap.jp/mugiyama/presentations/38562818)
-
-Downward Mobility and Loneliness: Consequences of Intergenerational Educational Mobility in Japan (with Aram Kwon and Takahiro Tabuchi)
-
-- 2024-04-11 Working paper is found here. [paper](https://csrda.iss.u-tokyo.ac.jp/international/dp/No.83.pdf)
-- 2023-08-15 Presented at RC28 Summer Meeting at University of Michigan. [poster](https://researchmap.jp/mugiyama/presentations/41971642)
+- 2022-08-13 Presented at RC28 Summer Meeting at University of Notre Dame. [slide](https://researchmap.jp/mugiyama/presentations/38562818)
 
 Changing University Accessibility and Inequality of Educational Opportunity in Japan (with Kohei Toyonaga)
 
@@ -81,6 +83,22 @@ Social Origin Earnings Gap in Japan: Differential Effects by Class Destination
 - 2024-09-13 Working paper is found here. [peper](https://csrda.iss.u-tokyo.ac.jp/international/dp/No.97.pdf)
 - 2024-05-18 Presented at RC28 Spring Meeting at NYU Shanghai. [slide](https://researchmap.jp/mugiyama/presentations/45741717)
 - 2024-03-16 Presented at JAMS 76th Meeting at Osaka University. [slide](https://researchmap.jp/mugiyama/presentations/45509862)
+
+The Impact of Intergenerational Educational Mobility and Subjective Social Status: Evidence from Japan. (with Aram Kwon)
+
+- 2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop.
+- 2025-03-xx Presented at RC28 Spring Meeting at University of Milan.
+
+Intergenerational Educational Mobility in 21st Century Japan: Changing Roles of Fathers and Mothers? (with Aguru Ishibashi) 
+
+- 2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop. [slide]() 
+
+<!---- 
+Downward Mobility and Loneliness: Consequences of Intergenerational Educational Mobility in Japan (with Aram Kwon and Takahiro Tabuchi)
+
+- 2024-04-11 Working paper is found here. [paper](https://csrda.iss.u-tokyo.ac.jp/international/dp/No.83.pdf)
+- 2023-08-15 Presented at RC28 Summer Meeting at University of Michigan. [poster](https://researchmap.jp/mugiyama/presentations/41971642)
+---->
 
 ### Labor market inequality
 
@@ -103,13 +121,11 @@ The Variation in Workers' Task Variety and its Earnings Returns Across Countries
 
 - 2024-08-30 Presented at JAMS 77th Annual Meeting at Tohoku University. [slide](https://researchmap.jp/mugiyama/presentations/46844602)
 
+<!---- 
+Trends in Occupational Gender Segregation in Japan, 1980--2020 (with Fumiya Uchikoshi) 
+--->
+
 ### Family Formation 
-
-Decomposing Delayed Marriage and Parenthood across Cohorts: The Role of Increased Precarious Employment among Men in Japan
-
-- 2024-07-19 Working paper is found here. [paper](https://csrda.iss.u-tokyo.ac.jp/international/dp/No.90.pdf)
-- 2023-04-04 Presented at PAA 2023 Annual Meeting at Hyatt Regency New Orleans, New Orleans, Luisiana. [poster](https://researchmap.jp/mugiyama/presentations/41665921)
-- 2022-09-04 Presented at JSFS 32nd Annual Meeting at Japan Women's University. [slide](https://researchmap.jp/mugiyama/presentations/38562835)
 
 Exposure to Non-partnership and Fertility Desires among Childless Population in Japan (with Ryohei Mogi and Alyce Raybould)
 
@@ -125,6 +141,16 @@ Does Policy Affect Fertility and Marriage Desires Among Never-Married Childless 
 - 2024-11-09 Presented at JSS 97th Annual Meeting at Kyoto Sangyo University. [slide](https://researchmap.jp/mugiyama/presentations/46363891)
 - 2024-07-29 Presented at READI 2nd Meeting at Peking University. [slide](https://researchmap.jp/mugiyama/presentations/46241948)
 - 2024-03-17 Presented at JAMS 76th Meeting at Osaka University. [slide](https://researchmap.jp/mugiyama/presentations/45509867)
+
+The Cost of Raising Children and Family Intentions and Desires: A Survey Experiment Approach Using Information Intervention (with Fumiya Uchikoshi)
+
+- 2025-04-11 Presented at PAA 2025 Annual Meeting at Marriott Marquis Washington DC.
+
+<!--- Revisiting the Attitudinal Link between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan (with Haruki Sugimoto and Fumiya Uchikoshi) --->
+
+<!--- Socio-economic status and transition to non-cohabiting partnership in East Asia and Europe (with Ryohei Mogi, Inhee Han, Alyce Raybould, Lisa Schmid, and Jiajie Zhang --->
+
+<!---- Trends in Sex Segregation by Field of Study in Japan, 2003--2023 (with Fumiya Uchikoshi, Megumi Oguro, and Kohei Toyonaga) --->
 
 ## Book chapter
 
