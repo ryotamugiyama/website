@@ -13,7 +13,7 @@ Other research publications can also be found on the following pages.
 
 ### in English
 
-Mugiyama, Ryota. 2025. "Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment instability among Men in Japan." *Demographic Research.* Forthcoming.
+Mugiyama, Ryota. 2025. "[Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment Instability among Men in Japan](https://doi.org/10.4054/DemRes.2025.52.21)." *Demographic Research.* 52(21): 635--688.
 
 Mugiyama, Ryota. 2024. "[Disaggregating the Relationship between Precarious Employment and Delayed Marriage in Japan: Incorporating Non-cohabiting Partnerships](https://doi.org/10.1016/j.ssresearch.2024.103093)." *Social Science Research.* 124: 103093.
 
@@ -21,9 +21,9 @@ Mogi, Ryohei, Ryota Mugiyama and Giammarco Alderotti. 2024. "[Employment Uncerta
 
 Mugiyama, Ryota. 2024. "[Cohort Change in the Educational Gradient in Women's Employment Around Childbirth in Japan](https://doi.org/10.1016/j.rssm.2023.100885)." *Research in Social Stratification and Mobility.* 89: 100885.
 
-Çineli, Beyda and Ryota Mugiyama. 2023. "[Money management over the course of marriage: Parenthood, employment and household financial organization in Japan](https://doi.org/10.1016/j.alcr.2023.100544)." *Advances in Life Course Research.* 56: 100544.
+Çineli, Beyda and Ryota Mugiyama. 2023. "[Money Management over the Course of Marriage: Parenthood, Employment and Household Financial Organization in Japan](https://doi.org/10.1016/j.alcr.2023.100544)." *Advances in Life Course Research.* 56: 100544.
 
-Igarashi, Akira and Ryota Mugiyama. 2023. "[Whose tastes matter? Discrimination against immigrants in the Japanese labour market](https://doi.org/10.1080/1369183X.2022.2163230)." *Journal of Ethnic and Migration Studies.* 49(13): 3365--3388.
+Igarashi, Akira and Ryota Mugiyama. 2023. "[Whose Tastes Matter? Discrimination against Immigrants in the Japanese Labour Market](https://doi.org/10.1080/1369183X.2022.2163230)." *Journal of Ethnic and Migration Studies.* 49(13): 3365--3388.
 
 Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Class and Occupational Returns to Education at First Job: The Case of Japan](https://doi.org/10.1093/esr/jcab037)." *European Sociological Review.* 38(2): 269--285.
 
@@ -109,7 +109,7 @@ Rising Socioeconomic Inequality in Telework Eligibility: Evidence from before an
 
 Trends in Task Distribution in Japan, 1980--2020: Evidence from the Occupational Information Network of Japan and the Population Census (with Kyoko Komatsu)
 
-- 2024-03-29 Tentative reports are found here (in Japanese). [website](https://www.jil.go.jp/institute/siryo/2024/280.html)
+- 2025-02-28 Discussion paper is found here (in Japanese). [website](https://www.jil.go.jp/institute/discussion/2025/25-01.html)
 
 Educational Differences in the Motherhood Penalty on Wage Trajectories in Japan: The Role of Loss of Experience
 

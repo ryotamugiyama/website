@@ -137,7 +137,7 @@
     "href": "occupation.html#国勢調査の19802020年統合職業分類",
     "title": "Occupation",
     "section": "国勢調査の1980–2020年統合職業分類",
-    "text": "国勢調査の1980–2020年統合職業分類\n国勢調査は各年ごとに職業分類の変更があります。とくに2005年から2010年にかけては大規模な変更が行われ、その前後の比較がそのままでは難しくなっています。この期間の改定の具体的内容については「2010年国勢調査に用いる職業分類」にくわしく記載されています。　\n\n\n\n\n\n\n\n\n調査年\n小分類数*\n備考\n\n\n\n\n1980年\n284\n\n\n\n1985年\n292\n\n\n\n1990年\n293\n\n\n\n1995年\n293\n1990年と同一分類\n\n\n2000年\n292\n\n\n\n2005年\n273\n\n\n\n2010年\n231\n日本標準職業分類の改定に伴う大規模な変更\n\n\n2015年\n231\n2010年と同一分類\n\n\n2020年\n231\n2010年と同一分類\n\n\n1980–2020年統合分類\n163\n麦山作成\n\n\n\n*小分類数は「分類不能の職業」を除いた数。\nこの問題に対処すべく、1980–2020年で比較可能となるよう統合分類を作成しました。統合分類は「分類不能の職業」を除き、163の職業からなります。実際には小分類内の職業の細かな入れ替わりなどがあり、本当に厳密な意味での比較は難しいのですが、それを踏まえたうえで使用するのがよいと思います。\n\n小松恭子・麦山亮太，2024，「タスクの日米比較からみた日本の労働市場の特徴と変化：日本版O-NETと国勢調査（1980～2020年）を使用した分析から得られた示唆」『JILPT 資料シリーズ』No.280．付属資料4を参照。\n\n過去には、1980–2005年の国勢調査職業分類を統合して性別職域分離の趨勢を検討した研究も行いました。\n\n打越文弥・麦山亮太，2020，「 日本における性別職域分離の趨勢：1980–2005年国勢調査集計データを用いた要因分解」『人口学研究』56:9–23．"
+    "text": "国勢調査の1980–2020年統合職業分類\n国勢調査は各年ごとに職業分類の変更があります。とくに2005年から2010年にかけては大規模な変更が行われ、その前後の比較がそのままでは難しくなっています。この期間の改定の具体的内容については「2010年国勢調査に用いる職業分類」にくわしく記載されています。　\n\n\n\n\n\n\n\n\n調査年\n小分類数*\n備考\n\n\n\n\n1980年\n284\n\n\n\n1985年\n292\n\n\n\n1990年\n293\n\n\n\n1995年\n293\n1990年と同一分類\n\n\n2000年\n292\n\n\n\n2005年\n273\n\n\n\n2010年\n231\n日本標準職業分類の改定に伴う大規模な変更\n\n\n2015年\n231\n2010年と同一分類\n\n\n2020年\n231\n2010年と同一分類\n\n\n1980–2020年統合分類\n163\n麦山作成\n\n\n\n*小分類数は「分類不能の職業」を除いた数。\nこの問題に対処すべく、1980–2020年で比較可能となるよう統合分類を作成しました。統合分類は「分類不能の職業」を除き、163の職業からなります。実際には小分類内の職業の細かな入れ替わりなどがあり、本当に厳密な意味での比較は難しいのですが、それを踏まえたうえで使用するのがよいと思います。\n\n小松恭子・麦山亮太，2025，「日本の労働市場におけるタスクの分布の変化と要因：教育・産業構造の変化とICT導入の影響」JILPT Discussion Paper 25-01. 付属資料を参照。\n\n過去には、1980–2005年の国勢調査職業分類を統合して性別職域分離の趨勢を検討した研究も行いました。\n\n打越文弥・麦山亮太，2020，「 日本における性別職域分離の趨勢：1980–2005年国勢調査集計データを用いた要因分解」『人口学研究』56:9–23．"
   },
   {
     "objectID": "occupation.html#国勢調査に用いる職業分類と日本版o-netとのマッチング",
@@ -672,95 +672,60 @@
     "text": "逆ミルズ比を図で理解する\nサンプルセレクションモデルで頻出する逆ミルズ比について、図で理解できるようにいろいろと工夫してみた、という記事です。R markdownで作成しました。（2016/11/28 upload）\n（→2023/04/10移行）"
   },
   {
-    "objectID": "readings.html",
-    "href": "readings.html",
-    "title": "Reading list",
+    "objectID": "lecture/2024-03-04CSRDA.html",
+    "href": "lecture/2024-03-04CSRDA.html",
+    "title": "2023-03– Stataによるパネル調査データ分析の実践",
     "section": "",
-    "text": "社会階層研究および周辺諸分野に関するリーディングリストを記しておきます。先行研究のリサーチなどに役立つかもしれません。不定期に更新します。整理はおおむね学習院大学法学部政治学科で開講している「社会学IV」の授業にもとづきます。"
+    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2024年度春（2024-02-19）\n2023年度春（2024-03-04）\n2022年度春（2023-03-09）"
   },
   {
-    "objectID": "readings.html#機会の不平等-inequality-of-opportunity",
-    "href": "readings.html#機会の不平等-inequality-of-opportunity",
-    "title": "Reading list",
-    "section": "機会の不平等 Inequality of opportunity",
-    "text": "機会の不平等 Inequality of opportunity\n\n世代間移動 Intergenerational mobility\nErikson, Robert, and John H. Goldthorpe. 1992. The Constant Flux: A Study of Class Mobility in Industrial Societies. Oxford: Clarendon Press.\nBreen, Richard, and Walter Müller. 2020. “Social Mobility in the Twentieth Century in Europe and the United States.” Pp. 251–96 in Education and intergenerational social mobility in Europe and the United States, edited by R. Breen and W. Müller. Stanford University Press.\n\n\n教育機会の不平等 Inequality of educational opportunity\nShavit, Yossi, and Hans-Peter Blossfeld. 1993. Persistent Inequality: Changing Educational Attainment in Thirteen Countries. Westview Press.\nLucas, Samuel R. 2001. “Effectively Maintained Inequality: Education Transitions, Track Mobility, and Social Background Effects.” American Journal of Sociology 106(6):1642–90.\nBreen, Richard, Ruud Luijkx, Walter Müller, and Reinhard Pollak. 2009. “Nonpersistent Inequality in Educational Attainment : Evidence from Eight European Countries.” American Journal of Sociology 114(5):1475–1521.\nGerber, Theodore P., and Sin Yi Cheung. 2008. “Horizontal Stratification in Postsecondary Education: Forms, Explanations, and Implications.” *Annual Review of Sociology 34(1):299–318.\n\n\n教育の社会経済的リターン Labor market returns to education\n\n\n世代内移動 Intragenerational mobility"
-  },
-  {
-    "objectID": "readings.html#ジェンダー不平等-gender-inequality",
-    "href": "readings.html#ジェンダー不平等-gender-inequality",
-    "title": "Reading list",
-    "section": "ジェンダー不平等 Gender inequality",
-    "text": "ジェンダー不平等 Gender inequality\n\n教育とジェンダー Gender inequality in educational attainment\n\n\n労働市場とジェンダー Gender inequality in the labor market\n\n\n家族形成とジェンダー Gender inequality in family formation"
-  },
-  {
-    "objectID": "lecture/GU-sociologyIV.html",
-    "href": "lecture/GU-sociologyIV.html",
-    "title": "2021-09–　学習院大学法学部「社会学IV」",
+    "objectID": "lecture/2024-03-04CSRDA.html#開講",
+    "href": "lecture/2024-03-04CSRDA.html#開講",
+    "title": "2023-03– Stataによるパネル調査データ分析の実践",
     "section": "",
-    "text": "社会階層論"
+    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2024年度春（2024-02-19）\n2023年度春（2024-03-04）\n2022年度春（2023-03-09）"
   },
   {
-    "objectID": "lecture/GU-sociologyIV.html#テーマ",
-    "href": "lecture/GU-sociologyIV.html#テーマ",
-    "title": "2021-09–　学習院大学法学部「社会学IV」",
+    "objectID": "lecture/2024-03-04CSRDA.html#内容",
+    "href": "lecture/2024-03-04CSRDA.html#内容",
+    "title": "2023-03– Stataによるパネル調査データ分析の実践",
+    "section": "内容",
+    "text": "内容\n日本においても多くの大規模パネル調査データが蓄積されるようになり、パネル調査データの分析可能性は飛躍的に広がっています。本コースでは、統計ソフトStataを用いて、パネル調査データを使った分析の基礎的な手順と、代表的なパネル調査データ分析の方法を学習します。具体的には、どのように分析のためのデータセットを作ればよいのか、どのような問いに対してどのような方法を使うべきかに焦点を当てて学習します。たんにStataで結果を出すというだけでなく、どのようにして見やすい図表を作るのか、結果を出力・保存するため効率的なワークフローといった実践的な側面にも重点をおいて解説します。\n次のような方におすすめです\n\n一時点の社会調査データの分析経験はあるが、パネル調査データを分析した経験はなく、分析してみたい\nパネルデータを分析するための手順を知りたい\nパネルデータの分析方法をどのように選べばよいか知りたい\nパネル調査データを分析した経験があるが、よりよいデータ構築の手順や方法の選び方について知りたい"
+  },
+  {
+    "objectID": "lecture/2024-03-04CSRDA.html#資料",
+    "href": "lecture/2024-03-04CSRDA.html#資料",
+    "title": "2023-03– Stataによるパネル調査データ分析の実践",
+    "section": "資料",
+    "text": "資料\n2024年度春のセミナーで使用したスライドはこちらにアップロードしています。\n2023年度春のセミナーで使用したスライドはこちらにアップロードしています。\n2022年度春のセミナーで使用したスライドはこちらにアップロードしています。"
+  },
+  {
+    "objectID": "lecture/2024-09-04-CSRDA.html",
+    "href": "lecture/2024-09-04-CSRDA.html",
+    "title": "2021-08– Stataを用いた計量分析入門",
     "section": "",
-    "text": "社会階層論"
+    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2024年度夏（2024-09-04）\n2023年度夏（2023-09-05）\n2022年度夏（2022-09-07）\n2021年度春（2022-03-02）\n2021年度夏（2021-08-31）：このときの名称は「Stataによる計量分析の実践」"
   },
   {
-    "objectID": "lecture/GU-sociologyIV.html#開講",
-    "href": "lecture/GU-sociologyIV.html#開講",
-    "title": "2021-09–　学習院大学法学部「社会学IV」",
-    "section": "開講",
-    "text": "開講\n学習院大学法学部 後期\n同内容は2022年度に日本女子大学人間社会学部、津田塾大学総合政策学部でも行いました。"
-  },
-  {
-    "objectID": "lecture/GU-sociologyIV.html#授業の概要",
-    "href": "lecture/GU-sociologyIV.html#授業の概要",
-    "title": "2021-09–　学習院大学法学部「社会学IV」",
-    "section": "授業の概要",
-    "text": "授業の概要\n高い収入や貯蓄、住宅、健康、名誉、幸福、等々、社会において希少とされる財は人びとに等しく配分されているわけではない。さらに、こうした希少財を得るためのチャンスもまた、人びとや集団の間で異なっている。希少な財の配分はどの程度偏っているのか？希少財を得る機会が個人あるいは集団間でいかに異なるのか？希少財の配分やそれを得る機会が異なるのはなぜなのか？社会階層研究はこうした不平等を研究する社会学の一分野である。\n社会階層研究の扱う分野は多岐にわたるが、なかでも主要な問題とされてきたのは以下の3点である。第1に、希少財の配分がどの程度偏っているのかという結果の不平等である。所得や富の不平等の程度は国や時代によってどの程度異なるのか？不平等が拡大しているとしたらそれはなぜか？階層によって健康や家族形成のパターンはどの程度異なるのか？人びとのもつつながりは階層によってどの程度隔たっているのか？こうした問いが検討される。\n第2に、希少財を得る機会がどの程度偏っているのかという機会の不平等である。親の階層とは異なる階層に移動するという世代間移動は増えているのか、減っているのか？変化しているとしたらそれはなぜか？親の階層によって教育機会の不平等が生じるのはなぜか？高い学歴を有する人がより高い階層に就くのはなぜか？これらは機会の不平等に関わる問いである。\n第3に、生まれ持った属性がいかに配分や機会の不平等につながるのかという属性による不平等である。本授業ではとくにジェンダー（性別）による不平等を扱う。ジェンダー不平等は国によってどの程度違うのか？不平等の程度はどのように変化しているのか？男子は理系、女子は文系に進学しやすいのはなぜか？男性と女性が労働市場で異なる仕事に就き、異なる評価を受けるのはなぜか？家族形成がキャリアに与える影響が男女で異なるのはなぜか？こうした問いがジェンダーによる不平等という観点から検討される。\n本授業では、上記3つの問題それぞれについて、実証研究の蓄積を概観することを通じて、社会学、および社会階層研究の視点から社会の不平等を捉えるための視点を身につけることを目指す。また、上記3つの問題に関して、欧米を中心に確認されてきた動向が日本においてはどの程度確認されるのかといった点についても、その成果を紹介する。これを通じて、日本の不平等の位置づけを国際的な視点から理解するとともに、不平等がいかにして生じるのか、そのメカニズムを理解することを目指す。\n\nガイダンス\n結果の不平等（1）：不平等の拡大\n\n結果の不平等の測定\n所得と富の不平等：国際比較とトレンド\n富裕層と貧困層\n\n結果の不平等（2）：不平等の拡大のメカニズム\n\nなぜ不平等が拡大したのか：アメリカの場合\n日本の不平等の実態とメカニズム\n\n結果の不平等（3）：階層間格差と不平等の帰結\n\n階層の測定\n階層間格差：健康と家族形成\n結果の不平等の帰結\n\n結果の不平等（4）：階層分離と認識のずれ\n\n不平等と階層分離\n客観的位置と主観的認識のずれ\n不平等に関する価値観\n\n機会の不平等（1）：世代間移動\n\n社会移動の測定\n職業からみる世代間移動\n所得からみる世代間移動\n\n機会の不平等（2）：近代化仮説と地位達成過程\n\n近代化仮説\n地位達成過程\n日本の社会移動のトレンド\n\n機会の不平等（3）：教育機会の不平等\n\nトレンドをめぐる議論\n教育機会の不平等のメカニズム\n遺伝か環境か\n\n機会の不平等（4）：労働市場と機会の不平等\n\n教育と到達階層の関係：メカニズム\n日本の雇用慣行と世代内移動\n出身階層の影響力の再検討\n\n属性による不平等（1）：ジェンダー不平等\n\nジェンダーの視点と不平等\nジェンダー不平等：国際比較とトレンド\n日本のジェンダー不平等のトレンド\n\n属性による不平等（2）：教育とジェンダー\n\n教育達成の男女差\n性別専攻分離のメカニズム\n\n属性による不平等（3）：労働市場とジェンダー\n\n賃金格差の原因を探る：要因分解\n仕事の違いを測定する：性別職域分離\n格差の生成過程：採用とキャリア\n\n属性による不平等（4）：家族形成とジェンダー\n\n出産・育児と男女のキャリア\n性別役割分業と結婚\n\nまとめ"
-  },
-  {
-    "objectID": "lecture/GU-socSem.html",
-    "href": "lecture/GU-socSem.html",
-    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "objectID": "lecture/2024-09-04-CSRDA.html#開講",
+    "href": "lecture/2024-09-04-CSRDA.html#開講",
+    "title": "2021-08– Stataを用いた計量分析入門",
     "section": "",
-    "text": "社会的不平等に関する実証研究"
+    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2024年度夏（2024-09-04）\n2023年度夏（2023-09-05）\n2022年度夏（2022-09-07）\n2021年度春（2022-03-02）\n2021年度夏（2021-08-31）：このときの名称は「Stataによる計量分析の実践」"
   },
   {
-    "objectID": "lecture/GU-socSem.html#テーマ",
-    "href": "lecture/GU-socSem.html#テーマ",
-    "title": "2021-04–　学習院大学法学部「社会学演習」",
-    "section": "",
-    "text": "社会的不平等に関する実証研究"
+    "objectID": "lecture/2024-09-04-CSRDA.html#内容",
+    "href": "lecture/2024-09-04-CSRDA.html#内容",
+    "title": "2021-08– Stataを用いた計量分析入門",
+    "section": "内容",
+    "text": "内容\n統計ソフトStataを用いて、実際のデータを用いながら、基礎的な計量分析（記述統計量、2変量の関係、線形回帰分析、ロジスティック回帰分析）の結果のまとめ方について学習します。たんにStataで結果を出すというだけでなく、結果をどのように解釈するのか、どのようにして見やすい図表を作るのか、結果をExcelファイルやpdfファイル、画像ファイルなどに出力・保存するため効率的なワークフローといった、統計ソフトや計量分析の教科書などには書かれていないことも多い実践的な側面に重点をおいて解説します。\n次のような方におすすめです\n\nSPSS, SAS, Rなどの統計ソフトを使っているが、新たにStataを使い始めたい\nクロス集計表や回帰分析などの基礎的な知識はあるが、Stataではどのようにするのか知りたい\n計量分析を行うときにはどのような手順で作業を行うのかを知りたい\nStataで見やすい図や表を作るためにはどのようにすればよいかを知りたい\n回帰分析などの結果をより適切に解釈し、より実質的な意味のある分析結果を得るためにはどうすればよいか知りたい"
   },
   {
-    "objectID": "lecture/GU-socSem.html#開講",
-    "href": "lecture/GU-socSem.html#開講",
-    "title": "2021-04–　学習院大学法学部「社会学演習」",
-    "section": "開講",
-    "text": "開講\n学習院大学法学部 前後期"
-  },
-  {
-    "objectID": "lecture/GU-socSem.html#授業概要",
-    "href": "lecture/GU-socSem.html#授業概要",
-    "title": "2021-04–　学習院大学法学部「社会学演習」",
-    "section": "授業概要",
-    "text": "授業概要\n本演習の目的は、社会学の視点から、問いを設定し、仮説を立て、それに答えるために社会調査データを分析することを通じて、社会科学一般の基礎となる研究過程を体感し、かつそれを実行するためのスキルを習得することにある。社会学では、個人の行為を説明するにあたって、社会的な文脈の影響に着目する。なぜある人はお金持ちで、ある人は貧しいのか？なぜ大学に行く人と行かない人がいるのか？なぜ家事や育児にかける時間が男女で違うのか？こうした一見個人的な行為、あるいはその結果に対する説明を考え、その説明を検証するための具体的な方法を身につけることを目指す。 　 社会の実態を記述するために最も基本的な方法の一つが、社会調査データの分析である。本演習では、実際にこうした調査データを用い、統計ソフトを用いて分析する方法について学習する。先行研究をもとに問いを立て、論理的に仮説を導き、データを用いて仮説を検証するという一連の作業を通じて、実証的な研究を行うためのスキルを身につける。こうしたスキルは、直接研究には携わらないとしても、今後の仕事や生活で必ず役に立つだろう。\n前期は実証研究に関する論文の書き方および関連領域に関するテキスト（教科書）購読、論文購読、RおよびRStudioという統計ソフトを用いたデータ分析方法の学習を並行して行う。\n\nテキスト購読：テキストを読んだ上で事前に（1）当該章に関連して考えられる問い、（2）疑問点・質問を共有する。授業では共有された内容をもとに議論する。\n論文購読：論文を読んだ上で事前に（1）論文の問い、方法、結果は何か、（2）疑問点・質問を共有する。授業では共有された内容をもとに議論する。\n統計分析：事前に該当箇所を読んだうえで、書かれたコードを実際に自分で一通り実行する。事前に疑問点・質問を共有する。\n\n前期末には後期に向けて利用可能な社会調査データを紹介し、研究計画を作成する。参加者の関心をもとに、3年生は3人程度のグループ、4年生は個人で、前期末に研究計画を作成・提出する。社会学、とくに不平等にかかわるテーマを期待するが、自由に決めて良い。ただし、既存社会調査の個票データを用いた統計分析を行うことは必須とする。\n後期は論文執筆のための作業および経過報告からなる。作業は授業時間外にも実施し、授業時間中には作業の過程で生じた疑問点や悩みなどについて教員から助言するという形式で進める。毎週、進捗状況を報告することとする。中間報告の回では、報告者の事前の十分な準備はもちろん、参加者からも積極的なコメントが期待される。学期末には12,000–20,000字程度の長さの研究論文を執筆し提出する。"
-  },
-  {
-    "objectID": "lecture/GU-socSem.html#到達目標",
-    "href": "lecture/GU-socSem.html#到達目標",
-    "title": "2021-04–　学習院大学法学部「社会学演習」",
-    "section": "到達目標",
-    "text": "到達目標\n\n社会学の視点から問いを設定し、仮説を立てられるようになる。\n社会調査データの分析方法を身につける。\n実証研究による報告論文（レポート）を書くことができる。"
-  },
-  {
-    "objectID": "lecture/GU-socSem.html#過去の購読文献など",
-    "href": "lecture/GU-socSem.html#過去の購読文献など",
-    "title": "2021-04–　学習院大学法学部「社会学演習」",
-    "section": "過去の購読文献など",
-    "text": "過去の購読文献など\n\n2024年度\nPutnam, Robert D. 2015. Our Kids: The American Dream in Crisis. Simon & Schuster.（柴内康文訳，2017，『われらの子ども：米国における機会格差の拡大』創元社．）\nGoldin, Claudia. 2021. Career and Family: Women’s Century-Long Journey toward Equity. Princeton University Press.（鹿田昌美訳，2023，『なぜ男女の賃金に格差があるのか：女性の生き方の経済学』慶應義塾出版会．）\nLlaudet, Elene and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.\n明石芳彦，2018，『社会科学系論文の書き方』ミネルヴァ書房．\n森いづみ，2017，「国・私立中学への進学が進学期待と自己効力感に及ぼす影響」『教育社会学研究』101: 27–47．\n吉武理大，2019，「貧困母子世帯における生活保護の受給の規定要因：なぜ貧困なのに生活保護を受給しないのか」『福祉社会学研究』16: 157–178．\n古田和久，2018，「出身階層の資本構造と高校生の進路選択」『社会学評論』69(1):21–36.\n麦山亮太・大里蒼一郎，2024，「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』近刊．\n百瀬由璃絵，2023，「埋もれたインターセクショナリティ：『障害者／健常者』の境界にいる女性」『日本労働研究雑誌』751: 148–63．\n斉藤知洋，2023，「離婚に伴う女性の経済状況の変化：長期パネルデータを用いた再検討」『人口問題研究』79(1): 64–84．\n吉田航，2024，「ダイバーシティ部署の設置は企業の女性管理職比率を高めるか？」『組織科学』近刊．\n中山真緒・石川祐実，2023，「男性配偶者の業種別育児休業取得率が女性の就業確率，健康状態に与える影響」『日本労働研究雑誌』760:74–87.\n\n\n2023年度\n数理社会学会監修，筒井淳也・神林博史・長松奈美江・渡邉大輔・藤原翔編，2015，『計量社会学入門：社会をデータで読む』世界思想社．\n豊永耕平，2023，『学歴獲得の不平等：親子の進路選択と社会階層』勁草書房．\nLlaudet, Elene and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.\n吉田航，2022，「女性管理職は「変化の担い手」か「機械の歯車」か？：新卒女性の採用・定着に与える影響に着目して」『理論と方法』37(1): 18–33．\n郭雲蔚，2019，「低水準の均衡：職場における非正規雇用の存在と労働者全体の処遇水準」『フォーラム現代社会学』18: 45–59．\n吉武理大，2019，「離婚の世代間連鎖とそのメカニズム：格差の再生産の視点から」『社会学評論』70(1): 27–42．\n柳下実，2022，「育児のための睡眠中断とジェンダー」『ソシオロジ』66(3): 3–19．\n\n\n2022年度\n明石芳彦，2018，『社会科学系論文の書き方』ミネルヴァ書房．\n平沢和司，2021，『格差の社会学入門：学歴と階層から考える［第2版］』北海道大学出版会．\n岩間暁子，2008，『女性の就業と家族のゆくえ：格差社会のなかの変容』東京大学出版会．\n寺村絵理子編，2021，『日本・台湾の高学歴女性：極少子化と仕事・家族の比較』晃洋書房．\n浅野正彦・矢内勇生，2018，『Rによる計量政治学入門：統計学で政治現象を分析する』オーム社．\n\n\n2021年度\nWatts, Duncan J. 2011. Everything is Obvious, Once You Know the Answer: Why Common Sense is Nonsense. Atlantic Books.（青木創訳，2014，『偶然の科学』早川書房．）\n数理社会学会監修，筒井淳也・神林博史・長松奈美江・渡邉大輔・藤原翔編，2015，『計量社会学入門：社会をデータで読む』世界思想社．\n浅野正彦・矢内勇生，2018，『Rによる計量政治学入門：統計学で政治現象を分析する』オーム社．\n余田翔平，2012，「子ども期の家族構造と教育達成格差：二人親世帯/母子世帯/父子世帯の比較」『家族社会学研究』, 24(1), 60–71.\n永吉希久子，2012，「日本人の排外意識に対する分断労働市場の影響」『社会学評論』63(1): 19–35.\n川口章，2012，「昇進意欲の男女比較」『日本労働研究雑誌』54(2): 42–57.\n裵智恵，2018，「同性愛に対する態度を規定する要因」小林大祐編『2015年SSM調査報告書9 意識II』 2015年SSM調査研究会，85–102．"
+    "objectID": "lecture/2024-09-04-CSRDA.html#資料",
+    "href": "lecture/2024-09-04-CSRDA.html#資料",
+    "title": "2021-08– Stataを用いた計量分析入門",
+    "section": "資料",
+    "text": "資料\n2024年度夏のセミナーで使用したスライド：slide\n2023年度夏のセミナーで使用したスライド：slide\n2022年度夏のセミナーで使用したスライド：slide\n2021年度春のセミナーで使用したスライド：slide\n2021年度夏セミナーで使用したスライド：slide"
   },
   {
     "objectID": "lecture/GU-sociologyIII.html",
@@ -805,60 +770,74 @@
     "text": "テキスト\nTubergen, Frank van. 2020. Introduction to Sociology. Routledge."
   },
   {
-    "objectID": "lecture/2024-09-04-CSRDA.html",
-    "href": "lecture/2024-09-04-CSRDA.html",
-    "title": "2021-08– Stataを用いた計量分析入門",
+    "objectID": "lecture/GU-socSem.html",
+    "href": "lecture/GU-socSem.html",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
     "section": "",
-    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2024年度夏（2024-09-04）\n2023年度夏（2023-09-05）\n2022年度夏（2022-09-07）\n2021年度春（2022-03-02）\n2021年度夏（2021-08-31）：このときの名称は「Stataによる計量分析の実践」"
+    "text": "社会的不平等に関する実証研究"
   },
   {
-    "objectID": "lecture/2024-09-04-CSRDA.html#開講",
-    "href": "lecture/2024-09-04-CSRDA.html#開講",
-    "title": "2021-08– Stataを用いた計量分析入門",
+    "objectID": "lecture/GU-socSem.html#テーマ",
+    "href": "lecture/GU-socSem.html#テーマ",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
     "section": "",
-    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2024年度夏（2024-09-04）\n2023年度夏（2023-09-05）\n2022年度夏（2022-09-07）\n2021年度春（2022-03-02）\n2021年度夏（2021-08-31）：このときの名称は「Stataによる計量分析の実践」"
+    "text": "社会的不平等に関する実証研究"
   },
   {
-    "objectID": "lecture/2024-09-04-CSRDA.html#内容",
-    "href": "lecture/2024-09-04-CSRDA.html#内容",
-    "title": "2021-08– Stataを用いた計量分析入門",
-    "section": "内容",
-    "text": "内容\n統計ソフトStataを用いて、実際のデータを用いながら、基礎的な計量分析（記述統計量、2変量の関係、線形回帰分析、ロジスティック回帰分析）の結果のまとめ方について学習します。たんにStataで結果を出すというだけでなく、結果をどのように解釈するのか、どのようにして見やすい図表を作るのか、結果をExcelファイルやpdfファイル、画像ファイルなどに出力・保存するため効率的なワークフローといった、統計ソフトや計量分析の教科書などには書かれていないことも多い実践的な側面に重点をおいて解説します。\n次のような方におすすめです\n\nSPSS, SAS, Rなどの統計ソフトを使っているが、新たにStataを使い始めたい\nクロス集計表や回帰分析などの基礎的な知識はあるが、Stataではどのようにするのか知りたい\n計量分析を行うときにはどのような手順で作業を行うのかを知りたい\nStataで見やすい図や表を作るためにはどのようにすればよいかを知りたい\n回帰分析などの結果をより適切に解釈し、より実質的な意味のある分析結果を得るためにはどうすればよいか知りたい"
+    "objectID": "lecture/GU-socSem.html#開講",
+    "href": "lecture/GU-socSem.html#開講",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "section": "開講",
+    "text": "開講\n学習院大学法学部 前後期"
   },
   {
-    "objectID": "lecture/2024-09-04-CSRDA.html#資料",
-    "href": "lecture/2024-09-04-CSRDA.html#資料",
-    "title": "2021-08– Stataを用いた計量分析入門",
-    "section": "資料",
-    "text": "資料\n2024年度夏のセミナーで使用したスライド：slide\n2023年度夏のセミナーで使用したスライド：slide\n2022年度夏のセミナーで使用したスライド：slide\n2021年度春のセミナーで使用したスライド：slide\n2021年度夏セミナーで使用したスライド：slide"
+    "objectID": "lecture/GU-socSem.html#授業概要",
+    "href": "lecture/GU-socSem.html#授業概要",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "section": "授業概要",
+    "text": "授業概要\n本演習の目的は、社会学の視点から、問いを設定し、仮説を立て、それに答えるために社会調査データを分析することを通じて、社会科学一般の基礎となる研究過程を体感し、かつそれを実行するためのスキルを習得することにある。社会学では、個人の行為を説明するにあたって、社会的な文脈の影響に着目する。なぜある人はお金持ちで、ある人は貧しいのか？なぜ大学に行く人と行かない人がいるのか？なぜ家事や育児にかける時間が男女で違うのか？こうした一見個人的な行為やその結果に対する説明を考え、その説明を検証するための具体的な方法を身につけることを目指す。\n本演習ではとくに不平等（様々な希少財およびそれを得る機会が偏っていること）にかかわるテーマを中心に扱う。より具体的には、社会経済的格差とその要因、教育機会の不平等、ジェンダー不平等、貧困、等のトピックを取り上げる。\n社会の不平等の実態を明らかにするうえに最も基本的な方法が、社会調査データの分析である。本演習では、実際にこうした調査データを用い、統計ソフトを用いて分析する方法について学習する。\n本演習を2年間履修することによって以下のスキルを身につけることができる。こうしたスキルは、今後の人生で直接研究には携わらないとしても、仕事や生活等で必ず役に立つだろう。 　 - 先行研究をもとに、社会的・学術的に意義のある問いを立てる。\n\n論理的に仮説や解釈を導く。\n問いに答えるための方法を特定し、研究計画を立てる。\n社会調査データを統計的に分析し、意味ある結果を導く。\n実務でも研究でも通用する、構造化された論文（レポート）を書く。\n\n前期は実証研究に関する論文の書き方および関連領域に関するテキスト（教科書）講読、論文講読、および統計ソフトRを用いたデータ分析方法の学習を並行して行う。 　 - 文献講読：文献を読んだ上で事前に（1）内容のごく簡単な要約、（1）興味深いと思った点、（3）内容に関する疑問点・質問、をまとめたファイルを提出する。授業では共有された内容をもとにグループに分かれて議論したあと、疑問点などを解消する。\n\n論文講読：論文を読んだ上で事前に（1）論文の問い、意義、方法、結果は何か、（2）興味深いと思った点、（3）内容に関する疑問点・批判点・質問、をまとめたファイルを提出する。授業では共有された内容をもとにグループに分かれて議論したあと、疑問点などを解消する。\n統計分析：教科書については、事前に該当箇所を読んだうえで、書かれたコードを実際に自分で一通り実行する。さらに、授業用に作成したウェブページ（Rによる社会調査データ分析の手引き）を合わせて使用する。こちらも事前に該当箇所を読んだうえで書かれたコードを実際に自分で実行してくる。授業では不明点などの解消を主とする。\n\n前期末には後期に向けて利用可能な社会調査データのアーカイブを紹介し、研究計画を作成する。既存社会調査の個票データを用いた統計分析を行うことが必須となる。参加者の関心をもとに、3年生は3人程度のグループ、4年生は個人で、前期末に研究計画を作成する（ここでのグループは後期の授業でも継続する）。\n後期は論文執筆のための作業および経過報告からなる。作業は授業時間外にも実施し、授業時間中には作業の過程で生じた疑問点や悩みなどについて教員から助言するという形式で進める。毎週、進捗状況を共有する。中間報告の回では、報告者の事前の十分な準備はもちろん、参加者からも積極的なコメントを行うことが期待される。学期末には参考文献を含めて12,000–20,000字程度の長さの研究論文を執筆し提出する。"
   },
   {
-    "objectID": "lecture/2024-03-04CSRDA.html",
-    "href": "lecture/2024-03-04CSRDA.html",
-    "title": "2023-03– Stataによるパネル調査データ分析の実践",
+    "objectID": "lecture/GU-socSem.html#到達目標",
+    "href": "lecture/GU-socSem.html#到達目標",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "section": "到達目標",
+    "text": "到達目標\n\n社会学の視点から問いを設定し、仮説を立てられるようになる。\n社会調査データの分析方法を身につける。\n実証研究による報告論文（レポート）を書くことができる。"
+  },
+  {
+    "objectID": "lecture/GU-socSem.html#過去の購読文献など",
+    "href": "lecture/GU-socSem.html#過去の購読文献など",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "section": "過去の購読文献など",
+    "text": "過去の購読文献など\n\n2025年度\n豊永耕平，2023，『学歴獲得の不平等：親子の進路選択と社会階層』勁草書房．\n吉田航，2025，『新卒採用と不平等の社会学：組織の計量分析が映すそのメカニズム』ミネルヴァ書房．\nLlaudet, Elene and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.（原田勝孝訳，2025，『新・社会科学のためのデータ分析入門：導入編』岩波書店）\n（参考文献）数理社会学会監修，筒井淳也・神林博史・長松奈美江・渡邉大輔・藤原翔編，2015，『計量社会学入門：社会をデータで読む』世界思想社．\n周燕飛，2019，「母親による児童虐待の発生要因に関する実証分析」『医療と社会』29(1): 119–34．\n大和冬樹，2024，「将来展望と高校進学行動の近隣格差：中学生と母親に着目して」『日本都市社会学会年報』42:76–94．\nIvanova, Katya, and Nicoletta Balbo. 2024. “Societal Pessimism and the Transition to Parenthood: A Future Too Bleak to Have Children?” Population and Development Review 50(2):323–42.\n戸髙南帆，2024，「どのような母親が家事を子どもにしつけるのか：性別役割分業意識をめぐる実証的検討」『教育社会学研究』114: 159–177．\n中原慧，2023，「移民的背景のある児童の学力に関する分析：移民世代と親の出生地の組み合わせに着目して」『社会学評論』74(1):105–21．\nGurzo, Klara, Olof Östergren, Pekka Martikainen, and Bitte Modin. 2023. “The Impact of Privileged Classroom Friends on Adult Income and Income Mobility: A Study of a Swedish Cohort Born in 1953.” Social Forces 102(3):1068–88.\n平河茉璃絵・臼井恵美子，2024.「時間外労働の割増賃金率引き上げが労働時間と生活時間に与える影響」『経済研究』早期公開．\n竹内麻貴，2018，「現代日本におけるMotherhood Penaltyの検証」『フォーラム現代社会学』17:93–107．\nJackson, Margot I., and Daniel Schneider. 2022. “Public Investments and Class Gaps in Parents’ Developmental Expenditures.” American Sociological Review 87(1):105–42.\n\n\n2024年度\nPutnam, Robert D. 2015. Our Kids: The American Dream in Crisis. Simon & Schuster.（柴内康文訳，2017，『われらの子ども：米国における機会格差の拡大』創元社．）\nGoldin, Claudia. 2021. Career and Family: Women’s Century-Long Journey toward Equity. Princeton University Press.（鹿田昌美訳，2023，『なぜ男女の賃金に格差があるのか：女性の生き方の経済学』慶應義塾出版会．）\nLlaudet, Elene and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.\n明石芳彦，2018，『社会科学系論文の書き方』ミネルヴァ書房．\n森いづみ，2017，「国・私立中学への進学が進学期待と自己効力感に及ぼす影響」『教育社会学研究』101: 27–47．\n吉武理大，2019，「貧困母子世帯における生活保護の受給の規定要因：なぜ貧困なのに生活保護を受給しないのか」『福祉社会学研究』16: 157–178．\n古田和久，2018，「出身階層の資本構造と高校生の進路選択」『社会学評論』69(1):21–36.\n麦山亮太・大里蒼一郎，2024，「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』近刊．\n百瀬由璃絵，2023，「埋もれたインターセクショナリティ：『障害者／健常者』の境界にいる女性」『日本労働研究雑誌』751: 148–63．\n斉藤知洋，2023，「離婚に伴う女性の経済状況の変化：長期パネルデータを用いた再検討」『人口問題研究』79(1): 64–84．\n吉田航，2024，「ダイバーシティ部署の設置は企業の女性管理職比率を高めるか？」『組織科学』近刊．\n中山真緒・石川祐実，2023，「男性配偶者の業種別育児休業取得率が女性の就業確率，健康状態に与える影響」『日本労働研究雑誌』760:74–87.\n\n\n2023年度\n数理社会学会監修，筒井淳也・神林博史・長松奈美江・渡邉大輔・藤原翔編，2015，『計量社会学入門：社会をデータで読む』世界思想社．\n豊永耕平，2023，『学歴獲得の不平等：親子の進路選択と社会階層』勁草書房．\nLlaudet, Elene and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.\n吉田航，2022，「女性管理職は「変化の担い手」か「機械の歯車」か？：新卒女性の採用・定着に与える影響に着目して」『理論と方法』37(1): 18–33．\n郭雲蔚，2019，「低水準の均衡：職場における非正規雇用の存在と労働者全体の処遇水準」『フォーラム現代社会学』18: 45–59．\n吉武理大，2019，「離婚の世代間連鎖とそのメカニズム：格差の再生産の視点から」『社会学評論』70(1): 27–42．\n柳下実，2022，「育児のための睡眠中断とジェンダー」『ソシオロジ』66(3): 3–19．\n\n\n2022年度\n明石芳彦，2018，『社会科学系論文の書き方』ミネルヴァ書房．\n平沢和司，2021，『格差の社会学入門：学歴と階層から考える［第2版］』北海道大学出版会．\n岩間暁子，2008，『女性の就業と家族のゆくえ：格差社会のなかの変容』東京大学出版会．\n寺村絵理子編，2021，『日本・台湾の高学歴女性：極少子化と仕事・家族の比較』晃洋書房．\n浅野正彦・矢内勇生，2018，『Rによる計量政治学入門：統計学で政治現象を分析する』オーム社．\n\n\n2021年度\nWatts, Duncan J. 2011. Everything is Obvious, Once You Know the Answer: Why Common Sense is Nonsense. Atlantic Books.（青木創訳，2014，『偶然の科学』早川書房．）\n数理社会学会監修，筒井淳也・神林博史・長松奈美江・渡邉大輔・藤原翔編，2015，『計量社会学入門：社会をデータで読む』世界思想社．\n浅野正彦・矢内勇生，2018，『Rによる計量政治学入門：統計学で政治現象を分析する』オーム社．\n余田翔平，2012，「子ども期の家族構造と教育達成格差：二人親世帯/母子世帯/父子世帯の比較」『家族社会学研究』, 24(1), 60–71.\n永吉希久子，2012，「日本人の排外意識に対する分断労働市場の影響」『社会学評論』63(1): 19–35.\n川口章，2012，「昇進意欲の男女比較」『日本労働研究雑誌』54(2): 42–57.\n裵智恵，2018，「同性愛に対する態度を規定する要因」小林大祐編『2015年SSM調査報告書9 意識II』 2015年SSM調査研究会，85–102．"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIV.html",
+    "href": "lecture/GU-sociologyIV.html",
+    "title": "2021-09–　学習院大学法学部「社会学IV」",
     "section": "",
-    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2024年度春（2024-02-19）\n2023年度春（2024-03-04）\n2022年度春（2023-03-09）"
+    "text": "社会階層論"
   },
   {
-    "objectID": "lecture/2024-03-04CSRDA.html#開講",
-    "href": "lecture/2024-03-04CSRDA.html#開講",
-    "title": "2023-03– Stataによるパネル調査データ分析の実践",
+    "objectID": "lecture/GU-sociologyIV.html#テーマ",
+    "href": "lecture/GU-sociologyIV.html#テーマ",
+    "title": "2021-09–　学習院大学法学部「社会学IV」",
     "section": "",
-    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2024年度春（2024-02-19）\n2023年度春（2024-03-04）\n2022年度春（2023-03-09）"
+    "text": "社会階層論"
   },
   {
-    "objectID": "lecture/2024-03-04CSRDA.html#内容",
-    "href": "lecture/2024-03-04CSRDA.html#内容",
-    "title": "2023-03– Stataによるパネル調査データ分析の実践",
-    "section": "内容",
-    "text": "内容\n日本においても多くの大規模パネル調査データが蓄積されるようになり、パネル調査データの分析可能性は飛躍的に広がっています。本コースでは、統計ソフトStataを用いて、パネル調査データを使った分析の基礎的な手順と、代表的なパネル調査データ分析の方法を学習します。具体的には、どのように分析のためのデータセットを作ればよいのか、どのような問いに対してどのような方法を使うべきかに焦点を当てて学習します。たんにStataで結果を出すというだけでなく、どのようにして見やすい図表を作るのか、結果を出力・保存するため効率的なワークフローといった実践的な側面にも重点をおいて解説します。\n次のような方におすすめです\n\n一時点の社会調査データの分析経験はあるが、パネル調査データを分析した経験はなく、分析してみたい\nパネルデータを分析するための手順を知りたい\nパネルデータの分析方法をどのように選べばよいか知りたい\nパネル調査データを分析した経験があるが、よりよいデータ構築の手順や方法の選び方について知りたい"
+    "objectID": "lecture/GU-sociologyIV.html#開講",
+    "href": "lecture/GU-sociologyIV.html#開講",
+    "title": "2021-09–　学習院大学法学部「社会学IV」",
+    "section": "開講",
+    "text": "開講\n学習院大学法学部 後期\n同内容は2022年度に日本女子大学人間社会学部、津田塾大学総合政策学部でも行いました。"
   },
   {
-    "objectID": "lecture/2024-03-04CSRDA.html#資料",
-    "href": "lecture/2024-03-04CSRDA.html#資料",
-    "title": "2023-03– Stataによるパネル調査データ分析の実践",
-    "section": "資料",
-    "text": "資料\n2024年度春のセミナーで使用したスライドはこちらにアップロードしています。\n2023年度春のセミナーで使用したスライドはこちらにアップロードしています。\n2022年度春のセミナーで使用したスライドはこちらにアップロードしています。"
+    "objectID": "lecture/GU-sociologyIV.html#授業の概要",
+    "href": "lecture/GU-sociologyIV.html#授業の概要",
+    "title": "2021-09–　学習院大学法学部「社会学IV」",
+    "section": "授業の概要",
+    "text": "授業の概要\n高い収入や貯蓄、住宅、健康、名誉、幸福、等々、社会において希少とされる財は人びとに等しく配分されているわけではない。さらに、こうした希少財を得るためのチャンスもまた、人びとや集団の間で異なっている。希少な財の配分はどの程度偏っているのか？希少財を得る機会が個人あるいは集団間でいかに異なるのか？希少財の配分やそれを得る機会が異なるのはなぜなのか？社会階層研究はこうした不平等を研究する社会学の一分野である。\n社会階層研究の扱う分野は多岐にわたるが、なかでも主要な問題とされてきたのは以下の3点である。第1に、希少財の配分がどの程度偏っているのかという結果の不平等である。所得や富の不平等の程度は国や時代によってどの程度異なるのか？不平等が拡大しているとしたらそれはなぜか？階層によって健康や家族形成のパターンはどの程度異なるのか？人びとのもつつながりは階層によってどの程度隔たっているのか？こうした問いが検討される。\n第2に、希少財を得る機会がどの程度偏っているのかという機会の不平等である。親の階層とは異なる階層に移動するという世代間移動は増えているのか、減っているのか？変化しているとしたらそれはなぜか？親の階層によって教育機会の不平等が生じるのはなぜか？高い学歴を有する人がより高い階層に就くのはなぜか？これらは機会の不平等に関わる問いである。\n第3に、生まれ持った属性がいかに配分や機会の不平等につながるのかという属性による不平等である。本授業ではとくにジェンダー（性別）による不平等を扱う。ジェンダー不平等は国によってどの程度違うのか？不平等の程度はどのように変化しているのか？男子は理系、女子は文系に進学しやすいのはなぜか？男性と女性が労働市場で異なる仕事に就き、異なる評価を受けるのはなぜか？家族形成がキャリアに与える影響が男女で異なるのはなぜか？こうした問いがジェンダーによる不平等という観点から検討される。\n本授業では、上記3つの問題それぞれについて、実証研究の蓄積を概観することを通じて、社会学、および社会階層研究の視点から社会の不平等を捉えるための視点を身につけることを目指す。また、上記3つの問題に関して、欧米を中心に確認されてきた動向が日本においてはどの程度確認されるのかといった点についても、その成果を紹介する。これを通じて、日本の不平等の位置づけを国際的な視点から理解するとともに、不平等がいかにして生じるのか、そのメカニズムを理解することを目指す。\n\nガイダンス\n結果の不平等（1）：不平等の拡大\n\n結果の不平等の測定\n所得と富の不平等：国際比較とトレンド\n富裕層と貧困層\n\n結果の不平等（2）：不平等の拡大のメカニズム\n\nなぜ不平等が拡大したのか：アメリカの場合\n日本の不平等の実態とメカニズム\n\n結果の不平等（3）：階層間格差と不平等の帰結\n\n階層の測定\n階層間格差：健康と家族形成\n結果の不平等の帰結\n\n結果の不平等（4）：階層分離と認識のずれ\n\n不平等と階層分離\n客観的位置と主観的認識のずれ\n不平等に関する価値観\n\n機会の不平等（1）：世代間移動\n\n社会移動の測定\n職業からみる世代間移動\n所得からみる世代間移動\n\n機会の不平等（2）：近代化仮説と地位達成過程\n\n近代化仮説\n地位達成過程\n日本の社会移動のトレンド\n\n機会の不平等（3）：教育機会の不平等\n\nトレンドをめぐる議論\n教育機会の不平等のメカニズム\n遺伝か環境か\n\n機会の不平等（4）：労働市場と機会の不平等\n\n教育と到達階層の関係：メカニズム\n日本の雇用慣行と世代内移動\n出身階層の影響力の再検討\n\n属性による不平等（1）：ジェンダー不平等\n\nジェンダーの視点と不平等\nジェンダー不平等：国際比較とトレンド\n日本のジェンダー不平等のトレンド\n\n属性による不平等（2）：教育とジェンダー\n\n教育達成の男女差\n性別専攻分離のメカニズム\n\n属性による不平等（3）：労働市場とジェンダー\n\n賃金格差の原因を探る：要因分解\n仕事の違いを測定する：性別職域分離\n格差の生成過程：採用とキャリア\n\n属性による不平等（4）：家族形成とジェンダー\n\n出産・育児と男女のキャリア\n性別役割分業と結婚\n\nまとめ"
   },
   {
     "objectID": "research.html",
@@ -872,14 +851,14 @@
     "href": "research.html#peer-reviewed-paper",
     "title": "Research",
     "section": "Peer-reviewed paper",
-    "text": "Peer-reviewed paper\n\nin English\nMugiyama, Ryota. 2025. “Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment instability among Men in Japan.” Demographic Research. Forthcoming.\nMugiyama, Ryota. 2024. “Disaggregating the Relationship between Precarious Employment and Delayed Marriage in Japan: Incorporating Non-cohabiting Partnerships.” Social Science Research. 124: 103093.\nMogi, Ryohei, Ryota Mugiyama and Giammarco Alderotti. 2024. “Employment Uncertainty and Non-coresidential Partnership in Very Low Fertility Countries: Italy and Japan.” Journal of Family Research. 36: 160–177.\nMugiyama, Ryota. 2024. “Cohort Change in the Educational Gradient in Women’s Employment Around Childbirth in Japan.” Research in Social Stratification and Mobility. 89: 100885.\nÇineli, Beyda and Ryota Mugiyama. 2023. “Money management over the course of marriage: Parenthood, employment and household financial organization in Japan.” Advances in Life Course Research. 56: 100544.\nIgarashi, Akira and Ryota Mugiyama. 2023. “Whose tastes matter? Discrimination against immigrants in the Japanese labour market.” Journal of Ethnic and Migration Studies. 49(13): 3365–3388.\nMugiyama, Ryota and Kohei Toyonaga. 2022. “Role of Cohort Size in Trends in Class and Occupational Returns to Education at First Job: The Case of Japan.” European Sociological Review. 38(2): 269–285.\n\n\nin Japanese\n\n麦山亮太・大里蒼一郎，2024，「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』39(1): 19–34．\n麦山亮太・田上皓大，2024，「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』39(1): 64–76．SSM-ONET対応表へのリンク\n麦山亮太・小松恭子，2023，「テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析」『日本労働研究雑誌』754: 87–102．\n五十嵐彰・麦山亮太，2023，「サーベイ実験を用いた日本における外国人雇用差別の検証：企業属性による異質性」『理論と方法』38(1): 44–58．\n麦山亮太，2022，「出産・育児期における女性就業とその学歴差の長期趨勢：雇用労働力化に着目して」『社会学評論』73(2): 86–102．補足表\n打越文弥・麦山亮太・小松恭子，2021，「職域分離とスキルからみる労働市場のジェンダー格差：日本版O-NET・国勢調査マッチングデータから得られる示唆」『理論と方法』36(1): 65–82．（特集論文）\n打越文弥・麦山亮太，2020，「日本における性別職域分離の趨勢：1980–2005年国勢調査集計データを用いた要因分解」『人口学研究』56: 9–23．\n麦山亮太・西澤和也，2017，「大企業と中小企業が新卒者に求める能力は異なるか：求人情報サイトへのトピックモデルの適用」『理論と方法』32(2): 214–227．\n麦山亮太，2017，「職業経歴と結婚への移行：雇用形態・職種・企業規模と地位変化の効果における男女差」『家族社会学研究』29(2): 129–141．\n麦山亮太，2017，「キャリアの中断が生み出す格差：正規雇用獲得への持続的影響に着目して」『社会学評論』68(2): 248–264．\n麦山亮太，2016，「結婚は職業キャリアにいかなる影響を与えるのか？：無業・管理職への移動に関する男女比較分析」『家族社会学研究』28(2): 122–135．"
+    "text": "Peer-reviewed paper\n\nin English\nMugiyama, Ryota. 2025. “Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment Instability among Men in Japan.” Demographic Research. 52(21): 635–688.\nMugiyama, Ryota. 2024. “Disaggregating the Relationship between Precarious Employment and Delayed Marriage in Japan: Incorporating Non-cohabiting Partnerships.” Social Science Research. 124: 103093.\nMogi, Ryohei, Ryota Mugiyama and Giammarco Alderotti. 2024. “Employment Uncertainty and Non-coresidential Partnership in Very Low Fertility Countries: Italy and Japan.” Journal of Family Research. 36: 160–177.\nMugiyama, Ryota. 2024. “Cohort Change in the Educational Gradient in Women’s Employment Around Childbirth in Japan.” Research in Social Stratification and Mobility. 89: 100885.\nÇineli, Beyda and Ryota Mugiyama. 2023. “Money Management over the Course of Marriage: Parenthood, Employment and Household Financial Organization in Japan.” Advances in Life Course Research. 56: 100544.\nIgarashi, Akira and Ryota Mugiyama. 2023. “Whose Tastes Matter? Discrimination against Immigrants in the Japanese Labour Market.” Journal of Ethnic and Migration Studies. 49(13): 3365–3388.\nMugiyama, Ryota and Kohei Toyonaga. 2022. “Role of Cohort Size in Trends in Class and Occupational Returns to Education at First Job: The Case of Japan.” European Sociological Review. 38(2): 269–285.\n\n\nin Japanese\n\n麦山亮太・大里蒼一郎，2024，「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』39(1): 19–34．\n麦山亮太・田上皓大，2024，「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』39(1): 64–76．SSM-ONET対応表へのリンク\n麦山亮太・小松恭子，2023，「テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析」『日本労働研究雑誌』754: 87–102．\n五十嵐彰・麦山亮太，2023，「サーベイ実験を用いた日本における外国人雇用差別の検証：企業属性による異質性」『理論と方法』38(1): 44–58．\n麦山亮太，2022，「出産・育児期における女性就業とその学歴差の長期趨勢：雇用労働力化に着目して」『社会学評論』73(2): 86–102．補足表\n打越文弥・麦山亮太・小松恭子，2021，「職域分離とスキルからみる労働市場のジェンダー格差：日本版O-NET・国勢調査マッチングデータから得られる示唆」『理論と方法』36(1): 65–82．（特集論文）\n打越文弥・麦山亮太，2020，「日本における性別職域分離の趨勢：1980–2005年国勢調査集計データを用いた要因分解」『人口学研究』56: 9–23．\n麦山亮太・西澤和也，2017，「大企業と中小企業が新卒者に求める能力は異なるか：求人情報サイトへのトピックモデルの適用」『理論と方法』32(2): 214–227．\n麦山亮太，2017，「職業経歴と結婚への移行：雇用形態・職種・企業規模と地位変化の効果における男女差」『家族社会学研究』29(2): 129–141．\n麦山亮太，2017，「キャリアの中断が生み出す格差：正規雇用獲得への持続的影響に着目して」『社会学評論』68(2): 248–264．\n麦山亮太，2016，「結婚は職業キャリアにいかなる影響を与えるのか？：無業・管理職への移動に関する男女比較分析」『家族社会学研究』28(2): 122–135．"
   },
   {
     "objectID": "research.html#work-in-progress",
     "href": "research.html#work-in-progress",
     "title": "Research",
     "section": "Work in progress",
-    "text": "Work in progress\n\nSocial mobility\nMultigenerational Perspective on Trends in the Inequality of Educational Opportunity in Japan (with Aguru Ishibashi)\n\n2024-04-20 Presented at PAA Annual Meeting at Hyatt Regency Columbus, Ohio. poster\n2023-10-25 Working paper is found here. paper\n2023-08-15 Presented at RC28 Summer Meeting at University of Michigan. slide\n2023-03-08 Presented at JAMS 74th Meeting at Tsukuba University. slide\n\nDoes Educational Expansion Weaken the Equalizing Power of College? Trends in Social Origin Differentials in Occupational Destination in Japan (with Kohei Toyonaga)\n\n2022-08-13 Presented at RC28 Summer Meeting at University of Notre Dame. slide\n\nChanging University Accessibility and Inequality of Educational Opportunity in Japan (with Kohei Toyonaga)\n\n2024-12-17 Working paper is found here. paper\n2023-10-09 Presented at JSS 96th Annual Meeting at Rissho University.\n2023-07-15 Presented at READI 1st Annual Conference at University of Tokyo. slide\n2022-08-28 Presented at JAMS 73rd Meeting. slide\n\nSocial Origin Earnings Gap in Japan: Differential Effects by Class Destination\n\n2024-09-13 Working paper is found here. peper\n2024-05-18 Presented at RC28 Spring Meeting at NYU Shanghai. slide\n2024-03-16 Presented at JAMS 76th Meeting at Osaka University. slide\n\nThe Impact of Intergenerational Educational Mobility and Subjective Social Status: Evidence from Japan. (with Aram Kwon)\n\n2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop.\n2025-03-xx Presented at RC28 Spring Meeting at University of Milan.\n\nIntergenerational Educational Mobility in 21st Century Japan: Changing Roles of Fathers and Mothers? (with Aguru Ishibashi)\n\n2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop. slide\n\n\n\n\nLabor market inequality\nRising Socioeconomic Inequality in Telework Eligibility: Evidence from before and after the COVID-19 Outbreak in Japan (with Kyoko Komatsu)\n\n2023-08-24 Working paper is found here. paper\n2022-11-12 Presented at JSS 95th Annual Meeting at Otemon Gakuin University. slide\n\nTrends in Task Distribution in Japan, 1980–2020: Evidence from the Occupational Information Network of Japan and the Population Census (with Kyoko Komatsu)\n\n2024-03-29 Tentative reports are found here (in Japanese). website\n\nEducational Differences in the Motherhood Penalty on Wage Trajectories in Japan: The Role of Loss of Experience\n\n2024-08-06 Presented at RC28 2024 Summer Meeting at Brown University. slide\n2024-06-28 Working paper is found here. paper\n2024-06-09 Presented at PAoJ 76th Annual Meeting at Chuo University. slide\n\nThe Variation in Workers’ Task Variety and its Earnings Returns Across Countries (with Shin Arita)\n\n2024-08-30 Presented at JAMS 77th Annual Meeting at Tohoku University. slide\n\n\n\n\nFamily Formation\nExposure to Non-partnership and Fertility Desires among Childless Population in Japan (with Ryohei Mogi and Alyce Raybould)\n\n2024-04-18 Presented at PAA 2024 Annual Meeting at Hyatt Regency Columbus, Ohio. slide\n\nRevisiting the Relationship between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan (with Fumiya Uchikoshi, Shohei Yoda, and James M. Raymo)\n\n2024-04-18 Presented at PAA 2024 Annual Meeting at Hyatt Regency Columbus, Ohio.\n2023-09-02 Presented at JSFS 33rd Annual Meeting at Kobe University.\n\nDoes Policy Affect Fertility and Marriage Desires Among Never-Married Childless People? A Factorial Survey Experiment (with Shin Okubo, Kota Toma, Shohei Yoda, and Shigeki Matsuda)\n\n2024-11-09 Presented at JSS 97th Annual Meeting at Kyoto Sangyo University. slide\n2024-07-29 Presented at READI 2nd Meeting at Peking University. slide\n2024-03-17 Presented at JAMS 76th Meeting at Osaka University. slide\n\nThe Cost of Raising Children and Family Intentions and Desires: A Survey Experiment Approach Using Information Intervention (with Fumiya Uchikoshi)\n\n2025-04-11 Presented at PAA 2025 Annual Meeting at Marriott Marquis Washington DC."
+    "text": "Work in progress\n\nSocial mobility\nMultigenerational Perspective on Trends in the Inequality of Educational Opportunity in Japan (with Aguru Ishibashi)\n\n2024-04-20 Presented at PAA Annual Meeting at Hyatt Regency Columbus, Ohio. poster\n2023-10-25 Working paper is found here. paper\n2023-08-15 Presented at RC28 Summer Meeting at University of Michigan. slide\n2023-03-08 Presented at JAMS 74th Meeting at Tsukuba University. slide\n\nDoes Educational Expansion Weaken the Equalizing Power of College? Trends in Social Origin Differentials in Occupational Destination in Japan (with Kohei Toyonaga)\n\n2022-08-13 Presented at RC28 Summer Meeting at University of Notre Dame. slide\n\nChanging University Accessibility and Inequality of Educational Opportunity in Japan (with Kohei Toyonaga)\n\n2024-12-17 Working paper is found here. paper\n2023-10-09 Presented at JSS 96th Annual Meeting at Rissho University.\n2023-07-15 Presented at READI 1st Annual Conference at University of Tokyo. slide\n2022-08-28 Presented at JAMS 73rd Meeting. slide\n\nSocial Origin Earnings Gap in Japan: Differential Effects by Class Destination\n\n2024-09-13 Working paper is found here. peper\n2024-05-18 Presented at RC28 Spring Meeting at NYU Shanghai. slide\n2024-03-16 Presented at JAMS 76th Meeting at Osaka University. slide\n\nThe Impact of Intergenerational Educational Mobility and Subjective Social Status: Evidence from Japan. (with Aram Kwon)\n\n2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop.\n2025-03-xx Presented at RC28 Spring Meeting at University of Milan.\n\nIntergenerational Educational Mobility in 21st Century Japan: Changing Roles of Fathers and Mothers? (with Aguru Ishibashi)\n\n2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop. slide\n\n\n\n\nLabor market inequality\nRising Socioeconomic Inequality in Telework Eligibility: Evidence from before and after the COVID-19 Outbreak in Japan (with Kyoko Komatsu)\n\n2023-08-24 Working paper is found here. paper\n2022-11-12 Presented at JSS 95th Annual Meeting at Otemon Gakuin University. slide\n\nTrends in Task Distribution in Japan, 1980–2020: Evidence from the Occupational Information Network of Japan and the Population Census (with Kyoko Komatsu)\n\n2025-02-28 Discussion paper is found here (in Japanese). website\n\nEducational Differences in the Motherhood Penalty on Wage Trajectories in Japan: The Role of Loss of Experience\n\n2024-08-06 Presented at RC28 2024 Summer Meeting at Brown University. slide\n2024-06-28 Working paper is found here. paper\n2024-06-09 Presented at PAoJ 76th Annual Meeting at Chuo University. slide\n\nThe Variation in Workers’ Task Variety and its Earnings Returns Across Countries (with Shin Arita)\n\n2024-08-30 Presented at JAMS 77th Annual Meeting at Tohoku University. slide\n\n\n\n\nFamily Formation\nExposure to Non-partnership and Fertility Desires among Childless Population in Japan (with Ryohei Mogi and Alyce Raybould)\n\n2024-04-18 Presented at PAA 2024 Annual Meeting at Hyatt Regency Columbus, Ohio. slide\n\nRevisiting the Relationship between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan (with Fumiya Uchikoshi, Shohei Yoda, and James M. Raymo)\n\n2024-04-18 Presented at PAA 2024 Annual Meeting at Hyatt Regency Columbus, Ohio.\n2023-09-02 Presented at JSFS 33rd Annual Meeting at Kobe University.\n\nDoes Policy Affect Fertility and Marriage Desires Among Never-Married Childless People? A Factorial Survey Experiment (with Shin Okubo, Kota Toma, Shohei Yoda, and Shigeki Matsuda)\n\n2024-11-09 Presented at JSS 97th Annual Meeting at Kyoto Sangyo University. slide\n2024-07-29 Presented at READI 2nd Meeting at Peking University. slide\n2024-03-17 Presented at JAMS 76th Meeting at Osaka University. slide\n\nThe Cost of Raising Children and Family Intentions and Desires: A Survey Experiment Approach Using Information Intervention (with Fumiya Uchikoshi)\n\n2025-04-11 Presented at PAA 2025 Annual Meeting at Marriott Marquis Washington DC."
   },
   {
     "objectID": "research.html#book-chapter",
@@ -900,7 +879,7 @@
     "href": "r/dss_tidyverse.html",
     "title": "Data analysis for social science in tidyverse",
     "section": "",
-    "text": "このページでは、Llaudet, Elena and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.のコードを現代のRの世界でよく使われているtidyverseパッケージを使ったコードに直すとどのように書くことができるのかを紹介する。これを通じて、tidyverseパッケージに含まれる関数群の初歩的な使い方を学ぶことができるだろう。\nコードを実行するためには、tidyverseパッケージをインストールして、読み込む必要がある。パッケージをインストールする際には、次のコマンドを実行する。一度実行してパッケージをインストールしたあとは、再度R/RStudioを開いたとしても、改めて実行する必要はない。\ninstall.packages(\"tidyverse\")\nパッケージを使用するためには、R/RStudioを開くたびに、library()コマンドを実行して、パッケージを読み込む必要がある。\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.2     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n以下、各Chapterのコードはすべてlibrary(tidyverse)を実行してあるという前提のもとで進める。"
+    "text": "このページでは、Llaudet, Elena and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.のコードを現代のRの世界でよく使われているtidyverseパッケージを使ったコードに直すとどのように書くことができるのかを紹介する。これを通じて、tidyverseパッケージに含まれる関数群の初歩的な使い方を学ぶことができるだろう。\nコードを実行するためには、tidyverseパッケージをインストールして、読み込む必要がある。パッケージをインストールする際には、次のコマンドを実行する。一度実行してパッケージをインストールしたあとは、再度R/RStudioを開いたとしても、改めて実行する必要はない。\ninstall.packages(\"tidyverse\")\nパッケージを使用するためには、R/RStudioを開くたびに、library()コマンドを実行して、パッケージを読み込む必要がある。\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.0.4     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n以下、各Chapterのコードはすべてlibrary(tidyverse)を実行してあるという前提のもとで進める。"
   },
   {
     "objectID": "r/dss_tidyverse.html#loading-and-making-sense-of-data",
@@ -1026,14 +1005,14 @@
     "href": "blog/2016-11-12-timevariant.html",
     "title": "時間による効果の変化をモデリングする",
     "section": "",
-    "text": "時系列データやパネルデータを分析するときの主要な関心の1つは、変化する独立変数が従属変数に対していかなる効果を与えるのかを明らかにすることにあります。たとえば社会学だと、「結婚することによって幸福度がどのように変化するか」であるとか、「転職することによって賃金は上がるのか」といった問いが例として挙げられます。\nある個体（id）について、複数時点のデータを収集した結果、この個体は、時点4において状態Xの変化を経験したとします。このときのデータは以下のように表すことができます。\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.2     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nid &lt;- c(1, 1, 1, 1, 1, 1, 1)\ntime &lt;- c(1, 2, 3, 4, 5, 6, 7)\nx &lt;- c(0, 0, 0, 1, 1, 1, 1)\n\ndf &lt;- tibble(id, time, x)\ndf\n\n# A tibble: 7 × 3\n     id  time     x\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0\n2     1     2     0\n3     1     3     0\n4     1     4     1\n5     1     5     1\n6     1     6     1\n7     1     7     1\n\n\nなお今回は簡単のため、Xは基本的に0から1にしか変化しない（不可逆的な変化をする）離散的な変数とします。たとえば、未婚→既婚（既婚から未婚にはなれない）、転職経験なし→転職経験あり（経験ありからなしにはなれない）、30歳未満→30歳以上（年齢は常に上がるので）、などといった状態の変化を考えると良いと思います。\n今回は、Xが従属変数Yに対して与える効果をより柔軟に考えるための例を、いくつか考えてみます。これ以降の説明のために、上記のデータから以下のようなデータを作ります。\n\ndf &lt;- df %&gt;% \n  group_by(id) %&gt;% # idごとにコードを実行するためにgroup_by()\n  mutate(change = if_else(x == 1 & lag(x, n = 1) == 0, time, 0)) %&gt;% \n  mutate(change = max(change)) %&gt;% \n  mutate(tchange = time - change) %&gt;% \n  mutate(a = if_else(tchange &lt; 0, 0, tchange)) %&gt;% \n  mutate(a_sq = a^2) %&gt;% \n  mutate(b = log(a+1)) %&gt;% \n  mutate(c = if_else(tchange &gt; 0, 0, tchange))\n\ndf\n\n# A tibble: 7 × 9\n# Groups:   id [1]\n     id  time     x change tchange     a  a_sq     b     c\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0      4      -3     0     0 0        -3\n2     1     2     0      4      -2     0     0 0        -2\n3     1     3     0      4      -1     0     0 0        -1\n4     1     4     1      4       0     0     0 0         0\n5     1     5     1      4       1     1     1 0.693     0\n6     1     6     1      4       2     2     4 1.10      0\n7     1     7     1      4       3     3     9 1.39      0"
+    "text": "時系列データやパネルデータを分析するときの主要な関心の1つは、変化する独立変数が従属変数に対していかなる効果を与えるのかを明らかにすることにあります。たとえば社会学だと、「結婚することによって幸福度がどのように変化するか」であるとか、「転職することによって賃金は上がるのか」といった問いが例として挙げられます。\nある個体（id）について、複数時点のデータを収集した結果、この個体は、時点4において状態Xの変化を経験したとします。このときのデータは以下のように表すことができます。\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.0.4     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nid &lt;- c(1, 1, 1, 1, 1, 1, 1)\ntime &lt;- c(1, 2, 3, 4, 5, 6, 7)\nx &lt;- c(0, 0, 0, 1, 1, 1, 1)\n\ndf &lt;- tibble(id, time, x)\ndf\n\n# A tibble: 7 × 3\n     id  time     x\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0\n2     1     2     0\n3     1     3     0\n4     1     4     1\n5     1     5     1\n6     1     6     1\n7     1     7     1\n\n\nなお今回は簡単のため、Xは基本的に0から1にしか変化しない（不可逆的な変化をする）離散的な変数とします。たとえば、未婚→既婚（既婚から未婚にはなれない）、転職経験なし→転職経験あり（経験ありからなしにはなれない）、30歳未満→30歳以上（年齢は常に上がるので）、などといった状態の変化を考えると良いと思います。\n今回は、Xが従属変数Yに対して与える効果をより柔軟に考えるための例を、いくつか考えてみます。これ以降の説明のために、上記のデータから以下のようなデータを作ります。\n\ndf &lt;- df %&gt;% \n  group_by(id) %&gt;% # idごとにコードを実行するためにgroup_by()\n  mutate(change = if_else(x == 1 & lag(x, n = 1) == 0, time, 0)) %&gt;% \n  mutate(change = max(change)) %&gt;% \n  mutate(tchange = time - change) %&gt;% \n  mutate(a = if_else(tchange &lt; 0, 0, tchange)) %&gt;% \n  mutate(a_sq = a^2) %&gt;% \n  mutate(b = log(a+1)) %&gt;% \n  mutate(c = if_else(tchange &gt; 0, 0, tchange))\n\ndf\n\n# A tibble: 7 × 9\n# Groups:   id [1]\n     id  time     x change tchange     a  a_sq     b     c\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0      4      -3     0     0 0        -3\n2     1     2     0      4      -2     0     0 0        -2\n3     1     3     0      4      -1     0     0 0        -1\n4     1     4     1      4       0     0     0 0         0\n5     1     5     1      4       1     1     1 0.693     0\n6     1     6     1      4       2     2     4 1.10      0\n7     1     7     1      4       3     3     9 1.39      0"
   },
   {
     "objectID": "blog/2016-11-12-timevariant.html#時系列データにおいてxの効果をどのように捉えるか",
     "href": "blog/2016-11-12-timevariant.html#時系列データにおいてxの効果をどのように捉えるか",
     "title": "時間による効果の変化をモデリングする",
     "section": "",
-    "text": "時系列データやパネルデータを分析するときの主要な関心の1つは、変化する独立変数が従属変数に対していかなる効果を与えるのかを明らかにすることにあります。たとえば社会学だと、「結婚することによって幸福度がどのように変化するか」であるとか、「転職することによって賃金は上がるのか」といった問いが例として挙げられます。\nある個体（id）について、複数時点のデータを収集した結果、この個体は、時点4において状態Xの変化を経験したとします。このときのデータは以下のように表すことができます。\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.2     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nid &lt;- c(1, 1, 1, 1, 1, 1, 1)\ntime &lt;- c(1, 2, 3, 4, 5, 6, 7)\nx &lt;- c(0, 0, 0, 1, 1, 1, 1)\n\ndf &lt;- tibble(id, time, x)\ndf\n\n# A tibble: 7 × 3\n     id  time     x\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0\n2     1     2     0\n3     1     3     0\n4     1     4     1\n5     1     5     1\n6     1     6     1\n7     1     7     1\n\n\nなお今回は簡単のため、Xは基本的に0から1にしか変化しない（不可逆的な変化をする）離散的な変数とします。たとえば、未婚→既婚（既婚から未婚にはなれない）、転職経験なし→転職経験あり（経験ありからなしにはなれない）、30歳未満→30歳以上（年齢は常に上がるので）、などといった状態の変化を考えると良いと思います。\n今回は、Xが従属変数Yに対して与える効果をより柔軟に考えるための例を、いくつか考えてみます。これ以降の説明のために、上記のデータから以下のようなデータを作ります。\n\ndf &lt;- df %&gt;% \n  group_by(id) %&gt;% # idごとにコードを実行するためにgroup_by()\n  mutate(change = if_else(x == 1 & lag(x, n = 1) == 0, time, 0)) %&gt;% \n  mutate(change = max(change)) %&gt;% \n  mutate(tchange = time - change) %&gt;% \n  mutate(a = if_else(tchange &lt; 0, 0, tchange)) %&gt;% \n  mutate(a_sq = a^2) %&gt;% \n  mutate(b = log(a+1)) %&gt;% \n  mutate(c = if_else(tchange &gt; 0, 0, tchange))\n\ndf\n\n# A tibble: 7 × 9\n# Groups:   id [1]\n     id  time     x change tchange     a  a_sq     b     c\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0      4      -3     0     0 0        -3\n2     1     2     0      4      -2     0     0 0        -2\n3     1     3     0      4      -1     0     0 0        -1\n4     1     4     1      4       0     0     0 0         0\n5     1     5     1      4       1     1     1 0.693     0\n6     1     6     1      4       2     2     4 1.10      0\n7     1     7     1      4       3     3     9 1.39      0"
+    "text": "時系列データやパネルデータを分析するときの主要な関心の1つは、変化する独立変数が従属変数に対していかなる効果を与えるのかを明らかにすることにあります。たとえば社会学だと、「結婚することによって幸福度がどのように変化するか」であるとか、「転職することによって賃金は上がるのか」といった問いが例として挙げられます。\nある個体（id）について、複数時点のデータを収集した結果、この個体は、時点4において状態Xの変化を経験したとします。このときのデータは以下のように表すことができます。\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.0.4     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nid &lt;- c(1, 1, 1, 1, 1, 1, 1)\ntime &lt;- c(1, 2, 3, 4, 5, 6, 7)\nx &lt;- c(0, 0, 0, 1, 1, 1, 1)\n\ndf &lt;- tibble(id, time, x)\ndf\n\n# A tibble: 7 × 3\n     id  time     x\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0\n2     1     2     0\n3     1     3     0\n4     1     4     1\n5     1     5     1\n6     1     6     1\n7     1     7     1\n\n\nなお今回は簡単のため、Xは基本的に0から1にしか変化しない（不可逆的な変化をする）離散的な変数とします。たとえば、未婚→既婚（既婚から未婚にはなれない）、転職経験なし→転職経験あり（経験ありからなしにはなれない）、30歳未満→30歳以上（年齢は常に上がるので）、などといった状態の変化を考えると良いと思います。\n今回は、Xが従属変数Yに対して与える効果をより柔軟に考えるための例を、いくつか考えてみます。これ以降の説明のために、上記のデータから以下のようなデータを作ります。\n\ndf &lt;- df %&gt;% \n  group_by(id) %&gt;% # idごとにコードを実行するためにgroup_by()\n  mutate(change = if_else(x == 1 & lag(x, n = 1) == 0, time, 0)) %&gt;% \n  mutate(change = max(change)) %&gt;% \n  mutate(tchange = time - change) %&gt;% \n  mutate(a = if_else(tchange &lt; 0, 0, tchange)) %&gt;% \n  mutate(a_sq = a^2) %&gt;% \n  mutate(b = log(a+1)) %&gt;% \n  mutate(c = if_else(tchange &gt; 0, 0, tchange))\n\ndf\n\n# A tibble: 7 × 9\n# Groups:   id [1]\n     id  time     x change tchange     a  a_sq     b     c\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0      4      -3     0     0 0        -3\n2     1     2     0      4      -2     0     0 0        -2\n3     1     3     0      4      -1     0     0 0        -1\n4     1     4     1      4       0     0     0 0         0\n5     1     5     1      4       1     1     1 0.693     0\n6     1     6     1      4       2     2     4 1.10      0\n7     1     7     1      4       3     3     9 1.39      0"
   },
   {
     "objectID": "blog/2016-11-12-timevariant.html#例1-xの効果はすぐに現れかつ持続する",
