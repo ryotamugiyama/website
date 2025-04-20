@@ -13,7 +13,7 @@ Other research publications can also be found on the following pages.
 
 ### in English
 
-Mugiyama, Ryota. 2025. "[Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment Instability among Men in Japan](https://doi.org/10.4054/DemRes.2025.52.21)." *Demographic Research.* 52(21): 635--688.
+Mugiyama, Ryota. 2025. "[Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment Instability among Men in Japan](https://doi.org/10.4054/DemRes.2025.52.21)." *Demographic Research.* 52: 635--688.
 
 Mugiyama, Ryota. 2024. "[Disaggregating the Relationship between Precarious Employment and Delayed Marriage in Japan: Incorporating Non-cohabiting Partnerships](https://doi.org/10.1016/j.ssresearch.2024.103093)." *Social Science Research.* 124: 103093.
 
@@ -87,11 +87,11 @@ Social Origin Earnings Gap in Japan: Differential Effects by Class Destination
 The Impact of Intergenerational Educational Mobility and Subjective Social Status: Evidence from Japan. (with Aram Kwon)
 
 - 2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop.
-- 2025-03-xx Presented at RC28 Spring Meeting at University of Milan.
+- 2025-03-27 Presented at RC28 Spring Meeting at University of Milan.
 
 Intergenerational Educational Mobility in 21st Century Japan: Changing Roles of Fathers and Mothers? (with Aguru Ishibashi) 
 
-- 2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop. [slide]() 
+- 2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop. [slide](https://researchmap.jp/mugiyama/presentations/49071062) 
 
 <!---- 
 Downward Mobility and Loneliness: Consequences of Intergenerational Educational Mobility in Japan (with Aram Kwon and Takahiro Tabuchi)
@@ -113,12 +113,14 @@ Trends in Task Distribution in Japan, 1980--2020: Evidence from the Occupational
 
 Educational Differences in the Motherhood Penalty on Wage Trajectories in Japan: The Role of Loss of Experience
 
+- 2025-05-16 Presented at Conference on Family Conflict and Dynamics in East Asia at the University of Hong Kong Research Hub of Population Studies. 
 - 2024-08-06 Presented at RC28 2024 Summer Meeting at Brown University. [slide](https://researchmap.jp/mugiyama/presentations/45778764)
 - 2024-06-28 Working paper is found here. [paper](https://csrda.iss.u-tokyo.ac.jp/international/dp/No.87.pdf)
 - 2024-06-09 Presented at PAoJ 76th Annual Meeting at Chuo University. [slide](https://researchmap.jp/mugiyama/presentations/45741726)
 
-The Variation in Workers' Task Variety and its Earnings Returns Across Countries (with Shin Arita)
+Task Variety and its Earnings Returns Across Countries: Evidence from PIAAC (with Shin Arita)
 
+- 2025-07-11 Presented at Society for the Advancement of Socio-Economics (SASE) 2025 Annual Meeting at Palais des Congrès, Montréal, Québec. 
 - 2024-08-30 Presented at JAMS 77th Annual Meeting at Tohoku University. [slide](https://researchmap.jp/mugiyama/presentations/46844602)
 
 <!---- 
@@ -144,7 +146,7 @@ Does Policy Affect Fertility and Marriage Desires Among Never-Married Childless 
 
 The Cost of Raising Children and Family Intentions and Desires: A Survey Experiment Approach Using Information Intervention (with Fumiya Uchikoshi)
 
-- 2025-04-11 Presented at PAA 2025 Annual Meeting at Marriott Marquis Washington DC.
+- 2025-04-11 Presented at PAA 2025 Annual Meeting at Marriott Marquis Washington DC. [slide](https://researchmap.jp/mugiyama/presentations/47722304)
 
 <!--- Revisiting the Attitudinal Link between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan (with Haruki Sugimoto and Fumiya Uchikoshi) --->
 
