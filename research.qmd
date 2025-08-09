@@ -13,6 +13,8 @@ Other research publications can also be found on the following pages.
 
 ### in English
 
+Mogi, Ryohei, Ryota Mugiyama, and Alyce Raybould. 2025. "[Exposure to Non-partnership and Fertility Desires among Childless Population in Japan](https://doi.org/10.1093/sf/soaf123)." *Social Forces.* Advance Access.
+
 Mugiyama, Ryota. 2025. "[Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment Instability among Men in Japan](https://doi.org/10.4054/DemRes.2025.52.21)." *Demographic Research.* 52: 635--688.
 
 Mugiyama, Ryota. 2024. "[Disaggregating the Relationship between Precarious Employment and Delayed Marriage in Japan: Incorporating Non-cohabiting Partnerships](https://doi.org/10.1016/j.ssresearch.2024.103093)." *Social Science Research.* 124: 103093.
@@ -31,7 +33,7 @@ Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Cla
 
 <!--- 
 麦山亮太・林愛子，xxxx，「専攻間賃金格差の男女比較分析：年齢による違いに着目して」『日本労働研究雑誌』
-小松恭子・麦山亮太，xxxx，「日本の労働市場におけるタスク分布の変化と要因：1980〜2020年における産業構造の変化とICT導入の影響」『日本労働研究雑誌』
+小松恭子・麦山亮太，2026，「1980～2020 年の日本の労働市場におけるタスク分布の変化：産業構造の変化とICT 導入の影響」『日本労働研究雑誌』
 --->
 
 麦山亮太・大里蒼一郎，2024，「[地域の図書館普及が子どもの学習時間に与える影響とその階層差](https://doi.org/10.11218/ojjams.39.19)」『理論と方法』39(1): 19--34．
@@ -84,13 +86,17 @@ Social Origin Earnings Gap in Japan: Differential Effects by Class Destination
 - 2024-05-18 Presented at RC28 Spring Meeting at NYU Shanghai. [slide](https://researchmap.jp/mugiyama/presentations/45741717)
 - 2024-03-16 Presented at JAMS 76th Meeting at Osaka University. [slide](https://researchmap.jp/mugiyama/presentations/45509862)
 
-The Impact of Intergenerational Educational Mobility and Subjective Social Status: Evidence from Japan. (with Aram Kwon)
+Intergenerational Educational Mobility and Subjective Social Status (with Aram Kwon)
 
-- 2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop.
 - 2025-03-27 Presented at RC28 Spring Meeting at University of Milan.
+- 2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop.
 
 Intergenerational Educational Mobility in 21st Century Japan: Changing Roles of Fathers and Mothers? (with Aguru Ishibashi) 
 
+<!---- 
+- 2025-11-xx Presented at JSS 86th Annual Meeting at Hitotsubashi University. [slide](https://researchmap.jp/mugiyama/presentations/49369343) 
+---->
+- 2025-08-07 Presented at RC28 2025 Summer Meeting at UCLA. 
 - 2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop. [slide](https://researchmap.jp/mugiyama/presentations/49071062) 
 
 <!---- 
@@ -102,8 +108,11 @@ Downward Mobility and Loneliness: Consequences of Intergenerational Educational 
 
 ### Labor market inequality
 
-Rising Socioeconomic Inequality in Telework Eligibility: Evidence from before and after the COVID-19 Outbreak in Japan (with Kyoko Komatsu)
+Rising socioeconomic inequality in access to remote work following the COVID-19 outbreak in Japan
+ (with Kyoko Komatsu)
 
+- 2024-10-25 Presented at CFPR Lunchtime Seminar Series, National University of Singapore
+ [slide](https://researchmap.jp/mugiyama/presentations/47363765)
 - 2023-08-24 Working paper is found here. [paper](https://csrda.iss.u-tokyo.ac.jp/international/dp/No.56.pdf)
 - 2022-11-12 Presented at JSS 95th Annual Meeting at Otemon Gakuin University. [slide](https://researchmap.jp/mugiyama/presentations/40475337)
 
@@ -111,27 +120,29 @@ Trends in Task Distribution in Japan, 1980--2020: Evidence from the Occupational
 
 - 2025-02-28 Discussion paper is found here (in Japanese). [website](https://www.jil.go.jp/institute/discussion/2025/25-01.html)
 
-Educational Differences in the Motherhood Penalty on Wage Trajectories in Japan: The Role of Loss of Experience
+Revisiting Motherhood Wage Penalty Following First birth in Japan: Unpacking the Sources
 
-- 2025-05-16 Presented at Conference on Family Conflict and Dynamics in East Asia at the University of Hong Kong Research Hub of Population Studies. 
+- 2025-07-18 Presented at READI 3rd Annual Conference at Yonsei University. [slide](https://researchmap.jp/mugiyama/presentations/47722325)
+- 2025-05-16 Presented at Conference on Family Conflict and Dynamics in East Asia at the University of Hong Kong Research Hub of Population Studies. [slide](https://researchmap.jp/mugiyama/presentations/49887140)
 - 2024-08-06 Presented at RC28 2024 Summer Meeting at Brown University. [slide](https://researchmap.jp/mugiyama/presentations/45778764)
 - 2024-06-28 Working paper is found here. [paper](https://csrda.iss.u-tokyo.ac.jp/international/dp/No.87.pdf)
 - 2024-06-09 Presented at PAoJ 76th Annual Meeting at Chuo University. [slide](https://researchmap.jp/mugiyama/presentations/45741726)
 
-Task Variety and its Earnings Returns Across Countries: Evidence from PIAAC (with Shin Arita)
+Task Variety and Its Earnings Returns Across Countries: Evidence from PIAAC (with Shin Arita)
 
 - 2025-07-11 Presented at Society for the Advancement of Socio-Economics (SASE) 2025 Annual Meeting at Palais des Congrès, Montréal, Québec. 
 - 2024-08-30 Presented at JAMS 77th Annual Meeting at Tohoku University. [slide](https://researchmap.jp/mugiyama/presentations/46844602)
+
+The Weight of Gendered Expectation: Pre-birth Endorsement of Intensive Mothering Ideologies and the Motherhood Penalty (with Rantaro Nasu and Yuriko Morikawa)
+
+- 2025-08-28 Presented at JAMS 79th Meeting at Kwansei Gakuin University. [slide](https://researchmap.jp/mugiyama/presentations/49886946)
+- 2025-06-28 Presented at Social Stratification and Mobility Summer International Workshop.
 
 <!---- 
 Trends in Occupational Gender Segregation in Japan, 1980--2020 (with Fumiya Uchikoshi) 
 --->
 
-### Family Formation 
-
-Exposure to Non-partnership and Fertility Desires among Childless Population in Japan (with Ryohei Mogi and Alyce Raybould)
-
-- 2024-04-18 Presented at PAA 2024 Annual Meeting at Hyatt Regency Columbus, Ohio. [slide](https://researchmap.jp/mugiyama/presentations/45595561)
+### Family Demography 
 
 Revisiting the Relationship between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan (with Fumiya Uchikoshi, Shohei Yoda, and James M. Raymo)
 
@@ -148,13 +159,21 @@ The Cost of Raising Children and Family Intentions and Desires: A Survey Experim
 
 - 2025-04-11 Presented at PAA 2025 Annual Meeting at Marriott Marquis Washington DC. [slide](https://researchmap.jp/mugiyama/presentations/47722304)
 
-<!--- Revisiting the Attitudinal Link between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan (with Haruki Sugimoto and Fumiya Uchikoshi) --->
+Gender-role Attitudes and Transition to Marriage and Parenthood in Japan
+
+- 2025-06-14 Presented at 2025 Annual Meeting of Life Course Transitions in East Asia. [slide](https://researchmap.jp/mugiyama/presentations/50233960)
+
+<!--- Revisiting the Attitudinal Link between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan (with Haruki Sugimoto, Fumiya Uchikoshi, and Shohei Yoda) --->
 
 <!--- Socio-economic status and transition to non-cohabiting partnership in East Asia and Europe (with Ryohei Mogi, Inhee Han, Alyce Raybould, Lisa Schmid, and Jiajie Zhang --->
 
 <!---- Trends in Sex Segregation by Field of Study in Japan, 2003--2023 (with Fumiya Uchikoshi, Megumi Oguro, and Kohei Toyonaga) --->
 
 ## Book chapter
+
+<!----
+麦山亮太，2026，「産業構造の変化と労働」編『産業と労働の社会学事典』丸善出版，xxx--xxx．
+--->
 
 麦山亮太，2023，「男性の職業・家族キャリア」家族社会学会編『[家族社会学事典](https://www.maruzen-publishing.co.jp/item/b305112.html)』丸善出版，460--461．
 
@@ -163,6 +182,11 @@ The Cost of Raising Children and Family Intentions and Desires: A Survey Experim
 麦山亮太・吉川裕嗣，2015，「東アジアの学生の意識にみるアジア統合の展望：アジア人意識と脅威認識を軸として」[園田茂人編『アジア比較社会研究のフロンティアⅢ 連携と離反の東アジア』勁草書房](http://www.keisoshobo.co.jp/book/b193739.html)，231--255．
 
 ## Miscs
+
+<!--- 
+麦山亮太・平松誠・コンアラン・那須蘭太郎・吉田航，2025，「社会調査データの合併による二次分析研究の刷新：データ合併の作業手順と今後の調査実施・データ整備に向けた示唆」SSJDA Research Paper Series.
+麦山亮太，2025，「」『季刊個人金融』
+--->
 
 麦山亮太，2024，「[社会階層研究の現在：労働関連分野を中心に](https://www.jil.go.jp/institute/zassi/backnumber/2024/04/index.html)」『日本労働研究雑誌』765: 78--83．
 
