@@ -3,7 +3,7 @@ title: "Profile"
 date: "2025-08-09"
 ---
 
-Born in [Nonoichi city](https://ja.wikipedia.org/wiki/%E9%87%8E%E3%80%85%E5%B8%82%E5%B8%82) (next to Kanazawa city), Ishikawa prefecture, Japan.
+Born in [Nonoichi city](https://en.wikipedia.org/wiki/Nonoichi,_Ishikawa) (next to Kanazawa city), Ishikawa prefecture, Japan.
 
 ### Positions
 
