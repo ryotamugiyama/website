@@ -1,10 +1,44 @@
 ---
 title: "Stata"
-date: "2024-11-22"
+date: "2025-09-24"
 ---
 
 Stataで知っておいたら便利かもしれないコードを不定期に更新します。
 
+## mimrgns: 多重代入されたデータで限界効果を計算する
+
+多重代入されたデータを用いてロジスティック回帰分析などを行ったとする。Stataの`margins`コマンドは多重代入されたデータには対応していないため、そのままでは限界効果（Average marginal effectなど）を計算できない。そこで、`mimrgns`というパッケージを利用すると限界効果を計算できる。
+
+参考：[Missing Data Part II: Multiple Imputation & Maximum Likelihood](https://academicweb.nd.edu/~rwilliam/stats3/MD02.pdf)
+
+``` stata
+ssc install mimrgns // インストール
+...
+...
+mi estimate: logit y x1 x2 x3
+mimrgns, dydx(*) predict(pr) // 限界効果を計算する
+```
+
+(2025-09-24)
+
+## mchange: 任意の範囲だけXを動かした場合の限界効果を計算する
+
+独立変数が連続変数の場合、1単位の変化に対する従属変数の確率の変化のみならず、もう少しいろいろな変化量（e.g. 1SDの変化に対する確率の変化、任意の値から任意の値まで変化したときの確率の変化など）を知りたいと思ったとする。このような場合には、`SPost13`パッケージに含まれている`mchange`関数を使うとよい。
+
+(2025-09-24)
+
+``` stata
+ssc install spost13 // インストール
+...
+...
+logit y x1 x2 x3
+mchange x1 x2
+```
+
+参考：
+
+- Long, J. Scott, and Jeremy Freese. 2014. *Regression Models for Categorical Dependent Variables Using Stata, Third Edition.* Stata Press.
+- [Using the spost13 commands for adjusted predictions and marginal effects with binary dependent variables](https://academicweb.nd.edu/~rwilliam/stats3/Margins04.pdf)
 ## clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする
 
 `generate`で変数を作成すると、もとの変数についていた変数ラベルや値ラベルの情報がなくなってしまう。もしそうした情報を残しておきたいのであれば、`clonevar`を使うとよい。

@@ -12,8 +12,11 @@ Other research publications can also be found on the following pages.
 ## Peer-reviewed paper
 
 ### in English
+<!---- 
+Uchikoshi, Fumiya\*, Ryota Mugiyama\*, Shohei Yoda, and James M. Raymo. 2026. "[Trends in Occupational Gender Segregation in Japan, 1980--2020 (with Fumiya Uchikoshi) Revisiting the Relationship between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan]." *Population and Development Review.* Advance Access. \* Equal authorship.
+--->
 
-Mogi, Ryohei, Ryota Mugiyama, and Alyce Raybould. 2025. "[Exposure to Non-partnership and Fertility Desires among Childless Population in Japan](https://doi.org/10.1093/sf/soaf123)." *Social Forces.* Advance Access.
+Mogi, Ryohei\*, Ryota Mugiyama\*, and Alyce Raybould\*. 2025. "[Exposure to Non-partnership and Fertility Desires among Childless Population in Japan](https://doi.org/10.1093/sf/soaf123)." *Social Forces.* Advance Access. \*Equal authorship. [press release](https://www.univ.gakushuin.ac.jp/about/press/31092.html)
 
 Mugiyama, Ryota. 2025. "[Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment Instability among Men in Japan](https://doi.org/10.4054/DemRes.2025.52.21)." *Demographic Research.* 52: 635--688.
 
@@ -91,12 +94,10 @@ Intergenerational Educational Mobility and Subjective Social Status (with Aram K
 - 2025-03-27 Presented at RC28 Spring Meeting at University of Milan.
 - 2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop.
 
-Intergenerational Educational Mobility in 21st Century Japan: Changing Roles of Fathers and Mothers? (with Aguru Ishibashi) 
+Intergenerational Educational Mobility in 20th Century Japan: Changing Roles of Fathers and Mothers? (with Aguru Ishibashi) 
 
-<!---- 
-- 2025-11-xx Presented at JSS 86th Annual Meeting at Hitotsubashi University. [slide](https://researchmap.jp/mugiyama/presentations/49369343) 
----->
-- 2025-08-07 Presented at RC28 2025 Summer Meeting at UCLA. 
+- 2025-11-15 Presented at JSS 86th Annual Meeting at Hitotsubashi University. [slide](https://researchmap.jp/mugiyama/presentations/49369343) 
+- 2025-08-07 Presented at RC28 2025 Summer Meeting at UCLA. [slide](https://researchmap.jp/mugiyama/presentations/48946285)
 - 2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop. [slide](https://researchmap.jp/mugiyama/presentations/49071062) 
 
 <!---- 
@@ -163,11 +164,12 @@ Gender-role Attitudes and Transition to Marriage and Parenthood in Japan
 
 - 2025-06-14 Presented at 2025 Annual Meeting of Life Course Transitions in East Asia. [slide](https://researchmap.jp/mugiyama/presentations/50233960)
 
-<!--- Revisiting the Attitudinal Link between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan (with Haruki Sugimoto, Fumiya Uchikoshi, and Shohei Yoda) --->
+<!--- Revisiting the Attitudinal Link between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan (with Haruki Sugimoto, Fumiya Uchikoshi, and Shohei Yoda) 
 
-<!--- Socio-economic status and transition to non-cohabiting partnership in East Asia and Europe (with Ryohei Mogi, Inhee Han, Alyce Raybould, Lisa Schmid, and Jiajie Zhang --->
+Socio-economic status and transition to non-cohabiting partnership in East Asia and Europe (with Ryohei Mogi, Inhee Han, Alyce Raybould, Lisa Schmid, and Jiajie Zhang 
 
-<!---- Trends in Sex Segregation by Field of Study in Japan, 2003--2023 (with Fumiya Uchikoshi, Megumi Oguro, and Kohei Toyonaga) --->
+Trends in Sex Segregation by Field of Study in Japan, 2003--2023 (with Fumiya Uchikoshi, Megumi Oguro, and Kohei Toyonaga)
+--->
 
 ## Book chapter
 
@@ -184,9 +186,10 @@ Gender-role Attitudes and Transition to Marriage and Parenthood in Japan
 ## Miscs
 
 <!--- 
-麦山亮太・平松誠・コンアラン・那須蘭太郎・吉田航，2025，「社会調査データの合併による二次分析研究の刷新：データ合併の作業手順と今後の調査実施・データ整備に向けた示唆」SSJDA Research Paper Series.
-麦山亮太，2025，「」『季刊個人金融』
+麦山亮太，2026，「職業とタスクからみる仕事内容のジェンダー格差」『季刊個人金融』2026年冬号: xxx--xxx．
 --->
+
+麦山亮太・平松誠・コンアラン・那須蘭太郎・吉田航，2025，「[社会調査データの統合による二次分析研究の刷新：作業手順と今後の調査実施に向けた示唆](https://csrda.iss.u-tokyo.ac.jp/RPS096.pdf)」*SSJ Data Archive Research Paper Series.* 96. Institute of Social Science, the University of Tokyo.
 
 麦山亮太，2024，「[社会階層研究の現在：労働関連分野を中心に](https://www.jil.go.jp/institute/zassi/backnumber/2024/04/index.html)」『日本労働研究雑誌』765: 78--83．
 
