@@ -184,6 +184,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#mimrgns-多重代入されたデータで限界効果を計算する" id="toc-mimrgns-多重代入されたデータで限界効果を計算する" class="nav-link active" data-scroll-target="#mimrgns-多重代入されたデータで限界効果を計算する">mimrgns: 多重代入されたデータで限界効果を計算する</a></li>
   <li><a href="#mchange-任意の範囲だけxを動かした場合の限界効果を計算する" id="toc-mchange-任意の範囲だけxを動かした場合の限界効果を計算する" class="nav-link" data-scroll-target="#mchange-任意の範囲だけxを動かした場合の限界効果を計算する">mchange: 任意の範囲だけXを動かした場合の限界効果を計算する</a></li>
+  <li><a href="#clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする" id="toc-clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする" class="nav-link" data-scroll-target="#clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする">clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする</a></li>
   <li><a href="#fre-変数の数値とラベルを一緒に表示する" id="toc-fre-変数の数値とラベルを一緒に表示する" class="nav-link" data-scroll-target="#fre-変数の数値とラベルを一緒に表示する">fre: 変数の数値とラベルを一緒に表示する</a></li>
   <li><a href="#pweight-aweight-fweight-iweightの違い" id="toc-pweight-aweight-fweight-iweightの違い" class="nav-link" data-scroll-target="#pweight-aweight-fweight-iweightの違い">pweight, aweight, fweight, iweightの違い</a></li>
   <li><a href="#margins-contrast-限界効果どうしの差の検定" id="toc-margins-contrast-限界効果どうしの差の検定" class="nav-link" data-scroll-target="#margins-contrast-限界効果どうしの差の検定">margins, contrast: 限界効果どうしの差の検定</a></li>
@@ -254,8 +255,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>参考：</p>
 <ul>
 <li>Long, J. Scott, and Jeremy Freese. 2014. <em>Regression Models for Categorical Dependent Variables Using Stata, Third Edition.</em> Stata Press.</li>
-<li><a href="https://academicweb.nd.edu/~rwilliam/stats3/Margins04.pdf">Using the spost13 commands for adjusted predictions and marginal effects with binary dependent variables</a> ## clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする</li>
+<li><a href="https://academicweb.nd.edu/~rwilliam/stats3/Margins04.pdf">Using the spost13 commands for adjusted predictions and marginal effects with binary dependent variables</a></li>
 </ul>
+</section>
+<section id="clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする" class="level2">
+<h2 class="anchored" data-anchor-id="clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする">clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする</h2>
 <p><code>generate</code>で変数を作成すると、もとの変数についていた変数ラベルや値ラベルの情報がなくなってしまう。もしそうした情報を残しておきたいのであれば、<code>clonevar</code>を使うとよい。</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">sysuse</span> auto, <span class="kw">clear</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> copy1 = foreign</span>

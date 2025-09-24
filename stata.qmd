@@ -39,6 +39,7 @@ mchange x1 x2
 
 - Long, J. Scott, and Jeremy Freese. 2014. *Regression Models for Categorical Dependent Variables Using Stata, Third Edition.* Stata Press.
 - [Using the spost13 commands for adjusted predictions and marginal effects with binary dependent variables](https://academicweb.nd.edu/~rwilliam/stats3/Margins04.pdf)
+
 ## clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする
 
 `generate`で変数を作成すると、もとの変数についていた変数ラベルや値ラベルの情報がなくなってしまう。もしそうした情報を残しておきたいのであれば、`clonevar`を使うとよい。

@@ -25,7 +25,7 @@
     "href": "stata.html#mchange-任意の範囲だけxを動かした場合の限界効果を計算する",
     "title": "Stata",
     "section": "mchange: 任意の範囲だけXを動かした場合の限界効果を計算する",
-    "text": "mchange: 任意の範囲だけXを動かした場合の限界効果を計算する\n独立変数が連続変数の場合、1単位の変化に対する従属変数の確率の変化のみならず、もう少しいろいろな変化量（e.g. 1SDの変化に対する確率の変化、任意の値から任意の値まで変化したときの確率の変化など）を知りたいと思ったとする。このような場合には、SPost13パッケージに含まれているmchange関数を使うとよい。\n(2025-09-24)\nssc install spost13 // インストール\n...\n...\nlogit y x1 x2 x3\nmchange x1 x2\n参考：\n\nLong, J. Scott, and Jeremy Freese. 2014. Regression Models for Categorical Dependent Variables Using Stata, Third Edition. Stata Press.\nUsing the spost13 commands for adjusted predictions and marginal effects with binary dependent variables ## clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする\n\ngenerateで変数を作成すると、もとの変数についていた変数ラベルや値ラベルの情報がなくなってしまう。もしそうした情報を残しておきたいのであれば、clonevarを使うとよい。\nsysuse auto, clear\ngenerate copy1 = foreign\ntab copy1\nclonevar copy2 = foreign\ntab copy2\n\n（2024/11/22）"
+    "text": "mchange: 任意の範囲だけXを動かした場合の限界効果を計算する\n独立変数が連続変数の場合、1単位の変化に対する従属変数の確率の変化のみならず、もう少しいろいろな変化量（e.g. 1SDの変化に対する確率の変化、任意の値から任意の値まで変化したときの確率の変化など）を知りたいと思ったとする。このような場合には、SPost13パッケージに含まれているmchange関数を使うとよい。\n(2025-09-24)\nssc install spost13 // インストール\n...\n...\nlogit y x1 x2 x3\nmchange x1 x2\n参考：\n\nLong, J. Scott, and Jeremy Freese. 2014. Regression Models for Categorical Dependent Variables Using Stata, Third Edition. Stata Press.\nUsing the spost13 commands for adjusted predictions and marginal effects with binary dependent variables"
   },
   {
     "objectID": "stata.html#fre-変数の数値とラベルを一緒に表示する",
@@ -1454,5 +1454,12 @@
     "title": "Profile",
     "section": "",
     "text": "Born in Nonoichi city (next to Kanazawa city), Ishikawa prefecture, Japan.\n\nPositions\nApril 2021–Current: Associate Professor, Department of Political Studies, Faculty of Law, Gakushuin University.\nApril 2019–March 2021: Post-doctoral Research Fellow (PD), Japan Society for the Promotion of Science, at Institute of Economic Research, Hitotsubashi University.\nApril 2017–March 2019: Pre-doctoral Research Fellow (DC2), Japan Society for the Promotion of Science.\n\n\nEducation\nMarch 2019: Doctor of Sociology, Department of Sociology, the University of Tokyo.\nMarch 2016: Master of Arts in Sociology, Department of Sociology, the University of Tokyo.\nMarch 2014: Bachelor of Arts in Letters, Faculty of Letters, the University of Tokyo.\n\n\n職歴\n2021年4月–現在　学習院大学法学部政治学科 准教授\n2019年4月–2021年3月　日本学術振興会特別研究員PD（一橋大学経済研究所）\n2017年4月–2019年3月　日本学術振興会特別研究員DC2\n\n\n学歴\n2019年3月　東京大学大学院人文社会系研究科 社会文化研究専攻 社会学専門分野博士課程修了，博士（社会学）\n2016年3月　東京大学大学院人文社会系研究科 社会文化研究専攻 社会学専門分野修士課程修了，修士（社会学）\n2014年3月　東京大学文学部 行動文化学科 社会学専修課程卒業，学士（文学）"
+  },
+  {
+    "objectID": "stata.html#clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする",
+    "href": "stata.html#clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする",
+    "title": "Stata",
+    "section": "clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする",
+    "text": "clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする\ngenerateで変数を作成すると、もとの変数についていた変数ラベルや値ラベルの情報がなくなってしまう。もしそうした情報を残しておきたいのであれば、clonevarを使うとよい。\nsysuse auto, clear\ngenerate copy1 = foreign\ntab copy1\nclonevar copy2 = foreign\ntab copy2\n\n（2024/11/22）"
   }
 ]
