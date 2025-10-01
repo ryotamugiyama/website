@@ -25,8 +25,6 @@ mimrgns, dydx(*) predict(pr) // 限界効果を計算する
 
 独立変数が連続変数の場合、1単位の変化に対する従属変数の確率の変化のみならず、もう少しいろいろな変化量（e.g. 1SDの変化に対する確率の変化、任意の値から任意の値まで変化したときの確率の変化など）を知りたいと思ったとする。このような場合には、`SPost13`パッケージに含まれている`mchange`関数を使うとよい。
 
-(2025-09-24)
-
 ``` stata
 ssc install spost13 // インストール
 ...
@@ -39,6 +37,8 @@ mchange x1 x2
 
 - Long, J. Scott, and Jeremy Freese. 2014. *Regression Models for Categorical Dependent Variables Using Stata, Third Edition.* Stata Press.
 - [Using the spost13 commands for adjusted predictions and marginal effects with binary dependent variables](https://academicweb.nd.edu/~rwilliam/stats3/Margins04.pdf)
+
+(2025-09-24)
 
 ## clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする
 

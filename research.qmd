@@ -14,8 +14,12 @@ Other research publications can also be found on the following pages.
 ### in English
 <!---- 
 Uchikoshi, Fumiya\*, Ryota Mugiyama\*, Shohei Yoda, and James M. Raymo. 2026. "[Trends in Occupational Gender Segregation in Japan, 1980--2020 (with Fumiya Uchikoshi) Revisiting the Relationship between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan]." *Population and Development Review.* Advance Access. \* Equal authorship.
---->
 
+Mugiyama, Ryota and Kohei Toyonaga. 2026. "Changing Regional University Availability and Inequality of Educational Opportunity in Japan." *European Sociological Review.* Advance Access.
+
+
+Mugiyama, Ryota and Kyoko Komatsu. 2025. "[More Than Usage: Expanded Socioeconomic Inequality in Access to Remote Work After the COVID-19 in Japan]()." *Socio-Economic Review.* Advance Access.
+ --->
 Mogi, Ryohei\*, Ryota Mugiyama\*, and Alyce Raybould\*. 2025. "[Exposure to Non-partnership and Fertility Desires among Childless Population in Japan](https://doi.org/10.1093/sf/soaf123)." *Social Forces.* Advance Access. \*Equal authorship. [press release](https://www.univ.gakushuin.ac.jp/about/press/31092.html)
 
 Mugiyama, Ryota. 2025. "[Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment Instability among Men in Japan](https://doi.org/10.4054/DemRes.2025.52.21)." *Demographic Research.* 52: 635--688.
@@ -108,14 +112,6 @@ Downward Mobility and Loneliness: Consequences of Intergenerational Educational 
 ---->
 
 ### Labor market inequality
-
-Rising socioeconomic inequality in access to remote work following the COVID-19 outbreak in Japan
- (with Kyoko Komatsu)
-
-- 2024-10-25 Presented at CFPR Lunchtime Seminar Series, National University of Singapore
- [slide](https://researchmap.jp/mugiyama/presentations/47363765)
-- 2023-08-24 Working paper is found here. [paper](https://csrda.iss.u-tokyo.ac.jp/international/dp/No.56.pdf)
-- 2022-11-12 Presented at JSS 95th Annual Meeting at Otemon Gakuin University. [slide](https://researchmap.jp/mugiyama/presentations/40475337)
 
 Trends in Task Distribution in Japan, 1980--2020: Evidence from the Occupational Information Network of Japan and the Population Census (with Kyoko Komatsu)
 
