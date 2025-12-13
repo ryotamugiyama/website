@@ -19,7 +19,11 @@ Uchikoshi, Fumiya\*, Ryota Mugiyama\*, Shohei Yoda, and James M. Raymo. 2026. "[
 
 Mugiyama, Ryota and Kohei Toyonaga. 2026. "Changing Regional University Availability and Inequality of Educational Opportunity in Japan." *European Sociological Review.* Advance Access.
 
- --->
+Mugiyama, Ryota and Aguru Ishibashi. "Multigenerational Perspective on Trends in the Inequality of Educational Opportunity in Japan." *European Sociological Review."
+
+Mugiyama, Ryota. "Social Origin Earnings Gaps in Japan: Differential Effects by Class Destination." *Research in Social Stratification and Mobility.*
+--->
+ 
 Mugiyama, Ryota and Kyoko Komatsu. 2025. "[More Than Usage: Expanded Socioeconomic Inequality in Access to Remote Work after the COVID-19 in Japan](https://doi.org/10.1093/ser/mwaf072)." *Socio-Economic Review.* Advance Access. 
 
 - [Press release (in Japanese)](https://www.univ.gakushuin.ac.jp/about/press/31246.html)
@@ -51,7 +55,8 @@ Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Cla
 ### in Japanese
 
 <!--- 
-麦山亮太・林愛子，xxxx，「専攻間賃金格差の男女比較分析：年齢による違いに着目して」『日本労働研究雑誌』
+小黒恵・打越文弥・麦山亮太・寺本えりか・豊永耕平，「学校基本調査学科系統分類の国際標準教育分類への再コーディング ：STEM分野を事例として」『理論と方法』
+麦山亮太・林愛子，2026，「専攻間賃金格差の男女比較分析：年齢による違いに着目して」『日本労働研究雑誌』
 小松恭子・麦山亮太，2026，「1980～2020 年の日本の労働市場におけるタスク分布の変化：産業構造の変化とICT 導入の影響」『日本労働研究雑誌』
 --->
 
@@ -112,7 +117,6 @@ Intergenerational Educational Mobility in 20th Century Japan: Changing Roles of 
 - 2025-08-07 Presented at RC28 2025 Summer Meeting at UCLA. [slide](https://researchmap.jp/mugiyama/presentations/48946285)
 - 2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop. [slide](https://researchmap.jp/mugiyama/presentations/49071062) 
 
-
 Does Educational Expansion Weaken the Equalizing Power of College? Trends in Social Origin Differentials in Occupational Destination in Japan (with Kohei Toyonaga)
 
 - 2022-08-13 Presented at RC28 Summer Meeting at University of Notre Dame. [slide](https://researchmap.jp/mugiyama/presentations/38562818)
@@ -152,7 +156,12 @@ The Weight of Gendered Expectation: Pre-birth Endorsement of Intensive Mothering
 - 2025-06-28 Presented at Social Stratification and Mobility Summer International Workshop.
 
 <!---- 
-Trends in Occupational Gender Segregation in Japan, 1980--2020 (with Fumiya Uchikoshi) 
+Can Educational Expansion and Delayed Family Formation Explain Occupational Gender Desegregation? Evidence from Harmonized Census Occupation Data in Japan, 1980-2020. (with Fumiya Uchikoshi) 
+
+Mugiyama, Ryota and Hansol Lee. "Fatherhood wage premium in Japan"
+
+Mugiyama, Ryota and Yuki Torii. "Depression of Deviants: Varying Impact of Parenthood on Mental Health by the Endorsement of Gender Ideology."
+
 --->
 
 ### Family Demography 
@@ -174,6 +183,7 @@ The Cost of Raising Children and Family Intentions and Desires: A Survey Experim
 
 Gender Role Attitudes and Transition to Marriage and Marital Parenthood in Japan
 
+- 2025-12-08 Preprint is found here. [paper](https://doi.org/10.21203/rs.3.rs-7995232/v1)
 - 2025-06-14 Presented at 2025 Annual Meeting of Life Course Transitions in East Asia. [slide](https://researchmap.jp/mugiyama/presentations/50233960)
 
 <!--- 
@@ -182,6 +192,7 @@ Revisiting the Attitudinal Link between Marriage and Childbearing in Low-Fertili
 Socio-economic status and transition to non-cohabiting partnership in East Asia and Europe (with Ryohei Mogi, Inhee Han, Alyce Raybould, Lisa Schmid, and Jiajie Zhang 
 
 Trends in Sex Segregation by Field of Study in Japan, 2003--2023 (with Fumiya Uchikoshi, Megumi Oguro, Erika Teramoto, and Kohei Toyonaga)
+
 --->
 
 ## Miscs
