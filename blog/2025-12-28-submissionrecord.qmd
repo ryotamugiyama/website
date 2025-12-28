@@ -1,0 +1,76 @@
+---
+title: "2025年の投稿記録"
+author: "Ryota Mugiyama"
+date: "2025-12-28"
+image: ../images/website.jpg
+categories: 
+  - "Research method"
+---
+
+2025年の投稿・再投稿等の記録です。
+
+## 自分がfirst authorの論文
+
+### 論文A
+
+- （2誌からリジェクト）
+- （2024-07 投稿）
+- （2024-08 R&R）
+- 2025-01 再投稿
+- 2025-02 アクセプト！
+- 2025-04 掲載：Mugiyama, Ryota. 2025. "[Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment Instability among Men in Japan](https://doi.org/10.4054/DemRes.2025.52.21)." *Demographic Research.* 52: 635--688.
+
+### 論文B
+
+- 2025-02 R&R（3回目）
+- 2025-08 ようやく再投稿
+- 2025-09 アクセプト！
+- 2025-11 掲載：Mugiyama, Ryota and Kyoko Komatsu. 2025. "[More Than Usage: Expanded Socioeconomic Inequality in Access to Remote Work after the COVID-19 in Japan](https://doi.org/10.1093/ser/mwaf072)." *Socio-Economic Review.* Advance Access. 
+
+### 論文C
+
+- 2025-03 投稿
+- 2025-06 R&R
+- 2025-10 再投稿。審査結果待ち
+
+### 論文D
+
+- （2024-12 R&R。厳しそうな印象を受ける）
+- 2025-06 再投稿
+- 2025-09 リジェクト
+- 2025-09 再投稿。審査結果待ち
+
+### 論文E
+
+- （2024-09 投稿）
+- 2025-06 R&R
+- 2025-12 再投稿。審査結果待ち
+
+### 論文F
+
+- 2025-11 某雑誌に投稿。審査結果待ち
+
+### 論文G
+
+- （2024-09 R&R。厳しそうな印象を受ける）
+- 2025-03 大工事の末ようやく再投稿
+- 2025-06 リジェクト。根本的に書き直すことを決断
+- 2025-12 某雑誌に投稿。うまくいってほしい！
+
+### 論文H
+
+- 2025-02 投稿
+- 2025-07 R&R。まだ直してない。。
+
+## 自分がcoauthorの論文
+
+- 1つはアクセプト（Mogi, Ryohei, Ryota Mugiyama, and Alyce Raybould. 2025. "[Exposure to Non-partnership and Fertility Desires among Childless Population in Japan](https://doi.org/10.1093/sf/soaf123)." *Social Forces.* Advance Access. ）
+- 2つはR&Rを受け取り再投稿済
+- 3つは投稿して審査待ち（その過程で2回リジェクト）
+- 1つは投稿してリジェクト
+
+## 雑感
+
+今年は新しいことを始めるのは控えめにして、溜まっている書きかけの原稿を片付けるという目標で進めました（が、実際にはあまり片付かなかったかもしれない）。しかしこうしてみてみると修正に半年近くかかっているものが多い。。これは本当に半年かかっているというよりは、取り掛かるのを数カ月先延ばしにしているからです。自分は論文を書くときはほとんど常につらい……と思いながら書いており、いうまでもなく自分の論文の欠点を指摘した文章（査読結果）を読むのもつらいので、どうしても先延ばしにしてしまいます。
+
+1年半くらい前から、2〜3週間に一回くらいのペースで互いの進捗を共有し合うライティングの集まりを行っています。こうしたグループを作ることは『[できる研究者の論文生産術](https://www.kodansha.co.jp/book/products/0000147753)』や『[「書けない」悩みに効く論文執筆術](https://bookplus.nikkei.com/atcl/catalog/25/09/22/02221/)』で推奨されています（論文を書くのがつらいのでこういう研究者向け自己啓発書をよく読みます）。この会のおかげで論文執筆の先延ばしが多少改善している気がしなくもないかもしれません。今後も周りにお世話になりながらがんばりたいと思います。
