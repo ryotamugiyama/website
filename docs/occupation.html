@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-04-19">
+<meta name="dcterms.date" content="2025-12-28">
 
 <title>Occupation – Ryota Mugiyama</title>
 <style>
@@ -112,6 +112,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Lecture</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./harmonization.html"> 
+<span class="menu-text">Harmonization</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./notes.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
@@ -173,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 19, 2025</p>
+      <p class="date">December 28, 2025</p>
     </div>
   </div>
   
@@ -256,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <p>*小分類数は「分類不能の職業」を除いた数。</p>
-<p>この問題に対処すべく、1980–2020年で比較可能となるよう統合分類を作成しました。統合分類は「分類不能の職業」を除き、163の職業からなります。実際には小分類内の職業の細かな入れ替わりなどがあり、本当に厳密な意味での比較は難しいのですが、それを踏まえたうえで使用するのがよいと思います。</p>
+<p>この問題に対処すべく、1980–2020年で比較可能となるよう統合分類を作成しました。統合分類は「分類不能の職業」を除き、163の職業からなります。実際には小分類内の職業の細かな入れ替わりなどがあり、本当に厳密な意味での比較は難しいのですが、それを踏まえたうえで使用するのがよいと思います。なお、2025年の国勢調査職業分類は2020年と同一のものが使われるようなので、この分類はそのまま2025年国勢調査にも利用可能と思います。</p>
 <ul>
 <li>小松恭子・麦山亮太，2025，「<a href="https://www.jil.go.jp/institute/discussion/2025/25-01.html">日本の労働市場におけるタスクの分布の変化と要因：教育・産業構造の変化とICT導入の影響</a>」JILPT Discussion Paper 25-01. 付属資料を参照。</li>
 </ul>
@@ -334,13 +338,16 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>麦山亮太・小松恭子，2023，「<a href="https://www.jil.go.jp/institute/zassi/backnumber/2023/05/pdf/087-102.pdf">テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析</a>」『日本労働研究雑誌』754: 87–102．</li>
 </ul>
-<p>全国就業実態パネル調査自体は2016年から実施されているのですが、2016年はそれ以降とは職業分類が異なっておりまた別にコーディングの必要があります。自分は2016年データを使用しなかった関係でこのマッチングはやっていません。</p>
+<p>2022年までの職業分類と2023–年職業分類のそれぞれにマッチングを行って数値指標を貼り付けて分析した論文を公刊しています。</p>
+<p>Mugiyama, Ryota and Kyoko Komatsu. 2025. “<a href="https://doi.org/10.1093/ser/mwaf072">More Than Usage: Expanded Socioeconomic Inequality in Access to Remote Work after the COVID-19 in Japan</a>.” <em>Socio-Economic Review.</em> Advance Access.</p>
+<p>全国就業実態パネル調査自体は2016年から実施されているのですが、2016年はそれ以降とは職業分類が異なっておりまた別にコーディングの必要があります。自分は2016年データを使用しませんでしたが、一応準備してはいます。</p>
 </section>
 <section id="全国就業実態パネル調査の職業分類からisco-08を介してegp階級分類を作成する" class="level2">
 <h2 class="anchored" data-anchor-id="全国就業実態パネル調査の職業分類からisco-08を介してegp階級分類を作成する">全国就業実態パネル調査の職業分類からISCO-08を介してEGP階級分類を作成する</h2>
 <p>全国就業実態パネル調査の2017–2022年職業分類、および2023年職業分類に対してISCO-08コードを割り当て、Stataの<a href="https://ideas.repec.org/c/boc/bocode/s458665.html">iscogen</a>コマンドを使ってISCO-88へと変換し、EGP階級分類へと変換するための対応表とコードを作成しました。</p>
 <p><strong>説明文書は作成中</strong></p>
-<p>ここでISCO-08コードを使っているのはあくまでEGP階級分類に到達するための途中段階として利用しているに過ぎず、全国就業実態パネル調査の職業分類をISCO-08コードに割り当ててそれ自体を使って分析することは意図していない点に注意してください。</p>
+<p>ここでISCO-08コードを使っているのはあくまでEGP階級分類に到達するための途中段階として利用しているに過ぎず、全国就業実態パネル調査の職業分類をISCO-08コードに割り当ててそれ自体を使って分析することは意図していない点に注意してください。本コードは以下の論文で使用しました。</p>
+<p>Mugiyama, Ryota and Kyoko Komatsu. 2025. “<a href="https://doi.org/10.1093/ser/mwaf072">More Than Usage: Expanded Socioeconomic Inequality in Access to Remote Work after the COVID-19 in Japan</a>.” <em>Socio-Economic Review.</em> Advance Access.</p>
 
 
 </section>

@@ -151,7 +151,7 @@
     "href": "occupation.html#国勢調査の19802020年統合職業分類",
     "title": "Occupation",
     "section": "国勢調査の1980–2020年統合職業分類",
-    "text": "国勢調査の1980–2020年統合職業分類\n国勢調査は各年ごとに職業分類の変更があります。とくに2005年から2010年にかけては大規模な変更が行われ、その前後の比較がそのままでは難しくなっています。この期間の改定の具体的内容については「2010年国勢調査に用いる職業分類」にくわしく記載されています。　\n\n\n\n\n\n\n\n\n調査年\n小分類数*\n備考\n\n\n\n\n1980年\n284\n\n\n\n1985年\n292\n\n\n\n1990年\n293\n\n\n\n1995年\n293\n1990年と同一分類\n\n\n2000年\n292\n\n\n\n2005年\n273\n\n\n\n2010年\n231\n日本標準職業分類の改定に伴う大規模な変更\n\n\n2015年\n231\n2010年と同一分類\n\n\n2020年\n231\n2010年と同一分類\n\n\n1980–2020年統合分類\n163\n麦山作成\n\n\n\n*小分類数は「分類不能の職業」を除いた数。\nこの問題に対処すべく、1980–2020年で比較可能となるよう統合分類を作成しました。統合分類は「分類不能の職業」を除き、163の職業からなります。実際には小分類内の職業の細かな入れ替わりなどがあり、本当に厳密な意味での比較は難しいのですが、それを踏まえたうえで使用するのがよいと思います。\n\n小松恭子・麦山亮太，2025，「日本の労働市場におけるタスクの分布の変化と要因：教育・産業構造の変化とICT導入の影響」JILPT Discussion Paper 25-01. 付属資料を参照。\n\n過去には、1980–2005年の国勢調査職業分類を統合して性別職域分離の趨勢を検討した研究も行いました。\n\n打越文弥・麦山亮太，2020，「 日本における性別職域分離の趨勢：1980–2005年国勢調査集計データを用いた要因分解」『人口学研究』56:9–23．"
+    "text": "国勢調査の1980–2020年統合職業分類\n国勢調査は各年ごとに職業分類の変更があります。とくに2005年から2010年にかけては大規模な変更が行われ、その前後の比較がそのままでは難しくなっています。この期間の改定の具体的内容については「2010年国勢調査に用いる職業分類」にくわしく記載されています。　\n\n\n\n\n\n\n\n\n調査年\n小分類数*\n備考\n\n\n\n\n1980年\n284\n\n\n\n1985年\n292\n\n\n\n1990年\n293\n\n\n\n1995年\n293\n1990年と同一分類\n\n\n2000年\n292\n\n\n\n2005年\n273\n\n\n\n2010年\n231\n日本標準職業分類の改定に伴う大規模な変更\n\n\n2015年\n231\n2010年と同一分類\n\n\n2020年\n231\n2010年と同一分類\n\n\n1980–2020年統合分類\n163\n麦山作成\n\n\n\n*小分類数は「分類不能の職業」を除いた数。\nこの問題に対処すべく、1980–2020年で比較可能となるよう統合分類を作成しました。統合分類は「分類不能の職業」を除き、163の職業からなります。実際には小分類内の職業の細かな入れ替わりなどがあり、本当に厳密な意味での比較は難しいのですが、それを踏まえたうえで使用するのがよいと思います。なお、2025年の国勢調査職業分類は2020年と同一のものが使われるようなので、この分類はそのまま2025年国勢調査にも利用可能と思います。\n\n小松恭子・麦山亮太，2025，「日本の労働市場におけるタスクの分布の変化と要因：教育・産業構造の変化とICT導入の影響」JILPT Discussion Paper 25-01. 付属資料を参照。\n\n過去には、1980–2005年の国勢調査職業分類を統合して性別職域分離の趨勢を検討した研究も行いました。\n\n打越文弥・麦山亮太，2020，「 日本における性別職域分離の趨勢：1980–2005年国勢調査集計データを用いた要因分解」『人口学研究』56:9–23．"
   },
   {
     "objectID": "occupation.html#国勢調査に用いる職業分類と日本版o-netとのマッチング",
@@ -186,14 +186,14 @@
     "href": "occupation.html#全国就業実態パネル調査の職業分類と日本版o-netとのマッチング",
     "title": "Occupation",
     "section": "全国就業実態パネル調査の職業分類と日本版O-NETとのマッチング",
-    "text": "全国就業実態パネル調査の職業分類と日本版O-NETとのマッチング\nリクルートワークス研究所が実施している「全国就業実態パネル調査」は2016年は208、2017–2022年は224、2023–年は214（いずれも分類不能の職業含む数）の職業小分類をプルダウン形式で回答者に提示し、回答者が選択する形式で職業小分類を聴取しています。国勢調査や就業構造基本調査、賃金構造基本統計調査、あるいはSSM調査等の社会調査で行われている自由記述のアフターコーディングが行われていない分正確さという面では劣りますが、サンプルサイズが他の社会調査と比べて大きく、活用しない手はありません。\n全国就業実態パネル調査の2016年職業分類、2017–2022年職業分類、および2023–年職業分類と日本版O-NETの職業をマッチングして、各職業分類に対して日本版O-NETの数値指標を与えるためのマッチング表を作成しました。\n説明文書は作成中\n2017–2022年職業分類と日本版O-NETをマッチングしたデータを使った論文を公刊しています。\n\n麦山亮太・小松恭子，2023，「テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析」『日本労働研究雑誌』754: 87–102．\n\n全国就業実態パネル調査自体は2016年から実施されているのですが、2016年はそれ以降とは職業分類が異なっておりまた別にコーディングの必要があります。自分は2016年データを使用しなかった関係でこのマッチングはやっていません。"
+    "text": "全国就業実態パネル調査の職業分類と日本版O-NETとのマッチング\nリクルートワークス研究所が実施している「全国就業実態パネル調査」は2016年は208、2017–2022年は224、2023–年は214（いずれも分類不能の職業含む数）の職業小分類をプルダウン形式で回答者に提示し、回答者が選択する形式で職業小分類を聴取しています。国勢調査や就業構造基本調査、賃金構造基本統計調査、あるいはSSM調査等の社会調査で行われている自由記述のアフターコーディングが行われていない分正確さという面では劣りますが、サンプルサイズが他の社会調査と比べて大きく、活用しない手はありません。\n全国就業実態パネル調査の2016年職業分類、2017–2022年職業分類、および2023–年職業分類と日本版O-NETの職業をマッチングして、各職業分類に対して日本版O-NETの数値指標を与えるためのマッチング表を作成しました。\n説明文書は作成中\n2017–2022年職業分類と日本版O-NETをマッチングしたデータを使った論文を公刊しています。\n\n麦山亮太・小松恭子，2023，「テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析」『日本労働研究雑誌』754: 87–102．\n\n2022年までの職業分類と2023–年職業分類のそれぞれにマッチングを行って数値指標を貼り付けて分析した論文を公刊しています。\nMugiyama, Ryota and Kyoko Komatsu. 2025. “More Than Usage: Expanded Socioeconomic Inequality in Access to Remote Work after the COVID-19 in Japan.” Socio-Economic Review. Advance Access.\n全国就業実態パネル調査自体は2016年から実施されているのですが、2016年はそれ以降とは職業分類が異なっておりまた別にコーディングの必要があります。自分は2016年データを使用しませんでしたが、一応準備してはいます。"
   },
   {
     "objectID": "occupation.html#全国就業実態パネル調査の職業分類からisco-08を介してegp階級分類を作成する",
     "href": "occupation.html#全国就業実態パネル調査の職業分類からisco-08を介してegp階級分類を作成する",
     "title": "Occupation",
     "section": "全国就業実態パネル調査の職業分類からISCO-08を介してEGP階級分類を作成する",
-    "text": "全国就業実態パネル調査の職業分類からISCO-08を介してEGP階級分類を作成する\n全国就業実態パネル調査の2017–2022年職業分類、および2023年職業分類に対してISCO-08コードを割り当て、Stataのiscogenコマンドを使ってISCO-88へと変換し、EGP階級分類へと変換するための対応表とコードを作成しました。\n説明文書は作成中\nここでISCO-08コードを使っているのはあくまでEGP階級分類に到達するための途中段階として利用しているに過ぎず、全国就業実態パネル調査の職業分類をISCO-08コードに割り当ててそれ自体を使って分析することは意図していない点に注意してください。"
+    "text": "全国就業実態パネル調査の職業分類からISCO-08を介してEGP階級分類を作成する\n全国就業実態パネル調査の2017–2022年職業分類、および2023年職業分類に対してISCO-08コードを割り当て、Stataのiscogenコマンドを使ってISCO-88へと変換し、EGP階級分類へと変換するための対応表とコードを作成しました。\n説明文書は作成中\nここでISCO-08コードを使っているのはあくまでEGP階級分類に到達するための途中段階として利用しているに過ぎず、全国就業実態パネル調査の職業分類をISCO-08コードに割り当ててそれ自体を使って分析することは意図していない点に注意してください。本コードは以下の論文で使用しました。\nMugiyama, Ryota and Kyoko Komatsu. 2025. “More Than Usage: Expanded Socioeconomic Inequality in Access to Remote Work after the COVID-19 in Japan.” Socio-Economic Review. Advance Access."
   },
   {
     "objectID": "blog/2019-04-26-gakushinPD.html",
@@ -445,7 +445,7 @@
     "href": "blog/2025-12-28-submissionrecord.html#自分がcoauthorの論文",
     "title": "2025年の投稿記録",
     "section": "自分がcoauthorの論文",
-    "text": "自分がcoauthorの論文\n\n1つはアクセプト（Mogi, Ryohei, Ryota Mugiyama, and Alyce Raybould. 2025. “Exposure to Non-partnership and Fertility Desires among Childless Population in Japan.” Social Forces. Advance Access. ）\n2つはR&Rを受け取り再投稿済\n3つは投稿して審査待ち（その過程で2回リジェクト）\n1つは投稿してリジェクト"
+    "text": "自分がcoauthorの論文\n\n1つはアクセプト（Mogi, Ryohei, Ryota Mugiyama, and Alyce Raybould. 2025. “Exposure to Non-partnership and Fertility Desires among Childless Population in Japan.” Social Forces. Advance Access. ）\n2つはR&Rを受け取り再投稿済\n3つは投稿して審査待ち（その過程で2回リジェクト）\n2つは投稿してリジェクト（計4回）"
   },
   {
     "objectID": "blog/2025-12-28-submissionrecord.html#雑感",
@@ -763,216 +763,6 @@
     "text": "Footnotes\n\n\nse = TRUEとすると、95%信頼区間が表示される。信頼区間についての説明は、Chapter 7を参照のこと。↩︎"
   },
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "Other research publications can also be found on the following pages."
-  },
-  {
-    "objectID": "research.html#peer-reviewed-paper",
-    "href": "research.html#peer-reviewed-paper",
-    "title": "Research",
-    "section": "Peer-reviewed paper",
-    "text": "Peer-reviewed paper\n\nin English\n\nMugiyama, Ryota and Kyoko Komatsu. 2025. “More Than Usage: Expanded Socioeconomic Inequality in Access to Remote Work after the COVID-19 in Japan.” Socio-Economic Review. Advance Access.\n\nPress release (in Japanese)\n\nMogi, Ryohei*, Ryota Mugiyama*, and Alyce Raybould*. 2025. “Exposure to Non-partnership and Fertility Desires among Childless Population in Japan.” Social Forces. Advance Access. *Equal authorship.\n\nReplication code is available in my GitHub page.\nPress release (in Japanese)\nPress release (in English, Catalan, and Spanish)\n\nMugiyama, Ryota. 2025. “Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment Instability among Men in Japan.” Demographic Research. 52: 635–688.\n\nReplication code is available from the journal page.\n\nMugiyama, Ryota. 2024. “Disaggregating the Relationship between Precarious Employment and Delayed Marriage in Japan: Incorporating Non-cohabiting Partnerships.” Social Science Research. 124: 103093.\nMogi, Ryohei, Ryota Mugiyama and Giammarco Alderotti. 2024. “Employment Uncertainty and Non-coresidential Partnership in Very Low Fertility Countries: Italy and Japan.” Journal of Family Research. 36: 160–177.\n\nReplication code is available from the journal page.\n\nMugiyama, Ryota. 2024. “Cohort Change in the Educational Gradient in Women’s Employment Around Childbirth in Japan.” Research in Social Stratification and Mobility. 89: 100885.\nÇineli, Beyda and Ryota Mugiyama. 2023. “Money Management over the Course of Marriage: Parenthood, Employment and Household Financial Organization in Japan.” Advances in Life Course Research. 56: 100544.\nIgarashi, Akira and Ryota Mugiyama. 2023. “Whose Tastes Matter? Discrimination against Immigrants in the Japanese Labour Market.” Journal of Ethnic and Migration Studies. 49(13): 3365–3388.\nMugiyama, Ryota and Kohei Toyonaga. 2022. “Role of Cohort Size in Trends in Class and Occupational Returns to Education at First Job: The Case of Japan.” European Sociological Review. 38(2): 269–285.\n\n\nin Japanese\n\n麦山亮太・大里蒼一郎，2024，「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』39(1): 19–34．\n麦山亮太・田上皓大，2024，「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』39(1): 64–76．SSM-ONET対応表へのリンク\n麦山亮太・小松恭子，2023，「テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析」『日本労働研究雑誌』754: 87–102．\n五十嵐彰・麦山亮太，2023，「サーベイ実験を用いた日本における外国人雇用差別の検証：企業属性による異質性」『理論と方法』38(1): 44–58．\n麦山亮太，2022，「出産・育児期における女性就業とその学歴差の長期趨勢：雇用労働力化に着目して」『社会学評論』73(2): 86–102．補足表\n打越文弥・麦山亮太・小松恭子，2021，「職域分離とスキルからみる労働市場のジェンダー格差：日本版O-NET・国勢調査マッチングデータから得られる示唆」『理論と方法』36(1): 65–82．（特集論文）\n打越文弥・麦山亮太，2020，「日本における性別職域分離の趨勢：1980–2005年国勢調査集計データを用いた要因分解」『人口学研究』56: 9–23．\n麦山亮太・西澤和也，2017，「大企業と中小企業が新卒者に求める能力は異なるか：求人情報サイトへのトピックモデルの適用」『理論と方法』32(2): 214–227．\n麦山亮太，2017，「職業経歴と結婚への移行：雇用形態・職種・企業規模と地位変化の効果における男女差」『家族社会学研究』29(2): 129–141．\n麦山亮太，2017，「キャリアの中断が生み出す格差：正規雇用獲得への持続的影響に着目して」『社会学評論』68(2): 248–264．\n麦山亮太，2016，「結婚は職業キャリアにいかなる影響を与えるのか？：無業・管理職への移動に関する男女比較分析」『家族社会学研究』28(2): 122–135．"
-  },
-  {
-    "objectID": "research.html#work-in-progress",
-    "href": "research.html#work-in-progress",
-    "title": "Research",
-    "section": "Work in progress",
-    "text": "Work in progress\n\nSocial mobility\nMultigenerational Perspective on Trends in the Inequality of Educational Opportunity in Japan (with Aguru Ishibashi)\n\n2024-04-20 Presented at PAA Annual Meeting at Hyatt Regency Columbus, Ohio. poster\n2023-10-25 Working paper is found here. paper\n2023-08-15 Presented at RC28 Summer Meeting at University of Michigan. slide\n2023-03-08 Presented at JAMS 74th Meeting at Tsukuba University. slide\n\nChanging University Accessibility and Inequality of Educational Opportunity in Japan (with Kohei Toyonaga)\n\n2024-12-17 Working paper is found here. paper\n2023-10-09 Presented at JSS 96th Annual Meeting at Rissho University.\n2023-07-15 Presented at READI 1st Annual Conference at University of Tokyo. slide\n2022-08-28 Presented at JAMS 73rd Meeting. slide\n\nSocial Origin Earnings Gap in Japan: Differential Effects by Class Destination\n\n2024-09-13 Working paper is found here. peper\n2024-05-18 Presented at RC28 Spring Meeting at NYU Shanghai. slide\n2024-03-16 Presented at JAMS 76th Meeting at Osaka University. slide\n\nIntergenerational Educational Mobility and Subjective Social Status (with Aram Kwon)\n\n2025-03-27 Presented at RC28 Spring Meeting at University of Milan.\n2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop.\n\nChanging Roles of Mothers or Fathers? Intergenerational Educational Mobility in 20th Century Japan (with Aguru Ishibashi)\n\n2026-01-20 Presented at RC28 Online Thematic Meeting. slide\n2025-11-15 Presented at JSS 86th Annual Meeting at Hitotsubashi University. slide\n2025-08-07 Presented at RC28 2025 Summer Meeting at UCLA. slide\n2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop. slide\n\nDoes Educational Expansion Weaken the Equalizing Power of College? Trends in Social Origin Differentials in Occupational Destination in Japan (with Kohei Toyonaga)\n\n2022-08-13 Presented at RC28 Summer Meeting at University of Notre Dame. slide\n\n\n\n\nLabor market inequality\nTrends in Task Distribution in Japan, 1980–2020: Evidence from the Occupational Information Network of Japan and the Population Census (with Kyoko Komatsu)\n\n2025-02-28 Discussion paper is found here (in Japanese). website\n\nRevisiting Motherhood Wage Penalty Following First Birth: The Role of Selection Based on Wage Growth\n\n2025-07-18 Presented at READI 3rd Annual Conference at Yonsei University. slide\n\n\nTask Variety and Its Earnings Returns Across Countries: Evidence from PIAAC (with Shin Arita)\n\n2025-07-11 Presented at Society for the Advancement of Socio-Economics (SASE) 2025 Annual Meeting at Palais des Congrès, Montréal, Québec.\n2024-08-30 Presented at JAMS 77th Annual Meeting at Tohoku University. slide\n\nThe Weight of Gendered Expectation: Pre-birth Endorsement of Intensive Mothering Ideologies and the Motherhood Penalty (with Rantaro Nasu and Yuriko Morikawa)\n\n2025-08-28 Presented at JAMS 79th Meeting at Kwansei Gakuin University. slide\n2025-06-28 Presented at Social Stratification and Mobility Summer International Workshop.\n\n\n\n\nFamily Demography\nRevisiting the Relationship between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan (with Fumiya Uchikoshi, Shohei Yoda, and James M. Raymo)\n\n2024-04-18 Presented at PAA 2024 Annual Meeting at Hyatt Regency Columbus, Ohio.\n2023-09-02 Presented at JSFS 33rd Annual Meeting at Kobe University.\n\nDoes Policy Affect Fertility and Marriage Desires Among Never-Married Childless People? A Factorial Survey Experiment (with Shin Okubo, Kota Toma, Shohei Yoda, and Shigeki Matsuda)\n\n2024-11-09 Presented at JSS 97th Annual Meeting at Kyoto Sangyo University. slide\n2024-07-29 Presented at READI 2nd Meeting at Peking University. slide\n2024-03-17 Presented at JAMS 76th Meeting at Osaka University. slide\n\nThe Cost of Raising Children and Family Intentions and Desires: A Survey Experiment Approach Using Information Intervention (with Fumiya Uchikoshi)\n\n2025-04-11 Presented at PAA 2025 Annual Meeting at Marriott Marquis Washington DC. slide\n\nGender Role Attitudes and Transition to Marriage and Marital Parenthood in Japan\n\n2025-12-08 Preprint is found here. paper\n2025-06-14 Presented at 2025 Annual Meeting of Life Course Transitions in East Asia. slide"
-  },
-  {
-    "objectID": "research.html#miscs",
-    "href": "research.html#miscs",
-    "title": "Research",
-    "section": "Miscs",
-    "text": "Miscs\n麦山亮太，2025，「職業とタスクからみる仕事内容のジェンダー格差」『季刊個人金融』20(3): 69–80．\n麦山亮太・平松誠・コンアラン・那須蘭太郎・吉田航，2025，「社会調査データの統合による二次分析研究の刷新：作業手順と今後の調査実施に向けた示唆」SSJ Data Archive Research Paper Series. 96. Institute of Social Science, the University of Tokyo.\n麦山亮太，2024，「社会階層研究の現在：労働関連分野を中心に」『日本労働研究雑誌』765: 78–83．\n麦山亮太，2022，「文献紹介 渡邊勉・吉川徹・佐藤嘉倫編『少子高齢社会の階層構造2 人生中期の階層構造』」『家族社会学研究』34(2): 152．\nKomatsu, Kyoko and Ryota Mugiyama. 2022. “Trends in Task Distribution in Japan, 1990–2015: Evidence from the Occupational Information Network of Japan and the Population Census Data.” Japan Labor Issues. 37(6): 55–70.\n麦山亮太，2021，「地位の経歴からみる不平等の生成過程」『理論と方法』36(2): 4–15．\n麦山亮太，2018，「文献紹介 吉川徹著『日本の分断：切り離される非大卒若者たち』」『家族社会学研究』30(2): 270．"
-  },
-  {
-    "objectID": "research.html#book-chapter",
-    "href": "research.html#book-chapter",
-    "title": "Research",
-    "section": "Book chapter",
-    "text": "Book chapter\n\n麦山亮太，2023，「男性の職業・家族キャリア」家族社会学会編『家族社会学事典』丸善出版，460–461．\n打越文弥・麦山亮太，2022，「性別職域分離」数理社会学会監修『数理社会学事典』丸善出版，330–333．\n麦山亮太・吉川裕嗣，2015，「東アジアの学生の意識にみるアジア統合の展望：アジア人意識と脅威認識を軸として」園田茂人編『アジア比較社会研究のフロンティアⅢ 連携と離反の東アジア』勁草書房，231–255．"
-  },
-  {
-    "objectID": "lecture/GU-sociologyIV.html",
-    "href": "lecture/GU-sociologyIV.html",
-    "title": "2021-09–　学習院大学法学部「社会学IV」",
-    "section": "",
-    "text": "社会階層論"
-  },
-  {
-    "objectID": "lecture/GU-sociologyIV.html#テーマ",
-    "href": "lecture/GU-sociologyIV.html#テーマ",
-    "title": "2021-09–　学習院大学法学部「社会学IV」",
-    "section": "",
-    "text": "社会階層論"
-  },
-  {
-    "objectID": "lecture/GU-sociologyIV.html#開講",
-    "href": "lecture/GU-sociologyIV.html#開講",
-    "title": "2021-09–　学習院大学法学部「社会学IV」",
-    "section": "開講",
-    "text": "開講\n学習院大学法学部 後期\n同内容は2022年度に日本女子大学人間社会学部、津田塾大学総合政策学部でも行いました。"
-  },
-  {
-    "objectID": "lecture/GU-sociologyIV.html#授業の概要",
-    "href": "lecture/GU-sociologyIV.html#授業の概要",
-    "title": "2021-09–　学習院大学法学部「社会学IV」",
-    "section": "授業の概要",
-    "text": "授業の概要\n高い収入や貯蓄、住宅、健康、名誉、幸福、等々、社会において希少とされる財は人びとに等しく配分されているわけではない。さらに、こうした希少財を得るためのチャンスもまた、人びとや集団の間で異なっている。希少な財の配分はどの程度偏っているのか？希少財を得る機会が個人あるいは集団間でいかに異なるのか？希少財の配分やそれを得る機会が異なるのはなぜなのか？社会階層研究はこうした不平等を研究する社会学の一分野である。\n社会階層研究の扱う分野は多岐にわたるが、なかでも主要な問題とされてきたのは以下の3点である。第1に、希少財の配分がどの程度偏っているのかという結果の不平等である。所得や富の不平等の程度は国や時代によってどの程度異なるのか？不平等が拡大しているとしたらそれはなぜか？階層によって健康や家族形成のパターンはどの程度異なるのか？人びとのもつつながりは階層によってどの程度隔たっているのか？こうした問いが検討される。\n第2に、希少財を得る機会がどの程度偏っているのかという機会の不平等である。親の階層とは異なる階層に移動するという世代間移動は増えているのか、減っているのか？変化しているとしたらそれはなぜか？親の階層によって教育機会の不平等が生じるのはなぜか？高い学歴を有する人がより高い階層に就くのはなぜか？これらは機会の不平等に関わる問いである。\n第3に、生まれ持った属性がいかに配分や機会の不平等につながるのかという属性による不平等である。本授業ではとくにジェンダー（性別）による不平等を扱う。ジェンダー不平等は国によってどの程度違うのか？不平等の程度はどのように変化しているのか？男子は理系、女子は文系に進学しやすいのはなぜか？男性と女性が労働市場で異なる仕事に就き、異なる評価を受けるのはなぜか？家族形成がキャリアに与える影響が男女で異なるのはなぜか？こうした問いがジェンダーによる不平等という観点から検討される。\n本授業では、上記3つの問題それぞれについて、実証研究の蓄積を概観することを通じて、社会学、および社会階層研究の視点から社会の不平等を捉えるための視点を身につけることを目指す。また、上記3つの問題に関して、欧米を中心に確認されてきた動向が日本においてはどの程度確認されるのかといった点についても、その成果を紹介する。これを通じて、日本の不平等の位置づけを国際的な視点から理解するとともに、不平等がいかにして生じるのか、そのメカニズムを理解することを目指す。\n\nガイダンス\n結果の不平等（1）：不平等の拡大\n\n結果の不平等の測定\n所得と富の不平等：国際比較とトレンド\n富裕層と貧困層\n\n結果の不平等（2）：不平等の拡大のメカニズム\n\nなぜ不平等が拡大したのか：アメリカの場合\n日本の不平等の実態とメカニズム\n\n結果の不平等（3）：階層間格差と不平等の帰結\n\n階層の測定\n階層間格差：健康と家族形成\n結果の不平等の帰結\n\n結果の不平等（4）：階層分離と認識のずれ\n\n不平等と階層分離\n客観的位置と主観的認識のずれ\n不平等に関する価値観\n\n機会の不平等（1）：世代間移動\n\n社会移動の測定\n職業からみる世代間移動\n所得からみる世代間移動\n\n機会の不平等（2）：近代化仮説と地位達成過程\n\n近代化仮説\n地位達成過程\n日本の社会移動のトレンド\n\n機会の不平等（3）：教育機会の不平等\n\nトレンドをめぐる議論\n教育機会の不平等のメカニズム\n遺伝か環境か\n\n機会の不平等（4）：労働市場と機会の不平等\n\n教育と到達階層の関係：メカニズム\n日本の雇用慣行と世代内移動\n出身階層の影響力の再検討\n\n属性による不平等（1）：ジェンダー不平等\n\nジェンダーの視点と不平等\nジェンダー不平等：国際比較とトレンド\n日本のジェンダー不平等のトレンド\n\n属性による不平等（2）：教育とジェンダー\n\n教育達成の男女差\n性別専攻分離のメカニズム\n\n属性による不平等（3）：労働市場とジェンダー\n\n賃金格差の原因を探る：要因分解\n仕事の違いを測定する：性別職域分離\n格差の生成過程：採用とキャリア\n\n属性による不平等（4）：家族形成とジェンダー\n\n出産・育児と男女のキャリア\n性別役割分業と結婚\n\nまとめ"
-  },
-  {
-    "objectID": "lecture/shinsho_list.html",
-    "href": "lecture/shinsho_list.html",
-    "title": "授業で使えそうな新書のリスト",
-    "section": "",
-    "text": "社会学系の少人数授業等で使えそうな、またはすでに使った実績のある書籍をテーマ別にまとめておく。使ったものについてはいずれも学部一年生向け授業である。とくに網羅的であることを目指したものではなく、たんに筆者（麦山）の独断で選んだものにすぎない。選定基準は以下のとおり。\n\n十分な参考文献（先行研究）を参照している。\n実証的な方法（主として計量分析またはその結果のレビューを中心としたもの）にもとづいている。\n執筆時点における最近の研究動向を反映している。\n\n以下、とくに理由はなく出版年が新しい順に並べている。\n谷原つかさ，2024，『「ネット世論」の社会学：データ分析が解き明かす「偏り」の正体』NHK出版新書．\n\nメディアを扱った新書はたくさんあるが、定量的な方法にもとづく実証研究は少ない。本書はその意味で貴重。\n\n三谷はるよ，2023，『ＡＣＥサバイバー：子ども期の逆境に苦しむ人々』ちくま新書．\n\n先行研究のレビューが網羅的で有益。\n\n五十嵐彰，2023，『不倫：実証分析が示す全貌』中公新書．\n\nサーベイ実験など先進的な方法についての説明も載っていてすばらしいが、若干授業で使うには躊躇するかもしれない題材。\n\n牧野百恵，2023，『ジェンダー格差：実証経済学は何を語るか』中公新書．\n\n因果推論についての簡単な説明があるほか、規範を重要な概念として位置づけている点で、社会学的な書籍としても読める。\n\nメアリー・C・ブリントン（池村千秋訳），2022，『縛られる日本人：人口減少をもたらす「規範」を打ち破れるか』中公新書．\n\n少子化について仕事、家族、規範といった視点からわかりやすく論じていて導入に適している。\n\n永吉希久子，2020，『移民と日本社会：データで読み解く実態と将来像』中公新書．\n\n移民の定義のような基礎的な内容についての説明もあるほか、先行研究のレビューが網羅的で有益。\n\n松岡亮二，2019，『教育格差：階層・地域・学歴』ちくま新書．\n\n多くの図表が掲載されていて、その多くがクロス表や散布図のような基本的なものなので特段統計的な知識を持っていない学生でも読みやすい。\n\n以下は未読のため保留中\n秦正樹，2022，『陰謀論：民主主義を揺るがすメカニズム』中公新書．\n山口慎太郎，2019，『「家族の幸せ」の経済学：データ分析でわかった結婚、出産、子育ての真実』光文社新書．\n前田健太郎，2019，『女性のいない民主主義』岩波新書．"
-  },
-  {
-    "objectID": "lecture/GU-sociologyIII.html",
-    "href": "lecture/GU-sociologyIII.html",
-    "title": "2021-04–　学習院大学法学部「社会学III」",
-    "section": "",
-    "text": "現代社会学の理論的・経験的蓄積"
-  },
-  {
-    "objectID": "lecture/GU-sociologyIII.html#テーマ",
-    "href": "lecture/GU-sociologyIII.html#テーマ",
-    "title": "2021-04–　学習院大学法学部「社会学III」",
-    "section": "",
-    "text": "現代社会学の理論的・経験的蓄積"
-  },
-  {
-    "objectID": "lecture/GU-sociologyIII.html#開講",
-    "href": "lecture/GU-sociologyIII.html#開講",
-    "title": "2021-04–　学習院大学法学部「社会学III」",
-    "section": "開講",
-    "text": "開講\n学習院大学法学部 前期"
-  },
-  {
-    "objectID": "lecture/GU-sociologyIII.html#授業の概要",
-    "href": "lecture/GU-sociologyIII.html#授業の概要",
-    "title": "2021-04–　学習院大学法学部「社会学III」",
-    "section": "授業の概要",
-    "text": "授業の概要\n社会学は、人びとの集まりである社会において繰り返し観察される社会現象を正確に記述するとともに、それがなぜ生じているのかを、現象の社会的側面に着目して説明することを目的とする、社会科学の一分野である。\n豊かな人と貧しい人がいるのはなぜか？太っている人とそうでない人がいるのはなぜか？似た者どうしが友人になるのはなぜか？ある小説や音楽、映画が流行するのはなぜか？社会学ではさまざまなトピック（問い）が扱われるが、社会学ではそれらを説明するにあたって、個人やモノそれ自体よりもむしろ、それらを取り巻くコンテクストの影響力に着目する。このような視点から、社会学ではこれまで多くの概念や方法が開発され、さまざまな事実が明らかにされてきた。\n本授業ではこうした概念や方法、現代の社会学における理論的・経験的な蓄積を紹介し、これにふれることを通じて、社会学に通底する視点を身につけることを目指す。ひいては、身の回りのさまざまな社会現象について、社会学の視点からその実態や原因を考えられるようになることが目標である。\n\nガイダンス\n問い\n理論\n方法\n意見\n規範\nネットワーク\n集団\n階層と移動\n資源\n移民と統合\n近代化\n宗教\nまとめ"
-  },
-  {
-    "objectID": "lecture/GU-sociologyIII.html#到達目標",
-    "href": "lecture/GU-sociologyIII.html#到達目標",
-    "title": "2021-04–　学習院大学法学部「社会学III」",
-    "section": "到達目標",
-    "text": "到達目標\n\n社会学的な問いの立て方を身につける。\n社会学的な視点、理論を用いて社会現象を読み解くことができる。\n社会学の諸概念および経験的な知見のもつ意味について理解する。"
-  },
-  {
-    "objectID": "lecture/GU-sociologyIII.html#テキスト",
-    "href": "lecture/GU-sociologyIII.html#テキスト",
-    "title": "2021-04–　学習院大学法学部「社会学III」",
-    "section": "テキスト",
-    "text": "テキスト\nTubergen, Frank van. 2020. Introduction to Sociology. Routledge."
-  },
-  {
-    "objectID": "lecture/2025-02-19-CSRDA.html",
-    "href": "lecture/2025-02-19-CSRDA.html",
-    "title": "2023-03– Stataによるパネル調査データ分析の実践",
-    "section": "",
-    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2024年度春（2024-02-19）\n2023年度春（2024-03-04）\n2022年度春（2023-03-09）"
-  },
-  {
-    "objectID": "lecture/2025-02-19-CSRDA.html#開講",
-    "href": "lecture/2025-02-19-CSRDA.html#開講",
-    "title": "2023-03– Stataによるパネル調査データ分析の実践",
-    "section": "",
-    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2024年度春（2024-02-19）\n2023年度春（2024-03-04）\n2022年度春（2023-03-09）"
-  },
-  {
-    "objectID": "lecture/2025-02-19-CSRDA.html#内容",
-    "href": "lecture/2025-02-19-CSRDA.html#内容",
-    "title": "2023-03– Stataによるパネル調査データ分析の実践",
-    "section": "内容",
-    "text": "内容\n日本においても多くの大規模パネル調査データが蓄積されるようになり、パネル調査データの分析可能性は飛躍的に広がっています。本コースでは、統計ソフトStataを用いて、パネル調査データを使った分析の基礎的な手順と、代表的なパネル調査データ分析の方法を学習します。具体的には、どのように分析のためのデータセットを作ればよいのか、どのような問いに対してどのような方法を使うべきかに焦点を当てて学習します。たんにStataで結果を出すというだけでなく、どのようにして見やすい図表を作るのか、結果を出力・保存するため効率的なワークフローといった実践的な側面にも重点をおいて解説します。\n次のような方におすすめです\n\n一時点の社会調査データの分析経験はあるが、パネル調査データを分析した経験はなく、分析してみたい\nパネルデータを分析するための手順を知りたい\nパネルデータの分析方法をどのように選べばよいか知りたい\nパネル調査データを分析した経験があるが、よりよいデータ構築の手順や方法の選び方について知りたい"
-  },
-  {
-    "objectID": "lecture/2025-02-19-CSRDA.html#資料",
-    "href": "lecture/2025-02-19-CSRDA.html#資料",
-    "title": "2023-03– Stataによるパネル調査データ分析の実践",
-    "section": "資料",
-    "text": "資料\n2024年度春のセミナーで使用したスライドはこちらにアップロードしています。\n2023年度春のセミナーで使用したスライドはこちらにアップロードしています。\n2022年度春のセミナーで使用したスライドはこちらにアップロードしています。"
-  },
-  {
-    "objectID": "lecture/GU-socSem.html",
-    "href": "lecture/GU-socSem.html",
-    "title": "2021-04–　学習院大学法学部「社会学演習」",
-    "section": "",
-    "text": "社会的不平等に関する実証研究"
-  },
-  {
-    "objectID": "lecture/GU-socSem.html#テーマ",
-    "href": "lecture/GU-socSem.html#テーマ",
-    "title": "2021-04–　学習院大学法学部「社会学演習」",
-    "section": "",
-    "text": "社会的不平等に関する実証研究"
-  },
-  {
-    "objectID": "lecture/GU-socSem.html#開講",
-    "href": "lecture/GU-socSem.html#開講",
-    "title": "2021-04–　学習院大学法学部「社会学演習」",
-    "section": "開講",
-    "text": "開講\n学習院大学法学部 前後期"
-  },
-  {
-    "objectID": "lecture/GU-socSem.html#授業概要",
-    "href": "lecture/GU-socSem.html#授業概要",
-    "title": "2021-04–　学習院大学法学部「社会学演習」",
-    "section": "授業概要",
-    "text": "授業概要\n本演習の目的は、社会学の視点から、問いを設定し、仮説を立て、それに答えるために社会調査データを分析することを通じて、社会科学一般の基礎となる研究過程を体感し、かつそれを実行するためのスキルを習得することにある。社会学では、個人の行為を説明するにあたって、社会的な文脈の影響に着目する。なぜある人はお金持ちで、ある人は貧しいのか？なぜ大学に行く人と行かない人がいるのか？なぜ家事や育児にかける時間が男女で違うのか？こうした一見個人的な行為やその結果に対する説明を考え、その説明を検証するための具体的な方法を身につけることを目指す。\n本演習ではとくに不平等（様々な希少財およびそれを得る機会が偏っていること）にかかわるテーマを中心に扱う。より具体的には、社会経済的格差とその要因、教育機会の不平等、ジェンダー不平等、貧困、等のトピックを取り上げる。\n社会の不平等の実態を明らかにするうえに最も基本的な方法が、社会調査データの分析である。本演習では、実際にこうした調査データを用い、統計ソフトを用いて分析する方法について学習する。\n本演習を2年間履修することによって以下のスキルを身につけることができる。こうしたスキルは、今後の人生で直接研究には携わらないとしても、仕事や生活等で必ず役に立つだろう。\n\n先行研究をもとに、社会的・学術的に意義のある問いを立てる。\n論理的に仮説や解釈を導く。\n問いに答えるための方法を特定し、研究計画を立てる。\n社会調査データを統計的に分析し、意味ある結果を導く。\n実務でも研究でも通用する、構造化された論文（レポート）を書く。\n\n前期は実証研究に関する論文の書き方および関連領域に関するテキスト（教科書）講読、論文講読、および統計ソフトRを用いたデータ分析方法の学習を並行して行う。\n\n文献講読：文献を読んだ上で事前に（1）内容のごく簡単な要約、（1）興味深いと思った点、（3）内容に関する疑問点・質問、をまとめたファイルを提出する。授業では共有された内容をもとにグループに分かれて議論したあと、疑問点などを解消する。\n論文講読：論文を読んだ上で事前に（1）論文の問い、意義、方法、結果は何か、（2）興味深いと思った点、（3）内容に関する疑問点・批判点・質問、をまとめたファイルを提出する。授業では共有された内容をもとにグループに分かれて議論したあと、疑問点などを解消する。\n統計分析：教科書については、事前に該当箇所を読んだうえで、書かれたコードを実際に自分で一通り実行する。さらに、授業用に作成したウェブページ（Rによる社会調査データ分析の手引き）を合わせて使用する。こちらも事前に該当箇所を読んだうえで書かれたコードを実際に自分で実行してくる。授業では不明点などの解消を主とする。\n\n前期末には後期に向けて利用可能な社会調査データのアーカイブを紹介し、研究計画を作成する。既存社会調査の個票データを用いた統計分析を行うことが必須となる。参加者の関心をもとに、3年生は3人程度のグループ、4年生は個人で、前期末に研究計画を作成する（ここでのグループは後期の授業でも継続する）。\n後期は論文執筆のための作業および経過報告からなる。作業は授業時間外にも実施し、授業時間中には作業の過程で生じた疑問点や悩みなどについて教員から助言するという形式で進める。毎週、進捗状況を共有する。中間報告の回では、報告者の事前の十分な準備はもちろん、参加者からも積極的なコメントを行うことが期待される。学期末には参考文献を含めて12,000–20,000字程度の長さの研究論文を執筆し提出する。"
-  },
-  {
-    "objectID": "lecture/GU-socSem.html#到達目標",
-    "href": "lecture/GU-socSem.html#到達目標",
-    "title": "2021-04–　学習院大学法学部「社会学演習」",
-    "section": "到達目標",
-    "text": "到達目標\n\n社会学の視点から問いを設定し、仮説を立てられるようになる。\n社会調査データの分析方法を身につける。\n実証研究による報告論文（レポート）を書くことができる。"
-  },
-  {
-    "objectID": "lecture/GU-socSem.html#過去の購読文献など",
-    "href": "lecture/GU-socSem.html#過去の購読文献など",
-    "title": "2021-04–　学習院大学法学部「社会学演習」",
-    "section": "過去の購読文献など",
-    "text": "過去の購読文献など\n\n2025年度\n豊永耕平，2023，『学歴獲得の不平等：親子の進路選択と社会階層』勁草書房．\n吉田航，2025，『新卒採用と不平等の社会学：組織の計量分析が映すそのメカニズム』ミネルヴァ書房．\nLlaudet, Elene and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.（原田勝孝訳，2025，『新・社会科学のためのデータ分析入門：導入編』岩波書店）\n周燕飛，2019，「母親による児童虐待の発生要因に関する実証分析」『医療と社会』29(1): 119–34．\n大和冬樹，2024，「将来展望と高校進学行動の近隣格差：中学生と母親に着目して」『日本都市社会学会年報』42:76–94．\nIvanova, Katya, and Nicoletta Balbo. 2024. “Societal Pessimism and the Transition to Parenthood: A Future Too Bleak to Have Children?” Population and Development Review 50(2):323–42.\n戸髙南帆，2024，「どのような母親が家事を子どもにしつけるのか：性別役割分業意識をめぐる実証的検討」『教育社会学研究』114: 159–177．\n中原慧，2023，「移民的背景のある児童の学力に関する分析：移民世代と親の出生地の組み合わせに着目して」『社会学評論』74(1):105–21．\nGurzo, Klara, Olof Östergren, Pekka Martikainen, and Bitte Modin. 2023. “The Impact of Privileged Classroom Friends on Adult Income and Income Mobility: A Study of a Swedish Cohort Born in 1953.” Social Forces 102(3):1068–88.\n平河茉璃絵・臼井恵美子，2024.「時間外労働の割増賃金率引き上げが労働時間と生活時間に与える影響」『経済研究』早期公開．\n竹内麻貴，2018，「現代日本におけるMotherhood Penaltyの検証」『フォーラム現代社会学』17:93–107．\nJackson, Margot I., and Daniel Schneider. 2022. “Public Investments and Class Gaps in Parents’ Developmental Expenditures.” American Sociological Review 87(1):105–42.\n\n\n2024年度\nPutnam, Robert D. 2015. Our Kids: The American Dream in Crisis. Simon & Schuster.（柴内康文訳，2017，『われらの子ども：米国における機会格差の拡大』創元社．）\nGoldin, Claudia. 2021. Career and Family: Women’s Century-Long Journey toward Equity. Princeton University Press.（鹿田昌美訳，2023，『なぜ男女の賃金に格差があるのか：女性の生き方の経済学』慶應義塾出版会．）\nLlaudet, Elene and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.\n明石芳彦，2018，『社会科学系論文の書き方』ミネルヴァ書房．\n森いづみ，2017，「国・私立中学への進学が進学期待と自己効力感に及ぼす影響」『教育社会学研究』101: 27–47．\n吉武理大，2019，「貧困母子世帯における生活保護の受給の規定要因：なぜ貧困なのに生活保護を受給しないのか」『福祉社会学研究』16: 157–178．\n古田和久，2018，「出身階層の資本構造と高校生の進路選択」『社会学評論』69(1):21–36.\n麦山亮太・大里蒼一郎，2024，「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』近刊．\n百瀬由璃絵，2023，「埋もれたインターセクショナリティ：『障害者／健常者』の境界にいる女性」『日本労働研究雑誌』751: 148–63．\n斉藤知洋，2023，「離婚に伴う女性の経済状況の変化：長期パネルデータを用いた再検討」『人口問題研究』79(1): 64–84．\n吉田航，2024，「ダイバーシティ部署の設置は企業の女性管理職比率を高めるか？」『組織科学』近刊．\n中山真緒・石川祐実，2023，「男性配偶者の業種別育児休業取得率が女性の就業確率，健康状態に与える影響」『日本労働研究雑誌』760:74–87.\n\n\n2023年度\n数理社会学会監修，筒井淳也・神林博史・長松奈美江・渡邉大輔・藤原翔編，2015，『計量社会学入門：社会をデータで読む』世界思想社．\n豊永耕平，2023，『学歴獲得の不平等：親子の進路選択と社会階層』勁草書房．\nLlaudet, Elene and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.\n吉田航，2022，「女性管理職は「変化の担い手」か「機械の歯車」か？：新卒女性の採用・定着に与える影響に着目して」『理論と方法』37(1): 18–33．\n郭雲蔚，2019，「低水準の均衡：職場における非正規雇用の存在と労働者全体の処遇水準」『フォーラム現代社会学』18: 45–59．\n吉武理大，2019，「離婚の世代間連鎖とそのメカニズム：格差の再生産の視点から」『社会学評論』70(1): 27–42．\n柳下実，2022，「育児のための睡眠中断とジェンダー」『ソシオロジ』66(3): 3–19．\n\n\n2022年度\n明石芳彦，2018，『社会科学系論文の書き方』ミネルヴァ書房．\n平沢和司，2021，『格差の社会学入門：学歴と階層から考える［第2版］』北海道大学出版会．\n岩間暁子，2008，『女性の就業と家族のゆくえ：格差社会のなかの変容』東京大学出版会．\n寺村絵理子編，2021，『日本・台湾の高学歴女性：極少子化と仕事・家族の比較』晃洋書房．\n浅野正彦・矢内勇生，2018，『Rによる計量政治学入門：統計学で政治現象を分析する』オーム社．\n\n\n2021年度\nWatts, Duncan J. 2011. Everything is Obvious, Once You Know the Answer: Why Common Sense is Nonsense. Atlantic Books.（青木創訳，2014，『偶然の科学』早川書房．）\n数理社会学会監修，筒井淳也・神林博史・長松奈美江・渡邉大輔・藤原翔編，2015，『計量社会学入門：社会をデータで読む』世界思想社．\n浅野正彦・矢内勇生，2018，『Rによる計量政治学入門：統計学で政治現象を分析する』オーム社．\n余田翔平，2012，「子ども期の家族構造と教育達成格差：二人親世帯/母子世帯/父子世帯の比較」『家族社会学研究』, 24(1), 60–71.\n永吉希久子，2012，「日本人の排外意識に対する分断労働市場の影響」『社会学評論』63(1): 19–35.\n川口章，2012，「昇進意欲の男女比較」『日本労働研究雑誌』54(2): 42–57.\n裵智恵，2018，「同性愛に対する態度を規定する要因」小林大祐編『2015年SSM調査報告書9 意識II』 2015年SSM調査研究会，85–102．"
-  },
-  {
-    "objectID": "lecture/2025-09-02-CSRDA.html",
-    "href": "lecture/2025-09-02-CSRDA.html",
-    "title": "2021-08– Stataを用いた計量分析入門",
-    "section": "",
-    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2025年度夏（2025-09-02）\n2024年度夏（2024-09-04）\n2023年度夏（2023-09-05）\n2022年度夏（2022-09-07）\n2021年度春（2022-03-02）\n2021年度夏（2021-08-31）：このときの名称は「Stataによる計量分析の実践」"
-  },
-  {
-    "objectID": "lecture/2025-09-02-CSRDA.html#開講",
-    "href": "lecture/2025-09-02-CSRDA.html#開講",
-    "title": "2021-08– Stataを用いた計量分析入門",
-    "section": "",
-    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2025年度夏（2025-09-02）\n2024年度夏（2024-09-04）\n2023年度夏（2023-09-05）\n2022年度夏（2022-09-07）\n2021年度春（2022-03-02）\n2021年度夏（2021-08-31）：このときの名称は「Stataによる計量分析の実践」"
-  },
-  {
-    "objectID": "lecture/2025-09-02-CSRDA.html#内容",
-    "href": "lecture/2025-09-02-CSRDA.html#内容",
-    "title": "2021-08– Stataを用いた計量分析入門",
-    "section": "内容",
-    "text": "内容\n統計ソフトStataを用いて、実際のデータを用いながら、基礎的な計量分析（記述統計量、2変量の関係、線形回帰分析、ロジスティック回帰分析）の結果のまとめ方について学習します。たんにStataで結果を出すというだけでなく、結果をどのように解釈するのか、どのようにして見やすい図表を作るのか、結果をExcelファイルやpdfファイル、画像ファイルなどに出力・保存するため効率的なワークフローといった、統計ソフトや計量分析の教科書などには書かれていないことも多い実践的な側面に重点をおいて解説します。\n次のような方におすすめです\n\nSPSS, SAS, Rなどの統計ソフトを使っているが、新たにStataを使い始めたい\nクロス集計表や回帰分析などの基礎的な知識はあるが、Stataではどのようにするのか知りたい\n計量分析を行うときにはどのような手順で作業を行うのかを知りたい\nStataで見やすい図や表を作るためにはどのようにすればよいかを知りたい\n回帰分析などの結果をより適切に解釈し、より実質的な意味のある分析結果を得るためにはどうすればよいか知りたい"
-  },
-  {
-    "objectID": "lecture/2025-09-02-CSRDA.html#資料",
-    "href": "lecture/2025-09-02-CSRDA.html#資料",
-    "title": "2021-08– Stataを用いた計量分析入門",
-    "section": "資料",
-    "text": "資料\n2025年度夏のセミナーで使用したスライド：slide\n2024年度夏のセミナーで使用したスライド：slide\n2023年度夏のセミナーで使用したスライド：slide\n2022年度夏のセミナーで使用したスライド：slide\n2021年度春のセミナーで使用したスライド：slide\n2021年度夏セミナーで使用したスライド：slide"
-  },
-  {
     "objectID": "notes.html",
     "href": "notes.html",
     "title": "Notes",
@@ -1041,6 +831,244 @@
     "title": "Notes",
     "section": "逆ミルズ比を図で理解する",
     "text": "逆ミルズ比を図で理解する\nサンプルセレクションモデルで頻出する逆ミルズ比について、図で理解できるようにいろいろと工夫してみた、という記事です。R markdownで作成しました。（2016/11/28 upload）\n（→2023/04/10移行）"
+  },
+  {
+    "objectID": "lecture/2025-09-02-CSRDA.html",
+    "href": "lecture/2025-09-02-CSRDA.html",
+    "title": "2021-08– Stataを用いた計量分析入門",
+    "section": "",
+    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2025年度夏（2025-09-02）\n2024年度夏（2024-09-04）\n2023年度夏（2023-09-05）\n2022年度夏（2022-09-07）\n2021年度春（2022-03-02）\n2021年度夏（2021-08-31）：このときの名称は「Stataによる計量分析の実践」"
+  },
+  {
+    "objectID": "lecture/2025-09-02-CSRDA.html#開講",
+    "href": "lecture/2025-09-02-CSRDA.html#開講",
+    "title": "2021-08– Stataを用いた計量分析入門",
+    "section": "",
+    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2025年度夏（2025-09-02）\n2024年度夏（2024-09-04）\n2023年度夏（2023-09-05）\n2022年度夏（2022-09-07）\n2021年度春（2022-03-02）\n2021年度夏（2021-08-31）：このときの名称は「Stataによる計量分析の実践」"
+  },
+  {
+    "objectID": "lecture/2025-09-02-CSRDA.html#内容",
+    "href": "lecture/2025-09-02-CSRDA.html#内容",
+    "title": "2021-08– Stataを用いた計量分析入門",
+    "section": "内容",
+    "text": "内容\n統計ソフトStataを用いて、実際のデータを用いながら、基礎的な計量分析（記述統計量、2変量の関係、線形回帰分析、ロジスティック回帰分析）の結果のまとめ方について学習します。たんにStataで結果を出すというだけでなく、結果をどのように解釈するのか、どのようにして見やすい図表を作るのか、結果をExcelファイルやpdfファイル、画像ファイルなどに出力・保存するため効率的なワークフローといった、統計ソフトや計量分析の教科書などには書かれていないことも多い実践的な側面に重点をおいて解説します。\n次のような方におすすめです\n\nSPSS, SAS, Rなどの統計ソフトを使っているが、新たにStataを使い始めたい\nクロス集計表や回帰分析などの基礎的な知識はあるが、Stataではどのようにするのか知りたい\n計量分析を行うときにはどのような手順で作業を行うのかを知りたい\nStataで見やすい図や表を作るためにはどのようにすればよいかを知りたい\n回帰分析などの結果をより適切に解釈し、より実質的な意味のある分析結果を得るためにはどうすればよいか知りたい"
+  },
+  {
+    "objectID": "lecture/2025-09-02-CSRDA.html#資料",
+    "href": "lecture/2025-09-02-CSRDA.html#資料",
+    "title": "2021-08– Stataを用いた計量分析入門",
+    "section": "資料",
+    "text": "資料\n2025年度夏のセミナーで使用したスライド：slide\n2024年度夏のセミナーで使用したスライド：slide\n2023年度夏のセミナーで使用したスライド：slide\n2022年度夏のセミナーで使用したスライド：slide\n2021年度春のセミナーで使用したスライド：slide\n2021年度夏セミナーで使用したスライド：slide"
+  },
+  {
+    "objectID": "lecture/GU-socSem.html",
+    "href": "lecture/GU-socSem.html",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "section": "",
+    "text": "社会的不平等に関する実証研究"
+  },
+  {
+    "objectID": "lecture/GU-socSem.html#テーマ",
+    "href": "lecture/GU-socSem.html#テーマ",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "section": "",
+    "text": "社会的不平等に関する実証研究"
+  },
+  {
+    "objectID": "lecture/GU-socSem.html#開講",
+    "href": "lecture/GU-socSem.html#開講",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "section": "開講",
+    "text": "開講\n学習院大学法学部 前後期"
+  },
+  {
+    "objectID": "lecture/GU-socSem.html#授業概要",
+    "href": "lecture/GU-socSem.html#授業概要",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "section": "授業概要",
+    "text": "授業概要\n本演習の目的は、社会学の視点から、問いを設定し、仮説を立て、それに答えるために社会調査データを分析することを通じて、社会科学一般の基礎となる研究過程を体感し、かつそれを実行するためのスキルを習得することにある。社会学では、個人の行為を説明するにあたって、社会的な文脈の影響に着目する。なぜある人はお金持ちで、ある人は貧しいのか？なぜ大学に行く人と行かない人がいるのか？なぜ家事や育児にかける時間が男女で違うのか？こうした一見個人的な行為やその結果に対する説明を考え、その説明を検証するための具体的な方法を身につけることを目指す。\n本演習ではとくに不平等（様々な希少財およびそれを得る機会が偏っていること）にかかわるテーマを中心に扱う。より具体的には、社会経済的格差とその要因、教育機会の不平等、ジェンダー不平等、貧困、等のトピックを取り上げる。\n社会の不平等の実態を明らかにするうえに最も基本的な方法が、社会調査データの分析である。本演習では、実際にこうした調査データを用い、統計ソフトを用いて分析する方法について学習する。\n本演習を2年間履修することによって以下のスキルを身につけることができる。こうしたスキルは、今後の人生で直接研究には携わらないとしても、仕事や生活等で必ず役に立つだろう。\n\n先行研究をもとに、社会的・学術的に意義のある問いを立てる。\n論理的に仮説や解釈を導く。\n問いに答えるための方法を特定し、研究計画を立てる。\n社会調査データを統計的に分析し、意味ある結果を導く。\n実務でも研究でも通用する、構造化された論文（レポート）を書く。\n\n前期は実証研究に関する論文の書き方および関連領域に関するテキスト（教科書）講読、論文講読、および統計ソフトRを用いたデータ分析方法の学習を並行して行う。\n\n文献講読：文献を読んだ上で事前に（1）内容のごく簡単な要約、（1）興味深いと思った点、（3）内容に関する疑問点・質問、をまとめたファイルを提出する。授業では共有された内容をもとにグループに分かれて議論したあと、疑問点などを解消する。\n論文講読：論文を読んだ上で事前に（1）論文の問い、意義、方法、結果は何か、（2）興味深いと思った点、（3）内容に関する疑問点・批判点・質問、をまとめたファイルを提出する。授業では共有された内容をもとにグループに分かれて議論したあと、疑問点などを解消する。\n統計分析：教科書については、事前に該当箇所を読んだうえで、書かれたコードを実際に自分で一通り実行する。さらに、授業用に作成したウェブページ（Rによる社会調査データ分析の手引き）を合わせて使用する。こちらも事前に該当箇所を読んだうえで書かれたコードを実際に自分で実行してくる。授業では不明点などの解消を主とする。\n\n前期末には後期に向けて利用可能な社会調査データのアーカイブを紹介し、研究計画を作成する。既存社会調査の個票データを用いた統計分析を行うことが必須となる。参加者の関心をもとに、3年生は3人程度のグループ、4年生は個人で、前期末に研究計画を作成する（ここでのグループは後期の授業でも継続する）。\n後期は論文執筆のための作業および経過報告からなる。作業は授業時間外にも実施し、授業時間中には作業の過程で生じた疑問点や悩みなどについて教員から助言するという形式で進める。毎週、進捗状況を共有する。中間報告の回では、報告者の事前の十分な準備はもちろん、参加者からも積極的なコメントを行うことが期待される。学期末には参考文献を含めて12,000–20,000字程度の長さの研究論文を執筆し提出する。"
+  },
+  {
+    "objectID": "lecture/GU-socSem.html#到達目標",
+    "href": "lecture/GU-socSem.html#到達目標",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "section": "到達目標",
+    "text": "到達目標\n\n社会学の視点から問いを設定し、仮説を立てられるようになる。\n社会調査データの分析方法を身につける。\n実証研究による報告論文（レポート）を書くことができる。"
+  },
+  {
+    "objectID": "lecture/GU-socSem.html#過去の購読文献など",
+    "href": "lecture/GU-socSem.html#過去の購読文献など",
+    "title": "2021-04–　学習院大学法学部「社会学演習」",
+    "section": "過去の購読文献など",
+    "text": "過去の購読文献など\n\n2025年度\n豊永耕平，2023，『学歴獲得の不平等：親子の進路選択と社会階層』勁草書房．\n吉田航，2025，『新卒採用と不平等の社会学：組織の計量分析が映すそのメカニズム』ミネルヴァ書房．\nLlaudet, Elene and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.（原田勝孝訳，2025，『新・社会科学のためのデータ分析入門：導入編』岩波書店）\n周燕飛，2019，「母親による児童虐待の発生要因に関する実証分析」『医療と社会』29(1): 119–34．\n大和冬樹，2024，「将来展望と高校進学行動の近隣格差：中学生と母親に着目して」『日本都市社会学会年報』42:76–94．\nIvanova, Katya, and Nicoletta Balbo. 2024. “Societal Pessimism and the Transition to Parenthood: A Future Too Bleak to Have Children?” Population and Development Review 50(2):323–42.\n戸髙南帆，2024，「どのような母親が家事を子どもにしつけるのか：性別役割分業意識をめぐる実証的検討」『教育社会学研究』114: 159–177．\n中原慧，2023，「移民的背景のある児童の学力に関する分析：移民世代と親の出生地の組み合わせに着目して」『社会学評論』74(1):105–21．\nGurzo, Klara, Olof Östergren, Pekka Martikainen, and Bitte Modin. 2023. “The Impact of Privileged Classroom Friends on Adult Income and Income Mobility: A Study of a Swedish Cohort Born in 1953.” Social Forces 102(3):1068–88.\n平河茉璃絵・臼井恵美子，2024.「時間外労働の割増賃金率引き上げが労働時間と生活時間に与える影響」『経済研究』早期公開．\n竹内麻貴，2018，「現代日本におけるMotherhood Penaltyの検証」『フォーラム現代社会学』17:93–107．\nJackson, Margot I., and Daniel Schneider. 2022. “Public Investments and Class Gaps in Parents’ Developmental Expenditures.” American Sociological Review 87(1):105–42.\n\n\n2024年度\nPutnam, Robert D. 2015. Our Kids: The American Dream in Crisis. Simon & Schuster.（柴内康文訳，2017，『われらの子ども：米国における機会格差の拡大』創元社．）\nGoldin, Claudia. 2021. Career and Family: Women’s Century-Long Journey toward Equity. Princeton University Press.（鹿田昌美訳，2023，『なぜ男女の賃金に格差があるのか：女性の生き方の経済学』慶應義塾出版会．）\nLlaudet, Elene and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.\n明石芳彦，2018，『社会科学系論文の書き方』ミネルヴァ書房．\n森いづみ，2017，「国・私立中学への進学が進学期待と自己効力感に及ぼす影響」『教育社会学研究』101: 27–47．\n吉武理大，2019，「貧困母子世帯における生活保護の受給の規定要因：なぜ貧困なのに生活保護を受給しないのか」『福祉社会学研究』16: 157–178．\n古田和久，2018，「出身階層の資本構造と高校生の進路選択」『社会学評論』69(1):21–36.\n麦山亮太・大里蒼一郎，2024，「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』近刊．\n百瀬由璃絵，2023，「埋もれたインターセクショナリティ：『障害者／健常者』の境界にいる女性」『日本労働研究雑誌』751: 148–63．\n斉藤知洋，2023，「離婚に伴う女性の経済状況の変化：長期パネルデータを用いた再検討」『人口問題研究』79(1): 64–84．\n吉田航，2024，「ダイバーシティ部署の設置は企業の女性管理職比率を高めるか？」『組織科学』近刊．\n中山真緒・石川祐実，2023，「男性配偶者の業種別育児休業取得率が女性の就業確率，健康状態に与える影響」『日本労働研究雑誌』760:74–87.\n\n\n2023年度\n数理社会学会監修，筒井淳也・神林博史・長松奈美江・渡邉大輔・藤原翔編，2015，『計量社会学入門：社会をデータで読む』世界思想社．\n豊永耕平，2023，『学歴獲得の不平等：親子の進路選択と社会階層』勁草書房．\nLlaudet, Elene and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.\n吉田航，2022，「女性管理職は「変化の担い手」か「機械の歯車」か？：新卒女性の採用・定着に与える影響に着目して」『理論と方法』37(1): 18–33．\n郭雲蔚，2019，「低水準の均衡：職場における非正規雇用の存在と労働者全体の処遇水準」『フォーラム現代社会学』18: 45–59．\n吉武理大，2019，「離婚の世代間連鎖とそのメカニズム：格差の再生産の視点から」『社会学評論』70(1): 27–42．\n柳下実，2022，「育児のための睡眠中断とジェンダー」『ソシオロジ』66(3): 3–19．\n\n\n2022年度\n明石芳彦，2018，『社会科学系論文の書き方』ミネルヴァ書房．\n平沢和司，2021，『格差の社会学入門：学歴と階層から考える［第2版］』北海道大学出版会．\n岩間暁子，2008，『女性の就業と家族のゆくえ：格差社会のなかの変容』東京大学出版会．\n寺村絵理子編，2021，『日本・台湾の高学歴女性：極少子化と仕事・家族の比較』晃洋書房．\n浅野正彦・矢内勇生，2018，『Rによる計量政治学入門：統計学で政治現象を分析する』オーム社．\n\n\n2021年度\nWatts, Duncan J. 2011. Everything is Obvious, Once You Know the Answer: Why Common Sense is Nonsense. Atlantic Books.（青木創訳，2014，『偶然の科学』早川書房．）\n数理社会学会監修，筒井淳也・神林博史・長松奈美江・渡邉大輔・藤原翔編，2015，『計量社会学入門：社会をデータで読む』世界思想社．\n浅野正彦・矢内勇生，2018，『Rによる計量政治学入門：統計学で政治現象を分析する』オーム社．\n余田翔平，2012，「子ども期の家族構造と教育達成格差：二人親世帯/母子世帯/父子世帯の比較」『家族社会学研究』, 24(1), 60–71.\n永吉希久子，2012，「日本人の排外意識に対する分断労働市場の影響」『社会学評論』63(1): 19–35.\n川口章，2012，「昇進意欲の男女比較」『日本労働研究雑誌』54(2): 42–57.\n裵智恵，2018，「同性愛に対する態度を規定する要因」小林大祐編『2015年SSM調査報告書9 意識II』 2015年SSM調査研究会，85–102．"
+  },
+  {
+    "objectID": "lecture/2025-02-19-CSRDA.html",
+    "href": "lecture/2025-02-19-CSRDA.html",
+    "title": "2023-03– Stataによるパネル調査データ分析の実践",
+    "section": "",
+    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2024年度春（2024-02-19）\n2023年度春（2024-03-04）\n2022年度春（2023-03-09）"
+  },
+  {
+    "objectID": "lecture/2025-02-19-CSRDA.html#開講",
+    "href": "lecture/2025-02-19-CSRDA.html#開講",
+    "title": "2023-03– Stataによるパネル調査データ分析の実践",
+    "section": "",
+    "text": "東京大学社会科学研究所附属社会調査・データ・アーカイブ研究センター 計量分析セミナー\n\n2024年度春（2024-02-19）\n2023年度春（2024-03-04）\n2022年度春（2023-03-09）"
+  },
+  {
+    "objectID": "lecture/2025-02-19-CSRDA.html#内容",
+    "href": "lecture/2025-02-19-CSRDA.html#内容",
+    "title": "2023-03– Stataによるパネル調査データ分析の実践",
+    "section": "内容",
+    "text": "内容\n日本においても多くの大規模パネル調査データが蓄積されるようになり、パネル調査データの分析可能性は飛躍的に広がっています。本コースでは、統計ソフトStataを用いて、パネル調査データを使った分析の基礎的な手順と、代表的なパネル調査データ分析の方法を学習します。具体的には、どのように分析のためのデータセットを作ればよいのか、どのような問いに対してどのような方法を使うべきかに焦点を当てて学習します。たんにStataで結果を出すというだけでなく、どのようにして見やすい図表を作るのか、結果を出力・保存するため効率的なワークフローといった実践的な側面にも重点をおいて解説します。\n次のような方におすすめです\n\n一時点の社会調査データの分析経験はあるが、パネル調査データを分析した経験はなく、分析してみたい\nパネルデータを分析するための手順を知りたい\nパネルデータの分析方法をどのように選べばよいか知りたい\nパネル調査データを分析した経験があるが、よりよいデータ構築の手順や方法の選び方について知りたい"
+  },
+  {
+    "objectID": "lecture/2025-02-19-CSRDA.html#資料",
+    "href": "lecture/2025-02-19-CSRDA.html#資料",
+    "title": "2023-03– Stataによるパネル調査データ分析の実践",
+    "section": "資料",
+    "text": "資料\n2024年度春のセミナーで使用したスライドはこちらにアップロードしています。\n2023年度春のセミナーで使用したスライドはこちらにアップロードしています。\n2022年度春のセミナーで使用したスライドはこちらにアップロードしています。"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIII.html",
+    "href": "lecture/GU-sociologyIII.html",
+    "title": "2021-04–　学習院大学法学部「社会学III」",
+    "section": "",
+    "text": "現代社会学の理論的・経験的蓄積"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIII.html#テーマ",
+    "href": "lecture/GU-sociologyIII.html#テーマ",
+    "title": "2021-04–　学習院大学法学部「社会学III」",
+    "section": "",
+    "text": "現代社会学の理論的・経験的蓄積"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIII.html#開講",
+    "href": "lecture/GU-sociologyIII.html#開講",
+    "title": "2021-04–　学習院大学法学部「社会学III」",
+    "section": "開講",
+    "text": "開講\n学習院大学法学部 前期"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIII.html#授業の概要",
+    "href": "lecture/GU-sociologyIII.html#授業の概要",
+    "title": "2021-04–　学習院大学法学部「社会学III」",
+    "section": "授業の概要",
+    "text": "授業の概要\n社会学は、人びとの集まりである社会において繰り返し観察される社会現象を正確に記述するとともに、それがなぜ生じているのかを、現象の社会的側面に着目して説明することを目的とする、社会科学の一分野である。\n豊かな人と貧しい人がいるのはなぜか？太っている人とそうでない人がいるのはなぜか？似た者どうしが友人になるのはなぜか？ある小説や音楽、映画が流行するのはなぜか？社会学ではさまざまなトピック（問い）が扱われるが、社会学ではそれらを説明するにあたって、個人やモノそれ自体よりもむしろ、それらを取り巻くコンテクストの影響力に着目する。このような視点から、社会学ではこれまで多くの概念や方法が開発され、さまざまな事実が明らかにされてきた。\n本授業ではこうした概念や方法、現代の社会学における理論的・経験的な蓄積を紹介し、これにふれることを通じて、社会学に通底する視点を身につけることを目指す。ひいては、身の回りのさまざまな社会現象について、社会学の視点からその実態や原因を考えられるようになることが目標である。\n\nガイダンス\n問い\n理論\n方法\n意見\n規範\nネットワーク\n集団\n階層と移動\n資源\n移民と統合\n近代化\n宗教\nまとめ"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIII.html#到達目標",
+    "href": "lecture/GU-sociologyIII.html#到達目標",
+    "title": "2021-04–　学習院大学法学部「社会学III」",
+    "section": "到達目標",
+    "text": "到達目標\n\n社会学的な問いの立て方を身につける。\n社会学的な視点、理論を用いて社会現象を読み解くことができる。\n社会学の諸概念および経験的な知見のもつ意味について理解する。"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIII.html#テキスト",
+    "href": "lecture/GU-sociologyIII.html#テキスト",
+    "title": "2021-04–　学習院大学法学部「社会学III」",
+    "section": "テキスト",
+    "text": "テキスト\nTubergen, Frank van. 2020. Introduction to Sociology. Routledge."
+  },
+  {
+    "objectID": "lecture/shinsho_list.html",
+    "href": "lecture/shinsho_list.html",
+    "title": "授業で使えそうな新書のリスト",
+    "section": "",
+    "text": "社会学系の少人数授業等で使えそうな、またはすでに使った実績のある書籍をテーマ別にまとめておく。使ったものについてはいずれも学部一年生向け授業である。とくに網羅的であることを目指したものではなく、たんに筆者（麦山）の独断で選んだものにすぎない。選定基準は以下のとおり。\n\n十分な参考文献（先行研究）を参照している。\n実証的な方法（主として計量分析またはその結果のレビューを中心としたもの）にもとづいている。\n執筆時点における最近の研究動向を反映している。\n\n以下、とくに理由はなく出版年が新しい順に並べている。\n谷原つかさ，2024，『「ネット世論」の社会学：データ分析が解き明かす「偏り」の正体』NHK出版新書．\n\nメディアを扱った新書はたくさんあるが、定量的な方法にもとづく実証研究は少ない。本書はその意味で貴重。\n\n三谷はるよ，2023，『ＡＣＥサバイバー：子ども期の逆境に苦しむ人々』ちくま新書．\n\n先行研究のレビューが網羅的で有益。\n\n五十嵐彰，2023，『不倫：実証分析が示す全貌』中公新書．\n\nサーベイ実験など先進的な方法についての説明も載っていてすばらしいが、若干授業で使うには躊躇するかもしれない題材。\n\n牧野百恵，2023，『ジェンダー格差：実証経済学は何を語るか』中公新書．\n\n因果推論についての簡単な説明があるほか、規範を重要な概念として位置づけている点で、社会学的な書籍としても読める。\n\nメアリー・C・ブリントン（池村千秋訳），2022，『縛られる日本人：人口減少をもたらす「規範」を打ち破れるか』中公新書．\n\n少子化について仕事、家族、規範といった視点からわかりやすく論じていて導入に適している。\n\n永吉希久子，2020，『移民と日本社会：データで読み解く実態と将来像』中公新書．\n\n移民の定義のような基礎的な内容についての説明もあるほか、先行研究のレビューが網羅的で有益。\n\n松岡亮二，2019，『教育格差：階層・地域・学歴』ちくま新書．\n\n多くの図表が掲載されていて、その多くがクロス表や散布図のような基本的なものなので特段統計的な知識を持っていない学生でも読みやすい。\n\n以下は未読のため保留中\n秦正樹，2022，『陰謀論：民主主義を揺るがすメカニズム』中公新書．\n山口慎太郎，2019，『「家族の幸せ」の経済学：データ分析でわかった結婚、出産、子育ての真実』光文社新書．\n前田健太郎，2019，『女性のいない民主主義』岩波新書．"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIV.html",
+    "href": "lecture/GU-sociologyIV.html",
+    "title": "2021-09–　学習院大学法学部「社会学IV」",
+    "section": "",
+    "text": "社会階層論"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIV.html#テーマ",
+    "href": "lecture/GU-sociologyIV.html#テーマ",
+    "title": "2021-09–　学習院大学法学部「社会学IV」",
+    "section": "",
+    "text": "社会階層論"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIV.html#開講",
+    "href": "lecture/GU-sociologyIV.html#開講",
+    "title": "2021-09–　学習院大学法学部「社会学IV」",
+    "section": "開講",
+    "text": "開講\n学習院大学法学部 後期\n同内容は2022年度に日本女子大学人間社会学部、津田塾大学総合政策学部でも行いました。"
+  },
+  {
+    "objectID": "lecture/GU-sociologyIV.html#授業の概要",
+    "href": "lecture/GU-sociologyIV.html#授業の概要",
+    "title": "2021-09–　学習院大学法学部「社会学IV」",
+    "section": "授業の概要",
+    "text": "授業の概要\n高い収入や貯蓄、住宅、健康、名誉、幸福、等々、社会において希少とされる財は人びとに等しく配分されているわけではない。さらに、こうした希少財を得るためのチャンスもまた、人びとや集団の間で異なっている。希少な財の配分はどの程度偏っているのか？希少財を得る機会が個人あるいは集団間でいかに異なるのか？希少財の配分やそれを得る機会が異なるのはなぜなのか？社会階層研究はこうした不平等を研究する社会学の一分野である。\n社会階層研究の扱う分野は多岐にわたるが、なかでも主要な問題とされてきたのは以下の3点である。第1に、希少財の配分がどの程度偏っているのかという結果の不平等である。所得や富の不平等の程度は国や時代によってどの程度異なるのか？不平等が拡大しているとしたらそれはなぜか？階層によって健康や家族形成のパターンはどの程度異なるのか？人びとのもつつながりは階層によってどの程度隔たっているのか？こうした問いが検討される。\n第2に、希少財を得る機会がどの程度偏っているのかという機会の不平等である。親の階層とは異なる階層に移動するという世代間移動は増えているのか、減っているのか？変化しているとしたらそれはなぜか？親の階層によって教育機会の不平等が生じるのはなぜか？高い学歴を有する人がより高い階層に就くのはなぜか？これらは機会の不平等に関わる問いである。\n第3に、生まれ持った属性がいかに配分や機会の不平等につながるのかという属性による不平等である。本授業ではとくにジェンダー（性別）による不平等を扱う。ジェンダー不平等は国によってどの程度違うのか？不平等の程度はどのように変化しているのか？男子は理系、女子は文系に進学しやすいのはなぜか？男性と女性が労働市場で異なる仕事に就き、異なる評価を受けるのはなぜか？家族形成がキャリアに与える影響が男女で異なるのはなぜか？こうした問いがジェンダーによる不平等という観点から検討される。\n本授業では、上記3つの問題それぞれについて、実証研究の蓄積を概観することを通じて、社会学、および社会階層研究の視点から社会の不平等を捉えるための視点を身につけることを目指す。また、上記3つの問題に関して、欧米を中心に確認されてきた動向が日本においてはどの程度確認されるのかといった点についても、その成果を紹介する。これを通じて、日本の不平等の位置づけを国際的な視点から理解するとともに、不平等がいかにして生じるのか、そのメカニズムを理解することを目指す。\n\nガイダンス\n結果の不平等（1）：不平等の拡大\n\n結果の不平等の測定\n所得と富の不平等：国際比較とトレンド\n富裕層と貧困層\n\n結果の不平等（2）：不平等の拡大のメカニズム\n\nなぜ不平等が拡大したのか：アメリカの場合\n日本の不平等の実態とメカニズム\n\n結果の不平等（3）：階層間格差と不平等の帰結\n\n階層の測定\n階層間格差：健康と家族形成\n結果の不平等の帰結\n\n結果の不平等（4）：階層分離と認識のずれ\n\n不平等と階層分離\n客観的位置と主観的認識のずれ\n不平等に関する価値観\n\n機会の不平等（1）：世代間移動\n\n社会移動の測定\n職業からみる世代間移動\n所得からみる世代間移動\n\n機会の不平等（2）：近代化仮説と地位達成過程\n\n近代化仮説\n地位達成過程\n日本の社会移動のトレンド\n\n機会の不平等（3）：教育機会の不平等\n\nトレンドをめぐる議論\n教育機会の不平等のメカニズム\n遺伝か環境か\n\n機会の不平等（4）：労働市場と機会の不平等\n\n教育と到達階層の関係：メカニズム\n日本の雇用慣行と世代内移動\n出身階層の影響力の再検討\n\n属性による不平等（1）：ジェンダー不平等\n\nジェンダーの視点と不平等\nジェンダー不平等：国際比較とトレンド\n日本のジェンダー不平等のトレンド\n\n属性による不平等（2）：教育とジェンダー\n\n教育達成の男女差\n性別専攻分離のメカニズム\n\n属性による不平等（3）：労働市場とジェンダー\n\n賃金格差の原因を探る：要因分解\n仕事の違いを測定する：性別職域分離\n格差の生成過程：採用とキャリア\n\n属性による不平等（4）：家族形成とジェンダー\n\n出産・育児と男女のキャリア\n性別役割分業と結婚\n\nまとめ"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Other research publications can also be found on the following pages."
+  },
+  {
+    "objectID": "research.html#peer-reviewed-paper",
+    "href": "research.html#peer-reviewed-paper",
+    "title": "Research",
+    "section": "Peer-reviewed paper",
+    "text": "Peer-reviewed paper\n\nin English\n\nMugiyama, Ryota and Kyoko Komatsu. 2025. “More Than Usage: Expanded Socioeconomic Inequality in Access to Remote Work after the COVID-19 in Japan.” Socio-Economic Review. Advance Access.\n\nPress release (in Japanese)\n\nMogi, Ryohei*, Ryota Mugiyama*, and Alyce Raybould*. 2025. “Exposure to Non-partnership and Fertility Desires among Childless Population in Japan.” Social Forces. Advance Access. *Equal authorship.\n\nReplication code is available in my GitHub page.\nPress release (in Japanese)\nPress release (in English, Catalan, and Spanish)\n\nMugiyama, Ryota. 2025. “Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment Instability among Men in Japan.” Demographic Research. 52: 635–688.\n\nReplication code is available from the journal page.\n\nMugiyama, Ryota. 2024. “Disaggregating the Relationship between Precarious Employment and Delayed Marriage in Japan: Incorporating Non-cohabiting Partnerships.” Social Science Research. 124: 103093.\nMogi, Ryohei, Ryota Mugiyama and Giammarco Alderotti. 2024. “Employment Uncertainty and Non-coresidential Partnership in Very Low Fertility Countries: Italy and Japan.” Journal of Family Research. 36: 160–177.\n\nReplication code is available from the journal page.\n\nMugiyama, Ryota. 2024. “Cohort Change in the Educational Gradient in Women’s Employment Around Childbirth in Japan.” Research in Social Stratification and Mobility. 89: 100885.\nÇineli, Beyda and Ryota Mugiyama. 2023. “Money Management over the Course of Marriage: Parenthood, Employment and Household Financial Organization in Japan.” Advances in Life Course Research. 56: 100544.\nIgarashi, Akira and Ryota Mugiyama. 2023. “Whose Tastes Matter? Discrimination against Immigrants in the Japanese Labour Market.” Journal of Ethnic and Migration Studies. 49(13): 3365–3388.\nMugiyama, Ryota and Kohei Toyonaga. 2022. “Role of Cohort Size in Trends in Class and Occupational Returns to Education at First Job: The Case of Japan.” European Sociological Review. 38(2): 269–285.\n\n\nin Japanese\n\n麦山亮太・大里蒼一郎，2024，「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』39(1): 19–34．\n麦山亮太・田上皓大，2024，「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』39(1): 64–76．SSM-ONET対応表へのリンク\n麦山亮太・小松恭子，2023，「テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析」『日本労働研究雑誌』754: 87–102．\n五十嵐彰・麦山亮太，2023，「サーベイ実験を用いた日本における外国人雇用差別の検証：企業属性による異質性」『理論と方法』38(1): 44–58．\n麦山亮太，2022，「出産・育児期における女性就業とその学歴差の長期趨勢：雇用労働力化に着目して」『社会学評論』73(2): 86–102．補足表\n打越文弥・麦山亮太・小松恭子，2021，「職域分離とスキルからみる労働市場のジェンダー格差：日本版O-NET・国勢調査マッチングデータから得られる示唆」『理論と方法』36(1): 65–82．（特集論文）\n打越文弥・麦山亮太，2020，「日本における性別職域分離の趨勢：1980–2005年国勢調査集計データを用いた要因分解」『人口学研究』56: 9–23．\n麦山亮太・西澤和也，2017，「大企業と中小企業が新卒者に求める能力は異なるか：求人情報サイトへのトピックモデルの適用」『理論と方法』32(2): 214–227．\n麦山亮太，2017，「職業経歴と結婚への移行：雇用形態・職種・企業規模と地位変化の効果における男女差」『家族社会学研究』29(2): 129–141．\n麦山亮太，2017，「キャリアの中断が生み出す格差：正規雇用獲得への持続的影響に着目して」『社会学評論』68(2): 248–264．\n麦山亮太，2016，「結婚は職業キャリアにいかなる影響を与えるのか？：無業・管理職への移動に関する男女比較分析」『家族社会学研究』28(2): 122–135．"
+  },
+  {
+    "objectID": "research.html#work-in-progress",
+    "href": "research.html#work-in-progress",
+    "title": "Research",
+    "section": "Work in progress",
+    "text": "Work in progress\n\nSocial mobility\nMultigenerational Perspective on Trends in the Inequality of Educational Opportunity in Japan (with Aguru Ishibashi)\n\n2024-04-20 Presented at PAA Annual Meeting at Hyatt Regency Columbus, Ohio. poster\n2023-10-25 Working paper is found here. paper\n2023-08-15 Presented at RC28 Summer Meeting at University of Michigan. slide\n2023-03-08 Presented at JAMS 74th Meeting at Tsukuba University. slide\n\nChanging University Accessibility and Inequality of Educational Opportunity in Japan (with Kohei Toyonaga)\n\n2024-12-17 Working paper is found here. paper\n2023-10-09 Presented at JSS 96th Annual Meeting at Rissho University.\n2023-07-15 Presented at READI 1st Annual Conference at University of Tokyo. slide\n2022-08-28 Presented at JAMS 73rd Meeting. slide\n\nSocial Origin Earnings Gap in Japan: Differential Effects by Class Destination\n\n2024-09-13 Working paper is found here. peper\n2024-05-18 Presented at RC28 Spring Meeting at NYU Shanghai. slide\n2024-03-16 Presented at JAMS 76th Meeting at Osaka University. slide\n\nIntergenerational Educational Mobility and Subjective Social Status (with Aram Kwon)\n\n2025-03-27 Presented at RC28 Spring Meeting at University of Milan.\n2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop.\n\nChanging Roles of Mothers or Fathers? Intergenerational Educational Mobility in 20th Century Japan (with Aguru Ishibashi)\n\n2026-01-20 Presented at RC28 Online Thematic Meeting. slide\n2025-11-15 Presented at JSS 86th Annual Meeting at Hitotsubashi University. slide\n2025-08-07 Presented at RC28 2025 Summer Meeting at UCLA. slide\n2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop. slide\n\nDoes Educational Expansion Weaken the Equalizing Power of College? Trends in Social Origin Differentials in Occupational Destination in Japan (with Kohei Toyonaga)\n\n2022-08-13 Presented at RC28 Summer Meeting at University of Notre Dame. slide\n\n\n\n\nLabor market inequality\nTrends in Task Distribution in Japan, 1980–2020: Evidence from the Occupational Information Network of Japan and the Population Census (with Kyoko Komatsu)\n\n2025-02-28 Discussion paper is found here (in Japanese). website\n\nRevisiting Motherhood Wage Penalty Following First Birth: The Role of Selection Based on Wage Growth\n\n2025-07-18 Presented at READI 3rd Annual Conference at Yonsei University. slide\n\n\nTask Variety and Its Earnings Returns Across Countries: Evidence from PIAAC (with Shin Arita)\n\n2025-07-11 Presented at Society for the Advancement of Socio-Economics (SASE) 2025 Annual Meeting at Palais des Congrès, Montréal, Québec.\n2024-08-30 Presented at JAMS 77th Annual Meeting at Tohoku University. slide\n\nThe Weight of Gendered Expectation: Pre-birth Endorsement of Intensive Mothering Ideologies and the Motherhood Penalty (with Rantaro Nasu and Yuriko Morikawa)\n\n2025-08-28 Presented at JAMS 79th Meeting at Kwansei Gakuin University. slide\n2025-06-28 Presented at Social Stratification and Mobility Summer International Workshop.\n\n\n\n\nFamily Demography\nRevisiting the Relationship between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan (with Fumiya Uchikoshi, Shohei Yoda, and James M. Raymo)\n\n2024-04-18 Presented at PAA 2024 Annual Meeting at Hyatt Regency Columbus, Ohio.\n2023-09-02 Presented at JSFS 33rd Annual Meeting at Kobe University.\n\nDoes Policy Affect Fertility and Marriage Desires Among Never-Married Childless People? A Factorial Survey Experiment (with Shin Okubo, Kota Toma, Shohei Yoda, and Shigeki Matsuda)\n\n2024-11-09 Presented at JSS 97th Annual Meeting at Kyoto Sangyo University. slide\n2024-07-29 Presented at READI 2nd Meeting at Peking University. slide\n2024-03-17 Presented at JAMS 76th Meeting at Osaka University. slide\n\nThe Cost of Raising Children and Family Intentions and Desires: A Survey Experiment Approach Using Information Intervention (with Fumiya Uchikoshi)\n\n2025-04-11 Presented at PAA 2025 Annual Meeting at Marriott Marquis Washington DC. slide\n\nGender Role Attitudes and Transition to Marriage and Marital Parenthood in Japan\n\n2025-12-08 Preprint is found here. paper\n2025-06-14 Presented at 2025 Annual Meeting of Life Course Transitions in East Asia. slide"
+  },
+  {
+    "objectID": "research.html#miscs",
+    "href": "research.html#miscs",
+    "title": "Research",
+    "section": "Miscs",
+    "text": "Miscs\n麦山亮太，2025，「職業とタスクからみる仕事内容のジェンダー格差」『季刊個人金融』20(3): 69–80．\n麦山亮太・平松誠・コンアラン・那須蘭太郎・吉田航，2025，「社会調査データの統合による二次分析研究の刷新：作業手順と今後の調査実施に向けた示唆」SSJ Data Archive Research Paper Series. 96. Institute of Social Science, the University of Tokyo.\n麦山亮太，2024，「社会階層研究の現在：労働関連分野を中心に」『日本労働研究雑誌』765: 78–83．\n麦山亮太，2022，「文献紹介 渡邊勉・吉川徹・佐藤嘉倫編『少子高齢社会の階層構造2 人生中期の階層構造』」『家族社会学研究』34(2): 152．\nKomatsu, Kyoko and Ryota Mugiyama. 2022. “Trends in Task Distribution in Japan, 1990–2015: Evidence from the Occupational Information Network of Japan and the Population Census Data.” Japan Labor Issues. 37(6): 55–70.\n麦山亮太，2021，「地位の経歴からみる不平等の生成過程」『理論と方法』36(2): 4–15．\n麦山亮太，2018，「文献紹介 吉川徹著『日本の分断：切り離される非大卒若者たち』」『家族社会学研究』30(2): 270．"
+  },
+  {
+    "objectID": "research.html#book-chapter",
+    "href": "research.html#book-chapter",
+    "title": "Research",
+    "section": "Book chapter",
+    "text": "Book chapter\n\n麦山亮太，2023，「男性の職業・家族キャリア」家族社会学会編『家族社会学事典』丸善出版，460–461．\n打越文弥・麦山亮太，2022，「性別職域分離」数理社会学会監修『数理社会学事典』丸善出版，330–333．\n麦山亮太・吉川裕嗣，2015，「東アジアの学生の意識にみるアジア統合の展望：アジア人意識と脅威認識を軸として」園田茂人編『アジア比較社会研究のフロンティアⅢ 連携と離反の東アジア』勁草書房，231–255．"
+  },
+  {
+    "objectID": "harmonization.html",
+    "href": "harmonization.html",
+    "title": "Harmonization",
+    "section": "",
+    "text": "2023年度から進めている社会調査データの統合プロジェクトに関連する成果等をまとめています。"
+  },
+  {
+    "objectID": "harmonization.html#問題意識",
+    "href": "harmonization.html#問題意識",
+    "title": "Harmonization",
+    "section": "問題意識",
+    "text": "問題意識\n以下は麦山ほか（2025: 1–2）からの引用です。\n東京大学社会科学研究所附属社会調査・データアーカイブ研究センターと大阪商業大学JGSS研究センターによって国内の社会調査データの共有・公開がなされるようになってから20年余，日本の大規模社会調査データの利用をめぐる環境は飛躍的に改善した．1990年代末より相次いで全国を対象とした無作為抽出の社会調査が実施され，それらの研究成果が公刊されるだけではなく，アーカイブへの寄託・公開を通じて様々な研究者等に利用され二次分析による研究成果の産出につながっている．今や実証研究において既存の大規模社会調査データの二次分析は標準的な方法である．\nこうしたなかで求められるのは，既存のデータをより有効に活用することである．なかでも既存社会調査データを統合した分析は，サンプルサイズを増やすとともに複数時点の比較分析を可能とし，より正確により大きな問いに答えるうえで重要である．国内外でこうした実証研究例は枚挙に暇がない．たとえば社会階層研究におけるCitation classicとなっている研究として，F. Torcheによる大卒層において出身階層と到達階層の関連が小さいことを示した研究（Torche 2011），R. Breenらによるヨーロッパにおいて教育機会の不平等が縮小傾向にあることを示した研究（Breen et al. 2009）が挙げられる．これらは複数の社会調査を統合したデータを利用することによってこれまで十分に明らかになっていなかった現象を明らかにした研究である．日本においても複数種類・複数時点の社会調査を合併し，変数を統合させて分析を行った事例は少なくない（Fujihara and Ishida 2016; 平尾・太郎丸 2011; Mugiyama and Toyonaga 2022; 打越 2016）．数十年におよぶ不平等の趨勢，少数集団の詳細な特徴などに関わる問いは，単一時点・一回限りの社会調査データで明らかにすることは難しく，複数の社会調査データを組み合わせることによってはじめて明らかにすることができる．\nしかしながら，これまで日本における既存社会調査データを統合した分析は，各研究者が個別に行うにとどまっている．この状況は以下の3点で望ましくない．第1に，通常研究者が社会調査データの分析で用いる変数には，たとえば性別，年齢，職業，学歴，婚姻状態，所得等，共通のものが多いにもかかわらず，各研究者が個別に統合データを作成する場合，本来必要でない多くの労力を割く必要がある．第2に，複数の調査データの統合は変数の作成に際して通常の分析以上に労働集約的であり，個別の研究者が行う場合，誤りが生じる可能性は無視できず，かつ結果の再現性も損なわれる．どのように変数を作成するべきかについてはしばしば単一の答えがない場合もあるが，データ構築に用いるコードを利用者間で共有し，複数の目を通すことによって，少なくとも明らかな誤りについてはそのリスクを減らすべきである．第3に，上記の作業の負担から既存社会調査データの統合には及び腰になりやすく，その結果，データさえあれば答えられるはずの多くの重要な研究課題が未解決のまま残されている．\n上記の問題意識のもとで立ち上げられたのが「社会調査データの合併による二次分析研究の刷新」プロジェクトである．本プロジェクトの目的は2点ある．第1に，社会学者が中心となって実施してきた大規模社会調査データを統合（ハーモナイゼーション harmonization）するコードを作成することである．なお本稿では，各調査で聴取された回答に対して事後的に定義を揃え比較可能とする作業のことを指してデータ統合ないしハーモナイゼーションと呼び，互換的に用いる ．第2に，構築されたデータを活用して，日本社会における不平等の趨勢と実態に関わる様々な記述的問いに答えることである．"
+  },
+  {
+    "objectID": "harmonization.html#現況",
+    "href": "harmonization.html#現況",
+    "title": "Harmonization",
+    "section": "現況",
+    "text": "現況\n約20名のメンバーの協力を得ながら、以下の社会調査データを統合したデータの構築と整備、多方面から分析を進めています。\n\n社会階層と社会移動調査（SSM）：1975, 1985ABF, 1995AB, 2005, 2015\n日本版総合的社会調査（JGSS）：2000, 2001, 2002, 2003, 2005, 2006, 2008, 2009LCS, 2010, 2012, 2015, 2016, 2017, 2018, 2017G, 2018G, 2021H, 2022H\n東大社研・若年壮年パネル調査（JLPS）：2007, 2011, 2019\n全国家族調査（NFRJ）：1998, 2001, 2003, 2008, 2018\n社会階層と社会意識調査（SSP）：2010-I、2015\n教育・社会階層・社会移動全国調査（ESSM）：2013\n職業移動と経歴調査（OMCH）：1981, 1983, 1991\n世代とジェンダー調査（GSS）：2004"
+  },
+  {
+    "objectID": "harmonization.html#文献",
+    "href": "harmonization.html#文献",
+    "title": "Harmonization",
+    "section": "文献",
+    "text": "文献\n麦山亮太・平松誠・コンアラン・那須蘭太郎・吉田航，2025，「社会調査データの統合による二次分析研究の刷新：作業手順と今後の調査実施に向けた示唆」SSJ Data Archive Research Paper Series. 96. 東京大学社会科学研究所附属社会調査・データアーカイブ研究センター．"
   },
   {
     "objectID": "lecture.html",
@@ -1460,7 +1488,7 @@
     "href": "students.html#研究生希望の学生へ",
     "title": "大学院進学・研究生希望の学生の方へ",
     "section": "研究生希望の学生へ",
-    "text": "研究生希望の学生へ\n現在、研究生の受け入れは私の専門と研究関心が合致している場合に限り認める方針としています。\n\n研究生制度について\n大学院への進学を考える場合には、すぐに大学院の入学試験を受けるのではなく研究生制度を利用して（最低でも）1年間は学部で基礎的な勉強をして入学試験の準備をするという選択肢もあります。\n研究生の出願期間は毎年1月と3月に設けられています。在留資格などの関係から、余裕を持って書類等の準備をされることをおすすめします。詳しくは学習院大学のAdmissionのページを参照してください。\n研究生になったとしても大学院に自動的に進学できるわけではなく、大学院入試を受験しなければなりません。また、本学の研究生を経験したことによって有利に扱われるということもありません。くれぐれも注意してください。大学院受験に際しての注意点は上記「大学院（修士課程）入学希望の学生へ」を参照してください。\n私を指導教員としたい場合には、本学政治学研究科の利点と欠点をあらかじめ把握したうえで、あらかじめ履歴書と研究計画書を送っていただき、面談希望を申し出てください。研究計画書などを拝見して、問題関心やこれまでの勉強内容などをお伺いして、最終的に私が研究指導できる範囲であると判断すれば、受け入れを内諾します。ただし、内諾したとしても、教授会を経て受入れが認められない可能性がないとは言い切れません。選考結果が出るのを待ってください。\n\n\n外国籍出願者の場合の受け入れ条件\n政治学科では日本語能力試験（JLPT）でN2以上の成績を取得している必要があります。N1以上の成績を有していればなおよいです。日本ではほとんどの場所で日本語のコミュニケーションを取ることが求められるので、日本語はできるに越したことはないです。とはいえ、もちろん重要なのは語学力よりも研究能力です。\nコミュニケーションを取る際には日本語のほかに英語でもよいですが、私自身はあまり英語がうまいわけではないのでご承知おきください。なお、政治学科の授業は日本語で行われるものがほとんどです。\n\n\n受け入れ後の指導方針\n基本的にはご自身の関心に即した授業を取っていただき、ご自身で勉強を進めていただくというふうになります。個別相談の希望があれば適宜応じます。\n私が担当する「社会学III」「社会学IV」「社会学演習」は必ず履修してください。また、政治学科で開講される「社会統計学I」「社会統計学II」はぜひ履修してください。\n私の担当する授業のうち「政治学科基礎演習I」「政治学科基礎演習II」は1年生用の授業なので、履修はできません。\nそのほかには、たとえば以下のような科目の履修を検討してもよいかもしれません。\n\n法学部政治学科「社会学I」「社会学II」\n法学部政治学科「社会心理学I」「社会心理学II」\n法学部政治学科「社会政策論I」「社会政策論II」\n\nご自身の勉強もあると思いますので、多くとも週4–5コマくらいに抑えるのがよいと思います。"
+    "text": "研究生希望の学生へ\n現在、研究生の受け入れは私の専門と研究関心が合致している場合に限り認める方針としています。また、私の担当学生が多い場合には受け入れの余裕がなくお断りする場合があります。ご了承ください。\n\n研究生制度について\n大学院への進学を考える場合には、すぐに大学院の入学試験を受けるのではなく研究生制度を利用して（最低でも）1年間は学部で基礎的な勉強をして入学試験の準備をするという選択肢もあります。\n研究生の出願期間は毎年1月と3月に設けられています。在留資格などの関係から、余裕を持って書類等の準備をされることをおすすめします。詳しくは学習院大学のAdmissionのページを参照してください。\n研究生になったとしても大学院に自動的に進学できるわけではなく、大学院入試を受験しなければなりません。また、本学の研究生を経験したことによって有利に扱われるということもありません。くれぐれも注意してください。大学院受験に際しての注意点は上記「大学院（修士課程）入学希望の学生へ」を参照してください。\n私を指導教員としたい場合には、本学政治学研究科の利点と欠点をあらかじめ把握したうえで、あらかじめ履歴書と研究計画書を送っていただき、面談希望を申し出てください。研究計画書などを拝見して、問題関心やこれまでの勉強内容などをお伺いして、最終的に私が研究指導できる範囲であると判断すれば、受け入れを内諾します。ただし、内諾したとしても、教授会を経て受入れが認められない可能性がないとは言い切れません。選考結果が出るのを待ってください。\n\n\n外国籍出願者の場合の受け入れ条件\n政治学科では日本語能力試験（JLPT）でN2以上の成績を取得している必要があります。N1以上の成績を有していればなおよいです。日本ではほとんどの場所で日本語のコミュニケーションを取ることが求められるので、日本語はできるに越したことはないです。とはいえ、もちろん重要なのは語学力よりも研究能力です。\nコミュニケーションを取る際には日本語のほかに英語でもよいですが、私自身はあまり英語がうまいわけではないのでご承知おきください。なお、政治学科の授業は日本語で行われるものがほとんどです。\n\n\n受け入れ後の指導方針\n基本的にはご自身の関心に即した授業を取っていただき、ご自身で勉強を進めていただくというふうになります。個別相談の希望があれば適宜応じます。\n私が担当する「社会学III」「社会学IV」「社会学演習」は必ず履修してください。また、政治学科で開講される「社会統計学I」「社会統計学II」はぜひ履修してください。\n私の担当する授業のうち「政治学科基礎演習I」「政治学科基礎演習II」は1年生用の授業なので、履修はできません。\nそのほかには、たとえば以下のような科目の履修を検討してもよいかもしれません。\n\n法学部政治学科「社会学I」「社会学II」\n法学部政治学科「社会心理学I」「社会心理学II」\n法学部政治学科「社会政策論I」「社会政策論II」\n\nご自身の勉強もあると思いますので、多くとも週4–5コマくらいに抑えるのがよいと思います。"
   },
   {
     "objectID": "r.html",
