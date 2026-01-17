@@ -15,22 +15,23 @@ Other research publications can also be found on the following pages.
 <!---- 
 Mugiyama, Ryota. 2026. "Gender Role Attitudes and Transition to Marriage and Marital Parenthood in Japan." *Population Research and Policy Review.*
 
-Uchikoshi, Fumiya\*, Ryota Mugiyama\*, Shohei Yoda, and James M. Raymo. 2026. "[Trends in Occupational Gender Segregation in Japan, 1980--2020 (with Fumiya Uchikoshi) Revisiting the Relationship between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan]." *Population and Development Review.* Advance Access. \* Equal authorship.
-
 Mugiyama, Ryota and Kohei Toyonaga. 2026. "Changing Regional University Availability and Inequality of Educational Opportunity in Japan." *European Sociological Review.* Advance Access.
 
-Mugiyama, Ryota and Aguru Ishibashi. "Multigenerational Perspective on Trends in the Inequality of Educational Opportunity in Japan." *European Sociological Review."
+Mugiyama, Ryota and Aguru Ishibashi. "Multigenerational Perspective on Trends in the Inequality of Educational Opportunity in Japan." *European Sociological Review.*
 
 Mugiyama, Ryota. "Social Origin Earnings Gaps in Japan: Differential Effects by Class Destination." *Research in Social Stratification and Mobility.*
+
+Uchikoshi, Fumiya, Ryota Mugiyama, Shohei Yoda, and James M. Raymo. 2026. "[Trends in Occupational Gender Segregation in Japan, 1980--2020 (with Fumiya Uchikoshi) Revisiting the Relationship between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan](https://doi.org/10.1111/padr.70050)." *Population and Development Review.* Advance Access.
+
 --->
- 
+
 Mugiyama, Ryota and Kyoko Komatsu. 2025. "[More Than Usage: Expanded Socioeconomic Inequality in Access to Remote Work after the COVID-19 in Japan](https://doi.org/10.1093/ser/mwaf072)." *Socio-Economic Review.* Advance Access. 
 
 - [Press release (in Japanese)](https://www.univ.gakushuin.ac.jp/about/press/31246.html)
 
 Mogi, Ryohei\*, Ryota Mugiyama\*, and Alyce Raybould\*. 2025. "[Exposure to Non-partnership and Fertility Desires among Childless Population in Japan](https://doi.org/10.1093/sf/soaf123)." *Social Forces.* Advance Access. \*Equal authorship. 
 
-- Replication code is available in [my GitHub page](https://github.com/ryotamugiyama/Mogi_Mugiyama_Raybould_SF2025).
+- Replication code is available on [my GitHub page](https://github.com/ryotamugiyama/Mogi_Mugiyama_Raybould_SF2025).
 - [Press release (in Japanese)](https://www.univ.gakushuin.ac.jp/about/press/31092.html)
 - [Press release (in English, Catalan, and Spanish)](https://www.upf.edu/web/focus/w/study-involving-upf-analyses-explores-how-having-a-partner-determines-changes-in-fertility)
 
@@ -57,7 +58,8 @@ Mugiyama, Ryota and Kohei Toyonaga. 2022. "[Role of Cohort Size in Trends in Cla
 <!--- 
 小黒恵・打越文弥・麦山亮太・寺本えりか・豊永耕平，「学校基本調査学科系統分類の国際標準教育分類への再コーディング ：STEM分野を事例として」『理論と方法』
 麦山亮太・林愛子，2026，「専攻間賃金格差の男女比較分析：年齢による違いに着目して」『日本労働研究雑誌』
-小松恭子・麦山亮太，2026，「1980～2020 年の日本の労働市場におけるタスク分布の変化：産業構造の変化とICT 導入の影響」『日本労働研究雑誌』
+
+小松恭子・麦山亮太，2026，「1980～2020年の日本の労働市場におけるタスク分布の変化：産業構造の変化とICT 導入の影響」『日本労働研究雑誌』
 --->
 
 麦山亮太・大里蒼一郎，2024，「[地域の図書館普及が子どもの学習時間に与える影響とその階層差](https://doi.org/10.11218/ojjams.39.19)」『理論と方法』39(1): 19--34．

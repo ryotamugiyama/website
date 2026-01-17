@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -70,14 +70,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../website.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-9344fb9851b4da3cab95007ef9d770dc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-f245066ca199b7326ac6b360085ddf3a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -121,6 +122,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Ryota Mugiyama</span>
     </a>
@@ -230,7 +233,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>標題の通りです。ご使用は自己責任でお願いします。作成に際しては、1995年SSM調査研究会，1995，『SSM産業分類・職業分類(95年版)』を参照しました。</p>
 <p>ミスや不適切な箇所を見つけた方は、ご指摘くださいますようお願いします。</p>
 <p>SPSSを使う場合は<a href="https://www2.rikkyo.ac.jp/web/murase/ssm/job.html">村瀬洋一先生のHP</a>が、Rを使う場合は<a href="https://terasawat.hatenablog.jp/entry/20090607/1244363041">寺沢拓敬先生のHP</a>が、それぞれ参考になります。</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>*** <span class="kw">recode</span> occupation into SSM 8 classification (including no-job) <span class="kw">for</span> stata **</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>*** <span class="kw">recode</span> occupation into SSM 8 classification (including no-job) <span class="kw">for</span> stata **</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>*** 20241122 made <span class="kw">by</span> Ryota Mugiyama *******************************************</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">/******************************************************************</span></span>
@@ -275,7 +278,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>lab val ssmocc occ</span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="co">/*「無職」を職業カテゴリに含めたい場合は以下を追加してください。*/</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> ssmocc = 9 <span class="kw">if</span> occupation == 998</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> ssmocc = 9 <span class="kw">if</span> occupation == 998</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>なお、上記コードでは職業の情報のみを用いて8分類を作成していますが、管理職については、もともとの記載内容を残しておくという目的で、管理職とみなせるような場合でも、管理職ではない職業小分類コードが振られている可能性があります。具体的には、2015年社会階層と社会移動調査研究会，2018，『2015年SSM調査コードブック』2015年社会階層と社会移動調査研究会，p.80に次のような記述があります。</p>
 <blockquote class="blockquote">
 <p>(2)「管理職」のコードについて （以下は原則であり、仕事の内容が管理的としか言えないときは、管理的職業にコードする。ただし、ここでいう「管理」とは部下など人の管理であって、在庫管理や物品管理などは含まないことに注意。）</p>
@@ -293,11 +296,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>・専門的管理職（設計技師長、病院長、学校長など）は、「専門」の方を優先する。</p>
 </blockquote>
 <p>つまり、従業員数30人以上の企業に勤める課長以上であったり、経営者であったとしても、管理職以外のコードが振られているケースがあるということです。もし、これらの人を管理職だとみなすのであれば、上記に加えてさらに次のコードを実行する必要があります。</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>*** 管理職になるべきだが管理職にコードされていない人を管理職に戻す</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>*** 管理職になるべきだが管理職にコードされていない人を管理職に戻す</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>*** 企業規模30人以上で、従業上の地位が経営者・役員もしくは自営業主・自由業者の場合、管理職とする。ただし専門職はそのようにしない</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> ssmocc = 2 <span class="kw">if</span> (status == 1 | status == 7) &amp; (firmsize &gt;= 5 &amp; firmsize &lt;= 10) &amp; ssmocc != 1  </span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>*** 企業規模30人以上で、従業上の地位が正規雇用、非正規雇用、家族従業者で、役職が課長以上の場合、管理職とする。ただし専門職はそのようにしない</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> ssmocc = 2 <span class="kw">if</span> (status &gt;= 2 &amp; status &lt;= 6 | status == 8) &amp; (firmsize &gt;= 5 &amp; firmsize &lt;= 10) &amp; (<span class="bn">title</span> &gt;= 4 &amp; <span class="bn">title</span> &lt;= 6) &amp; ssmocc != 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> ssmocc = 2 <span class="kw">if</span> (status &gt;= 2 &amp; status &lt;= 6 | status == 8) &amp; (firmsize &gt;= 5 &amp; firmsize &lt;= 10) &amp; (<span class="bn">title</span> &gt;= 4 &amp; <span class="bn">title</span> &lt;= 6) &amp; ssmocc != 1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>ただしstatus, firmsize, titleはそれぞれ次のような値が入った変数とします（SSM2015に準拠）。</p>
 <ul>
 <li>status: 従業上の地位（1: 経営者・役員、2: 常時雇用されている一般従業者、3: パート・アルバイト、4: 派遣社員、5: 契約社員・嘱託、6: 臨時雇用、7: 自営業主・自由業者、8: 家族従業者）</li>
@@ -359,13 +362,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

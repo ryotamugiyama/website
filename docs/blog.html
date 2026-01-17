@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9344fb9851b4da3cab95007ef9d770dc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f245066ca199b7326ac6b360085ddf3a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,7 +115,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -144,6 +145,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Ryota Mugiyama</span>
     </a>
@@ -207,7 +210,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(24)</span></div><div class="category" data-category="RmFtaWx5JTIwaW5lcXVhbGl0eQ==">Family inequality <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R2VuZGVyJTIwaW5lcXVhbGl0eQ==">Gender inequality <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGFib3IlMjBtYXJrZXQlMjBpbmVxdWFsaXR5">Labor market inequality <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UXVhbnRpdGF0aXZlJTIwbWV0aG9kcw==">Quantitative methods <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UmVzZWFyY2glMjBtZXRob2Q=">Research method <span class="quarto-category-count">(7)</span></div><div class="category" data-category="U29jaWFsJTIwbW9iaWxpdHk=">Social mobility <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U29jaWFsJTIwc3RyYXRpZmljYXRpb24=">Social stratification <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U3RhdGE=">Stata <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGVhY2hpbmc=">Teaching <span class="quarto-category-count">(4)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(25)</span></div><div class="category" data-category="RmFtaWx5JTIwaW5lcXVhbGl0eQ==">Family inequality <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R2VuZGVyJTIwaW5lcXVhbGl0eQ==">Gender inequality <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGFib3IlMjBtYXJrZXQlMjBpbmVxdWFsaXR5">Labor market inequality <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UXVhbnRpdGF0aXZlJTIwbWV0aG9kcw==">Quantitative methods <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UmVzZWFyY2glMjBtZXRob2Q=">Research method <span class="quarto-category-count">(7)</span></div><div class="category" data-category="U29jaWFsJTIwbW9iaWxpdHk=">Social mobility <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U29jaWFsJTIwc3RyYXRpZmljYXRpb24=">Social stratification <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U3RhdGE=">Stata <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGVhY2hpbmc=">Teaching <span class="quarto-category-count">(5)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -274,7 +277,17 @@ window.Quarto = {
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="UmVzZWFyY2glMjBtZXRob2Q=" data-listing-date-sort="1766847600000" data-listing-file-modified-sort="1766938867484" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="141" data-listing-title-sort="2025年の投稿記録" data-listing-filename-sort="2025-12-28-submissionrecord.qmd">
+<tr data-index="0" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1768575600000" data-listing-file-modified-sort="1768616715022" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="「有意でないといけない」という観念はどこで身につくのか" data-listing-filename-sort="2025-01-17-statisticalsignificance.qmd">
+<td>
+<span class="listing-date">Jan 17, 2026</span>
+</td>
+<td>
+<a href="./blog/2025-01-17-statisticalsignificance.html" class="title listing-title">「有意でないといけない」という観念はどこで身につくのか</a>
+</td>
+
+</tr>
+
+<tr data-index="1" data-categories="UmVzZWFyY2glMjBtZXRob2Q=" data-listing-date-sort="1766847600000" data-listing-file-modified-sort="1766938867484" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="141" data-listing-title-sort="2025年の投稿記録" data-listing-filename-sort="2025-12-28-submissionrecord.qmd">
 <td>
 <span class="listing-date">Dec 28, 2025</span>
 </td>
@@ -284,7 +297,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="1" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1733410800000" data-listing-file-modified-sort="1733451242155" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="150" data-listing-title-sort="ゼミの進め方についての覚え書き" data-listing-filename-sort="2024-12-06-sociology_seminar.qmd">
+<tr data-index="2" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1733410800000" data-listing-file-modified-sort="1733451242155" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="150" data-listing-title-sort="ゼミの進め方についての覚え書き" data-listing-filename-sort="2024-12-06-sociology_seminar.qmd">
 <td>
 <span class="listing-date">Dec 6, 2024</span>
 </td>
@@ -294,7 +307,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="2" data-categories="UmVzZWFyY2glMjBtZXRob2Q=" data-listing-date-sort="1727967600000" data-listing-file-modified-sort="1728009614969" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8" data-listing-title-sort="査読のときに何を見るのか：一例" data-listing-filename-sort="2024-10-04-review.qmd">
+<tr data-index="3" data-categories="UmVzZWFyY2glMjBtZXRob2Q=" data-listing-date-sort="1727967600000" data-listing-file-modified-sort="1728009614969" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8" data-listing-title-sort="査読のときに何を見るのか：一例" data-listing-filename-sort="2024-10-04-review.qmd">
 <td>
 <span class="listing-date">Oct 4, 2024</span>
 </td>
@@ -304,7 +317,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="3" data-categories="UmVzZWFyY2glMjBtZXRob2Q=" data-listing-date-sort="1723302000000" data-listing-file-modified-sort="1727624295643" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="110" data-listing-title-sort="目を通す社会学系雑誌のリスト（2024年版）" data-listing-filename-sort="2024-08-11-journal_list.qmd">
+<tr data-index="4" data-categories="UmVzZWFyY2glMjBtZXRob2Q=" data-listing-date-sort="1723302000000" data-listing-file-modified-sort="1727624295643" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="110" data-listing-title-sort="目を通す社会学系雑誌のリスト（2024年版）" data-listing-filename-sort="2024-08-11-journal_list.qmd">
 <td>
 <span class="listing-date">Aug 11, 2024</span>
 </td>
@@ -314,7 +327,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="4" data-categories="U29jaWFsJTIwbW9iaWxpdHk=" data-listing-date-sort="1697900400000" data-listing-file-modified-sort="1697977031980" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="51" data-listing-title-sort="【読んだ本】Brand, Jennie E. 2023. Overcoming the Odds: The Benefits of Completing College for Unlikely Graduates. RSF." data-listing-filename-sort="2023-10-22-Brand2023.qmd">
+<tr data-index="5" data-categories="U29jaWFsJTIwbW9iaWxpdHk=" data-listing-date-sort="1697900400000" data-listing-file-modified-sort="1697977031980" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="51" data-listing-title-sort="【読んだ本】Brand, Jennie E. 2023. Overcoming the Odds: The Benefits of Completing College for Unlikely Graduates. RSF." data-listing-filename-sort="2023-10-22-Brand2023.qmd">
 <td>
 <span class="listing-date">Oct 22, 2023</span>
 </td>
@@ -324,7 +337,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="5" data-categories="RmFtaWx5JTIwaW5lcXVhbGl0eSUyQ1NvY2lhbCUyMG1vYmlsaXR5" data-listing-date-sort="1697900400000" data-listing-file-modified-sort="1721968139000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="22" data-listing-title-sort="【読んだ本】Kearney, Melissa S. 2023. The Two-Parent Privilege: How Americans Stopped Getting Married and Started Falling Behind. Chicago University Press." data-listing-filename-sort="2023-10-22-Kearney2023.qmd">
+<tr data-index="6" data-categories="RmFtaWx5JTIwaW5lcXVhbGl0eSUyQ1NvY2lhbCUyMG1vYmlsaXR5" data-listing-date-sort="1697900400000" data-listing-file-modified-sort="1721968139000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="22" data-listing-title-sort="【読んだ本】Kearney, Melissa S. 2023. The Two-Parent Privilege: How Americans Stopped Getting Married and Started Falling Behind. Chicago University Press." data-listing-filename-sort="2023-10-22-Kearney2023.qmd">
 <td>
 <span class="listing-date">Oct 22, 2023</span>
 </td>
@@ -334,7 +347,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="6" data-categories="R2VuZGVyJTIwaW5lcXVhbGl0eQ==" data-listing-date-sort="1694098800000" data-listing-file-modified-sort="1697976849413" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="631" data-listing-title-sort="「やさしい経済学」連載（仕事とジェンダー格差）で参照した文献リスト" data-listing-filename-sort="2023-09-08-economics.qmd">
+<tr data-index="7" data-categories="R2VuZGVyJTIwaW5lcXVhbGl0eQ==" data-listing-date-sort="1694098800000" data-listing-file-modified-sort="1697976849413" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="631" data-listing-title-sort="「やさしい経済学」連載（仕事とジェンダー格差）で参照した文献リスト" data-listing-filename-sort="2023-09-08-economics.qmd">
 <td>
 <span class="listing-date">Sep 8, 2023</span>
 </td>
@@ -344,7 +357,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="7" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1660834800000" data-listing-file-modified-sort="1697976905885" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="105" data-listing-title-sort="学生向け：レポートでやるべき（でない）こと" data-listing-filename-sort="2022-08-19-report.qmd">
+<tr data-index="8" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1660834800000" data-listing-file-modified-sort="1697976905885" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="105" data-listing-title-sort="学生向け：レポートでやるべき（でない）こと" data-listing-filename-sort="2022-08-19-report.qmd">
 <td>
 <span class="listing-date">Aug 19, 2022</span>
 </td>
@@ -354,7 +367,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="8" data-categories="Ug==" data-listing-date-sort="1645974000000" data-listing-file-modified-sort="1697976905199" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18" data-listing-title-sort="Rによる社会調査データ分析の手引き" data-listing-filename-sort="2022-02-28-R.qmd">
+<tr data-index="9" data-categories="Ug==" data-listing-date-sort="1645974000000" data-listing-file-modified-sort="1697976905199" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18" data-listing-title-sort="Rによる社会調査データ分析の手引き" data-listing-filename-sort="2022-02-28-R.qmd">
 <td>
 <span class="listing-date">Feb 28, 2022</span>
 </td>
@@ -364,7 +377,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="9" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1640617200000" data-listing-file-modified-sort="1697976904834" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="29" data-listing-title-sort="初年次ゼミで何をする（した）のか：その2" data-listing-filename-sort="2021-12-28-introductory.qmd">
+<tr data-index="10" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1640617200000" data-listing-file-modified-sort="1697976904834" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="29" data-listing-title-sort="初年次ゼミで何をする（した）のか：その2" data-listing-filename-sort="2021-12-28-introductory.qmd">
 <td>
 <span class="listing-date">Dec 28, 2021</span>
 </td>
@@ -374,7 +387,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="10" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1626534000000" data-listing-file-modified-sort="1697975809985" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="99" data-listing-title-sort="初年次ゼミで何をする（した）のか" data-listing-filename-sort="2021-07-18-introductory.qmd">
+<tr data-index="11" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1626534000000" data-listing-file-modified-sort="1697975809985" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="99" data-listing-title-sort="初年次ゼミで何をする（した）のか" data-listing-filename-sort="2021-07-18-introductory.qmd">
 <td>
 <span class="listing-date">Jul 18, 2021</span>
 </td>
@@ -384,7 +397,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="11" data-categories="Ug==" data-listing-date-sort="1596380400000" data-listing-file-modified-sort="1697975810433" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134" data-listing-title-sort="RとRStudioをインストールするときのつまづきポイントとその対処法へのリンク" data-listing-filename-sort="2020-08-03-Rinstall.qmd">
+<tr data-index="12" data-categories="Ug==" data-listing-date-sort="1596380400000" data-listing-file-modified-sort="1697975810433" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134" data-listing-title-sort="RとRStudioをインストールするときのつまづきポイントとその対処法へのリンク" data-listing-filename-sort="2020-08-03-Rinstall.qmd">
 <td>
 <span class="listing-date">Aug 3, 2020</span>
 </td>
@@ -394,7 +407,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="12" data-categories="UXVhbnRpdGF0aXZlJTIwbWV0aG9kcw==" data-listing-date-sort="1585062000000" data-listing-file-modified-sort="1697976635722" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="職域分離の指標におけるセレクションと解釈をめぐる問題" data-listing-filename-sort="2020-03-25-segregation.qmd">
+<tr data-index="13" data-categories="UXVhbnRpdGF0aXZlJTIwbWV0aG9kcw==" data-listing-date-sort="1585062000000" data-listing-file-modified-sort="1697976635722" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="職域分離の指標におけるセレクションと解釈をめぐる問題" data-listing-filename-sort="2020-03-25-segregation.qmd">
 <td>
 <span class="listing-date">Mar 25, 2020</span>
 </td>
@@ -404,7 +417,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="13" data-categories="UmVzZWFyY2glMjBtZXRob2Q=" data-listing-date-sort="1556204400000" data-listing-file-modified-sort="1714092012000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="学振PD (社会科学) の申請書を公開します" data-listing-filename-sort="2019-04-26-gakushinPD.qmd">
+<tr data-index="14" data-categories="UmVzZWFyY2glMjBtZXRob2Q=" data-listing-date-sort="1556204400000" data-listing-file-modified-sort="1714092012000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="学振PD (社会科学) の申請書を公開します" data-listing-filename-sort="2019-04-26-gakushinPD.qmd">
 <td>
 <span class="listing-date">Apr 26, 2019</span>
 </td>
@@ -414,7 +427,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="14" data-categories="U3RhdGE=" data-listing-date-sort="1527346800000" data-listing-file-modified-sort="1697975772811" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="133" data-listing-title-sort="Stataで完全失業率の推移を作図する手順" data-listing-filename-sort="2018-05-27-estatstata.qmd">
+<tr data-index="15" data-categories="U3RhdGE=" data-listing-date-sort="1527346800000" data-listing-file-modified-sort="1697975772811" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="133" data-listing-title-sort="Stataで完全失業率の推移を作図する手順" data-listing-filename-sort="2018-05-27-estatstata.qmd">
 <td>
 <span class="listing-date">May 27, 2018</span>
 </td>
@@ -424,7 +437,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="15" data-categories="UXVhbnRpdGF0aXZlJTIwbWV0aG9kcw==" data-listing-date-sort="1518879600000" data-listing-file-modified-sort="1697976635719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="141" data-listing-title-sort="おすすめの計量分析の教科書（社会学向け）" data-listing-filename-sort="2018-02-18-quantitativemethods.qmd">
+<tr data-index="16" data-categories="UXVhbnRpdGF0aXZlJTIwbWV0aG9kcw==" data-listing-date-sort="1518879600000" data-listing-file-modified-sort="1697976635719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="141" data-listing-title-sort="おすすめの計量分析の教科書（社会学向け）" data-listing-filename-sort="2018-02-18-quantitativemethods.qmd">
 <td>
 <span class="listing-date">Feb 18, 2018</span>
 </td>
@@ -434,7 +447,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="16" data-categories="UmVzZWFyY2glMjBtZXRob2QlMkNTb2NpYWwlMjBzdHJhdGlmaWNhdGlvbg==" data-listing-date-sort="1517842800000" data-listing-file-modified-sort="1697976974077" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44" data-listing-title-sort="感想メモ：（階層）研究に必要なことは何か" data-listing-filename-sort="2018-01-20-stratification.qmd">
+<tr data-index="17" data-categories="UmVzZWFyY2glMjBtZXRob2QlMkNTb2NpYWwlMjBzdHJhdGlmaWNhdGlvbg==" data-listing-date-sort="1517842800000" data-listing-file-modified-sort="1697976974077" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44" data-listing-title-sort="感想メモ：（階層）研究に必要なことは何か" data-listing-filename-sort="2018-01-20-stratification.qmd">
 <td>
 <span class="listing-date">Feb 6, 2018</span>
 </td>
@@ -444,7 +457,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="17" data-categories="TGFib3IlMjBtYXJrZXQlMjBpbmVxdWFsaXR5" data-listing-date-sort="1517842800000" data-listing-file-modified-sort="1697976964864" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="152" data-listing-title-sort="Job (in)stability or job (in)security?：「安定性」の使い分けに関するメモ）" data-listing-filename-sort="2018-02-06-jobstability.qmd">
+<tr data-index="18" data-categories="TGFib3IlMjBtYXJrZXQlMjBpbmVxdWFsaXR5" data-listing-date-sort="1517842800000" data-listing-file-modified-sort="1697976964864" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="152" data-listing-title-sort="Job (in)stability or job (in)security?：「安定性」の使い分けに関するメモ）" data-listing-filename-sort="2018-02-06-jobstability.qmd">
 <td>
 <span class="listing-date">Feb 6, 2018</span>
 </td>
@@ -454,7 +467,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="18" data-categories="UmVzZWFyY2glMjBtZXRob2Q=" data-listing-date-sort="1497193200000" data-listing-file-modified-sort="1697976701745" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50" data-listing-title-sort="感想メモ：Sociology as a Population Science by John H. Goldthorpe (2015)" data-listing-filename-sort="2017-06-12-populationscience.qmd">
+<tr data-index="19" data-categories="UmVzZWFyY2glMjBtZXRob2Q=" data-listing-date-sort="1497193200000" data-listing-file-modified-sort="1697976701745" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50" data-listing-title-sort="感想メモ：Sociology as a Population Science by John H. Goldthorpe (2015)" data-listing-filename-sort="2017-06-12-populationscience.qmd">
 <td>
 <span class="listing-date">Jun 12, 2017</span>
 </td>
@@ -464,7 +477,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="19" data-categories="UXVhbnRpdGF0aXZlJTIwbWV0aG9kcw==" data-listing-date-sort="1497193200000" data-listing-file-modified-sort="1697976980326" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1152" data-listing-title-sort="感想メモ：Young (2009) 「社会学研究におけるモデルの不確実性」" data-listing-filename-sort="2017-08-19-young2009.qmd">
+<tr data-index="20" data-categories="UXVhbnRpdGF0aXZlJTIwbWV0aG9kcw==" data-listing-date-sort="1497193200000" data-listing-file-modified-sort="1697976980326" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1152" data-listing-title-sort="感想メモ：Young (2009) 「社会学研究におけるモデルの不確実性」" data-listing-filename-sort="2017-08-19-young2009.qmd">
 <td>
 <span class="listing-date">Jun 12, 2017</span>
 </td>
@@ -474,7 +487,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="20" data-categories="UmVzZWFyY2glMjBtZXRob2Q=" data-listing-date-sort="1487516400000" data-listing-file-modified-sort="1697976701742" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="14" data-listing-title-sort="学振DC（社会科学）の申請書を公開します" data-listing-filename-sort="2017-02-20-gakushinDC.qmd">
+<tr data-index="21" data-categories="UmVzZWFyY2glMjBtZXRob2Q=" data-listing-date-sort="1487516400000" data-listing-file-modified-sort="1697976701742" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="14" data-listing-title-sort="学振DC（社会科学）の申請書を公開します" data-listing-filename-sort="2017-02-20-gakushinDC.qmd">
 <td>
 <span class="listing-date">Feb 20, 2017</span>
 </td>
@@ -484,7 +497,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="21" data-categories="UXVhbnRpdGF0aXZlJTIwbWV0aG9kcw==" data-listing-date-sort="1478876400000" data-listing-file-modified-sort="1697976991647" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="836" data-listing-title-sort="時間による効果の変化をモデリングする" data-listing-filename-sort="2016-11-12-timevariant.qmd">
+<tr data-index="22" data-categories="UXVhbnRpdGF0aXZlJTIwbWV0aG9kcw==" data-listing-date-sort="1478876400000" data-listing-file-modified-sort="1697976991647" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="836" data-listing-title-sort="時間による効果の変化をモデリングする" data-listing-filename-sort="2016-11-12-timevariant.qmd">
 <td>
 <span class="listing-date">Nov 12, 2016</span>
 </td>
@@ -494,7 +507,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="22" data-categories="UXVhbnRpdGF0aXZlJTIwbWV0aG9kcyUyQ1NvY2lhbCUyMHN0cmF0aWZpY2F0aW9u" data-listing-date-sort="1459954800000" data-listing-file-modified-sort="1732332456644" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="336" data-listing-title-sort="SSM職業小分類（追加コード含む）をSSM職業8分類に変換するStataシンタックス" data-listing-filename-sort="2016-04-07-ssmocc8.qmd">
+<tr data-index="23" data-categories="UXVhbnRpdGF0aXZlJTIwbWV0aG9kcyUyQ1NvY2lhbCUyMHN0cmF0aWZpY2F0aW9u" data-listing-date-sort="1459954800000" data-listing-file-modified-sort="1732332456644" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="336" data-listing-title-sort="SSM職業小分類（追加コード含む）をSSM職業8分類に変換するStataシンタックス" data-listing-filename-sort="2016-04-07-ssmocc8.qmd">
 <td>
 <span class="listing-date">Apr 7, 2016</span>
 </td>
@@ -504,7 +517,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="23" data-categories="UXVhbnRpdGF0aXZlJTIwbWV0aG9kcw==" data-listing-date-sort="1454166000000" data-listing-file-modified-sort="1697976635695" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="51" data-listing-title-sort="有意水準を示す*印をつけるExcel関数" data-listing-filename-sort="2016-01-31-excel_star.qmd">
+<tr data-index="24" data-categories="UXVhbnRpdGF0aXZlJTIwbWV0aG9kcw==" data-listing-date-sort="1454166000000" data-listing-file-modified-sort="1697976635695" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="51" data-listing-title-sort="有意水準を示す*印をつけるExcel関数" data-listing-filename-sort="2016-01-31-excel_star.qmd">
 <td>
 <span class="listing-date">Jan 31, 2016</span>
 </td>
@@ -569,13 +582,14 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
