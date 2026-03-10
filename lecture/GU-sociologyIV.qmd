@@ -1,7 +1,7 @@
 ---
 title: "2021-09--　学習院大学法学部「社会学IV」"
 author: "Ryota Mugiyama"
-date: "2021-09-01"
+date: "2026-02-18"
 image: ../images/website.jpg
 ---
 
@@ -28,96 +28,123 @@ image: ../images/website.jpg
 
 本授業では、上記3つの問題それぞれについて、実証研究の蓄積を概観することを通じて、社会学、および社会階層研究の視点から社会の不平等を捉えるための視点を身につけることを目指す。また、上記3つの問題に関して、欧米を中心に確認されてきた動向が日本においてはどの程度確認されるのかといった点についても、その成果を紹介する。これを通じて、日本の不平等の位置づけを国際的な視点から理解するとともに、不平等がいかにして生じるのか、そのメカニズムを理解することを目指す。
 
-1.  ガイダンス
+## 授業内容
 
-2.  結果の不平等（1）：不平等の拡大
+### 1.  不平等の拡大
 
-    1.  結果の不平等の測定
+1.  結果の不平等の測定
+2.  所得と富の不平等：国際比較とトレンド
+3.  富裕層と貧困層
 
-    2.  所得と富の不平等：国際比較とトレンド
+参考文献（一部）
 
-    3.  富裕層と貧困層
+- WID.World. 2026. *World Inequality Report 2026.* http://wir2026.wid.world/
+- Atkinson, Anthony B. 2015. *Inequality: What Can Be Done?* Harvard University Press.（山形浩生・森本正史訳，2015，『21世紀の不平等』東洋経済新報社．）
+- Hao, Lingxin and Daniel Q Naiman. 2010. *Assessing Inequality.* Sage.
 
-3.  結果の不平等（2）：不平等の拡大のメカニズム
+### 2.  不平等拡大のメカニズム
 
-    1.  なぜ不平等が拡大したのか：アメリカの場合
+1.  なぜ不平等が拡大したのか：アメリカの場合
+2.  日本の不平等の実態とメカニズム
 
-    2.  日本の不平等の実態とメカニズム
+参考文献（一部）
 
-4.  結果の不平等（3）：階層間格差と不平等の帰結
+- Goldin, Claudia Dale, and Lawrence F. Katz. 2008. *The Race between Education and Technology.* Harvard University Press.
+- Blanchard, Oliver and Dani Rodrik. 2021. *Combating inequality: Rethinking Government’s Role.* MIT Press.（月谷真紀訳，2022，『格差と闘え：政府の役割を再検討する』慶應義塾大学出版会．）
+- Rosenfeld, Jake. 2021. *You're Paid What You're Worth: And Other Myths of the Modern Economy.* Harvard University Press. （川添節子訳，2022，『給料はあなたの価値なのか：賃金と経済にまつわる神話を解く』みすず書房．）
+- 森口千晶，2017，「日本は「格差社会」になったのか：比較経済史にみる日本の所得格差」『経済研究』68(2): 169-189.
+- 白波瀬佐和子，2009，『日本の不平等を考える：少子高齢社会の国際比較』東京大学出版会．
 
-    1.  階層の測定
+### 3.  階層間格差と不平等の帰結
 
-    2.  階層間格差：健康と家族形成
+1.  階層の測定
+2.  階層間格差：健康と家族形成
+3.  結果の不平等の帰結
 
-    3.  結果の不平等の帰結
+参考文献（一部）
 
-5.  結果の不平等（4）：階層分離と認識のずれ
+- Berkman, Lisa F., Ichiro Kawachi, and Glymour M. Maria eds. 2014. *Social Epidemiology.* Oxford University Press.（高尾総司・藤原武男・近藤尚己監訳，2017，『社会疫学』大修館書店．）
+- Hällsten, Martin, and Max Thaning. 2022. "Wealth as One of the ‘Big Four’ SES Dimensions in Intergenerational Transmissions." *Social Forces* 100(4):1533–60.
+- Link, Bruce G., and Jo Phelan. 1995. "Social Conditions As Fundamental Causes of Disease." *Journal of Health and Social Behavior* 80–94.
+- Case, Anne, and Angus Deaton. 2020. *Deaths of Despair and the Future of Capitalism.* Princeton University Press.（松本裕訳，『絶望死のアメリカ：資本主義がめざすべきもの』みすず書房．）
+- McLanahan, Sara. 2004. "Diverging Destinies: How Children Are Faring Under the Second Demographic Transition." *Demography* 41(4):607–27.
+- Wilkinson, Richard, and Kate Pickett. 2009. *The Spirit Level: Why Greater Equality Makes Societies Stronger.* Bloomsbury Press.（酒井泰介訳，2010，『平等社会：経済成長に代わる、次の目標』東洋経済新報社．）
+- Corak, Miles. 2013. "Income Inequality, Equality of Opportunity, and Intergenerational Mobility." *Journal of Economic Perspectives* 27(3):79–102.
+- Putnam, Robert D. 2015. Our Kids: The American Dream in Crisis. Simon & Schuster.（柴内康文訳，2017，『われらの子ども：米国における機会格差の拡大』創元社．）
 
-    1.  不平等と階層分離
+### 4.  階層分離と認識のずれ
 
-    2.  客観的位置と主観的認識のずれ
+1.  不平等と階層分離
+2.  客観的位置と主観的認識のずれ
+3.  不平等に関する価値観
 
-    3.  不平等に関する価値観
+参考文献（一部）
 
-6.  機会の不平等（1）：世代間移動
+### 5.  機会の不平等（1）：世代間移動
 
-    1.  社会移動の測定
+1.  社会移動の測定
+2.  職業からみる世代間移動
+3.  所得からみる世代間移動
 
-    2.  職業からみる世代間移動
+参考文献（一部）
 
-    3.  所得からみる世代間移動
+- Heath, Anthony and Yaojun Li. 2023. *Social Mobility*. Polity.
+- Connelly, Roxanne, Vernon Gayle, and Paul S. Lambert. 2016. "A Review of Occupation-Based Social Classifications for Social Survey Research." *Methodological Innovations* 9:1–14.
+- Chetty, Raj, Nathaniel Hendren, Patrick Kline, Emmanuel Saez, and Nicholas Turner. 2014. “Is the United States Still a Land of Opportunity? Recent Trends in Intergenerational Mobility.” American Economic Review 104(5):141–47.
+- 原純輔・盛山和夫，1999，『社会階層：豊かさのなかの不平等』東京大学出版会．
+- 平沢和司，2021，『格差の社会学入門［第2版］：学歴と階層から考える』北海道大学出版会．
 
-7.  機会の不平等（2）：近代化仮説と地位達成過程
+### 6.  機会の不平等（2）：近代化仮説と地位達成過程
 
-    1.  近代化仮説
+1.  近代化仮説
+2.  地位達成過程
+3.  日本の社会移動のトレンド
 
-    2.  地位達成過程
+参考文献（一部）
 
-    3.  日本の社会移動のトレンド
+- Blau, Peter M., and Otis Dudley Duncan. 1967. *The American Occupational Structure.* New York: Wiley.
+- Treiman, Donald J. 1970. "Industrialization and Social Stratification." *Sociological Inquiry* 40(2):207–34.
+- Erikson, Robert, and John H. Goldthorpe. 1992. *The Constant Flux: A Study of Class Mobility in Industrial Societies.* Oxford: Clarendon Press.
+- Breen, Richard, Ruud Luijkx, Walter Müller, and Reinhard Pollak. 2009. "Nonpersistent Inequality in Educational Attainment: Evidence from Eight European Countries." *American Journal of Sociology* 114(5):1475–1521.
+- Breen, Richard, and Walter Müller, eds. 2020. *Education and Intergenerational Social Mobility in Europe and the United States.* Stanford, CA: Stanford University Press.
+- Hertel, Florian R., and Olaf Groh-Samberg. 2019. "The Relation between Inequality and Intergenerational Class Mobility in 39 Countries." *American Sociological Review* 84(6):1099–1133.
+- DiPrete, Thomas A., and Brittany N. Fox-Williams. 2021. "The Relevance of Inequality Research in Sociology for Inequality Reduction." *Socius* 7:23780231211020199.
+- 中村高康・三輪哲・石田浩編，2021，『少子高齢社会の階層構造1：人生初期の階層構造』東京大学出版会．
+- 豊永耕平，2023，『学歴獲得の不平等：親子の進路選択と社会階層』勁草書房．
 
-8.  機会の不平等（3）：教育機会の不平等
+### 7.  機会の不平等（3）：教育機会の不平等
 
-    1.  トレンドをめぐる議論
+1.  トレンドをめぐる議論
+2.  教育機会の不平等のメカニズム
+3.  遺伝か環境か
 
-    2.  教育機会の不平等のメカニズム
+### 8.  機会の不平等（4）：労働市場と機会の不平等
 
-    3.  遺伝か環境か
+1.  教育と到達階層の関係：メカニズム
+2.  日本の雇用慣行と世代内移動
+3.  出身階層の影響力の再検討
 
-9.  機会の不平等（4）：労働市場と機会の不平等
+### 9. ジェンダー不平等
 
-    1.  教育と到達階層の関係：メカニズム
+1.  ジェンダーの視点と不平等
+2.  ジェンダー不平等：国際比較とトレンド
+3.  日本のジェンダー不平等のトレンド
 
-    2.  日本の雇用慣行と世代内移動
+### 10. 教育とジェンダー
 
-    3.  出身階層の影響力の再検討
+1.  教育達成の男女差
+2.  性別専攻分離の測定
+3.  性別専攻分離のメカニズム
 
-10. 属性による不平等（1）：ジェンダー不平等
+### 11. 労働市場とジェンダー
 
-    1.  ジェンダーの視点と不平等
+1.  賃金格差の原因を探る：要因分解
+2.  仕事の違いを測定する：性別職域分離
+3.  採用差別と評価のバイアス
 
-    2.  ジェンダー不平等：国際比較とトレンド
+### 12. 家族形成とジェンダー
 
-    3.  日本のジェンダー不平等のトレンド
+1.  出産・育児と男女のキャリア
+2.  性別役割分業と結婚・出産
 
-11. 属性による不平等（2）：教育とジェンダー
-
-    1.  教育達成の男女差
-
-    2.  性別専攻分離のメカニズム
-
-12. 属性による不平等（3）：労働市場とジェンダー
-
-    1.  賃金格差の原因を探る：要因分解
-
-    2.  仕事の違いを測定する：性別職域分離
-
-    3.  格差の生成過程：採用とキャリア
-
-13. 属性による不平等（4）：家族形成とジェンダー
-
-    1.  出産・育児と男女のキャリア
-
-    2.  性別役割分業と結婚
-
-14. まとめ
+### 13. まとめ
