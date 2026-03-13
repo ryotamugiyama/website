@@ -1,6 +1,7 @@
 ---
 title: "社会学英語論文ワークショップ Workshop for writing sociology paper in English"
 author: "Ryota Mugiyama"
+image: ../images/writing_sociology_paper_icon.png
 date: "2026-03-13"
 ---
 
