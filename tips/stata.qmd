@@ -51,7 +51,7 @@ tab copy1
 clonevar copy2 = foreign
 tab copy2
 ```
-![](images/clonevar_stata.png)
+![](../images/clonevar_stata.png)
 
 （2024/11/22）
 
@@ -67,7 +67,7 @@ tab foreign // 値ラベルしか出ない
 tab foreign, nolabel // 値しか出ない
 fre foreign // どちらも出る
 ```
-![](images/fre_stata.png)
+![](../images/fre_stata.png)
 （2024/11/22）
 
 ## pweight, aweight, fweight, iweightの違い
@@ -93,7 +93,7 @@ sysuse nlsw88.dta, clear //Stataのサンプルデータを利用する
 logit never_married i.race i.collgrad i.race#i.collgrad c.age##c.age
 ```
 
-![](images/margins_contrast0.png)
+![](../images/margins_contrast0.png)
 
 黒人（black）と大卒（collgrad）の交互作用項は負であり、白人（white）と比べて黒人の場合は大卒であることが結婚に与える効果は弱いというような結果である。しかし、ロジットモデルにおける係数はあくまで対数オッズであり、具体的に両者の**確率**がどの程度異なるのかはここからはわからない。そこで、人種ごとの大卒の限界効果を計算する：
 
@@ -101,7 +101,7 @@ logit never_married i.race i.collgrad i.race#i.collgrad c.age##c.age
 margins , dydx(collgrad) at(race = (1(1)3))
 ```
 
-![](images/margins_contrast1.png)
+![](../images/margins_contrast1.png)
 
 それぞれ、white, black, otherにおいて大卒であることが非大卒と比べてどの程度結婚確率を上昇させるかを表している。whiteの場合は大卒であれば非大卒と比べて結婚確率が0.092高い。一方、blackの場合は大卒であれば非大卒と比べて結婚確率が0.011低いという結果となっている。
 
@@ -111,7 +111,7 @@ margins , dydx(collgrad) at(race = (1(1)3))
 margins r.race, dydx(collgrad)
 ```
 
-![](images/margins_contrast2.png)
+![](../images/margins_contrast2.png)
 
 前半にはそれぞれblackとwhite、otherとwhiteを対比させたときの検定の結果、後半には差と標準誤差、信頼区間が表示されている。結果は、blackとwhiteとの大卒の限界効果の差は統計的に有意であるということを示している。
 
@@ -153,7 +153,7 @@ varcase _all
 ## destringのtips：カンマの入った文字列を数値列に変換
 
 文字列（string）の変数を数値列に直す、destringというコマンドがある。destring, replaceたいていの場合はうまくいくが、たとえば以下のように、3桁区切りのカンマが入っている場合にはこのコマンドを走らせてもうまく数値列に変換できない。\
-![](images/destring_before-1-768x689.png)
+![](../images/destring_before-1-768x689.png)
 
 この場合は、ignoreというオプションを使うと数値列に変換できる。
 
@@ -161,7 +161,7 @@ varcase _all
 destring, replace ignore(",")
 ```
 
-![](images/destring_after-1-768x685.png)
+![](../images/destring_after-1-768x685.png)
 
 ``` stata
 ,ignore("char")
@@ -270,7 +270,7 @@ graph combine "box.gph" "vioplot.gph" /*並べてみる*/
 
 実際の見た目はこんな感じ。violin plotのほうがぱっとみた時の情報量が多い。デフォルトだと、カーネル密度のなかに箱ひげ図がはいったかたちになる。
 
-![](images/Graph.png)
+![](../images/Graph.png)
 
 （作成日不明→2022/10/09移行）
 

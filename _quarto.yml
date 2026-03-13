@@ -9,16 +9,28 @@ website:
   image: images/website.jpg
   navbar:
     left:
-      - href: index.qmd
-        text: Home
+      - text: "Home"
+        href: index.qmd
       - profile.qmd
       - research.qmd
       - lecture.qmd
+      - text: "Workshop"
+        menu:
+          - text: "社会学英語論文ワークショップ"
+            href: workshop/writing_sociology_paper.qmd
+          - text: "不平等研究に関する輪読会"
+            href: workshop/reading_circle_of_inequality_studies.qmd
       - harmonization.qmd
-      - notes.qmd
-      - stata.qmd
-      - r.qmd
-      - occupation.qmd
+      - text: "Tips"
+        menu:
+          - text: "Notes"
+            href: tips/notes.qmd
+          - text: "Stata"
+            href: tips/stata.qmd
+          - text: "R"
+            href: tips/r.qmd
+          - text: "Occupation"
+            href: tips/occupation.qmd
       - blog.qmd
     background: "primary"
   favicon: website.jpg

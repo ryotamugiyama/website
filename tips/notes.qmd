@@ -5,6 +5,7 @@ date: "2025-08-18"
 
 主に計量分析の手法やプログラムに関するメモをアップロードしていく予定です。
 
+<!---
 ## 論文輪読会レジュメ
 
 論文の輪読会で使ったレジュメを不定期に更新します。
@@ -21,6 +22,7 @@ date: "2025-08-18"
 - [Kim, C. (2025). Culture and Immigrant Selectivity in Shaping Asian American Education: Evidence from Historical Census Data. *American Sociological Review*, 0(0). https://doi.org/10.1177/00031224251325259](notes/resume/2025-05-02-RCIS-mugiyama.pdf)
 
 last update: 2025-08-19
+--->
 
 ## [SSM職歴データのパーソンイヤーデータへの変換](https://github.com/ryotamugiyama/ssm2015personyear)
 

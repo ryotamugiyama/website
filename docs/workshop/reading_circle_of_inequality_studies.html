@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ryota Mugiyama">
-<meta name="dcterms.date" content="2022-02-28">
+<meta name="dcterms.date" content="2025-01-14">
 
-<title>Rによる社会調査データ分析の手引き – Ryota Mugiyama</title>
+<title>不平等研究に関する輪読会 Reading circle of inequality studies – Ryota Mugiyama</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,8 +74,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta name="twitter:title" content="Rによる社会調査データ分析の手引き – Ryota Mugiyama">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="不平等研究に関する輪読会 Reading circle of inequality studies – Ryota Mugiyama">
 <meta name="twitter:image" content="https://mugiyama.github.io/website/website.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -172,19 +171,29 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#研究会趣旨" id="toc-研究会趣旨" class="nav-link active" data-scroll-target="#研究会趣旨">研究会趣旨</a>
+  <ul class="collapse">
+  <li><a href="#目的" id="toc-目的" class="nav-link" data-scroll-target="#目的">目的</a></li>
+  <li><a href="#対象ジャーナルの例" id="toc-対象ジャーナルの例" class="nav-link" data-scroll-target="#対象ジャーナルの例">対象ジャーナルの例</a></li>
+  <li><a href="#進め方" id="toc-進め方" class="nav-link" data-scroll-target="#進め方">進め方</a></li>
+  <li><a href="#開催頻度" id="toc-開催頻度" class="nav-link" data-scroll-target="#開催頻度">開催頻度</a></li>
+  <li><a href="#参加者" id="toc-参加者" class="nav-link" data-scroll-target="#参加者">参加者</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Rによる社会調査データ分析の手引き</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">R</div>
-  </div>
-  </div>
+<h1 class="title">不平等研究に関する輪読会 Reading circle of inequality studies</h1>
+</div>
 
 
 
@@ -200,7 +209,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 28, 2022</p>
+      <p class="date">January 14, 2025</p>
     </div>
   </div>
   
@@ -212,22 +221,60 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>今年度一年間のゼミ、およびそれ以前の授業などを経て、社会学の実証研究論文を書くうえでどのようなことを教えたらよいのか、どのようなところで学生がつまづきやすいのかといった経験が蓄積されてきました。これを踏まえて、来年度以降のゼミなどで使用するための資料を作成しました。せっかくですので、こちらを公開したいと思います。</p>
-<p><img src="images/tebiki.png" class="img-fluid"></p>
-<p>→<a href="https://mugiyama.github.io/seminar_sociology_r/" title="こちら"><strong>こちら</strong></a>からアクセスできます。</p>
-<p>こうした資料を作成した背景には、社会学の計量分析、とりわけ社会調査データの分析について、たんに統計の解説ではなく、問いの立て方、データの加工、結果の解釈、論文の書き方といった実際に論文を書いていくうえで重要となる点まで踏み込んだ教科書が見つからなかったという理由があります。授業で説明をするにしても、口頭で何度も同じことを説明するよりは、教科書のようなものがあったほうが学生にとっても、教員にとっても楽になると考えました。</p>
-<p>使用する統計ソフトウェアをRとしたのは、自分自身は、StataとRはどちらも同じくらい使うのですが、学生が集まってStataを使う環境がないからという実務的な理由と、無料の統計ソフトウェアであれば学生が自分で使ったり勉強してみたいと思ったときや、大学を離れてからも使えるだろうという理由です。</p>
-<p>資料作成にあたって意識したことは以下です。</p>
+<section id="研究会趣旨" class="level2">
+<h2 class="anchored" data-anchor-id="研究会趣旨">研究会趣旨</h2>
+<section id="目的" class="level3">
+<h3 class="anchored" data-anchor-id="目的">目的</h3>
+<p>英文トップジャーナルに最近掲載された論文の内容を紹介し、研究のトレンドを掴んたりアイデアを得たりする。</p>
+</section>
+<section id="対象ジャーナルの例" class="level3">
+<h3 class="anchored" data-anchor-id="対象ジャーナルの例">対象ジャーナルの例</h3>
+<p><strong>General</strong></p>
 <ul>
-<li><p>社会学の計量分析を念頭に置く。</p></li>
-<li><p>社会学のデータ分析の中でもとりわけ、社会調査の個票データの分析に特化する。</p></li>
-<li><p>たんにデータ分析のコードのhow toとするだけではなく、問いの立て方、論文の構成・まとめ方、結果が何を表しているのかといった解釈の部分を含め、論文執筆に役立つようにする。</p></li>
-<li><p>コードについてはtidyverseの利用を前提とする。</p></li>
-<li><p>統計学の知識がなくても（おおまかに）理解できるようにする。難しい説明、難しい手法は避ける。</p></li>
+<li>American Sociological Review</li>
+<li>American Journal of Sociology</li>
+<li>Social Forces</li>
+<li>European Sociological Review</li>
+<li>Sociological Science</li>
+<li>Social Science Research</li>
 </ul>
-<p>資料は（いつまでも）ベータ版であり、不正確な記述などがある可能性があります。来年度以降、都合のつく範囲で少しずつ改訂を重ねていって、より学生にとって役に立つものにしていきたいと思います。</p>
+<p><strong>Subfield</strong></p>
+<ul>
+<li>Demography</li>
+<li>Population and Development Review</li>
+<li>Sociology of Education</li>
+<li>Journal of Marriage and Family</li>
+<li>Gender &amp; Society</li>
+<li>Socio-Economic Review</li>
+<li>Research in Social Stratification and Mobility</li>
+</ul>
+<p>そのほか、Administrative Science Quarterly, Criminology, Social Science &amp; Medicine, Social Networks, Nature Human Behavior, Proceedings of the National Academy of Sciences (PNAS) など</p>
+<p><strong>Method</strong></p>
+<ul>
+<li>Sociological Methods and Research</li>
+<li>Sociological Methodology</li>
+</ul>
+</section>
+<section id="進め方" class="level3">
+<h3 class="anchored" data-anchor-id="進め方">進め方</h3>
+<ol type="1">
+<li>報告担当者は各自、会合までに自分の読みたい論文をspreadsheetに書き込み、googledriveにアップロードする。テーマは広い意味で不平等にかかわるものとする。</li>
+<li>会合では、報告者が15分程度でその論文の内容を紹介する。報告者はレジュメやスライドを準備してもいいし、しなくてもいい。他の参加者は、当該論文を読んできてもいいし、読まなくてもいい。</li>
+<li>内容紹介を受けて、議論する。内容の細かな「批判的読解」よりも、当該の研究がどのような位置づけで、何を明らかにしていて、何が新しいのか、理論や枠組みの応用・発展可能性についてざっくばらんに話すのを主眼とする。</li>
+<li>各回の報告者数はとくに定めない。時間は1人につき40分（15分以内報告 + 25分議論）くらいを目安とする。</li>
+</ol>
+</section>
+<section id="開催頻度" class="level3">
+<h3 class="anchored" data-anchor-id="開催頻度">開催頻度</h3>
+<p>一回につき2人程度が話題提供で、3〜4週間に1回程度。</p>
+</section>
+<section id="参加者" class="level3">
+<h3 class="anchored" data-anchor-id="参加者">参加者</h3>
+<p>随時募集中で、職位などは問いません。社会学分野における不平等に関する研究に関心がある方ならどなたでも。</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

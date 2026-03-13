@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ryota Mugiyama">
-<meta name="dcterms.date" content="2022-02-28">
+<meta name="dcterms.date" content="2026-03-13">
 
-<title>Rによる社会調査データ分析の手引き – Ryota Mugiyama</title>
+<title>社会学英語論文ワークショップ Workshop for writing sociology paper in English – Ryota Mugiyama</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta name="twitter:title" content="Rによる社会調査データ分析の手引き – Ryota Mugiyama">
+<meta name="twitter:title" content="社会学英語論文ワークショップ Workshop for writing sociology paper in English – Ryota Mugiyama">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://mugiyama.github.io/website/website.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -172,19 +172,30 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#概要" id="toc-概要" class="nav-link active" data-scroll-target="#概要">概要</a>
+  <ul class="collapse">
+  <li><a href="#趣旨" id="toc-趣旨" class="nav-link" data-scroll-target="#趣旨">趣旨</a></li>
+  <li><a href="#進め方" id="toc-進め方" class="nav-link" data-scroll-target="#進め方">進め方</a></li>
+  <li><a href="#開催形式" id="toc-開催形式" class="nav-link" data-scroll-target="#開催形式">開催形式</a></li>
+  <li><a href="#開催頻度時間" id="toc-開催頻度時間" class="nav-link" data-scroll-target="#開催頻度時間">開催頻度・時間</a></li>
+  <li><a href="#ご参加希望の方" id="toc-ご参加希望の方" class="nav-link" data-scroll-target="#ご参加希望の方">ご参加希望の方</a></li>
+  </ul></li>
+  <li><a href="#開催記録" id="toc-開催記録" class="nav-link" data-scroll-target="#開催記録">開催記録</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Rによる社会調査データ分析の手引き</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">R</div>
-  </div>
-  </div>
+<h1 class="title">社会学英語論文ワークショップ Workshop for writing sociology paper in English</h1>
+</div>
 
 
 
@@ -200,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 28, 2022</p>
+      <p class="date">March 13, 2026</p>
     </div>
   </div>
   
@@ -212,22 +223,39 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>今年度一年間のゼミ、およびそれ以前の授業などを経て、社会学の実証研究論文を書くうえでどのようなことを教えたらよいのか、どのようなところで学生がつまづきやすいのかといった経験が蓄積されてきました。これを踏まえて、来年度以降のゼミなどで使用するための資料を作成しました。せっかくですので、こちらを公開したいと思います。</p>
-<p><img src="images/tebiki.png" class="img-fluid"></p>
-<p>→<a href="https://mugiyama.github.io/seminar_sociology_r/" title="こちら"><strong>こちら</strong></a>からアクセスできます。</p>
-<p>こうした資料を作成した背景には、社会学の計量分析、とりわけ社会調査データの分析について、たんに統計の解説ではなく、問いの立て方、データの加工、結果の解釈、論文の書き方といった実際に論文を書いていくうえで重要となる点まで踏み込んだ教科書が見つからなかったという理由があります。授業で説明をするにしても、口頭で何度も同じことを説明するよりは、教科書のようなものがあったほうが学生にとっても、教員にとっても楽になると考えました。</p>
-<p>使用する統計ソフトウェアをRとしたのは、自分自身は、StataとRはどちらも同じくらい使うのですが、学生が集まってStataを使う環境がないからという実務的な理由と、無料の統計ソフトウェアであれば学生が自分で使ったり勉強してみたいと思ったときや、大学を離れてからも使えるだろうという理由です。</p>
-<p>資料作成にあたって意識したことは以下です。</p>
-<ul>
-<li><p>社会学の計量分析を念頭に置く。</p></li>
-<li><p>社会学のデータ分析の中でもとりわけ、社会調査の個票データの分析に特化する。</p></li>
-<li><p>たんにデータ分析のコードのhow toとするだけではなく、問いの立て方、論文の構成・まとめ方、結果が何を表しているのかといった解釈の部分を含め、論文執筆に役立つようにする。</p></li>
-<li><p>コードについてはtidyverseの利用を前提とする。</p></li>
-<li><p>統計学の知識がなくても（おおまかに）理解できるようにする。難しい説明、難しい手法は避ける。</p></li>
-</ul>
-<p>資料は（いつまでも）ベータ版であり、不正確な記述などがある可能性があります。来年度以降、都合のつく範囲で少しずつ改訂を重ねていって、より学生にとって役に立つものにしていきたいと思います。</p>
+<section id="概要" class="level2">
+<h2 class="anchored" data-anchor-id="概要">概要</h2>
+<section id="趣旨" class="level3">
+<h3 class="anchored" data-anchor-id="趣旨">趣旨</h3>
+<p>研究成果を国際的に発信するうえで、多くの読者をもつ英文ジャーナルに論文を掲載することは有効な手段の一つです。論文を掲載するためには、問いや方法の適切さもさることながら、これまでの先行研究（literature）の前提を踏まえたうえで、どのように先行研究に貢献するのかといった「パッケージング」も重要となります。しかしながら、国際的な研究動向を前提としない場での研究発表では、必ずしもこうした点について有効な指摘を得られるとは限りません。</p>
+<p>そこで本ワークショップでは、社会学分野において英文国際誌への論文投稿を検討している研究者を対象に、研究のブラッシュアップを図ることを目的とします。分野としては、社会学、あるいはその近接分野の経験的研究を扱うものとします。英文国際誌への論文投稿を前提とした議論に慣れることで、論文掲載にとって必要となる考え方を共有するというのが、ワークショップのもう一つのねらいです。</p>
+</section>
+<section id="進め方" class="level3">
+<h3 class="anchored" data-anchor-id="進め方">進め方</h3>
+<p>毎回、発表者を1名、その発表者が扱うテーマや方法に近い英語論文の執筆経験を持つコメンテーターを1名準備します。コメンテーターを決めるに当たっては、発表者のご希望等も聞きながら決めたいと思います。 発表者は、報告タイトルを事前に共有し、また報告の1週間前には、コメンテーターとオーガナイザーにアブストラクト（200words前後）およびフルペーパーを共有します。このときのフルペーパーは途中経過のもので構いません。</p>
+<p>ワークショップ当日は、まず発表者が20分間で（スライドを使って）論文内容について報告します。この報告については、参加者は事前に発表者の論文を読んでいるわけではないという前提です。 発表後、コメンテーターが10〜20分間程度コメントを行います。コメンテーターは事前に原稿を読んだうえで、論文内容をより良くするためのコメントを行います。コメントに対する発表者のリプライ等が終わったあと、全体での議論に移ります。</p>
+</section>
+<section id="開催形式" class="level3">
+<h3 class="anchored" data-anchor-id="開催形式">開催形式</h3>
+<p>Zoomなどを使ったオンライン形式で行います。</p>
+</section>
+<section id="開催頻度時間" class="level3">
+<h3 class="anchored" data-anchor-id="開催頻度時間">開催頻度・時間</h3>
+<p>発表者とコメンテーターの都合に合わせて、おおむね1〜2ヶ月に1回程度を予定しています。1回あたりの時間は、1時間程度を見込んでいます。</p>
+</section>
+<section id="ご参加希望の方" class="level3">
+<h3 class="anchored" data-anchor-id="ご参加希望の方">ご参加希望の方</h3>
+<p>オーガナイザーまでご連絡ください。</p>
+<p>五十嵐彰（大阪大学）igarashi.a.hus[at]osaka-u.ac.jp</p>
+<p>麦山亮太（学習院大学）ryota.mugiyama[at]gakushuin.ac.jp</p>
+</section>
+</section>
+<section id="開催記録" class="level2">
+<h2 class="anchored" data-anchor-id="開催記録">開催記録</h2>
+<p>Forthcoming</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

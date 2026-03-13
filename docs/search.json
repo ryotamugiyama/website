@@ -7,193 +7,256 @@
     "text": "日々の思いつきを不定期に残しています。2022年9月以前の記事は旧ウェブページから移行させたものです。\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\nMar 11, 2026\n\n\nプレスリリースを出すことについて\n\n\n\n\n\n\nJan 17, 2026\n\n\n「有意でないといけない」という観念はどこで身につくのか\n\n\n\n\n\n\nDec 28, 2025\n\n\n2025年の投稿記録\n\n\n\n\n\n\nDec 6, 2024\n\n\nゼミの進め方についての覚え書き\n\n\n\n\n\n\nOct 4, 2024\n\n\n査読のときに何を見るのか：一例\n\n\n\n\n\n\nAug 11, 2024\n\n\n目を通す社会学系雑誌のリスト（2024年版）\n\n\n\n\n\n\nOct 22, 2023\n\n\n【読んだ本】Brand, Jennie E. 2023. Overcoming the Odds: The Benefits of Completing College for Unlikely Graduates. RSF.\n\n\n\n\n\n\nOct 22, 2023\n\n\n【読んだ本】Kearney, Melissa S. 2023. The Two-Parent Privilege: How Americans Stopped Getting Married and Started Falling Behind. Chicago University Press.\n\n\n\n\n\n\nSep 8, 2023\n\n\n「やさしい経済学」連載（仕事とジェンダー格差）で参照した文献リスト\n\n\n\n\n\n\nAug 19, 2022\n\n\n学生向け：レポートでやるべき（でない）こと\n\n\n\n\n\n\nFeb 28, 2022\n\n\nRによる社会調査データ分析の手引き\n\n\n\n\n\n\nDec 28, 2021\n\n\n初年次ゼミで何をする（した）のか：その2\n\n\n\n\n\n\nJul 18, 2021\n\n\n初年次ゼミで何をする（した）のか\n\n\n\n\n\n\nAug 3, 2020\n\n\nRとRStudioをインストールするときのつまづきポイントとその対処法へのリンク\n\n\n\n\n\n\nMar 25, 2020\n\n\n職域分離の指標におけるセレクションと解釈をめぐる問題\n\n\n\n\n\n\nApr 26, 2019\n\n\n学振PD (社会科学) の申請書を公開します\n\n\n\n\n\n\nMay 27, 2018\n\n\nStataで完全失業率の推移を作図する手順\n\n\n\n\n\n\nFeb 18, 2018\n\n\nおすすめの計量分析の教科書（社会学向け）\n\n\n\n\n\n\nFeb 6, 2018\n\n\n感想メモ：（階層）研究に必要なことは何か\n\n\n\n\n\n\nFeb 6, 2018\n\n\nJob (in)stability or job (in)security?：「安定性」の使い分けに関するメモ）\n\n\n\n\n\n\nJun 12, 2017\n\n\n感想メモ：Sociology as a Population Science by John H. Goldthorpe (2015)\n\n\n\n\n\n\nJun 12, 2017\n\n\n感想メモ：Young (2009) 「社会学研究におけるモデルの不確実性」\n\n\n\n\n\n\nFeb 20, 2017\n\n\n学振DC（社会科学）の申請書を公開します\n\n\n\n\n\n\nNov 12, 2016\n\n\n時間による効果の変化をモデリングする\n\n\n\n\n\n\nApr 7, 2016\n\n\nSSM職業小分類（追加コード含む）をSSM職業8分類に変換するStataシンタックス\n\n\n\n\n\n\nJan 31, 2016\n\n\n有意水準を示す*印をつけるExcel関数\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "stata.html",
-    "href": "stata.html",
+    "objectID": "tips/stata.html",
+    "href": "tips/stata.html",
     "title": "Stata",
     "section": "",
     "text": "Stataで知っておいたら便利かもしれないコードを不定期に更新します。"
   },
   {
-    "objectID": "stata.html#mimrgns-多重代入されたデータで限界効果を計算する",
-    "href": "stata.html#mimrgns-多重代入されたデータで限界効果を計算する",
+    "objectID": "tips/stata.html#mimrgns-多重代入されたデータで限界効果を計算する",
+    "href": "tips/stata.html#mimrgns-多重代入されたデータで限界効果を計算する",
     "title": "Stata",
     "section": "mimrgns: 多重代入されたデータで限界効果を計算する",
     "text": "mimrgns: 多重代入されたデータで限界効果を計算する\n多重代入されたデータを用いてロジスティック回帰分析などを行ったとする。Stataのmarginsコマンドは多重代入されたデータには対応していないため、そのままでは限界効果（Average marginal effectなど）を計算できない。そこで、mimrgnsというパッケージを利用すると限界効果を計算できる。\n参考：Missing Data Part II: Multiple Imputation & Maximum Likelihood\nssc install mimrgns // インストール\n...\n...\nmi estimate: logit y x1 x2 x3\nmimrgns, dydx(*) predict(pr) // 限界効果を計算する\n(2025-09-24)"
   },
   {
-    "objectID": "stata.html#mchange-任意の範囲だけxを動かした場合の限界効果を計算する",
-    "href": "stata.html#mchange-任意の範囲だけxを動かした場合の限界効果を計算する",
+    "objectID": "tips/stata.html#mchange-任意の範囲だけxを動かした場合の限界効果を計算する",
+    "href": "tips/stata.html#mchange-任意の範囲だけxを動かした場合の限界効果を計算する",
     "title": "Stata",
     "section": "mchange: 任意の範囲だけXを動かした場合の限界効果を計算する",
     "text": "mchange: 任意の範囲だけXを動かした場合の限界効果を計算する\n独立変数が連続変数の場合、1単位の変化に対する従属変数の確率の変化のみならず、もう少しいろいろな変化量（e.g. 1SDの変化に対する確率の変化、任意の値から任意の値まで変化したときの確率の変化など）を知りたいと思ったとする。このような場合には、SPost13パッケージに含まれているmchange関数を使うとよい。\nssc install spost13 // インストール\n...\n...\nlogit y x1 x2 x3\nmchange x1 x2\n参考：\n\nLong, J. Scott, and Jeremy Freese. 2014. Regression Models for Categorical Dependent Variables Using Stata, Third Edition. Stata Press.\nUsing the spost13 commands for adjusted predictions and marginal effects with binary dependent variables\n\n(2025-09-24)"
   },
   {
-    "objectID": "stata.html#clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする",
-    "href": "stata.html#clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする",
+    "objectID": "tips/stata.html#clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする",
+    "href": "tips/stata.html#clonevar-変数ラベルと値ラベルの情報を落とさずに変数をコピーする",
     "title": "Stata",
     "section": "clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする",
     "text": "clonevar: 変数ラベルと値ラベルの情報を落とさずに変数をコピーする\ngenerateで変数を作成すると、もとの変数についていた変数ラベルや値ラベルの情報がなくなってしまう。もしそうした情報を残しておきたいのであれば、clonevarを使うとよい。\nsysuse auto, clear\ngenerate copy1 = foreign\ntab copy1\nclonevar copy2 = foreign\ntab copy2\n\n（2024/11/22）"
   },
   {
-    "objectID": "stata.html#fre-変数の数値とラベルを一緒に表示する",
-    "href": "stata.html#fre-変数の数値とラベルを一緒に表示する",
+    "objectID": "tips/stata.html#fre-変数の数値とラベルを一緒に表示する",
+    "href": "tips/stata.html#fre-変数の数値とラベルを一緒に表示する",
     "title": "Stata",
     "section": "fre: 変数の数値とラベルを一緒に表示する",
     "text": "fre: 変数の数値とラベルを一緒に表示する\n度数分布を表示するときによく使うコードがtabulateだが、値ラベルがついている場合にはそれぞれの値が何なのかわからず、変数を加工したりするときに不便である。このような場合には、freという関数を使うと、値と値ラベルがどちらも表示されて便利である。\nssc install fre // インストールする\n\nsysuse auto, clear\ntab foreign // 値ラベルしか出ない\ntab foreign, nolabel // 値しか出ない\nfre foreign // どちらも出る\n （2024/11/22）"
   },
   {
-    "objectID": "stata.html#pweight-aweight-fweight-iweightの違い",
-    "href": "stata.html#pweight-aweight-fweight-iweightの違い",
+    "objectID": "tips/stata.html#pweight-aweight-fweight-iweightの違い",
+    "href": "tips/stata.html#pweight-aweight-fweight-iweightの違い",
     "title": "Stata",
     "section": "pweight, aweight, fweight, iweightの違い",
     "text": "pweight, aweight, fweight, iweightの違い\nStataには4種類のweightのコマンドがあり、いつどれを使うのかマニュアルをみてもいまいちわかりにくい。インターネット上で見つけた授業資料が簡潔によくまとまっているのでメモとしてまとめておく。\npweight: 回帰分析でサンプリングウェイトをつけるときには基本的に常にpweightを使う。\naweight: 記述統計量やクロス集計表などでサンプリングウェイトをつけるときに使う。標準誤差を計算しないような記述的集計を行うときに使うと考えておくとよい。\nfweight: 各observationが表す度数が異なる場合に用いる（たとえば集計表など）。社会調査の個票データを分析するような場合は使うことはない。\niweight: 使ってはいけない。\n（2024/03/27）"
   },
   {
-    "objectID": "stata.html#margins-contrast-限界効果どうしの差の検定",
-    "href": "stata.html#margins-contrast-限界効果どうしの差の検定",
+    "objectID": "tips/stata.html#margins-contrast-限界効果どうしの差の検定",
+    "href": "tips/stata.html#margins-contrast-限界効果どうしの差の検定",
     "title": "Stata",
     "section": "margins, contrast: 限界効果どうしの差の検定",
     "text": "margins, contrast: 限界効果どうしの差の検定\n大卒であると結婚確率が高いことはよく知られている。いま、大卒であることが結婚確率に与える効果が人種（Race）によって異なるのか知りたいとする。このとき、次のようなロジットモデルを推定する。\nsysuse nlsw88.dta, clear //Stataのサンプルデータを利用する\nlogit never_married i.race i.collgrad i.race#i.collgrad c.age##c.age\n\n黒人（black）と大卒（collgrad）の交互作用項は負であり、白人（white）と比べて黒人の場合は大卒であることが結婚に与える効果は弱いというような結果である。しかし、ロジットモデルにおける係数はあくまで対数オッズであり、具体的に両者の確率がどの程度異なるのかはここからはわからない。そこで、人種ごとの大卒の限界効果を計算する：\nmargins , dydx(collgrad) at(race = (1(1)3))\n\nそれぞれ、white, black, otherにおいて大卒であることが非大卒と比べてどの程度結婚確率を上昇させるかを表している。whiteの場合は大卒であれば非大卒と比べて結婚確率が0.092高い。一方、blackの場合は大卒であれば非大卒と比べて結婚確率が0.011低いという結果となっている。\nでは、whiteにおける大卒の限界効果と、blackにおける大卒の限界効果との間には、たしかに差があるといえるのだろうか。これを確かめるときには、margins, contrastを使うことができる。\nmargins r.race, dydx(collgrad)\n\n前半にはそれぞれblackとwhite、otherとwhiteを対比させたときの検定の結果、後半には差と標準誤差、信頼区間が表示されている。結果は、blackとwhiteとの大卒の限界効果の差は統計的に有意であるということを示している。\n前者のmarginsの結果は、Mize, T. D. (2019). Best practices for estimating, interpreting, and presenting nonlinear interaction effects. Sociological Science, 6, 81–117.のTable 3（p.104）の「First Differences」、後者のmargins, contrastの結果は「Second Differences」に、それぞれ対応する。「Second Differences」のほうをStataで計算するときの方法がよくわかっていなかったのだけど、どうやら上記で計算できそうだ。\n（2022/02/08→2022/09/19移行）"
   },
   {
-    "objectID": "stata.html#import-spss-savファイルを読み込むstata-16以降",
-    "href": "stata.html#import-spss-savファイルを読み込むstata-16以降",
+    "objectID": "tips/stata.html#import-spss-savファイルを読み込むstata-16以降",
+    "href": "tips/stata.html#import-spss-savファイルを読み込むstata-16以降",
     "title": "Stata",
     "section": "import spss: savファイルを読み込む（Stata 16以降）",
     "text": "import spss: savファイルを読み込む（Stata 16以降）\nStata 16からsavファイルをラベルを落とさずにStataで読み込むことができるようになっていた。詳しくはこちらのページを参照。\n（作成日不明→2022/10/09移行）"
   },
   {
-    "objectID": "stata.html#rename-lowerすべての変数名を小文字にする",
-    "href": "stata.html#rename-lowerすべての変数名を小文字にする",
+    "objectID": "tips/stata.html#rename-lowerすべての変数名を小文字にする",
+    "href": "tips/stata.html#rename-lowerすべての変数名を小文字にする",
     "title": "Stata",
     "section": "rename *, lower：すべての変数名を小文字にする",
     "text": "rename *, lower：すべての変数名を小文字にする\nすべての変数名に含まれる大文字を小文字に変換したいときには、以下のコマンドを使うとできる。\nrename *, lower\n逆に、すべての小文字を大文字に変換したいときには、以下のコマンド。\nrename *, upper\nあんまりこういう場面はないと思うが、すべての小文字を大文字に、すべての大文字を小文字に、同時に変換したい（たとえば、ExAmPlEという変数をeXaMpLeというふうに変えたい）ときには、varcaseというアドインを使う。\nssc install varcase /* install commands. */\nvarcase _all\n今まではすべて小文字に直すときにcsvにデータをexportして保存してからそのcsvファイルを読み込んでdtaファイルに再度exportする（そのせいでもともとついていたラベルがすべて消えてしまう）という相当無駄な作業をしていたが、それをしなくてよくなった。やっぱり少しでも楽をしようという気持ちが大事だ。。\n（2020/4/3→2022/10/09移行）"
   },
   {
-    "objectID": "stata.html#destringのtipsカンマの入った文字列を数値列に変換",
-    "href": "stata.html#destringのtipsカンマの入った文字列を数値列に変換",
+    "objectID": "tips/stata.html#destringのtipsカンマの入った文字列を数値列に変換",
+    "href": "tips/stata.html#destringのtipsカンマの入った文字列を数値列に変換",
     "title": "Stata",
     "section": "destringのtips：カンマの入った文字列を数値列に変換",
     "text": "destringのtips：カンマの入った文字列を数値列に変換\n文字列（string）の変数を数値列に直す、destringというコマンドがある。destring, replaceたいていの場合はうまくいくが、たとえば以下のように、3桁区切りのカンマが入っている場合にはこのコマンドを走らせてもうまく数値列に変換できない。\n\nこの場合は、ignoreというオプションを使うと数値列に変換できる。\ndestring, replace ignore(\",\")\n\n,ignore(\"char\")\nというオプションは、ダブルクォーテーションの間の文字列を無視するという命令のよう。なので、これ以外にもカンマ以外にも謎の文字列が入っている場合にはこれを除いて数値列に変換することができるようだ。\n（作成日不明→2022/10/09移行）"
   },
   {
-    "objectID": "stata.html#substr文字列から特定の数文字を抽出",
-    "href": "stata.html#substr文字列から特定の数文字を抽出",
+    "objectID": "tips/stata.html#substr文字列から特定の数文字を抽出",
+    "href": "tips/stata.html#substr文字列から特定の数文字を抽出",
     "title": "Stata",
     "section": "substr：文字列から特定の数文字を抽出",
     "text": "substr：文字列から特定の数文字を抽出\n\n\n\n年\nyear\n\n\n\n\n1996年\n1996\n\n\n1997年\n1997\n\n\n1998年\n1998\n\n\n1999年\n1999\n\n\n2000年\n2000\n\n\n\n\n左のように\"年\"という文字を含んだ変数から前4つの数字だけを取り出して、右のように数字だけからなる変数yearを作るときには、substrというコマンドを使う。\ngen year = substr(年, 1, 4)\n*** 以下でも同じ結果を得られる. \ngen year = substr(年, -2, 4)\nsubstr()のなかの1つめの項は変数名を、2つめの項は前から何番目の文字から抽出するかを、3つめの項は先に指定した文字からいくつの個数の文字を抽出するかを、それぞれ指定する。たとえば前者のコマンドの場合は、「年という変数の1番目の文字から4文字分抽出する」ということになる。後者のコマンドのように2つめの項に-を指定することもでき、この場合は後ろから何番目の文字を抽出するかを表す。先の例だと、「年という変数の後ろから2番目の文字から4文字分抽出する」という意味になる。参考：http://statamemo.jugem.jp/?month=201103\n（作成日不明→2022/10/09移行）"
   },
   {
-    "objectID": "stata.html#generate-double8桁を超える値をとる変数を作成する",
-    "href": "stata.html#generate-double8桁を超える値をとる変数を作成する",
+    "objectID": "tips/stata.html#generate-double8桁を超える値をとる変数を作成する",
+    "href": "tips/stata.html#generate-double8桁を超える値をとる変数を作成する",
     "title": "Stata",
     "section": "generate double：8桁を超える値をとる変数を作成する",
     "text": "generate double：8桁を超える値をとる変数を作成する\nStataでは数字はデフォルトだとfloatという型で保存される。詳しいことはわからないけれど、floatというのは10進数のもとでは有効桁数が7桁となる4byteのサイズを持つ形式のことを指すようである（参考：http://www.cc.kyoto-su.ac.jp/~yamada/programming/float.html）。ほとんどの場合数値はfloat型で問題なく扱えるのですが、たまに8桁を超える値をもつ変数を作ろうとした場合、値が指数表記されてしまい、正確な値を保存することができないという事態が起こる。\nそのような場合は、変数を作成するときに型名としてdoubleを指定すれば良いようです（参考：https://www.stata.com/manuals13/u12.pdf#u12Data 12.2.2節\"Numeric storage types\"）。doubleは10進数のもとでは有効桁数が15桁となる8byteのサイズを持つ形式。これを使うことで、8桁を超える値をとるような変数を扱うことができるようになる。実際の使い方としてはこんな感じ：\ngen double x = y\nこれで、新しく作られる変数xが8桁を超える値をとるものであったとしても、値が指数表記されずにすむ。\n（作成日不明→2022/10/09移行）"
   },
   {
-    "objectID": "stata.html#labsumm記述統計量の変数名にラベルをつけて出力",
-    "href": "stata.html#labsumm記述統計量の変数名にラベルをつけて出力",
+    "objectID": "tips/stata.html#labsumm記述統計量の変数名にラベルをつけて出力",
+    "href": "tips/stata.html#labsumm記述統計量の変数名にラベルをつけて出力",
     "title": "Stata",
     "section": "labsumm：記述統計量の変数名にラベルをつけて出力",
     "text": "labsumm：記述統計量の変数名にラベルをつけて出力\nsummarizeだと変数にラベルがつかないので、エクセルなどに貼り付けた後に自分で書かないといけないけど、labsummコマンドだとラベルをつけた状態で出力できる。\nssc install labsumm /*コマンドのインストール*/\nlab var female \"女性\"\nlab var income \"所得\"\nlabsumm female income\n（作成日不明→2022/10/09移行）\n2024-11-22追記：Stata 18でdtableという便利な関数が追加されたので、今後はこれを使うとよいと思う。"
   },
   {
-    "objectID": "stata.html#fsumより一般的な記述統計量を出力するコマンド",
-    "href": "stata.html#fsumより一般的な記述統計量を出力するコマンド",
+    "objectID": "tips/stata.html#fsumより一般的な記述統計量を出力するコマンド",
+    "href": "tips/stata.html#fsumより一般的な記述統計量を出力するコマンド",
     "title": "Stata",
     "section": "fsum：より一般的な記述統計量を出力するコマンド",
     "text": "fsum：より一般的な記述統計量を出力するコマンド\nlabsummよりも新しいコマンドで、通常のsummarizeコマンドをさらに拡張したような使い方ができる。変数にラベルをつけて表示することはもちろん、カテゴリカル変数の内訳を（ダミー変数を作ることなく）算出できたりする。詳しくはhelpファイルを参照のこと。\nssc install fsum /*コマンドのインストール*/\n\nlab var sex \"性別\"\nlab def sexlab 1\"男性\" 2\"女性\"\nlab val sex sexlab\n\nrecode sex (1=0)(2=1), gen(female)\nlab var female \"女性\"\n\nlab var income \"所得\"\n\nfsum female income, stats(mean sd p50) /*平均、標準偏差、中央値を表示*/\nfsum female income, uselabel /*変数名はラベルで表示*/\nfsum sex income, catvar(sex) /*カテゴリカル変数について内訳の%を算出*/\nfsum female income, format(%9.4f) /*小数点第4位まで出力（デフォルトは第2位）*/\n（作成日不明→2022/10/09移行）\n2024-11-22追記：Stata 18でdtableという便利な関数が追加されたので、今後はこれを使うとよいと思う。"
   },
   {
-    "objectID": "stata.html#vioplotヴァイオリンプロットを描く",
-    "href": "stata.html#vioplotヴァイオリンプロットを描く",
+    "objectID": "tips/stata.html#vioplotヴァイオリンプロットを描く",
+    "href": "tips/stata.html#vioplotヴァイオリンプロットを描く",
     "title": "Stata",
     "section": "vioplot：ヴァイオリン・プロットを描く",
     "text": "vioplot：ヴァイオリン・プロットを描く\n箱ひげ図とヒストグラムの特徴を併せ持つヴァイオリン・プロットをStataでも描くことができる。\"VIOPLOT\"というコマンドを使用する。\n参考）「箱ひげ図とバイオリンプロットの印象の違い」\n\nssc install vioplot /*コマンドのインストール*/\n\n/***試しに箱ひげ図と見た目を比べてみる***/\nuse \"http://www.stata-press.com/data/r13/auto\", clear\ngraph box mpg, title(\"Box plot\") over(foreign) ylabel(10(10)50) /*こっちが箱ひげ図*/\ngraph save \"box.gph\", replace\nvioplot mpg, title(\"Violin plot\") over(foreign) ylabel(10(10)50) /*こっちがヴァイオリンプロット*/\ngraph save \"vioplot.gph\", replace\ngraph combine \"box.gph\" \"vioplot.gph\" /*並べてみる*/\n実際の見た目はこんな感じ。violin plotのほうがぱっとみた時の情報量が多い。デフォルトだと、カーネル密度のなかに箱ひげ図がはいったかたちになる。\n\n（作成日不明→2022/10/09移行）"
   },
   {
-    "objectID": "stata.html#coefplot回帰係数と信頼区間をプロットする",
-    "href": "stata.html#coefplot回帰係数と信頼区間をプロットする",
+    "objectID": "tips/stata.html#coefplot回帰係数と信頼区間をプロットする",
+    "href": "tips/stata.html#coefplot回帰係数と信頼区間をプロットする",
     "title": "Stata",
     "section": "coefplot：回帰係数と信頼区間をプロットする",
     "text": "coefplot：回帰係数と信頼区間をプロットする\n種々の回帰分析から得られた係数とその信頼区間をプロットするコマンド。以下の通り開発者が詳しく解説してくれているので、ここでは最低限のコマンドだけ載せておく。\n参考）Jahn, Ben. 2017. \"Plotting regression coefficients and other estimates in Stata.\" University of Bern Social Sciences Working Paper No.1.\nJahn, Ben. \"A new command for plotting regression coefficients and other estimates.\" 12th German Stata Users Group meeting Hamburg, June 13, 2014.\nssc install coefplot\n\nuse \"http://www.stata-press.com/data/r13/auto\", clear\n\nqui reg mpg rep78 foreign /*回帰分析をしたあとに…*/\n\ncoefplot /*切片も含めすべての係数および95%信頼区間をプロット*/\ncoefplot, keep(rep78 foreign) /*指定した独立変数のみプロット*/\ncoefplot, scheme(s1mono) keep(rep78 foreign) ciopts(recast(rcap)) vert scale(1.2) ylabel(,grid) ytitle(\"coef.\") /*自分が使うときはこんな感じで設定*/\n（作成日不明→2022/10/09移行）"
   },
   {
-    "objectID": "stata.html#tabulate-genダミー変数を一度に作成する",
-    "href": "stata.html#tabulate-genダミー変数を一度に作成する",
+    "objectID": "tips/stata.html#tabulate-genダミー変数を一度に作成する",
+    "href": "tips/stata.html#tabulate-genダミー変数を一度に作成する",
     "title": "Stata",
     "section": "tabulate, gen()：ダミー変数を一度に作成する",
     "text": "tabulate, gen()：ダミー変数を一度に作成する\ntabulateコマンドのオプションに、結果を出力したあとにダミー変数を作ってくれるものがあります。generateやrecodeコマンドを使わずにダミー変数を一度に作成することができます。記述統計量を出すときなどに便利です。\ntab educ, gen(educd)\n/*\nもしeducが1, 2, 3, 4, 5の5値の変数であれば，educd1-educd5という5つの変数が作られる．\n小さいカテゴリから順に1, 2,…と自動的に名前が付いていくので，間違えないように注意．\n*/\ntab educ educd1 /*ちゃんと変数ができたかどうか確認してみる*/\n（作成日不明→2022/10/09移行）"
   },
   {
-    "objectID": "stata.html#set-more-offmore-を表示しないようにする",
-    "href": "stata.html#set-more-offmore-を表示しないようにする",
+    "objectID": "tips/stata.html#set-more-offmore-を表示しないようにする",
+    "href": "tips/stata.html#set-more-offmore-を表示しないようにする",
     "title": "Stata",
     "section": "set more off：–more– を表示しないようにする",
     "text": "set more off：–more– を表示しないようにする\nStataは縦に長い結果を出力したり、時間のかかる計算をしているときに、途中で\n–more–\nという表示を出します。これが出ると、何らかのキーを押したりクリックしたりしないと計算が進まなかったり、続く結果が出力されなかったりして面倒です。\nそこで、Stataを開いたときに\nset more off\nというコマンドを走らせると、Stataを閉じるまでは\n–more–\nが出ないようになります。do fileの一番最初とかに書いておくとよいと思います。\nまた、\nset more off, permanently\nというコマンドを走らせるとStataの設定自体が書き換わるので、再度開いたときにもその効果が続きます。\n（作成日不明→2022/10/09移行）"
   },
   {
-    "objectID": "stata.html#grc1legグラフを結合したときに凡例を1つだけに",
-    "href": "stata.html#grc1legグラフを結合したときに凡例を1つだけに",
+    "objectID": "tips/stata.html#grc1legグラフを結合したときに凡例を1つだけに",
+    "href": "tips/stata.html#grc1legグラフを結合したときに凡例を1つだけに",
     "title": "Stata",
     "section": "grc1leg：グラフを結合したときに凡例を1つだけに",
     "text": "grc1leg：グラフを結合したときに凡例を1つだけに\ngraph combineという、Stataで作ったグラフを結合するコマンドがあります。ただ、もとのグラフごとに凡例がついている場合、単純に結合するとくっつけた数だけ凡例ができてしまい、大変冗長になってしまいます。\nそこで、どれか一つのグラフから凡例をとってくるコマンドがgrc1legです。使い方は以下のとおり。\ntwoway line y1 x, by(sex) saving(graph1, replace)\ntwoway line y2 x, by(sex) saving(graph2, replace)\ngrc1leg graph1.gph graph2.gph, legendfrom(graph1)\nこのばあい、グラフ1から凡例をとってきて表示するというかたちになります。\n（作成日不明→2022/10/09移行）"
   },
   {
-    "objectID": "occupation.html",
-    "href": "occupation.html",
+    "objectID": "tips/occupation.html",
+    "href": "tips/occupation.html",
     "title": "Occupation",
     "section": "",
     "text": "職業分類の対応関係に関する資料を随時アップロードします。"
   },
   {
-    "objectID": "occupation.html#国勢調査の19802020年統合職業分類",
-    "href": "occupation.html#国勢調査の19802020年統合職業分類",
+    "objectID": "tips/occupation.html#国勢調査の19802020年統合職業分類",
+    "href": "tips/occupation.html#国勢調査の19802020年統合職業分類",
     "title": "Occupation",
     "section": "国勢調査の1980–2020年統合職業分類",
     "text": "国勢調査の1980–2020年統合職業分類\n国勢調査は各年ごとに職業分類の変更があります。とくに2005年から2010年にかけては大規模な変更が行われ、その前後の比較がそのままでは難しくなっています。この期間の改定の具体的内容については「2010年国勢調査に用いる職業分類」にくわしく記載されています。　\n\n\n\n\n\n\n\n\n調査年\n小分類数*\n備考\n\n\n\n\n1980年\n284\n\n\n\n1985年\n292\n\n\n\n1990年\n293\n\n\n\n1995年\n293\n1990年と同一分類\n\n\n2000年\n292\n\n\n\n2005年\n273\n\n\n\n2010年\n231\n日本標準職業分類の改定に伴う大規模な変更\n\n\n2015年\n231\n2010年と同一分類\n\n\n2020年\n231\n2010年と同一分類\n\n\n1980–2020年統合分類\n163\n麦山作成\n\n\n\n*小分類数は「分類不能の職業」を除いた数。\nこの問題に対処すべく、1980–2020年で比較可能となるよう統合分類を作成しました。統合分類は「分類不能の職業」を除き、163の職業からなります。実際には小分類内の職業の細かな入れ替わりなどがあり、本当に厳密な意味での比較は難しいのですが、それを踏まえたうえで使用するのがよいと思います。なお、2025年の国勢調査職業分類は2020年と同一のものが使われるようなので、この分類はそのまま2025年国勢調査にも利用可能と思います。\n\n小松恭子・麦山亮太，2025，「日本の労働市場におけるタスクの分布の変化と要因：教育・産業構造の変化とICT導入の影響」JILPT Discussion Paper 25-01. 付属資料を参照。\n\n過去には、1980–2005年の国勢調査職業分類を統合して性別職域分離の趨勢を検討した研究も行いました。\n\n打越文弥・麦山亮太，2020，「 日本における性別職域分離の趨勢：1980–2005年国勢調査集計データを用いた要因分解」『人口学研究』56:9–23．"
   },
   {
-    "objectID": "occupation.html#国勢調査に用いる職業分類と日本版o-netとのマッチング",
-    "href": "occupation.html#国勢調査に用いる職業分類と日本版o-netとのマッチング",
+    "objectID": "tips/occupation.html#国勢調査に用いる職業分類と日本版o-netとのマッチング",
+    "href": "tips/occupation.html#国勢調査に用いる職業分類と日本版o-netとのマッチング",
     "title": "Occupation",
     "section": "国勢調査に用いる職業分類と日本版O-NETとのマッチング",
     "text": "国勢調査に用いる職業分類と日本版O-NETとのマッチング\n2010年国勢調査に用いる職業分類と日本版O-NETの職業をマッチングして、国勢調査の職業に 対して日本版O-NETの数値指標を与えるためのマッチング表を作成しました。さらに、2005年国勢調査に用いる職業分類と日本版O-NETとのマッチング表を作成しています。\n\n小松恭子・麦山亮太，2021，「日本版O-NETの数値情報を使用した応用研究の可能性： タスクのトレンド分析を一例として」『JILPT Discussion Paper』21-11．\n\nなお、2005年国勢調査に用いる職業分類はWeb上に「国勢調査に用いる職業分類」冊子のpdfが公開されていないので、図書館などで入手する必要があります。\n最新版（2025年2月28日時点）では、日本版O-NET ver 5.00を参照して、国勢調査に用いる職業分類と日本版O-NETのマッチング表を作成しています。\n\n小松恭子・麦山亮太，2025，「日本の労働市場におけるタスクの分布の変化と要因：教育・産業構造の変化とICT導入の影響」『JILPT 資料シリーズ』No.280．付属資料4を参照。"
   },
   {
-    "objectID": "occupation.html#年ssm職業分類と日本版o-netとのマッチング",
-    "href": "occupation.html#年ssm職業分類と日本版o-netとのマッチング",
+    "objectID": "tips/occupation.html#年ssm職業分類と日本版o-netとのマッチング",
+    "href": "tips/occupation.html#年ssm職業分類と日本版o-netとのマッチング",
     "title": "Occupation",
     "section": "1995年SSM職業分類と日本版O-NETとのマッチング",
     "text": "1995年SSM職業分類と日本版O-NETとのマッチング\n1995年SSM職業分類に700番台の職業と800番台の職業を追加した職業分類と、日本版O-NETの職業をマッチングして、SSM職業分類に対して日本版O-NETの数値指標を与えるためのマッチング表を作成しました。\n\n麦山亮太・田上皓大，2024，「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』39(1): 64–74．\n\nマッチング表は田上さんのGitHubにアップロードしています。日本版O-NETの最新版（ver5.00）へのマッチングについて関心がある方は問い合わせください。"
   },
   {
-    "objectID": "occupation.html#年ssm職業分類関連の諸指標まとめ",
-    "href": "occupation.html#年ssm職業分類関連の諸指標まとめ",
+    "objectID": "tips/occupation.html#年ssm職業分類関連の諸指標まとめ",
+    "href": "tips/occupation.html#年ssm職業分類関連の諸指標まとめ",
     "title": "Occupation",
     "section": "1995年SSM職業分類関連の諸指標まとめ",
     "text": "1995年SSM職業分類関連の諸指標まとめ\n社会学者が作成した1995年SSM職業分類（およびその周辺情報）から作成できる諸指標の書誌情報をまとめています。\nEGP階級分類\n\n鹿又伸夫・田辺俊介・竹ノ下弘久，2008，「SSM職業分類と階層指標：EGP階級分類・SIOPS・ISEIへの変換」前田忠彦編『2005年SSM調査シリーズ12：社会調査における測定と分析をめぐる諸問題』2005年社会階層と社会移動調査研究会，\n竹ノ下弘久・田辺俊介・鹿又伸夫，2007，「階層移動の国際比較に向けての階層カテゴリーの構成：SSM職業小分類のEGP分類への変換とその方法」『人文論集』 58(2):17–42.\n田辺俊介，2006，「ISCOとSSM職業分類の相違点の検討：国際比較調査における職業データに関する研究ノート」『社会学論考』27:53–78.\n\n日本版社会経済指標（SEI）、社会的地位指標（SSI）\n\nFujihara, Sho. 2020. “Socio-Economic Standing and Social Status in Contemporary Japan: Scale Constructions and Their Applications.” European Sociological Review 36(4): 548–61. GitHub\n\n職業威信スコア\n\n都築一治編，1998，『職業評価の構造と職業威信スコア』1995年SSM調査研究会．\n\nマイクロクラス\n\nJonsson, Jan O., Matthew Di Carlo, Mary C. Brinton, David B. Grusky, and Reinhard Pollak. 2009. “Microclass Mobility: Social Reproduction in Four Countries.” American Journal of Sociology 114(4):977–1036.\n三輪哲，2009，「社会的格差をとらえるためのマイクロクラス・アプローチ：JGSS累積データ2000-2006による計量的分析」『日本版 General Social Surveys』 研究論文集』8: 1–12．\n\n仕事の複雑性スコア\n（2024-04-03 Web上からスコアの情報が見つけられなくなっている？）\n\n長松奈美江・阪口祐介・太郎丸博，2009，「仕事の複雑性スコアの構成：職務内容を反映した職業指標の提案」『理論と方法』24(1):77–93.\n\nOeschの階級分類\n\n長松奈美江，2021，「対人サービス労働者の「仕事の質」」白波瀬佐和子監修，渡邊勉・吉川徹・佐藤嘉倫（編）『少子高齢社会の階層構造　第2巻　人生中期の階層構造』東京大学出版会，53-66．\n\nSSM職業8分類\n\nSSM職業小分類（追加コード含む）をSSM職業8分類に変換するStataシンタックスを参照。"
   },
   {
-    "objectID": "occupation.html#年ssm職業分類を1995年ssm職業分類に変換する",
-    "href": "occupation.html#年ssm職業分類を1995年ssm職業分類に変換する",
+    "objectID": "tips/occupation.html#年ssm職業分類を1995年ssm職業分類に変換する",
+    "href": "tips/occupation.html#年ssm職業分類を1995年ssm職業分類に変換する",
     "title": "Occupation",
     "section": "1955年SSM職業分類を1995年SSM職業分類に変換する",
     "text": "1955年SSM職業分類を1995年SSM職業分類に変換する\n準備中"
   },
   {
-    "objectID": "occupation.html#全国就業実態パネル調査の職業分類と日本版o-netとのマッチング",
-    "href": "occupation.html#全国就業実態パネル調査の職業分類と日本版o-netとのマッチング",
+    "objectID": "tips/occupation.html#全国就業実態パネル調査の職業分類と日本版o-netとのマッチング",
+    "href": "tips/occupation.html#全国就業実態パネル調査の職業分類と日本版o-netとのマッチング",
     "title": "Occupation",
     "section": "全国就業実態パネル調査の職業分類と日本版O-NETとのマッチング",
     "text": "全国就業実態パネル調査の職業分類と日本版O-NETとのマッチング\nリクルートワークス研究所が実施している「全国就業実態パネル調査」は2016年は208、2017–2022年は224、2023–年は214（いずれも分類不能の職業含む数）の職業小分類をプルダウン形式で回答者に提示し、回答者が選択する形式で職業小分類を聴取しています。国勢調査や就業構造基本調査、賃金構造基本統計調査、あるいはSSM調査等の社会調査で行われている自由記述のアフターコーディングが行われていない分正確さという面では劣りますが、サンプルサイズが他の社会調査と比べて大きく、活用しない手はありません。\n全国就業実態パネル調査の2016年職業分類、2017–2022年職業分類、および2023–年職業分類と日本版O-NETの職業をマッチングして、各職業分類に対して日本版O-NETの数値指標を与えるためのマッチング表を作成しました。\n説明文書は作成中\n2017–2022年職業分類と日本版O-NETをマッチングしたデータを使った論文を公刊しています。\n\n麦山亮太・小松恭子，2023，「テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析」『日本労働研究雑誌』754: 87–102．\n\n2022年までの職業分類と2023–年職業分類のそれぞれにマッチングを行って数値指標を貼り付けて分析した論文を公刊しています。\nMugiyama, Ryota and Kyoko Komatsu. 2025. “More Than Usage: Expanded Socioeconomic Inequality in Access to Remote Work after the COVID-19 in Japan.” Socio-Economic Review. Advance Access.\n全国就業実態パネル調査自体は2016年から実施されているのですが、2016年はそれ以降とは職業分類が異なっておりまた別にコーディングの必要があります。自分は2016年データを使用しませんでしたが、一応準備してはいます。"
   },
   {
-    "objectID": "occupation.html#全国就業実態パネル調査の職業分類からisco-08を介してegp階級分類を作成する",
-    "href": "occupation.html#全国就業実態パネル調査の職業分類からisco-08を介してegp階級分類を作成する",
+    "objectID": "tips/occupation.html#全国就業実態パネル調査の職業分類からisco-08を介してegp階級分類を作成する",
+    "href": "tips/occupation.html#全国就業実態パネル調査の職業分類からisco-08を介してegp階級分類を作成する",
     "title": "Occupation",
     "section": "全国就業実態パネル調査の職業分類からISCO-08を介してEGP階級分類を作成する",
     "text": "全国就業実態パネル調査の職業分類からISCO-08を介してEGP階級分類を作成する\n全国就業実態パネル調査の2017–2022年職業分類、および2023年職業分類に対してISCO-08コードを割り当て、Stataのiscogenコマンドを使ってISCO-88へと変換し、EGP階級分類へと変換するための対応表とコードを作成しました。\n説明文書は作成中\nここでISCO-08コードを使っているのはあくまでEGP階級分類に到達するための途中段階として利用しているに過ぎず、全国就業実態パネル調査の職業分類をISCO-08コードに割り当ててそれ自体を使って分析することは意図していない点に注意してください。本コードは以下の論文で使用しました。\nMugiyama, Ryota and Kyoko Komatsu. 2025. “More Than Usage: Expanded Socioeconomic Inequality in Access to Remote Work after the COVID-19 in Japan.” Socio-Economic Review. Advance Access."
+  },
+  {
+    "objectID": "tips/notes.html",
+    "href": "tips/notes.html",
+    "title": "Notes",
+    "section": "",
+    "text": "主に計量分析の手法やプログラムに関するメモをアップロードしていく予定です。"
+  },
+  {
+    "objectID": "tips/notes.html#ssm職歴データのパーソンイヤーデータへの変換",
+    "href": "tips/notes.html#ssm職歴データのパーソンイヤーデータへの変換",
+    "title": "Notes",
+    "section": "SSM職歴データのパーソンイヤーデータへの変換",
+    "text": "SSM職歴データのパーソンイヤーデータへの変換\nSSM調査データをパーソンイヤーデータに変換する際のデータ加工の考え方、いくつかの分析例、およびStataのdo-fileとRのコードをアップロードしています。2024年5月31日の2025年SSM調査研究会にて報告した内容ですが、広く研究会外でSSM調査データを使う方の目的に供するために公開しています。コードに誤りなどを見つけた場合はお知らせいただければと思います。\nlast update: 2024-06-11"
+  },
+  {
+    "objectID": "tips/notes.html#決定係数の要因分解",
+    "href": "tips/notes.html#決定係数の要因分解",
+    "title": "Notes",
+    "section": "決定係数の要因分解",
+    "text": "決定係数の要因分解\n決定係数は(1) 独立変数の限界効果、 (2) 独立変数の分散および共分散、(3) 従属変数の分散、の3つの要因に左右されます。2つの異なるサンプル間の決定係数の違いが何によって生じているかを考えたいときには、要因分解の方法が有用です。そこで要因分解の式を考えました。\n資料中の方法を再現するStataコード：\nsysuse auto, clear\n\ngen y = mpg\n\n*** Estimate linear regression for non-foreign cars.\nreg y price weight if foreign == 0\npredict yhat0\n\n*** Estimate linear regression for foreign cars.\nreg y price weight if foreign == 1\npredict yhat1\n\ncollapse (sd) y yhat1 yhat0, by(foreign)\n\n*** Generate variance of y.\nreplace y = y^2\n\nforvalues i = 0/1{\n    replace yhat`i' = yhat`i'^2\n    gen rsq`i' = yhat`i' / y\n    rename yhat`i' yhat_`i'x_\n    rename rsq`i' rsq`i'x_\n}\n\ngen id = 1\nreshape wide y* rsq*, i(id) j(foreign)\n\n*** Observed R-squared for sample 0 and sample 1.\ngen obsrsq0 = rsq0x_0\ngen obsrsq1 = rsq1x_1\n\n*** comp1: structural change.\ngen comp1 = ln(yhat_1x_1) - ln(yhat_0x_1)\n\n*** comp2: change in independent variables.\ngen comp2 = ln(yhat_0x_1) - ln(yhat_0x_0)\n\n*** comp3: change in dependent variable.\ngen comp3 = ln(y0) - ln(y1)\n\n*** Check: sum of comps is the same with log of observed R-sq?\ngen logrsq = ln(rsq1x_1 / rsq0x_0)\ngen sumcomp = comp1 + comp2 + comp3\n\ntabstat logrsq sumcomp comp1 comp2 comp3\n（2019/9/6→2022/09/19移行）"
+  },
+  {
+    "objectID": "tips/notes.html#相関係数と散布図",
+    "href": "tips/notes.html#相関係数と散布図",
+    "title": "Notes",
+    "section": "相関係数と散布図",
+    "text": "相関係数と散布図\nRの練習の一環で、よく教科書に載っている「相関係数が◯◯のときの散布図」をRで作る際のスクリプトを書きました。\n（2018/3/4 upload, 2018/3/9 revised→2022/09/19移行）"
+  },
+  {
+    "objectID": "tips/notes.html#階層ベイズモデルを実装する",
+    "href": "tips/notes.html#階層ベイズモデルを実装する",
+    "title": "Notes",
+    "section": "階層ベイズモデルを実装する",
+    "text": "階層ベイズモデルを実装する\n「岩波データサイエンスをざっくり読む会」第2回で使用する発表資料です。マルチレベルモデルの基礎と、これをベイズで推定するための方法を解説しています。RおよびRstanを使用しています。まだ途中ですが、ひとまずアップロードしています。\n（2017/9/25 upload→2022/09/16移行）"
+  },
+  {
+    "objectID": "tips/notes.html#固定効果モデルに2乗項を投入する",
+    "href": "tips/notes.html#固定効果モデルに2乗項を投入する",
+    "title": "Notes",
+    "section": "固定効果モデルに2乗項を投入する",
+    "text": "固定効果モデルに2乗項を投入する\n固定効果モデルに2乗項を投入することをどのように考えればいいのか、ということについてのメモです。\n（2017/11/20 upload→2022/09/16移行）"
+  },
+  {
+    "objectID": "tips/notes.html#イベントヒストリー分析のためのデータ加工とモデル選択",
+    "href": "tips/notes.html#イベントヒストリー分析のためのデータ加工とモデル選択",
+    "title": "Notes",
+    "section": "イベントヒストリー分析のためのデータ加工とモデル選択",
+    "text": "イベントヒストリー分析のためのデータ加工とモデル選択\nイベントヒストリー分析のために必要なデータの形式とその加工の方法、分析の際に考慮すべきことについて、具体的な手順（パーソン・ピリオドデータの作成とモデルの選択）を紹介しています。2016年1月9日の計量研究会にて発表いたしました。数式やシンタックスについて、間違いや非効率的な部分などがあるかもしれませんが、ご了承ください。\n（2016/01/09 upload, 2016/02/09 コードに若干ミスがあったのを修正→2022/09/19移行）"
+  },
+  {
+    "objectID": "tips/notes.html#社会学のための統計分析基礎spssを用いて",
+    "href": "tips/notes.html#社会学のための統計分析基礎spssを用いて",
+    "title": "Notes",
+    "section": "社会学のための統計分析基礎：SPSSを用いて",
+    "text": "社会学のための統計分析基礎：SPSSを用いて\n所属研究室にて、社会調査実習という学部生・院生向けの授業のTAを担当しています。5/17の授業にて、統計分析の基礎についての授業を担当した際に用いた資料です。SPSSを使って、データハンドリングの仕方、1変量分布・2変量関連の検討の仕方について解説しています。推測統計の話はあえて行っていません。 （2016/05/19 upload） （2016/05/27 p.27についてご指摘頂いたので修正。ありがとうございました。）\n第2弾をアップロードしました。推測統計、2変量関連、多変量解析の考え方と回帰分析の基礎について解説しています。（2016/11/08）\n（→2022/09/19移行）"
+  },
+  {
+    "objectID": "tips/notes.html#逆ミルズ比を図で理解する",
+    "href": "tips/notes.html#逆ミルズ比を図で理解する",
+    "title": "Notes",
+    "section": "逆ミルズ比を図で理解する",
+    "text": "逆ミルズ比を図で理解する\nサンプルセレクションモデルで頻出する逆ミルズ比について、図で理解できるようにいろいろと工夫してみた、という記事です。R markdownで作成しました。（2016/11/28 upload）\n（→2023/04/10移行）"
   },
   {
     "objectID": "blog/2019-04-26-gakushinPD.html",
@@ -550,14 +613,14 @@
     "href": "blog/2016-11-12-timevariant.html",
     "title": "時間による効果の変化をモデリングする",
     "section": "",
-    "text": "時系列データやパネルデータを分析するときの主要な関心の1つは、変化する独立変数が従属変数に対していかなる効果を与えるのかを明らかにすることにあります。たとえば社会学だと、「結婚することによって幸福度がどのように変化するか」であるとか、「転職することによって賃金は上がるのか」といった問いが例として挙げられます。\nある個体（id）について、複数時点のデータを収集した結果、この個体は、時点4において状態Xの変化を経験したとします。このときのデータは以下のように表すことができます。\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.0     ✔ readr     2.1.6\n✔ forcats   1.0.1     ✔ stringr   1.6.0\n✔ ggplot2   4.0.2     ✔ tibble    3.3.1\n✔ lubridate 1.9.5     ✔ tidyr     1.3.2\n✔ purrr     1.2.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nid &lt;- c(1, 1, 1, 1, 1, 1, 1)\ntime &lt;- c(1, 2, 3, 4, 5, 6, 7)\nx &lt;- c(0, 0, 0, 1, 1, 1, 1)\n\ndf &lt;- tibble(id, time, x)\ndf\n\n# A tibble: 7 × 3\n     id  time     x\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0\n2     1     2     0\n3     1     3     0\n4     1     4     1\n5     1     5     1\n6     1     6     1\n7     1     7     1\n\n\nなお今回は簡単のため、Xは基本的に0から1にしか変化しない（不可逆的な変化をする）離散的な変数とします。たとえば、未婚→既婚（既婚から未婚にはなれない）、転職経験なし→転職経験あり（経験ありからなしにはなれない）、30歳未満→30歳以上（年齢は常に上がるので）、などといった状態の変化を考えると良いと思います。\n今回は、Xが従属変数Yに対して与える効果をより柔軟に考えるための例を、いくつか考えてみます。これ以降の説明のために、上記のデータから以下のようなデータを作ります。\n\ndf &lt;- df %&gt;% \n  group_by(id) %&gt;% # idごとにコードを実行するためにgroup_by()\n  mutate(change = if_else(x == 1 & lag(x, n = 1) == 0, time, 0)) %&gt;% \n  mutate(change = max(change)) %&gt;% \n  mutate(tchange = time - change) %&gt;% \n  mutate(a = if_else(tchange &lt; 0, 0, tchange)) %&gt;% \n  mutate(a_sq = a^2) %&gt;% \n  mutate(b = log(a+1)) %&gt;% \n  mutate(c = if_else(tchange &gt; 0, 0, tchange))\n\ndf\n\n# A tibble: 7 × 9\n# Groups:   id [1]\n     id  time     x change tchange     a  a_sq     b     c\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0      4      -3     0     0 0        -3\n2     1     2     0      4      -2     0     0 0        -2\n3     1     3     0      4      -1     0     0 0        -1\n4     1     4     1      4       0     0     0 0         0\n5     1     5     1      4       1     1     1 0.693     0\n6     1     6     1      4       2     2     4 1.10      0\n7     1     7     1      4       3     3     9 1.39      0"
+    "text": "時系列データやパネルデータを分析するときの主要な関心の1つは、変化する独立変数が従属変数に対していかなる効果を与えるのかを明らかにすることにあります。たとえば社会学だと、「結婚することによって幸福度がどのように変化するか」であるとか、「転職することによって賃金は上がるのか」といった問いが例として挙げられます。\nある個体（id）について、複数時点のデータを収集した結果、この個体は、時点4において状態Xの変化を経験したとします。このときのデータは以下のように表すことができます。\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.2\n✔ ggplot2   4.0.0     ✔ tibble    3.3.0\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.1.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nid &lt;- c(1, 1, 1, 1, 1, 1, 1)\ntime &lt;- c(1, 2, 3, 4, 5, 6, 7)\nx &lt;- c(0, 0, 0, 1, 1, 1, 1)\n\ndf &lt;- tibble(id, time, x)\ndf\n\n# A tibble: 7 × 3\n     id  time     x\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0\n2     1     2     0\n3     1     3     0\n4     1     4     1\n5     1     5     1\n6     1     6     1\n7     1     7     1\n\n\nなお今回は簡単のため、Xは基本的に0から1にしか変化しない（不可逆的な変化をする）離散的な変数とします。たとえば、未婚→既婚（既婚から未婚にはなれない）、転職経験なし→転職経験あり（経験ありからなしにはなれない）、30歳未満→30歳以上（年齢は常に上がるので）、などといった状態の変化を考えると良いと思います。\n今回は、Xが従属変数Yに対して与える効果をより柔軟に考えるための例を、いくつか考えてみます。これ以降の説明のために、上記のデータから以下のようなデータを作ります。\n\ndf &lt;- df %&gt;% \n  group_by(id) %&gt;% # idごとにコードを実行するためにgroup_by()\n  mutate(change = if_else(x == 1 & lag(x, n = 1) == 0, time, 0)) %&gt;% \n  mutate(change = max(change)) %&gt;% \n  mutate(tchange = time - change) %&gt;% \n  mutate(a = if_else(tchange &lt; 0, 0, tchange)) %&gt;% \n  mutate(a_sq = a^2) %&gt;% \n  mutate(b = log(a+1)) %&gt;% \n  mutate(c = if_else(tchange &gt; 0, 0, tchange))\n\ndf\n\n# A tibble: 7 × 9\n# Groups:   id [1]\n     id  time     x change tchange     a  a_sq     b     c\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0      4      -3     0     0 0        -3\n2     1     2     0      4      -2     0     0 0        -2\n3     1     3     0      4      -1     0     0 0        -1\n4     1     4     1      4       0     0     0 0         0\n5     1     5     1      4       1     1     1 0.693     0\n6     1     6     1      4       2     2     4 1.10      0\n7     1     7     1      4       3     3     9 1.39      0"
   },
   {
     "objectID": "blog/2016-11-12-timevariant.html#時系列データにおいてxの効果をどのように捉えるか",
     "href": "blog/2016-11-12-timevariant.html#時系列データにおいてxの効果をどのように捉えるか",
     "title": "時間による効果の変化をモデリングする",
     "section": "",
-    "text": "時系列データやパネルデータを分析するときの主要な関心の1つは、変化する独立変数が従属変数に対していかなる効果を与えるのかを明らかにすることにあります。たとえば社会学だと、「結婚することによって幸福度がどのように変化するか」であるとか、「転職することによって賃金は上がるのか」といった問いが例として挙げられます。\nある個体（id）について、複数時点のデータを収集した結果、この個体は、時点4において状態Xの変化を経験したとします。このときのデータは以下のように表すことができます。\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.0     ✔ readr     2.1.6\n✔ forcats   1.0.1     ✔ stringr   1.6.0\n✔ ggplot2   4.0.2     ✔ tibble    3.3.1\n✔ lubridate 1.9.5     ✔ tidyr     1.3.2\n✔ purrr     1.2.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nid &lt;- c(1, 1, 1, 1, 1, 1, 1)\ntime &lt;- c(1, 2, 3, 4, 5, 6, 7)\nx &lt;- c(0, 0, 0, 1, 1, 1, 1)\n\ndf &lt;- tibble(id, time, x)\ndf\n\n# A tibble: 7 × 3\n     id  time     x\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0\n2     1     2     0\n3     1     3     0\n4     1     4     1\n5     1     5     1\n6     1     6     1\n7     1     7     1\n\n\nなお今回は簡単のため、Xは基本的に0から1にしか変化しない（不可逆的な変化をする）離散的な変数とします。たとえば、未婚→既婚（既婚から未婚にはなれない）、転職経験なし→転職経験あり（経験ありからなしにはなれない）、30歳未満→30歳以上（年齢は常に上がるので）、などといった状態の変化を考えると良いと思います。\n今回は、Xが従属変数Yに対して与える効果をより柔軟に考えるための例を、いくつか考えてみます。これ以降の説明のために、上記のデータから以下のようなデータを作ります。\n\ndf &lt;- df %&gt;% \n  group_by(id) %&gt;% # idごとにコードを実行するためにgroup_by()\n  mutate(change = if_else(x == 1 & lag(x, n = 1) == 0, time, 0)) %&gt;% \n  mutate(change = max(change)) %&gt;% \n  mutate(tchange = time - change) %&gt;% \n  mutate(a = if_else(tchange &lt; 0, 0, tchange)) %&gt;% \n  mutate(a_sq = a^2) %&gt;% \n  mutate(b = log(a+1)) %&gt;% \n  mutate(c = if_else(tchange &gt; 0, 0, tchange))\n\ndf\n\n# A tibble: 7 × 9\n# Groups:   id [1]\n     id  time     x change tchange     a  a_sq     b     c\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0      4      -3     0     0 0        -3\n2     1     2     0      4      -2     0     0 0        -2\n3     1     3     0      4      -1     0     0 0        -1\n4     1     4     1      4       0     0     0 0         0\n5     1     5     1      4       1     1     1 0.693     0\n6     1     6     1      4       2     2     4 1.10      0\n7     1     7     1      4       3     3     9 1.39      0"
+    "text": "時系列データやパネルデータを分析するときの主要な関心の1つは、変化する独立変数が従属変数に対していかなる効果を与えるのかを明らかにすることにあります。たとえば社会学だと、「結婚することによって幸福度がどのように変化するか」であるとか、「転職することによって賃金は上がるのか」といった問いが例として挙げられます。\nある個体（id）について、複数時点のデータを収集した結果、この個体は、時点4において状態Xの変化を経験したとします。このときのデータは以下のように表すことができます。\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.2\n✔ ggplot2   4.0.0     ✔ tibble    3.3.0\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.1.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nid &lt;- c(1, 1, 1, 1, 1, 1, 1)\ntime &lt;- c(1, 2, 3, 4, 5, 6, 7)\nx &lt;- c(0, 0, 0, 1, 1, 1, 1)\n\ndf &lt;- tibble(id, time, x)\ndf\n\n# A tibble: 7 × 3\n     id  time     x\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0\n2     1     2     0\n3     1     3     0\n4     1     4     1\n5     1     5     1\n6     1     6     1\n7     1     7     1\n\n\nなお今回は簡単のため、Xは基本的に0から1にしか変化しない（不可逆的な変化をする）離散的な変数とします。たとえば、未婚→既婚（既婚から未婚にはなれない）、転職経験なし→転職経験あり（経験ありからなしにはなれない）、30歳未満→30歳以上（年齢は常に上がるので）、などといった状態の変化を考えると良いと思います。\n今回は、Xが従属変数Yに対して与える効果をより柔軟に考えるための例を、いくつか考えてみます。これ以降の説明のために、上記のデータから以下のようなデータを作ります。\n\ndf &lt;- df %&gt;% \n  group_by(id) %&gt;% # idごとにコードを実行するためにgroup_by()\n  mutate(change = if_else(x == 1 & lag(x, n = 1) == 0, time, 0)) %&gt;% \n  mutate(change = max(change)) %&gt;% \n  mutate(tchange = time - change) %&gt;% \n  mutate(a = if_else(tchange &lt; 0, 0, tchange)) %&gt;% \n  mutate(a_sq = a^2) %&gt;% \n  mutate(b = log(a+1)) %&gt;% \n  mutate(c = if_else(tchange &gt; 0, 0, tchange))\n\ndf\n\n# A tibble: 7 × 9\n# Groups:   id [1]\n     id  time     x change tchange     a  a_sq     b     c\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1     0      4      -3     0     0 0        -3\n2     1     2     0      4      -2     0     0 0        -2\n3     1     3     0      4      -1     0     0 0        -1\n4     1     4     1      4       0     0     0 0         0\n5     1     5     1      4       1     1     1 0.693     0\n6     1     6     1      4       2     2     4 1.10      0\n7     1     7     1      4       3     3     9 1.39      0"
   },
   {
     "objectID": "blog/2016-11-12-timevariant.html#例1-xの効果はすぐに現れかつ持続する",
@@ -630,193 +693,46 @@
     "text": "Ryota Mugiyama is an Associate Professor at Gakushuin University, Tokyo, Japan. After received Doctorate degree of Sociology from the University of Tokyo, I have been working on inequality-related topics such as labor market inequality, social mobility, and family demography, mainly with a focus on Japan. My published and ongoing work can be found at research. Please feel free to contact me.\n麦山 亮太（むぎやま りょうた）のホームページです。学習院大学法学部政治学科で社会学の研究・教育をしています。専門は社会階層論、なかでも労働市場における不平等、社会移動、家族人口学などのテーマについて、社会調査データの計量分析をもちいて研究しています。\n経歴等についてはProfile、研究業績についてはresearchをご確認ください。\n大学院進学・研究生を希望されている方は大学院進学・研究生希望の学生の方へをご確認ください。\n\nRyota Mugiyama, Doctor of Sociology.\nAssociate Professor, Department of Political Studies, Faculty of Law, Gakushuin University\nAddress: 1-5-1 Mejiro, Toshima-ku, Tokyo, 171-8588, Japan.\nE-mail: ryota.mugiyama[at]gakushuin.ac.jp\nTwitter: @RyotaMugiyama\nBluesky: @ryotamugiyama.bsky.social"
   },
   {
-    "objectID": "r/dss_tidyverse.html",
-    "href": "r/dss_tidyverse.html",
-    "title": "Data analysis for social science in tidyverse",
+    "objectID": "harmonization.html",
+    "href": "harmonization.html",
+    "title": "Harmonization",
     "section": "",
-    "text": "このページでは、Llaudet, Elena and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.のコードを現代のRの世界でよく使われているtidyverseパッケージを使ったコードに直すとどのように書くことができるのかを紹介する。これを通じて、tidyverseパッケージに含まれる関数群の初歩的な使い方を学ぶことができるだろう。\nコードを実行するためには、tidyverseパッケージをインストールして、読み込む必要がある。パッケージをインストールする際には、次のコマンドを実行する。一度実行してパッケージをインストールしたあとは、再度R/RStudioを開いたとしても、改めて実行する必要はない。\ninstall.packages(\"tidyverse\")\nパッケージを使用するためには、R/RStudioを開くたびに、library()コマンドを実行して、パッケージを読み込む必要がある。\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.0     ✔ readr     2.1.6\n✔ forcats   1.0.1     ✔ stringr   1.6.0\n✔ ggplot2   4.0.2     ✔ tibble    3.3.1\n✔ lubridate 1.9.5     ✔ tidyr     1.3.2\n✔ purrr     1.2.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n以下、各Chapterのコードはすべてlibrary(tidyverse)を実行してあるという前提のもとで進める。"
+    "text": "2023年度から進めている社会調査データの統合プロジェクトに関連する成果等をまとめています。"
   },
   {
-    "objectID": "r/dss_tidyverse.html#loading-and-making-sense-of-data",
-    "href": "r/dss_tidyverse.html#loading-and-making-sense-of-data",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "1.7 Loading and making sense of data",
-    "text": "1.7 Loading and making sense of data\n\n1.7.2 Loading the dataset\ntidyverseでは、read.csv()と同じ機能を果たすコードとしてread_csv()がある。どちらもほぼ同じだが、read_csv()のほうが気持ち読み込みが早いときがある。\n\nstar &lt;- read_csv(\"STAR.csv\")\n\n\n\n1.7.3 Understanding the data\ntidyverseではパイプ演算子（%&gt;%）を使って命令を書くことができる。たとえばデータの中身を確認するView()コマンドであれば、次のように書くことができる。\n\nstar %&gt;% View()\n\n%&gt;%演算子を改行して書いてもよい。\n\nstar %&gt;% # starデータフレームに対して、\n  View() # viewを実行\n\nデータの上からいくつかの行を見るhead()コマンドであれば、次のように書くことができる：\n\nstar %&gt;% # starデータフレームに対して、\n  head() # headを実行\n\n# A tibble: 6 × 4\n  classtype reading  math graduated\n  &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;\n1 small         578   610         1\n2 regular       612   612         1\n3 regular       583   606         1\n4 small         661   648         1\n5 small         614   636         1\n6 regular       610   603         0\n\nstar %&gt;% \n  head(n = 3)\n\n# A tibble: 3 × 4\n  classtype reading  math graduated\n  &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;\n1 small         578   610         1\n2 regular       612   612         1\n3 regular       583   606         1\n\n\nちなみに、MacであればControl + Shift + mで、WindowsであればCtrl + Shift + mでパイプ演算子を出力することができる。\nちなみに、最近RStudioを新しくインストールした場合だと、上記のショートカットキーを入力すると|&gt;というコマンドが出力されるかもしれない。ふつうに使う分だとどちらを使ってもとくに支障は生じない。試しに以下の2種類を実行して、どちらも同じものが出力されることを確かめてみよう。\n\nstar |&gt; \n  head(n = 3)\n\n# A tibble: 3 × 4\n  classtype reading  math graduated\n  &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;\n1 small         578   610         1\n2 regular       612   612         1\n3 regular       583   606         1\n\nstar %&gt;% \n  head(n = 3)\n\n# A tibble: 3 × 4\n  classtype reading  math graduated\n  &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;\n1 small         578   610         1\n2 regular       612   612         1\n3 regular       583   606         1\n\n\nEdit→Preferences…（ない場合は、Tools→Global options…）を選択する。以下の画面が開いたら、Codeを選択して、以下の「Use native pipe operator, |&gt; (requires R 4.1+)」のチェックを外すと、上記ショートカットキーを入力したときに%&gt;%が表示されるようになる。どちらでも違いはないが、以下ではたんに麦山がこれに慣れているというだけの理由から、%&gt;%を使うことにする。\n\ndim(star)についても%&gt;%演算子を使って書くことができる。\n\nstar %&gt;% # starデータフレームに対して、\n  dim() # dimを実行\n\n[1] 1274    4\n\n\nここで挙げた例は単純なので、%&gt;%演算子を使うことのありがたみは感じにくいかもしれない。しかし、コードが長くなってきたり、命令が複雑になってくるほど、%&gt;%演算子を使うメリットは大きくなる。Chapter 3あたりから、徐々にそのメリットが明らかになってくる。"
+    "objectID": "harmonization.html#問題意識",
+    "href": "harmonization.html#問題意識",
+    "title": "Harmonization",
+    "section": "問題意識",
+    "text": "問題意識\n以下は麦山ほか（2025: 1–2）からの引用です。\n東京大学社会科学研究所附属社会調査・データアーカイブ研究センターと大阪商業大学JGSS研究センターによって国内の社会調査データの共有・公開がなされるようになってから20年余，日本の大規模社会調査データの利用をめぐる環境は飛躍的に改善した．1990年代末より相次いで全国を対象とした無作為抽出の社会調査が実施され，それらの研究成果が公刊されるだけではなく，アーカイブへの寄託・公開を通じて様々な研究者等に利用され二次分析による研究成果の産出につながっている．今や実証研究において既存の大規模社会調査データの二次分析は標準的な方法である．\nこうしたなかで求められるのは，既存のデータをより有効に活用することである．なかでも既存社会調査データを統合した分析は，サンプルサイズを増やすとともに複数時点の比較分析を可能とし，より正確により大きな問いに答えるうえで重要である．国内外でこうした実証研究例は枚挙に暇がない．たとえば社会階層研究におけるCitation classicとなっている研究として，F. Torcheによる大卒層において出身階層と到達階層の関連が小さいことを示した研究（Torche 2011），R. Breenらによるヨーロッパにおいて教育機会の不平等が縮小傾向にあることを示した研究（Breen et al. 2009）が挙げられる．これらは複数の社会調査を統合したデータを利用することによってこれまで十分に明らかになっていなかった現象を明らかにした研究である．日本においても複数種類・複数時点の社会調査を合併し，変数を統合させて分析を行った事例は少なくない（Fujihara and Ishida 2016; 平尾・太郎丸 2011; Mugiyama and Toyonaga 2022; 打越 2016）．数十年におよぶ不平等の趨勢，少数集団の詳細な特徴などに関わる問いは，単一時点・一回限りの社会調査データで明らかにすることは難しく，複数の社会調査データを組み合わせることによってはじめて明らかにすることができる．\nしかしながら，これまで日本における既存社会調査データを統合した分析は，各研究者が個別に行うにとどまっている．この状況は以下の3点で望ましくない．第1に，通常研究者が社会調査データの分析で用いる変数には，たとえば性別，年齢，職業，学歴，婚姻状態，所得等，共通のものが多いにもかかわらず，各研究者が個別に統合データを作成する場合，本来必要でない多くの労力を割く必要がある．第2に，複数の調査データの統合は変数の作成に際して通常の分析以上に労働集約的であり，個別の研究者が行う場合，誤りが生じる可能性は無視できず，かつ結果の再現性も損なわれる．どのように変数を作成するべきかについてはしばしば単一の答えがない場合もあるが，データ構築に用いるコードを利用者間で共有し，複数の目を通すことによって，少なくとも明らかな誤りについてはそのリスクを減らすべきである．第3に，上記の作業の負担から既存社会調査データの統合には及び腰になりやすく，その結果，データさえあれば答えられるはずの多くの重要な研究課題が未解決のまま残されている．\n上記の問題意識のもとで立ち上げられたのが「社会調査データの合併による二次分析研究の刷新」プロジェクトである．本プロジェクトの目的は2点ある．第1に，社会学者が中心となって実施してきた大規模社会調査データを統合（ハーモナイゼーション harmonization）するコードを作成することである．なお本稿では，各調査で聴取された回答に対して事後的に定義を揃え比較可能とする作業のことを指してデータ統合ないしハーモナイゼーションと呼び，互換的に用いる ．第2に，構築されたデータを活用して，日本社会における不平等の趨勢と実態に関わる様々な記述的問いに答えることである．"
   },
   {
-    "objectID": "r/dss_tidyverse.html#computing-and-interpreting-means",
-    "href": "r/dss_tidyverse.html#computing-and-interpreting-means",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "1.8 Computing and interpreting means",
-    "text": "1.8 Computing and interpreting means\n\n1.8.2 Means\n平均値のように、データフレームに含まれる何らかの変数（列）に対して計算や集計を行う場合には、with()を使う。たとえばstarデータフレームに含まれる変数列の平均値を計算する方法は次のとおり。\n\nstar %&gt;% \n  with(mean(reading))\n\n[1] 628.803\n\nstar %&gt;% \n  with(mean(graduated))\n\n[1] 0.8697017\n\n\nもう一つ別の方法として、summarize()を使う方法がある。たとえばreadingの平均値を求めたいときは次のように書く。\n\nstar %&gt;% \n  summarize(mean(reading))\n\n# A tibble: 1 × 1\n  `mean(reading)`\n            &lt;dbl&gt;\n1            629.\n\n\nsummarize()の便利なところは、一度に複数の変数を集計した値を出すことができる点だ。たとえば上記のようにreadingとgraduatedの平均値を計算したい場合には、次のように書けばよい。\n\nstar %&gt;% \n  summarize(mean(reading),\n            mean(graduated))\n\n# A tibble: 1 × 2\n  `mean(reading)` `mean(graduated)`\n            &lt;dbl&gt;             &lt;dbl&gt;\n1            629.             0.870"
+    "objectID": "harmonization.html#現況",
+    "href": "harmonization.html#現況",
+    "title": "Harmonization",
+    "section": "現況",
+    "text": "現況\n約20名のメンバーの協力を得ながら、以下の社会調査データを統合したデータの構築と整備、多方面から分析を進めています。\n\n社会階層と社会移動調査（SSM）：1975, 1985ABF, 1995AB, 2005, 2015\n日本版総合的社会調査（JGSS）：2000, 2001, 2002, 2003, 2005, 2006, 2008, 2009LCS, 2010, 2012, 2015, 2016, 2017, 2018, 2017G, 2018G, 2021H, 2022H\n東大社研・若年壮年パネル調査（JLPS）：2007, 2011, 2019\n全国家族調査（NFRJ）：1998, 2001, 2003, 2008, 2018\n社会階層と社会意識調査（SSP）：2010-I、2015\n教育・社会階層・社会移動全国調査（ESSM）：2013\n職業移動と経歴調査（OMCH）：1981, 1983, 1991\n世代とジェンダー調査（GSS）：2004\n\n\n\n\n調査別・性別・年齢別にみた回答者数の分布"
   },
   {
-    "objectID": "r/dss_tidyverse.html#do-small-classes-improve-student-performance",
-    "href": "r/dss_tidyverse.html#do-small-classes-improve-student-performance",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "2.5 Do small classes improve student performance?",
-    "text": "2.5 Do small classes improve student performance?\nread_csv()を使ってデータの読み込み。\n\nstar &lt;- read_csv(\"STAR.csv\")\n\n\n2.5.2 Creating new variables\ntidyverseを使ってなにか新しい変数を作るときのコマンドが、mutate()である。mutate(新しい変数の名前 = その内容)、というコードを書く。\n教科書と同じように、starデータフレームに含まれているclasstype列が\"small\"の場合に1、そうでない場合に0をとる新しい列smallを作って、starデータフレームに追加したい場合には、次のように書く。\n\nstar &lt;- star %&gt;% \n  mutate(small = ifelse(classtype == \"small\", 1, 0))\n\nまた、tidyverseを使う場合には、ifelse()と同じような関数としてif_else()がある。文法はほぼ同じで、次のように書くことができる。\n\nstar &lt;- star %&gt;% \n  mutate(small = if_else(classtype == \"small\", 1, 0))\n\nifelse()を使った場合と結果が同じになっているかを確認しよう。\n\nstar %&gt;% \n  head()\n\n# A tibble: 6 × 5\n  classtype reading  math graduated small\n  &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;\n1 small         578   610         1     1\n2 regular       612   612         1     0\n3 regular       583   606         1     0\n4 small         661   648         1     1\n5 small         614   636         1     1\n6 regular       610   603         0     0\n\n\n\n\n2.5.3 Subsetting variables\nグループごとに集計をしたい場合には、summarize()などの前にgroup_by()をつけることで、グループ別に集計することができる。\n\nstar %&gt;% # starデータフレームを、\n  group_by(small) %&gt;% # smallの値別に分けて、\n  summarize(mean(reading)) # 平均値を求める\n\n# A tibble: 2 × 2\n  small `mean(reading)`\n  &lt;dbl&gt;           &lt;dbl&gt;\n1     0            625.\n2     1            633.\n\n\n複数の変数を集計するときにも同様だ。\n\nstar %&gt;% \n  group_by(small) %&gt;%\n  summarize(mean(reading),\n            mean(math),\n            mean(graduated))\n\n# A tibble: 2 × 4\n  small `mean(reading)` `mean(math)` `mean(graduated)`\n  &lt;dbl&gt;           &lt;dbl&gt;        &lt;dbl&gt;             &lt;dbl&gt;\n1     0            625.         629.             0.866\n2     1            633.         635.             0.874"
+    "objectID": "harmonization.html#文献",
+    "href": "harmonization.html#文献",
+    "title": "Harmonization",
+    "section": "文献",
+    "text": "文献\n麦山亮太・平松誠・コンアラン・那須蘭太郎・吉田航，2025，「社会調査データの統合による二次分析研究の刷新：作業手順と今後の調査実施に向けた示唆」SSJ Data Archive Research Paper Series. 96. 東京大学社会科学研究所附属社会調査・データアーカイブ研究センター．"
   },
   {
-    "objectID": "r/dss_tidyverse.html#measuring-support-for-brexit",
-    "href": "r/dss_tidyverse.html#measuring-support-for-brexit",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "3.3 Measuring support for Brexit",
-    "text": "3.3 Measuring support for Brexit\n上記と同様、read_csv()を使ってデータを読み込む。\n\nbes &lt;- read_csv(\"BES.csv\")\n\n\nbes %&gt;% \n  head()\n\n# A tibble: 6 × 4\n  vote       leave education   age\n  &lt;chr&gt;      &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;\n1 leave          1         3    60\n2 leave          1        NA    56\n3 stay           0         5    73\n4 leave          1         4    64\n5 don't know    NA         2    68\n6 stay           0         4    85\n\n\n\nbes %&gt;% \n  dim()\n\n[1] 30895     4\n\n\n\n3.3.2 Frequency tables\n度数分布表（Frequency table）を作るときには、with(table())コマンドを使う。\n\nbes %&gt;% \n  with(table(vote))\n\nvote\ndon't know      leave       stay won't vote \n      2314      13692      14352        537"
-  },
-  {
-    "objectID": "r/dss_tidyverse.html#tables-of-proportions",
-    "href": "r/dss_tidyverse.html#tables-of-proportions",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "3.3.3 Tables of proportions",
-    "text": "3.3.3 Tables of proportions\n一度作成したtableにfreq_tableと名前をつけて保存する。保存したデータフレームに対してprop.table()を実行することで、割合を求めることができる。\n\nfreq_table &lt;- bes %&gt;% \n  with(table(vote))\n\nfreq_table %&gt;% \n  prop.table()\n\nvote\ndon't know      leave       stay won't vote \n0.07489885 0.44317851 0.46454119 0.01738145 \n\n\nもしくは、with(table())にそのまま%&gt;%演算子を重ねてprop.table()を実行することでも割合を求めることができる。\n\nbes %&gt;% \n  with(table(vote)) %&gt;% \n  prop.table()\n\nvote\ndon't know      leave       stay won't vote \n0.07489885 0.44317851 0.46454119 0.01738145"
-  },
-  {
-    "objectID": "r/dss_tidyverse.html#who-supported-brexit",
-    "href": "r/dss_tidyverse.html#who-supported-brexit",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "3.4 Who supported brexit?",
-    "text": "3.4 Who supported brexit?\n\n3.4.1 Handling missing data\nNAを含めた度数分布を出す場合には、教科書に書かれているexclude = NULLのオプションのほか、useNA = \"always\"のオプションを使うこともできる。\n\nbes %&gt;% \n  with(table(education, exclude = NULL))\n\neducation\n    1     2     3     4     5  &lt;NA&gt; \n 2045  5781  6272 10676  2696  3425 \n\nbes %&gt;% \n  with(table(education, useNA = \"always\"))\n\neducation\n    1     2     3     4     5  &lt;NA&gt; \n 2045  5781  6272 10676  2696  3425 \n\n\n平均値を求めるときには、with(mean())を使うか、summarize(mean())を使う。ただし、いずれのコマンドについても値にNAが含まれている場合には計算結果もNAとなってしまう。\n\nbes %&gt;% \n  with(mean(leave))\n\n[1] NA\n\n\nこのような場合には、NAを除いて平均値を求めるように以下のオプションをつける。\n\nbes %&gt;% \n  with(mean(leave, na.rm = TRUE))\n\n[1] 0.4882328\n\n\n\nbes %&gt;% \n  summarize(mean(leave, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  `mean(leave, na.rm = TRUE)`\n                        &lt;dbl&gt;\n1                       0.488\n\n\nデータフレームのなかで一つでも欠損値がある行を除外する場合には、na.omit()を使う。\n\nbes1 &lt;- bes %&gt;% \n  na.omit()\n\nただし、61ページの「ADVANCED TIP」にあるように、実際の調査データの分析では分析に使う変数はごく一部のため、一部の変数のみ抜き出したデータを準備したうえで、na.omit()で欠損値のあるデータを除外することが多い。一部の変数のみを取り出す場合には、select()というコマンドが使える。\n\nbes1 &lt;- bes %&gt;% \n  select(vote, leave, education, age) %&gt;% \n  na.omit()\n\n\n\n3.4.2 Two-way frequency tables\nwith(table())は2変量の度数分布表（クロス集計表）の作成にも使える。,の前が行になる変数、後ろが列になる変数を表す。\n\nbes1 %&gt;% \n  with(table(leave, education))\n\n     education\nleave    1    2    3    4    5\n    0  498 1763 3014 6081 1898\n    1 1356 3388 2685 3783  631\n\n\n\n\n3.4.3 Two-way tables of proportions\n総割合を求める場合には、度数分布表のときと同じくprop.table()を指定すればよい。もしくは、prop.table(margin = 0)と書いても同じ。\n\nbes1 %&gt;% \n  with(table(leave, education)) %&gt;% \n  prop.table()\n\n     education\nleave          1          2          3          4          5\n    0 0.01984301 0.07024744 0.12009404 0.24229988 0.07562657\n    1 0.05403036 0.13499621 0.10698490 0.15073515 0.02514245\n\n\n行割合を求める場合には、prop.table(margin = 1)。\n\nbes1 %&gt;% \n  with(table(leave, education)) %&gt;% \n  prop.table(margin = 1)\n\n     education\nleave          1          2          3          4          5\n    0 0.03757356 0.13301645 0.22740305 0.45880489 0.14320205\n    1 0.11449802 0.28607616 0.22671620 0.31942920 0.05328042\n\n\n列割合を求める場合には、prop.table(margin = 2)。\n\nbes1 %&gt;% \n  with(table(leave, education)) %&gt;% \n  prop.table(margin = 2)\n\n     education\nleave         1         2         3         4         5\n    0 0.2686084 0.3422636 0.5288647 0.6164842 0.7504943\n    1 0.7313916 0.6577364 0.4711353 0.3835158 0.2495057\n\n\n\n\n3.4.4 Histograms\n人生一度はイケてるグラフを作ってみたいと思ったことがあるだろう（そうでもない？）。そんなときに活躍するのが、ggplot()および関連の関数である。ggplot()はデフォルトのRのグラフよりは少し文法が複雑だが、さまざまな要素を追加したり、よりきれいなグラフを作る際には非常に役立つコマンドである。\nggplotについての導入的な知識についてはこのページでも解説しているので、こちらにもとづいて説明する。\nまず、教科書と同様に年齢についてのヒストグラムを作ってみたいと思ったとする。以下のコードを実行する。\n\nbes1 %&gt;% \n  ggplot(aes(x = age)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\nggplotの基本的な発想は、キャンバスに絵の具を重ね塗りしていくかのように、一つひとつ層を重ねていってグラフを作るというものである。具体的にみてみよう。先ほどのコードから3行目を削除した次の結果を確認してみよう。\n\nbes1 %&gt;% \n  ggplot(aes(x = age))\n\n\n\n\n\n\n\n\nggplot()という部分が、グラフを書くための準備をしている箇所である。aes()のなかでは、x軸やy軸にそれぞれ何の変数を取るのかであったり、どのような色で分けるのか（今回は扱わない）などを指定する。今の場合であれば、x軸にageをとる、ということを指している。上記の命令だけだと、このようにx軸のみが表示された空白の座標が準備される。\ngeom_histogram()というのが、ヒストグラムを書くためのコードである。先ほどのコードに、+でつないでgeom_histogram()というコードを追加すると、空白の座標にヒストグラムが描かれる。縦軸（count）は、その区間に何人の人が属しているかを示している。\n\nbes1 %&gt;% \n  ggplot(aes(x = age)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\nついで、brexitを支持しなかったグループ（leave == 0）と、brexitを指示したグループ（leave == 1）とに分けたヒストグラムを作る。これは、これまでのコマンドに新たにfacet_wrap(~leave)または、facet_grid(~leave)というコマンドを追加する。\n\nbes1 %&gt;% \n  ggplot(aes(x = age)) + \n  geom_histogram() + \n  facet_wrap(~leave)\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n\n\n3.4.5 Density histograms\n次は、学歴educationが1のグループと4のグループのみを取り出して、先ほどと同じように2つに分割したヒストグラムを作ってみる。特定の条件にあったデータのみを抽出したいときには、filter()関数を使う。たとえば、educationが1のグループだけを取り出したい場合には、次のようにする。\n\nbes1 %&gt;% \n  filter(education == 1) %&gt;% # educationが1の人だけを抽出\n  with(table(education)) # 結果を確認\n\neducation\n   1 \n1854 \n\n\neducationが1または4のグループだけを取り出したい場合には、次のようにする。\n\nbes1 %&gt;% \n  filter(education == 1 | education == 4) %&gt;% # educationが1または4の人だけを抽出\n  with(table(education)) # 結果を確認\n\neducation\n   1    4 \n1854 9864 \n\n\n上記の操作を応用して、再びヒストグラムを作ってみよう。\n\nbes1 %&gt;% \n  filter(education == 1 | education == 4) %&gt;% \n  ggplot(aes(x = age)) + \n  geom_histogram() +\n  facet_wrap(~education)\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n上記のグラフの縦軸を密度にして揃えたいときには、geom_histogram()の括弧内にaes(y = after_stat(density))というオプションを追加する。\n\nbes1 %&gt;% \n  filter(education == 1 | education == 4) %&gt;% \n  ggplot(aes(x = age)) + \n  geom_histogram(aes(y = after_stat(density))) +\n  facet_wrap(~education)\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n同じことをbrexitを支持するかどうかで分けたヒストグラムでもできることを確認しよう。\n\nbes1 %&gt;% \n  ggplot(aes(x = age)) + \n  geom_histogram(aes(y = after_stat(density))) + \n  facet_wrap(~leave)\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n\n\n3.4.6 Descriptive statistics\n2.5.3 Subsetting variablesで扱ったように、group_by()とsummarize()を組み合わせることで、層別に平均値（mean）や中央値（median）、標準偏差（sd）を求めることができる。\n\nbes1 %&gt;% \n  group_by(leave) %&gt;% \n  summarize(mean(age))\n\n# A tibble: 2 × 2\n  leave `mean(age)`\n  &lt;dbl&gt;       &lt;dbl&gt;\n1     0        46.9\n2     1        55.1\n\n\n\nbes1 %&gt;% \n  group_by(leave) %&gt;% \n  summarize(median(age))\n\n# A tibble: 2 × 2\n  leave `median(age)`\n  &lt;dbl&gt;         &lt;dbl&gt;\n1     0            48\n2     1            58\n\n\n\nbes1 %&gt;% \n  group_by(leave) %&gt;% \n  summarize(sd(age))\n\n# A tibble: 2 × 2\n  leave `sd(age)`\n  &lt;dbl&gt;     &lt;dbl&gt;\n1     0      17.3\n2     1      15.0\n\n\n分散と標準偏差の関係を確認しておこう。\n\nbes1 %&gt;% \n  filter(leave == 1) %&gt;% \n  summarize(分散 = var(age),\n            標準偏差の2乗 = sd(age)^2,\n            分散の平方根 = sqrt(var(age)))\n\n# A tibble: 1 × 3\n   分散 標準偏差の2乗 分散の平方根\n  &lt;dbl&gt;         &lt;dbl&gt;        &lt;dbl&gt;\n1  224.          224.         15.0"
-  },
-  {
-    "objectID": "r/dss_tidyverse.html#relationship-between-education-and-the-leave-vote-in-the-entire-uk",
-    "href": "r/dss_tidyverse.html#relationship-between-education-and-the-leave-vote-in-the-entire-uk",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "3.5 Relationship between education and the leave vote in the entire UK",
-    "text": "3.5 Relationship between education and the leave vote in the entire UK\nこれまでと同じようにデータを読み込み。\n\ndis &lt;- read_csv(\"UK_districts.csv\")\n\n\ndis %&gt;% \n  head()\n\n# A tibble: 6 × 3\n  name           leave high_education\n  &lt;chr&gt;          &lt;dbl&gt;          &lt;dbl&gt;\n1 Birmingham      50.4           23.0\n2 Cardiff         40.0           32.3\n3 Edinburgh City  25.6           21.9\n4 Glasgow City    33.4           25.9\n5 Liverpool       41.8           22.4\n6 Swansea         51.5           25.8\n\n\n\ndis %&gt;% \n  dim()\n\n[1] 382   3\n\n\nNAを含む行を削除したデータを作成。\n\ndis1 &lt;- dis %&gt;% \n  na.omit()\n\n\ndis1 %&gt;% \n  dim()\n\n[1] 380   3\n\n\n\n3.5.1 Scatter plots\n散布図を描くときに使うのがgeom_point()というコマンドである。ggplot(aes())内でx軸とy軸をそれぞれ指定しておいて、geom_point()で散布図を描くことができる。\n\ndis1 %&gt;% \n  ggplot(aes(x = high_education, y = leave)) + \n  geom_point()\n\n\n\n\n\n\n\n\n上記の図に、xの平均値を表す線とyの平均値を表す線を書き加えてみよう。横方向の線を加えるコマンドはgeom_hline()、縦方向の線を加えるコマンドはgeom_vline()である。\n\nxvalue &lt;- dis1 %&gt;% \n  with(mean(high_education))\nyvalue &lt;- dis1 %&gt;% \n  with(mean(leave))\n\ndis1 %&gt;% \n  ggplot(aes(x = high_education, y = leave)) + \n  geom_point() + \n  geom_hline(yintercept = yvalue, lty = \"dashed\") + \n  geom_vline(xintercept = xvalue, lty = \"dashed\")\n\n\n\n\n\n\n\n\n\n\n3.5.2 Correlation\n相関係数を求めるときには、with(cor())コマンドを用いる。\n\ndis1 %&gt;% \n  with(cor(high_education, leave))\n\n[1] -0.7633185\n\ndis1 %&gt;% \n  with(cor(leave, high_education))\n\n[1] -0.7633185"
-  },
-  {
-    "objectID": "r/dss_tidyverse.html#predicting-gdp-using-prior-gdp",
-    "href": "r/dss_tidyverse.html#predicting-gdp-using-prior-gdp",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "4.4 Predicting GDP using prior GDP",
-    "text": "4.4 Predicting GDP using prior GDP\nread_csv()でデータを読み込む。\n\nco &lt;- read_csv(\"countries.csv\")\n\nhead()で、データの最初の6行を表示できる。\n\nco %&gt;% head()\n\n# A tibble: 6 × 5\n  country    gdp prior_gdp light prior_light\n  &lt;chr&gt;    &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;       &lt;dbl&gt;\n1 USA      11.1      7.37   4.23       4.48 \n2 Japan   543.     464.    11.9       11.8  \n3 Germany   2.15     1.79  10.6        9.70 \n4 China    16.6      4.90   1.45       0.735\n5 UK        1.10     0.754 11.9       13.4  \n6 France    1.58     1.21   8.51       6.91 \n\n\ndim()で、データの行数と列数を表示できる。\n\nco %&gt;% dim()\n\n[1] 170   5\n\n\n\n4.4.1 Relationship between GDP and prior GDP\nggplot()を使って散布図を描いてみる。\n\nco %&gt;% \n  ggplot(aes(x = prior_gdp, y = gdp)) + # x軸にprior_gdp、y軸にgdpを指定\n  geom_point() # 散布図を描く\n\n\n\n\n\n\n\n\nwith(cor())を使って相関係数を求める。\n\nco %&gt;% \n  with(cor(gdp, prior_gdp))\n\n[1] 0.9903451\n\n\n散布図に回帰直線を書くときには、geom_smooth()を使う。method = \"lm\"で回帰直線を指定し、se = FALSEで信頼区間を描かないように指定する1。\n\nco %&gt;% \n  ggplot(aes(x = prior_gdp, y = gdp)) + \n  geom_point() + \n  geom_smooth(method = \"lm\", se = FALSE)\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n4.4.2 With natural logarithm transformations\n自然対数変換を行った変数（列）を、データフレーム（co）に追加する。\n\nco &lt;- co %&gt;% \n  mutate(log_gdp = log(gdp)) %&gt;%  \n  mutate(log_prior_gdp = log(prior_gdp))\n\nもともとのgdpの分布は右に歪んでいる（低い方に偏っている）。対数変換を行うことで、分布が左右対称の正規分布に近づくことがわかる。\n\nco %&gt;% \n  ggplot(aes(x = gdp)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n\nco %&gt;% \n  ggplot(aes(x = log_gdp)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n1年前のGDPについても同様である。\n\nco %&gt;% \n  ggplot(aes(x = prior_gdp)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n\nco %&gt;% \n  ggplot(aes(x = log_prior_gdp)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n1年前の対数GDPと現在の対数GDPの散布図を描いてみる。\n\nco %&gt;% \n  ggplot(aes(x = log_prior_gdp, y = log_gdp)) + \n  geom_point()\n\n\n\n\n\n\n\n\nwith(cor())で相関係数を求める。\n\nco %&gt;% \n  with(cor(log_gdp, log_prior_gdp))\n\n[1] 0.9982696"
-  },
-  {
-    "objectID": "r/dss_tidyverse.html#predicting-gdp-growth-using-night-time-light-emissions",
-    "href": "r/dss_tidyverse.html#predicting-gdp-growth-using-night-time-light-emissions",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "4.5 Predicting GDP growth using night-time light emissions",
-    "text": "4.5 Predicting GDP growth using night-time light emissions\n\\(t\\)年のGDP成長率（\\(\\Delta GDP_t\\)とする）は、次のように計算される。\n\\[\nGDP_t = \\frac{GDP_{t} - GDP_{t-1}}{GDP_{t-1}} \\times 100\n\\]\nGDP成長率、および光量の成長率の変数（列）を作成して、データフレーム（co）に追加する。\n\nco &lt;- co %&gt;% \n  mutate(gdp_change = (gdp - prior_gdp)/prior_gdp * 100) %&gt;% \n  mutate(light_change = (light - prior_light)/prior_light * 100)\n\n\nco %&gt;% \n  ggplot(aes(x = gdp_change)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n光量の成長率のヒストグラムを描いてみる。\n\nco %&gt;% \n  ggplot(aes(x = light_change)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\nついで、光量の成長率とGDP成長率の散布図を描いてみる。\n\nco %&gt;% \n  ggplot(aes(x = light_change, y = gdp_change)) + \n  geom_point()\n\n\n\n\n\n\n\n\n両者の相関係数を計算する。\n\nco %&gt;% \n  with(cor(gdp_change, light_change))\n\n[1] 0.4577672"
-  },
-  {
-    "objectID": "r/dss_tidyverse.html#measuring-how-well-the-model-fits-the-data-with-coefficient-of-determination-r2",
-    "href": "r/dss_tidyverse.html#measuring-how-well-the-model-fits-the-data-with-coefficient-of-determination-r2",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "4.6 Measuring how well the model fits the data with coefficient of determination, R^2",
-    "text": "4.6 Measuring how well the model fits the data with coefficient of determination, R^2\n相関係数を2乗した値を決定係数という。決定係数は、従属変数Yの変動のうち、独立変数Xによって説明される割合を示す。\n\nco %&gt;% \n  with(cor(gdp, prior_gdp)^2)\n\n[1] 0.9807834\n\nco %&gt;% \n  with(cor(log_gdp, log_prior_gdp)^2)\n\n[1] 0.9965422\n\nco %&gt;% \n  with(cor(gdp_change, light_change)^2)\n\n[1] 0.2095508\n\n\n社会科学の場合は、予測に関心があることは少なく、むしろ、変数間の関連がどの程度あるのかを明らかにすることに主眼がある。そのため、決定係数が高いかどうかはあまり気にする必要はない。"
-  },
-  {
-    "objectID": "r/dss_tidyverse.html#the-effect-of-russian-tv-on-ukrainians-voting-behavior",
-    "href": "r/dss_tidyverse.html#the-effect-of-russian-tv-on-ukrainians-voting-behavior",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "5.3 The effect of Russian TV on Ukrainians’ voting behavior",
-    "text": "5.3 The effect of Russian TV on Ukrainians’ voting behavior\nデータを読み込む。\n\nuas &lt;- read_csv(\"UA_survey.csv\")\n\n\nuas %&gt;% head()\n\n# A tibble: 6 × 3\n  russian_tv pro_russian_vote within_25km\n       &lt;dbl&gt;            &lt;dbl&gt;       &lt;dbl&gt;\n1          1                0           1\n2          1                1           1\n3          0                0           0\n4          0                0           1\n5          0                0           1\n6          1                0           0\n\nuas %&gt;% dim()\n\n[1] 358   3\n\n\n\n5.3.1 Using the simple linear model to compute the difference-in-means estimator\n教科書にかかれているとおり、ロシアのテレビを見ていない地域における親ロシア派の投票率と、ロシアのテレビを見ている地域における親ロシア派の投票率を求めて、それらの差を計算してみる。\n\nmean0 &lt;- uas %&gt;% \n  filter(russian_tv == 0) %&gt;% \n  with(mean(pro_russian_vote))\nmean1 &lt;- uas %&gt;% \n  filter(russian_tv == 1) %&gt;% \n  with(mean(pro_russian_vote))\n\nmean1 - mean0\n\n[1] 0.1191139\n\n\n別の方法として、group_by()を使ってサンプルを2つのグループに分けたうえで、それぞれのグループ別に平均値を計算し、両者の差を求めるという方法もある。\n\nuas %&gt;% \n  group_by(russian_tv) %&gt;% \n  summarize(mean = mean(pro_russian_vote)) %&gt;% \n  mutate(diff = mean - lag(mean, n = 1))\n\n# A tibble: 2 × 3\n  russian_tv  mean   diff\n       &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;\n1          0 0.171 NA    \n2          1 0.29   0.119\n\n\n\n\n5.3.2 Controlling for confounders using a multiple linear regression model\n\nuas %&gt;% \n  with(cor(within_25km, russian_tv))\n\n[1] 0.8127747\n\n\nロシアとウクライナの国境から25km以内に住んでいるかどうか（within_25km）と、ロシアのテレビを見ているかどうかのクロス表を作ってみよう。\n\nuas %&gt;% \n  with(table(within_25km, russian_tv))\n\n           russian_tv\nwithin_25km   0   1\n          0 139  14\n          1  19 186"
-  },
-  {
-    "objectID": "r/dss_tidyverse.html#the-effect-of-russian-tv-on-ukrainian-electoral-outcomes",
-    "href": "r/dss_tidyverse.html#the-effect-of-russian-tv-on-ukrainian-electoral-outcomes",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "5.4 The effect of russian TV on Ukrainian electoral outcomes",
-    "text": "5.4 The effect of russian TV on Ukrainian electoral outcomes\n\nuap &lt;- read_csv(\"UA_precincts.csv\")\n\n\nuap %&gt;% head()\n\n# A tibble: 6 × 4\n  russian_tv pro_russian prior_pro_russian within_25km\n       &lt;dbl&gt;       &lt;dbl&gt;             &lt;dbl&gt;       &lt;dbl&gt;\n1          0       2.72               25.1           1\n2          0       0.893              35.3           0\n3          1       1.69               20.5           1\n4          0      72.3                84.5           1\n5          0       1.28               29.0           0\n6          1       1.43               45.6           0\n\nuap %&gt;% dim()\n\n[1] 3589    4\n\n\n\n5.4.1 Using the simple linear model to compute the difference-in-means estimator\n今回選挙で親ロシア派の候補者に投票した人の割合（pro_russian）と、前回選挙で親ロシア派の候補者に投票した人の割合（prior_pro_russian）の差の変数を作成して、データフレームuapに追加する。\n\nuap &lt;- uap %&gt;% \n  mutate(pro_russian_change = pro_russian - prior_pro_russian)\n\n今回選挙と前回選挙の差の変数のヒストグラムを見てみよう。\n\nuap %&gt;% \n  ggplot(aes(x = pro_russian_change)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n\nuap %&gt;% \n  with(cor(within_25km, russian_tv))\n\n[1] 0.5317845"
-  },
-  {
-    "objectID": "r/dss_tidyverse.html#probability-distributions",
-    "href": "r/dss_tidyverse.html#probability-distributions",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "6.4 Probability distributions",
-    "text": "6.4 Probability distributions\nSeeing theoryのChance Eventでは、コインを投げたときに得られる実現値と、観察された割合との関係を見ることができる。コインをたくさん投げるほど、観察された割合の値が真の確率に近づくことがわかる。\n\n6.4.2 The normal distribution\nstarデータを読み込み、ヒストグラムを作成する。\n\nstar &lt;- read_csv(\"STAR.csv\")\n\n\nstar %&gt;% \n  ggplot(aes(x = reading, y = ..density..)) +\n  geom_histogram()\n\nWarning: The dot-dot notation (`..density..`) was deprecated in ggplot2 3.4.0.\nℹ Please use `after_stat(density)` instead.\n\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\nSeeing theoryのDiscrete and Continuousの箇所で、「Continuous」を選択して、「Normal」を選択すると、正規分布がどのような形状になるのかを確かめることができる。\n\n\n6.5.2 The central limit theorem\nSeeing theoryのCentral Limit Theoremでは、標本平均の分布がどのようになるのかを確認することができる。\n\nsd_sample_means &lt;- c()\n\nfor (i in 1:10000){\n  ## p = 0.6の二値確率変数から1000個の観察の無作為標本を抽出\n  support_sample &lt;- sample(c(1,0),\n                           size = 1000,\n                           replace = TRUE,\n                           prob = c(0.6, 0.4))\n  ## 標準化した標本平均を計算して保存\n  sd_sample_means[i] &lt;- (mean(support_sample) - 0.6) / sqrt(0.6 * 0.4 / 1000)\n}\n\n## ヒストグラムを作成\nsd_sample_means %&gt;% \n  tibble() %&gt;% \n  ggplot(aes(x = sd_sample_means, y = ..density..)) +\n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`."
-  },
-  {
-    "objectID": "r/dss_tidyverse.html#confidence-intervals",
-    "href": "r/dss_tidyverse.html#confidence-intervals",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "7.2 Confidence intervals",
-    "text": "7.2 Confidence intervals\n\n7.2.1 Confidence interval for the sample mean\nSeeing theoryのconfidence intervalの箇所では、次のことを理解できる。\n\nx%信頼区間とは、無作為に抽出されたx%の標本が、母集団におけるパラメータ（この場合は平均値）の真値を含んでいる。\n標本サイズを大きくするほど、信頼区間が小さくなる。\n信頼水準を高く設定するほど、信頼区間が大きくなる。\n\nbesデータを読み込み、欠損値を削除したデータbes1を準備する。\n\nbes &lt;- read_csv(\"BES.csv\") \n\n\nbes1 &lt;- bes %&gt;% \n  na.omit()\n\n公式の意味を知りたい場合には教科書のようなコードを実行するほうがよいが、実際に信頼区間を計算する際にはt.test()関数を使うのが便利である。t.test()は、t分布を使って信頼区間を求めたりt検定を行ったりする関数である。標本サイズが十分大きい場合、t分布は標準正規分布に近似するため、教科書で使われている標準正規分布の信頼区間を求める場合とほぼ同様に使うことができる。\n標本平均の信頼区間を求める場合、次のように書く。\n\nt.test(平均を計算したい変数 ~ 1, data = データフレーム, conf.level = 信頼水準)\n\n\nt.test(leave ~ 1, data = bes1, conf.level = 0.95) # 標本平均の95%信頼区間を求める\n\n\n    One Sample t-test\n\ndata:  leave\nt = 149.75, df = 25096, p-value &lt; 2.2e-16\nalternative hypothesis: true mean is not equal to 0\n95 percent confidence interval:\n 0.4657125 0.4780657\nsample estimates:\nmean of x \n0.4718891 \n\n\n末尾に示された「95 percent confidence interval:」の箇所が標本平均の95%信頼区間を表している。\n\n\n7.2.2 Confidence interval for the difference-in-means estimator\nstarデータを読み込む。\n\nstar &lt;- read_csv(\"star.csv\")\n\n\nstar %&gt;% head()\n\n# A tibble: 6 × 5\n  classtype reading  math graduated small\n  &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;\n1 small         578   610         1     1\n2 regular       612   612         1     0\n3 regular       583   606         1     0\n4 small         661   648         1     1\n5 small         614   636         1     1\n6 regular       610   603         0     0\n\n\nt.test()は2つのグループ間の平均の差推定量の信頼区間を求める場合にも使うことができる。この場合、次のように書く。\n\nt.test(平均を計算したい変数 ~ グループ分けする変数, data = データフレーム, conf.level = 信頼水準)\n\n\nt.test(reading ~ small, data = star, conf.level = 0.95) #small別に見た数学の平均値の差の95%信頼区間を求める)\n\n\n    Welch Two Sample t-test\n\ndata:  reading by small\nt = -3.4957, df = 1221, p-value = 0.0004899\nalternative hypothesis: true difference in means between group 0 and group 1 is not equal to 0\n95 percent confidence interval:\n -11.257410  -3.163683\nsample estimates:\nmean in group 0 mean in group 1 \n       625.4920        632.7026 \n\n\n末尾に示された「95 percent confidence interval:」の箇所が平均の差推定量の95%信頼区間を表している。\n教科書と異なり、少人数学級ではないグループの平均値から少人数学級のグループの平均値を引いている（t.test()はsmallの値が小さい方から大きい方を引く）ことから、値が負になっている。しかし、解釈に変わりはない。\n\n\n7.2.3 Confidence interval for predicted outcomes\ncoデータを読み込み、必要な変数を作成する。\n\nco &lt;- read_csv(\"countries.csv\")\n\n\nco &lt;- co %&gt;% \n  mutate(gdp_change = (gdp - prior_gdp)/prior_gdp * 100) %&gt;% \n  mutate(light_change = (light - prior_light)/prior_light * 100)\n\n以下の線形モデルを推定して、fitに格納する。\n\nfit &lt;- lm(gdp_change ~ light_change, data = co)\n\npredict()関数を使って、light_changeが20の場合のgdp_changeの予測値と95%信頼区間を求める。\n\nfit %&gt;% \n  predict(newdata = data.frame(light_change = 20),\n          interval = \"confidence\")\n\n       fit      lwr      upr\n1 54.91233 48.77123 61.05343\n\n\nなお、ggplot()を使うことで、すべてのlight_changeの値における95%信頼区間を求めた図を書くこともできる。\n\nco %&gt;% \n  ggplot(aes(x = light_change, y = gdp_change)) +\n  geom_point() +\n  geom_smooth(method = \"lm\", se = TRUE) # 線形モデルを当てはめ、95%信頼区間を表示\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n薄い灰色で塗られた箇所が、95%信頼区間を表している。"
-  },
-  {
-    "objectID": "r/dss_tidyverse.html#hypothesis-testing",
-    "href": "r/dss_tidyverse.html#hypothesis-testing",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "7.3 Hypothesis testing",
-    "text": "7.3 Hypothesis testing\n\n7.3.1 Hypothesis testint with the difference-in-means estimator\n先ほどと同じように、t.test()を使って平均の差推定量が統計的に有意に0と異なるかどうかの検定を行うことができる。\n\nt.test(reading ~ small, data = star) # small別に見た数学の平均値の差に関するt検定\n\n\n    Welch Two Sample t-test\n\ndata:  reading by small\nt = -3.4957, df = 1221, p-value = 0.0004899\nalternative hypothesis: true difference in means between group 0 and group 1 is not equal to 0\n95 percent confidence interval:\n -11.257410  -3.163683\nsample estimates:\nmean in group 0 mean in group 1 \n       625.4920        632.7026 \n\n\n冒頭に示された「t = 」の箇所が検定統計量であるt統計量（標本サイズが十分大きい場合、z統計量とt統計量の値は近似する）の値、「p-value」の箇所がp値を表している。tの絶対値は1.96より大きく、またp値は0.05よりも小さいため、少人数学級とそれ以外のクラスの平均値には統計的に有意な差がある（少人数学級のほうが読解力の点数が高い）と結論できる。\n\n\n7.3.2 Hypothesis testing with estimated regression coefficients\nUA_surveyデータを読み込み、uasに格納する。\n\nuas &lt;- read_csv(\"UA_survey.csv\")\n\n以下の線形モデルを推定して、fitに格納する。\n\nfit &lt;- lm(pro_russian_vote ~ russian_tv + within_25km, data = uas)\n\nモデルの統計量を示す表を表示する。\n\nfit %&gt;% \n  summary() %&gt;% \n  coef\n\n              Estimate Std. Error   t value     Pr(&gt;|t|)\n(Intercept)  0.1959065 0.03457823  5.665602 3.032123e-08\nrussian_tv   0.2875934 0.07652437  3.758194 2.000236e-04\nwithin_25km -0.2080644 0.07681051 -2.708802 7.079846e-03"
-  },
-  {
-    "objectID": "r/dss_tidyverse.html#footnotes",
-    "href": "r/dss_tidyverse.html#footnotes",
-    "title": "Data analysis for social science in tidyverse",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nse = TRUEとすると、95%信頼区間が表示される。信頼区間についての説明は、Chapter 7を参照のこと。↩︎"
-  },
-  {
-    "objectID": "notes.html",
-    "href": "notes.html",
-    "title": "Notes",
+    "objectID": "workshop/reading_circle_of_inequality_studies.html",
+    "href": "workshop/reading_circle_of_inequality_studies.html",
+    "title": "不平等研究に関する輪読会 Reading circle of inequality studies",
     "section": "",
-    "text": "主に計量分析の手法やプログラムに関するメモをアップロードしていく予定です。"
+    "text": "英文トップジャーナルに最近掲載された論文の内容を紹介し、研究のトレンドを掴んたりアイデアを得たりする。\n\n\n\nGeneral\n\nAmerican Sociological Review\nAmerican Journal of Sociology\nSocial Forces\nEuropean Sociological Review\nSociological Science\nSocial Science Research\n\nSubfield\n\nDemography\nPopulation and Development Review\nSociology of Education\nJournal of Marriage and Family\nGender & Society\nSocio-Economic Review\nResearch in Social Stratification and Mobility\n\nそのほか、Administrative Science Quarterly, Criminology, Social Science & Medicine, Social Networks, Nature Human Behavior, Proceedings of the National Academy of Sciences (PNAS) など\nMethod\n\nSociological Methods and Research\nSociological Methodology\n\n\n\n\n\n報告担当者は各自、会合までに自分の読みたい論文をspreadsheetに書き込み、googledriveにアップロードする。テーマは広い意味で不平等にかかわるものとする。\n会合では、報告者が15分程度でその論文の内容を紹介する。報告者はレジュメやスライドを準備してもいいし、しなくてもいい。他の参加者は、当該論文を読んできてもいいし、読まなくてもいい。\n内容紹介を受けて、議論する。内容の細かな「批判的読解」よりも、当該の研究がどのような位置づけで、何を明らかにしていて、何が新しいのか、理論や枠組みの応用・発展可能性についてざっくばらんに話すのを主眼とする。\n各回の報告者数はとくに定めない。時間は1人につき40分（15分以内報告 + 25分議論）くらいを目安とする。\n\n\n\n\n一回につき2人程度が話題提供で、3〜4週間に1回程度。\n\n\n\n随時募集中で、職位などは問いません。社会学分野における不平等に関する研究に関心がある方ならどなたでも。"
   },
   {
-    "objectID": "notes.html#論文輪読会レジュメ",
-    "href": "notes.html#論文輪読会レジュメ",
-    "title": "Notes",
-    "section": "論文輪読会レジュメ",
-    "text": "論文輪読会レジュメ\n論文の輪読会で使ったレジュメを不定期に更新します。\n\nMartin-Caughey, Ananda. 2021. “What’s in an Occupation? Investigating Within-Occupation Variation and Gender Segregation Using Job Titles and Task Descriptions.” American Sociological Review 86(5):960–99.\nTorche, Florencia, and Alejandra Abufhele. 2021. “The Normativity of Marriage and the Marriage Premium for Children’s Outcomes.” American Journal of Sociology 126(4):931–68.\nChetty, Raj et al. 2022. “Social Capital I: Measurement and Associations with Economic Mobility.” Nature. http://dx.doi.org/10.1038/s41586-022-04996-4\nJackson, Margot I., and Daniel Schneider. 2022. “Public Investments and Class Gaps in Parents’ Developmental Expenditures.” American Sociological Review 87(1):105–42.\nGong, S., & Wang, S. (2022). Family Policy Awareness and Marital Intentions: A National Survey Experimental Study. Demography, 59(1), 247–266.\nWilmers, Nathan, and Clem Aeppli. 2021. “Consolidated Advantage: New Organizational Dynamics of Wage Inequality.” American Sociological Review 86(6):1100–1130.\nCheng, S., & Song, X. (2019). Linked Lives, Linked Trajectories: Intergenerational Association of Intragenerational Income Mobility. American Sociological Review, 84(6), 1037–1068.\nLabussière, M., & Bol, T. (2024). Are occupations “bundles of skills”? Identifying latent skill profiles in the labor market using topic modeling. SocArXiv. https://doi.org/10.31219/osf.io/5zwmt\nGodechot, Olivier, Donald Tomaskovic-Devey, István Boza, Lasse Folke Henriksen, Are Skeie Hermansen, Feng Hou, Jiwook Jung, Naomi Kodama, Alena Křížková, Zoltán Lippényi, Silvia Maja Melzer, Eunmi Mun, Halil Sabanci, Max Thaning, Paula Apascaritei, Dustin Avent-Holt, Nina Bandelj, Alexis Baudour, David Cort, Marta M. Elvira, Gergely Hajdu, Aleksandra Kanjuo-Mrčela, Joseph King, Andrew Penner, Trond Petersen, Andreja Poje, Anthony Rainey, Mirna Safi, and Matthew Soener. 2024. “The Great Separation: Top Earner Segregation at Work in Advanced Capitalist Economies.” American Journal of Sociology 130(2):439–95.\nKim, C. (2025). Culture and Immigrant Selectivity in Shaping Asian American Education: Evidence from Historical Census Data. American Sociological Review, 0(0). https://doi.org/10.1177/00031224251325259\n\nlast update: 2025-08-19"
-  },
-  {
-    "objectID": "notes.html#ssm職歴データのパーソンイヤーデータへの変換",
-    "href": "notes.html#ssm職歴データのパーソンイヤーデータへの変換",
-    "title": "Notes",
-    "section": "SSM職歴データのパーソンイヤーデータへの変換",
-    "text": "SSM職歴データのパーソンイヤーデータへの変換\nSSM調査データをパーソンイヤーデータに変換する際のデータ加工の考え方、いくつかの分析例、およびStataのdo-fileとRのコードをアップロードしています。2024年5月31日の2025年SSM調査研究会にて報告した内容ですが、広く研究会外でSSM調査データを使う方の目的に供するために公開しています。コードに誤りなどを見つけた場合はお知らせいただければと思います。\nlast update: 2024-06-11"
-  },
-  {
-    "objectID": "notes.html#決定係数の要因分解",
-    "href": "notes.html#決定係数の要因分解",
-    "title": "Notes",
-    "section": "決定係数の要因分解",
-    "text": "決定係数の要因分解\n決定係数は(1) 独立変数の限界効果、 (2) 独立変数の分散および共分散、(3) 従属変数の分散、の3つの要因に左右されます。2つの異なるサンプル間の決定係数の違いが何によって生じているかを考えたいときには、要因分解の方法が有用です。そこで要因分解の式を考えました。\n資料中の方法を再現するStataコード：\nsysuse auto, clear\n\ngen y = mpg\n\n*** Estimate linear regression for non-foreign cars.\nreg y price weight if foreign == 0\npredict yhat0\n\n*** Estimate linear regression for foreign cars.\nreg y price weight if foreign == 1\npredict yhat1\n\ncollapse (sd) y yhat1 yhat0, by(foreign)\n\n*** Generate variance of y.\nreplace y = y^2\n\nforvalues i = 0/1{\n    replace yhat`i' = yhat`i'^2\n    gen rsq`i' = yhat`i' / y\n    rename yhat`i' yhat_`i'x_\n    rename rsq`i' rsq`i'x_\n}\n\ngen id = 1\nreshape wide y* rsq*, i(id) j(foreign)\n\n*** Observed R-squared for sample 0 and sample 1.\ngen obsrsq0 = rsq0x_0\ngen obsrsq1 = rsq1x_1\n\n*** comp1: structural change.\ngen comp1 = ln(yhat_1x_1) - ln(yhat_0x_1)\n\n*** comp2: change in independent variables.\ngen comp2 = ln(yhat_0x_1) - ln(yhat_0x_0)\n\n*** comp3: change in dependent variable.\ngen comp3 = ln(y0) - ln(y1)\n\n*** Check: sum of comps is the same with log of observed R-sq?\ngen logrsq = ln(rsq1x_1 / rsq0x_0)\ngen sumcomp = comp1 + comp2 + comp3\n\ntabstat logrsq sumcomp comp1 comp2 comp3\n（2019/9/6→2022/09/19移行）"
-  },
-  {
-    "objectID": "notes.html#相関係数と散布図",
-    "href": "notes.html#相関係数と散布図",
-    "title": "Notes",
-    "section": "相関係数と散布図",
-    "text": "相関係数と散布図\nRの練習の一環で、よく教科書に載っている「相関係数が◯◯のときの散布図」をRで作る際のスクリプトを書きました。\n（2018/3/4 upload, 2018/3/9 revised→2022/09/19移行）"
-  },
-  {
-    "objectID": "notes.html#階層ベイズモデルを実装する",
-    "href": "notes.html#階層ベイズモデルを実装する",
-    "title": "Notes",
-    "section": "階層ベイズモデルを実装する",
-    "text": "階層ベイズモデルを実装する\n「岩波データサイエンスをざっくり読む会」第2回で使用する発表資料です。マルチレベルモデルの基礎と、これをベイズで推定するための方法を解説しています。RおよびRstanを使用しています。まだ途中ですが、ひとまずアップロードしています。\n（2017/9/25 upload→2022/09/16移行）"
-  },
-  {
-    "objectID": "notes.html#固定効果モデルに2乗項を投入する",
-    "href": "notes.html#固定効果モデルに2乗項を投入する",
-    "title": "Notes",
-    "section": "固定効果モデルに2乗項を投入する",
-    "text": "固定効果モデルに2乗項を投入する\n固定効果モデルに2乗項を投入することをどのように考えればいいのか、ということについてのメモです。\n（2017/11/20 upload→2022/09/16移行）"
-  },
-  {
-    "objectID": "notes.html#イベントヒストリー分析のためのデータ加工とモデル選択",
-    "href": "notes.html#イベントヒストリー分析のためのデータ加工とモデル選択",
-    "title": "Notes",
-    "section": "イベントヒストリー分析のためのデータ加工とモデル選択",
-    "text": "イベントヒストリー分析のためのデータ加工とモデル選択\nイベントヒストリー分析のために必要なデータの形式とその加工の方法、分析の際に考慮すべきことについて、具体的な手順（パーソン・ピリオドデータの作成とモデルの選択）を紹介しています。2016年1月9日の計量研究会にて発表いたしました。数式やシンタックスについて、間違いや非効率的な部分などがあるかもしれませんが、ご了承ください。\n（2016/01/09 upload, 2016/02/09 コードに若干ミスがあったのを修正→2022/09/19移行）"
-  },
-  {
-    "objectID": "notes.html#社会学のための統計分析基礎spssを用いて",
-    "href": "notes.html#社会学のための統計分析基礎spssを用いて",
-    "title": "Notes",
-    "section": "社会学のための統計分析基礎：SPSSを用いて",
-    "text": "社会学のための統計分析基礎：SPSSを用いて\n所属研究室にて、社会調査実習という学部生・院生向けの授業のTAを担当しています。5/17の授業にて、統計分析の基礎についての授業を担当した際に用いた資料です。SPSSを使って、データハンドリングの仕方、1変量分布・2変量関連の検討の仕方について解説しています。推測統計の話はあえて行っていません。 （2016/05/19 upload） （2016/05/27 p.27についてご指摘頂いたので修正。ありがとうございました。）\n第2弾をアップロードしました。推測統計、2変量関連、多変量解析の考え方と回帰分析の基礎について解説しています。（2016/11/08）\n（→2022/09/19移行）"
-  },
-  {
-    "objectID": "notes.html#逆ミルズ比を図で理解する",
-    "href": "notes.html#逆ミルズ比を図で理解する",
-    "title": "Notes",
-    "section": "逆ミルズ比を図で理解する",
-    "text": "逆ミルズ比を図で理解する\nサンプルセレクションモデルで頻出する逆ミルズ比について、図で理解できるようにいろいろと工夫してみた、という記事です。R markdownで作成しました。（2016/11/28 upload）\n（→2023/04/10移行）"
+    "objectID": "workshop/reading_circle_of_inequality_studies.html#研究会趣旨",
+    "href": "workshop/reading_circle_of_inequality_studies.html#研究会趣旨",
+    "title": "不平等研究に関する輪読会 Reading circle of inequality studies",
+    "section": "",
+    "text": "英文トップジャーナルに最近掲載された論文の内容を紹介し、研究のトレンドを掴んたりアイデアを得たりする。\n\n\n\nGeneral\n\nAmerican Sociological Review\nAmerican Journal of Sociology\nSocial Forces\nEuropean Sociological Review\nSociological Science\nSocial Science Research\n\nSubfield\n\nDemography\nPopulation and Development Review\nSociology of Education\nJournal of Marriage and Family\nGender & Society\nSocio-Economic Review\nResearch in Social Stratification and Mobility\n\nそのほか、Administrative Science Quarterly, Criminology, Social Science & Medicine, Social Networks, Nature Human Behavior, Proceedings of the National Academy of Sciences (PNAS) など\nMethod\n\nSociological Methods and Research\nSociological Methodology\n\n\n\n\n\n報告担当者は各自、会合までに自分の読みたい論文をspreadsheetに書き込み、googledriveにアップロードする。テーマは広い意味で不平等にかかわるものとする。\n会合では、報告者が15分程度でその論文の内容を紹介する。報告者はレジュメやスライドを準備してもいいし、しなくてもいい。他の参加者は、当該論文を読んできてもいいし、読まなくてもいい。\n内容紹介を受けて、議論する。内容の細かな「批判的読解」よりも、当該の研究がどのような位置づけで、何を明らかにしていて、何が新しいのか、理論や枠組みの応用・発展可能性についてざっくばらんに話すのを主眼とする。\n各回の報告者数はとくに定めない。時間は1人につき40分（15分以内報告 + 25分議論）くらいを目安とする。\n\n\n\n\n一回につき2人程度が話題提供で、3〜4週間に1回程度。\n\n\n\n随時募集中で、職位などは問いません。社会学分野における不平等に関する研究に関心がある方ならどなたでも。"
   },
   {
     "objectID": "lecture/2025-09-02-CSRDA.html",
@@ -1001,6 +917,27 @@
     "text": "授業内容\n\n1. 不平等の拡大\n\n結果の不平等の測定\n所得と富の不平等：国際比較とトレンド\n富裕層と貧困層\n\n参考文献（一部）\n\nWID.World. 2026. World Inequality Report 2026. http://wir2026.wid.world/\nAtkinson, Anthony B. 2015. Inequality: What Can Be Done? Harvard University Press.（山形浩生・森本正史訳，2015，『21世紀の不平等』東洋経済新報社．）\nHao, Lingxin and Daniel Q Naiman. 2010. Assessing Inequality. Sage.\n\n\n\n2. 不平等拡大のメカニズム\n\nなぜ不平等が拡大したのか：アメリカの場合\n日本の不平等の実態とメカニズム\n\n参考文献（一部）\n\nGoldin, Claudia Dale, and Lawrence F. Katz. 2008. The Race between Education and Technology. Harvard University Press.\nBlanchard, Oliver and Dani Rodrik. 2021. Combating inequality: Rethinking Government’s Role. MIT Press.（月谷真紀訳，2022，『格差と闘え：政府の役割を再検討する』慶應義塾大学出版会．）\nRosenfeld, Jake. 2021. You’re Paid What You’re Worth: And Other Myths of the Modern Economy. Harvard University Press. （川添節子訳，2022，『給料はあなたの価値なのか：賃金と経済にまつわる神話を解く』みすず書房．）\n森口千晶，2017，「日本は「格差社会」になったのか：比較経済史にみる日本の所得格差」『経済研究』68(2): 169-189.\n白波瀬佐和子，2009，『日本の不平等を考える：少子高齢社会の国際比較』東京大学出版会．\n\n\n\n3. 階層間格差と不平等の帰結\n\n階層の測定\n階層間格差：健康と家族形成\n結果の不平等の帰結\n\n参考文献（一部）\n\nBerkman, Lisa F., Ichiro Kawachi, and Glymour M. Maria eds. 2014. Social Epidemiology. Oxford University Press.（高尾総司・藤原武男・近藤尚己監訳，2017，『社会疫学』大修館書店．）\nHällsten, Martin, and Max Thaning. 2022. “Wealth as One of the ‘Big Four’ SES Dimensions in Intergenerational Transmissions.” Social Forces 100(4):1533–60.\nLink, Bruce G., and Jo Phelan. 1995. “Social Conditions As Fundamental Causes of Disease.” Journal of Health and Social Behavior 80–94.\nCase, Anne, and Angus Deaton. 2020. Deaths of Despair and the Future of Capitalism. Princeton University Press.（松本裕訳，『絶望死のアメリカ：資本主義がめざすべきもの』みすず書房．）\nMcLanahan, Sara. 2004. “Diverging Destinies: How Children Are Faring Under the Second Demographic Transition.” Demography 41(4):607–27.\nWilkinson, Richard, and Kate Pickett. 2009. The Spirit Level: Why Greater Equality Makes Societies Stronger. Bloomsbury Press.（酒井泰介訳，2010，『平等社会：経済成長に代わる、次の目標』東洋経済新報社．）\nCorak, Miles. 2013. “Income Inequality, Equality of Opportunity, and Intergenerational Mobility.” Journal of Economic Perspectives 27(3):79–102.\nPutnam, Robert D. 2015. Our Kids: The American Dream in Crisis. Simon & Schuster.（柴内康文訳，2017，『われらの子ども：米国における機会格差の拡大』創元社．）\n\n\n\n4. 階層分離と認識のずれ\n\n不平等と階層分離\n客観的位置と主観的認識のずれ\n不平等に関する価値観\n\n参考文献（一部）\n\n\n5. 機会の不平等（1）：世代間移動\n\n社会移動の測定\n職業からみる世代間移動\n所得からみる世代間移動\n\n参考文献（一部）\n\nHeath, Anthony and Yaojun Li. 2023. Social Mobility. Polity.\nConnelly, Roxanne, Vernon Gayle, and Paul S. Lambert. 2016. “A Review of Occupation-Based Social Classifications for Social Survey Research.” Methodological Innovations 9:1–14.\nChetty, Raj, Nathaniel Hendren, Patrick Kline, Emmanuel Saez, and Nicholas Turner. 2014. “Is the United States Still a Land of Opportunity? Recent Trends in Intergenerational Mobility.” American Economic Review 104(5):141–47.\n原純輔・盛山和夫，1999，『社会階層：豊かさのなかの不平等』東京大学出版会．\n平沢和司，2021，『格差の社会学入門［第2版］：学歴と階層から考える』北海道大学出版会．\n\n\n\n6. 機会の不平等（2）：近代化仮説と地位達成過程\n\n近代化仮説\n地位達成過程\n日本の社会移動のトレンド\n\n参考文献（一部）\n\nBlau, Peter M., and Otis Dudley Duncan. 1967. The American Occupational Structure. New York: Wiley.\nTreiman, Donald J. 1970. “Industrialization and Social Stratification.” Sociological Inquiry 40(2):207–34.\nErikson, Robert, and John H. Goldthorpe. 1992. The Constant Flux: A Study of Class Mobility in Industrial Societies. Oxford: Clarendon Press.\nBreen, Richard, Ruud Luijkx, Walter Müller, and Reinhard Pollak. 2009. “Nonpersistent Inequality in Educational Attainment: Evidence from Eight European Countries.” American Journal of Sociology 114(5):1475–1521.\nBreen, Richard, and Walter Müller, eds. 2020. Education and Intergenerational Social Mobility in Europe and the United States. Stanford, CA: Stanford University Press.\nHertel, Florian R., and Olaf Groh-Samberg. 2019. “The Relation between Inequality and Intergenerational Class Mobility in 39 Countries.” American Sociological Review 84(6):1099–1133.\nDiPrete, Thomas A., and Brittany N. Fox-Williams. 2021. “The Relevance of Inequality Research in Sociology for Inequality Reduction.” Socius 7:23780231211020199.\n中村高康・三輪哲・石田浩編，2021，『少子高齢社会の階層構造1：人生初期の階層構造』東京大学出版会．\n豊永耕平，2023，『学歴獲得の不平等：親子の進路選択と社会階層』勁草書房．\n\n\n\n7. 機会の不平等（3）：教育機会の不平等\n\nトレンドをめぐる議論\n教育機会の不平等のメカニズム\n遺伝か環境か\n\n\n\n8. 機会の不平等（4）：労働市場と機会の不平等\n\n教育と到達階層の関係：メカニズム\n日本の雇用慣行と世代内移動\n出身階層の影響力の再検討\n\n\n\n9. ジェンダー不平等\n\nジェンダーの視点と不平等\nジェンダー不平等：国際比較とトレンド\n日本のジェンダー不平等のトレンド\n\n\n\n10. 教育とジェンダー\n\n教育達成の男女差\n性別専攻分離の測定\n性別専攻分離のメカニズム\n\n\n\n11. 労働市場とジェンダー\n\n賃金格差の原因を探る：要因分解\n仕事の違いを測定する：性別職域分離\n採用差別と評価のバイアス\n\n\n\n12. 家族形成とジェンダー\n\n出産・育児と男女のキャリア\n性別役割分業と結婚・出産\n\n\n\n13. まとめ"
   },
   {
+    "objectID": "workshop/writing_sociology_paper.html",
+    "href": "workshop/writing_sociology_paper.html",
+    "title": "社会学英語論文ワークショップ Workshop for writing sociology paper in English",
+    "section": "",
+    "text": "研究成果を国際的に発信するうえで、多くの読者をもつ英文ジャーナルに論文を掲載することは有効な手段の一つです。論文を掲載するためには、問いや方法の適切さもさることながら、これまでの先行研究（literature）の前提を踏まえたうえで、どのように先行研究に貢献するのかといった「パッケージング」も重要となります。しかしながら、国際的な研究動向を前提としない場での研究発表では、必ずしもこうした点について有効な指摘を得られるとは限りません。\nそこで本ワークショップでは、社会学分野において英文国際誌への論文投稿を検討している研究者を対象に、研究のブラッシュアップを図ることを目的とします。分野としては、社会学、あるいはその近接分野の経験的研究を扱うものとします。英文国際誌への論文投稿を前提とした議論に慣れることで、論文掲載にとって必要となる考え方を共有するというのが、ワークショップのもう一つのねらいです。\n\n\n\n毎回、発表者を1名、その発表者が扱うテーマや方法に近い英語論文の執筆経験を持つコメンテーターを1名準備します。コメンテーターを決めるに当たっては、発表者のご希望等も聞きながら決めたいと思います。 発表者は、報告タイトルを事前に共有し、また報告の1週間前には、コメンテーターとオーガナイザーにアブストラクト（200words前後）およびフルペーパーを共有します。このときのフルペーパーは途中経過のもので構いません。\nワークショップ当日は、まず発表者が20分間で（スライドを使って）論文内容について報告します。この報告については、参加者は事前に発表者の論文を読んでいるわけではないという前提です。 発表後、コメンテーターが10〜20分間程度コメントを行います。コメンテーターは事前に原稿を読んだうえで、論文内容をより良くするためのコメントを行います。コメントに対する発表者のリプライ等が終わったあと、全体での議論に移ります。\n\n\n\nZoomなどを使ったオンライン形式で行います。\n\n\n\n発表者とコメンテーターの都合に合わせて、おおむね1〜2ヶ月に1回程度を予定しています。1回あたりの時間は、1時間程度を見込んでいます。\n\n\n\nオーガナイザーまでご連絡ください。\n五十嵐彰（大阪大学）igarashi.a.hus[at]osaka-u.ac.jp\n麦山亮太（学習院大学）ryota.mugiyama[at]gakushuin.ac.jp"
+  },
+  {
+    "objectID": "workshop/writing_sociology_paper.html#概要",
+    "href": "workshop/writing_sociology_paper.html#概要",
+    "title": "社会学英語論文ワークショップ Workshop for writing sociology paper in English",
+    "section": "",
+    "text": "研究成果を国際的に発信するうえで、多くの読者をもつ英文ジャーナルに論文を掲載することは有効な手段の一つです。論文を掲載するためには、問いや方法の適切さもさることながら、これまでの先行研究（literature）の前提を踏まえたうえで、どのように先行研究に貢献するのかといった「パッケージング」も重要となります。しかしながら、国際的な研究動向を前提としない場での研究発表では、必ずしもこうした点について有効な指摘を得られるとは限りません。\nそこで本ワークショップでは、社会学分野において英文国際誌への論文投稿を検討している研究者を対象に、研究のブラッシュアップを図ることを目的とします。分野としては、社会学、あるいはその近接分野の経験的研究を扱うものとします。英文国際誌への論文投稿を前提とした議論に慣れることで、論文掲載にとって必要となる考え方を共有するというのが、ワークショップのもう一つのねらいです。\n\n\n\n毎回、発表者を1名、その発表者が扱うテーマや方法に近い英語論文の執筆経験を持つコメンテーターを1名準備します。コメンテーターを決めるに当たっては、発表者のご希望等も聞きながら決めたいと思います。 発表者は、報告タイトルを事前に共有し、また報告の1週間前には、コメンテーターとオーガナイザーにアブストラクト（200words前後）およびフルペーパーを共有します。このときのフルペーパーは途中経過のもので構いません。\nワークショップ当日は、まず発表者が20分間で（スライドを使って）論文内容について報告します。この報告については、参加者は事前に発表者の論文を読んでいるわけではないという前提です。 発表後、コメンテーターが10〜20分間程度コメントを行います。コメンテーターは事前に原稿を読んだうえで、論文内容をより良くするためのコメントを行います。コメントに対する発表者のリプライ等が終わったあと、全体での議論に移ります。\n\n\n\nZoomなどを使ったオンライン形式で行います。\n\n\n\n発表者とコメンテーターの都合に合わせて、おおむね1〜2ヶ月に1回程度を予定しています。1回あたりの時間は、1時間程度を見込んでいます。\n\n\n\nオーガナイザーまでご連絡ください。\n五十嵐彰（大阪大学）igarashi.a.hus[at]osaka-u.ac.jp\n麦山亮太（学習院大学）ryota.mugiyama[at]gakushuin.ac.jp"
+  },
+  {
+    "objectID": "workshop/writing_sociology_paper.html#開催記録",
+    "href": "workshop/writing_sociology_paper.html#開催記録",
+    "title": "社会学英語論文ワークショップ Workshop for writing sociology paper in English",
+    "section": "開催記録",
+    "text": "開催記録\nForthcoming"
+  },
+  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
@@ -1012,7 +949,7 @@
     "href": "research.html#peer-reviewed-paper",
     "title": "Research",
     "section": "Peer-reviewed paper",
-    "text": "Peer-reviewed paper\n\nin English\n\nMugiyama, Ryota and Kohei Toyonaga. 2026. “Changing Regional University Availability and Inequality of Educational Opportunity in Japan.” European Sociological Review. Accepted.\n\nReplication code is available on OSF.\n\nÇineli, Beyda and Ryota Mugiyama. 2026. “Does More Egalitarian Ideology Foster More Egalitarian Household Work Division? Marriage, Work and Family Life in Japan.” Journal of Family Issues. Accepted.\nUchikoshi, Fumiya*, Ryota Mugiyama*, Shohei Yoda, and James M. Raymo. 2026. “Revisiting the Relationship between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan.” Population and Development Review. *Equal contribution.\n\nPreprint\nPress release (in Japanese)\n\nMugiyama, Ryota and Kyoko Komatsu. 2025. “More Than Usage: Expanded Socioeconomic Inequality in Access to Remote Work after the COVID-19 in Japan.” Socio-Economic Review. Advance Access.\n\nPress release (in Japanese)\n\nMogi, Ryohei*, Ryota Mugiyama*, and Alyce Raybould*. 2025. “Exposure to Non-partnership and Fertility Desires among Childless Population in Japan.” Social Forces. Advance Access. *Equal authorship.\n\nReplication code is available on my GitHub page.\nPress release (in Japanese)\nPress release (in English, Catalan, and Spanish)\n\nMugiyama, Ryota. 2025. “Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment Instability among Men in Japan.” Demographic Research. 52: 635–688.\n\nReplication code is available from the journal page.\n\nMugiyama, Ryota. 2024. “Disaggregating the Relationship between Precarious Employment and Delayed Marriage in Japan: Incorporating Non-cohabiting Partnerships.” Social Science Research. 124: 103093.\nMogi, Ryohei, Ryota Mugiyama and Giammarco Alderotti. 2024. “Employment Uncertainty and Non-coresidential Partnership in Very Low Fertility Countries: Italy and Japan.” Journal of Family Research. 36: 160–177.\n\nReplication code is available from the journal page.\n\nMugiyama, Ryota. 2024. “Cohort Change in the Educational Gradient in Women’s Employment Around Childbirth in Japan.” Research in Social Stratification and Mobility. 89: 100885.\nÇineli, Beyda and Ryota Mugiyama. 2023. “Money Management over the Course of Marriage: Parenthood, Employment and Household Financial Organization in Japan.” Advances in Life Course Research. 56: 100544.\nIgarashi, Akira and Ryota Mugiyama. 2023. “Whose Tastes Matter? Discrimination against Immigrants in the Japanese Labour Market.” Journal of Ethnic and Migration Studies. 49(13): 3365–3388.\nMugiyama, Ryota and Kohei Toyonaga. 2022. “Role of Cohort Size in Trends in Class and Occupational Returns to Education at First Job: The Case of Japan.” European Sociological Review. 38(2): 269–285.\n\n\nin Japanese\n\n小松恭子・麦山亮太，2026，「1980～2020年の日本の労働市場におけるタスク分布の変化：産業構造の変化とICT導入の影響」『日本労働研究雑誌』近刊．\n麦山亮太・大里蒼一郎，2024，「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』39(1): 19–34．\n麦山亮太・田上皓大，2024，「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』39(1): 64–76．SSM-ONET対応表へのリンク\n麦山亮太・小松恭子，2023，「テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析」『日本労働研究雑誌』754: 87–102．\n五十嵐彰・麦山亮太，2023，「サーベイ実験を用いた日本における外国人雇用差別の検証：企業属性による異質性」『理論と方法』38(1): 44–58．\n麦山亮太，2022，「出産・育児期における女性就業とその学歴差の長期趨勢：雇用労働力化に着目して」『社会学評論』73(2): 86–102．補足表\n打越文弥・麦山亮太・小松恭子，2021，「職域分離とスキルからみる労働市場のジェンダー格差：日本版O-NET・国勢調査マッチングデータから得られる示唆」『理論と方法』36(1): 65–82．（特集論文）\n打越文弥・麦山亮太，2020，「日本における性別職域分離の趨勢：1980–2005年国勢調査集計データを用いた要因分解」『人口学研究』56: 9–23．\n麦山亮太・西澤和也，2017，「大企業と中小企業が新卒者に求める能力は異なるか：求人情報サイトへのトピックモデルの適用」『理論と方法』32(2): 214–227．\n麦山亮太，2017，「職業経歴と結婚への移行：雇用形態・職種・企業規模と地位変化の効果における男女差」『家族社会学研究』29(2): 129–141．\n麦山亮太，2017，「キャリアの中断が生み出す格差：正規雇用獲得への持続的影響に着目して」『社会学評論』68(2): 248–264．\n麦山亮太，2016，「結婚は職業キャリアにいかなる影響を与えるのか？：無業・管理職への移動に関する男女比較分析」『家族社会学研究』28(2): 122–135．"
+    "text": "Peer-reviewed paper\n\nin English\n\nMugiyama, Ryota and Kohei Toyonaga. 2026. “Changing Regional University Availability and Inequality of Educational Opportunity in Japan.” European Sociological Review. Accepted.\n\nReplication code is available on OSF.\n\nÇineli, Beyda and Ryota Mugiyama. 2026. “Does More Egalitarian Ideology Foster More Egalitarian Household Work Division? Marriage, Work and Family Life in Japan.” Journal of Family Issues. Accepted.\nUchikoshi, Fumiya*, Ryota Mugiyama*, Shohei Yoda, and James M. Raymo. 2026. “Revisiting the Relationship between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan.” Population and Development Review. *Equal contribution.\n\nPreprint\nPress release (in Japanese)\n\nMugiyama, Ryota and Kyoko Komatsu. 2025. “More Than Usage: Expanded Socioeconomic Inequality in Access to Remote Work after the COVID-19 in Japan.” Socio-Economic Review. Advance Access.\n\nPress release (in Japanese)\n\nMogi, Ryohei*, Ryota Mugiyama*, and Alyce Raybould*. 2025. “Exposure to Non-partnership and Fertility Desires among Childless Population in Japan.” Social Forces. Advance Access. *Equal authorship.\n\nReplication code is available on my GitHub page.\nPress release (in Japanese)\nPress release (in English, Catalan, and Spanish)\n\nMugiyama, Ryota. 2025. “Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment Instability among Men in Japan.” Demographic Research. 52: 635–688.\n\nReplication code is available on the journal page.\n\nMugiyama, Ryota. 2024. “Disaggregating the Relationship between Precarious Employment and Delayed Marriage in Japan: Incorporating Non-cohabiting Partnerships.” Social Science Research. 124: 103093.\nMogi, Ryohei, Ryota Mugiyama and Giammarco Alderotti. 2024. “Employment Uncertainty and Non-coresidential Partnership in Very Low Fertility Countries: Italy and Japan.” Journal of Family Research. 36: 160–177.\n\nReplication code is available on the journal page.\n\nMugiyama, Ryota. 2024. “Cohort Change in the Educational Gradient in Women’s Employment Around Childbirth in Japan.” Research in Social Stratification and Mobility. 89: 100885.\n\nAccepted manuscript\n\nÇineli, Beyda and Ryota Mugiyama. 2023. “Money Management over the Course of Marriage: Parenthood, Employment and Household Financial Organization in Japan.” Advances in Life Course Research. 56: 100544.\nIgarashi, Akira and Ryota Mugiyama. 2023. “Whose Tastes Matter? Discrimination against Immigrants in the Japanese Labour Market.” Journal of Ethnic and Migration Studies. 49(13): 3365–3388.\nMugiyama, Ryota and Kohei Toyonaga. 2022. “Role of Cohort Size in Trends in Class and Occupational Returns to Education at First Job: The Case of Japan.” European Sociological Review. 38(2): 269–285.\n\n\nin Japanese\n\n小松恭子・麦山亮太，2026，「1980～2020年の日本の労働市場におけるタスク分布の変化：産業構造の変化とICT導入の影響」『日本労働研究雑誌』近刊．\n麦山亮太・大里蒼一郎，2024，「地域の図書館普及が子どもの学習時間に与える影響とその階層差」『理論と方法』39(1): 19–34．\n麦山亮太・田上皓大，2024，「SSM職業分類への日本版O-NETのマッチングと応用：スキルと賃金の関連を事例に」『理論と方法』39(1): 64–76．SSM-ONET対応表へのリンク\n麦山亮太・小松恭子，2023，「テレワーク制度適用の企業規模・雇用形態間格差の要因：新型コロナウイルス感染症流行前後の比較分析」『日本労働研究雑誌』754: 87–102．\n五十嵐彰・麦山亮太，2023，「サーベイ実験を用いた日本における外国人雇用差別の検証：企業属性による異質性」『理論と方法』38(1): 44–58．\n麦山亮太，2022，「出産・育児期における女性就業とその学歴差の長期趨勢：雇用労働力化に着目して」『社会学評論』73(2): 86–102．補足表\n打越文弥・麦山亮太・小松恭子，2021，「職域分離とスキルからみる労働市場のジェンダー格差：日本版O-NET・国勢調査マッチングデータから得られる示唆」『理論と方法』36(1): 65–82．（特集論文）\n打越文弥・麦山亮太，2020，「日本における性別職域分離の趨勢：1980–2005年国勢調査集計データを用いた要因分解」『人口学研究』56: 9–23．\n麦山亮太・西澤和也，2017，「大企業と中小企業が新卒者に求める能力は異なるか：求人情報サイトへのトピックモデルの適用」『理論と方法』32(2): 214–227．\n麦山亮太，2017，「職業経歴と結婚への移行：雇用形態・職種・企業規模と地位変化の効果における男女差」『家族社会学研究』29(2): 129–141．\n麦山亮太，2017，「キャリアの中断が生み出す格差：正規雇用獲得への持続的影響に着目して」『社会学評論』68(2): 248–264．\n麦山亮太，2016，「結婚は職業キャリアにいかなる影響を与えるのか？：無業・管理職への移動に関する男女比較分析」『家族社会学研究』28(2): 122–135．"
   },
   {
     "objectID": "research.html#work-in-progress",
@@ -1034,34 +971,6 @@
     "title": "Research",
     "section": "Book chapter",
     "text": "Book chapter\n\n麦山亮太，2023，「男性の職業・家族キャリア」家族社会学会編『家族社会学事典』丸善出版，460–461．\n打越文弥・麦山亮太，2022，「性別職域分離」数理社会学会監修『数理社会学事典』丸善出版，330–333．\n麦山亮太・吉川裕嗣，2015，「東アジアの学生の意識にみるアジア統合の展望：アジア人意識と脅威認識を軸として」園田茂人編『アジア比較社会研究のフロンティアⅢ 連携と離反の東アジア』勁草書房，231–255．"
-  },
-  {
-    "objectID": "harmonization.html",
-    "href": "harmonization.html",
-    "title": "Harmonization",
-    "section": "",
-    "text": "2023年度から進めている社会調査データの統合プロジェクトに関連する成果等をまとめています。"
-  },
-  {
-    "objectID": "harmonization.html#問題意識",
-    "href": "harmonization.html#問題意識",
-    "title": "Harmonization",
-    "section": "問題意識",
-    "text": "問題意識\n以下は麦山ほか（2025: 1–2）からの引用です。\n東京大学社会科学研究所附属社会調査・データアーカイブ研究センターと大阪商業大学JGSS研究センターによって国内の社会調査データの共有・公開がなされるようになってから20年余，日本の大規模社会調査データの利用をめぐる環境は飛躍的に改善した．1990年代末より相次いで全国を対象とした無作為抽出の社会調査が実施され，それらの研究成果が公刊されるだけではなく，アーカイブへの寄託・公開を通じて様々な研究者等に利用され二次分析による研究成果の産出につながっている．今や実証研究において既存の大規模社会調査データの二次分析は標準的な方法である．\nこうしたなかで求められるのは，既存のデータをより有効に活用することである．なかでも既存社会調査データを統合した分析は，サンプルサイズを増やすとともに複数時点の比較分析を可能とし，より正確により大きな問いに答えるうえで重要である．国内外でこうした実証研究例は枚挙に暇がない．たとえば社会階層研究におけるCitation classicとなっている研究として，F. Torcheによる大卒層において出身階層と到達階層の関連が小さいことを示した研究（Torche 2011），R. Breenらによるヨーロッパにおいて教育機会の不平等が縮小傾向にあることを示した研究（Breen et al. 2009）が挙げられる．これらは複数の社会調査を統合したデータを利用することによってこれまで十分に明らかになっていなかった現象を明らかにした研究である．日本においても複数種類・複数時点の社会調査を合併し，変数を統合させて分析を行った事例は少なくない（Fujihara and Ishida 2016; 平尾・太郎丸 2011; Mugiyama and Toyonaga 2022; 打越 2016）．数十年におよぶ不平等の趨勢，少数集団の詳細な特徴などに関わる問いは，単一時点・一回限りの社会調査データで明らかにすることは難しく，複数の社会調査データを組み合わせることによってはじめて明らかにすることができる．\nしかしながら，これまで日本における既存社会調査データを統合した分析は，各研究者が個別に行うにとどまっている．この状況は以下の3点で望ましくない．第1に，通常研究者が社会調査データの分析で用いる変数には，たとえば性別，年齢，職業，学歴，婚姻状態，所得等，共通のものが多いにもかかわらず，各研究者が個別に統合データを作成する場合，本来必要でない多くの労力を割く必要がある．第2に，複数の調査データの統合は変数の作成に際して通常の分析以上に労働集約的であり，個別の研究者が行う場合，誤りが生じる可能性は無視できず，かつ結果の再現性も損なわれる．どのように変数を作成するべきかについてはしばしば単一の答えがない場合もあるが，データ構築に用いるコードを利用者間で共有し，複数の目を通すことによって，少なくとも明らかな誤りについてはそのリスクを減らすべきである．第3に，上記の作業の負担から既存社会調査データの統合には及び腰になりやすく，その結果，データさえあれば答えられるはずの多くの重要な研究課題が未解決のまま残されている．\n上記の問題意識のもとで立ち上げられたのが「社会調査データの合併による二次分析研究の刷新」プロジェクトである．本プロジェクトの目的は2点ある．第1に，社会学者が中心となって実施してきた大規模社会調査データを統合（ハーモナイゼーション harmonization）するコードを作成することである．なお本稿では，各調査で聴取された回答に対して事後的に定義を揃え比較可能とする作業のことを指してデータ統合ないしハーモナイゼーションと呼び，互換的に用いる ．第2に，構築されたデータを活用して，日本社会における不平等の趨勢と実態に関わる様々な記述的問いに答えることである．"
-  },
-  {
-    "objectID": "harmonization.html#現況",
-    "href": "harmonization.html#現況",
-    "title": "Harmonization",
-    "section": "現況",
-    "text": "現況\n約20名のメンバーの協力を得ながら、以下の社会調査データを統合したデータの構築と整備、多方面から分析を進めています。\n\n社会階層と社会移動調査（SSM）：1975, 1985ABF, 1995AB, 2005, 2015\n日本版総合的社会調査（JGSS）：2000, 2001, 2002, 2003, 2005, 2006, 2008, 2009LCS, 2010, 2012, 2015, 2016, 2017, 2018, 2017G, 2018G, 2021H, 2022H\n東大社研・若年壮年パネル調査（JLPS）：2007, 2011, 2019\n全国家族調査（NFRJ）：1998, 2001, 2003, 2008, 2018\n社会階層と社会意識調査（SSP）：2010-I、2015\n教育・社会階層・社会移動全国調査（ESSM）：2013\n職業移動と経歴調査（OMCH）：1981, 1983, 1991\n世代とジェンダー調査（GSS）：2004\n\n\n\n\n調査別・性別・年齢別にみた回答者数の分布"
-  },
-  {
-    "objectID": "harmonization.html#文献",
-    "href": "harmonization.html#文献",
-    "title": "Harmonization",
-    "section": "文献",
-    "text": "文献\n麦山亮太・平松誠・コンアラン・那須蘭太郎・吉田航，2025，「社会調査データの統合による二次分析研究の刷新：作業手順と今後の調査実施に向けた示唆」SSJ Data Archive Research Paper Series. 96. 東京大学社会科学研究所附属社会調査・データアーカイブ研究センター．"
   },
   {
     "objectID": "lecture.html",
@@ -1547,22 +1456,141 @@
     "text": "研究生希望の学生へ\n現在、研究生の受け入れは私の専門と研究関心が合致している場合に限り認める方針としています。また、私の担当学生が多い場合には受け入れの余裕がなくお断りする場合があります。ご了承ください。\n\n研究生制度について\n大学院への進学を考える場合には、すぐに大学院の入学試験を受けるのではなく研究生制度を利用して（最低でも）1年間は学部で基礎的な勉強をして入学試験の準備をするという選択肢もあります。\n研究生の出願期間は毎年1月と3月に設けられています。在留資格などの関係から、余裕を持って書類等の準備をされることをおすすめします。詳しくは学習院大学のAdmissionのページを参照してください。\n研究生になったとしても大学院に自動的に進学できるわけではなく、大学院入試を受験しなければなりません。また、本学の研究生を経験したことによって有利に扱われるということもありません。くれぐれも注意してください。大学院受験に際しての注意点は上記「大学院（修士課程）入学希望の学生へ」を参照してください。\n私を指導教員としたい場合には、本学政治学研究科の利点と欠点をあらかじめ把握したうえで、あらかじめ履歴書と研究計画書を送っていただき、面談希望を申し出てください。研究計画書などを拝見して、問題関心やこれまでの勉強内容などをお伺いして、最終的に私が研究指導できる範囲であると判断すれば、受け入れを内諾します。ただし、内諾したとしても、教授会を経て受入れが認められない可能性がないとは言い切れません。選考結果が出るのを待ってください。\n\n\n外国籍出願者の場合の受け入れ条件\n政治学科では日本語能力試験（JLPT）でN2以上の成績を取得している必要があります。N1以上の成績を有していればなおよいです。日本ではほとんどの場所で日本語のコミュニケーションを取ることが求められるので、日本語はできるに越したことはないです。とはいえ、もちろん重要なのは語学力よりも研究能力です。\nコミュニケーションを取る際には日本語のほかに英語でもよいですが、私自身はあまり英語がうまいわけではないのでご承知おきください。なお、政治学科の授業はほとんどが日本語で行われます。\n\n\n受け入れ後の指導方針\n基本的にはご自身の関心に即した授業を取っていただき、ご自身で勉強を進めていただくというふうになります。個別相談の希望があれば適宜応じます。\n私が担当する「社会学III」「社会学IV」「社会学演習」は必ず履修してください。また、政治学科で開講される「社会統計学I」「社会統計学II」はぜひ履修してください。\n私の担当する授業のうち「政治学科基礎演習I」「政治学科基礎演習II」は1年生用の授業なので、履修はできません。\nそのほかには、たとえば以下のような科目の履修を検討してもよいかもしれません。\n\n法学部政治学科「社会学I」「社会学II」\n法学部政治学科「社会心理学I」「社会心理学II」\n法学部政治学科「社会政策論I」「社会政策論II」\n\nご自身の勉強もあると思いますので、多くとも週4–5コマくらいに抑えるのがよいと思います。"
   },
   {
-    "objectID": "r.html",
-    "href": "r.html",
+    "objectID": "tips/r/dss_tidyverse.html",
+    "href": "tips/r/dss_tidyverse.html",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "",
+    "text": "このページでは、Llaudet, Elena and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.のコードを現代のRの世界でよく使われているtidyverseパッケージを使ったコードに直すとどのように書くことができるのかを紹介する。これを通じて、tidyverseパッケージに含まれる関数群の初歩的な使い方を学ぶことができるだろう。\nコードを実行するためには、tidyverseパッケージをインストールして、読み込む必要がある。パッケージをインストールする際には、次のコマンドを実行する。一度実行してパッケージをインストールしたあとは、再度R/RStudioを開いたとしても、改めて実行する必要はない。\ninstall.packages(\"tidyverse\")\nパッケージを使用するためには、R/RStudioを開くたびに、library()コマンドを実行して、パッケージを読み込む必要がある。\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.2\n✔ ggplot2   4.0.0     ✔ tibble    3.3.0\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.1.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n以下、各Chapterのコードはすべてlibrary(tidyverse)を実行してあるという前提のもとで進める。"
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#loading-and-making-sense-of-data",
+    "href": "tips/r/dss_tidyverse.html#loading-and-making-sense-of-data",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "1.7 Loading and making sense of data",
+    "text": "1.7 Loading and making sense of data\n\n1.7.2 Loading the dataset\ntidyverseでは、read.csv()と同じ機能を果たすコードとしてread_csv()がある。どちらもほぼ同じだが、read_csv()のほうが気持ち読み込みが早いときがある。\n\nstar &lt;- read_csv(\"STAR.csv\")\n\n\n\n1.7.3 Understanding the data\ntidyverseではパイプ演算子（%&gt;%）を使って命令を書くことができる。たとえばデータの中身を確認するView()コマンドであれば、次のように書くことができる。\n\nstar %&gt;% View()\n\n%&gt;%演算子を改行して書いてもよい。\n\nstar %&gt;% # starデータフレームに対して、\n  View() # viewを実行\n\nデータの上からいくつかの行を見るhead()コマンドであれば、次のように書くことができる：\n\nstar %&gt;% # starデータフレームに対して、\n  head() # headを実行\n\n# A tibble: 6 × 4\n  classtype reading  math graduated\n  &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;\n1 small         578   610         1\n2 regular       612   612         1\n3 regular       583   606         1\n4 small         661   648         1\n5 small         614   636         1\n6 regular       610   603         0\n\nstar %&gt;% \n  head(n = 3)\n\n# A tibble: 3 × 4\n  classtype reading  math graduated\n  &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;\n1 small         578   610         1\n2 regular       612   612         1\n3 regular       583   606         1\n\n\nちなみに、MacであればControl + Shift + mで、WindowsであればCtrl + Shift + mでパイプ演算子を出力することができる。\nちなみに、最近RStudioを新しくインストールした場合だと、上記のショートカットキーを入力すると|&gt;というコマンドが出力されるかもしれない。ふつうに使う分だとどちらを使ってもとくに支障は生じない。試しに以下の2種類を実行して、どちらも同じものが出力されることを確かめてみよう。\n\nstar |&gt; \n  head(n = 3)\n\n# A tibble: 3 × 4\n  classtype reading  math graduated\n  &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;\n1 small         578   610         1\n2 regular       612   612         1\n3 regular       583   606         1\n\nstar %&gt;% \n  head(n = 3)\n\n# A tibble: 3 × 4\n  classtype reading  math graduated\n  &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;\n1 small         578   610         1\n2 regular       612   612         1\n3 regular       583   606         1\n\n\nEdit→Preferences…（ない場合は、Tools→Global options…）を選択する。以下の画面が開いたら、Codeを選択して、以下の「Use native pipe operator, |&gt; (requires R 4.1+)」のチェックを外すと、上記ショートカットキーを入力したときに%&gt;%が表示されるようになる。どちらでも違いはないが、以下ではたんに麦山がこれに慣れているというだけの理由から、%&gt;%を使うことにする。\n\ndim(star)についても%&gt;%演算子を使って書くことができる。\n\nstar %&gt;% # starデータフレームに対して、\n  dim() # dimを実行\n\n[1] 1274    4\n\n\nここで挙げた例は単純なので、%&gt;%演算子を使うことのありがたみは感じにくいかもしれない。しかし、コードが長くなってきたり、命令が複雑になってくるほど、%&gt;%演算子を使うメリットは大きくなる。Chapter 3あたりから、徐々にそのメリットが明らかになってくる。"
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#computing-and-interpreting-means",
+    "href": "tips/r/dss_tidyverse.html#computing-and-interpreting-means",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "1.8 Computing and interpreting means",
+    "text": "1.8 Computing and interpreting means\n\n1.8.2 Means\n平均値のように、データフレームに含まれる何らかの変数（列）に対して計算や集計を行う場合には、with()を使う。たとえばstarデータフレームに含まれる変数列の平均値を計算する方法は次のとおり。\n\nstar %&gt;% \n  with(mean(reading))\n\n[1] 628.803\n\nstar %&gt;% \n  with(mean(graduated))\n\n[1] 0.8697017\n\n\nもう一つ別の方法として、summarize()を使う方法がある。たとえばreadingの平均値を求めたいときは次のように書く。\n\nstar %&gt;% \n  summarize(mean(reading))\n\n# A tibble: 1 × 1\n  `mean(reading)`\n            &lt;dbl&gt;\n1            629.\n\n\nsummarize()の便利なところは、一度に複数の変数を集計した値を出すことができる点だ。たとえば上記のようにreadingとgraduatedの平均値を計算したい場合には、次のように書けばよい。\n\nstar %&gt;% \n  summarize(mean(reading),\n            mean(graduated))\n\n# A tibble: 1 × 2\n  `mean(reading)` `mean(graduated)`\n            &lt;dbl&gt;             &lt;dbl&gt;\n1            629.             0.870"
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#do-small-classes-improve-student-performance",
+    "href": "tips/r/dss_tidyverse.html#do-small-classes-improve-student-performance",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "2.5 Do small classes improve student performance?",
+    "text": "2.5 Do small classes improve student performance?\nread_csv()を使ってデータの読み込み。\n\nstar &lt;- read_csv(\"STAR.csv\")\n\n\n2.5.2 Creating new variables\ntidyverseを使ってなにか新しい変数を作るときのコマンドが、mutate()である。mutate(新しい変数の名前 = その内容)、というコードを書く。\n教科書と同じように、starデータフレームに含まれているclasstype列が\"small\"の場合に1、そうでない場合に0をとる新しい列smallを作って、starデータフレームに追加したい場合には、次のように書く。\n\nstar &lt;- star %&gt;% \n  mutate(small = ifelse(classtype == \"small\", 1, 0))\n\nまた、tidyverseを使う場合には、ifelse()と同じような関数としてif_else()がある。文法はほぼ同じで、次のように書くことができる。\n\nstar &lt;- star %&gt;% \n  mutate(small = if_else(classtype == \"small\", 1, 0))\n\nifelse()を使った場合と結果が同じになっているかを確認しよう。\n\nstar %&gt;% \n  head()\n\n# A tibble: 6 × 5\n  classtype reading  math graduated small\n  &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;\n1 small         578   610         1     1\n2 regular       612   612         1     0\n3 regular       583   606         1     0\n4 small         661   648         1     1\n5 small         614   636         1     1\n6 regular       610   603         0     0\n\n\n\n\n2.5.3 Subsetting variables\nグループごとに集計をしたい場合には、summarize()などの前にgroup_by()をつけることで、グループ別に集計することができる。\n\nstar %&gt;% # starデータフレームを、\n  group_by(small) %&gt;% # smallの値別に分けて、\n  summarize(mean(reading)) # 平均値を求める\n\n# A tibble: 2 × 2\n  small `mean(reading)`\n  &lt;dbl&gt;           &lt;dbl&gt;\n1     0            625.\n2     1            633.\n\n\n複数の変数を集計するときにも同様だ。\n\nstar %&gt;% \n  group_by(small) %&gt;%\n  summarize(mean(reading),\n            mean(math),\n            mean(graduated))\n\n# A tibble: 2 × 4\n  small `mean(reading)` `mean(math)` `mean(graduated)`\n  &lt;dbl&gt;           &lt;dbl&gt;        &lt;dbl&gt;             &lt;dbl&gt;\n1     0            625.         629.             0.866\n2     1            633.         635.             0.874"
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#measuring-support-for-brexit",
+    "href": "tips/r/dss_tidyverse.html#measuring-support-for-brexit",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "3.3 Measuring support for Brexit",
+    "text": "3.3 Measuring support for Brexit\n上記と同様、read_csv()を使ってデータを読み込む。\n\nbes &lt;- read_csv(\"BES.csv\")\n\n\nbes %&gt;% \n  head()\n\n# A tibble: 6 × 4\n  vote       leave education   age\n  &lt;chr&gt;      &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;\n1 leave          1         3    60\n2 leave          1        NA    56\n3 stay           0         5    73\n4 leave          1         4    64\n5 don't know    NA         2    68\n6 stay           0         4    85\n\n\n\nbes %&gt;% \n  dim()\n\n[1] 30895     4\n\n\n\n3.3.2 Frequency tables\n度数分布表（Frequency table）を作るときには、with(table())コマンドを使う。\n\nbes %&gt;% \n  with(table(vote))\n\nvote\ndon't know      leave       stay won't vote \n      2314      13692      14352        537"
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#tables-of-proportions",
+    "href": "tips/r/dss_tidyverse.html#tables-of-proportions",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "3.3.3 Tables of proportions",
+    "text": "3.3.3 Tables of proportions\n一度作成したtableにfreq_tableと名前をつけて保存する。保存したデータフレームに対してprop.table()を実行することで、割合を求めることができる。\n\nfreq_table &lt;- bes %&gt;% \n  with(table(vote))\n\nfreq_table %&gt;% \n  prop.table()\n\nvote\ndon't know      leave       stay won't vote \n0.07489885 0.44317851 0.46454119 0.01738145 \n\n\nもしくは、with(table())にそのまま%&gt;%演算子を重ねてprop.table()を実行することでも割合を求めることができる。\n\nbes %&gt;% \n  with(table(vote)) %&gt;% \n  prop.table()\n\nvote\ndon't know      leave       stay won't vote \n0.07489885 0.44317851 0.46454119 0.01738145"
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#who-supported-brexit",
+    "href": "tips/r/dss_tidyverse.html#who-supported-brexit",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "3.4 Who supported brexit?",
+    "text": "3.4 Who supported brexit?\n\n3.4.1 Handling missing data\nNAを含めた度数分布を出す場合には、教科書に書かれているexclude = NULLのオプションのほか、useNA = \"always\"のオプションを使うこともできる。\n\nbes %&gt;% \n  with(table(education, exclude = NULL))\n\neducation\n    1     2     3     4     5  &lt;NA&gt; \n 2045  5781  6272 10676  2696  3425 \n\nbes %&gt;% \n  with(table(education, useNA = \"always\"))\n\neducation\n    1     2     3     4     5  &lt;NA&gt; \n 2045  5781  6272 10676  2696  3425 \n\n\n平均値を求めるときには、with(mean())を使うか、summarize(mean())を使う。ただし、いずれのコマンドについても値にNAが含まれている場合には計算結果もNAとなってしまう。\n\nbes %&gt;% \n  with(mean(leave))\n\n[1] NA\n\n\nこのような場合には、NAを除いて平均値を求めるように以下のオプションをつける。\n\nbes %&gt;% \n  with(mean(leave, na.rm = TRUE))\n\n[1] 0.4882328\n\n\n\nbes %&gt;% \n  summarize(mean(leave, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  `mean(leave, na.rm = TRUE)`\n                        &lt;dbl&gt;\n1                       0.488\n\n\nデータフレームのなかで一つでも欠損値がある行を除外する場合には、na.omit()を使う。\n\nbes1 &lt;- bes %&gt;% \n  na.omit()\n\nただし、61ページの「ADVANCED TIP」にあるように、実際の調査データの分析では分析に使う変数はごく一部のため、一部の変数のみ抜き出したデータを準備したうえで、na.omit()で欠損値のあるデータを除外することが多い。一部の変数のみを取り出す場合には、select()というコマンドが使える。\n\nbes1 &lt;- bes %&gt;% \n  select(vote, leave, education, age) %&gt;% \n  na.omit()\n\n\n\n3.4.2 Two-way frequency tables\nwith(table())は2変量の度数分布表（クロス集計表）の作成にも使える。,の前が行になる変数、後ろが列になる変数を表す。\n\nbes1 %&gt;% \n  with(table(leave, education))\n\n     education\nleave    1    2    3    4    5\n    0  498 1763 3014 6081 1898\n    1 1356 3388 2685 3783  631\n\n\n\n\n3.4.3 Two-way tables of proportions\n総割合を求める場合には、度数分布表のときと同じくprop.table()を指定すればよい。もしくは、prop.table(margin = 0)と書いても同じ。\n\nbes1 %&gt;% \n  with(table(leave, education)) %&gt;% \n  prop.table()\n\n     education\nleave          1          2          3          4          5\n    0 0.01984301 0.07024744 0.12009404 0.24229988 0.07562657\n    1 0.05403036 0.13499621 0.10698490 0.15073515 0.02514245\n\n\n行割合を求める場合には、prop.table(margin = 1)。\n\nbes1 %&gt;% \n  with(table(leave, education)) %&gt;% \n  prop.table(margin = 1)\n\n     education\nleave          1          2          3          4          5\n    0 0.03757356 0.13301645 0.22740305 0.45880489 0.14320205\n    1 0.11449802 0.28607616 0.22671620 0.31942920 0.05328042\n\n\n列割合を求める場合には、prop.table(margin = 2)。\n\nbes1 %&gt;% \n  with(table(leave, education)) %&gt;% \n  prop.table(margin = 2)\n\n     education\nleave         1         2         3         4         5\n    0 0.2686084 0.3422636 0.5288647 0.6164842 0.7504943\n    1 0.7313916 0.6577364 0.4711353 0.3835158 0.2495057\n\n\n\n\n3.4.4 Histograms\n人生一度はイケてるグラフを作ってみたいと思ったことがあるだろう（そうでもない？）。そんなときに活躍するのが、ggplot()および関連の関数である。ggplot()はデフォルトのRのグラフよりは少し文法が複雑だが、さまざまな要素を追加したり、よりきれいなグラフを作る際には非常に役立つコマンドである。\nggplotについての導入的な知識についてはこのページでも解説しているので、こちらにもとづいて説明する。\nまず、教科書と同様に年齢についてのヒストグラムを作ってみたいと思ったとする。以下のコードを実行する。\n\nbes1 %&gt;% \n  ggplot(aes(x = age)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\nggplotの基本的な発想は、キャンバスに絵の具を重ね塗りしていくかのように、一つひとつ層を重ねていってグラフを作るというものである。具体的にみてみよう。先ほどのコードから3行目を削除した次の結果を確認してみよう。\n\nbes1 %&gt;% \n  ggplot(aes(x = age))\n\n\n\n\n\n\n\n\nggplot()という部分が、グラフを書くための準備をしている箇所である。aes()のなかでは、x軸やy軸にそれぞれ何の変数を取るのかであったり、どのような色で分けるのか（今回は扱わない）などを指定する。今の場合であれば、x軸にageをとる、ということを指している。上記の命令だけだと、このようにx軸のみが表示された空白の座標が準備される。\ngeom_histogram()というのが、ヒストグラムを書くためのコードである。先ほどのコードに、+でつないでgeom_histogram()というコードを追加すると、空白の座標にヒストグラムが描かれる。縦軸（count）は、その区間に何人の人が属しているかを示している。\n\nbes1 %&gt;% \n  ggplot(aes(x = age)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\nついで、brexitを支持しなかったグループ（leave == 0）と、brexitを指示したグループ（leave == 1）とに分けたヒストグラムを作る。これは、これまでのコマンドに新たにfacet_wrap(~leave)または、facet_grid(~leave)というコマンドを追加する。\n\nbes1 %&gt;% \n  ggplot(aes(x = age)) + \n  geom_histogram() + \n  facet_wrap(~leave)\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n\n\n3.4.5 Density histograms\n次は、学歴educationが1のグループと4のグループのみを取り出して、先ほどと同じように2つに分割したヒストグラムを作ってみる。特定の条件にあったデータのみを抽出したいときには、filter()関数を使う。たとえば、educationが1のグループだけを取り出したい場合には、次のようにする。\n\nbes1 %&gt;% \n  filter(education == 1) %&gt;% # educationが1の人だけを抽出\n  with(table(education)) # 結果を確認\n\neducation\n   1 \n1854 \n\n\neducationが1または4のグループだけを取り出したい場合には、次のようにする。\n\nbes1 %&gt;% \n  filter(education == 1 | education == 4) %&gt;% # educationが1または4の人だけを抽出\n  with(table(education)) # 結果を確認\n\neducation\n   1    4 \n1854 9864 \n\n\n上記の操作を応用して、再びヒストグラムを作ってみよう。\n\nbes1 %&gt;% \n  filter(education == 1 | education == 4) %&gt;% \n  ggplot(aes(x = age)) + \n  geom_histogram() +\n  facet_wrap(~education)\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n上記のグラフの縦軸を密度にして揃えたいときには、geom_histogram()の括弧内にaes(y = after_stat(density))というオプションを追加する。\n\nbes1 %&gt;% \n  filter(education == 1 | education == 4) %&gt;% \n  ggplot(aes(x = age)) + \n  geom_histogram(aes(y = after_stat(density))) +\n  facet_wrap(~education)\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n同じことをbrexitを支持するかどうかで分けたヒストグラムでもできることを確認しよう。\n\nbes1 %&gt;% \n  ggplot(aes(x = age)) + \n  geom_histogram(aes(y = after_stat(density))) + \n  facet_wrap(~leave)\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n\n\n3.4.6 Descriptive statistics\n2.5.3 Subsetting variablesで扱ったように、group_by()とsummarize()を組み合わせることで、層別に平均値（mean）や中央値（median）、標準偏差（sd）を求めることができる。\n\nbes1 %&gt;% \n  group_by(leave) %&gt;% \n  summarize(mean(age))\n\n# A tibble: 2 × 2\n  leave `mean(age)`\n  &lt;dbl&gt;       &lt;dbl&gt;\n1     0        46.9\n2     1        55.1\n\n\n\nbes1 %&gt;% \n  group_by(leave) %&gt;% \n  summarize(median(age))\n\n# A tibble: 2 × 2\n  leave `median(age)`\n  &lt;dbl&gt;         &lt;dbl&gt;\n1     0            48\n2     1            58\n\n\n\nbes1 %&gt;% \n  group_by(leave) %&gt;% \n  summarize(sd(age))\n\n# A tibble: 2 × 2\n  leave `sd(age)`\n  &lt;dbl&gt;     &lt;dbl&gt;\n1     0      17.3\n2     1      15.0\n\n\n分散と標準偏差の関係を確認しておこう。\n\nbes1 %&gt;% \n  filter(leave == 1) %&gt;% \n  summarize(分散 = var(age),\n            標準偏差の2乗 = sd(age)^2,\n            分散の平方根 = sqrt(var(age)))\n\n# A tibble: 1 × 3\n   分散 標準偏差の2乗 分散の平方根\n  &lt;dbl&gt;         &lt;dbl&gt;        &lt;dbl&gt;\n1  224.          224.         15.0"
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#relationship-between-education-and-the-leave-vote-in-the-entire-uk",
+    "href": "tips/r/dss_tidyverse.html#relationship-between-education-and-the-leave-vote-in-the-entire-uk",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "3.5 Relationship between education and the leave vote in the entire UK",
+    "text": "3.5 Relationship between education and the leave vote in the entire UK\nこれまでと同じようにデータを読み込み。\n\ndis &lt;- read_csv(\"UK_districts.csv\")\n\n\ndis %&gt;% \n  head()\n\n# A tibble: 6 × 3\n  name           leave high_education\n  &lt;chr&gt;          &lt;dbl&gt;          &lt;dbl&gt;\n1 Birmingham      50.4           23.0\n2 Cardiff         40.0           32.3\n3 Edinburgh City  25.6           21.9\n4 Glasgow City    33.4           25.9\n5 Liverpool       41.8           22.4\n6 Swansea         51.5           25.8\n\n\n\ndis %&gt;% \n  dim()\n\n[1] 382   3\n\n\nNAを含む行を削除したデータを作成。\n\ndis1 &lt;- dis %&gt;% \n  na.omit()\n\n\ndis1 %&gt;% \n  dim()\n\n[1] 380   3\n\n\n\n3.5.1 Scatter plots\n散布図を描くときに使うのがgeom_point()というコマンドである。ggplot(aes())内でx軸とy軸をそれぞれ指定しておいて、geom_point()で散布図を描くことができる。\n\ndis1 %&gt;% \n  ggplot(aes(x = high_education, y = leave)) + \n  geom_point()\n\n\n\n\n\n\n\n\n上記の図に、xの平均値を表す線とyの平均値を表す線を書き加えてみよう。横方向の線を加えるコマンドはgeom_hline()、縦方向の線を加えるコマンドはgeom_vline()である。\n\nxvalue &lt;- dis1 %&gt;% \n  with(mean(high_education))\nyvalue &lt;- dis1 %&gt;% \n  with(mean(leave))\n\ndis1 %&gt;% \n  ggplot(aes(x = high_education, y = leave)) + \n  geom_point() + \n  geom_hline(yintercept = yvalue, lty = \"dashed\") + \n  geom_vline(xintercept = xvalue, lty = \"dashed\")\n\n\n\n\n\n\n\n\n\n\n3.5.2 Correlation\n相関係数を求めるときには、with(cor())コマンドを用いる。\n\ndis1 %&gt;% \n  with(cor(high_education, leave))\n\n[1] -0.7633185\n\ndis1 %&gt;% \n  with(cor(leave, high_education))\n\n[1] -0.7633185"
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#predicting-gdp-using-prior-gdp",
+    "href": "tips/r/dss_tidyverse.html#predicting-gdp-using-prior-gdp",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "4.4 Predicting GDP using prior GDP",
+    "text": "4.4 Predicting GDP using prior GDP\nread_csv()でデータを読み込む。\n\nco &lt;- read_csv(\"countries.csv\")\n\nhead()で、データの最初の6行を表示できる。\n\nco %&gt;% head()\n\n# A tibble: 6 × 5\n  country    gdp prior_gdp light prior_light\n  &lt;chr&gt;    &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;       &lt;dbl&gt;\n1 USA      11.1      7.37   4.23       4.48 \n2 Japan   543.     464.    11.9       11.8  \n3 Germany   2.15     1.79  10.6        9.70 \n4 China    16.6      4.90   1.45       0.735\n5 UK        1.10     0.754 11.9       13.4  \n6 France    1.58     1.21   8.51       6.91 \n\n\ndim()で、データの行数と列数を表示できる。\n\nco %&gt;% dim()\n\n[1] 170   5\n\n\n\n4.4.1 Relationship between GDP and prior GDP\nggplot()を使って散布図を描いてみる。\n\nco %&gt;% \n  ggplot(aes(x = prior_gdp, y = gdp)) + # x軸にprior_gdp、y軸にgdpを指定\n  geom_point() # 散布図を描く\n\n\n\n\n\n\n\n\nwith(cor())を使って相関係数を求める。\n\nco %&gt;% \n  with(cor(gdp, prior_gdp))\n\n[1] 0.9903451\n\n\n散布図に回帰直線を書くときには、geom_smooth()を使う。method = \"lm\"で回帰直線を指定し、se = FALSEで信頼区間を描かないように指定する1。\n\nco %&gt;% \n  ggplot(aes(x = prior_gdp, y = gdp)) + \n  geom_point() + \n  geom_smooth(method = \"lm\", se = FALSE)\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n4.4.2 With natural logarithm transformations\n自然対数変換を行った変数（列）を、データフレーム（co）に追加する。\n\nco &lt;- co %&gt;% \n  mutate(log_gdp = log(gdp)) %&gt;%  \n  mutate(log_prior_gdp = log(prior_gdp))\n\nもともとのgdpの分布は右に歪んでいる（低い方に偏っている）。対数変換を行うことで、分布が左右対称の正規分布に近づくことがわかる。\n\nco %&gt;% \n  ggplot(aes(x = gdp)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n\nco %&gt;% \n  ggplot(aes(x = log_gdp)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n1年前のGDPについても同様である。\n\nco %&gt;% \n  ggplot(aes(x = prior_gdp)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n\nco %&gt;% \n  ggplot(aes(x = log_prior_gdp)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n1年前の対数GDPと現在の対数GDPの散布図を描いてみる。\n\nco %&gt;% \n  ggplot(aes(x = log_prior_gdp, y = log_gdp)) + \n  geom_point()\n\n\n\n\n\n\n\n\nwith(cor())で相関係数を求める。\n\nco %&gt;% \n  with(cor(log_gdp, log_prior_gdp))\n\n[1] 0.9982696"
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#predicting-gdp-growth-using-night-time-light-emissions",
+    "href": "tips/r/dss_tidyverse.html#predicting-gdp-growth-using-night-time-light-emissions",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "4.5 Predicting GDP growth using night-time light emissions",
+    "text": "4.5 Predicting GDP growth using night-time light emissions\n\\(t\\)年のGDP成長率（\\(\\Delta GDP_t\\)とする）は、次のように計算される。\n\\[\nGDP_t = \\frac{GDP_{t} - GDP_{t-1}}{GDP_{t-1}} \\times 100\n\\]\nGDP成長率、および光量の成長率の変数（列）を作成して、データフレーム（co）に追加する。\n\nco &lt;- co %&gt;% \n  mutate(gdp_change = (gdp - prior_gdp)/prior_gdp * 100) %&gt;% \n  mutate(light_change = (light - prior_light)/prior_light * 100)\n\n\nco %&gt;% \n  ggplot(aes(x = gdp_change)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n光量の成長率のヒストグラムを描いてみる。\n\nco %&gt;% \n  ggplot(aes(x = light_change)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\nついで、光量の成長率とGDP成長率の散布図を描いてみる。\n\nco %&gt;% \n  ggplot(aes(x = light_change, y = gdp_change)) + \n  geom_point()\n\n\n\n\n\n\n\n\n両者の相関係数を計算する。\n\nco %&gt;% \n  with(cor(gdp_change, light_change))\n\n[1] 0.4577672"
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#measuring-how-well-the-model-fits-the-data-with-coefficient-of-determination-r2",
+    "href": "tips/r/dss_tidyverse.html#measuring-how-well-the-model-fits-the-data-with-coefficient-of-determination-r2",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "4.6 Measuring how well the model fits the data with coefficient of determination, R^2",
+    "text": "4.6 Measuring how well the model fits the data with coefficient of determination, R^2\n相関係数を2乗した値を決定係数という。決定係数は、従属変数Yの変動のうち、独立変数Xによって説明される割合を示す。\n\nco %&gt;% \n  with(cor(gdp, prior_gdp)^2)\n\n[1] 0.9807834\n\nco %&gt;% \n  with(cor(log_gdp, log_prior_gdp)^2)\n\n[1] 0.9965422\n\nco %&gt;% \n  with(cor(gdp_change, light_change)^2)\n\n[1] 0.2095508\n\n\n社会科学の場合は、予測に関心があることは少なく、むしろ、変数間の関連がどの程度あるのかを明らかにすることに主眼がある。そのため、決定係数が高いかどうかはあまり気にする必要はない。"
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#the-effect-of-russian-tv-on-ukrainians-voting-behavior",
+    "href": "tips/r/dss_tidyverse.html#the-effect-of-russian-tv-on-ukrainians-voting-behavior",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "5.3 The effect of Russian TV on Ukrainians’ voting behavior",
+    "text": "5.3 The effect of Russian TV on Ukrainians’ voting behavior\nデータを読み込む。\n\nuas &lt;- read_csv(\"UA_survey.csv\")\n\n\nuas %&gt;% head()\n\n# A tibble: 6 × 3\n  russian_tv pro_russian_vote within_25km\n       &lt;dbl&gt;            &lt;dbl&gt;       &lt;dbl&gt;\n1          1                0           1\n2          1                1           1\n3          0                0           0\n4          0                0           1\n5          0                0           1\n6          1                0           0\n\nuas %&gt;% dim()\n\n[1] 358   3\n\n\n\n5.3.1 Using the simple linear model to compute the difference-in-means estimator\n教科書にかかれているとおり、ロシアのテレビを見ていない地域における親ロシア派の投票率と、ロシアのテレビを見ている地域における親ロシア派の投票率を求めて、それらの差を計算してみる。\n\nmean0 &lt;- uas %&gt;% \n  filter(russian_tv == 0) %&gt;% \n  with(mean(pro_russian_vote))\nmean1 &lt;- uas %&gt;% \n  filter(russian_tv == 1) %&gt;% \n  with(mean(pro_russian_vote))\n\nmean1 - mean0\n\n[1] 0.1191139\n\n\n別の方法として、group_by()を使ってサンプルを2つのグループに分けたうえで、それぞれのグループ別に平均値を計算し、両者の差を求めるという方法もある。\n\nuas %&gt;% \n  group_by(russian_tv) %&gt;% \n  summarize(mean = mean(pro_russian_vote)) %&gt;% \n  mutate(diff = mean - lag(mean, n = 1))\n\n# A tibble: 2 × 3\n  russian_tv  mean   diff\n       &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;\n1          0 0.171 NA    \n2          1 0.290  0.119\n\n\n\n\n5.3.2 Controlling for confounders using a multiple linear regression model\n\nuas %&gt;% \n  with(cor(within_25km, russian_tv))\n\n[1] 0.8127747\n\n\nロシアとウクライナの国境から25km以内に住んでいるかどうか（within_25km）と、ロシアのテレビを見ているかどうかのクロス表を作ってみよう。\n\nuas %&gt;% \n  with(table(within_25km, russian_tv))\n\n           russian_tv\nwithin_25km   0   1\n          0 139  14\n          1  19 186"
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#the-effect-of-russian-tv-on-ukrainian-electoral-outcomes",
+    "href": "tips/r/dss_tidyverse.html#the-effect-of-russian-tv-on-ukrainian-electoral-outcomes",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "5.4 The effect of russian TV on Ukrainian electoral outcomes",
+    "text": "5.4 The effect of russian TV on Ukrainian electoral outcomes\n\nuap &lt;- read_csv(\"UA_precincts.csv\")\n\n\nuap %&gt;% head()\n\n# A tibble: 6 × 4\n  russian_tv pro_russian prior_pro_russian within_25km\n       &lt;dbl&gt;       &lt;dbl&gt;             &lt;dbl&gt;       &lt;dbl&gt;\n1          0       2.72               25.1           1\n2          0       0.893              35.3           0\n3          1       1.69               20.5           1\n4          0      72.3                84.5           1\n5          0       1.28               29.0           0\n6          1       1.43               45.6           0\n\nuap %&gt;% dim()\n\n[1] 3589    4\n\n\n\n5.4.1 Using the simple linear model to compute the difference-in-means estimator\n今回選挙で親ロシア派の候補者に投票した人の割合（pro_russian）と、前回選挙で親ロシア派の候補者に投票した人の割合（prior_pro_russian）の差の変数を作成して、データフレームuapに追加する。\n\nuap &lt;- uap %&gt;% \n  mutate(pro_russian_change = pro_russian - prior_pro_russian)\n\n今回選挙と前回選挙の差の変数のヒストグラムを見てみよう。\n\nuap %&gt;% \n  ggplot(aes(x = pro_russian_change)) + \n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n\nuap %&gt;% \n  with(cor(within_25km, russian_tv))\n\n[1] 0.5317845"
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#probability-distributions",
+    "href": "tips/r/dss_tidyverse.html#probability-distributions",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "6.4 Probability distributions",
+    "text": "6.4 Probability distributions\nSeeing theoryのChance Eventでは、コインを投げたときに得られる実現値と、観察された割合との関係を見ることができる。コインをたくさん投げるほど、観察された割合の値が真の確率に近づくことがわかる。\n\n6.4.2 The normal distribution\nstarデータを読み込み、ヒストグラムを作成する。\n\nstar &lt;- read_csv(\"STAR.csv\")\n\n\nstar %&gt;% \n  ggplot(aes(x = reading, y = ..density..)) +\n  geom_histogram()\n\nWarning: The dot-dot notation (`..density..`) was deprecated in ggplot2 3.4.0.\nℹ Please use `after_stat(density)` instead.\n\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\nSeeing theoryのDiscrete and Continuousの箇所で、「Continuous」を選択して、「Normal」を選択すると、正規分布がどのような形状になるのかを確かめることができる。\n\n\n6.5.2 The central limit theorem\nSeeing theoryのCentral Limit Theoremでは、標本平均の分布がどのようになるのかを確認することができる。\n\nsd_sample_means &lt;- c()\n\nfor (i in 1:10000){\n  ## p = 0.6の二値確率変数から1000個の観察の無作為標本を抽出\n  support_sample &lt;- sample(c(1,0),\n                           size = 1000,\n                           replace = TRUE,\n                           prob = c(0.6, 0.4))\n  ## 標準化した標本平均を計算して保存\n  sd_sample_means[i] &lt;- (mean(support_sample) - 0.6) / sqrt(0.6 * 0.4 / 1000)\n}\n\n## ヒストグラムを作成\nsd_sample_means %&gt;% \n  tibble() %&gt;% \n  ggplot(aes(x = sd_sample_means, y = ..density..)) +\n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`."
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#confidence-intervals",
+    "href": "tips/r/dss_tidyverse.html#confidence-intervals",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "7.2 Confidence intervals",
+    "text": "7.2 Confidence intervals\n\n7.2.1 Confidence interval for the sample mean\nSeeing theoryのconfidence intervalの箇所では、次のことを理解できる。\n\nx%信頼区間とは、無作為に抽出されたx%の標本が、母集団におけるパラメータ（この場合は平均値）の真値を含んでいる。\n標本サイズを大きくするほど、信頼区間が小さくなる。\n信頼水準を高く設定するほど、信頼区間が大きくなる。\n\nbesデータを読み込み、欠損値を削除したデータbes1を準備する。\n\nbes &lt;- read_csv(\"BES.csv\") \n\n\nbes1 &lt;- bes %&gt;% \n  na.omit()\n\n公式の意味を知りたい場合には教科書のようなコードを実行するほうがよいが、実際に信頼区間を計算する際にはt.test()関数を使うのが便利である。t.test()は、t分布を使って信頼区間を求めたりt検定を行ったりする関数である。標本サイズが十分大きい場合、t分布は標準正規分布に近似するため、教科書で使われている標準正規分布の信頼区間を求める場合とほぼ同様に使うことができる。\n標本平均の信頼区間を求める場合、次のように書く。\n\nt.test(平均を計算したい変数 ~ 1, data = データフレーム, conf.level = 信頼水準)\n\n\nt.test(leave ~ 1, data = bes1, conf.level = 0.95) # 標本平均の95%信頼区間を求める\n\n\n    One Sample t-test\n\ndata:  leave\nt = 149.75, df = 25096, p-value &lt; 2.2e-16\nalternative hypothesis: true mean is not equal to 0\n95 percent confidence interval:\n 0.4657125 0.4780657\nsample estimates:\nmean of x \n0.4718891 \n\n\n末尾に示された「95 percent confidence interval:」の箇所が標本平均の95%信頼区間を表している。\n\n\n7.2.2 Confidence interval for the difference-in-means estimator\nstarデータを読み込む。\n\nstar &lt;- read_csv(\"star.csv\")\n\n\nstar %&gt;% head()\n\n# A tibble: 6 × 5\n  classtype reading  math graduated small\n  &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;\n1 small         578   610         1     1\n2 regular       612   612         1     0\n3 regular       583   606         1     0\n4 small         661   648         1     1\n5 small         614   636         1     1\n6 regular       610   603         0     0\n\n\nt.test()は2つのグループ間の平均の差推定量の信頼区間を求める場合にも使うことができる。この場合、次のように書く。\n\nt.test(平均を計算したい変数 ~ グループ分けする変数, data = データフレーム, conf.level = 信頼水準)\n\n\nt.test(reading ~ small, data = star, conf.level = 0.95) #small別に見た数学の平均値の差の95%信頼区間を求める)\n\n\n    Welch Two Sample t-test\n\ndata:  reading by small\nt = -3.4957, df = 1221, p-value = 0.0004899\nalternative hypothesis: true difference in means between group 0 and group 1 is not equal to 0\n95 percent confidence interval:\n -11.257410  -3.163683\nsample estimates:\nmean in group 0 mean in group 1 \n       625.4920        632.7026 \n\n\n末尾に示された「95 percent confidence interval:」の箇所が平均の差推定量の95%信頼区間を表している。\n教科書と異なり、少人数学級ではないグループの平均値から少人数学級のグループの平均値を引いている（t.test()はsmallの値が小さい方から大きい方を引く）ことから、値が負になっている。しかし、解釈に変わりはない。\n\n\n7.2.3 Confidence interval for predicted outcomes\ncoデータを読み込み、必要な変数を作成する。\n\nco &lt;- read_csv(\"countries.csv\")\n\n\nco &lt;- co %&gt;% \n  mutate(gdp_change = (gdp - prior_gdp)/prior_gdp * 100) %&gt;% \n  mutate(light_change = (light - prior_light)/prior_light * 100)\n\n以下の線形モデルを推定して、fitに格納する。\n\nfit &lt;- lm(gdp_change ~ light_change, data = co)\n\npredict()関数を使って、light_changeが20の場合のgdp_changeの予測値と95%信頼区間を求める。\n\nfit %&gt;% \n  predict(newdata = data.frame(light_change = 20),\n          interval = \"confidence\")\n\n       fit      lwr      upr\n1 54.91233 48.77123 61.05343\n\n\nなお、ggplot()を使うことで、すべてのlight_changeの値における95%信頼区間を求めた図を書くこともできる。\n\nco %&gt;% \n  ggplot(aes(x = light_change, y = gdp_change)) +\n  geom_point() +\n  geom_smooth(method = \"lm\", se = TRUE) # 線形モデルを当てはめ、95%信頼区間を表示\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n薄い灰色で塗られた箇所が、95%信頼区間を表している。"
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#hypothesis-testing",
+    "href": "tips/r/dss_tidyverse.html#hypothesis-testing",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "7.3 Hypothesis testing",
+    "text": "7.3 Hypothesis testing\n\n7.3.1 Hypothesis testint with the difference-in-means estimator\n先ほどと同じように、t.test()を使って平均の差推定量が統計的に有意に0と異なるかどうかの検定を行うことができる。\n\nt.test(reading ~ small, data = star) # small別に見た数学の平均値の差に関するt検定\n\n\n    Welch Two Sample t-test\n\ndata:  reading by small\nt = -3.4957, df = 1221, p-value = 0.0004899\nalternative hypothesis: true difference in means between group 0 and group 1 is not equal to 0\n95 percent confidence interval:\n -11.257410  -3.163683\nsample estimates:\nmean in group 0 mean in group 1 \n       625.4920        632.7026 \n\n\n冒頭に示された「t = 」の箇所が検定統計量であるt統計量（標本サイズが十分大きい場合、z統計量とt統計量の値は近似する）の値、「p-value」の箇所がp値を表している。tの絶対値は1.96より大きく、またp値は0.05よりも小さいため、少人数学級とそれ以外のクラスの平均値には統計的に有意な差がある（少人数学級のほうが読解力の点数が高い）と結論できる。\n\n\n7.3.2 Hypothesis testing with estimated regression coefficients\nUA_surveyデータを読み込み、uasに格納する。\n\nuas &lt;- read_csv(\"UA_survey.csv\")\n\n以下の線形モデルを推定して、fitに格納する。\n\nfit &lt;- lm(pro_russian_vote ~ russian_tv + within_25km, data = uas)\n\nモデルの統計量を示す表を表示する。\n\nfit %&gt;% \n  summary() %&gt;% \n  coef\n\n              Estimate Std. Error   t value     Pr(&gt;|t|)\n(Intercept)  0.1959065 0.03457823  5.665602 3.032123e-08\nrussian_tv   0.2875934 0.07652437  3.758194 2.000236e-04\nwithin_25km -0.2080644 0.07681051 -2.708802 7.079846e-03"
+  },
+  {
+    "objectID": "tips/r/dss_tidyverse.html#footnotes",
+    "href": "tips/r/dss_tidyverse.html#footnotes",
+    "title": "Data analysis for social science in tidyverse",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nse = TRUEとすると、95%信頼区間が表示される。信頼区間についての説明は、Chapter 7を参照のこと。↩︎"
+  },
+  {
+    "objectID": "tips/r.html",
+    "href": "tips/r.html",
     "title": "R",
     "section": "",
     "text": "Rで知っておいたら便利かもしれないコードや資料を不定期に更新します。"
   },
   {
-    "objectID": "r.html#rによる社会調査データ分析の手引き",
-    "href": "r.html#rによる社会調査データ分析の手引き",
+    "objectID": "tips/r.html#rによる社会調査データ分析の手引き",
+    "href": "tips/r.html#rによる社会調査データ分析の手引き",
     "title": "R",
     "section": "Rによる社会調査データ分析の手引き",
     "text": "Rによる社会調査データ分析の手引き\n\n私の作成した授業用ウェブページです。社会調査データの加工・分析に特化して、tidyverse文法で書いています。\n（2022-02-28→2022-09-19移行）"
   },
   {
-    "objectID": "r.html#data-analysis-for-social-science-in-tidyverse",
-    "href": "r.html#data-analysis-for-social-science-in-tidyverse",
+    "objectID": "tips/r.html#data-analysis-for-social-science-in-tidyverse",
+    "href": "tips/r.html#data-analysis-for-social-science-in-tidyverse",
     "title": "R",
     "section": "Data Analysis for Social Science in Tidyverse",
     "text": "Data Analysis for Social Science in Tidyverse\nLlaudet, Elene and Kosuke Imai. 2022. Data Analysis for Social Science: A Friendly and Practical Introduction. Princeton University Press.のコードをtidyverseを使って書いてみました。授業などで使用します。\n（2023-04-10）"

@@ -43,15 +43,17 @@ Mogi, Ryohei\*, Ryota Mugiyama\*, and Alyce Raybould\*. 2025. "[Exposure to Non-
 
 Mugiyama, Ryota. 2025. "[Decomposing Delayed First Marriage and Birth across Cohorts: The Role of Increased Employment Instability among Men in Japan](https://doi.org/10.4054/DemRes.2025.52.21)." *Demographic Research.* 52: 635--688.
 
-- Replication code is available from the journal page.
+- Replication code is available on the journal page.
 
 Mugiyama, Ryota. 2024. "[Disaggregating the Relationship between Precarious Employment and Delayed Marriage in Japan: Incorporating Non-cohabiting Partnerships](https://doi.org/10.1016/j.ssresearch.2024.103093)." *Social Science Research.* 124: 103093.
 
 Mogi, Ryohei, Ryota Mugiyama and Giammarco Alderotti. 2024. "[Employment Uncertainty and Non-coresidential Partnership in Very Low Fertility Countries: Italy and Japan](https://doi.org/10.20377/jfr-953)." *Journal of Family Research.* 36: 160--177.
 
-- Replication code is available from the journal page.
+- Replication code is available on the journal page.
 
 Mugiyama, Ryota. 2024. "[Cohort Change in the Educational Gradient in Women's Employment Around Childbirth in Japan](https://doi.org/10.1016/j.rssm.2023.100885)." *Research in Social Stratification and Mobility.* 89: 100885.
+
+- [Accepted manuscript](https://doi.org/10.31235/osf.io/jad3y_v1)
 
 Çineli, Beyda and Ryota Mugiyama. 2023. "[Money Management over the Course of Marriage: Parenthood, Employment and Household Financial Organization in Japan](https://doi.org/10.1016/j.alcr.2023.100544)." *Advances in Life Course Research.* 56: 100544.
 
