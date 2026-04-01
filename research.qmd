@@ -15,18 +15,20 @@ Other research publications can also be found on the following pages.
 <!---- 
 Mugiyama, Ryota. 2026. "Gender Role Attitudes and Transition to Marriage and Marital Parenthood in Japan." *Population Research and Policy Review.*
 
-Mugiyama, Ryota and Aguru Ishibashi. "Multigenerational Perspective on Trends in the Inequality of Educational Opportunity in Japan." *European Sociological Review.*
+Mugiyama, Ryota and Aguru Ishibashi. 2026. "Multigenerational Perspective on Trends in the Inequality of Educational Opportunity in Japan." *European Sociological Review.*
 
-Mugiyama, Ryota. "Social Origin Earnings Gaps in Japan: Differential Effects by Class Destination." *European Sociological Review.*
+Mugiyama, Ryota. "Beyond the Elite Class Ceiling: Heterogeneity in Social Origin Earnings Gaps in Japan." *European Sociological Review.*
+
+Sugimoto, Haruki, Fumiya Uchikoshi, Shohei Yoda, and Ryota Mugiyama. "A Theory of Attitudinal Decoupling: Revisiting the Link between Marriage and Childbearing in Low-Fertility East Asia." *Demographic Research.*
 --->
 
-Mugiyama, Ryota and Kohei Toyonaga. 2026. "Changing Regional University Availability and Inequality of Educational Opportunity in Japan." *European Sociological Review.* Accepted.
+Mugiyama, Ryota and Kohei Toyonaga. 2026. "[Changing Regional University Availability and Inequality of Educational Opportunity in Japan](https://doi.org/10.1093/esr/jcag011)." *European Sociological Review.* Advance access. 
 
 - Replication code is available on [OSF](https://osf.io/hnmwz).
 
-Çineli, Beyda and Ryota Mugiyama. 2026. "Does More Egalitarian Ideology Foster More Egalitarian Household Work Division? Marriage, Work and Family Life in Japan." *Journal of Family Issues.* Accepted.
+Çineli, Beyda and Ryota Mugiyama. 2026. "[Does More Egalitarian Ideology Foster More Egalitarian Household Work Division? Marriage, Work and Family Life in Japan](https://doi.org/10.1177/0192513X261427687)." *Journal of Family Issues.* Advance access. 
 
-Uchikoshi, Fumiya\*, Ryota Mugiyama\*, Shohei Yoda, and James M. Raymo. 2026. "[Revisiting the Relationship between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan](https://doi.org/10.1111/padr.70050)." *Population and Development Review.* \*Equal contribution.
+Uchikoshi, Fumiya\*, Ryota Mugiyama\*, Shohei Yoda, and James M. Raymo. 2026. "[Revisiting the Relationship between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan](https://doi.org/10.1111/padr.70050)." *Population and Development Review.* 52(1): 167--200. \*Equal contribution.
 
 - [Preprint](https://doi.org/10.31235/osf.io/k5e8m_v1)
 - [Press release (in Japanese)](https://www.univ.gakushuin.ac.jp/about/press/31377.html)
@@ -186,14 +188,20 @@ Gender Role Attitudes and Transition to Marriage and Marital Parenthood in Japan
 Socio-economic status and transition to non-cohabiting partnership in East Asia and Europe (with Ryohei Mogi, Inhee Han, Alyce Raybould, Lisa Schmid, and Jiajie Zhang)
 
 <!--- 
-Revisiting the Attitudinal Link between Marriage and Childbearing in Low-Fertility East Asia: Evidence from Japan (with Haruki Sugimoto, Fumiya Uchikoshi, and Shohei Yoda) 
-
 Trends in Sex Segregation by Field of Study in Japan, 2003--2023 (with Fumiya Uchikoshi, Megumi Oguro, Erika Teramoto, and Kohei Toyonaga)
 
 Mugiyama, Ryota and Yuki Torii. "Depression of Deviants: Varying Impact of Parenthood on Mental Health by the Endorsement of Gender Ideology."
 --->
 
 ## Miscs
+<!--- 
+麦山亮太，2027，「書評 吉田航著『新卒採用と不平等の社会学：組織の計量分析が映すそのメカニズム』」『人口学研究』
+
+豊永耕平・新田真悟・麦山亮太，2027，「社会階層研究からみる計量社会学の現在」『理論と方法』
+
+豊永耕平・新田真悟・麦山亮太，2026，「特集イントロダクション：社会調査データの統合による二次分析の刷新」『理論と方法』
+--->
+打越文弥・麦山亮太，「少子化対策の有効性とワークライフバランスに関する世論調査」『日本世論調査協会報「よろん」』136: 4--14．
 
 麦山亮太，2025，「[職業とタスクからみる仕事内容のジェンダー格差](https://www.yu-cho-f.jp/wp-content/uploads/2025autumn_articles07.pdf)」『季刊個人金融』20(3): 69--80．
 

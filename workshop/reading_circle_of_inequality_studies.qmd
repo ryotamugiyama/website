@@ -1,7 +1,7 @@
 ---
-title: "不平等研究に関する輪読会 Reading circle of inequality studies"
+title: "不平等研究に関する輪読会 Reading circle for inequality studies"
 author: "Ryota Mugiyama"
-date: "2025-01-14"
+date: "2026-03-13"
 ---
 
 ## 研究会趣旨
@@ -52,3 +52,7 @@ date: "2025-01-14"
 ### 参加者
 
 随時募集中で、職位などは問いません。社会学分野における不平等に関する研究に関心がある方ならどなたでも。
+
+### 開催記録
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTNgFJJCnynv9SUWcnA_IyK4-LHDSAVxfkug-o7IH0z704VdjllnG_VXKteTLDl0wo0_Sgh9Nvv5fnM/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="800" height = "800"></iframe>
