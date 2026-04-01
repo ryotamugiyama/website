@@ -53,6 +53,10 @@ Zoomなどを使ったオンライン形式で行います。
 
 Robust Estimation of the Ranges of Means, Mean Differences, and Causal Effects Accounting for Satisficers through Randomization of Response Options
 
+#### コメンテーター
+
+五十嵐彰（大阪大学）
+
 ## 開催記録
 
 forthcoming
