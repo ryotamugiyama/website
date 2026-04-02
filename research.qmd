@@ -25,6 +25,7 @@ Sugimoto, Haruki, Fumiya Uchikoshi, Shohei Yoda, and Ryota Mugiyama. "A Theory o
 Mugiyama, Ryota and Kohei Toyonaga. 2026. "[Changing Regional University Availability and Inequality of Educational Opportunity in Japan](https://doi.org/10.1093/esr/jcag011)." *European Sociological Review.* Advance access. 
 
 - Replication code is available on [OSF](https://osf.io/hnmwz).
+- [Press release (in Japanese)](https://www.univ.gakushuin.ac.jp/about/press/31762.html)
 
 Çineli, Beyda and Ryota Mugiyama. 2026. "[Does More Egalitarian Ideology Foster More Egalitarian Household Work Division? Marriage, Work and Family Life in Japan](https://doi.org/10.1177/0192513X261427687)." *Journal of Family Issues.* Advance access. 
 

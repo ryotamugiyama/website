@@ -1,7 +1,7 @@
 ---
 title: "2021-04--　学習院大学法学部「社会学演習」"
 author: "Ryota Mugiyama"
-date: "2021-04-01"
+date: "2026-04-01"
 image: ../images/website.jpg
 ---
 
@@ -55,6 +55,33 @@ image: ../images/website.jpg
 
 
 ## 過去の購読文献など
+
+### 2026年度
+
+Goldin, Claudia. 2021. *Career and Family: Women’s Century-Long Journey toward Equity.* Princeton University Press.（鹿田昌美訳，2023，『なぜ男女の賃金に格差があるのか：女性の生き方の経済学』慶應義塾出版会．）
+
+豊永耕平，2023，『学歴獲得の不平等：親子の進路選択と社会階層』勁草書房．
+
+Llaudet, Elene and Kosuke Imai. 2022. *Data Analysis for Social Science: A Friendly and Practical Introduction.* Princeton University Press.（原田勝孝訳，2025，『新・社会科学のためのデータ分析入門：導入編』岩波書店）
+
+加藤一晃，2022，「高校生の部活動参加の拡大と学習行動の変容：学校ランクと社会階層に着目した1990年・2006年調査の比較分析」『教育学研究』89(1): 27–39.
+
+小松恭子，2024，「転職行動の男女差：転職前後のタスク距離に着目して」『日本労務学会誌』25(1): 9–25.
+
+Yu, Wei-Hsin, and Yuko Hara. 2023. "Stability and Relevance of Marriage Desires: Importance of Age Norms and Partnering Opportunities." *Journal of Marriage and the Family* 85(2):391–412.
+
+小黒恵・須藤康介・鈴木翔，2024，「デート代の支払いをめぐるジェンダー的行為規範：婚活市場における男女差と女性内分化に着目して」『現代の社会病理』39: 111–26.
+
+中山真緒・石川祐実，2023，「男性配偶者の業種別育児休業取得率が女性の就業確率，健康状態に与える影響」『日本労働研究雑誌』760: 74–87．
+
+Mugiyama, Ryota and Kohei Toyonaga. 2026. "Changing University Availability and Inequality of Educational Opportunity in Japan." *European Sociological Review.* Advance access.
+
+木村裕貴，2023，「離婚を通じた不利の累積：離婚が女性にもたらす不均等な経済的帰結の検証」『社会学評論』74(2): 262–79.
+
+中尾走・宮田弘一，2024，「内定獲得に対するインターンシップの効果検証：平均因果効果と効果修飾の両方に着目して」『日本労働研究雑誌』769: 86–97．
+
+Mun, Eunmi, and Naomi Kodama. 2022. "Meritocracy at Work?: Merit-Based Reward Systems and Gender Wage Inequality." *Social Forces* 100(4):1561–91.
+
 
 ### 2025年度
 
