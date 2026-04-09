@@ -20,6 +20,8 @@ Mugiyama, Ryota and Aguru Ishibashi. 2026. "Multigenerational Perspective on Tre
 Mugiyama, Ryota. "Beyond the Elite Class Ceiling: Heterogeneity in Social Origin Earnings Gaps in Japan." *European Sociological Review.*
 
 Sugimoto, Haruki, Fumiya Uchikoshi, Shohei Yoda, and Ryota Mugiyama. "A Theory of Attitudinal Decoupling: Revisiting the Link between Marriage and Childbearing in Low-Fertility East Asia." *Demographic Research.*
+
+Kwon, Aram and Ryota Mugiyama. 2026. "Intergenerational Educational Mobility and Subjective Social Status: "Falling from Grace" or "Rising from Rags?" *Socius.*
 --->
 
 Mugiyama, Ryota and Kohei Toyonaga. 2026. "[Changing Regional University Availability and Inequality of Educational Opportunity in Japan](https://doi.org/10.1093/esr/jcag011)." *European Sociological Review.* Advance access. 
@@ -117,8 +119,9 @@ Intergenerational Educational Mobility and Subjective Social Status (with Aram K
 - 2025-03-27 Presented at RC28 Spring Meeting at University of Milan.
 - 2025-03-21 Presented at CSRDA Secondary Data Analysis Workshop.
 
-Diverging Influences of Fathers and Mothers: Intergenerational Educational Mobility in 20th Century Japan (with Aguru Ishibashi) 
+When the Influences of Fathers and Mothers Change: Intergenerational Educational Mobility in 20th-Century Japan (with Aguru Ishibashi) 
 
+- 2026-03-07 Presented at JAMS 80th Meeting. [slide](https://researchmap.jp/mugiyama/presentations/52017837)
 - 2026-01-20 Presented at RC28 Online Thematic Meeting. [slide](https://researchmap.jp/mugiyama/presentations/51383667)
 - 2025-11-15 Presented at JSS 86th Annual Meeting at Hitotsubashi University. [slide](https://researchmap.jp/mugiyama/presentations/49369343)
 - 2025-08-07 Presented at RC28 2025 Summer Meeting at UCLA. [slide](https://researchmap.jp/mugiyama/presentations/48946285)
@@ -157,7 +160,7 @@ Task Variety and Its Earnings Returns Across Countries: Evidence from PIAAC (wit
 - 2025-07-11 Presented at Society for the Advancement of Socio-Economics (SASE) 2025 Annual Meeting at Palais des Congrès, Montréal, Québec. 
 - 2024-08-30 Presented at JAMS 77th Annual Meeting at Tohoku University. [slide](https://researchmap.jp/mugiyama/presentations/46844602)
 
-The Weight of Gendered Expectation: Pre-birth Endorsement of Intensive Mothering Ideologies and the Motherhood Penalty (with Rantaro Nasu and Yuriko Morikawa)
+Diverging Pathways: Pre-birth Endorsement of Intensive Mothering Ideology and the Motherhood Penalty (with Rantaro Nasu and Yuriko Morikawa)
 
 - 2025-08-28 Presented at JAMS 79th Meeting at Kwansei Gakuin University. [slide](https://researchmap.jp/mugiyama/presentations/49886946)
 - 2025-06-28 Presented at Social Stratification and Mobility Summer International Workshop.
@@ -169,10 +172,11 @@ Can Educational Expansion and Delayed Family Formation Explain Occupational Gend
 Mugiyama, Ryota and Hansol Lee. "Fatherhood wage premium in Japan"
 --->
 
-### Family Demography 
+### Family demography 
 
-Does Policy Affect Fertility and Marriage Desires Among Never-Married Childless People? A Factorial Survey Experiment (with Shin Okubo, Kota Toma, Shohei Yoda, and Shigeki Matsuda)
+Family Policy Reform and Marriage and Fertility Intentions: A Factorial Survey Experiment among Never-Married and Childless Individuals in Japan (with Shin Okubo, Kota Toma, Shohei Yoda, and Shigeki Matsuda)
 
+- 2026-04-08 Preprint is found here. [paper](https://doi.org/10.31235/osf.io/hb4jc_v1)
 - 2024-11-09 Presented at JSS 97th Annual Meeting at Kyoto Sangyo University. [slide](https://researchmap.jp/mugiyama/presentations/46363891)
 - 2024-07-29 Presented at READI 2nd Meeting at Peking University. [slide](https://researchmap.jp/mugiyama/presentations/46241948)
 - 2024-03-17 Presented at JAMS 76th Meeting at Osaka University. [slide](https://researchmap.jp/mugiyama/presentations/45509867)
