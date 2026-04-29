@@ -1,13 +1,13 @@
 ---
 title: "Profile"
-date: "2025-08-09"
+date: "2026-04-24"
 ---
-
-Born in [Nonoichi city](https://en.wikipedia.org/wiki/Nonoichi,_Ishikawa) (next to Kanazawa city), Ishikawa prefecture, Japan.
 
 ### Positions
 
-April 2021--Current: Associate Professor, Department of Political Studies, Faculty of Law, Gakushuin University.
+April 2026--Current: Professor, Department of Political Studies, Faculty of Law, Gakushuin University.
+
+April 2021--March 2026: Associate Professor, Department of Political Studies, Faculty of Law, Gakushuin University.
 
 April 2019--March 2021: Post-doctoral Research Fellow (PD), Japan Society for the Promotion of Science, at Institute of Economic Research, Hitotsubashi University.
 
@@ -23,7 +23,9 @@ March 2014: Bachelor of Arts in Letters, Faculty of Letters, the University of T
 
 ### 職歴
 
-2021年4月--現在　学習院大学法学部政治学科 准教授
+2026年4月--現在　学習院大学法学部政治学科 教授
+
+2021年4月--2026年3月　学習院大学法学部政治学科 准教授
 
 2019年4月--2021年3月　日本学術振興会特別研究員PD（一橋大学経済研究所）
 
@@ -36,3 +38,7 @@ March 2014: Bachelor of Arts in Letters, Faculty of Letters, the University of T
 2016年3月　東京大学大学院人文社会系研究科 社会文化研究専攻 社会学専門分野修士課程修了，修士（社会学）
 
 2014年3月　東京大学文学部 行動文化学科 社会学専修課程卒業，学士（文学）
+
+### 出身
+
+[石川県野々市市](https://ja.wikipedia.org/wiki/%E9%87%8E%E3%80%85%E5%B8%82%E5%B8%82)
