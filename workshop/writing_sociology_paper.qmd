@@ -2,7 +2,7 @@
 title: "社会学英語論文ワークショップ Workshop for writing sociology paper in English"
 author: "Ryota Mugiyama"
 image: ../images/writing_sociology_paper_icon.png
-date: "2026-04-01"
+date: "2026-05-13"
 ---
 
 ## 概要
@@ -39,16 +39,30 @@ Zoomなどを使ったオンライン形式で行います。
 
 ## 次回開催予定
 
+### 第2回 
+
+**日時**：2026-06-26 (Fri) 9:00--11:10
+
+**発表者**：森川ゆり子（東京大学）
+
+**タイトル**：Implicit Claims, Overclaims, and Gendered Negotiation Penalties across Job Levels
+
+**コメンテーター**：麦山亮太（学習院大学）
+
+**発表者**：謝伊琳（東京大学）
+
+**タイトル**：Unpacking Digital Skill Inequality Across the Distribution: Compensatory Schools and Amplifying Families in Japan
+
+**コメンテーター**：麦山亮太（学習院大学）
+
+## 開催記録
+
 ### 第1回 
 
 **日時**：2026-05-13 (Wed) 9:00--10:00
 
 **発表者**：齋藤遼介（大阪大学）・渡辺健太郎（東北学院大学）
 
-**タイトル**：Robust Estimation of the Ranges of Means, Mean Differences, and Causal Effects Accounting for Satisficers through Randomization of Response Options
+**タイトル**：Robust Estimation of the Ranges of Means, Mean Differences, and Causal Effects Accounting for Satisficing Responses through Randomization of Response Options
 
 **コメンテーター**：五十嵐彰（大阪大学）
-
-## 開催記録
-
-forthcoming
