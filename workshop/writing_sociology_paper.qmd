@@ -19,7 +19,7 @@ date: "2026-05-13"
 発表者は、報告タイトルとアブストラクト（200 words前後）を事前に共有し、報告の1週間前には、コメンテーターとオーガナイザーにフルペーパーを共有します。このときのフルペーパーは途中経過のもので構いません。
 
 ワークショップ当日は、まず発表者が20分間で（スライドを使って）論文内容について報告します。この報告については、参加者は事前に発表者の論文を読んでいるわけではないという前提です。
-発表後、コメンテーターが10〜20分間程度コメントを行います。コメンテーターは事前に原稿を読んだうえで、論文内容をより良くするためのコメントを行います。その後、全体での議論に移ります。
+発表後、コメンテーターが15〜20分間程度コメントを行います。コメンテーターは事前に原稿を読んだうえで、論文内容をより良くするためのコメントを行います。その後、全体での議論に移ります。
 
 ### 開催形式
 
@@ -39,23 +39,40 @@ Zoomなどを使ったオンライン形式で行います。
 
 ## 次回開催予定
 
+### 第3回 
+
+**日時**：2026-07-29 (Wed) 15:00--17:10
+
+**発表者**：中尾走（愛媛大学）
+
+**タイトル**：Do Survey Incentives Improve Data Quality? Behavioral Change or Compositional Change?
+
+**コメンテーター**：三輪洋文（学習院大学）
+
+**発表者**：キムテウン（東京大学）
+
+**タイトル**：Spousal Relationships and Class Inequality among Older Adults: A Comparative Study of South Korea and Japan
+
+**コメンテーター**：麦山亮太（学習院大学）
+
+## 開催記録
+
 ### 第2回 
 
 **日時**：2026-06-26 (Fri) 9:00--11:10
 
 **発表者**：森川ゆり子（東京大学）
 
-**タイトル**：Implicit Claims, Overclaims, and Gendered Negotiation Penalties across Job Levels
+**タイトル**：When Does Negotiation Backfire? The Ceiling of Legitimacy in Wage Negotiation
 
 **コメンテーター**：麦山亮太（学習院大学）
 
 **発表者**：謝伊琳（東京大学）
 
-**タイトル**：Unpacking Digital Skill Inequality Across the Distribution: Compensatory Schools and Amplifying Families in Japan
+**タイトル**：Unequal Pathways to Digital Skills: School and Family Socioeconomic Backgrounds Across the Digital Skill Distribution in Japan
 
 **コメンテーター**：麦山亮太（学習院大学）
 
-## 開催記録
 
 ### 第1回 
 
