@@ -1,0 +1,313 @@
+---
+title: "従属変数の対数変換と解釈に関する覚え書き"
+author: "Ryota Mugiyama"
+date: "2026-07-06"
+image: ../images/website.jpg
+categories: 
+  - "Quantitative method"
+---
+
+対数線形回帰を用いる場合の変数処理や解釈の方法について少し勉強したので、ノートとして残しておく。ここでの記述は主にSantos Silva and Tenreyro (2006)、Chen and Roth (2024)、Mullahy and Norton (2024)にもとづくが、数学的にむずかしい議論は飛ばし、自分にとって重要なところだけ拾ったうえで、自分の考えと合わせてまとめているので、正確な内容については原典を適宜参照されたい。
+
+## 対数線形回帰
+
+線形回帰分析において、従属変数を対数変換することによって係数を\%（比）として解釈する方法は標準的に用いられている。これを対数線形回帰と呼ぶ。
+
+具体的には次のようなモデルである。個体$i$について、以下のモデルを考える。
+
+$$
+\log Y_i = \beta_0 + \beta_1 X_i + u_i
+$$
+
+母集団から抽出した個体$i$について、$X_i=0$のときの$Y_i$のpotential outcomeを$Y_i(0)$、$X_i=1$のときのpotential outcomeを$Y_i(1)$とする。いま、同一個体$i$について$u_i$の値が$X_i$の値によらず一定であると仮定すると、
+
+$$
+\begin{align}
+\log Y_i(1) = \beta_0 + \beta_1 \cdot 1 + u_i \\ 
+\log Y_i(0) = \beta_0 + \beta_1 \cdot 0 + u_i
+\end{align}
+$$
+
+この2式の差を取ると、
+
+$$
+\begin{align}
+\log Y_i(1) - \log Y_i(0) &= \beta_1 \\
+\log \frac{Y_i(1)}{Y_i(0)} &= \beta_1 \\
+\frac{Y_i(1)}{Y_i(0)} &= \exp(\beta_1)
+\end{align}
+$$
+
+すなわち$\exp(\beta_1)$は、個体$i$について$X_i$が$0\to 1$になったときに、$Y_i$の値が何倍になるかを表す。同じ意味であるが、$X_i$が$0\to 1$になったときに、$Y$の値が$100 \times [\exp(\beta_1) - 1]$%増加する、と解釈することができる。
+
+## 0を含む場合に任意の値を足す方法
+
+しかし、$Y$が0を含む変数であった場合には、対数を取った値を定義することができないという問題が生じる。たとえば所得を従属変数とする場合、所得が0の回答者は存在しうる。
+
+このように0を含む従属変数であっても対数変換して分析したいという場合に従来インフォーマルに行われてきた対処の一つが、任意の値（たとえば1）を足したうえで対数変換するという方法であった。しかしこの処理には問題があるということ指摘したのがChen and Roth（2024）およびMullahy and Norton（2024）である。
+
+$Y_i$に任意の正の値を足すという処理を行った場合、上記のような対数線形回帰の解釈は成り立たなくなる。このことを確認する。いま、$Y_i$に$c$ ($c>0$)という値を足した変数の対数をとって従属変数とすることを考える。
+
+$$
+\log (Y_i + c) = \beta_0 + \beta_1 X_i + u_i
+$$
+
+前節と同様に、個体$i$について$u_i$の値が$X_i$の値によらず一定であると仮定すると、
+
+$$
+\begin{align}
+\log (Y_i(1) + c) = \beta_0 + \beta_1 \cdot 1 + u_i \\ \log (Y_i(0) + c) = \beta_0 + \beta_1 \cdot 0 + u_i 
+\end{align}
+$$
+
+両式の差を取ると：
+
+$$
+\begin{align}
+\log (Y_i(1) + c) - \log (Y_i(0) + c) &= \beta_1 \\
+\log \frac{Y_i(1) + c}{Y_i(0) + c} &= \beta_1 \\
+\frac{Y_i(1) + c}{Y_i(0) + c} &= \exp(\beta_1)
+\end{align}
+$$
+このとき、$\exp(\beta_1)$は$Y_i(1)+c$と$Y_i(0)+c$の比を表しているのであって、$Y_i(1)/Y_i(0)$として解釈することはできない。
+
+両者の乖離の大きさは、$c$の値と$Y_i(0)$の値の相対的な大きさに依存する。$Y_i(0)$が$c$と比べて十分に大きい場合には乖離は小さい。しかし$Y_i(0)$が$c$に近い、あるいは$Y_i(0)=0$の個体ではこの近似は成り立たず、$\exp(\beta_1)$の解釈上の乖離は大きくなる。
+
+とくに、$Y_i(0)=0$の個体を多く含む場合、こうした個体の比$(Y_i(1)+c) / c$が$\exp(\beta_1)$の値に強い影響（レバレッジ）を持つことになる。$c$はとくに根拠のない値であるなら、その選択によって推定値が大きく変動してしまうのは困ってしまう。
+
+## ポワソン回帰を用いる方法
+
+そこで、従属変数に任意の値を加えるという処理を行うことなく、比として結果を解釈したい場合に用いることができる方法が、ポワソン回帰（Poisson Pseudo Maximum Likelihood; PPML）を用いる方法である（Santos Silva and Tenreyro 2006）。
+
+母集団から抽出した個体$i$について、以下のモデルを考える。
+
+$$
+Y_i = \exp(\beta_0 + \beta_1 X_i) \times \varepsilon_i
+$$
+
+ここで$\varepsilon_i$は乗法的な誤差項である。個体$i$について$\varepsilon_i$の値が$X_i$の値によらず一定であると仮定すると、
+
+$$
+\begin{align}
+Y_i(1) = \exp(\beta_0 + \beta_1 \cdot 1) \times \varepsilon_i \\
+Y_i(0) = \exp(\beta_0 + \beta_1 \cdot 0) \times \varepsilon_i
+\end{align}
+$$
+
+この2式の比を取ると：
+
+$$
+\begin{align}
+\frac{Y_i(1)}{Y_i(0)} &= \frac{\exp(\beta_0 + \beta_1) \times \varepsilon_i}{\exp(\beta_0) \times \varepsilon_i} \\
+&= \exp(\beta_1)
+\end{align}
+$$
+
+ポワソン回帰の場合、従属変数の対数変換を挟まないため、$Y_i=0$のときに$\log Y_i$が定義できないという問題は生じない。したがって、$Y_i=0$のサンプルを除外することなく、推定された係数の指数を取った値$\exp(\beta_1)$を、$Y_i(1)$と$Y_i(0)$の比として解釈することができる。
+
+## 対数線形回帰とポワソン回帰のEstimandと仮定
+
+### 両者のEstimandの違い
+
+（任意の値を足した従属変数を用いるのではない）対数線形回帰とポワソン回帰のいずれにおいても、同一個体$i$について誤差項（$u_i$または$\varepsilon_i$）の値が$X_i$の値によらず一定であるという仮定のもとで、$\exp(\beta_1)$は$Y_i(1)/Y_i(0)$（個体$i$における反実仮想比）に一致する。
+
+ただし、この個体レベルの関係を母集団平均に一般化しようとすると、Santos Silva and Tenreyro（2006）が述べるように、対数線形回帰とポワソン回帰は、実は異なる量に対応することになる。
+
+$E[\varepsilon_i | X_i = 1] = E[\varepsilon_i | X_i = 0]$の仮定のもとで、ポワソン回帰の$\exp(\beta_1)$は、母集団における条件付き**算術平均**の比に対応する。
+
+$$
+\begin{align}
+\frac{E[Y_i \mid X_i=1]}{E[Y_i \mid X_i=0]} 
+&= \frac{\exp(\beta_0 + \beta_1)\times E(\varepsilon_i | X_i = 1)}{\exp(\beta_0)\times E(\varepsilon_i | X_i = 0)} \\
+&= \exp(\beta_1)
+\end{align}
+$$
+
+一方、対数線形回帰の$\exp(\beta_1)$は、条件付き**幾何平均**の比に対応する。具体的にみてみよう。$Y_i$の条件付き幾何平均を、次のように定義する。
+
+$$
+GM[Y_i \mid X_i] \equiv \exp\left(E[\log Y_i \mid X_i]\right)
+$$
+$E[u_i | X_i = 1] = E[u_i | X_i = 0]$の仮定のもとで、$X_i = 1$のときの幾何平均と$X_i = 0$のときの幾何平均の比は次のとおりとなり、$\exp(\beta_1)$に一致する。
+
+$$
+\begin{align}
+\frac{GM[Y_i \mid X_i = 1]}{GM[Y_i \mid X_i = 0]}
+&= \frac{\exp\big(E[\log Y_i \mid X_i=1]\big)}{\exp\big(E[\log Y_i \mid X_i=0]\big)} \\
+&= \frac{\exp\big(\beta_0 + \beta_1 + E[u_i | X_i = 1] \big)}{\exp\big(\beta_0 + E[u_i | X_i = 0] \big)} \\
+&= \exp(\beta_1)
+\end{align}
+$$
+
+### Estimandの選択
+
+**どちらのEstimandが望ましいかは、分析の目的に依存する**。
+
+多くの統計や記述的関心においては、算術平均のほうが関心にのぼることが多い印象である。算術平均（母集団全体の総量、あるいは平均値の変化）に関心がある場合、ポワソン回帰のEstimandのほうが直接的である。
+
+一方で、不平等などに関心を払う場合には、幾何平均のほうがより適切なEstimandとなることもある。たとえば、ある処置が国民（1億人とする）全体の所得をそれぞれ1万円ずつ引き上げる場合と、1人の所得だけを1兆円引き上げる場合を考える。どちらも母集団における条件付き算術平均の変化は同一であるが、条件付き幾何平均における変化は前者の方が大きくなる。
+
+両者が一致しないのは、対数の性質に由来する。従属変数を対数変換するというのは、同程度の$Y$の増加であったとしても、$Y$が小さいときにおける変化のほうをより大きくみる（重視する）ということを意味する。したがって、幾何平均は値が大きい個体の影響を小さく抑えているといえる（限界効用逓減）。逆に言えば、算術平均の場合は、平均値を用いるときに一般的にいわれる性質からわかるように、外れ値が大きく影響する可能性がある。
+
+$Y_i$と$X_i$の関係に関する理論にもとづいてどちらのEstimandを用いるべきかを判断することもできる。たとえば、人的資本理論にもとづくMincer型賃金関数は、教育や経験年数が賃金に対して乗法的に作用することを想定している（収益率）。このとき関心があるのは幾何平均であり、対数線形回帰は背景にある理論との整合性が高いといえる。
+
+逆に、強い理論的根拠のない場面では、どちらを用いたとしても結論に大きな違いはないことを確認するか、もし両者に大きな違いがあれば、その違いのもつ意味について解釈・考察することが有益だろう。
+
+### 対数線形回帰を算術平均の比と読めるのは特殊な場面のみ
+
+対数線形回帰における$\exp(\beta_1)$が算術平均の比に一致するのは、$E[\exp(u_i)\mid X_i=1] = E[\exp(u_i)\mid X_i=0]$の仮定が成り立つ、すなわち**$u_i$の条件付き分布の形状（特に分散）が$X_i$に依存しない**、という特殊な場合に限られる。
+
+$\log Y_i = \beta_0 + \beta_1 X_i + u_i$ のもとで、$Y_i$を$X_i$で条件付けた期待値は次のように表せる。
+
+$$
+\begin{align}
+E[Y_i \mid X_i] &= E\left[\exp(\beta_0 + \beta_1 X_i + u_i) \mid X_i \right] \\
+&=\exp(\beta_0 + \beta_1 X_i) \times E[\exp(u_i) \mid X_i]
+\end{align}
+$$
+
+したがって、
+
+$$
+\frac{E[Y_i \mid X_i=1]}{E[Y_i \mid X_i=0]} = \exp(\beta_1) \times \frac{E[\exp(u_i)\mid X_i=1]}{E[\exp(u_i)\mid X_i=0]}
+$$
+
+もし、誤差項の条件付き分布の形状が$X_i$に依存する（不均一分散）場合には、$E[\exp(u_i)\mid X_i=1] \neq E[\exp(u_i)\mid X_i=0]$となり、$\exp(\hat\beta_1)$は母集団における算術平均の比の一致推定量とはならない（Santos Silva and Tenreyro 2006）。
+
+一方、ポワソン回帰（PPML）のモデル $Y_i = \exp(\beta_0+\beta_1 X_i)\times \varepsilon_i$ のもとでは、
+
+$$
+E[Y_i \mid X_i] = \exp(\beta_0+\beta_1 X_i)\times E[\varepsilon_i\mid X_i]
+$$
+したがって、
+
+$$
+\frac{E[Y_i \mid X_i = 1]}{E[Y_i \mid X_i = 0]} = \exp(\beta_1) \times \frac{E[\varepsilon_i\mid X_i=1]}{E[\varepsilon_i\mid X_i=0]}
+$$
+
+先ほどとは異なり、ここで必要な仮定は$E[\varepsilon_i \mid X_i] = 1$という条件付き期待値に関する緩やかな仮定のみである。つまり、$\varepsilon_i$の分散が$X_i$に応じて異なっていた（不均一分散）としても、$\exp(\beta_1)$は母集団における算術平均の比の一致推定量となる。
+
+## Extensive marginとIntensive marginを分けて推定する方法
+
+ポワソン回帰は、従属変数に0が含まれる場合に、対数変換を経由せずに推定できるという利点を持つ。一方で、そのEstimandは算術平均の比であり、対数線形回帰におけるEstimandである幾何平均の比とは異なる量を推定している。
+
+そこで、これらとは別のアプローチとして、$Y_i$がゼロを取るかどうか（extensive margin）と、ゼロでない場合の値の大きさ（intensive margin）を分けて推定する方法（Chen and Roth 2024; Mullahy and Norton 2024）がある。
+
+### 分解の考え方
+
+$Y_i$がゼロを取るかどうかを示す二値変数を
+
+$$
+D_i \equiv \mathbb{1}[Y_i > 0]
+$$
+
+と定義する。このとき、$Y_i$の条件付き期待値は、$Y_i$が正の値を取る確率と、$Y_i$が正の値を取るという条件のもとでの$Y_i$の期待値、の2つの積に分解できる。
+
+$$
+\begin{align}
+E[Y_i \mid X_i] &= P(D_i=1 \mid X_i) \times
+E[Y_i \mid D_i=1, X_i] + P(D_i=0 \mid X_i) \times 0 \\
+&= \underbrace{P(D_i=1 \mid X_i)}_{\text{extensive margin}} \times
+\underbrace{E[Y_i \mid D_i=1, X_i]}_{\text{intensive margin}}
+\end{align}
+$$
+
+この分解は、$Y_i$が0であるか、0より大きい値であるかによって、値の増加がもつ意味が異なる場合に有益な情報を提供する。具体的には、$X_i$が$0 \to 1$に変化したときの$E[Y_i\mid X_i]$の変化には、以下の2つの性質の異なる変化が反映されている。
+
+1. **extensive marginの変化**：$Y_i$が正の値を取る確率そのものが変化すること（たとえば、無職の状態から就職することによって、勤労所得が発生する）
+2. **intensive marginの変化**：すでに正の値を取っている人々の間で、その水準が変化すること（たとえば、すでに働いている人が労働時間を増やすかまたは時間あたり賃金が増えることによって勤労所得が増加する）
+
+### 2段階モデル
+
+上記の分解に対応し、2つの部分を2段階モデル（two-part model）によって別々に推定する。具体的には、（1）$D_i$を従属変数とした線形回帰（線形確率モデル。extensive marginに対応）、（2）$D_i=1$のサンプルにおいて、$\log Y_i$を従属変数とする対数線形回帰（intensive marginに対応）をそれぞれ推定する。
+
+$$
+\begin{align}
+D_i &= \alpha_0 + \alpha_1 X_i + \eta_i \tag{1} \\
+\log Y_i &= \beta_0 + \beta_1 X_i + \nu_i \quad (\mathrm{for} \ D_i=1)  \tag{2}
+\end{align}
+$$
+
+これにより、$\hat\alpha_1$（確率の変化）と$\hat\beta_1$（$Y_i > 0$)という条件のもとでの変化という性質の異なる2つの推定値を別々に得ることができる。
+
+ただし2段階モデルにおける（2）は、サンプルを選択した上での条件付き効果であるので、解釈については注意を要する。このことに注意すれば、2段階モデルは、全体の変化のうちどの程度がextensive margin、どの程度がintensive marginに由来するかを診断するうえで有益といえる。
+
+## 実装
+
+ここまで確認してきた各手法の違いを、実際のデータを用いて確認する。以下では、東京大学社会科学研究所附属社会調査・データアーカイブ研究センターが提供する[2015年SSM調査の非制限公開疑似データ](https://csrda.iss.u-tokyo.ac.jp/infrastructure/urd/ssm/)を用いる。なお、この非制限公開疑似データは、教育、分析練習等のためのものであり、ここでの結果は、学術的な実証研究の結果とみなすことはできない。
+
+具体的には、個人所得（万円）（`pinc`）を性別（`male`）、年齢（`age`、`age`の2乗）、教育年数（`eduyear`）に回帰する。対象は有業者であるが、個人所得（`pinc`）には所得が0の回答者が存在している。
+
+4つのモデルを比較する。
+
+1. **Log-linear (+1)**：個人所得に1を加えて対数変換した変数（`log(pinc + 1)`）を従属変数とするモデル。
+2. **PPML**：`pinc`をそのまま被説明変数とするポワソン回帰。
+3. **Extensive**：`pinc > 0`を示す二値変数を従属変数とする線形確率モデル（2段階モデルの（1）に相当）。
+4. **Intensive**：`pinc > 0`のサンプルに限定し、`log(pinc)`を従属変数とする対数線形回帰（2段階モデルの（2）に相当）。
+
+推定には、`fixest`パッケージに含まれる関数を使用する。そのほか、データの加工や結果の表示に必要なパッケージを読み込む。
+
+```{r, warning=FALSE, message = FALSE}
+library(tidyverse)
+library(modelsummary)
+library(fixest)
+```
+
+```{r, include = FALSE}
+SSM <- read_csv("../_data/u002/u002.csv")
+```
+
+```{r, eval = FALSE}
+SSM <- read_csv("u002.csv")
+```
+
+```{r, warning = FALSE}
+# データの中身を確認
+SSM |> 
+  select(pinc, male, age, eduyear) |> 
+  head()
+
+# 変数を加工
+SSM <- SSM |> 
+  mutate(log_pinc_plus1 = log(pinc + 1)) |> 
+  mutate(log_pinc = if_else(pinc > 0, log(pinc), NA)) |> 
+  mutate(pinc_over0 = if_else(pinc > 0, 1, 0)) 
+
+# 各モデルを推定
+log_linear_plus1 <- feols(log_pinc_plus1 ~ male + age + I(age^2) + eduyear, 
+                       data = SSM, se = "hetero")
+poisson <- fepois(pinc ~  male + age + I(age^2) + eduyear, 
+                  data = SSM, se = "hetero")
+log_linear_extensive <- feols(pinc_over0 ~  male + age + I(age^2) + eduyear, 
+                              data = SSM, se = "hetero")
+log_linear_intensive <- feols(log_pinc ~  male + age + I(age^2) + eduyear, 
+                              data = SSM, se = "hetero")
+
+# 結果を表示
+modelsummary(list(
+  "Log-linear (+1)" = log_linear_plus1,
+  "PPML" = poisson,
+  "Extensive" = log_linear_extensive,
+  "Intensive" = log_linear_intensive
+  ),
+  stars = TRUE,
+  gof_map = c("nobs"))
+
+```
+
+`male`の係数に着目すると、それぞれ解釈は次のとおりとなる。
+
+- **Log-linear (+1)**：係数の指数を取った値$\exp(\beta)$ = `r round(exp(log_linear_plus1$coefficients[2]), digit = 3)`は、従来インフォーマルに用いられてきたものである。先に述べたように、この値は純粋な意味での\%の変化として解釈することはできない。
+- **PPML**：係数の指数を取った値$\exp(\beta)$ = `r round(exp(poisson$coefficients[2]), digit = 3)`は、女性の条件付き算術平均に対する男性の条件付き算術平均の比を表す。
+- **Extensive**：係数$\beta$ = `r format(round(log_linear_extensive$coefficients[2], digit = 3), nsmall = 3)`は、男性と女性の間での、所得が0より大きい値を取る確率の差を表す。
+- **Intensive**：係数の指数を取った値$\exp(\beta)$ = `r round(exp(log_linear_intensive$coefficients[2]), digit = 3)`は、所得が0より大きい個体に限定したときの、女性の条件付き幾何平均に対する男性の条件付き幾何平均の比を表す。
+
+なお、Stata（固定効果モデル）の場合、対数線形回帰（または線形確率モデル）であれば`reghdfe`パッケージ、PPMLであれば`ppmlhdfe`パッケージを使うことができる。
+
+## 参考文献
+
+Chen, Jiafeng, and Jonathan Roth. 2024. "Logs with Zeros? Some Problems and Solutions." *The Quarterly Journal of Economics* 139(2):891--936.
+
+Mullahy, John, and Edward C. Norton. 2024. "Why TransformY? The Pitfalls of Transformed Regressions with a Mass at Zero." *Oxford Bulletin of Economics and Statistics* 86(2):417--47.
+
+Santos Silva, J. M. C., and Silvana Tenreyro. 2006. "The Log of Gravity." *The Review of Economics and Statistics* 88(4):641--58.
