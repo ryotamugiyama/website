@@ -18,7 +18,7 @@ Mugiyama, Ryota. "Beyond the Elite Class Ceiling: Heterogeneity in Social Origin
 Sugimoto, Haruki, Fumiya Uchikoshi, Shohei Yoda, and Ryota Mugiyama. 2027. "A Theory of Attitudinal Decoupling: Revisiting the Link between Marriage and Childbearing in Low-Fertility East Asia." *Demographic Research.*
 Mugiyama, Ryota. 2026. "Gender Role Attitudes and Transition to Marriage and Marital Parenthood in Japan." *Population Research and Policy Review.*
 Mugiyama, Ryota and Aguru Ishibashi. 2026. "Multigenerational Perspective on Trends in the Inequality of Educational Opportunity in Japan." *European Sociological Review.*
-Kwon, Aram and Ryota Mugiyama. 2026. "Intergenerational Educational Mobility and Subjective Social Status: 'Falling from Grace' or 'Rising from Rags?'" *Socius.*
+Kwon, Aram and Ryota Mugiyama. 2026. "Intergenerational Educational Mobility and Subjective Social Status in Japan." *Socius.*
 --->
 
 Mugiyama, Ryota and Kohei Toyonaga. 2026. "[Changing Regional University Availability and Inequality of Educational Opportunity in Japan](https://doi.org/10.1093/esr/jcag011)." *European Sociological Review.* Advance access. 
@@ -142,13 +142,6 @@ Persistent Motherhood Wage Penalty Following First Birth Across Cohort: The Role
 
 - 2025-07-18 Presented at READI 3rd Annual Conference at Yonsei University. [slide](https://researchmap.jp/mugiyama/presentations/47722325)
 
-<!---
-Revisiting Motherhood Wage Penalty Following First birth in Japan: Unpacking the Sources
-- 2025-05-16 Presented at Conference on Family Conflict and Dynamics in East Asia at the University of Hong Kong Research Hub of Population Studies. [slide](https://researchmap.jp/mugiyama/presentations/49887140)
-- 2024-08-06 Presented at RC28 2024 Summer Meeting at Brown University. [slide](https://researchmap.jp/mugiyama/presentations/45778764)
-- 2024-06-28 Working paper is found here. [paper](https://csrda.iss.u-tokyo.ac.jp/international/dp/No.87.pdf)
-- 2024-06-09 Presented at PAoJ 76th Annual Meeting at Chuo University. [slide](https://researchmap.jp/mugiyama/presentations/45741726)
---->
 
 Task Variety and Its Earnings Returns Across Countries: Evidence from PIAAC (with Shin Arita)
 
@@ -226,6 +219,8 @@ Komatsu, Kyoko and Ryota Mugiyama. 2022. "[Trends in Task Distribution in Japan,
 ## Book chapter
 
 <!----
+藤原翔・麦山亮太編著,2028,『社会階層論』ミネルヴァ書房.
+
 麦山亮太，2026，「産業構造の変化と労働」編『産業と労働の社会学事典』丸善出版，xxx--xxx．
 --->
 
