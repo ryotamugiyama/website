@@ -88,7 +88,7 @@ Zoomなどを使ったオンライン形式で行います。
 
 **日時**：2026-05-13 (Wed) 9:00--10:00
 
-**発表者**：齋藤遼介（大阪大学）・渡辺健太郎（東北学院大学）
+**発表者**：齋藤遼介（大阪大学）
 
 **タイトル**：Robust Estimation of the Ranges of Means, Mean Differences, and Causal Effects Accounting for Satisficing Responses through Randomization of Response Options
 
