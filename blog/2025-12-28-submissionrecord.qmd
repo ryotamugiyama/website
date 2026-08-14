@@ -4,7 +4,7 @@ author: "Ryota Mugiyama"
 date: "2025-12-28"
 image: ../images/website.jpg
 categories: 
-  - "Research method"
+  - "Research in general"
 ---
 
 2025年の投稿・再投稿等の記録です。

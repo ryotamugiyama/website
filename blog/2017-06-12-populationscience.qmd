@@ -2,7 +2,7 @@
 title: "感想メモ：Sociology as a Population Science by John H. Goldthorpe (2015)"
 author: "Ryota Mugiyama"
 date: "2017-06-12"
-categories: "Research method"
+categories: "Research in general"
 image: ../images/website.jpg
 ---
 

@@ -4,7 +4,7 @@ author: "Ryota Mugiyama"
 date: "2018-02-06"
 image: ../images/website.jpg
 categories: 
-  - "Research method"
+  - "Research in general"
   - "Social stratification"
 ---
 

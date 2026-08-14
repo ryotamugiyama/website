@@ -4,7 +4,7 @@ author: "Ryota Mugiyama"
 date: "2024-10-04"
 image: ../images/website.jpg
 categories: 
-  - "Research method"
+  - "Research in general"
 ---
 
 この数年、自分が論文を投稿するだけではなくて、他人の論文の査読を依頼されることがある。しかし、査読で何を評価するのかということについては、必ずしも統一的な見解があるわけではないように思える。そこで、自分が査読をするときにはどのような点に注目して査読をしているのかについてメモを残しておきたい。

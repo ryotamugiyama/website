@@ -1,5 +1,5 @@
 ---
-title: "Job (in)stability or job (in)security?：「安定性」の使い分けに関するメモ）"
+title: "Job (in)stability or job (in)security?：「安定性」の使い分けに関するメモ"
 author: "Ryota Mugiyama"
 date: "2018-02-06"
 image: ../images/website.jpg

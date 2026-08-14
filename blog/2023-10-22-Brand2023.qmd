@@ -4,7 +4,7 @@ author: "Ryota Mugiyama"
 date: "2023-10-22"
 image: ../images/website.jpg
 categories: 
-  - "Social mobility"
+  - "Social stratification"
 ---
 
 [Twitterに載せたメモ](https://twitter.com/RyotaMugiyama/status/1715933986038645040)の転載です。

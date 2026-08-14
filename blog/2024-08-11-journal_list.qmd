@@ -4,7 +4,7 @@ author: "Ryota Mugiyama"
 date: "2024-08-11"
 image: ../images/website.jpg
 categories: 
-  - "Research method"
+  - "Research in general"
 ---
 
 ## 一般誌

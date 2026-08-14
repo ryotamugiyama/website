@@ -4,7 +4,7 @@ author: "Ryota Mugiyama"
 date: "2026-07-06"
 image: ../images/website.jpg
 categories: 
-  - "Quantitative method"
+  - "Quantitative methods"
 ---
 
 対数線形回帰を用いる場合の変数処理や解釈の方法について少し勉強したので、ノートとして残しておく。ここでの記述は主にSantos Silva and Tenreyro (2006)、Chen and Roth (2024)、Mullahy and Norton (2024)にもとづくが、数学的にむずかしい議論は飛ばし、自分にとって重要なところだけ拾ったうえで、自分の考えと合わせてまとめているので、正確な内容については原典を適宜参照されたい。

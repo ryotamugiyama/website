@@ -4,7 +4,7 @@ author: "Ryota Mugiyama"
 date: "2026-03-11"
 image: ../images/website.jpg
 categories: 
-  - "Research notes"
+  - "Research in general"
 ---
 
 ## 研究成果の広報
