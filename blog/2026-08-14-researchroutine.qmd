@@ -89,7 +89,7 @@ categories:
 研究の進め方や考え方については今までいろいろなハウツー本を読んできた。だいたいどのハウツー本でも言われていることは似ているので、好きなものを読むのがよいと思う。ただハウツー本のなかには説教臭いものもあったりして、そういうのは自分はあまり好きではない。これまで自分がいいと思ったものは以下。
 
 - 安宅和人，［2010］2024，『イシューからはじめよ------知的生産の「シンプルな本質」』英治出版．
-- Belcher, W. L. 2019. **Writing Your Journal Article in Twelve Weeks: A Guide to Academic Publishing Success (2nd ed.).** The University of Chicago Press.
+- Belcher, W. L. 2019. *Writing Your Journal Article in Twelve Weeks: A Guide to Academic Publishing Success (2nd ed.).* The University of Chicago Press.
 - Newport, Cal. 2016. *Deep Work: Rules for Focused Success in a Distracted World.* New York: Grand Central Publishing.（門田美鈴訳，2016，『大事なことに集中する------気が散るものだらけの世界で生産性を最大化する科学的方法』ダイヤモンド社．）
 - Perry, John. 2012. *The Art of Procrastination: A Guide to Effective Dawdling, Lollygagging and Postponing.* New York: Workman Publishing.（花塚恵訳，2013，『スタンフォード教授の心が軽くなる先延ばし思考』東洋経済新報社．）
 - Silvia, Paul J. 2007. *How to Write a Lot: A Practical Guide to Productive Academic Writing.* Washington, DC: American Psychological Association.（高橋さきの訳，2015，『できる研究者の論文生産術------どうすれば「たくさん」書けるのか』講談社．）
