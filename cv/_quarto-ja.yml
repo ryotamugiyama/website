@@ -1,0 +1,10 @@
+papersize: a4                          # 用紙サイズをA4に指定（日本語版）
+format:
+  pdf:
+    output-file: "cv_ryotamugiyama_jpn.pdf"      # 日本語版の出力ファイル名
+    title-meta: "CV Ryota Mugiyama"       # 日本語版のPDFタイトル
+    geometry:                          # ページ余白の設定
+      - top=30mm                       #   上余白
+      - bottom=30mm                    #   下余白
+      - left=30mm                      #   左余白
+      - right=30mm                     #   右余白

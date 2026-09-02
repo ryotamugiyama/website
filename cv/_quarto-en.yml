@@ -1,0 +1,10 @@
+papersize: letter                      # 用紙サイズをLetterに指定（英語版）
+format:
+  pdf:
+    output-file: "cv_ryotamugiyama_eng.pdf"        # 英語版の出力ファイル名
+    title-meta: "CV Ryota Mugiyama"  # 英語版のPDFタイトル
+    geometry:                          # ページ余白の設定（Letter版は1インチ）
+      - top=1in                        #   上余白
+      - bottom=1in                     #   下余白
+      - left=1in                       #   左余白
+      - right=1in                      #   右余白

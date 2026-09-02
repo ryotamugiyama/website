@@ -1,7 +1,16 @@
 ---
-title: "Profile"
-date: "2026-04-24"
+title: "CV"
+date: "today"
 ---
+
+```{r, include = FALSE}
+quarto::quarto_render("cv/cv_header.qmd", output_format = "pdf", profile = "en")  # 英語版
+quarto::quarto_render("cv/cv_header.qmd", output_format = "pdf")                  # 日本語版
+```
+
+[CV in English](cv/cv_ryotamugiyama_eng.pdf)
+
+[CV in Japanese](cv/cv_ryotamugiyama_jpn.pdf)
 
 ### Positions
 
@@ -17,9 +26,9 @@ April 2017--March 2019: Pre-doctoral Research Fellow (DC2), Japan Society for th
 
 March 2019: Doctor of Sociology, Department of Sociology, the University of Tokyo. 
 
-March 2016: Master of Arts in Sociology, Department of Sociology, the University of Tokyo. 
+March 2016: M.A. in Sociology, Department of Sociology, the University of Tokyo. 
 
-March 2014: Bachelor of Arts in Letters, Faculty of Letters, the University of Tokyo.
+March 2014: B.A. in Sociology, Faculty of Letters, the University of Tokyo.
 
 ### 職歴
 

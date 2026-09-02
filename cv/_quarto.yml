@@ -1,0 +1,7 @@
+project:
+  type: default
+  post-render:
+    - ./postrender_en.sh
+profile:
+  default: ja      # --profile を付けなければ日本語版（ja）になる
+  group: [lang]

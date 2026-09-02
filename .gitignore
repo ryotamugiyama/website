@@ -4,6 +4,8 @@
 .Ruserdata
 
 /.quarto/
+/cv_cache/
+/cv_files/
 
 **/*.quarto_ipynb
 .positai

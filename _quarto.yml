@@ -11,7 +11,7 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - profile.qmd
+      - cv.qmd
       - research.qmd
       - lecture.qmd
       - text: "Workshop"
@@ -20,6 +20,8 @@ website:
             href: workshop/writing_sociology_paper.qmd
           - text: "不平等研究に関する輪読会"
             href: workshop/reading_circle_of_inequality_studies.qmd
+          - text: "Japan-Hong Kong Early-to-Mid Career Sociologists' Study Group"
+            href: workshop/JPN_HKG_study_group.qmd
       - harmonization.qmd
       - text: "Tips"
         menu:
