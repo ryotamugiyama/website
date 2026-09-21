@@ -43,8 +43,17 @@ Zoomなどを使ったオンライン形式で行います。発表者とコメ�
 ハラスメントや差別的言動を受けた、あるいは目撃した、といったようなワークショップへの参加に支障を生じる問題に遭遇した場合は、いずれかのオーガナイザーまでご連絡ください。相談内容は関係者以外に共有せず、相談者の意向を尊重しつつ、厳格に対応します。
 
 ## 次回開催予定
+<!--- 
+### 第6回 
 
-<!--
+**日時** \ \  2026-10-xx (xxx) xx:00--xx:00
+
+**発表者** \ \  イハンソル（滋賀県立大学）
+
+**タイトル** \ \  How Compatible Is Professional Work with Motherhood? Testing the Role of Occupational Demands and Gender Norm Attitudes
+
+**コメンテーター** \ \  麦山亮太（学習院大学）
+--->
 ### 第5回 
 
 **日時** \ \  2026-10-07 (Wed) 17:00--18:00
@@ -54,7 +63,8 @@ Zoomなどを使ったオンライン形式で行います。発表者とコメ�
 **タイトル** \ \  Reconsidering Grandparent-Grandchild Exposure and Educational Association: Evidence from Japan
 
 **コメンテーター** \ \  麦山亮太（学習院大学）
--->
+
+## 開催記録
 
 ### 第4回 
 
@@ -65,8 +75,6 @@ Zoomなどを使ったオンライン形式で行います。発表者とコメ�
 **タイトル** \ \  After Universal Access: The Managed Contraction of Japan's Private-Led Higher Education System
 
 **コメンテーター** \ \  米澤彰純（東北大学）
-
-## 開催記録
 
 ### 第3回 
 
