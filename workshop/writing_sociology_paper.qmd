@@ -2,7 +2,7 @@
 title: "社会学英語論文ワークショップ Workshop for writing sociology paper in English"
 author: "Ryota Mugiyama"
 image: ../images/writing_sociology_paper_icon.png
-date: "2026-05-13"
+date: "2026-10-24"
 ---
 
 ## 概要
@@ -25,9 +25,9 @@ Zoomなどを使ったオンライン形式で行います。発表者とコメ�
 
 ### ご参加希望の方
 
-オーガナイザーまでご連絡ください。
+オーガナイザーのどちらかまでご連絡ください。
 
-五十嵐彰（大阪大学）igarashi.a.hus[at]osaka-u.ac.jp
+五十嵐彰（東北大学）
 
 麦山亮太（学習院大学）ryota.mugiyama[at]gakushuin.ac.jp
 
@@ -54,7 +54,7 @@ Zoomなどを使ったオンライン形式で行います。発表者とコメ�
 
 **コメンテーター** \ \  麦山亮太（学習院大学）
 
-**発表者（話題提供）** \ \ 五十嵐彰（大阪大学）
+**発表者（話題提供）** \ \ 五十嵐彰（東北大学）
 
 **タイトル** \ \ 英語論文執筆のために（1）
 
